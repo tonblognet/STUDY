@@ -1,0 +1,2 @@
+import {NextResponse} from "next/server";import {cookies} from "next/headers";import {programs} from "@/lib/data";
+export async function GET(){const session=(await cookies()).get("postupai_session")?.value;const premium=session?.includes("plus");return NextResponse.json(programs.map(p=>premium?p:{...p,previousScores:p.previousScores.slice(0,1),paidPlaces:null,tuition:null,dvi:p.dvi?"Доступно с Плюс":null}));}

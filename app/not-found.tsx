@@ -1,0 +1,1 @@
+import Link from "next/link";export default function NotFound(){return <div className="empty-page"><span>404</span><h1>Такой страницы нет</h1><p>Возможно, программа была перенесена или адрес введен с ошибкой.</p><Link href="/programs" className="button button-primary">Перейти в каталог</Link></div>}
