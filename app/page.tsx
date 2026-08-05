@@ -1,35 +1,34 @@
-import Link from "next/link";
-import { ProgramCard } from "@/components/program-card";
+﻿import Link from "next/link";
+import { ExamMatcher } from "@/components/exam-matcher";
+import { DataStatusBadge } from "@/components/data-status";
 import { programs, universities } from "@/lib/data";
 
-const features = [
-  ["01", "Данные из первоисточников", "Сохраняем ссылку, дату обновления и статус проверки каждой записи."],
-  ["02", "Честное сравнение", "Баллы, места, стоимость и ДВИ в одной таблице — без рекламного ранжирования."],
-  ["03", "План поступления", "Сохраните баллы ЕГЭ и соберите сбалансированный список приоритетов."],
-];
-
-export default function Home() {
-  return <>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"WebSite",name:"Поступай",url:"https://postupai.example",potentialAction:{"@type":"SearchAction",target:"https://postupai.example/programs?q={search_term_string}","query-input":"required name=search_term_string"}})}} />
-    <section className="hero"><div className="hero-orb orb-one"/><div className="hero-orb orb-two"/><div className="container hero-grid">
-      <div className="hero-copy"><span className="kicker"><i/> Приемная кампания 2026</span><h1>Твой маршрут<br/>в <em>нужный</em> вуз</h1><p>Сравнивай проходные баллы, бюджетные места и стоимость обучения в московских вузах. Спокойно, понятно, по официальным данным.</p>
-        <form className="hero-search" action="/programs"><span>⌕</span><input name="q" aria-label="Поиск программ и вузов" placeholder="Название, направление или код"/><button>Найти программу</button></form>
-        <div className="hero-hints"><span>Часто ищут:</span><Link href="/programs?q=информатика">Информатика</Link><Link href="/programs?q=экономика">Экономика</Link><Link href="/programs?q=дизайн">Дизайн</Link></div>
-      </div>
-      <div className="hero-visual" aria-label="Пример подбора программы"><div className="floating-label label-one">304 <span>проходной</span></div><div className="floating-label label-two">160 <span>мест</span></div><div className="mock-window"><div className="mock-head"><span/><span/><span/><b>Подбор по баллам</b></div><div className="score-row"><div><small>Математика</small><strong>92</strong></div><div><small>Русский</small><strong>88</strong></div><div><small>Информатика</small><strong>96</strong></div></div><div className="match"><div className="match-ring">87%</div><div><small>Лучшее совпадение</small><strong>Программная инженерия</strong><span>НИУ ВШЭ · Москва</span></div></div><div className="mini-bars"><i/><i/><i/><i/><i/></div><Link href="/programs">Смотреть 24 программы →</Link></div></div>
-    </div></section>
-
-    <section className="trust-strip"><div className="container"><span>Популярные вузы</span>{universities.slice(0,5).map(u => <Link href={`/universities/${u.slug}`} key={u.id}><b style={{background:u.color}}>{u.shortName.slice(0,1)}</b>{u.shortName}</Link>)}</div></section>
-
-    <section className="section container"><div className="section-head"><div><span className="overline">В фокусе</span><h2>Программы, которые выбирают сейчас</h2></div><Link href="/programs" className="text-link">Весь каталог →</Link></div><div className="program-grid">{programs.slice(0,3).map(program => <ProgramCard program={program} key={program.id}/>)}</div></section>
-
-    <section className="section soft-section"><div className="container"><div className="section-head"><div><span className="overline">Меньше хаоса</span><h2>Всё важное — на одном экране</h2></div><p>Мы превращаем разрозненные страницы приемных комиссий в понятный маршрут поступления.</p></div><div className="feature-grid">{features.map(([n,title,text]) => <article key={n}><span>{n}</span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
-
-    <section className="section container compare-preview"><div className="compare-copy"><span className="overline">Сравнение</span><h2>Решение видно<br/>с первого взгляда</h2><p>Добавьте программы в сравнение — покажем различия и подсветим сильные стороны каждой.</p><Link href="/compare" className="button button-primary">Открыть сравнение</Link></div><div className="compare-table"><div className="compare-row compare-header"><span>Показатель</span><strong>ВШЭ</strong><strong>МГТУ</strong></div><div className="compare-row"><span>Проходной балл</span><b>304</b><b className="best">278</b></div><div className="compare-row"><span>Бюджетных мест</span><b>160</b><b className="best">196</b></div><div className="compare-row"><span>Стоимость в год</span><b>720 000 ₽</b><b className="best">426 000 ₽</b></div><div className="compare-row"><span>ДВИ</span><b>Нет</b><b>Нет</b></div></div></section>
-
-    <section className="section premium-section"><div className="container premium-card"><div><span className="kicker light"><i/> Поступай Плюс</span><h2>Не просто список.<br/>Твоя стратегия поступления.</h2><p>История баллов, все места и цены, неограниченное сравнение и уведомления об изменениях.</p><Link href="/pricing" className="button button-light">Попробовать 7 дней бесплатно</Link></div><div className="premium-points"><div><b>03</b><span>года истории баллов</span></div><div><b>∞</b><span>программ в сравнении</span></div><div><b>24/7</b><span>контроль изменений</span></div></div></div></section>
-
-    <section className="section container faq"><div><span className="overline">FAQ</span><h2>Коротко о важном</h2></div><div>{[["Откуда берутся данные?","С официальных страниц вузов, приказов и опубликованных планов приема. У каждой записи есть источник и дата проверки."],["Можно ли доверять прогнозу поступления?","Это ориентир, а не гарантия. Мы используем историю конкурса, но итог зависит от заявлений абитуриентов и правил конкретного года."],["Что доступно бесплатно?","Поиск, карточки программ, предметы ЕГЭ и базовые показатели. Платные функции помогают глубже анализировать и отслеживать изменения."]].map(([q,a]) => <details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div></section>
-    <section className="section container final-cta"><span>Готов к выбору?</span><h2>Собери свой список программ сегодня</h2><p>Бесплатно. Без банковской карты.</p><Link href="/register" className="button button-primary">Создать аккаунт</Link></section>
-  </>;
+function popularDirections() {
+  const groups = new Map<string, typeof programs>();
+  for (const program of programs) {
+    const key = program.tags[0] ?? program.title;
+    groups.set(key, [...(groups.get(key) ?? []), program]);
+  }
+  return [...groups.entries()].map(([name, items]) => {
+    const prices = items.map((item) => item.tuition).filter((value): value is number => value !== null);
+    const scores = items.map((item) => item.passingScore).filter((value): value is number => value !== null);
+    return {
+      name,
+      programs: items.length,
+      universities: new Set(items.map((item) => item.universitySlug)).size,
+      price: prices.length ? `${new Intl.NumberFormat("ru-RU").format(Math.min(...prices))}–${new Intl.NumberFormat("ru-RU").format(Math.max(...prices))} ₽` : "не опубликована",
+      score: scores.length ? Math.round(scores.reduce((sum, value) => sum + value, 0) / scores.length) : null,
+    };
+  }).sort((a, b) => b.programs - a.programs).slice(0, 4);
 }
+export default function HomePage() {
+  const directions = popularDirections();
+  const verified = programs.filter((program) => program.trust.status === "verified").length;
+  return <div>
+    <section className="trust-home-hero"><div className="container trust-home-grid"><div><span className="overline">Приёмная кампания 2026 · официальные источники</span><h1>Проверьте, что сдавать, хватит ли баллов и сколько стоит обучение</h1><p>Мы не обещаем поступление. Сервис показывает год, статус и первоисточник каждого числа — и честно сообщает, если данных пока нет.</p><div className="hero-trust-stats"><span><b>{universities.length}</b> вузов первой очереди</span><span><b>{verified}</b> карточек с проверенными показателями</span><span><b>0</b> неизвестных значений заменено нулём</span></div><div className="hero-actions"><a href="#selection" className="button button-primary">Подобрать по ЕГЭ</a><Link href="/programs" className="button outline-button">Открыть каталог</Link></div></div><aside><div className="trust-sample"><span>Пример проверяемого значения</span><strong>291 балл</strong><p>ВШЭ · Экономика · бюджет · итог приёма 2025</p><DataStatusBadge status="verified"/><a href="https://www.hse.ru/mirror/pubs/share/1162982432.pdf" target="_blank" rel="noreferrer">Официальный документ, стр. 6 ↗</a></div></aside></div></section>
+    <div className="container" id="selection"><ExamMatcher programs={programs} compact/></div>
+    <section className="direction-facts container"><header><span className="overline">Не рейтинг популярности</span><h2>Направления в текущем проверенном наборе</h2><p>Пока нет аналитики поведения пользователей, блок сгруппирован по тегу программы. Это временный и явно обозначенный алгоритм, а не статистика спроса.</p></header><div>{directions.map((direction) => <article key={direction.name}><h3>{direction.name}</h3><dl><div><dt>Программ</dt><dd>{direction.programs}</dd></div><div><dt>Вузов</dt><dd>{direction.universities}</dd></div><div><dt>Стоимость</dt><dd>{direction.price}</dd></div><div><dt>Типичный опубликованный балл</dt><dd>{direction.score ?? "недостаточно данных"}</dd></div></dl><Link href={`/programs?q=${encodeURIComponent(direction.name)}`}>Посмотреть программы →</Link></article>)}</div></section>
+    <section className="home-methodology"><div className="container"><div><span className="overline">Как принимать решение</span><h2>Три проверки вместо длинного лендинга</h2></div><ol><li><b>1</b><span><strong>Подхожу ли я?</strong>Сверьте минимумы, сумму и исторический ориентир.</span></li><li><b>2</b><span><strong>Что сдавать?</strong>Проверьте обязательные, альтернативные предметы и ДВИ.</span></li><li><b>3</b><span><strong>Сколько стоит?</strong>Смотрите цену нужного года и формы обучения.</span></li></ol><Link href="/methodology">Как мы проверяем данные →</Link></div></section>
+  </div>;
+}
+

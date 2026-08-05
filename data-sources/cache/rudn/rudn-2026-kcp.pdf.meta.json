@@ -1,0 +1,13 @@
+{
+  "sourceUrl": "https://admission.rudn.ru/pk/2026/count/kcp_26_1.pdf",
+  "title": "Количество мест для приёма граждан Российской Федерации на 2026/27 учебный год",
+  "university": "rudn",
+  "category": "places",
+  "year": 2026,
+  "retrievedAt": "2026-08-05T15:21:00.000Z",
+  "mimeType": "application/pdf",
+  "checksumSha256": "53f748c246ce223009fd80fd7249ae05ee8b8037d7e25c8a37ce0ebce8e1eb7d",
+  "verifiedLocator": "PDF page 2, Факультет физико-математических и естественных наук, 01.03.02, 49 мест",
+  "visualReview": "Rendered at 150 DPI; page 1 contains a different 01.03.02 row (40 places), so faculty and page are mandatory locators.",
+  "robotsNote": "Automated robots.txt request was unavailable during the manual cached fetch; the public document was fetched once with a descriptive user-agent and reused locally."
+}

@@ -12,11 +12,17 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:integration": "node --test tests/rendered-html.test.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern outputs",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate deploy",
     "db:seed": "tsx prisma/seed.ts",
-    "import:sample": "node scripts/import-official-csv.mjs data/sample-programs.csv"
+    "import:sample": "node scripts/import-official-csv.mjs data/sample-programs.csv",
+    "data:discover": "tsx scripts/data-pipeline.ts discover",
+    "data:fetch": "tsx scripts/data-pipeline.ts fetch",
+    "data:parse": "tsx scripts/data-pipeline.ts parse",
+    "data:validate": "tsx scripts/data-pipeline.ts validate",
+    "data:import": "tsx scripts/data-pipeline.ts import",
+    "data:report": "tsx scripts/data-pipeline.ts report"
   },
   "dependencies": {
     "@prisma/client": "6.18.0",

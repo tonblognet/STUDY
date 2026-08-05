@@ -1,0 +1,356 @@
+{
+  "generatedAt": "2026-08-05T15:46:38.843Z",
+  "publicationRule": "Только verified значения показаны как подтверждённые; null не заменяется нулём.",
+  "universities": [
+    {
+      "university": "НИУ ВШЭ",
+      "slug": "hse",
+      "programs": 1,
+      "indicators": 24,
+      "verified": 11,
+      "missing": 11,
+      "review": 0,
+      "conflicts": 0,
+      "coverage": 46,
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://www.hse.ru/mirror/pubs/share/1162982432.pdf",
+          "title": "Сводная информация по программам бакалавриата и специалитета",
+          "year": 2026,
+          "format": "pdf",
+          "locator": "стр. 6, Экономика 38.03.01"
+        },
+        {
+          "category": "places",
+          "url": "https://ba.hse.ru/kolmest",
+          "title": "Количество мест для приёма",
+          "year": 2026,
+          "format": "html"
+        },
+        {
+          "category": "rules",
+          "url": "https://www.hse.ru/docs/1019487685.html",
+          "title": "Правила приёма",
+          "year": 2026,
+          "format": "html"
+        }
+      ]
+    },
+    {
+      "university": "МАИ",
+      "slug": "mai",
+      "programs": 1,
+      "indicators": 17,
+      "verified": 7,
+      "missing": 7,
+      "review": 1,
+      "conflicts": 0,
+      "coverage": 41,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://priem.mai.ru/foreign-applicants/bachelor/programs/",
+          "title": "Программы бакалавриата",
+          "year": 2026,
+          "format": "html",
+          "locator": "01.03.02, Москва, очная форма"
+        },
+        {
+          "category": "exams",
+          "url": "https://priem.mai.ru/orders/programs/",
+          "title": "Перечень направлений и испытаний",
+          "year": 2026,
+          "format": "html"
+        },
+        {
+          "category": "tuition",
+          "url": "https://priem.mai.ru/orders/plan/cost/",
+          "title": "План платного приёма",
+          "year": 2026,
+          "format": "html"
+        }
+      ]
+    },
+    {
+      "university": "МФТИ",
+      "slug": "mipt",
+      "programs": 1,
+      "indicators": 14,
+      "verified": 7,
+      "missing": 5,
+      "review": 2,
+      "conflicts": 0,
+      "coverage": 50,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "places",
+          "url": "https://pk.mipt.ru/bachelor/2026_places/",
+          "title": "Количество мест бакалавриата",
+          "year": 2026,
+          "format": "html",
+          "locator": "01.03.02"
+        },
+        {
+          "category": "programs",
+          "url": "https://pk.mipt.ru/bachelor/",
+          "title": "Поступление в бакалавриат",
+          "year": 2026,
+          "format": "html"
+        }
+      ]
+    },
+    {
+      "university": "НИТУ МИСИС",
+      "slug": "misis",
+      "programs": 1,
+      "indicators": 18,
+      "verified": 8,
+      "missing": 7,
+      "review": 0,
+      "conflicts": 0,
+      "coverage": 44,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/faculties/analysis/",
+          "title": "Системный анализ и управление",
+          "year": 2026,
+          "format": "html",
+          "locator": "места, минимальные баллы, стоимость"
+        },
+        {
+          "category": "rules",
+          "url": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/",
+          "title": "Бакалавриат и специалитет",
+          "year": 2026,
+          "format": "html"
+        }
+      ]
+    },
+    {
+      "university": "НИУ МЭИ",
+      "slug": "mpei",
+      "programs": 1,
+      "indicators": 19,
+      "verified": 11,
+      "missing": 6,
+      "review": 0,
+      "conflicts": 0,
+      "coverage": 58,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://pk.mpei.ru/info/speclist",
+          "title": "Перечень направлений подготовки",
+          "year": 2026,
+          "format": "html",
+          "locator": "09.03.03, Прикладная информатика в экономике"
+        },
+        {
+          "category": "rules",
+          "url": "https://pk.mpei.ru/docs/rules_bach_2026.pdf",
+          "title": "Правила приёма бакалавриата",
+          "year": 2026,
+          "format": "pdf"
+        },
+        {
+          "category": "places",
+          "url": "https://pk.mpei.ru/docs/quotas2026.pdf",
+          "title": "Квоты 2026",
+          "year": 2026,
+          "format": "pdf"
+        }
+      ]
+    },
+    {
+      "university": "НИЯУ МИФИ",
+      "slug": "mephi",
+      "programs": 1,
+      "indicators": 14,
+      "verified": 2,
+      "missing": 10,
+      "review": 2,
+      "conflicts": 0,
+      "coverage": 14,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "tuition",
+          "url": "https://admission.mephi.ru/admission/baccalaureate-and-specialty/education/paid-formation",
+          "title": "Платное обучение",
+          "year": 2026,
+          "format": "html",
+          "locator": "14.03.02"
+        },
+        {
+          "category": "programs",
+          "url": "https://admission.mephi.ru/admission/baccalaureate-and-specialty",
+          "title": "Бакалавриат и специалитет",
+          "year": 2026,
+          "format": "html"
+        }
+      ]
+    },
+    {
+      "university": "РУДН",
+      "slug": "rudn",
+      "programs": 1,
+      "indicators": 14,
+      "verified": 2,
+      "missing": 10,
+      "review": 2,
+      "conflicts": 0,
+      "coverage": 14,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "places",
+          "url": "https://admission.rudn.ru/pk/2026/count/kcp_26_1.pdf",
+          "title": "Количество мест для приёма в 2026 году",
+          "year": 2026,
+          "format": "pdf",
+          "locator": "стр. 2, ФФМиЕН, 01.03.02"
+        },
+        {
+          "category": "rules",
+          "url": "https://admission.rudn.ru/pk/2026/adm_rules/bs/pp_bsm_26.pdf",
+          "title": "Правила приёма",
+          "year": 2026,
+          "format": "pdf"
+        }
+      ]
+    },
+    {
+      "university": "РАНХиГС",
+      "slug": "ranepa",
+      "programs": 1,
+      "indicators": 13,
+      "verified": 0,
+      "missing": 10,
+      "review": 3,
+      "conflicts": 0,
+      "coverage": 0,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "exams",
+          "url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf.pdf",
+          "title": "Перечень вступительных испытаний 2026",
+          "year": 2026,
+          "format": "pdf",
+          "locator": "09.03.03"
+        },
+        {
+          "category": "rules",
+          "url": "https://www.ranepa.ru/bakalavriat/obshchie-osnovaniya/",
+          "title": "Общие основания приёма",
+          "year": 2026,
+          "format": "html"
+        },
+        {
+          "category": "programs",
+          "url": "https://www.ranepa.ru/bakalavriat/",
+          "title": "Бакалавриат и специалитет",
+          "year": 2026,
+          "format": "html"
+        }
+      ]
+    },
+    {
+      "university": "МГУ",
+      "slug": "mgu",
+      "programs": 1,
+      "indicators": 13,
+      "verified": 1,
+      "missing": 10,
+      "review": 2,
+      "conflicts": 0,
+      "coverage": 8,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://www.econ.msu.ru/entrance/bachelor/2026/",
+          "title": "Приём на бакалавриат экономического факультета",
+          "year": 2026,
+          "format": "html",
+          "locator": "Экономика"
+        },
+        {
+          "category": "rules",
+          "url": "https://cpk.msu.ru/",
+          "title": "Центральная приёмная комиссия МГУ",
+          "year": 2026,
+          "format": "html"
+        }
+      ]
+    },
+    {
+      "university": "РЭУ им. Г. В. Плеханова",
+      "slug": "rea",
+      "programs": 1,
+      "indicators": 14,
+      "verified": 3,
+      "missing": 9,
+      "review": 0,
+      "conflicts": 0,
+      "coverage": 21,
+      "years": [
+        2025,
+        2026
+      ],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://www.rea.ru/~ed-program/c88bd4a72ab29c65152ad515b3d23beb",
+          "title": "Международное право и сравнительное правоведение",
+          "year": 2026,
+          "format": "html",
+          "locator": "40.03.01"
+        },
+        {
+          "category": "rules",
+          "url": "https://www.rea.ru/ru/org/managements/priem/Pages/default.aspx",
+          "title": "Приёмная комиссия",
+          "year": 2026,
+          "format": "html"
+        }
+      ]
+    }
+  ]
+}

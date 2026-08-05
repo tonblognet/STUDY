@@ -1,4 +1,28 @@
-import assert from "node:assert/strict";import test from "node:test";
-async function render(path="/"){const workerUrl=new URL("../dist/server/index.js",import.meta.url);workerUrl.searchParams.set("test",`${process.pid}-${Date.now()}`);const{default:worker}=await import(workerUrl.href);return worker.fetch(new Request(`http://localhost${path}`,{headers:{accept:"text/html"}}),{ASSETS:{fetch:async()=>new Response("Not found",{status:404})}},{waitUntil(){},passThroughOnException(){}})}
-test("server-renders branded home",async()=>{const response=await render();assert.equal(response.status,200);const html=await response.text();assert.match(html,/Поступай/);assert.match(html,/Твой маршрут/);assert.doesNotMatch(html,/codex-preview/)});
-test("server-renders catalog",async()=>{const response=await render("/programs");assert.equal(response.status,200);const html=await response.text();assert.match(html,/Каталог программ/);assert.match(html,/Программная инженерия/)});
+import assert from "node:assert/strict";
+import test from "node:test";
+
+async function render(path = "/") {
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
+  const { default: worker } = await import(workerUrl.href);
+  return worker.fetch(new Request(`http://localhost${path}`, { headers: { accept: "text/html" } }), { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } }, { waitUntil() {}, passThroughOnException() {} });
+}
+
+test("server-renders trust-first home", async () => {
+  const response = await render();
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Поступай/);
+  assert.match(html, /Проверьте, что сдавать/);
+  assert.match(html, /официальные источники/);
+  assert.doesNotMatch(html, /codex-preview/);
+});
+
+test("server-renders trusted catalog", async () => {
+  const response = await render("/programs");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Каталог программ/);
+  assert.match(html, /Экономика/);
+  assert.match(html, /Годы различаются/);
+});

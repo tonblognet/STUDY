@@ -65,6 +65,15 @@ enum SourceType {
   MANUAL
 }
 
+enum DataValueStatus {
+  VERIFIED
+  NOT_PUBLISHED
+  PENDING_REVIEW
+  OUTDATED
+  CONFLICTING_SOURCES
+  NOT_APPLICABLE
+}
+
 model User {
   id            String         @id @default(cuid())
   email         String         @unique
@@ -82,6 +91,7 @@ model User {
   comparisons   Comparison[]
   notifications Notification[]
   auditLogs     AuditLog[]     @relation("AuditActor")
+  scoreProfiles ScoreProfile[]
 }
 
 model Account {
@@ -205,6 +215,7 @@ model EducationProgram {
   favorites       Favorite[]
   comparisonItems ComparisonItem[]
   sources         DataSource[]
+  metricValues    MetricValue[]
 
   @@unique([universityId, code, level, form])
   @@index([status, level, form])
@@ -239,6 +250,7 @@ model ExamSubject {
   slug         String                @unique
   name         String
   requirements EntranceRequirement[]
+  scores       ExamScore[]
 }
 
 model EntranceRequirement {
@@ -304,8 +316,86 @@ model DataSource {
   university    University?       @relation(fields: [universityId], references: [id], onDelete: Cascade)
   program       EducationProgram? @relation(fields: [programId], references: [id], onDelete: Cascade)
   parsingJobs   ParsingJob[]
+  artifacts     SourceArtifact[]
 
   @@index([active, lastCheckedAt])
+}
+
+model SourceArtifact {
+  id             String        @id @default(cuid())
+  sourceId       String
+  url            String
+  documentTitle  String?
+  mimeType       String
+  checksumSha256 String
+  localCachePath String?
+  httpHeaders    Json?
+  retrievedAt    DateTime
+  year           Int?
+  category       String?
+  source         DataSource    @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  metricValues   MetricValue[]
+
+  @@unique([url, checksumSha256])
+  @@index([sourceId, retrievedAt])
+}
+
+model MetricValue {
+  id                  String           @id @default(cuid())
+  programId           String
+  artifactId          String?
+  metricKey           String
+  competitionType     String?
+  year                Int
+  value               Json?
+  status              DataValueStatus
+  sourceUrl           String
+  sourceName          String
+  sourceDocumentTitle String?
+  sourcePage          Int?
+  sourceSheet         String?
+  sourceRange         String?
+  sourceSection       String?
+  retrievedAt         DateTime
+  checkedAt           DateTime
+  checkedBy           String
+  nextReviewAt        DateTime?
+  note                String?
+  version             Int              @default(1)
+  supersedesId        String?
+  createdAt           DateTime         @default(now())
+  program             EducationProgram @relation(fields: [programId], references: [id], onDelete: Cascade)
+  artifact            SourceArtifact?  @relation(fields: [artifactId], references: [id], onDelete: SetNull)
+  supersedes          MetricValue?     @relation("MetricHistory", fields: [supersedesId], references: [id], onDelete: SetNull)
+  newerVersions       MetricValue[]    @relation("MetricHistory")
+
+  @@unique([programId, metricKey, year, competitionType, version])
+  @@index([programId, year, metricKey])
+  @@index([status, checkedAt])
+}
+
+model ScoreProfile {
+  id                     String      @id @default(cuid())
+  userId                 String
+  name                   String
+  individualAchievements Int         @default(0)
+  dviScore               Int?
+  createdAt              DateTime    @default(now())
+  updatedAt              DateTime    @updatedAt
+  user                   User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scores                 ExamScore[]
+
+  @@index([userId, updatedAt])
+}
+
+model ExamScore {
+  profileId String
+  subjectId String
+  score     Int
+  profile   ScoreProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  subject   ExamSubject  @relation(fields: [subjectId], references: [id], onDelete: Restrict)
+
+  @@id([profileId, subjectId])
 }
 
 model ParsingJob {
