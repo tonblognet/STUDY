@@ -29,4 +29,4 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.trust-card:hover{transform:none}}
 
 .decision-content,.decision-section{min-width:0}
-@media(max-width:720px){.mobile-action-bar .saved-actions{flex:0 0 auto}.mobile-action-bar .saved-actions button{min-width:44px;min-height:44px;padding:9px}.mobile-action-bar>a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding-inline:8px}}
+@media(max-width:720px){.mobile-action-bar .saved-actions{flex:0 0 auto}.mobile-action-bar .saved-actions button{min-width:44px;min-height:44px;padding:9px}.mobile-action-bar>a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding-inline:8px;white-space:nowrap}}
