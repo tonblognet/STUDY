@@ -1,9 +1,17 @@
 import { DATA_STATUS_LABELS } from "@/lib/admissions/constants";
 import { programs, universities } from "@/lib/data";
+import { requireChatGPTUser } from "@/app/chatgpt-auth";
+import { isAdminEmail } from "@/lib/admin-access";
+import Link from "next/link";
 
 export const metadata = { title: "Редакторский контроль данных" };
+export const dynamic = "force-dynamic";
 
-export default function AdminPage() {
+export default async function AdminPage() {
+  const user = await requireChatGPTUser("/admin");
+  if (!isAdminEmail(user.email)) {
+    return <div className="empty-page access-denied"><span>Доступ ограничен</span><h1>Редакторская зона защищена</h1><p>Аккаунт {user.email} успешно опознан, но не входит в серверный список редакторов.</p><Link href="/" className="button button-primary">Вернуться на главную</Link></div>;
+  }
   const verified = programs.filter((program) => program.trust.status === "verified").length;
   const review = programs.length - verified;
   const indicators = programs.flatMap((program) => [program.passingScoreValue, program.budgetPlacesValue, program.paidPlacesValue, program.tuitionValue]);

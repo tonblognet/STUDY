@@ -1,2 +1,5 @@
-import {NextResponse} from "next/server";
-export async function POST(request:Request){const body=await request.json().catch(()=>null);if(!body?.email||!body?.password)return NextResponse.json({error:"Заполните все поля"},{status:400});if(body.password.length<8)return NextResponse.json({error:"Неверная почта или пароль"},{status:401});const response=NextResponse.json({ok:true});response.cookies.set("postupai_session",body.email==="plus@postupai.ru"?"demo-plus-session":"demo-user-session",{httpOnly:true,sameSite:"lax",secure:process.env.NODE_ENV==="production",path:"/",maxAge:60*60*24*7});return response;}
+import { NextResponse } from "next/server";
+
+export async function POST() {
+  return NextResponse.json({ error: "Парольный демо-вход отключён. Используйте защищённый вход на странице /login." }, { status: 410 });
+}

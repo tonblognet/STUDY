@@ -1,2 +1,5 @@
-import {NextResponse} from "next/server";
-export async function POST(request:Request){const body=await request.json().catch(()=>null);if(!body?.email||!body?.name||typeof body.password!=="string"||body.password.length<8)return NextResponse.json({error:"Проверьте поля: пароль — не менее 8 символов"},{status:400});const response=NextResponse.json({ok:true,verificationRequired:true});response.cookies.set("postupai_session","demo-new-user-session",{httpOnly:true,sameSite:"lax",secure:process.env.NODE_ENV==="production",path:"/",maxAge:60*60*24});return response;}
+import { NextResponse } from "next/server";
+
+export async function POST() {
+  return NextResponse.json({ error: "Парольная демо-регистрация отключена. Используйте защищённый вход на странице /register." }, { status: 410 });
+}
