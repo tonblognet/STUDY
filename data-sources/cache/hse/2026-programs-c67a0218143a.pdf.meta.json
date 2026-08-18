@@ -1,0 +1,34 @@
+{
+  "sourceUrl": "https://www.hse.ru/mirror/pubs/share/1162982432.pdf",
+  "title": "Сводная информация по программам бакалавриата и специалитета",
+  "year": 2026,
+  "university": "hse",
+  "category": "programs",
+  "retrievedAt": "2026-08-18T22:32:32.442Z",
+  "status": 200,
+  "headers": {
+    "accept-ranges": "bytes",
+    "cache-control": "max-age=10800",
+    "connection": "keep-alive",
+    "content-disposition": "inline; filename*=UTF-8''%D0%91%D1%83%D0%BA%D0%BB%D0%B5%D1%82%20%D0%9D%D0%98%D0%A3%20%D0%92%D0%A8%D0%AD%20%D0%91%D0%B0%D0%BA%2B%D0%A1%D0%BF%D0%B5%D1%86%202026%20v2%20%D0%9C%D0%B8%D0%BD%D0%B8.pdf",
+    "content-length": "968341",
+    "content-type": "application/pdf",
+    "date": "Tue, 18 Aug 2026 22:32:32 GMT",
+    "etag": "\"6a15b8cf-ec695\"",
+    "expires": "Wed, 19 Aug 2026 01:32:32 GMT",
+    "keep-alive": "timeout=15",
+    "last-modified": "Tue, 26 May 2026 15:14:23 GMT",
+    "server": "QRATOR",
+    "x-ireland": "file-service@1.3.1",
+    "x-ireland-cache-status": "undefined",
+    "x-ireland-response-time": "0.002",
+    "x-source": "X-Files"
+  },
+  "checksumSha256": "c67a0218143aafca03374a99722100614bf631ddb6f95ed7d2e0b66eaab87c6e",
+  "mimeType": "application/pdf",
+  "robots": {
+    "allowed": true,
+    "robotsUrl": "https://www.hse.ru/robots.txt",
+    "note": "проверено правил: 45"
+  }
+}

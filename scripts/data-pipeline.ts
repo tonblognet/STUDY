@@ -15,6 +15,11 @@ const year = Number(option("year") ?? 2026);
 const dryRun = args.includes("--dry-run");
 const selected = university ? universityAdapters.filter((adapter) => adapter.slug === university) : universityAdapters;
 const cacheRoot = join(process.cwd(), "data-sources", "cache");
+const PRIVATE_RESPONSE_HEADERS = new Set(["authorization", "cookie", "proxy-authenticate", "proxy-authorization", "set-cookie", "www-authenticate"]);
+
+function safeResponseHeaders(headers: Headers) {
+  return Object.fromEntries([...headers].filter(([name]) => !PRIVATE_RESPONSE_HEADERS.has(name.toLowerCase())));
+}
 
 if (university && selected.length === 0) throw new Error(`Неизвестный адаптер: ${university}`);
 
@@ -104,7 +109,7 @@ async function fetchSources() {
       const filename = `${source.year}-${source.category}-${checksum.slice(0, 12)}${extension}`;
       const file = join(directory, filename);
       await writeFile(file, buffer);
-      await writeFile(`${file}.meta.json`, JSON.stringify({ sourceUrl: source.url, title: source.title, year: source.year, university: adapter.slug, category: source.category, retrievedAt: new Date().toISOString(), status: response.status, headers: Object.fromEntries(response.headers), checksumSha256: checksum, mimeType: response.headers.get("content-type"), robots }, null, 2));
+      await writeFile(`${file}.meta.json`, JSON.stringify({ sourceUrl: source.url, title: source.title, year: source.year, university: adapter.slug, category: source.category, retrievedAt: new Date().toISOString(), status: response.status, headers: safeResponseHeaders(response.headers), checksumSha256: checksum, mimeType: response.headers.get("content-type"), robots }, null, 2));
       console.log(`${adapter.slug}: ${relative(process.cwd(), file)} (${buffer.length} bytes)`);
       await new Promise((resolve) => setTimeout(resolve, 750));
     }
@@ -139,11 +144,12 @@ async function validate() {
 
 async function importPrograms() {
   await validate();
-  if (dryRun) { console.log(`DRY RUN: ${programs.length} программ прошли проверку; база не изменена.`); return; }
+  const targetPrograms = programs.filter((item) => !university || item.universitySlug === university);
+  if (dryRun) { console.log(`DRY RUN: ${targetPrograms.length} программ прошли проверку; база не изменена.`); return; }
   if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL не задан. Сайт использует проверенный статический снимок; для импорта в PostgreSQL задайте DATABASE_URL.");
   const prisma = new PrismaClient();
   try {
-    for (const program of programs.filter((item) => !university || item.universitySlug === university)) {
+    for (const program of targetPrograms) {
       const universityRecord = universities.find((item) => item.slug === program.universitySlug)!;
       const universityRow = await prisma.university.upsert({ where: { slug: universityRecord.slug }, update: { name: universityRecord.name, shortName: universityRecord.shortName, websiteUrl: universityRecord.website, status: "PUBLISHED" }, create: { slug: universityRecord.slug, name: universityRecord.name, shortName: universityRecord.shortName, websiteUrl: universityRecord.website, status: "PUBLISHED" } });
       const row = await prisma.educationProgram.upsert({ where: { slug: program.slug }, update: { name: program.title, code: program.code, level: program.level === "Бакалавриат" ? "BACHELOR" : "SPECIALIST", form: program.form === "Очная" ? "FULL_TIME" : program.form === "Очно-заочная" ? "PART_TIME" : "EXTRAMURAL", durationMonths: Number.parseInt(program.duration) * 12, status: "PUBLISHED" }, create: { universityId: universityRow.id, slug: program.slug, code: program.code, name: program.title, level: program.level === "Бакалавриат" ? "BACHELOR" : "SPECIALIST", form: program.form === "Очная" ? "FULL_TIME" : program.form === "Очно-заочная" ? "PART_TIME" : "EXTRAMURAL", durationMonths: Number.parseInt(program.duration) * 12, status: "PUBLISHED", publishedAt: new Date() } });

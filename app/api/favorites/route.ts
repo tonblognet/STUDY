@@ -1,2 +1,8 @@
-import {cookies} from "next/headers";import {NextResponse} from "next/server";import {programs} from "@/lib/data";
-export async function POST(request:Request){const body=await request.json().catch(()=>null);if(!body||typeof body.programId!=="string"||typeof body.active!=="boolean")return NextResponse.json({error:"Invalid payload"},{status:400});if(!programs.some(p=>p.id===body.programId))return NextResponse.json({error:"Program not found"},{status:404});const jar=await cookies();const current=new Set((jar.get("postupai_favorites")?.value??"").split(",").filter(Boolean));if(body.active)current.add(body.programId);else current.delete(body.programId);const response=NextResponse.json({ok:true,count:current.size});response.cookies.set("postupai_favorites",[...current].join(","),{httpOnly:true,sameSite:"lax",secure:process.env.NODE_ENV==="production",path:"/",maxAge:60*60*24*365});return response;}
+import { NextResponse } from "next/server";
+
+export function POST() {
+  return NextResponse.json(
+    { error: "legacy_endpoint", replacement: "/api/user-state" },
+    { status: 410 },
+  );
+}

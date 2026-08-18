@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { useMemo, useState } from "react";
 import { EXAM_SUBJECTS, MATCH_LABELS } from "@/lib/admissions/constants";
 import { groupMatches } from "@/lib/admissions/matching";
-import { readScoreSets, writeScoreSets } from "@/lib/admissions/storage";
+import { useUserState } from "@/components/user-state-provider";
 import type { ScoreSet } from "@/lib/admissions/types";
 import type { Program } from "@/lib/data";
 
@@ -13,12 +13,7 @@ const makeInitial = (): ScoreSet => ({ id: "draft", name: "Мой набор", s
 export function ExamMatcher({ programs, compact = false }: { programs: Program[]; compact?: boolean }) {
   const [profile, setProfile] = useState<ScoreSet>(makeInitial);
   const [selected, setSelected] = useState<string[]>(["Русский язык", "Математика", "Информатика"]);
-  const savedSnapshot = useSyncExternalStore(
-    (onChange) => { window.addEventListener("postupai:storage", onChange); return () => window.removeEventListener("postupai:storage", onChange); },
-    () => JSON.stringify(readScoreSets()),
-    () => "[]",
-  );
-  const saved = useMemo(() => JSON.parse(savedSnapshot) as ScoreSet[], [savedSnapshot]);
+  const { scoreSets: saved, saveScoreSet, removeScoreSet } = useUserState();
   const [showResults, setShowResults] = useState(false);
   const results = useMemo(() => groupMatches(programs, profile), [programs, profile]);
 
@@ -32,8 +27,7 @@ export function ExamMatcher({ programs, compact = false }: { programs: Program[]
 
   function saveProfile() {
     const item = { ...profile, id: profile.id === "draft" ? crypto.randomUUID() : profile.id, name: profile.name.trim() || `Набор ${saved.length + 1}`, updatedAt: new Date().toISOString() };
-    const next = [...saved.filter((existing) => existing.id !== item.id), item];
-    writeScoreSets(next);
+    saveScoreSet(item);
     setProfile(item);
   }
 
@@ -45,7 +39,7 @@ export function ExamMatcher({ programs, compact = false }: { programs: Program[]
 
   const visibleResults = compact ? results.slice(0, 3) : results;
   return <section className={`exam-matcher ${compact ? "compact" : ""}`} aria-labelledby="matcher-title">
-    <div className="matcher-head"><div><span className="overline">Подбор без магического процента</span><h2 id="matcher-title">Введите свои предметы и баллы</h2><p>Алгоритм проверяет минимумы, альтернативные предметы, ДВИ и сравнивает сумму только с опубликованным итоговым баллом.</p></div>{saved.length > 0 && <label>Сохранённые наборы<select value={profile.id} onChange={(event) => { const item = saved.find((entry) => entry.id === event.target.value); if (item) loadProfile(item); }}><option value="draft">Новый набор</option>{saved.map((item) => <option value={item.id} key={item.id}>{item.name}</option>)}</select></label>}</div>
+    <div className="matcher-head"><div><span className="overline">Подбор без магического процента</span><h2 id="matcher-title">Введите свои предметы и баллы</h2><p>Алгоритм проверяет минимумы, альтернативные предметы, ДВИ и сравнивает сумму только с опубликованным итоговым баллом.</p></div>{saved.length > 0 && <div className="saved-score-picker"><label>Сохранённые наборы<select value={profile.id} onChange={(event) => { const item = saved.find((entry) => entry.id === event.target.value); if (item) loadProfile(item); }}><option value="draft">Новый набор</option>{saved.map((item) => <option value={item.id} key={item.id}>{item.name}</option>)}</select></label>{profile.id !== "draft" && <button type="button" className="text-button" onClick={() => { removeScoreSet(profile.id); setProfile(makeInitial()); }}>Удалить набор</button>}</div>}</div>
     <div className="subject-picker" aria-label="Выберите предметы">{EXAM_SUBJECTS.map((subject) => <label className={selected.includes(subject) ? "selected" : ""} key={subject}><input type="checkbox" checked={selected.includes(subject)} onChange={() => toggleSubject(subject)}/><span>{subject}</span></label>)}</div>
     <div className="score-inputs">{selected.map((subject) => <label key={subject}><span>{subject}</span><input type="number" min="0" max="100" inputMode="numeric" value={profile.scores[subject] ?? 0} onChange={(event) => setScore(subject, Number(event.target.value))}/><small>из 100</small></label>)}</div>
     <div className="extra-scores"><label>Индивидуальные достижения<input type="number" min="0" max="10" value={profile.individualAchievements} onChange={(event) => setProfile((current) => ({ ...current, individualAchievements: Math.max(0, Math.min(10, Number(event.target.value) || 0)) }))}/></label><label>ДВИ, если сдаёте<input type="number" min="0" max="100" value={profile.dviScore ?? ""} placeholder="не введён" onChange={(event) => setProfile((current) => ({ ...current, dviScore: event.target.value === "" ? undefined : Number(event.target.value) }))}/></label></div>

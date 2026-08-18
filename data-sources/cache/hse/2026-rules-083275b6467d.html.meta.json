@@ -1,0 +1,27 @@
+{
+  "sourceUrl": "https://www.hse.ru/docs/1019487685.html",
+  "title": "Правила приёма",
+  "year": 2026,
+  "university": "hse",
+  "category": "rules",
+  "retrievedAt": "2026-08-18T22:32:35.053Z",
+  "status": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Tue, 18 Aug 2026 22:32:35 GMT",
+    "etag": "W/\"12dab-cdtNKgqT2+EcK+IHWaR1XQ1juRY\"",
+    "keep-alive": "timeout=15",
+    "server": "QRATOR",
+    "transfer-encoding": "chunked",
+    "vary": "x-tsn, x-requested-with"
+  },
+  "checksumSha256": "083275b6467ddb2a543bf09bfb0318ad5d89e52972fd53dbb0e6d5f0ae987b49",
+  "mimeType": "text/html; charset=utf-8",
+  "robots": {
+    "allowed": true,
+    "robotsUrl": "https://www.hse.ru/robots.txt",
+    "note": "проверено правил: 45"
+  }
+}

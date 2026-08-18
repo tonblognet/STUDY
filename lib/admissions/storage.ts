@@ -1,4 +1,5 @@
 import type { ScoreSet } from "./types";
+import type { UserState } from "@/lib/user-state/types";
 
 export const STORAGE_KEYS = {
   catalogView: "postupai:catalog-view",
@@ -35,4 +36,26 @@ export function readScoreSets(): ScoreSet[] {
 export function writeScoreSets(value: ScoreSet[]) {
   window.localStorage.setItem(STORAGE_KEYS.scoreSets, JSON.stringify(value));
   window.dispatchEvent(new CustomEvent("postupai:storage", { detail: { key: STORAGE_KEYS.scoreSets } }));
+}
+
+export function readLocalUserState(): UserState {
+  return {
+    favoriteIds: readStoredList(STORAGE_KEYS.favorites),
+    comparisonIds: readStoredList(STORAGE_KEYS.comparison),
+    scoreSets: readScoreSets(),
+  };
+}
+
+export function writeLocalUserState(state: UserState) {
+  writeStoredList(STORAGE_KEYS.favorites, state.favoriteIds);
+  writeStoredList(STORAGE_KEYS.comparison, state.comparisonIds);
+  writeScoreSets(state.scoreSets);
+}
+
+export function clearLocalUserState() {
+  if (typeof window === "undefined") return;
+  window.localStorage.removeItem(STORAGE_KEYS.favorites);
+  window.localStorage.removeItem(STORAGE_KEYS.comparison);
+  window.localStorage.removeItem(STORAGE_KEYS.scoreSets);
+  window.dispatchEvent(new CustomEvent("postupai:storage", { detail: { key: "user-state" } }));
 }

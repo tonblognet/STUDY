@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { UserStateProvider } from "@/components/user-state-provider";
 import { getSiteBaseUrl } from "@/lib/site-url";
 import "./globals.css";
 
@@ -23,5 +24,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="ru" suppressHydrationWarning><body className={manrope.variable}><Header /><main>{children}</main><Footer /></body></html>;
+  return <html lang="ru" suppressHydrationWarning><body className={manrope.variable}><UserStateProvider><Header /><main>{children}</main><Footer /></UserStateProvider></body></html>;
 }

@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useSyncExternalStore } from "react";
+import { useMemo } from "react";
 import { DataStatusBadge } from "@/components/data-status";
-import { STORAGE_KEYS, readStoredList, writeStoredList } from "@/lib/admissions/storage";
+import { useUserState } from "@/components/user-state-provider";
 import type { Program } from "@/lib/data";
 import { formatPrice } from "@/lib/data";
 
@@ -19,16 +19,10 @@ const rows: Array<{ label: string; render: (program: Program) => React.ReactNode
 ];
 
 export function ComparisonClient({ programs }: { programs: Program[] }) {
-  const fallback = programs.slice(0, 3).map((program) => program.id);
-  const storedSnapshot = useSyncExternalStore(
-    (onChange) => { window.addEventListener("postupai:storage", onChange); return () => window.removeEventListener("postupai:storage", onChange); },
-    () => JSON.stringify(readStoredList(STORAGE_KEYS.comparison)),
-    () => "[]",
-  );
-  const stored = JSON.parse(storedSnapshot) as string[];
-  const ids = stored.length ? stored : fallback;
-  const selected = useMemo(() => ids.map((id) => programs.find((program) => program.id === id)).filter((program): program is Program => Boolean(program)), [ids, programs]);
-  function remove(id: string) { writeStoredList(STORAGE_KEYS.comparison, ids.filter((item) => item !== id)); }
+  const { comparisonIds, removeFromComparison, storageMode } = useUserState();
+  const selected = useMemo(() => comparisonIds.map((id) => programs.find((program) => program.id === id)).filter((program): program is Program => Boolean(program)), [comparisonIds, programs]);
+
+  if (storageMode === "loading") return <div className="empty-page" role="status"><span>Загружаем сравнение</span><h1>Проверяем сохранённые программы…</h1></div>;
 
   if (!selected.length) return <div className="empty-page"><span>Сравнение пусто</span><h1>Добавьте программы из каталога</h1><p>В таблицу попадут только выбранные вами программы; неизвестные значения останутся неизвестными.</p><Link className="button button-primary" href="/programs">Открыть каталог</Link></div>;
 
@@ -36,7 +30,7 @@ export function ComparisonClient({ programs }: { programs: Program[] }) {
     <header className="compare-head"><span className="overline">Сравнение по подтверждённым значениям</span><h1>Сравните условия, а не рекламу</h1><p>Названия и подписи остаются видимыми при прокрутке. Жёлтая рамка отмечает различия, а статус объясняет качество значения.</p></header>
     <div className="comparison-wrap" tabIndex={0} aria-label="Сравнение программ. Доступна горизонтальная и вертикальная прокрутка.">
       <table className="comparison-table">
-        <thead><tr><th>Показатель</th>{selected.map((program) => <th key={program.id}><button type="button" onClick={() => remove(program.id)} aria-label={`Удалить ${program.title} из сравнения`}>×</button><Link href={`/programs/${program.slug}`}>{program.title}</Link><span>{program.universityShort} · {program.code}</span></th>)}</tr></thead>
+        <thead><tr><th>Показатель</th>{selected.map((program) => <th key={program.id}><button type="button" onClick={() => removeFromComparison(program.id)} aria-label={`Удалить ${program.title} из сравнения`}>×</button><Link href={`/programs/${program.slug}`}>{program.title}</Link><span>{program.universityShort} · {program.code}</span></th>)}</tr></thead>
         <tbody>{rows.map((row) => {
           const values = selected.map(row.difference);
           const differs = new Set(values.map(String)).size > 1;

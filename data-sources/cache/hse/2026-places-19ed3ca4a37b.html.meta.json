@@ -1,0 +1,34 @@
+{
+  "sourceUrl": "https://ba.hse.ru/kolmest",
+  "title": "Количество мест для приёма",
+  "year": 2026,
+  "university": "hse",
+  "category": "places",
+  "retrievedAt": "2026-08-18T22:32:34.043Z",
+  "status": 200,
+  "headers": {
+    "cache-control": "max-age=900",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Tue, 18 Aug 2026 22:32:33 GMT",
+    "etag": "W/\"e08dec6a9e569a161cba5f79fc5d20fb8d58ebe23bd267f63b54dd313405cbd57ab9607742556001480d8ca6b8b74ccbe331a2a19e3fffa7a11914201571b780\"",
+    "expires": "Tue, 18 Aug 2026 22:47:33 GMT",
+    "keep-alive": "timeout=15",
+    "last-modified": "Mon, 17 Aug 2026 15:04:08 GMT",
+    "server": "QRATOR",
+    "strict-transport-security": "max-age=15552000",
+    "transfer-encoding": "chunked",
+    "x-accel-expires": "900",
+    "x-ireland-cache-status": "HIT",
+    "x-lng": "NL",
+    "x-xss-protection": "1; mode=block; report=https://www.hse.ru/n/api/xss/report"
+  },
+  "checksumSha256": "19ed3ca4a37b1cad7231cfb21c31792adb5c6215b171e57ae987a9ac92687a8a",
+  "mimeType": "text/html; charset=utf-8",
+  "robots": {
+    "allowed": true,
+    "robotsUrl": "https://ba.hse.ru/robots.txt",
+    "note": "проверено правил: 45"
+  }
+}

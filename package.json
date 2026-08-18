@@ -22,11 +22,13 @@
     "data:parse": "tsx scripts/data-pipeline.ts parse",
     "data:validate": "tsx scripts/data-pipeline.ts validate",
     "data:import": "tsx scripts/data-pipeline.ts import",
-    "data:report": "tsx scripts/data-pipeline.ts report"
+    "data:report": "tsx scripts/data-pipeline.ts report",
+    "db:d1:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@prisma/client": "6.18.0",
     "bcryptjs": "3.0.2",
+    "drizzle-orm": "0.45.2",
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6",
@@ -42,6 +44,7 @@
     "@vitejs/plugin-rsc": "0.5.26",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.6",
+    "drizzle-kit": "0.31.10",
     "react-server-dom-webpack": "19.2.6",
     "tailwindcss": "4.2.1",
     "prisma": "6.18.0",

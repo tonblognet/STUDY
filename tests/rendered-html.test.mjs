@@ -5,14 +5,14 @@ async function render(path = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
-  return worker.fetch(new Request(`http://localhost${path}`, { headers: { accept: "text/html" } }), { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } }, { waitUntil() {}, passThroughOnException() {} });
+  return worker.fetch(new Request(`http://localhost${path}`, { headers: { accept: "text/html" } }), { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) }, DB: undefined }, { waitUntil() {}, passThroughOnException() {} });
 }
 
 async function request(path, init = {}) {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}-${Math.random()}`);
   const { default: worker } = await import(workerUrl.href);
-  return worker.fetch(new Request(`http://localhost${path}`, init), { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } }, { waitUntil() {}, passThroughOnException() {} });
+  return worker.fetch(new Request(`http://localhost${path}`, init), { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) }, DB: undefined }, { waitUntil() {}, passThroughOnException() {} });
 }
 
 test("server-renders trust-first home", async () => {
@@ -45,4 +45,10 @@ test("checkout requires a server-authenticated user", async () => {
   assert.equal(response.status, 401);
   const payload = await response.json();
   assert.match(payload.error, /войдите/i);
+});
+
+test("persistent user state requires a server-authenticated user", async () => {
+  const response = await request("/api/user-state");
+  assert.equal(response.status, 401);
+  assert.deepEqual(await response.json(), { error: "authentication_required" });
 });
