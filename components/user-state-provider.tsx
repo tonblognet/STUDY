@@ -4,6 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import type { ScoreSet } from "@/lib/admissions/types";
 import { clearLocalUserState, readLocalUserState, writeLocalUserState } from "@/lib/admissions/storage";
 import { mergeUserStates, userStatesEqual } from "@/lib/user-state/merge";
+import { IS_GITHUB_PAGES } from "@/lib/runtime-mode";
 import { EMPTY_USER_STATE, type UserState } from "@/lib/user-state/types";
 
 type StorageMode = "loading" | "local" | "account";
@@ -42,6 +43,12 @@ export function UserStateProvider({ children }: { children: React.ReactNode }) {
       if (!active) return;
       const local = readLocalUserState();
       applyState(local);
+      if (IS_GITHUB_PAGES) {
+        modeRef.current = "local";
+        setStorageMode("local");
+        setError(null);
+        return;
+      }
       try {
         const response = await fetch("/api/user-state", { cache: "no-store" });
         if (!active) return;

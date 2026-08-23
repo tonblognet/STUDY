@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { fullSitePath, IS_GITHUB_PAGES } from "@/lib/runtime-mode";
 
 const free = ["Поиск и подбор по баллам", "Источники, год и статус данных", "До 3 программ в сравнении", "Локальные профили ЕГЭ и избранное"];
 const season = ["Полные исторические показатели", "Расширенное сравнение", "Несколько наборов ЕГЭ", "Доступ на одну приёмную кампанию"];
@@ -12,6 +13,10 @@ export function PricingClient() {
   const [loading, setLoading] = useState(false);
 
   async function checkout() {
+    if (IS_GITHUB_PAGES) {
+      window.location.assign(fullSitePath("/pricing"));
+      return;
+    }
     setLoading(true);
     setMessage("Проверяем готовность защищённой оплаты…");
     try {

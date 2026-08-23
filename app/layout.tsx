@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const metadataBase = await getSiteBaseUrl();
   const title = "Поступай — проверенные данные о поступлении";
   const description = "Предметы ЕГЭ, проходные баллы, места и стоимость с годом, статусом и ссылкой на официальный источник.";
-  const image = new URL("/og.png", metadataBase).toString();
+  const image = new URL("og.png", metadataBase).toString();
   return {
     metadataBase,
     title: { default: title, template: "%s · Поступай" },

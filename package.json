@@ -8,11 +8,12 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
+    "pages:export": "node scripts/export-github-pages.mjs",
     "start": "vinext start",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:integration": "node --test tests/rendered-html.test.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern outputs --ignore-pattern tmp",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern pages-dist --ignore-pattern .next --ignore-pattern outputs --ignore-pattern tmp",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate deploy",
     "db:seed": "tsx prisma/seed.ts",

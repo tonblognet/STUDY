@@ -1,4 +1,5 @@
 import type { Program } from "@/lib/data";
+import Link from "next/link";
 
 export function HomeDataOverview({ programs }: { programs: Program[] }) {
   const average = programs.length ? Math.round(programs.reduce((sum, program) => sum + program.trust.completeness, 0) / programs.length) : 0;
@@ -12,6 +13,6 @@ export function HomeDataOverview({ programs }: { programs: Program[] }) {
     <figure><figcaption className="sr-only">Полнота карточек программ в процентах</figcaption><div className="coverage-bars" role="img" aria-label={programs.map((program) => `${program.universityShort}: ${program.trust.completeness}%`).join("; ")}>
       {programs.map((program) => <div className="coverage-row" key={program.id}><span>{program.universityShort}</span><div><i style={{ width: `${program.trust.completeness}%` }} /></div><b>{program.trust.completeness}%</b></div>)}
     </div></figure>
-    <a href="/methodology">Как считается полнота и что означает статус →</a>
+    <Link href="/methodology">Как считается полнота и что означает статус →</Link>
   </section>;
 }
