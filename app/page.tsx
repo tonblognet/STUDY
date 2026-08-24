@@ -1,36 +1,196 @@
-﻿import Link from "next/link";
-import { ExamMatcher } from "@/components/exam-matcher";
-import { DataStatusBadge } from "@/components/data-status";
-import { HomeDataOverview } from "@/components/home-data-overview";
-import { programs, universities } from "@/lib/data";
+import Link from "next/link";
+import { HeroDataViz } from "@/components/hero-data-viz";
+import { programs, universities, formatPrice } from "@/lib/data";
 
-function popularDirections() {
-  const groups = new Map<string, typeof programs>();
-  for (const program of programs) {
-    const key = program.tags[0] ?? program.title;
-    groups.set(key, [...(groups.get(key) ?? []), program]);
-  }
-  return [...groups.entries()].map(([name, items]) => {
-    const prices = items.map((item) => item.tuition).filter((value): value is number => value !== null);
-    const scores = items.map((item) => item.passingScore).filter((value): value is number => value !== null);
-    return {
-      name,
-      programs: items.length,
-      universities: new Set(items.map((item) => item.universitySlug)).size,
-      price: prices.length ? `${new Intl.NumberFormat("ru-RU").format(Math.min(...prices))}–${new Intl.NumberFormat("ru-RU").format(Math.max(...prices))} ₽` : "не опубликована",
-      score: scores.length ? Math.round(scores.reduce((sum, value) => sum + value, 0) / scores.length) : null,
-    };
-  }).sort((a, b) => b.programs - a.programs).slice(0, 4);
-}
 export default function HomePage() {
-  const directions = popularDirections();
-  const verified = programs.filter((program) => program.trust.status === "verified").length;
-  return <div>
-    <section className="trust-home-hero"><div className="container trust-home-grid"><div><span className="overline">Приёмная кампания 2026 · официальные источники</span><h1>Проверьте, что сдавать, хватит ли баллов и сколько стоит обучение</h1><p>Мы не обещаем поступление. Сервис показывает год, статус и первоисточник каждого числа — и честно сообщает, если данных пока нет.</p><div className="hero-trust-stats"><span><b>{universities.length}</b> вузов первой очереди</span><span><b>{verified}</b> карточек с проверенными показателями</span><span><b>0</b> неизвестных значений заменено нулём</span></div><div className="hero-actions"><a href="#selection" className="button button-primary">Подобрать по ЕГЭ</a><Link href="/programs" className="button outline-button">Открыть каталог</Link></div></div><aside><div className="trust-sample"><span>Пример проверяемого значения</span><strong>291 балл</strong><p>ВШЭ · Экономика · бюджет · итог приёма 2025</p><DataStatusBadge status="verified"/><a href="https://www.hse.ru/mirror/pubs/share/1162982432.pdf" target="_blank" rel="noreferrer">Официальный документ, стр. 6 ↗</a></div></aside></div></section>
-    <HomeDataOverview programs={programs} />
-    <div className="container" id="selection"><ExamMatcher programs={programs} compact/></div>
-    <section className="direction-facts container"><header><span className="overline">Не рейтинг популярности</span><h2>Направления в текущем проверенном наборе</h2><p>Пока нет аналитики поведения пользователей, блок сгруппирован по тегу программы. Это временный и явно обозначенный алгоритм, а не статистика спроса.</p></header><div>{directions.map((direction) => <article key={direction.name}><h3>{direction.name}</h3><dl><div><dt>Программ</dt><dd>{direction.programs}</dd></div><div><dt>Вузов</dt><dd>{direction.universities}</dd></div><div><dt>Стоимость</dt><dd>{direction.price}</dd></div><div><dt>Типичный опубликованный балл</dt><dd>{direction.score ?? "недостаточно данных"}</dd></div></dl><Link href={`/programs?q=${encodeURIComponent(direction.name)}`}>Посмотреть программы →</Link></article>)}</div></section>
-    <section className="home-methodology"><div className="container"><div><span className="overline">Как принимать решение</span><h2>Три проверки вместо длинного лендинга</h2></div><ol><li><b>1</b><span><strong>Подхожу ли я?</strong>Сверьте минимумы, сумму и исторический ориентир.</span></li><li><b>2</b><span><strong>Что сдавать?</strong>Проверьте обязательные, альтернативные предметы и ДВИ.</span></li><li><b>3</b><span><strong>Сколько стоит?</strong>Смотрите цену нужного года и формы обучения.</span></li></ol><Link href="/methodology">Как мы проверяем данные →</Link></div></section>
-  </div>;
-}
+  const budgetPlaces = programs.reduce(
+    (sum, program) => sum + (program.budgetPlaces ?? 0),
+    0,
+  );
+  const chartPrograms = programs
+    .filter((program) => program.budgetPlaces !== null)
+    .slice(0, 7);
+  const subjects = [
+    ...new Set(
+      programs.flatMap((program) =>
+        program.subjects.map((subject) => subject.split(" /")[0] ?? subject),
+      ),
+    ),
+  ];
+  const comparable = programs
+    .filter(
+      (program) =>
+        program.budgetPlaces !== null || program.passingScore !== null,
+    )
+    .slice(0, 3);
 
+  return (
+    <>
+      <section className="new-hero">
+        <div className="container hero-layout">
+          <div className="hero-copy">
+            <h1>Поступление начинается с ясного выбора</h1>
+            <p>
+              Собрали программы московских вузов, требования и официальные
+              источники — чтобы вы сравнивали варианты без десятков вкладок.
+            </p>
+            <div className="hero-actions">
+              <Link href="/programs" className="button button-primary">
+                Найти свою программу
+              </Link>
+              <Link href="/#exam-match" className="button button-secondary">
+                Подобрать по ЕГЭ
+              </Link>
+            </div>
+            <dl className="hero-stats">
+              <div>
+                <dt>Вузы Москвы</dt>
+                <dd>{universities.length}</dd>
+              </div>
+              <div>
+                <dt>Программы</dt>
+                <dd>{programs.length}</dd>
+              </div>
+              <div>
+                <dt>Бюджетные места</dt>
+                <dd>{budgetPlaces}</dd>
+              </div>
+            </dl>
+            <p className="hero-footnote">
+              Только опубликованные значения текущей проверенной выборки.
+              Неподтверждённые данные не считаются.
+            </p>
+          </div>
+          <HeroDataViz
+            points={chartPrograms.map((program) => ({
+              label: program.universityShort,
+              value: program.budgetPlaces ?? 0,
+            }))}
+            subjects={
+              subjects.length
+                ? subjects
+                : ["Математика", "Русский язык", "Информатика"]
+            }
+          />
+        </div>
+      </section>
+
+      <section className="comparison-preview">
+        <div className="container">
+          <div className="section-intro">
+            <div>
+              <h2>Спокойно сравните всё важное</h2>
+              <p>
+                В одной строке — экзамены, места, исторический ориентир,
+                стоимость и точный источник.
+              </p>
+            </div>
+            <Link href="/compare" className="text-link">
+              Открыть сравнение <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+          <div
+            className="open-table"
+            role="region"
+            aria-label="Пример сравнения программ"
+            tabIndex={0}
+          >
+            <div className="open-table-row table-head">
+              <span>Вуз и программа</span>
+              <span>Форма</span>
+              <span>Бюджет</span>
+              <span>Проходной</span>
+              <span>Стоимость</span>
+              <span>Статус</span>
+            </div>
+            {comparable.map((program) => (
+              <Link
+                className="open-table-row"
+                href={`/programs/${program.slug}`}
+                key={program.id}
+              >
+                <span>
+                  <b>{program.title}</b>
+                  <small>
+                    {program.universityShort} · {program.code}
+                  </small>
+                </span>
+                <span>{program.form}</span>
+                <span>{program.budgetPlaces ?? "—"}</span>
+                <span>{program.passingScore ?? "—"}</span>
+                <span>{formatPrice(program.tuition)}</span>
+                <span className={`quality-dot ${program.trust.status}`}>
+                  {program.trust.status === "verified"
+                    ? "Проверено"
+                    : "На проверке"}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="exam-section" id="exam-match">
+        <div className="container exam-layout">
+          <div>
+            <h2>Начните с того, что уже знаете</h2>
+            <p>
+              Укажите предметы ЕГЭ и ожидаемые баллы. Мы покажем программы, где
+              набор испытаний совпадает, и отдельно отметим неопубликованные
+              условия.
+            </p>
+            <Link href="/programs" className="button button-primary">
+              Подобрать варианты
+            </Link>
+          </div>
+          <ol>
+            <li>
+              <b>01</b>
+              <span>
+                <strong>Добавьте предметы</strong>
+                <small>Обязательные и возможные альтернативы</small>
+              </span>
+            </li>
+            <li>
+              <b>02</b>
+              <span>
+                <strong>Сравните условия</strong>
+                <small>Места, стоимость и проходные баллы по годам</small>
+              </span>
+            </li>
+            <li>
+              <b>03</b>
+              <span>
+                <strong>Сохраните маршрут</strong>
+                <small>Избранное, приоритеты и дедлайны</small>
+              </span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section className="source-section">
+        <div className="container source-layout">
+          <div>
+            <h2>Каждое важное число можно проверить</h2>
+            <p>
+              Мы сохраняем год, дату проверки, документ и точное место в
+              источнике. Если университет ещё не опубликовал значение, интерфейс
+              честно показывает «нет данных».
+            </p>
+          </div>
+          <div className="source-flow">
+            <span>Официальный источник</span>
+            <i>→</i>
+            <span>Проверка и история</span>
+            <i>→</i>
+            <span>Публикация</span>
+          </div>
+          <Link href="/methodology" className="text-link">
+            Как устроены данные →
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}

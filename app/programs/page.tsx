@@ -2,9 +2,43 @@ import type { Metadata } from "next";
 import { CatalogClient } from "@/components/catalog-client";
 import { programs } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Каталог программ", description: "Проверяемые условия поступления в московские вузы: год, статус и официальный источник каждого показателя." };
+export const metadata: Metadata = {
+  title: "Программы московских вузов",
+  description:
+    "Фильтр программ по предметам ЕГЭ, баллам, местам и условиям обучения с официальными источниками.",
+};
 
-export default async function ProgramsPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
+export default async function ProgramsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
   const { q = "" } = await searchParams;
-  return <div className="page-shell container"><div className="page-title"><span className="overline">Официальные источники · 2023–2026</span><h1>Каталог программ</h1><p>Сравнивайте экзамены, проходные баллы, места и стоимость. Неполные данные обозначены явно и не считаются нулевыми.</p></div><CatalogClient items={programs} initialQuery={q}/></div>;
+  return (
+    <div className="catalog-page container">
+      <div className="catalog-title">
+        <span className="overline">Приёмная кампания 2026</span>
+        <h1>Программы московских вузов</h1>
+        <p className="editorial-lead">
+          Сравнивайте условия, фильтруйте по ВУЦ и общежитию или сразу проверьте
+          свой набор ЕГЭ по официальным требованиям.
+        </p>
+        <div className="catalog-title-facts" aria-label="О каталоге">
+          <span>
+            <b>{programs.length}</b> программа
+          </span>
+          <span>
+            <b>2026</b> год данных
+          </span>
+          <span>
+            <b>
+              {new Set(programs.map((program) => program.universitySlug)).size}
+            </b>{" "}
+            вузов первой очереди
+          </span>
+        </div>
+      </div>
+      <CatalogClient items={programs} initialQuery={q} />
+    </div>
+  );
 }

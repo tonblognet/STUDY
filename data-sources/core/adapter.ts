@@ -1,4 +1,10 @@
-export type SourceCategory = "programs" | "rules" | "places" | "tuition" | "results" | "exams";
+export type SourceCategory =
+  | "programs"
+  | "rules"
+  | "places"
+  | "tuition"
+  | "results"
+  | "exams";
 
 export type OfficialSource = {
   category: SourceCategory;
@@ -14,23 +20,39 @@ export type UniversityAdapter = {
   name: string;
   officialDomains: string[];
   sources: OfficialSource[];
-  parse: (content: string, source: OfficialSource) => { source: OfficialSource; markers: string[]; requiresReview: boolean };
+  parse: (
+    content: string,
+    source: OfficialSource,
+  ) => { source: OfficialSource; markers: string[]; requiresReview: boolean };
 };
 
-export function createUniversityAdapter(config: Omit<UniversityAdapter, "parse"> & { markers: string[] }): UniversityAdapter {
+export function createUniversityAdapter(
+  config: Omit<UniversityAdapter, "parse"> & { markers: string[] },
+): UniversityAdapter {
   return {
     ...config,
     parse(content, source) {
       const normalized = content.replace(/\s+/g, " ").toLowerCase();
-      const present = config.markers.filter((marker) => normalized.includes(marker.toLowerCase()));
+      const present = config.markers.filter((marker) =>
+        normalized.includes(marker.toLowerCase()),
+      );
       return { source, markers: present, requiresReview: present.length === 0 };
     },
   };
 }
 
-export function assertOfficialSource(adapter: UniversityAdapter, source: OfficialSource) {
+export function assertOfficialSource(
+  adapter: UniversityAdapter,
+  source: OfficialSource,
+) {
   const hostname = new URL(source.url).hostname.toLowerCase();
-  if (!adapter.officialDomains.some((domain) => hostname === domain || hostname.endsWith(`.${domain}`))) {
-    throw new Error(`${adapter.slug}: URL ${source.url} не принадлежит реестру официальных доменов`);
+  if (
+    !adapter.officialDomains.some(
+      (domain) => hostname === domain || hostname.endsWith(`.${domain}`),
+    )
+  ) {
+    throw new Error(
+      `${adapter.slug}: URL ${source.url} не принадлежит реестру официальных доменов`,
+    );
   }
 }

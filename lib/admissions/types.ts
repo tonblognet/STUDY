@@ -59,7 +59,11 @@ export type ScoreSet = {
   updatedAt: string;
 };
 
-export type MatchCategory = "high" | "competitive" | "ambitious" | "insufficient";
+export type MatchCategory =
+  | "high"
+  | "competitive"
+  | "ambitious"
+  | "insufficient";
 
 export type MatchResult = {
   category: MatchCategory;

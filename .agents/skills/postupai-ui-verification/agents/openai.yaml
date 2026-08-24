@@ -1,0 +1,4 @@
+interface:
+  display_name: "Postupai UI Verification"
+  short_description: "Verify user flows on desktop and mobile"
+  default_prompt: "Use $postupai-ui-verification to verify the changed user flows on desktop and mobile."

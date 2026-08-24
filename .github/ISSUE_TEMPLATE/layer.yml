@@ -1,0 +1,59 @@
+name: Project layer
+description: Plan and track one sequential project layer
+title: "[Layer NN] "
+labels:
+  - layer
+body:
+  - type: markdown
+    attributes:
+      value: Only one layer may be active at a time. Start it from the latest `main`.
+  - type: input
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What will be true for users when this layer is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope
+      description: Concrete deliverables for this layer.
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: Work deliberately deferred to later layers.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Testable completion criteria, including data provenance and UI verification where applicable.
+    validations:
+      required: true
+  - type: dropdown
+    id: implementer
+    attributes:
+      label: First implementer
+      options:
+        - Project owner
+        - Teammate
+    validations:
+      required: true
+  - type: checkboxes
+    id: gates
+    attributes:
+      label: Definition of done
+      options:
+        - label: CI passes
+          required: true
+        - label: Reviewer approves
+          required: true
+        - label: Handoff is updated
+          required: true
+        - label: No next-layer work is mixed into this layer
+          required: true

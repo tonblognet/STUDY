@@ -5,7 +5,11 @@ export default defineConfig({
   resolve: { alias: { "@": fileURLToPath(new URL(".", import.meta.url)) } },
   test: {
     environment: "node",
-    include: ["lib/**/*.test.ts", "components/**/*.test.tsx", "data-sources/**/*.test.ts"],
+    include: [
+      "lib/**/*.test.ts",
+      "components/**/*.test.tsx",
+      "data-sources/**/*.test.ts",
+    ],
     pool: "forks",
   },
 });

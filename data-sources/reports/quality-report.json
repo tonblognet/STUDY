@@ -12,12 +12,7 @@
       "review": 0,
       "conflicts": 0,
       "coverage": 46,
-      "years": [
-        2023,
-        2024,
-        2025,
-        2026
-      ],
+      "years": [2023, 2024, 2025, 2026],
       "sources": [
         {
           "category": "programs",
@@ -53,10 +48,7 @@
       "review": 1,
       "conflicts": 0,
       "coverage": 41,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "programs",
@@ -92,10 +84,7 @@
       "review": 2,
       "conflicts": 0,
       "coverage": 50,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "places",
@@ -124,10 +113,7 @@
       "review": 0,
       "conflicts": 0,
       "coverage": 44,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "programs",
@@ -156,10 +142,7 @@
       "review": 0,
       "conflicts": 0,
       "coverage": 58,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "programs",
@@ -195,10 +178,7 @@
       "review": 2,
       "conflicts": 0,
       "coverage": 14,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "tuition",
@@ -227,10 +207,7 @@
       "review": 2,
       "conflicts": 0,
       "coverage": 14,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "places",
@@ -259,10 +236,7 @@
       "review": 3,
       "conflicts": 0,
       "coverage": 0,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "exams",
@@ -298,10 +272,7 @@
       "review": 2,
       "conflicts": 0,
       "coverage": 8,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "programs",
@@ -330,10 +301,7 @@
       "review": 0,
       "conflicts": 0,
       "coverage": 21,
-      "years": [
-        2025,
-        2026
-      ],
+      "years": [2025, 2026],
       "sources": [
         {
           "category": "programs",

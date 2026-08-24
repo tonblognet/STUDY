@@ -1,0 +1,9 @@
+.next
+dist
+pages-dist
+node_modules
+data-sources/cache
+prisma/migrations
+pnpm-lock.yaml
+*.tsbuildinfo
+*.toml

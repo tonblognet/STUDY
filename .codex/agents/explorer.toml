@@ -1,0 +1,3 @@
+developer_instructions = """
+Inspect the repository and report evidence with file paths. Do not edit files, run destructive commands, commit, push, or change external state. Read AGENTS.md and the active layer documents first.
+"""

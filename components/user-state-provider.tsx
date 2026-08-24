@@ -1,10 +1,21 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import type { ScoreSet } from "@/lib/admissions/types";
-import { clearLocalUserState, readLocalUserState, writeLocalUserState } from "@/lib/admissions/storage";
+import {
+  clearLocalUserState,
+  readLocalUserState,
+  writeLocalUserState,
+} from "@/lib/admissions/storage";
 import { mergeUserStates, userStatesEqual } from "@/lib/user-state/merge";
-import { IS_GITHUB_PAGES } from "@/lib/runtime-mode";
 import { EMPTY_USER_STATE, type UserState } from "@/lib/user-state/types";
 
 type StorageMode = "loading" | "local" | "account";
@@ -22,7 +33,13 @@ type UserStateContextValue = UserState & {
 
 const UserStateContext = createContext<UserStateContextValue | null>(null);
 
-export function UserStateProvider({ children }: { children: React.ReactNode }) {
+export function UserStateProvider({
+  children,
+  signedIn,
+}: {
+  children: React.ReactNode;
+  signedIn?: boolean;
+}) {
   const [state, setState] = useState<UserState>(EMPTY_USER_STATE);
   const [storageMode, setStorageMode] = useState<StorageMode>("loading");
   const [syncing, setSyncing] = useState(false);
@@ -43,10 +60,9 @@ export function UserStateProvider({ children }: { children: React.ReactNode }) {
       if (!active) return;
       const local = readLocalUserState();
       applyState(local);
-      if (IS_GITHUB_PAGES) {
+      if (signedIn === false) {
         modeRef.current = "local";
         setStorageMode("local");
-        setError(null);
         return;
       }
       try {
@@ -57,8 +73,9 @@ export function UserStateProvider({ children }: { children: React.ReactNode }) {
           setStorageMode("local");
           return;
         }
-        if (!response.ok) throw new Error("Серверное хранилище временно недоступно");
-        const payload = await response.json() as { state: UserState };
+        if (!response.ok)
+          throw new Error("Серверное хранилище временно недоступно");
+        const payload = (await response.json()) as { state: UserState };
         const merged = mergeUserStates(payload.state, local);
         if (!userStatesEqual(payload.state, merged)) {
           const saved = await fetch("/api/user-state", {
@@ -66,7 +83,8 @@ export function UserStateProvider({ children }: { children: React.ReactNode }) {
             headers: { "content-type": "application/json" },
             body: JSON.stringify(merged),
           });
-          if (!saved.ok) throw new Error("Не удалось перенести локальные данные в аккаунт");
+          if (!saved.ok)
+            throw new Error("Не удалось перенести локальные данные в аккаунт");
         }
         if (!active) return;
         clearLocalUserState();
@@ -77,76 +95,141 @@ export function UserStateProvider({ children }: { children: React.ReactNode }) {
         if (!active) return;
         modeRef.current = "local";
         setStorageMode("local");
-        setError(caught instanceof Error ? caught.message : "Синхронизация недоступна");
+        setError(
+          caught instanceof Error ? caught.message : "Синхронизация недоступна",
+        );
       }
     }
     void initialize();
-    return () => { active = false; };
-  }, [applyState]);
+    return () => {
+      active = false;
+    };
+  }, [applyState, signedIn]);
 
-  const persist = useCallback((next: UserState) => {
-    applyState(next);
-    if (modeRef.current !== "account") {
-      writeLocalUserState(next);
-      return;
-    }
+  const persist = useCallback(
+    (next: UserState) => {
+      applyState(next);
+      if (modeRef.current !== "account") {
+        writeLocalUserState(next);
+        return;
+      }
 
-    setSyncing(true);
-    saveQueue.current = saveQueue.current.then(async () => {
-      const response = await fetch("/api/user-state", {
-        method: "PUT",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(stateRef.current),
-      });
-      if (!response.ok) throw new Error("Изменения пока сохранены только на устройстве");
-      clearLocalUserState();
-      setError(null);
-    }).catch((caught) => {
-      writeLocalUserState(stateRef.current);
-      setError(caught instanceof Error ? caught.message : "Ошибка синхронизации");
-    }).finally(() => setSyncing(false));
-  }, [applyState]);
+      setSyncing(true);
+      saveQueue.current = saveQueue.current
+        .then(async () => {
+          const response = await fetch("/api/user-state", {
+            method: "PUT",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(stateRef.current),
+          });
+          if (!response.ok)
+            throw new Error("Изменения пока сохранены только на устройстве");
+          clearLocalUserState();
+          setError(null);
+        })
+        .catch((caught) => {
+          writeLocalUserState(stateRef.current);
+          setError(
+            caught instanceof Error ? caught.message : "Ошибка синхронизации",
+          );
+        })
+        .finally(() => setSyncing(false));
+    },
+    [applyState],
+  );
 
-  const value = useMemo<UserStateContextValue>(() => ({
-    ...state,
-    storageMode,
-    syncing,
-    error,
-    toggleFavorite(id) {
-      const current = stateRef.current;
-      persist({ ...current, favoriteIds: current.favoriteIds.includes(id) ? current.favoriteIds.filter((item) => item !== id) : [...current.favoriteIds, id] });
-    },
-    toggleComparison(id) {
-      const current = stateRef.current;
-      persist({ ...current, comparisonIds: current.comparisonIds.includes(id) ? current.comparisonIds.filter((item) => item !== id) : [...current.comparisonIds, id].slice(0, 20) });
-    },
-    removeFromComparison(id) {
-      const current = stateRef.current;
-      persist({ ...current, comparisonIds: current.comparisonIds.filter((item) => item !== id) });
-    },
-    saveScoreSet(profile) {
-      const current = stateRef.current;
-      persist({ ...current, scoreSets: [profile, ...current.scoreSets.filter((item) => item.id !== profile.id)].slice(0, 8) });
-    },
-    removeScoreSet(id) {
-      const current = stateRef.current;
-      persist({ ...current, scoreSets: current.scoreSets.filter((item) => item.id !== id) });
-    },
-  }), [error, persist, state, storageMode, syncing]);
+  const value = useMemo<UserStateContextValue>(
+    () => ({
+      ...state,
+      storageMode,
+      syncing,
+      error,
+      toggleFavorite(id) {
+        const current = stateRef.current;
+        persist({
+          ...current,
+          favoriteIds: current.favoriteIds.includes(id)
+            ? current.favoriteIds.filter((item) => item !== id)
+            : [...current.favoriteIds, id],
+        });
+      },
+      toggleComparison(id) {
+        const current = stateRef.current;
+        persist({
+          ...current,
+          comparisonIds: current.comparisonIds.includes(id)
+            ? current.comparisonIds.filter((item) => item !== id)
+            : [...current.comparisonIds, id].slice(0, 20),
+        });
+      },
+      removeFromComparison(id) {
+        const current = stateRef.current;
+        persist({
+          ...current,
+          comparisonIds: current.comparisonIds.filter((item) => item !== id),
+        });
+      },
+      saveScoreSet(profile) {
+        const current = stateRef.current;
+        persist({
+          ...current,
+          scoreSets: [
+            profile,
+            ...current.scoreSets.filter((item) => item.id !== profile.id),
+          ].slice(0, 8),
+        });
+      },
+      removeScoreSet(id) {
+        const current = stateRef.current;
+        persist({
+          ...current,
+          scoreSets: current.scoreSets.filter((item) => item.id !== id),
+        });
+      },
+    }),
+    [error, persist, state, storageMode, syncing],
+  );
 
-  return <UserStateContext.Provider value={value}>{children}</UserStateContext.Provider>;
+  return (
+    <UserStateContext.Provider value={value}>
+      {children}
+    </UserStateContext.Provider>
+  );
 }
 
 export function useUserState() {
   const value = useContext(UserStateContext);
-  if (!value) throw new Error("useUserState must be used inside UserStateProvider");
+  if (!value)
+    throw new Error("useUserState must be used inside UserStateProvider");
   return value;
 }
 
 export function UserStateStatus() {
   const { storageMode, syncing, error } = useUserState();
-  if (storageMode === "loading") return <div className="account-storage-status" role="status">Проверяем сохранённые данные…</div>;
-  if (error) return <div className="account-storage-status storage-warning" role="status"><b>Требуется повторная синхронизация.</b> {error}. Копия сохранена на этом устройстве.</div>;
-  if (storageMode === "account") return <div className="account-storage-status storage-synced" role="status"><b>{syncing ? "Сохраняем изменения…" : "Данные синхронизированы."}</b> Они доступны после входа на другом устройстве.</div>;
-  return <div className="account-storage-status" role="status"><b>Локальный режим.</b> Войдите, чтобы перенести баллы, избранное и сравнение в аккаунт.</div>;
+  if (storageMode === "loading")
+    return (
+      <div className="account-storage-status" role="status">
+        Проверяем сохранённые данные…
+      </div>
+    );
+  if (error)
+    return (
+      <div className="account-storage-status storage-warning" role="status">
+        <b>Требуется повторная синхронизация.</b> {error}. Копия сохранена на
+        этом устройстве.
+      </div>
+    );
+  if (storageMode === "account")
+    return (
+      <div className="account-storage-status storage-synced" role="status">
+        <b>{syncing ? "Сохраняем изменения…" : "Данные синхронизированы."}</b>{" "}
+        Они доступны после входа на другом устройстве.
+      </div>
+    );
+  return (
+    <div className="account-storage-status" role="status">
+      <b>Локальный режим.</b> Войдите, чтобы перенести баллы, избранное и
+      сравнение в аккаунт.
+    </div>
+  );
 }

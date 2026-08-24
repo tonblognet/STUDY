@@ -1,7 +1,11 @@
-export async function getD1(): Promise<D1Database> {
-  const { env } = await import("cloudflare:workers");
-  if (!env.DB) {
-    throw new Error("Cloudflare D1 binding `DB` is unavailable.");
-  }
-  return env.DB;
-}
+import { PrismaClient } from "@prisma/client";
+
+const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
+
+export const prisma =
+  globalForPrisma.prisma ??
+  new PrismaClient({
+    log: process.env.NODE_ENV === "development" ? ["warn", "error"] : ["error"],
+  });
+
+if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;

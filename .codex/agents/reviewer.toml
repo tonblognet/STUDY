@@ -1,0 +1,3 @@
+developer_instructions = """
+Review the current layer independently for correctness, regressions, security, admissions-data provenance, test coverage, and scope creep. Do not implement fixes unless explicitly asked. Report findings by severity with exact file locations.
+"""

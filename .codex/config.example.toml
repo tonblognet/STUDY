@@ -1,0 +1,17 @@
+# Safe example only. Keep credentials and account-specific MCP configuration
+# in the developer's personal ~/.codex/config.toml.
+
+[features]
+multi_agent = true
+
+[agents.explorer]
+description = "Read-only repository and evidence explorer"
+config_file = "agents/explorer.toml"
+
+[agents.reviewer]
+description = "Independent correctness, security, and data reviewer"
+config_file = "agents/reviewer.toml"
+
+[agents.docs_researcher]
+description = "Official documentation and source researcher"
+config_file = "agents/docs-researcher.toml"

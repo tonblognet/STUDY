@@ -1,29 +1,51 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { fullSitePath, IS_GITHUB_PAGES } from "@/lib/runtime-mode";
+import { useRouter } from "next/navigation";
 
-const free = ["Поиск и подбор по баллам", "Источники, год и статус данных", "До 3 программ в сравнении", "Локальные профили ЕГЭ и избранное"];
-const season = ["Полные исторические показатели", "Расширенное сравнение", "Несколько наборов ЕГЭ", "Доступ на одну приёмную кампанию"];
-const assistant = ["Всё из тарифа «Поступление»", "Чек-лист и дедлайны", "Ответы со ссылками на правила", "Без непрозрачного процента поступления"];
+export type PublicProduct = {
+  code: string;
+  name: string;
+  description: string;
+  amountKopecks: number;
+  durationMonths: number;
+  features: string[];
+  purchasable: boolean;
+};
 
-export function PricingClient() {
+const featureLabels: Record<string, string> = {
+  admission_full_data: "Полные данные о поступлении",
+  ai_level_1_discount: "AI Level 1 за 39 ₽ вместо 79 ₽",
+  advanced_tracking: "Расширенный трекер поступления",
+  ai_level_1_request: "Одна grounded-рекомендация",
+  ai_level_2: "Персональный помощник Level 2",
+  ai_level_3: "Level 3 после запуска официальных интеграций",
+  premium_notifications: "Расширенные уведомления",
+};
+
+export function PricingClient({ products }: { products: PublicProduct[] }) {
+  const router = useRouter();
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<string | null>(null);
 
-  async function checkout() {
-    if (IS_GITHUB_PAGES) {
-      window.location.assign(fullSitePath("/pricing"));
-      return;
-    }
-    setLoading(true);
+  async function checkout(planCode: string) {
+    setLoading(planCode);
     setMessage("Проверяем готовность защищённой оплаты…");
     try {
-      const response = await fetch("/api/checkout", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ planCode: "season" }) });
-      const result = await response.json() as { paymentUrl?: string; error?: string };
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "idempotency-key": crypto.randomUUID(),
+        },
+        body: JSON.stringify({ planCode }),
+      });
+      const result = (await response.json()) as {
+        paymentUrl?: string;
+        error?: string;
+      };
       if (response.status === 401) {
-        window.location.assign("/signin-with-chatgpt?return_to=%2Fpricing");
+        router.push("/login?returnTo=/pricing");
         return;
       }
       if (!response.ok || !result.paymentUrl) {
@@ -32,31 +54,60 @@ export function PricingClient() {
       }
       window.location.assign(result.paymentUrl);
     } catch {
-      setMessage("Не удалось связаться с платёжным сервисом. Попробуйте позже.");
+      setMessage(
+        "Не удалось связаться с платёжным сервисом. Попробуйте позже.",
+      );
     } finally {
-      setLoading(false);
+      setLoading(null);
     }
   }
 
-  return <>
-    <div className="pricing-grid pricing-grid-three">
-      <article>
-        <span className="plan-name">Бесплатно</span><h2>0 ₽</h2><p>Достаточно, чтобы собрать первый обоснованный список.</p>
-        {free.map((feature) => <div className="plan-feature" key={feature}>✓ {feature}</div>)}
-        <Link className="button outline-button" href="/programs">Начать подбор</Link>
-      </article>
-      <article className="featured-plan">
-        <span className="popular-label">На сезон</span><span className="plan-name">Поступление</span><h2>599 ₽</h2><p>Один платёж за 4 месяца. Без автоматического продления.</p>
-        {season.map((feature) => <div className="plan-feature" key={feature}>✓ {feature}</div>)}
-        <button className="button button-light" onClick={checkout} disabled={loading}>{loading ? "Проверяем…" : "Перейти к оплате"}</button>
-      </article>
-      <article className="future-plan">
-        <span className="plan-name">Помощник</span><h2>1 290 ₽</h2><p>Ценовая гипотеза. Не продаётся до запуска проверенного помощника.</p>
-        {assistant.map((feature) => <div className="plan-feature" key={feature}>○ {feature}</div>)}
-        <Link className="button outline-button" href="/support?topic=assistant">Сообщить об интересе</Link>
-      </article>
-    </div>
-    <div className="payment-safety-note"><b>Оплата не активирует доступ сама по себе.</b><span>Премиальный статус будет выдаваться только после проверенного уведомления банка и записи платежа в постоянное хранилище.</span></div>
-    {message && <div className="toast" role="status" aria-live="polite">{message}</div>}
-  </>;
+  return (
+    <>
+      <div className="pricing-grid">
+        {products.map((product) => (
+          <article
+            key={product.code}
+            className={product.code === "default_12" ? "featured-plan" : ""}
+          >
+            <span className="plan-name">{product.name}</span>
+            <h2>
+              {new Intl.NumberFormat("ru-RU").format(
+                product.amountKopecks / 100,
+              )}{" "}
+              ₽
+            </h2>
+            <p>{product.description}</p>
+            {product.features.map((feature) => (
+              <div className="plan-feature" key={feature}>
+                ✓ {featureLabels[feature] ?? feature}
+              </div>
+            ))}
+            <button
+              className="button button-primary"
+              onClick={() => checkout(product.code)}
+              disabled={!product.purchasable || loading !== null}
+            >
+              {loading === product.code
+                ? "Проверяем…"
+                : product.purchasable
+                  ? "Перейти к оплате"
+                  : "Скоро"}
+            </button>
+          </article>
+        ))}
+      </div>
+      <div className="payment-safety-note">
+        <b>Доступ активирует только подтверждённый webhook банка.</b>
+        <span>
+          Секреты не попадают во frontend. Автопродление выключено по умолчанию.
+        </span>
+      </div>
+      {message && (
+        <div className="toast" role="status" aria-live="polite">
+          {message}
+        </div>
+      )}
+    </>
+  );
 }

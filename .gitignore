@@ -41,6 +41,8 @@ next-env.d.ts
 /pages-dist/
 /.wrangler/
 /outputs/
+/output/
+/.playwright-cli/
 /work/
 /tmp/
 *.log

@@ -9,9 +9,10 @@ datasource db {
 
 enum Role {
   USER
-  SUBSCRIBER
-  EDITOR
+  SUPPORT
+  CONTENT_MANAGER
   ADMIN
+  SUPERADMIN
 }
 
 enum SubscriptionStatus {
@@ -75,24 +76,42 @@ enum DataValueStatus {
 }
 
 model User {
-  id            String         @id @default(cuid())
-  email         String         @unique
-  platformUserId String?        @unique
-  emailVerified DateTime?
-  passwordHash  String?
-  name          String?
-  role          Role           @default(USER)
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  accounts      Account[]
-  sessions      Session[]
-  subscriptions Subscription[]
-  payments      Payment[]
-  favorites     Favorite[]
-  comparisons   Comparison[]
-  notifications Notification[]
-  auditLogs     AuditLog[]     @relation("AuditActor")
-  scoreProfiles ScoreProfile[]
+  id                     String                  @id @default(cuid())
+  email                  String                  @unique
+  platformUserId         String?                 @unique
+  emailVerified          DateTime?
+  passwordHash           String?
+  emailTwoFactorEnabled  Boolean                 @default(false)
+  name                   String?
+  role                   Role                    @default(USER)
+  createdAt              DateTime                @default(now())
+  updatedAt              DateTime                @updatedAt
+  accounts               Account[]
+  sessions               Session[]
+  subscriptions          Subscription[]
+  payments               Payment[]
+  favorites              Favorite[]
+  comparisons            Comparison[]
+  notifications          Notification[]
+  auditLogs              AuditLog[]              @relation("AuditActor")
+  scoreProfiles          ScoreProfile[]
+  passwordResetTokens    PasswordResetToken[]
+  authChallenges         AuthChallenge[]
+  applicantProfile       ApplicantProfile?
+  trackerItems           AdmissionTrackerItem[]
+  notificationPreference NotificationPreference?
+  supportTickets         SupportTicket[]         @relation("TicketAuthor")
+  assignedTickets        SupportTicket[]         @relation("TicketAssignee")
+  ticketMessages         TicketMessage[]
+  aiUsage                AiUsage[]
+  stateSnapshot          UserStateSnapshot?
+}
+
+model UserStateSnapshot {
+  userId    String   @id
+  state     Json
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Account {
@@ -107,11 +126,16 @@ model Account {
 }
 
 model Session {
-  id           String   @id @default(cuid())
-  sessionToken String   @unique
-  userId       String
-  expires      DateTime
-  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id            String    @id @default(cuid())
+  tokenHash     String    @unique
+  userId        String
+  expires       DateTime
+  userAgentHash String?
+  ipHash        String?
+  lastSeenAt    DateTime  @default(now())
+  revokedAt     DateTime?
+  createdAt     DateTime  @default(now())
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, expires])
 }
@@ -125,13 +149,29 @@ model VerificationToken {
 }
 
 model PasswordResetToken {
-  id        String   @id @default(cuid())
+  id        String    @id @default(cuid())
   userId    String
-  tokenHash String   @unique
+  tokenHash String    @unique
   expires   DateTime
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
+  usedAt    DateTime?
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, expires])
+}
+
+model AuthChallenge {
+  id        String    @id @default(cuid())
+  userId    String
+  type      String
+  tokenHash String    @unique
+  attempts  Int       @default(0)
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, type, expiresAt])
 }
 
 model Subscription {
@@ -140,15 +180,18 @@ model Subscription {
   provider               String
   providerCustomerId     String?
   providerSubscriptionId String?            @unique
+  productId              String?
   planCode               String
   status                 SubscriptionStatus
   trialEndsAt            DateTime?
   currentPeriodEnd       DateTime?
   canceledAt             DateTime?
+  autoRenew              Boolean            @default(false)
   createdAt              DateTime           @default(now())
   updatedAt              DateTime           @updatedAt
   user                   User               @relation(fields: [userId], references: [id], onDelete: Cascade)
   payments               Payment[]
+  product                Product?           @relation(fields: [productId], references: [id], onDelete: SetNull)
 
   @@index([userId, status])
 }
@@ -157,32 +200,89 @@ model Payment {
   id                String        @id @default(cuid())
   userId            String
   subscriptionId    String?
+  productId         String
   providerPaymentId String?       @unique
+  idempotencyKey    String        @unique
   amount            Int
   currency          String        @default("RUB")
   status            PaymentStatus
   description       String?
+  paidAt            DateTime?
+  refundedAt        DateTime?
+  receiptUrl        String?
+  providerStatus    String?
   createdAt         DateTime      @default(now())
   user              User          @relation(fields: [userId], references: [id], onDelete: Restrict)
   subscription      Subscription? @relation(fields: [subscriptionId], references: [id], onDelete: SetNull)
+  product           Product       @relation(fields: [productId], references: [id], onDelete: Restrict)
 
   @@index([userId, createdAt])
 }
 
+model Product {
+  id            String               @id @default(cuid())
+  code          String               @unique
+  name          String
+  description   String?
+  price         Int
+  currency      String               @default("RUB")
+  durationDays  Int?
+  displayOrder  Int                  @default(0)
+  purchasable   Boolean              @default(true)
+  active        Boolean              @default(true)
+  features      Json
+  limits        Json?
+  subscriptions Subscription[]
+  payments      Payment[]
+  entitlements  ProductEntitlement[]
+
+  @@index([active, purchasable, displayOrder])
+}
+
+model Entitlement {
+  id       String               @id @default(cuid())
+  key      String               @unique
+  name     String
+  products ProductEntitlement[]
+}
+
+model ProductEntitlement {
+  productId     String
+  entitlementId String
+  limitValue    Int?
+  product       Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
+  entitlement   Entitlement @relation(fields: [entitlementId], references: [id], onDelete: Cascade)
+
+  @@id([productId, entitlementId])
+}
+
 model University {
-  id          String             @id @default(cuid())
-  slug        String             @unique
-  name        String
-  shortName   String
-  description String?
-  websiteUrl  String
-  logoUrl     String?
-  status      PublicationStatus  @default(REVIEW)
-  updatedAt   DateTime           @updatedAt
-  campuses    Campus[]
-  programs    EducationProgram[]
-  favorites   Favorite[]
-  sources     DataSource[]
+  id                String             @id @default(cuid())
+  slug              String             @unique
+  name              String
+  shortName         String
+  description       String?
+  websiteUrl        String
+  logoUrl           String?
+  countryCode       String             @default("RU")
+  regionCode        String?
+  city              String
+  address           String?
+  latitude          Decimal?           @db.Decimal(9, 6)
+  longitude         Decimal?           @db.Decimal(9, 6)
+  contacts          Json?
+  socialLinks       Json?
+  hasDormitory      Boolean?
+  dormitoryCount    Int?
+  hasMilitaryCenter Boolean?
+  license           Json?
+  accreditation     Json?
+  status            PublicationStatus  @default(REVIEW)
+  updatedAt         DateTime           @updatedAt
+  campuses          Campus[]
+  programs          EducationProgram[]
+  favorites         Favorite[]
+  sources           DataSource[]
 
   @@index([status, name])
 }
@@ -200,23 +300,24 @@ model Campus {
 }
 
 model EducationProgram {
-  id              String            @id @default(cuid())
+  id              String                 @id @default(cuid())
   universityId    String
-  slug            String            @unique
+  slug            String                 @unique
   code            String
   name            String
   level           EducationLevel
   form            StudyForm
   durationMonths  Int
-  status          PublicationStatus @default(REVIEW)
+  status          PublicationStatus      @default(REVIEW)
   publishedAt     DateTime?
-  updatedAt       DateTime          @updatedAt
-  university      University        @relation(fields: [universityId], references: [id], onDelete: Cascade)
+  updatedAt       DateTime               @updatedAt
+  university      University             @relation(fields: [universityId], references: [id], onDelete: Cascade)
   admissionYears  AdmissionYear[]
   favorites       Favorite[]
   comparisonItems ComparisonItem[]
   sources         DataSource[]
   metricValues    MetricValue[]
+  trackerItems    AdmissionTrackerItem[]
 
   @@unique([universityId, code, level, form])
   @@index([status, level, form])
@@ -314,6 +415,10 @@ model DataSource {
   lastCheckedAt DateTime?
   robotsAllowed Boolean           @default(true)
   active        Boolean           @default(true)
+  publishedAt   DateTime?
+  retrievedAt   DateTime?
+  reliability   Decimal?          @db.Decimal(3, 2)
+  parserVersion String?
   university    University?       @relation(fields: [universityId], references: [id], onDelete: Cascade)
   program       EducationProgram? @relation(fields: [programId], references: [id], onDelete: Cascade)
   parsingJobs   ParsingJob[]
@@ -474,6 +579,110 @@ model Notification {
   user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, readAt, createdAt])
+}
+
+model NotificationPreference {
+  id                  String  @id @default(cuid())
+  userId              String  @unique
+  emailEnabled        Boolean @default(true)
+  inAppEnabled        Boolean @default(true)
+  deadlines           Boolean @default(true)
+  competitionPosition Boolean @default(true)
+  programChanges      Boolean @default(true)
+  payments            Boolean @default(true)
+  subscriptions       Boolean @default(true)
+  security            Boolean @default(true)
+  productNews         Boolean @default(false)
+  user                User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model ApplicantProfile {
+  id                     String   @id @default(cuid())
+  userId                 String   @unique
+  admissionYear          Int
+  homeCity               String?
+  desiredCities          String[]
+  interests              String[]
+  desiredCareers         String[]
+  olympiads              Json?
+  hasBvi                 Boolean  @default(false)
+  benefits               Json?
+  quotas                 Json?
+  individualAchievements Int      @default(0)
+  tuitionBudget          Int?
+  preferredStudyForms    String[]
+  constraints            Json?
+  updatedAt              DateTime @updatedAt
+  user                   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model AdmissionTrackerItem {
+  id              String           @id @default(cuid())
+  userId          String
+  programId       String
+  admissionYear   Int
+  priority        Int?
+  status          String
+  stage           String
+  currentPosition Int?
+  deadlineAt      DateTime?
+  notes           String?
+  documents       Json?
+  history         Json
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  program         EducationProgram @relation(fields: [programId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, programId, admissionYear])
+  @@index([userId, deadlineAt])
+}
+
+model SupportTicket {
+  id         String          @id @default(cuid())
+  userId     String
+  assigneeId String?
+  subject    String
+  category   String
+  status     String          @default("OPEN")
+  priority   String          @default("NORMAL")
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+  user       User            @relation("TicketAuthor", fields: [userId], references: [id], onDelete: Cascade)
+  assignee   User?           @relation("TicketAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+  messages   TicketMessage[]
+
+  @@index([status, priority, updatedAt])
+  @@index([userId, updatedAt])
+}
+
+model TicketMessage {
+  id          String        @id @default(cuid())
+  ticketId    String
+  authorId    String
+  body        String
+  attachments Json?
+  createdAt   DateTime      @default(now())
+  ticket      SupportTicket @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  author      User          @relation(fields: [authorId], references: [id], onDelete: Restrict)
+
+  @@index([ticketId, createdAt])
+}
+
+model AiUsage {
+  id            String   @id @default(cuid())
+  userId        String?
+  feature       String
+  provider      String
+  model         String
+  usageMetadata Json?
+  costMinor     Int?
+  chargedUnits  Int      @default(0)
+  resultStatus  String
+  createdAt     DateTime @default(now())
+  user          User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([userId, feature, createdAt])
 }
 
 model AuditLog {

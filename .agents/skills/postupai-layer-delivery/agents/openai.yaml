@@ -1,0 +1,4 @@
+interface:
+  display_name: "Postupai Layer Delivery"
+  short_description: "Deliver one sequential layer through PR"
+  default_prompt: "Use $postupai-layer-delivery to complete the current project layer and prepare its handoff."

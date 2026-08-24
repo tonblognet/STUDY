@@ -1,54 +1,73 @@
 import assert from "node:assert/strict";
-import test from "node:test";
+import { spawn } from "node:child_process";
+import test, { after, before } from "node:test";
 
-async function render(path = "/") {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
-  return worker.fetch(new Request(`http://localhost${path}`, { headers: { accept: "text/html" } }), { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) }, DB: undefined }, { waitUntil() {}, passThroughOnException() {} });
-}
+const port = 3217;
+const base = `http://127.0.0.1:${port}`;
+let server;
 
-async function request(path, init = {}) {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}-${Math.random()}`);
-  const { default: worker } = await import(workerUrl.href);
-  return worker.fetch(new Request(`http://localhost${path}`, init), { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) }, DB: undefined }, { waitUntil() {}, passThroughOnException() {} });
-}
+before(async () => {
+  server = spawn(
+    process.platform === "win32" ? "pnpm.cmd" : "pnpm",
+    ["start", "-p", String(port)],
+    {
+      cwd: process.cwd(),
+      env: { ...process.env, NODE_ENV: "production" },
+      stdio: "ignore",
+      shell: process.platform === "win32",
+    },
+  );
+  for (let attempt = 0; attempt < 60; attempt += 1) {
+    try {
+      const response = await fetch(base);
+      if (response.ok) return;
+    } catch {}
+    await new Promise((resolve) => setTimeout(resolve, 250));
+  }
+  throw new Error("Production server did not become ready");
+});
 
-test("server-renders trust-first home", async () => {
-  const response = await render();
+after(() => {
+  server?.kill();
+});
+
+test("server-renders the new admissions landing", async () => {
+  const response = await fetch(base);
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Поступай/);
-  assert.match(html, /Проверьте, что сдавать/);
-  assert.match(html, /официальные источники/);
+  assert.match(html, /Поступление начинается с ясного выбора/);
+  assert.match(html, /Спокойно сравните всё важное/);
+  assert.match(html, /официальные источники/i);
   assert.doesNotMatch(html, /codex-preview/);
 });
 
-test("server-renders trusted catalog", async () => {
-  const response = await render("/programs");
+test("server-renders the filterable program catalog", async () => {
+  const response = await fetch(`${base}/programs`);
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Каталог программ/);
-  assert.match(html, /Экономика/);
-  assert.match(html, /Годы различаются/);
+  assert.match(html, /Программы московских вузов/);
+  assert.match(html, /Название программы, направление или вуз/);
+  assert.match(html, /Бюджетные места/);
 });
 
-test("legacy password login cannot create a demo session", async () => {
-  const response = await request("/api/auth/login", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ email: "demo@postupai.ru", password: "Demo2026!" }) });
-  assert.equal(response.status, 410);
+test("auth mutations reject cross-origin requests before touching persistence", async () => {
+  const response = await fetch(`${base}/api/auth/login`, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      origin: "https://evil.example",
+    },
+    body: JSON.stringify({
+      email: "user@example.ru",
+      password: "ReliablePass2027",
+    }),
+  });
+  assert.equal(response.status, 403);
   assert.equal(response.headers.get("set-cookie"), null);
 });
 
-test("checkout requires a server-authenticated user", async () => {
-  const response = await request("/api/checkout", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ planCode: "season" }) });
-  assert.equal(response.status, 401);
-  const payload = await response.json();
-  assert.match(payload.error, /войдите/i);
-});
-
-test("persistent user state requires a server-authenticated user", async () => {
-  const response = await request("/api/user-state");
+test("persistent user state requires authentication", async () => {
+  const response = await fetch(`${base}/api/user-state`);
   assert.equal(response.status, 401);
   assert.deepEqual(await response.json(), { error: "authentication_required" });
 });

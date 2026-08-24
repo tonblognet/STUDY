@@ -1,0 +1,4 @@
+interface:
+  display_name: "Postupai Data Integrity"
+  short_description: "Verify admissions facts and provenance"
+  default_prompt: "Use $postupai-data-integrity to add or verify university and admissions data from official sources."
