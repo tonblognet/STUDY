@@ -14,7 +14,7 @@
 - For Next.js work, read the relevant guide under `node_modules/next/dist/docs/` before editing.
 - Preserve official-source provenance for admissions data. Unknown or unverified values must remain visibly unknown; never invent passing scores, prices, accreditation, military-department status, deadlines, or subject combinations.
 - Add or update tests for behavior changes.
-- Before handoff, run `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm test:integration`, `pnpm build`, and `pnpm security:audit`.
+- Before handoff, run `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`, `pnpm test:integration`, and `pnpm security:audit` in that order. The integration suite starts the production build.
 - For visible UI changes, verify the affected flows at desktop and mobile widths and record the routes checked in the pull request.
 - Review `git diff --check`, `git diff --stat`, and the staged diff before committing or pushing.
 - Update `docs/HANDOFF.md` at every implementer-to-reviewer transfer.

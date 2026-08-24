@@ -20,8 +20,8 @@ Describe the user-visible or architectural result, not only the files changed.
 - [ ] `pnpm lint`
 - [ ] `pnpm typecheck`
 - [ ] `pnpm test`
-- [ ] `pnpm test:integration`
 - [ ] `pnpm build`
+- [ ] `pnpm test:integration`
 - [ ] `pnpm security:audit`
 - [ ] `git diff --check`
 - [ ] Desktop UI verified where applicable
