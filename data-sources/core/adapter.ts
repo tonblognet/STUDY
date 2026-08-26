@@ -4,7 +4,10 @@ export type SourceCategory =
   | "places"
   | "tuition"
   | "results"
-  | "exams";
+  | "exams"
+  | "facts"
+  | "logos"
+  | "campuses";
 
 export type OfficialSource = {
   category: SourceCategory;

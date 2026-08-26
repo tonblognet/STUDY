@@ -1,17 +1,19 @@
 {
-  "generatedAt": "2026-08-26T16:58:53.983Z",
+  "generatedAt": "2026-08-26T18:03:36.847Z",
   "publicationRule": "Только verified значения показаны как подтверждённые; null не заменяется нулём.",
   "universities": [
     {
       "university": "НИУ ВШЭ",
       "slug": "hse",
       "programs": 1,
-      "indicators": 24,
-      "verified": 11,
+      "indicators": 29,
+      "universityIndicators": 5,
+      "programIndicators": 24,
+      "verified": 13,
       "missing": 11,
-      "review": 0,
+      "review": 3,
       "conflicts": 0,
-      "coverage": 46,
+      "coverage": 45,
       "years": [2023, 2024, 2025, 2026],
       "sources": [
         {
@@ -36,18 +38,32 @@
           "year": 2026,
           "format": "html"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.hse.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.hse.ru/info/brandbook/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "МАИ",
       "slug": "mai",
       "programs": 1,
-      "indicators": 17,
-      "verified": 8,
+      "indicators": 22,
+      "universityIndicators": 5,
+      "programIndicators": 17,
+      "verified": 11,
       "missing": 6,
-      "review": 1,
+      "review": 3,
       "conflicts": 0,
-      "coverage": 47,
+      "coverage": 50,
       "years": [2025, 2026],
       "sources": [
         {
@@ -72,18 +88,37 @@
           "year": 2026,
           "format": "html"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://mai.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mai.ru/press/brand/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://priem.mai.ru/base/offers/programs-vuc/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "МФТИ",
       "slug": "mipt",
       "programs": 1,
-      "indicators": 14,
-      "verified": 7,
+      "indicators": 20,
+      "universityIndicators": 6,
+      "programIndicators": 14,
+      "verified": 9,
       "missing": 5,
-      "review": 2,
+      "review": 6,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 45,
       "years": [2025, 2026],
       "sources": [
         {
@@ -101,18 +136,32 @@
           "year": 2026,
           "format": "html"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://mipt.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mipt.ru/about/brandbook/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "НИТУ МИСИС",
       "slug": "misis",
       "programs": 1,
-      "indicators": 18,
-      "verified": 8,
+      "indicators": 23,
+      "universityIndicators": 5,
+      "programIndicators": 18,
+      "verified": 10,
       "missing": 7,
-      "review": 0,
+      "review": 3,
       "conflicts": 0,
-      "coverage": 44,
+      "coverage": 43,
       "years": [2025, 2026],
       "sources": [
         {
@@ -130,16 +179,30 @@
           "year": 2026,
           "format": "html"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://misis.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://misis.ru/university/rebranding/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "НИУ МЭИ",
       "slug": "mpei",
       "programs": 1,
-      "indicators": 19,
-      "verified": 12,
+      "indicators": 24,
+      "universityIndicators": 5,
+      "programIndicators": 19,
+      "verified": 15,
       "missing": 5,
-      "review": 0,
+      "review": 2,
       "conflicts": 0,
       "coverage": 63,
       "years": [2025, 2026],
@@ -166,16 +229,35 @@
           "year": 2026,
           "format": "pdf"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://mpei.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mpei.ru/AboutUniverse/OficialInfo/Attributes/Pages/default.aspx",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://vuc.mpei.ru/about/Pages/default.aspx",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "НИЯУ МИФИ",
       "slug": "mephi",
       "programs": 12,
-      "indicators": 201,
-      "verified": 86,
+      "indicators": 206,
+      "universityIndicators": 5,
+      "programIndicators": 201,
+      "verified": 89,
       "missing": 91,
-      "review": 2,
+      "review": 4,
       "conflicts": 0,
       "coverage": 43,
       "years": [2025, 2026],
@@ -195,18 +277,37 @@
           "year": 2026,
           "format": "html"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://mephi.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mephi.ru/press/logo",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://admission.mephi.ru/about/military",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "РУДН",
       "slug": "rudn",
       "programs": 1,
-      "indicators": 14,
-      "verified": 2,
+      "indicators": 19,
+      "universityIndicators": 5,
+      "programIndicators": 14,
+      "verified": 4,
       "missing": 10,
-      "review": 2,
+      "review": 5,
       "conflicts": 0,
-      "coverage": 14,
+      "coverage": 21,
       "years": [2025, 2026],
       "sources": [
         {
@@ -224,18 +325,32 @@
           "year": 2026,
           "format": "pdf"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.rudn.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.rudn.ru/media/dlya-smi",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "РАНХиГС",
       "slug": "ranepa",
       "programs": 1,
-      "indicators": 13,
-      "verified": 0,
+      "indicators": 18,
+      "universityIndicators": 5,
+      "programIndicators": 13,
+      "verified": 2,
       "missing": 10,
-      "review": 3,
+      "review": 6,
       "conflicts": 0,
-      "coverage": 0,
+      "coverage": 11,
       "years": [2025, 2026],
       "sources": [
         {
@@ -260,18 +375,32 @@
           "year": 2026,
           "format": "html"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.ranepa.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.ranepa.ru/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "МГУ",
       "slug": "mgu",
       "programs": 1,
-      "indicators": 13,
-      "verified": 1,
+      "indicators": 18,
+      "universityIndicators": 5,
+      "programIndicators": 13,
+      "verified": 3,
       "missing": 10,
-      "review": 2,
+      "review": 5,
       "conflicts": 0,
-      "coverage": 8,
+      "coverage": 17,
       "years": [2025, 2026],
       "sources": [
         {
@@ -289,18 +418,32 @@
           "year": 2026,
           "format": "html"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.msu.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://270.msu.ru/brandbook",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "РЭУ им. Г. В. Плеханова",
       "slug": "rea",
       "programs": 1,
-      "indicators": 14,
-      "verified": 3,
+      "indicators": 19,
+      "universityIndicators": 5,
+      "programIndicators": 14,
+      "verified": 5,
       "missing": 9,
-      "review": 0,
+      "review": 3,
       "conflicts": 0,
-      "coverage": 21,
+      "coverage": 26,
       "years": [2025, 2026],
       "sources": [
         {
@@ -318,18 +461,32 @@
           "year": 2026,
           "format": "html"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.rea.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://rea.ru/education/ob-universitete/simvolika",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "МГТУ им. Н. Э. Баумана",
       "slug": "bmstu",
       "programs": 8,
-      "indicators": 104,
-      "verified": 8,
+      "indicators": 110,
+      "universityIndicators": 6,
+      "programIndicators": 104,
+      "verified": 13,
       "missing": 88,
-      "review": 8,
+      "review": 9,
       "conflicts": 0,
-      "coverage": 8,
+      "coverage": 12,
       "years": [2026],
       "sources": [
         {
@@ -340,18 +497,42 @@
           "format": "html",
           "locator": "Перечень направлений бакалавриата и специалитета"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://bmstu.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mil.bmstu.ru/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://bmstu.ru/about",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mil.bmstu.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "МГИМО МИД России",
       "slug": "mgimo",
       "programs": 8,
-      "indicators": 104,
-      "verified": 8,
+      "indicators": 110,
+      "universityIndicators": 6,
+      "programIndicators": 104,
+      "verified": 13,
       "missing": 88,
-      "review": 8,
+      "review": 9,
       "conflicts": 0,
-      "coverage": 8,
+      "coverage": 12,
       "years": [2026],
       "sources": [
         {
@@ -362,18 +543,42 @@
           "format": "html",
           "locator": "Бакалавриат и специалитет"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://mgimo.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mgimo.ru/sveden/files/002507.pdf",
+          "type": "pdf",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mgimo.ru/about/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mgimo.ru/about/structure/faculties/military/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "Пироговский Университет",
       "slug": "pirogov",
       "programs": 8,
-      "indicators": 104,
-      "verified": 8,
+      "indicators": 110,
+      "universityIndicators": 6,
+      "programIndicators": 104,
+      "verified": 11,
       "missing": 88,
-      "review": 8,
+      "review": 11,
       "conflicts": 0,
-      "coverage": 8,
+      "coverage": 10,
       "years": [2026],
       "sources": [
         {
@@ -384,18 +589,37 @@
           "format": "html",
           "locator": "Программы специалитета, базового высшего образования и бакалавриата"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://rsmu.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://rsmu.ru/about",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://rsmu.ru/structure/edu-dept/vuc",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "Сеченовский Университет",
       "slug": "sechenov",
       "programs": 8,
-      "indicators": 104,
-      "verified": 8,
+      "indicators": 110,
+      "universityIndicators": 6,
+      "programIndicators": 104,
+      "verified": 13,
       "missing": 88,
-      "review": 8,
+      "review": 9,
       "conflicts": 0,
-      "coverage": 8,
+      "coverage": 12,
       "years": [2026],
       "sources": [
         {
@@ -406,18 +630,47 @@
           "format": "html",
           "locator": "Образовательные программы"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.sechenov.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.sechenov.ru/pressroom/brend/ofitsialnyy-logotip/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.sechenov.ru/admissions/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.sechenov.ru/univers/about/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.sechenov.ru/univers/structure/institute/vuc/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "РГУ нефти и газа имени И. М. Губкина",
       "slug": "gubkin",
       "programs": 8,
-      "indicators": 104,
-      "verified": 8,
+      "indicators": 110,
+      "universityIndicators": 6,
+      "programIndicators": 104,
+      "verified": 11,
       "missing": 88,
-      "review": 8,
+      "review": 11,
       "conflicts": 0,
-      "coverage": 8,
+      "coverage": 10,
       "years": [2026],
       "sources": [
         {
@@ -428,18 +681,32 @@
           "format": "html",
           "locator": "Направления подготовки"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.gubkin.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://postupai.gubkin.ru/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "МГЮА имени О. Е. Кутафина",
       "slug": "msal",
       "programs": 4,
-      "indicators": 52,
-      "verified": 0,
+      "indicators": 58,
+      "universityIndicators": 6,
+      "programIndicators": 52,
+      "verified": 2,
       "missing": 48,
-      "review": 4,
+      "review": 8,
       "conflicts": 0,
-      "coverage": 0,
+      "coverage": 3,
       "years": [2026],
       "sources": [
         {
@@ -450,18 +717,32 @@
           "format": "html",
           "locator": "Направления подготовки и специальности"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://msal.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://msal.ru/content/ob-universitete/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "РХТУ им. Д. И. Менделеева",
       "slug": "muctr",
       "programs": 8,
-      "indicators": 104,
-      "verified": 0,
+      "indicators": 110,
+      "universityIndicators": 6,
+      "programIndicators": 104,
+      "verified": 2,
       "missing": 96,
-      "review": 8,
+      "review": 12,
       "conflicts": 0,
-      "coverage": 0,
+      "coverage": 2,
       "years": [2026],
       "sources": [
         {
@@ -472,18 +753,32 @@
           "format": "html",
           "locator": "Образовательные программы"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.muctr.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.muctr.ru/university/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "РГГУ",
       "slug": "rsuh",
       "programs": 8,
-      "indicators": 104,
-      "verified": 0,
+      "indicators": 110,
+      "universityIndicators": 6,
+      "programIndicators": 104,
+      "verified": 2,
       "missing": 96,
-      "review": 8,
+      "review": 12,
       "conflicts": 0,
-      "coverage": 0,
+      "coverage": 2,
       "years": [2026],
       "sources": [
         {
@@ -494,18 +789,32 @@
           "format": "html",
           "locator": "Высшее образование — бакалавриат и специалитет"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.rsuh.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.rsuh.ru/who_is_who/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "Финансовый университет",
       "slug": "fa",
       "programs": 10,
-      "indicators": 130,
-      "verified": 10,
+      "indicators": 136,
+      "universityIndicators": 6,
+      "programIndicators": 130,
+      "verified": 13,
       "missing": 110,
-      "review": 10,
+      "review": 13,
       "conflicts": 0,
-      "coverage": 8,
+      "coverage": 10,
       "years": [2026],
       "sources": [
         {
@@ -516,18 +825,37 @@
           "format": "html",
           "locator": "Образовательные программы"
         }
+      ],
+      "factSources": [
+        {
+          "url": "https://www.fa.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.fa.ru/university/about/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.fa.ru/university/structure/vuc/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        }
       ]
     },
     {
       "university": "Московский Политех",
       "slug": "mospolytech",
       "programs": 10,
-      "indicators": 130,
-      "verified": 10,
+      "indicators": 136,
+      "universityIndicators": 6,
+      "programIndicators": 130,
+      "verified": 13,
       "missing": 110,
-      "review": 10,
+      "review": 13,
       "conflicts": 0,
-      "coverage": 8,
+      "coverage": 10,
       "years": [2026],
       "sources": [
         {
@@ -537,6 +865,23 @@
           "year": 2026,
           "format": "pdf",
           "locator": "Таблица 4.1, направления и специальности"
+        }
+      ],
+      "factSources": [
+        {
+          "url": "https://mospolytech.ru",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mospolytech.ru/university/about/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mospolytech.ru/obuchauschimsya/voennyy-uchebnyy-tsentr/",
+          "type": "html",
+          "checkedAt": "2026-08-26T12:00:00.000Z"
         }
       ]
     }

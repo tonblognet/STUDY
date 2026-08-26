@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { matchesPersistedMetric, type PersistedMetric } from "./metric-version";
+import {
+  matchesPersistedMetric,
+  matchesPersistedUniversityFact,
+  type PersistedMetric,
+} from "./metric-version";
 import type { SourcedValue } from "../../lib/admissions/types";
 
 const field: SourcedValue<number> = {
@@ -76,5 +80,20 @@ describe("версионирование импортируемой метрик
         withoutOptional,
       ),
     ).toBe(true);
+  });
+
+  it("создаёт новую university fact версию при изменении типа источника", () => {
+    expect(
+      matchesPersistedUniversityFact(
+        { ...persisted, sourceType: "OFFICIAL_HTML" },
+        { ...field, sourceKind: "html" },
+      ),
+    ).toBe(true);
+    expect(
+      matchesPersistedUniversityFact(
+        { ...persisted, sourceType: "OFFICIAL_PDF" },
+        { ...field, sourceKind: "html" },
+      ),
+    ).toBe(false);
   });
 });

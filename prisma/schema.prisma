@@ -257,19 +257,19 @@ model ProductEntitlement {
 }
 
 model University {
-  id                String             @id @default(cuid())
-  slug              String             @unique
+  id                String                @id @default(cuid())
+  slug              String                @unique
   name              String
   shortName         String
   description       String?
   websiteUrl        String
   logoUrl           String?
-  countryCode       String             @default("RU")
+  countryCode       String                @default("RU")
   regionCode        String?
   city              String
   address           String?
-  latitude          Decimal?           @db.Decimal(9, 6)
-  longitude         Decimal?           @db.Decimal(9, 6)
+  latitude          Decimal?              @db.Decimal(9, 6)
+  longitude         Decimal?              @db.Decimal(9, 6)
   contacts          Json?
   socialLinks       Json?
   hasDormitory      Boolean?
@@ -277,12 +277,13 @@ model University {
   hasMilitaryCenter Boolean?
   license           Json?
   accreditation     Json?
-  status            PublicationStatus  @default(REVIEW)
-  updatedAt         DateTime           @updatedAt
+  status            PublicationStatus     @default(REVIEW)
+  updatedAt         DateTime              @updatedAt
   campuses          Campus[]
   programs          EducationProgram[]
   favorites         Favorite[]
   sources           DataSource[]
+  factValues        UniversityFactValue[]
 
   @@index([status, name])
 }
@@ -297,6 +298,38 @@ model Campus {
   university   University @relation(fields: [universityId], references: [id], onDelete: Cascade)
 
   @@index([universityId])
+}
+
+model UniversityFactValue {
+  id                  String                @id @default(cuid())
+  universityId        String
+  factKey             String
+  year                Int
+  value               Json?
+  status              DataValueStatus
+  sourceType          SourceType
+  sourceUrl           String
+  sourceName          String
+  sourceDocumentTitle String?
+  sourcePage          Int?
+  sourceSheet         String?
+  sourceRange         String?
+  sourceSection       String?
+  retrievedAt         DateTime
+  checkedAt           DateTime
+  checkedBy           String
+  nextReviewAt        DateTime?
+  note                String?
+  version             Int                   @default(1)
+  supersedesId        String?
+  createdAt           DateTime              @default(now())
+  university          University            @relation(fields: [universityId], references: [id], onDelete: Cascade)
+  supersedes          UniversityFactValue?  @relation("UniversityFactHistory", fields: [supersedesId], references: [id], onDelete: SetNull)
+  newerVersions       UniversityFactValue[] @relation("UniversityFactHistory")
+
+  @@unique([universityId, factKey, year, version])
+  @@index([universityId, year, factKey])
+  @@index([status, checkedAt])
 }
 
 model EducationProgram {

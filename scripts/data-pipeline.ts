@@ -1,18 +1,26 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { extname, join, relative } from "node:path";
-import { DataValueStatus, PrismaClient } from "@prisma/client";
+import { DataValueStatus, PrismaClient, SourceType } from "@prisma/client";
 import {
   assertAdapterCoverage,
   assertOfficialSource,
 } from "../data-sources/core/adapter";
-import { matchesPersistedMetric } from "../data-sources/core/metric-version";
+import {
+  matchesPersistedMetric,
+  matchesPersistedUniversityFact,
+} from "../data-sources/core/metric-version";
+import { validateUniversityFactProfile } from "../data-sources/core/university-fact-validation";
 import {
   getUniversityAdapter,
   universityAdapters,
 } from "../data-sources/universities";
 import { programs, universities, type Program } from "../lib/data";
-import type { SourcedValue } from "../lib/admissions/types";
+import type { SourceKind, SourcedValue } from "../lib/admissions/types";
+import {
+  universityFactProfiles,
+  universitySourcedFields,
+} from "../lib/university-facts";
 
 const args = process.argv.slice(2);
 const command = args.find((arg) => !arg.startsWith("--")) ?? "report";
@@ -56,6 +64,16 @@ if (university && selected.length === 0)
 
 function statusName(value: string): DataValueStatus {
   return value.toUpperCase() as DataValueStatus;
+}
+function sourceTypeName(value: SourceKind | undefined): SourceType {
+  const names: Record<SourceKind, SourceType> = {
+    html: "OFFICIAL_HTML",
+    pdf: "OFFICIAL_PDF",
+    xlsx: "XLSX",
+    csv: "CSV",
+    docx: "MANUAL",
+  };
+  return names[value ?? "html"];
 }
 function official(adapterSlug: string, url: string) {
   const adapter = getUniversityAdapter(adapterSlug);
@@ -322,6 +340,15 @@ async function parseCache() {
 
 async function validate() {
   let critical = 0;
+  for (const profile of universityFactProfiles.filter(
+    (item) => !university || item.universitySlug === university,
+  )) {
+    const result = validateUniversityFactProfile(profile);
+    critical += result.errors.length;
+    console.log(
+      JSON.stringify({ universityFacts: profile.universitySlug, ...result }),
+    );
+  }
   for (const program of programs.filter(
     (item) => !university || item.universitySlug === university,
   )) {
@@ -349,28 +376,108 @@ async function importPrograms() {
     );
   const prisma = new PrismaClient();
   try {
-    for (const program of targetPrograms) {
+    const targetUniversitySlugs = new Set(
+      targetPrograms.map(({ universitySlug }) => universitySlug),
+    );
+    const universityRows = new Map<string, { id: string }>();
+    for (const profile of universityFactProfiles.filter(({ universitySlug }) =>
+      targetUniversitySlugs.has(universitySlug),
+    )) {
       const universityRecord = universities.find(
-        (item) => item.slug === program.universitySlug,
+        ({ slug }) => slug === profile.universitySlug,
       )!;
+      const published = <T>(field: SourcedValue<T>) =>
+        field.status === "verified" ? field.value : null;
       const universityRow = await prisma.university.upsert({
         where: { slug: universityRecord.slug },
         update: {
           name: universityRecord.name,
           shortName: universityRecord.shortName,
-          websiteUrl: universityRecord.website,
+          description: universityRecord.description,
+          websiteUrl: profile.facts.website.value!,
+          logoUrl: published(profile.facts.logoUrl),
           city: universityRecord.city,
+          address: published(profile.facts.address),
+          dormitoryCount: published(profile.facts.dormitoryCount),
+          hasMilitaryCenter: published(profile.facts.militaryCenter),
           status: "PUBLISHED",
         },
         create: {
           slug: universityRecord.slug,
           name: universityRecord.name,
           shortName: universityRecord.shortName,
-          websiteUrl: universityRecord.website,
+          description: universityRecord.description,
+          websiteUrl: profile.facts.website.value!,
+          logoUrl: published(profile.facts.logoUrl),
           city: universityRecord.city,
+          address: published(profile.facts.address),
+          dormitoryCount: published(profile.facts.dormitoryCount),
+          hasMilitaryCenter: published(profile.facts.militaryCenter),
           status: "PUBLISHED",
         },
       });
+      universityRows.set(profile.universitySlug, universityRow);
+
+      for (const [factKey, field] of universitySourcedFields(profile)) {
+        const current = await prisma.universityFactValue.findFirst({
+          where: {
+            universityId: universityRow.id,
+            factKey,
+            year: field.year,
+          },
+          orderBy: { version: "desc" },
+        });
+        const factSourceType = sourceTypeName(field.sourceKind);
+        if (matchesPersistedUniversityFact(current, field)) continue;
+        await prisma.universityFactValue.create({
+          data: {
+            universityId: universityRow.id,
+            factKey,
+            year: field.year,
+            value: field.value === null ? undefined : field.value,
+            status: statusName(field.status),
+            sourceType: factSourceType,
+            sourceUrl: field.sourceUrl,
+            sourceName: field.sourceName,
+            sourceDocumentTitle: field.sourceDocumentTitle,
+            sourcePage: field.sourcePage,
+            sourceSheet: field.sourceSheet,
+            sourceRange: field.sourceRange,
+            sourceSection: field.sourceSection,
+            retrievedAt: new Date(field.retrievedAt),
+            checkedAt: new Date(field.checkedAt),
+            checkedBy: field.checkedBy,
+            nextReviewAt: field.nextReviewAt
+              ? new Date(field.nextReviewAt)
+              : null,
+            note: field.note,
+            version: (current?.version ?? 0) + 1,
+            supersedesId: current?.id,
+          },
+        });
+      }
+
+      for (const campus of profile.campuses) {
+        if (campus.address.status !== "verified" || !campus.address.value)
+          continue;
+        await prisma.campus.upsert({
+          where: { id: campus.id },
+          update: {
+            name: campus.name,
+            address: campus.address.value,
+          },
+          create: {
+            id: campus.id,
+            universityId: universityRow.id,
+            name: campus.name,
+            address: campus.address.value,
+          },
+        });
+      }
+    }
+
+    for (const program of targetPrograms) {
+      const universityRow = universityRows.get(program.universitySlug)!;
       const row = await prisma.educationProgram.upsert({
         where: { slug: program.slug },
         update: {
@@ -447,7 +554,16 @@ async function report() {
     const items = programs.filter(
       (program) => program.universitySlug === adapter.slug,
     );
-    const fields = items.flatMap(sourcedFields).map(([, field]) => field);
+    const programFields = items
+      .flatMap(sourcedFields)
+      .map(([, field]) => field);
+    const profile = universityFactProfiles.find(
+      ({ universitySlug }) => universitySlug === adapter.slug,
+    )!;
+    const universityFields = universitySourcedFields(profile).map(
+      ([, field]) => field,
+    );
+    const fields = [...universityFields, ...programFields];
     const verified = fields.filter(
       (field) => field.status === "verified",
     ).length;
@@ -468,6 +584,8 @@ async function report() {
       slug: adapter.slug,
       programs: items.length,
       indicators: fields.length,
+      universityIndicators: universityFields.length,
+      programIndicators: programFields.length,
       verified,
       missing,
       review,
@@ -475,6 +593,18 @@ async function report() {
       coverage,
       years: [...new Set(fields.map((field) => field.year))].sort(),
       sources: adapter.sources,
+      factSources: [
+        ...new Map(
+          universityFields.map((field) => [
+            field.sourceUrl,
+            {
+              url: field.sourceUrl,
+              type: field.sourceKind,
+              checkedAt: field.checkedAt,
+            },
+          ]),
+        ).values(),
+      ],
     };
   });
   const output = {

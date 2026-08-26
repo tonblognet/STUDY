@@ -1,5 +1,5 @@
 import { isDeepStrictEqual } from "node:util";
-import type { SourcedValue } from "../../lib/admissions/types";
+import type { SourceKind, SourcedValue } from "../../lib/admissions/types";
 
 export type PersistedMetric = {
   value: unknown;
@@ -44,5 +44,23 @@ export function matchesPersistedMetric(
     current.checkedBy === field.checkedBy &&
     timestamp(current.nextReviewAt) === timestamp(field.nextReviewAt) &&
     optional(current.note) === optional(field.note)
+  );
+}
+
+const sourceTypes: Record<SourceKind, string> = {
+  html: "OFFICIAL_HTML",
+  pdf: "OFFICIAL_PDF",
+  xlsx: "XLSX",
+  csv: "CSV",
+  docx: "MANUAL",
+};
+
+export function matchesPersistedUniversityFact(
+  current: (PersistedMetric & { sourceType: string }) | null | undefined,
+  field: SourcedValue<unknown>,
+) {
+  return (
+    matchesPersistedMetric(current, field) &&
+    current?.sourceType === sourceTypes[field.sourceKind ?? "html"]
   );
 }

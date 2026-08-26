@@ -46,10 +46,25 @@ to a catalog university. Each program source URL is checked against the
 registered official domains of its own university.
 
 The quality snapshot is regenerated with `pnpm data:report`. As of 2026-08-26,
-it covers 20 universities, 101 programs and 1,387 sourced indicators. Coverage
+it covers 20 universities, 101 programs and 1,498 sourced indicators, including
+111 university and campus facts. Coverage
 is not a score of university quality: it is the share of indicators currently
 marked `VERIFIED`; `PENDING_REVIEW` and `NOT_PUBLISHED` remain visible instead
 of being filled with estimates.
+
+## University and campus facts
+
+`lib/university-facts.ts` is the source-aware snapshot for official website,
+logo, address, dormitory count, military training center and campus address.
+Every value carries source type and URL, review timestamps, reviewer and quality
+status. A missing confirmation is stored as `null` with `PENDING_REVIEW`; it is
+never converted to `false` or `0`.
+
+The importer versions these facts in `UniversityFactValue`. A change to the
+value, status, source type, locator, review date or note creates a new version;
+an identical import is skipped. Only `VERIFIED` values are copied into the
+denormalized `University` and `Campus` columns used for publication. Exact fact
+sources are included as `factSources` in the generated quality report.
 
 ## Curated Moscow catalog sources
 

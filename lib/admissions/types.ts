@@ -12,6 +12,7 @@ export type SourcedValue<T> = {
   value: T | null;
   year: number;
   status: DataStatus;
+  sourceKind?: SourceKind;
   sourceUrl: string;
   sourceName: string;
   sourceDocumentTitle?: string;
