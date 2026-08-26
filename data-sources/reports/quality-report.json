@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T15:46:38.843Z",
+  "generatedAt": "2026-08-26T16:58:53.983Z",
   "publicationRule": "Только verified значения показаны как подтверждённые; null не заменяется нулём.",
   "universities": [
     {
@@ -43,11 +43,11 @@
       "slug": "mai",
       "programs": 1,
       "indicators": 17,
-      "verified": 7,
-      "missing": 7,
+      "verified": 8,
+      "missing": 6,
       "review": 1,
       "conflicts": 0,
-      "coverage": 41,
+      "coverage": 47,
       "years": [2025, 2026],
       "sources": [
         {
@@ -137,11 +137,11 @@
       "slug": "mpei",
       "programs": 1,
       "indicators": 19,
-      "verified": 11,
-      "missing": 6,
+      "verified": 12,
+      "missing": 5,
       "review": 0,
       "conflicts": 0,
-      "coverage": 58,
+      "coverage": 63,
       "years": [2025, 2026],
       "sources": [
         {
@@ -171,13 +171,13 @@
     {
       "university": "НИЯУ МИФИ",
       "slug": "mephi",
-      "programs": 1,
-      "indicators": 14,
-      "verified": 2,
-      "missing": 10,
+      "programs": 12,
+      "indicators": 201,
+      "verified": 86,
+      "missing": 91,
       "review": 2,
       "conflicts": 0,
-      "coverage": 14,
+      "coverage": 43,
       "years": [2025, 2026],
       "sources": [
         {
@@ -317,6 +317,226 @@
           "title": "Приёмная комиссия",
           "year": 2026,
           "format": "html"
+        }
+      ]
+    },
+    {
+      "university": "МГТУ им. Н. Э. Баумана",
+      "slug": "bmstu",
+      "programs": 8,
+      "indicators": 104,
+      "verified": 8,
+      "missing": 88,
+      "review": 8,
+      "conflicts": 0,
+      "coverage": 8,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://priem.bmstu.ru",
+          "title": "Кабинет абитуриента МГТУ им. Н. Э. Баумана",
+          "year": 2026,
+          "format": "html",
+          "locator": "Перечень направлений бакалавриата и специалитета"
+        }
+      ]
+    },
+    {
+      "university": "МГИМО МИД России",
+      "slug": "mgimo",
+      "programs": 8,
+      "indicators": 104,
+      "verified": 8,
+      "missing": 88,
+      "review": 8,
+      "conflicts": 0,
+      "coverage": 8,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://mgimo.ru/study/admission/",
+          "title": "Поступление в МГИМО",
+          "year": 2026,
+          "format": "html",
+          "locator": "Бакалавриат и специалитет"
+        }
+      ]
+    },
+    {
+      "university": "Пироговский Университет",
+      "slug": "pirogov",
+      "programs": 8,
+      "indicators": 104,
+      "verified": 8,
+      "missing": 88,
+      "review": 8,
+      "conflicts": 0,
+      "coverage": 8,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://rsmu.ru/abitur/bachelor",
+          "title": "Приёмная кампания 2026: специалитет",
+          "year": 2026,
+          "format": "html",
+          "locator": "Программы специалитета, базового высшего образования и бакалавриата"
+        }
+      ]
+    },
+    {
+      "university": "Сеченовский Университет",
+      "slug": "sechenov",
+      "programs": 8,
+      "indicators": 104,
+      "verified": 8,
+      "missing": 88,
+      "review": 8,
+      "conflicts": 0,
+      "coverage": 8,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://www.sechenov.ru/admissions/priemnaya-kampaniya-2026/bakalavriat-spetsialitet/",
+          "title": "Приёмная кампания 2026: бакалавриат и специалитет",
+          "year": 2026,
+          "format": "html",
+          "locator": "Образовательные программы"
+        }
+      ]
+    },
+    {
+      "university": "РГУ нефти и газа имени И. М. Губкина",
+      "slug": "gubkin",
+      "programs": 8,
+      "indicators": 104,
+      "verified": 8,
+      "missing": 88,
+      "review": 8,
+      "conflicts": 0,
+      "coverage": 8,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://postupai.gubkin.ru/",
+          "title": "Поступай в Губкинский университет",
+          "year": 2026,
+          "format": "html",
+          "locator": "Направления подготовки"
+        }
+      ]
+    },
+    {
+      "university": "МГЮА имени О. Е. Кутафина",
+      "slug": "msal",
+      "programs": 4,
+      "indicators": 52,
+      "verified": 0,
+      "missing": 48,
+      "review": 4,
+      "conflicts": 0,
+      "coverage": 0,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://msal.ru/content/abiturientam/priemnaya-kampaniya/bakalavriat-spetsialitet/",
+          "title": "Приёмная кампания: бакалавриат и специалитет",
+          "year": 2026,
+          "format": "html",
+          "locator": "Направления подготовки и специальности"
+        }
+      ]
+    },
+    {
+      "university": "РХТУ им. Д. И. Менделеева",
+      "slug": "muctr",
+      "programs": 8,
+      "indicators": 104,
+      "verified": 0,
+      "missing": 96,
+      "review": 8,
+      "conflicts": 0,
+      "coverage": 0,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://chemeng2030.muctr.ru/",
+          "title": "Поступление в РХТУ в 2026 году",
+          "year": 2026,
+          "format": "html",
+          "locator": "Образовательные программы"
+        }
+      ]
+    },
+    {
+      "university": "РГГУ",
+      "slug": "rsuh",
+      "programs": 8,
+      "indicators": 104,
+      "verified": 0,
+      "missing": 96,
+      "review": 8,
+      "conflicts": 0,
+      "coverage": 0,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://www.rsuh.ru/sveden/education/index_.php",
+          "title": "Информация о реализуемых образовательных программах",
+          "year": 2026,
+          "format": "html",
+          "locator": "Высшее образование — бакалавриат и специалитет"
+        }
+      ]
+    },
+    {
+      "university": "Финансовый университет",
+      "slug": "fa",
+      "programs": 10,
+      "indicators": 130,
+      "verified": 10,
+      "missing": 110,
+      "review": 10,
+      "conflicts": 0,
+      "coverage": 8,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://www.fa.ru/for-applicants/abitur2026/bak/",
+          "title": "Бакалавриат и специалитет: приём 2026",
+          "year": 2026,
+          "format": "html",
+          "locator": "Образовательные программы"
+        }
+      ]
+    },
+    {
+      "university": "Московский Политех",
+      "slug": "mospolytech",
+      "programs": 10,
+      "indicators": 130,
+      "verified": 10,
+      "missing": 110,
+      "review": 10,
+      "conflicts": 0,
+      "coverage": 8,
+      "years": [2026],
+      "sources": [
+        {
+          "category": "programs",
+          "url": "https://mospolytech.ru/upload/iblock/191/ykedf9chhmhzr36p3ip9uiqca21sebgi/4.1_Moskva.pdf",
+          "title": "Перечень образовательных программ, Москва",
+          "year": 2026,
+          "format": "pdf",
+          "locator": "Таблица 4.1, направления и специальности"
         }
       ]
     }

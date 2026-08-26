@@ -37,6 +37,20 @@ Every critical value stores source URL/type, publication date when available, re
 - Failed/partial imports do not alter published data.
 - Critical changes require two-source cross-check when another official source exists.
 
+## Adapter registry invariant
+
+Every university published in the catalog must have exactly one adapter in
+`data-sources/universities`. The pipeline fails before discovery, validation,
+reporting or import when an adapter is missing, duplicated or no longer linked
+to a catalog university. Each program source URL is checked against the
+registered official domains of its own university.
+
+The quality snapshot is regenerated with `pnpm data:report`. As of 2026-08-26,
+it covers 20 universities, 101 programs and 1,387 sourced indicators. Coverage
+is not a score of university quality: it is the share of indicators currently
+marked `VERIFIED`; `PENDING_REVIEW` and `NOT_PUBLISHED` remain visible instead
+of being filled with estimates.
+
 ## Curated Moscow catalog sources
 
 The first public catalog slice uses only official university domains. The main

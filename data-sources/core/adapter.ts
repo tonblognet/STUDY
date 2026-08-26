@@ -56,3 +56,32 @@ export function assertOfficialSource(
     );
   }
 }
+
+export function assertAdapterCoverage(
+  adapters: readonly UniversityAdapter[],
+  catalogSlugs: readonly string[],
+) {
+  const catalog = new Set(catalogSlugs);
+  const counts = new Map<string, number>();
+  for (const adapter of adapters)
+    counts.set(adapter.slug, (counts.get(adapter.slug) ?? 0) + 1);
+
+  const missing = [...catalog].filter((slug) => !counts.has(slug)).sort();
+  const orphaned = [...counts.keys()]
+    .filter((slug) => !catalog.has(slug))
+    .sort();
+  const duplicated = [...counts]
+    .filter(([, count]) => count > 1)
+    .map(([slug]) => slug)
+    .sort();
+  const problems = [
+    missing.length ? `нет адаптера: ${missing.join(", ")}` : null,
+    orphaned.length ? `адаптер без вуза: ${orphaned.join(", ")}` : null,
+    duplicated.length ? `дубли адаптеров: ${duplicated.join(", ")}` : null,
+  ].filter(Boolean);
+
+  if (problems.length)
+    throw new Error(
+      `Некорректный реестр официальных источников — ${problems.join("; ")}`,
+    );
+}

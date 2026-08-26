@@ -2,7 +2,11 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { extname, join, relative } from "node:path";
 import { DataValueStatus, PrismaClient } from "@prisma/client";
-import { assertOfficialSource } from "../data-sources/core/adapter";
+import {
+  assertAdapterCoverage,
+  assertOfficialSource,
+} from "../data-sources/core/adapter";
+import { matchesPersistedMetric } from "../data-sources/core/metric-version";
 import {
   getUniversityAdapter,
   universityAdapters,
@@ -33,6 +37,11 @@ const PRIVATE_RESPONSE_HEADERS = new Set([
   "set-cookie",
   "www-authenticate",
 ]);
+
+assertAdapterCoverage(
+  universityAdapters,
+  universities.map(({ slug }) => slug),
+);
 
 function safeResponseHeaders(headers: Headers) {
   return Object.fromEntries(
@@ -399,12 +408,7 @@ async function importPrograms() {
           where: { programId: row.id, metricKey, year: field.year },
           orderBy: { version: "desc" },
         });
-        const same =
-          current &&
-          JSON.stringify(current.value) === JSON.stringify(field.value) &&
-          current.status === statusName(field.status) &&
-          current.sourceUrl === field.sourceUrl;
-        if (same) continue;
+        if (matchesPersistedMetric(current, field)) continue;
         await prisma.metricValue.create({
           data: {
             programId: row.id,
