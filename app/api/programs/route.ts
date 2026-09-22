@@ -1,11 +1,13 @@
 import { NextResponse } from "next/server";
-import { programs } from "@/lib/data";
+import { getCatalogPublication } from "@/lib/catalog/server";
 
 export async function GET() {
+  const { snapshot, revisionId, publishedAt } = await getCatalogPublication();
   return NextResponse.json({
-    generatedAt: "2026-08-05T12:00:00.000Z",
+    revisionId,
+    publishedAt,
     policy:
       "Все значения содержат собственный год, статус и источник; null не заменяется нулём.",
-    programs,
+    programs: snapshot.programs,
   });
 }

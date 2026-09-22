@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import type { Program } from "@/lib/data";
-import { formatPrice } from "@/lib/data";
+import { formatPrice } from "@/lib/catalog/format";
 import { DataSourceLink, DataStatusBadge } from "@/components/data-status";
 import { SavedProgramActions } from "@/components/saved-program-actions";
 

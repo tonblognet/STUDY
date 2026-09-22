@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com" width="32"
+     height="32">
+  <rect x="-2.008" y="0.204" width="500.064" height="500.596" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-opacity: 0; stroke-width: 0; visibility: hidden;"/>
+  <rect x="-0.986" y="-23.758" width="518.221" height="516.818" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); visibility: hidden; stroke-width: 1;"/>
+  <rect x="1.512" y="4.444" width="500.064" height="500.596" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-opacity: 0; stroke-width: 0; visibility: hidden;"/>
+  <path d="M 484.585 255.377 C 484.585 311.384 464.617 362.728 431.413 402.677 L 76.955 403.118 C 43.53 363.106 23.416 311.591 23.416 255.377 C 23.416 128.028 126.652 24.791 254.001 24.791 C 381.35 24.791 484.586 128.028 484.586 255.377 L 484.585 255.377 Z" style="stroke-width: 4; fill-opacity: 0; stroke: rgb(0, 0, 0);"/>
+  <g transform="matrix(1, 0, 0, 1, 1.561315, 30.550514)">
+    <rect x="162.856" y="131.184" width="22.769" height="128.713" style="stroke-linecap: square; stroke-width: 0px; paint-order: stroke; stroke: rgb(0, 0, 0);"/>
+    <rect x="160.893" y="236.644" width="26.348" height="23.672" style="stroke-linecap: square; stroke-width: 0; paint-order: stroke; stroke: rgb(0, 0, 0);"/>
+  </g>
+  <path style="paint-order: stroke; stroke-width: 10; stroke-dashoffset: 3px; stroke-linecap: square; stroke: rgb(0, 0, 0); fill: rgba(0, 0, 0, 0);" d="M 82.219 267.862 C 82.219 267.862 82.432 202.369 83.563 194.746 C 84.694 187.123 153.023 183.812 158.888 184.124"/>
+  <path style="paint-order: stroke; stroke-dashoffset: 3px; stroke-linecap: round; stroke-width: 5; stroke: rgb(0, 0, 0);" d="M 79.886 179.314 C 83.233 171.106 154.921 167.54 161.256 167.877"/>
+  <path style="paint-order: stroke; stroke-dashoffset: 3px; stroke-linecap: round; stroke-width: 5; transform-box: fill-box; transform-origin: 50% 50%; stroke: rgb(0, 0, 0);" d="M 339.271 168.101 C 342.618 176.309 414.306 179.875 420.641 179.538" transform="matrix(-1, 0, 0, -1, 0.000045, -0.000025)"/>
+  <path style="stroke-width: 10; stroke-dashoffset: 3px; stroke-linecap: square; paint-order: fill; transform-box: fill-box; transform-origin: 50% 50%; stroke: rgb(0, 0, 0); fill: rgba(0, 0, 0, 0);" d="M 342.365 183.931 C 342.365 183.931 342.578 249.424 343.709 257.047 C 344.84 264.67 413.169 267.981 419.034 267.669" transform="matrix(-1, 0, 0, -1, -0.000012, 0.000029)"/>
+  <rect x="164.96" y="142.664" width="171.83" height="10.609" style="stroke-linecap: square; paint-order: stroke; stroke-width: 0; stroke: rgb(0, 0, 0);"/>
+  <path style="stroke-width: 9; stroke: rgb(0, 0, 0); fill: rgba(0, 0, 0, 0);" d="M 350.457 131.312 L 249.89 95.702 L 150.039 131.133"/>
+  <rect x="158.427" y="131.555" width="188.293" height="7.209" style="stroke-linecap: square; paint-order: stroke; stroke-width: 0; stroke: rgb(0, 0, 0);"/>
+  <path style="fill: rgba(0, 0, 0, 0); fill-opacity: 0.02; paint-order: fill; stroke: rgb(0, 0, 0); stroke-width: 4px;" d="M 329.162 135.517 L 249.71 107.602 L 174.195 135.338"/>
+  <g transform="matrix(1, 0, 0, 1, 1.561315, 30.550514)">
+    <path style="stroke-width: 10px; stroke-linecap: square; stroke: rgb(0, 0, 0);" d="M 71.173 267.537 C 63.987 259.908 141.963 254.18 155.099 253.937"/>
+    <ellipse style="stroke-width: 0px; stroke: rgb(0, 0, 0);" cx="69.383" cy="268.969" rx="11.631" ry="8.768"/>
+  </g>
+  <g transform="matrix(-1, 0, 0, 1, 499.649872, 31.177101)" style="">
+    <path style="stroke-width: 10px; stroke-linecap: square; stroke: rgb(0, 0, 0);" d="M 71.173 267.537 C 63.987 259.908 141.963 254.18 155.099 253.937"/>
+    <ellipse style="stroke-width: 0px; stroke: rgb(0, 0, 0);" cx="69.383" cy="268.969" rx="11.631" ry="8.768"/>
+  </g>
+  <rect x="192.427" y="282.943" width="115.642" height="8.104" style="stroke-linecap: square; paint-order: stroke; stroke-width: 0; stroke: rgb(0, 0, 0);"/>
+  <g transform="matrix(1, 0, 0, 1, 150.801346, 30.043804)">
+    <rect x="162.856" y="131.184" width="22.769" height="128.713" style="stroke-linecap: square; stroke-width: 0px; paint-order: stroke; stroke: rgb(0, 0, 0);"/>
+    <rect x="160.893" y="236.644" width="26.348" height="23.672" style="stroke-linecap: square; stroke-width: 0; paint-order: stroke; stroke: rgb(0, 0, 0);"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -4.701755, 30.192646)">
+    <rect x="115.91" y="163.212" width="9.305" height="80.704" style="stroke-width: 0px; stroke: rgb(0, 0, 0);"/>
+    <ellipse style="stroke-width: 0px; stroke: rgb(0, 0, 0);" cx="119.936" cy="162.765" rx="9.395" ry="10.11"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 272.394348, 32.160881)">
+    <rect x="115.91" y="163.212" width="9.305" height="80.704" style="stroke-width: 0px; stroke: rgb(0, 0, 0);"/>
+    <ellipse style="stroke-width: 0px; stroke: rgb(0, 0, 0);" cx="119.936" cy="161.781" rx="9.395" ry="11.094"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 29.387499, 30.550379)">
+    <rect x="115.91" y="163.212" width="9.305" height="80.704" style="stroke-opacity: 0.65; paint-order: fill markers; stroke-dashoffset: -100px; stroke-miterlimit: 1; stroke-width: 0px; stroke: rgb(0, 0, 0);"/>
+    <ellipse style="stroke-opacity: 0.65; paint-order: fill markers; stroke-dashoffset: -100px; stroke-miterlimit: 1; stroke-width: 0px; stroke: rgb(0, 0, 0);" cx="119.936" cy="162.765" rx="9.395" ry="10.11"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 232.847733, 31.624077)">
+    <rect x="115.91" y="163.212" width="9.305" height="80.704" style="stroke-width: 0px; stroke-dashoffset: 5.4px; stroke: rgb(0, 0, 0);"/>
+    <ellipse style="stroke-width: 0px; stroke-dashoffset: 1.83px; stroke: rgb(0, 0, 0);" cx="119.936" cy="162.765" rx="9.395" ry="10.11"/>
+  </g>
+  <g transform="matrix(1.004986, 0, 0, 1.004986, -0.677051, -36.594402)" style="">
+    <g>
+      <rect x="191.335" y="393.953" width="112.916" height="9.305" style="stroke-width: 0px; stroke: rgb(0, 0, 0);"/>
+      <ellipse style="stroke-width: 0px; transform-box: fill-box; transform-origin: 50% 50%; stroke: rgb(0, 0, 0);" cx="258.188" cy="211.872" rx="12.553" ry="16.453" transform="matrix(0.984968, 0.172734, -0.172733, 0.984969, -0.000262, 0.000031)"/>
+      <rect x="205.114" y="250.745" width="11.453" height="132.829" style="stroke-width: 0px; stroke: rgb(0, 0, 0);"/>
+      <path d="M 244.537 251.905 Q 250.536 226.278 260.365 251.905 L 303.716 364.926 Q 313.545 390.553 297.717 390.553 L 227.909 390.553 Q 212.081 390.553 218.08 364.926 Z" bx:shape="triangle 212.081 226.278 101.464 164.275 0.379 0.156 1@1d0b5b3d" style="stroke-width: 0px; stroke: rgb(0, 0, 0);"/>
+      <path d="M 809.79 78.15 H 935.901 V 81.55 H 939.301 V 132.964 H 935.901 V 136.364 H 809.79 V 132.964 H 806.39 V 81.55 H 809.79 V 78.15 Z" bx:shape="rect 806.39 78.15 132.911 58.214 3 3.4 3.4 2@7e349137" style="stroke-width: 0px; stroke: rgb(0, 0, 0);" transform="matrix(0, 1, -1, 0, 356.840133, -570.297753)"/>
+      <path d="M 150.514 83.267 H 167.962 V 86.667 H 171.362 V 141.893 H 167.962 V 145.293 H 150.514 V 141.893 H 147.114 V 86.667 H 150.514 V 83.267 Z" bx:shape="rect 147.114 83.267 24.248 62.026 3 3.4 3.4 2@fb2d817a" style="stroke-width: 0; transform-box: fill-box; transform-origin: 50% 50%; stroke: rgb(0, 0, 0);" transform="matrix(-0.004194, 0.999991, -1.000028, 0.004612, 87.488332, 129.478839)"/>
+      <path d="M 76.454 29.387 H 81.695 V 32.787 H 85.095 V 47.877 H 81.695 V 51.277 H 76.454 V 47.877 H 73.054 V 32.787 H 76.454 V 29.387 Z" bx:shape="rect 73.054 29.387 12.041 21.89 3 3.4 3.4 2@55d8fa72" style="stroke-width: 0; transform-origin: 79.074px 40.333px; stroke: rgb(0, 0, 0);" transform="matrix(-0.004194, 0.999991, -1.000028, 0.004612, 174.535231, 188.377972)"/>
+      <path d="M 166.815 36.677 H 186.95 V 40.077 H 190.35 V 60.598 H 186.95 V 63.998 H 166.815 V 60.598 H 163.415 V 40.077 H 166.815 V 36.677 Z" bx:shape="rect 163.415 36.677 26.935 27.321 3 3.4 3.4 2@3058ba7b" style="stroke-width: 0; transform-origin: 176.882px 50.337px; stroke: rgb(0, 0, 0);" transform="matrix(-0.004194, 0.999991, -1.000028, 0.004612, 32.706514, 191.517556)"/>
+      <g transform="matrix(-1, 0, 0, 1.290635, 395.108415, -125.829694)" style="">
+        <path style="stroke-width: 10px; stroke-linecap: square; stroke: rgb(0, 0, 0);" d="M 76.72 301.716 C 87.25 311.266 114.584 284.959 127.72 284.716"/>
+        <ellipse style="stroke-width: 0px; stroke: rgb(0, 0, 0);" cx="68.488" cy="294.738" rx="11.631" ry="8.768"/>
+      </g>
+      <path d="M 211.542 368.957 L 225.872 387.747 L 193.304 387.747 L 211.542 368.957 Z" bx:shape="triangle 193.304 368.957 32.568 18.79 0.56 0 1@b747957c" style="stroke-width: 0px; stroke: rgb(0, 0, 0);"/>
+    </g>
+  </g>
+</svg>

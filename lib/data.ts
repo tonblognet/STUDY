@@ -5,10 +5,36 @@ import type {
   ProgramTrust,
   SourcedValue,
 } from "@/lib/admissions/types";
+import { calculateCompleteness } from "@/lib/admissions/completeness";
+import {
+  getMguExamRequirements,
+  getMguDviMinimum,
+  mguFact,
+  MGU_RULES_SOURCE,
+  MGU_REVIEW_DATE,
+} from "./mgu-admissions";
+import { getMguDetails, mguDormitoryConditions } from "./mgu-details";
+import {
+  completeMoscowDirectory,
+  type DirectoryProvenance,
+} from "./moscow-universities";
 import {
   expandedPrograms,
   expandedUniversities,
 } from "@/lib/catalog-expansion";
+import {
+  getMguDvi,
+  getMguEgeSubjects,
+  getMguProgramLevel,
+  getMguProgramPassingHistory,
+  getMguProgramTags,
+  getMguProgramTitle,
+  MGU_CATALOG_SOURCE,
+  MGU_DORMITORY_SOURCE,
+  MGU_MILITARY_SOURCE,
+  MGU_SCORE_ARCHIVE_SOURCE,
+  mguCatalogPrograms,
+} from "@/lib/mgu-data";
 
 export type University = {
   id: string;
@@ -22,6 +48,7 @@ export type University = {
   website: string;
   programsCount: number;
   logoUrl?: string;
+  logoBackground?: string;
   logoSourceUrl: string;
   militaryCenter: boolean | null;
   militaryCenterSourceUrl?: string;
@@ -32,6 +59,7 @@ export type University = {
   dormitoriesCount?: number;
   faculties?: string[];
   factsSourceUrl?: string;
+  directory?: DirectoryProvenance;
 };
 
 type Quotas = {
@@ -52,6 +80,11 @@ export type Program = {
   level: "Бакалавриат" | "Специалитет";
   form: "Очная" | "Очно-заочная" | "Заочная";
   duration: string;
+  durationValue?: SourcedValue<string>;
+  admissionsContact?: Record<
+    "address" | "phone" | "email" | "website",
+    SourcedValue<string>
+  >;
   faculty: string | null;
   campus: string | null;
   language: string;
@@ -59,6 +92,7 @@ export type Program = {
   examRequirements: ExamRequirement[];
   passingScore: number | null;
   passingScoreValue: SourcedValue<number>;
+  passingScoreExamScale?: number | null;
   previousScores: { year: number; score: number | null }[];
   passingHistory: HistoricalPoint[];
   placesHistory: HistoricalPoint[];
@@ -74,6 +108,7 @@ export type Program = {
   dvi: string | null;
   dviValue: SourcedValue<string>;
   dviMax: SourcedValue<number>;
+  dviMinimum?: SourcedValue<number>;
   individualAchievementsMax: SourcedValue<number>;
   quotas: Quotas;
   hostel: SourcedValue<boolean>;
@@ -124,7 +159,7 @@ const naNumber = (year: number, url: string, name: string) =>
 const naString = (year: number, url: string, name: string) =>
   sourced<string>(null, year, "not_applicable", url, name);
 
-export const universities: University[] = [
+export const universities: University[] = completeMoscowDirectory([
   {
     id: "hse",
     slug: "hse",
@@ -266,14 +301,28 @@ export const universities: University[] = [
     name: "Московский государственный университет имени М. В. Ломоносова",
     color: "#6b52e5",
     description:
-      "Сведения с официальной страницы приёма экономического факультета.",
+      "Классический университет с кампусом на Ленинских горах. Каталог охватывает официальный набор бакалавриата и специалитета 2026 года, а архив проходных баллов — кампании 2011–2025 годов.",
     city: "Москва",
-    address: "Москва",
+    address: "119991, Москва, Ленинские горы, д. 1",
     website: "https://www.msu.ru",
-    programsCount: 1,
+    programsCount: mguCatalogPrograms.length,
     logoUrl: "/university-logos/mgu.ico",
     logoSourceUrl: "https://270.msu.ru/brandbook",
-    militaryCenter: null,
+    militaryCenter: true,
+    militaryCenterSourceUrl: MGU_MILITARY_SOURCE,
+    admissionsUrl: "https://cpk.msu.ru/",
+    admissionsPhone: "+7 (495) 939-33-98",
+    admissionsEmail: "cpk@org.msu.ru",
+    foundedYear: 1755,
+    faculties: [
+      "Естественные науки",
+      "Инженерия и ИТ",
+      "Медицина и биология",
+      "Экономика и управление",
+      "Гуманитарные науки",
+      "Искусство и медиа",
+    ],
+    factsSourceUrl: "https://international.msu.ru/ru",
   },
   {
     id: "rea",
@@ -293,7 +342,7 @@ export const universities: University[] = [
     militaryCenter: null,
   },
   ...expandedUniversities,
-];
+]);
 
 const bySlug = Object.fromEntries(
   universities.map((university) => [university.slug, university]),
@@ -344,7 +393,7 @@ function program(
     year: point.year,
     score: point.value,
   }));
-  return {
+  const result = {
     ...input,
     university: university.name,
     universityShort: university.shortName,
@@ -355,6 +404,9 @@ function program(
       timeZone: "Europe/Moscow",
     }).format(new Date(input.trust.checkedAt)),
   };
+  if (input.universitySlug === "mgu")
+    result.trust.completeness = calculateCompleteness(result).percent;
+  return result;
 }
 
 programsBase.push(
@@ -1827,121 +1879,279 @@ programsBase.push(
   }),
 );
 
-const msuSource = "https://www.econ.msu.ru/entrance/bachelor/2026/";
-programsBase.push(
-  program({
-    id: "msu-economics",
-    slug: "mgu-economics",
-    universitySlug: "mgu",
-    code: "38.03.01",
-    title: "Экономика",
-    level: "Бакалавриат",
-    form: "Очная",
-    duration: "4 года",
-    faculty: "Экономический факультет",
-    campus: "Москва",
-    language: "Русский",
-    subjects: [
-      "Математика",
-      "Русский язык",
-      "Обществознание / История / Иностранный язык",
-      "ДВИ по математике",
-    ],
-    examRequirements: [],
-    passingScore: null,
-    passingScoreValue: unknownNumber(
-      2025,
-      msuSource,
-      "Экономический факультет МГУ",
-      "На странице кампании 2026 нет итогового балла последнего зачисленного за 2025 год.",
-    ),
-    passingHistory: [],
-    placesHistory: [],
-    tuitionHistory: [],
-    competitionHistory: [],
-    minScore: null,
-    budgetPlaces: null,
-    budgetPlacesValue: unknownNumber(
-      2026,
-      msuSource,
-      "Экономический факультет МГУ",
-      "Число мест требует сверки с планом приёма.",
-    ),
-    paidPlaces: null,
-    paidPlacesValue: unknownNumber(
-      2026,
-      msuSource,
-      "Экономический факультет МГУ",
-      "Число мест требует сверки с планом приёма.",
-    ),
-    tuition: null,
-    tuitionValue: sourced<number>(
-      null,
-      2026,
-      "pending_review",
-      msuSource,
-      "Экономический факультет МГУ",
-      {
-        note: "Страница приводит ориентировочную стоимость; до приказа она не публикуется как точная.",
+const MGU_CHECKED = "2026-08-27T12:00:00.000Z";
+const MGU_NEXT = "2026-09-27T12:00:00.000Z";
+const mguMeta = {
+  retrievedAt: MGU_CHECKED,
+  checkedAt: MGU_CHECKED,
+  nextReviewAt: MGU_NEXT,
+};
+
+mguCatalogPrograms.forEach((seed, index) => {
+  const unknownNumber = (
+    year: number,
+    sourceUrl: string,
+    sourceName: string,
+    note: string,
+  ) =>
+    sourced<number>(null, year, "pending_review", sourceUrl, sourceName, {
+      ...mguMeta,
+      sourceKind: "pdf",
+      note,
+    });
+  const title = getMguProgramTitle(seed.description);
+  const details = getMguDetails(seed);
+  const dvi = getMguDvi(seed);
+  const scoreHistory = getMguProgramPassingHistory(seed)
+    .filter(
+      (record): record is typeof record & { score: number } =>
+        record.score !== null,
+    )
+    .map((record) =>
+      sourced(
+        record.score,
+        record.year,
+        record.year === 2025 &&
+          title === "Математика" &&
+          seed.faculty === "Механико-математический факультет"
+          ? "conflicting_sources"
+          : "verified",
+        record.sourceUrl,
+        "МГУ имени М. В. Ломоносова",
+        {
+          ...mguMeta,
+          sourceKind: "html",
+          sourceSection: `${record.faculty} — ${record.program}`,
+          note:
+            record.year === 2025 &&
+            title === "Математика" &&
+            seed.faculty === "Механико-математический факультет"
+              ? "Расхождение: сводка МГУ — 322; сайт мехмата — 324 (https://pk.math.msu.ru/abiturientam/speczialitet/prohodnye-bally-proshlyh-let/). Не использовать до сверки."
+              : record.firstWaveScore !== null
+                ? `Первая волна: ${record.firstWaveScore}; итоговый ориентир: ${record.score}.`
+                : record.maxScore !== null
+                  ? `Проходной балл указан из ${record.maxScore} возможных.`
+                  : "Проходной балл на бюджетные места.",
+        },
+      ),
+    );
+  const latestScore = scoreHistory.find((point) => point.year === 2025);
+  const catalogMeta = {
+    ...mguMeta,
+    sourceKind: "pdf" as const,
+    sourceDocumentTitle:
+      "Перечень направлений подготовки и контрольные цифры приёма МГУ в 2026 году",
+    sourcePage: seed.page,
+    sourceSection: `${seed.faculty} — ${seed.code}`,
+  };
+  const quota = (value: number | null, label: string) =>
+    value === null
+      ? unknownNumber(
+          2026,
+          MGU_CATALOG_SOURCE,
+          "Центральная приёмная комиссия МГУ",
+          `${label} не выделена отдельной строкой в плане приёма.`,
+        )
+      : sourced(
+          value,
+          2026,
+          "verified",
+          MGU_CATALOG_SOURCE,
+          "Центральная приёмная комиссия МГУ",
+          catalogMeta,
+        );
+
+  programsBase.push(
+    program({
+      id:
+        seed.faculty === "Экономический факультет" && title === "Экономика"
+          ? "msu-economics"
+          : `msu-${seed.code.replaceAll(".", "-")}-${index + 1}`,
+      slug:
+        seed.faculty === "Экономический факультет" && title === "Экономика"
+          ? "mgu-economics"
+          : `mgu-${seed.code.replaceAll(".", "-")}-${index + 1}`,
+      universitySlug: "mgu",
+      code: seed.code,
+      title,
+      level: getMguProgramLevel(seed.description),
+      form: "Очная",
+      duration: details.duration.value ?? "Срок уточняется",
+      durationValue: details.duration,
+      admissionsContact: details.contact,
+      faculty: seed.faculty,
+      campus: null,
+      language: "Уточняется у факультета",
+      subjects: getMguEgeSubjects(seed),
+      examRequirements: getMguExamRequirements(seed),
+      passingScore: latestScore?.value ?? null,
+      passingScoreExamScale:
+        getMguProgramPassingHistory(seed).find((record) => record.year === 2025)
+          ?.maxScore ?? null,
+      passingScoreValue:
+        latestScore ??
+        sourced<number>(
+          null,
+          2025,
+          "pending_review",
+          MGU_SCORE_ARCHIVE_SOURCE,
+          "МГУ имени М. В. Ломоносова",
+          {
+            ...mguMeta,
+            sourceSection: "Архив проходных баллов 2011–2025",
+            note: "Для этой программы однозначное соответствие в архиве не найдено.",
+          },
+        ),
+      passingHistory: scoreHistory,
+      placesHistory:
+        seed.budget === null
+          ? []
+          : [
+              sourced(
+                seed.budget,
+                2026,
+                "verified",
+                MGU_CATALOG_SOURCE,
+                "Центральная приёмная комиссия МГУ",
+                catalogMeta,
+              ),
+            ],
+      tuitionHistory: [],
+      competitionHistory: [],
+      minScore: null,
+      budgetPlaces: seed.budget,
+      budgetPlacesValue:
+        seed.budget === null
+          ? naNumber(
+              2026,
+              MGU_CATALOG_SOURCE,
+              "Центральная приёмная комиссия МГУ",
+            )
+          : sourced(
+              seed.budget,
+              2026,
+              "verified",
+              MGU_CATALOG_SOURCE,
+              "Центральная приёмная комиссия МГУ",
+              catalogMeta,
+            ),
+      paidPlaces: seed.paid,
+      paidPlacesValue:
+        seed.paid === null
+          ? naNumber(
+              2026,
+              MGU_CATALOG_SOURCE,
+              "Центральная приёмная комиссия МГУ",
+            )
+          : sourced(
+              seed.paid,
+              2026,
+              "verified",
+              MGU_CATALOG_SOURCE,
+              "Центральная приёмная комиссия МГУ",
+              catalogMeta,
+            ),
+      tuition: details.tuition.value,
+      tuitionValue: details.tuition,
+      dvi,
+      dviValue: dvi
+        ? sourced(
+            dvi,
+            2026,
+            "verified",
+            MGU_CATALOG_SOURCE,
+            "Центральная приёмная комиссия МГУ",
+            catalogMeta,
+          )
+        : naString(
+            2026,
+            MGU_CATALOG_SOURCE,
+            "Центральная приёмная комиссия МГУ",
+          ),
+      dviMax: mguFact(
+        100,
+        MGU_RULES_SOURCE,
+        "Пункт 11 — стобалльная шкала вступительных испытаний",
+        { sourcePage: 8 },
+      ),
+      dviMinimum: getMguDviMinimum(seed),
+      individualAchievementsMax: mguFact(
+        10,
+        MGU_RULES_SOURCE,
+        "Пункт 28 — общие индивидуальные достижения",
+        {
+          sourcePage: 21,
+          note: "Общий конкурс; дополнительные целевые достижения учитываются только в целевой квоте.",
+        },
+      ),
+      quotas: {
+        special: quota(seed.specialQuota, "Особая квота"),
+        separate: quota(seed.separateQuota, "Отдельная квота"),
+        target: sourced<number>(
+          null,
+          2026,
+          "pending_review",
+          MGU_CATALOG_SOURCE,
+          "Центральная приёмная комиссия МГУ",
+          {
+            ...catalogMeta,
+            note: `В строках детализированной целевой квоты: ${seed.targetQuota ?? "не выделено"}. Общий размер целевой квоты требует отдельной сверки.`,
+          },
+        ),
+        general: unknownNumber(
+          2026,
+          MGU_CATALOG_SOURCE,
+          "Центральная приёмная комиссия МГУ",
+          "Число мест общего конкурса не выводится арифметически из квот без отдельного подтверждения.",
+        ),
       },
-    ),
-    dvi: "Математика",
-    dviValue: sourced(
-      "Математика",
-      2026,
-      "verified",
-      msuSource,
-      "Экономический факультет МГУ",
-      { sourceSection: "Вступительные испытания" },
-    ),
-    dviMax: sourced<number>(
-      null,
-      2026,
-      "pending_review",
-      msuSource,
-      "Экономический факультет МГУ",
-      { note: "Максимум ДВИ требует сверки с правилами приёма." },
-    ),
-    individualAchievementsMax: unknownNumber(
-      2026,
-      msuSource,
-      "Экономический факультет МГУ",
-      "Не подтверждено на странице программы.",
-    ),
-    quotas: {
-      special: unknownNumber(2026, msuSource, "МГУ", "Требуется план приёма."),
-      separate: unknownNumber(2026, msuSource, "МГУ", "Требуется план приёма."),
-      target: unknownNumber(2026, msuSource, "МГУ", "Требуется план приёма."),
-      general: unknownNumber(2026, msuSource, "МГУ", "Требуется план приёма."),
-    },
-    hostel: unknownBoolean(
-      2026,
-      msuSource,
-      "МГУ",
-      "Требуется отдельный источник.",
-    ),
-    militaryCenter: unknownBoolean(
-      2026,
-      msuSource,
-      "МГУ",
-      "Требуется отдельный источник.",
-    ),
-    sourceUrl: msuSource,
-    admissionsUrl: msuSource,
-    trust: {
-      dataYear: 2026,
-      status: "pending_review",
-      completeness: 30,
-      checkedAt: CHECKED,
-      checkedBy: "Редакция Поступай",
-      nextReviewAt: NEXT,
-      sourceName: "Экономический факультет МГУ",
-      sourceSection: "Приёмная кампания 2026",
-      note: "ДВИ подтверждено; ориентировочная цена не показана как точная.",
-    },
-    tags: ["Экономика", "ДВИ"],
-  }),
-);
+      hostel: sourced(
+        true,
+        2026,
+        "verified",
+        MGU_DORMITORY_SOURCE,
+        "Объединённый студенческий комитет МГУ",
+        {
+          ...mguMeta,
+          sourceSection: "Главное здание МГУ — Дом студента",
+          note: mguDormitoryConditions.value ?? undefined,
+        },
+      ),
+      militaryCenter: sourced(
+        true,
+        2026,
+        "verified",
+        MGU_MILITARY_SOURCE,
+        "МГУ имени М. В. Ломоносова",
+        {
+          ...mguMeta,
+          retrievedAt: "2026-09-08T00:00:00.000Z",
+          checkedAt: "2026-09-08T00:00:00.000Z",
+          sourceKind: "html",
+          sourceSection: "Военный учебный центр",
+          note: "Обучение доступно по отдельному конкурсному отбору.",
+        },
+      ),
+      sourceUrl: MGU_CATALOG_SOURCE,
+      admissionsUrl: "https://cpk.msu.ru/",
+      trust: {
+        dataYear: 2026,
+        status: "pending_review",
+        completeness: 0, // Calculated by program() from sourced fields.
+        checkedAt: MGU_REVIEW_DATE,
+        checkedBy: "Редакция Поступай",
+        nextReviewAt: MGU_NEXT,
+        sourceName: "Центральная приёмная комиссия МГУ",
+        sourceDocumentTitle:
+          "Перечень направлений подготовки и контрольные цифры приёма МГУ в 2026 году",
+        sourcePage: seed.page,
+        sourceSection: `${seed.faculty} — ${seed.code}`,
+        note: "План и минимумы кампании 2026 проверены. Стоимость, срок обучения и история подтверждаются отдельными источниками в каждой карточке; неизвестные значения остаются открытыми.",
+      },
+      tags: getMguProgramTags(seed),
+    }),
+  );
+});
 
 const reaSource =
   "https://www.rea.ru/~ed-program/c88bd4a72ab29c65152ad515b3d23beb";

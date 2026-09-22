@@ -5,14 +5,16 @@ import { ProgramDecisionPage } from "./program-decision-page";
 import { HomeDataOverview } from "./home-data-overview";
 import { UserStateProvider } from "./user-state-provider";
 import { AccountSavedPrograms } from "./account-saved-programs";
-import { programs } from "../lib/data";
+import { programs, universities } from "../lib/data";
 
 const renderWithState = (node: React.ReactNode) =>
   renderToStaticMarkup(<UserStateProvider>{node}</UserStateProvider>);
 
 describe("ключевые интерфейсы", () => {
   it("каталог содержит поиск, фильтры и табличный список", () => {
-    const html = renderWithState(<CatalogClient items={programs} />);
+    const html = renderWithState(
+      <CatalogClient universities={universities} items={programs} />,
+    );
     expect(html).toContain("Название программы, направление или вуз");
     expect(html).toContain("Предметы ЕГЭ");
     expect(html).toContain("Программа / вуз");
@@ -28,7 +30,9 @@ describe("ключевые интерфейсы", () => {
   });
 
   it("интерактивные поля имеют подписи, а таблица — заголовки", () => {
-    const html = renderWithState(<CatalogClient items={programs} />);
+    const html = renderWithState(
+      <CatalogClient universities={universities} items={programs} />,
+    );
     expect(html).toMatch(/<legend>Предметы ЕГЭ<\/legend>/);
     expect(html).toMatch(/<span class="sr-only">Поиск программ<\/span>/);
   });

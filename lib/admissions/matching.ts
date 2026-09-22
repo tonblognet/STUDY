@@ -38,10 +38,24 @@ export function matchProgram(
     );
 
   let examTotal = 0;
+  if (program.universitySlug === "mgu") {
+    const currentScale =
+      program.examRequirements.length * 100 +
+      (program.dviValue.value ? (program.dviMax.value ?? 0) : 0);
+    if (
+      program.passingScoreExamScale == null ||
+      program.passingScoreExamScale !== currentScale
+    ) {
+      missing.push(
+        "шкала проходного балла не сопоставима с набором испытаний 2026 года",
+      );
+    }
+  }
   for (const requirement of program.examRequirements) {
     if (
-      requirement.minimum.value === null ||
-      unreliable.has(requirement.minimum.status)
+      !requirement.subjectMinimums &&
+      (requirement.minimum.value === null ||
+        unreliable.has(requirement.minimum.status))
     ) {
       missing.push(
         `нет проверенного минимума: ${requirement.label.toLowerCase()}`,
@@ -49,21 +63,40 @@ export function matchProgram(
       continue;
     }
     const candidates = requirement.subjects
-      .map((subject) => ({ subject, score: scoreSet.scores[subject] }))
-      .filter((entry): entry is { subject: string; score: number } =>
-        Number.isFinite(entry.score),
+      .map((subject) => ({
+        subject,
+        score: scoreSet.scores[subject],
+        minimum: requirement.subjectMinimums
+          ? requirement.subjectMinimums[subject]
+          : requirement.minimum,
+      }))
+      .filter(
+        (entry) =>
+          Number.isInteger(entry.score) &&
+          entry.score >= 0 &&
+          entry.score <= 100,
       );
     if (!candidates.length) {
       missing.push(`не введён предмет: ${requirement.subjects.join(" или ")}`);
       continue;
     }
-    const selected = candidates.sort((a, b) => b.score - a.score)[0];
-    if (selected.score < requirement.minimum.value) {
+    const eligible = candidates.filter(
+      (entry) =>
+        entry.minimum?.status === "verified" &&
+        entry.minimum.value !== null &&
+        entry.score >= entry.minimum.value,
+    );
+    if (!eligible.length) {
       missing.push(
-        `${selected.subject}: ${selected.score}, минимум ${requirement.minimum.value}`,
+        ...candidates.map((entry) =>
+          entry.minimum?.value !== null && entry.minimum?.status === "verified"
+            ? `${entry.subject}: ${entry.score}, минимум ${entry.minimum.value}`
+            : `нет проверенного минимума: ${entry.subject}`,
+        ),
       );
       continue;
     }
+    const selected = eligible.sort((a, b) => b.score - a.score)[0];
     examTotal += selected.score;
     if (requirement.subjects.length > 1)
       reasons.push(
@@ -72,8 +105,25 @@ export function matchProgram(
   }
 
   if (program.dviValue.value) {
-    if (!Number.isFinite(scoreSet.dviScore))
+    if (
+      !Number.isInteger(scoreSet.dviScore) ||
+      scoreSet.dviScore! < 0 ||
+      scoreSet.dviScore! > 100
+    )
       missing.push(`нужен результат ДВИ «${program.dviValue.value}»`);
+    else if (
+      program.dviMinimum &&
+      (program.dviMinimum.status !== "verified" ||
+        program.dviMinimum.value === null)
+    )
+      missing.push("нет проверенного минимума ДВИ");
+    else if (
+      program.dviMinimum?.value != null &&
+      scoreSet.dviScore! < program.dviMinimum.value
+    )
+      missing.push(
+        `ДВИ: ${scoreSet.dviScore}, минимум ${program.dviMinimum.value}`,
+      );
     else if (
       program.dviMax.value !== null &&
       scoreSet.dviScore! > program.dviMax.value
@@ -97,7 +147,9 @@ export function matchProgram(
     consideredScore !== null && passingScore !== null
       ? consideredScore - passingScore
       : null;
-  const currentTrend = trend(program.passingHistory);
+  // The MGU archive mixes exam scales and admission waves; do not infer a trend.
+  const currentTrend =
+    program.universitySlug === "mgu" ? null : trend(program.passingHistory);
 
   if (missing.length || margin === null) {
     return {

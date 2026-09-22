@@ -6,17 +6,19 @@ import { CatalogEgeDrawer } from "@/components/catalog-ege-drawer";
 import { UniversityLogo } from "@/components/university-logo";
 import { useUserState } from "@/components/user-state-provider";
 import type { DataStatus } from "@/lib/admissions/types";
-import type { Program } from "@/lib/data";
-import { formatPrice, getUniversity } from "@/lib/data";
+import type { Program, University } from "@/lib/data";
+import { formatPrice } from "@/lib/catalog/format";
 
 type Sort = "quality" | "score" | "price" | "places";
 const MAX_CATALOG_PRICE = 1_200_000;
 
 export function CatalogClient({
   items,
+  universities,
   initialQuery = "",
 }: {
   items: Program[];
+  universities: University[];
   initialQuery?: string;
 }) {
   const [query, setQuery] = useState(initialQuery);
@@ -60,10 +62,12 @@ export function CatalogClient({
   const universityOptions = useMemo(
     () =>
       [...new Set(items.map((item) => item.universitySlug))]
-        .map((slug) => getUniversity(slug))
+        .map((slug) =>
+          universities.find((university) => university.slug === slug),
+        )
         .filter((item): item is NonNullable<typeof item> => Boolean(item))
         .sort((a, b) => a.shortName.localeCompare(b.shortName, "ru")),
-    [items],
+    [items, universities],
   );
   const activeCount =
     subjects.length +
@@ -432,9 +436,15 @@ export function CatalogClient({
                       className="program-name"
                       href={`/programs/${program.slug}`}
                     >
-                      {getUniversity(program.universitySlug) && (
+                      {universities.find(
+                        (item) => item.slug === program.universitySlug,
+                      ) && (
                         <UniversityLogo
-                          university={getUniversity(program.universitySlug)!}
+                          university={
+                            universities.find(
+                              (item) => item.slug === program.universitySlug,
+                            )!
+                          }
                           size="row"
                         />
                       )}

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getSessionUser } from "@/lib/auth/session";
-import { programs } from "@/lib/data";
+import { getCatalog } from "@/lib/catalog/server";
 import { loadUserState, saveUserState } from "@/lib/user-state/repository";
 import {
   normalizeUserState,
@@ -8,8 +8,6 @@ import {
 } from "@/lib/user-state/validation";
 
 export const dynamic = "force-dynamic";
-
-const allowedProgramIds = new Set(programs.map((program) => program.id));
 
 export async function GET() {
   const user = await getSessionUser();
@@ -56,7 +54,11 @@ export async function PUT(request: Request) {
   }
 
   try {
-    const state = normalizeUserState(parsed.data, allowedProgramIds);
+    const { programs } = await getCatalog();
+    const state = normalizeUserState(
+      parsed.data,
+      new Set(programs.map((program) => program.id)),
+    );
     return NextResponse.json({
       state: await saveUserState(user, state),
       storage: "account",

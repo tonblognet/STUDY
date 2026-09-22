@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CatalogClient } from "@/components/catalog-client";
-import { programs } from "@/lib/data";
+import { getCatalog } from "@/lib/catalog/server";
 
 export const metadata: Metadata = {
   title: "Программы московских вузов",
@@ -14,6 +14,7 @@ export default async function ProgramsPage({
   searchParams: Promise<{ q?: string }>;
 }) {
   const { q = "" } = await searchParams;
+  const { programs, universities } = await getCatalog();
   return (
     <div className="catalog-page container">
       <div className="catalog-title">
@@ -38,7 +39,11 @@ export default async function ProgramsPage({
           </span>
         </div>
       </div>
-      <CatalogClient items={programs} initialQuery={q} />
+      <CatalogClient
+        universities={universities}
+        items={programs}
+        initialQuery={q}
+      />
     </div>
   );
 }

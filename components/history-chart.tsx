@@ -6,11 +6,13 @@ export function HistoryChart({
   points,
   unit = "",
   warning = true,
+  comparable = true,
 }: {
   title: string;
   points: HistoricalPoint[];
   unit?: string;
   warning?: boolean;
+  comparable?: boolean;
 }) {
   const sorted = [...points].sort((a, b) => a.year - b.year);
   const values = sorted
@@ -36,12 +38,32 @@ export function HistoryChart({
           <span>История показателя</span>
           <h3>{title}</h3>
         </div>
-        <p>{description}</p>
+        <p>
+          {comparable
+            ? description
+            : "Шкалы и состав испытаний менялись: прямое сравнение и тренд не рассчитываются."}
+        </p>
       </figcaption>
       {sorted.length === 0 ? (
         <div className="chart-empty">
           <b>История не опубликована</b>
           <span>Мы не соединяем отсутствующие годы предполагаемой линией.</span>
+        </div>
+      ) : !comparable ? (
+        <div className="mgu-point-history">
+          {sorted.map((point) => (
+            <div key={`${point.year}-${point.sourceUrl}`}>
+              <b>
+                {point.year} · {point.value ?? "Нет данных"}
+                {unit}
+              </b>
+              <DataStatusBadge status={point.status} />
+              <p>{point.note}</p>
+              <a href={point.sourceUrl} target="_blank" rel="noreferrer">
+                Официальный источник ↗
+              </a>
+            </div>
+          ))}
         </div>
       ) : (
         <div

@@ -37,10 +37,11 @@ pnpm install
 pnpm db:generate
 pnpm db:migrate
 pnpm db:seed
+pnpm data:import -- --actor=editor@example.ru
 pnpm dev
 ```
 
-Приложение: `http://localhost:3000`. Mailpit: `http://localhost:8025`. Seed не создаёт пользователя, если явно не заданы `SEED_ADMIN_EMAIL` и сильный `SEED_ADMIN_PASSWORD`.
+Приложение: `http://localhost:3000`. Mailpit: `http://localhost:8025`. Seed не создаёт пользователя, если явно не заданы `SEED_ADMIN_EMAIL` и сильный `SEED_ADMIN_PASSWORD`. Укажите email этого редактора в `data:import`, затем подтвердите первоначальную публикацию в `/admin/catalog`. Для просмотра без БД задайте `CATALOG_STORAGE=snapshot`; редактирование в этом режиме отключено.
 
 ## Проверки
 
@@ -67,7 +68,7 @@ pnpm data:import -- --university=hse --year=2026 --dry-run
 pnpm data:report
 ```
 
-Импорт idempotent, сохраняет artifacts/checksums и не перезаписывает опубликованное значение без версии/diff.
+Импорт создаёт идемпотентный черновик с checksum и diff; отдельное подтверждение в `/admin/catalog` атомарно публикует его на сайте. Команды экспорта, редакторские исправления, откат и ограничения: [CATALOG_PUBLICATION.md](docs/CATALOG_PUBLICATION.md). Для `test:integration` нужен `TEST_DATABASE_URL` отдельной PostgreSQL БД с суффиксом `_test`; тесты создают и удаляют только собственную случайную схему.
 
 ## Production blockers
 

@@ -6,7 +6,7 @@ import { ExamMatcher } from "@/components/exam-matcher";
 import { LogoutButton } from "@/components/logout-button";
 import { UserStateStatus } from "@/components/user-state-provider";
 import { getSessionUser } from "@/lib/auth/session";
-import { programs } from "@/lib/data";
+import { getCatalog } from "@/lib/catalog/server";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Личный кабинет" };
@@ -14,6 +14,7 @@ export const metadata = { title: "Личный кабинет" };
 export default async function AccountPage() {
   const user = await getSessionUser();
   if (!user) redirect("/login?returnTo=/account");
+  const { programs } = await getCatalog();
   return (
     <div className="account-page">
       <div className="dashboard-head">

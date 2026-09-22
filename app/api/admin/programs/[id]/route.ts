@@ -1,16 +1,15 @@
 import { NextResponse } from "next/server";
-import { z } from "zod";
 import { prisma } from "@/db";
 import { requireRole } from "@/lib/auth/session";
 import { hasValidOrigin } from "@/lib/security/request";
-
-const patchSchema = z
-  .object({
-    name: z.string().trim().min(3).max(240).optional(),
-    status: z.enum(["DRAFT", "REVIEW", "PUBLISHED", "REJECTED"]).optional(),
-    durationMonths: z.number().int().min(6).max(120).optional(),
-  })
-  .strict();
+import { readPublishedCatalog, stageCatalog } from "@/lib/catalog/service";
+import {
+  programEditSchema,
+  applyProgramEdit,
+} from "@/lib/catalog/program-edit";
+import { CatalogError } from "@/lib/catalog/types";
+import { catalogRequestBody, catalogFailure } from "@/lib/catalog/http";
+import { catalogStorage } from "@/lib/catalog/server";
 
 export async function PATCH(
   request: Request,
@@ -21,46 +20,39 @@ export async function PATCH(
       { error: "Некорректный источник запроса" },
       { status: 403 },
     );
-  const user = await requireRole(["CONTENT_MANAGER", "ADMIN", "SUPERADMIN"]);
-  if (!user)
+  const actor = await requireRole(["CONTENT_MANAGER", "ADMIN", "SUPERADMIN"]);
+  if (!actor)
     return NextResponse.json({ error: "Доступ запрещён" }, { status: 403 });
-  const { id } = await params;
-  const parsed = patchSchema.safeParse(await request.json().catch(() => null));
-  if (!parsed.success)
-    return NextResponse.json(
-      { error: "Некорректные изменения" },
-      { status: 400 },
+  try {
+    if (catalogStorage() !== "database")
+      throw new CatalogError(
+        "Редактирование доступно только в режиме PostgreSQL",
+        409,
+      );
+    const parsed = programEditSchema.safeParse(
+      await catalogRequestBody(request),
     );
-  const before = await prisma.educationProgram.findUnique({ where: { id } });
-  if (!before)
-    return NextResponse.json(
-      { error: "Программа не найдена" },
-      { status: 404 },
+    if (!parsed.success)
+      throw new CatalogError(
+        "Укажите поле, значение с источником, годом и датой, основу публикации и причину",
+      );
+    parsed.data.fact.checkedBy = actor.email;
+    const current = await readPublishedCatalog(prisma);
+    const next = applyProgramEdit(
+      current.snapshot,
+      (await params).id,
+      parsed.data,
     );
-  const after = await prisma.$transaction(async (tx) => {
-    const updated = await tx.educationProgram.update({
-      where: { id },
-      data: {
-        ...parsed.data,
-        publishedAt:
-          parsed.data.status === "PUBLISHED" ? new Date() : undefined,
-      },
+    const revision = await stageCatalog(prisma, next, {
+      actor,
+      reason: parsed.data.reason,
+      expectedRevisionId: parsed.data.baseRevisionId,
     });
-    await tx.auditLog.create({
-      data: {
-        actorId: user.id,
-        action: "UPDATE_PROGRAM",
-        entityType: "EducationProgram",
-        entityId: id,
-        before: {
-          name: before.name,
-          status: before.status,
-          durationMonths: before.durationMonths,
-        },
-        after: parsed.data,
-      },
-    });
-    return updated;
-  });
-  return NextResponse.json({ program: after });
+    return NextResponse.json(
+      { revision },
+      { status: revision.unchanged ? 200 : 202 },
+    );
+  } catch (error) {
+    return catalogFailure(error);
+  }
 }

@@ -6,15 +6,16 @@ import { calculateCompleteness } from "@/lib/admissions/completeness";
 import { matchProgram } from "@/lib/admissions/matching";
 import type { ScoreSet } from "@/lib/admissions/types";
 import type { Program } from "@/lib/data";
-import { formatPrice } from "@/lib/data";
+import { formatPrice } from "@/lib/catalog/format";
 import {
   CompletenessBadge,
-  DataSourceLink,
   DataStatusBadge,
   SourcedMetric,
 } from "@/components/data-status";
 import { HistoryChart } from "@/components/history-chart";
 import { SavedProgramActions } from "@/components/saved-program-actions";
+import { ProgramRequirement } from "./program-requirement";
+import { ProgramContacts } from "./program-contacts";
 
 export function ProgramDecisionPage({ program }: { program: Program }) {
   const [scores, setScores] = useState<Record<string, number>>({});
@@ -167,9 +168,15 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
             <HistoryChart
               title="Проходной балл общего конкурса"
               points={program.passingHistory}
+              comparable={program.universitySlug !== "mgu"}
             />
           </section>
 
+          {program.admissionsContact && (
+            <section className="decision-section">
+              <ProgramContacts contact={program.admissionsContact} />
+            </section>
+          )}
           <section className="decision-section" id="exams">
             <header>
               <span>02</span>
@@ -184,14 +191,10 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
             {program.examRequirements.length ? (
               <div className="requirements-list">
                 {program.examRequirements.map((requirement) => (
-                  <article key={requirement.id}>
-                    <div>
-                      <span>{requirement.label}</span>
-                      <h3>{requirement.subjects.join(" / ")}</h3>
-                    </div>
-                    <strong>минимум {requirement.minimum.value ?? "—"}</strong>
-                    <DataSourceLink field={requirement.minimum} />
-                  </article>
+                  <ProgramRequirement
+                    key={requirement.id}
+                    requirement={requirement}
+                  />
                 ))}
               </div>
             ) : (
@@ -206,6 +209,9 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
             <div className="metric-grid three">
               <SourcedMetric label="ДВИ" field={program.dviValue} />
               <SourcedMetric label="Максимум ДВИ" field={program.dviMax} />
+              {program.dviMinimum && (
+                <SourcedMetric label="Минимум ДВИ" field={program.dviMinimum} />
+              )}
               <SourcedMetric
                 label="Индивидуальные достижения"
                 field={program.individualAchievementsMax}
@@ -231,6 +237,12 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
                 field={program.tuitionValue}
                 format={formatPrice}
               />
+              {program.durationValue && (
+                <SourcedMetric
+                  label="Срок обучения"
+                  field={program.durationValue}
+                />
+              )}
               <SourcedMetric
                 label="Бюджетные места"
                 field={program.budgetPlacesValue}

@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:integration": "node --test tests/rendered-html.test.mjs",
+    "test:integration": "node scripts/test-integration.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern pages-dist --ignore-pattern .next --ignore-pattern outputs --ignore-pattern tmp",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate deploy",
@@ -25,14 +25,17 @@
     "data:validate": "tsx scripts/data-pipeline.ts validate",
     "data:import": "tsx scripts/data-pipeline.ts import",
     "data:report": "tsx scripts/data-pipeline.ts report",
-    "security:audit": "pnpm audit --prod"
+    "security:audit": "pnpm audit --prod",
+    "data:export": "tsx scripts/catalog.ts export",
+    "data:diff": "tsx scripts/catalog.ts diff",
+    "test:catalog:db": "tsx --test tests/catalog-db.test.ts"
   },
   "dependencies": {
     "@prisma/client": "6.18.0",
     "bcryptjs": "3.0.2",
     "jose": "6.1.0",
-    "next": "16.3.2",
-    "nodemailer": "9.0.5",
+    "next": "16.3.3",
+    "nodemailer": "9.1.1",
     "react": "19.2.6",
     "react-dom": "19.2.6",
     "zod": "4.1.12"
@@ -44,7 +47,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.4",
-    "eslint-config-next": "16.3.2",
+    "eslint-config-next": "16.3.3",
     "prettier": "3.6.2",
     "prisma": "6.18.0",
     "tailwindcss": "4.2.1",

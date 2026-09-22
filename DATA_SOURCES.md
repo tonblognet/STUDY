@@ -13,7 +13,7 @@
 
 `discover → fetch → parse → normalize → validate → diff → review → publish`
 
-Each university/source type implements a narrow adapter. Fetch stores an immutable artifact with URL, response metadata, checksum and retrieved time. Parse output is deterministic and versioned by parser. Normalize maps source fields into domain DTOs. Validate rejects impossible values and flags large diffs, conflicts, stale campaigns and duplicates. Publish is transactional and never overwrites history.
+The registry identifies official sources. The shared adapter currently detects markers only: it returns source-detection-v1, zero extracted facts and requiresReview=true. Specialized MGU and directory extraction scripts produce repository evidence; arbitrary HTML/PDF extraction is not implemented by the generic adapter. Fetch stores source artifacts and checksums. Structured candidates are validated, diffed, reviewed and atomically published as CatalogRevision. See [publication workflow](docs/CATALOG_PUBLICATION.md).
 
 ## Required provenance
 
@@ -36,6 +36,36 @@ Every critical value stores source URL/type, publication date when available, re
 - Parser fixtures and golden tests accompany each adapter.
 - Failed/partial imports do not alter published data.
 - Critical changes require two-source cross-check when another official source exists.
+
+## Adapter registry invariant
+
+Every university published in the catalog must have exactly one adapter in
+`data-sources/universities`. The pipeline fails before discovery, validation,
+reporting or import when an adapter is missing, duplicated or no longer linked
+to a catalog university. Each program source URL is checked against the
+registered official domains of its own university.
+
+The repository quality snapshot is regenerated with `pnpm data:report`. It describes
+the file-based import candidate, not subsequent PostgreSQL editor changes. Current
+coverage: 162 organizations, 185 programs in 20 universities, 419 separate education
+list entries, and a separate five-group MGAH creative admission campaign. Unknown
+facts and two documented MSU source conflicts remain visible. See
+[Moscow coverage](docs/MOSCOW_UNIVERSITY_COVERAGE.md) and [MSU coverage](docs/MGU_DATA_COVERAGE.md).
+
+## University and campus facts
+
+`lib/university-facts.ts` is the source-aware snapshot for official website,
+logo, address, dormitory count, military training center and campus address.
+Every value carries source type and URL, review timestamps, reviewer and quality
+status. A missing confirmation is stored as `null` with `PENDING_REVIEW`; it is
+never converted to `false` or `0`.
+
+New imports version the complete reviewed payload in CatalogRevision, including
+every fact's provenance. Historical UniversityFactValue/MetricValue records remain
+as the earlier importer's archive. University/EducationProgram relational projections
+are updated in the publication transaction; they are not the public read source.
+No partial import modifies the current public catalog. Changes to source metadata
+alone produce a new review candidate.
 
 ## Curated Moscow catalog sources
 

@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: `default-src 'self'; base-uri 'self'; form-action 'self' https://securepay.tinkoff.ru; frame-ancestors 'none'; img-src 'self' data: https:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'${developmentEval} https://mc.yandex.ru; connect-src 'self' https://mc.yandex.ru; object-src 'none'; upgrade-insecure-requests`,
+            value: `default-src 'self'; base-uri 'self'; form-action 'self' https://securepay.tinkoff.ru; frame-ancestors 'none'; frame-src https://yandex.ru; img-src 'self' data: https:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'${developmentEval} https://mc.yandex.ru; connect-src 'self' https://mc.yandex.ru; object-src 'none'; upgrade-insecure-requests`,
           },
         ],
       },

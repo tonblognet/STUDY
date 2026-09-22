@@ -12,6 +12,7 @@ export type SourcedValue<T> = {
   value: T | null;
   year: number;
   status: DataStatus;
+  sourceKind?: SourceKind;
   sourceUrl: string;
   sourceName: string;
   sourceDocumentTitle?: string;
@@ -30,6 +31,7 @@ export type ExamRequirement = {
   id: string;
   subjects: string[];
   minimum: SourcedValue<number>;
+  subjectMinimums?: Record<string, SourcedValue<number>>;
   required: boolean;
   label: string;
 };

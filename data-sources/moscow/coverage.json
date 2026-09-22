@@ -1,0 +1,441 @@
+{
+  "total": 162,
+  "logos": 83,
+  "missing": [
+    {
+      "slug": "sfi",
+      "name": "СФИ",
+      "website": "http://www.sfi.ru"
+    },
+    {
+      "slug": "moscow-110188",
+      "name": "Гуманитарный институт\" (г. Москва)",
+      "website": "https://www.huminst.ru"
+    },
+    {
+      "slug": "bnd",
+      "name": "B&D",
+      "website": "https://obe.ru"
+    },
+    {
+      "slug": "moscow-110216",
+      "name": "Институт деловой карьеры",
+      "website": "http://www.ideka.ru"
+    },
+    {
+      "slug": "gitr",
+      "name": "ГИТР",
+      "website": "https://gitr.ru"
+    },
+    {
+      "slug": "moscow-1860",
+      "name": "Институт непрерывного образования",
+      "website": "http://www.icone.ru"
+    },
+    {
+      "slug": "moscow-110243",
+      "name": "Институт современного искусства",
+      "website": "http://www.isi-vuz.ru"
+    },
+    {
+      "slug": "moscow-110271",
+      "name": "Институт экономики и управления в промышленности",
+      "website": "https://ineup.ru/"
+    },
+    {
+      "slug": "moscow-1818",
+      "name": "Международная академия управления и права",
+      "website": "https://мауп.рф/"
+    },
+    {
+      "slug": "mmu",
+      "name": "ММУ",
+      "website": "https://mi.university/"
+    },
+    {
+      "slug": "nid",
+      "name": "Национальный институт дизайна",
+      "website": "https://nid-design.org"
+    },
+    {
+      "slug": "moscow-1840",
+      "name": "Российский православный университет святого Иоанна Богослова",
+      "website": "https://rpusib.ru/"
+    },
+    {
+      "slug": "moscow-1961",
+      "name": "Университет управления и инновационных технологий",
+      "website": "http://www.uuait.ru"
+    },
+    {
+      "slug": "centraluniversity",
+      "name": "Центральный университет",
+      "website": "https://centraluniversity.ru"
+    },
+    {
+      "slug": "mguu",
+      "name": "Университет Правительства Москвы",
+      "website": "http://www.mguu.ru"
+    },
+    {
+      "slug": "moscow-1960",
+      "name": "Московский социально-педагогический институт",
+      "website": "https://mspi.moscow"
+    },
+    {
+      "slug": "nes",
+      "name": "РЭШ",
+      "website": "http://www.nes.ru"
+    },
+    {
+      "slug": "moscow-2003",
+      "name": "Высшая школа управления\" (ЦКО)",
+      "website": "http://www.miyu.ru"
+    },
+    {
+      "slug": "moscow-666669477",
+      "name": "Международный университет психолого-педагогических инноваций",
+      "website": "https://muppi.ru"
+    },
+    {
+      "slug": "inpsycho",
+      "name": "Московский институт психоанализа",
+      "website": "http://www.inpsycho.ru"
+    },
+    {
+      "slug": "synergy",
+      "name": "Университет Синергия",
+      "website": "https://synergyuniversity.ru"
+    },
+    {
+      "slug": "moscow-120266",
+      "name": "Институт образовательных технологий и гуманитарных наук",
+      "website": "https://iotgn.institute/"
+    },
+    {
+      "slug": "mti",
+      "name": "МТИ",
+      "website": "https://mti.edu.ru"
+    },
+    {
+      "slug": "mitu",
+      "name": "МИТУ",
+      "website": "https://mitu.msk.ru"
+    },
+    {
+      "slug": "griboedov",
+      "name": "Университет Грибоедова",
+      "website": "http://www.iile.ru"
+    },
+    {
+      "slug": "mtuci",
+      "name": "МТУСИ",
+      "website": "http://www.mtuci.ru"
+    },
+    {
+      "slug": "sretenskaya",
+      "name": "Сретенская духовная академия",
+      "website": "http://sdamp.ru"
+    },
+    {
+      "slug": "ppds",
+      "name": "Перервинская духовная семинария",
+      "website": "https://ppds.ru/"
+    },
+    {
+      "slug": "stankin",
+      "name": "МГТУ СТАНКИН",
+      "website": "https://www.stankin.ru"
+    },
+    {
+      "slug": "miet",
+      "name": "НИУ МИЭТ",
+      "website": "http://www.miet.ru"
+    },
+    {
+      "slug": "guppros",
+      "name": "Университет просвещения",
+      "website": "https://guppros.ru"
+    },
+    {
+      "slug": "miit",
+      "name": "РУТ МИИТ",
+      "website": "http://www.miit.ru"
+    },
+    {
+      "slug": "andriaka",
+      "name": "Академия Сергея Андрияки",
+      "website": "https://academy-andriaka.ru"
+    },
+    {
+      "slug": "axu",
+      "name": "АХИ им. Попова",
+      "website": "http://www.axu.ru"
+    },
+    {
+      "slug": "vavt",
+      "name": "ВАВТ",
+      "website": "http://www.vavt.ru"
+    },
+    {
+      "slug": "guz",
+      "name": "ГУЗ",
+      "website": "http://www.guz.ru"
+    },
+    {
+      "slug": "madi",
+      "name": "МАДИ",
+      "website": "https://www.madi.ru"
+    },
+    {
+      "slug": "marhi",
+      "name": "МАРХИ",
+      "website": "http://www.marhi.ru"
+    },
+    {
+      "slug": "mgppu",
+      "name": "МГППУ",
+      "website": "https://mgppu.ru"
+    },
+    {
+      "slug": "mgsu",
+      "name": "НИУ МГСУ",
+      "website": "http://www.mgsu.ru"
+    },
+    {
+      "slug": "glazunov",
+      "name": "Академия Ильи Глазунова",
+      "website": "http://www.glazunov-academy.ru"
+    },
+    {
+      "slug": "rgsai",
+      "name": "РГСАИ",
+      "website": "http://www.rgsai.ru"
+    },
+    {
+      "slug": "timacad",
+      "name": "РГАУ–МСХА",
+      "website": "http://www.timacad.ru"
+    },
+    {
+      "slug": "kosygin",
+      "name": "РГУ им. Косыгина",
+      "website": "https://rguk.ru/"
+    },
+    {
+      "slug": "rosunimed",
+      "name": "Российский университет медицины",
+      "website": "https://www.rosunimed.ru"
+    },
+    {
+      "slug": "sportedu",
+      "name": "РУС ГЦОЛИФК",
+      "website": "http://www.sportedu.ru"
+    },
+    {
+      "slug": "shchukin",
+      "name": "Театральный институт им. Щукина",
+      "website": "http://www.htvs.ru"
+    },
+    {
+      "slug": "vgik",
+      "name": "ВГИК",
+      "website": "http://www.vgik.info"
+    },
+    {
+      "slug": "rpa",
+      "name": "ВГУЮ",
+      "website": "http://rpa-mu.ru"
+    },
+    {
+      "slug": "gaugn",
+      "name": "ГАУГН",
+      "website": "https://gaugn.ru"
+    },
+    {
+      "slug": "pushkin",
+      "name": "Гос. ИРЯ им. Пушкина",
+      "website": "https://www.pushkin.institute"
+    },
+    {
+      "slug": "ippolitovka",
+      "name": "ГМПИ им. Ипполитова-Иванова",
+      "website": "http://ippolitovka.ru"
+    },
+    {
+      "slug": "mirea",
+      "name": "РТУ МИРЭА",
+      "website": "http://www.mirea.ru"
+    },
+    {
+      "slug": "mgavm",
+      "name": "МГАВМиБ",
+      "website": "http://www.mgavm.ru"
+    },
+    {
+      "slug": "mstuca",
+      "name": "МГТУ ГА",
+      "website": "http://www.mstuca.ru"
+    },
+    {
+      "slug": "miigaik",
+      "name": "МИИГАиК",
+      "website": "http://www.miigaik.ru"
+    },
+    {
+      "slug": "rosbiotech",
+      "name": "РОСБИОТЕХ",
+      "website": "https://rosbiotech.ru"
+    },
+    {
+      "slug": "mgri",
+      "name": "МГРИ",
+      "website": "http://www.mgri.ru"
+    },
+    {
+      "slug": "rgsu",
+      "name": "РГСУ",
+      "website": "https://rgsu.net"
+    },
+    {
+      "slug": "stroganov",
+      "name": "РГХПУ им. Строганова",
+      "website": "https://академия-строганова.рф"
+    },
+    {
+      "slug": "cms",
+      "name": "ЦМШ–АИИ",
+      "website": "https://cmsmoscow.ru"
+    },
+    {
+      "slug": "muiv",
+      "name": "МУИВ",
+      "website": "http://www.muiv.ru"
+    },
+    {
+      "slug": "pstgu",
+      "name": "ПСТГУ",
+      "website": "http://pstgu.ru"
+    },
+    {
+      "slug": "miu",
+      "name": "Московский исламский институт",
+      "website": "http://www.miu.su"
+    },
+    {
+      "slug": "mosap",
+      "name": "МосАП",
+      "website": "http://www.mosap.ru"
+    },
+    {
+      "slug": "iga",
+      "name": "ИГА",
+      "website": "http://www.iga.ru"
+    },
+    {
+      "slug": "mmu-reaviz",
+      "name": "ММУ Реавиз",
+      "website": "https://mmu.reaviz.ru"
+    },
+    {
+      "slug": "itpi",
+      "name": "ИТПИ — московский филиал",
+      "website": "http://www.itpi-mf.ru"
+    },
+    {
+      "slug": "reaviz-moscow-branch",
+      "name": "Реавиз — московский филиал",
+      "website": "http://www.reaviz.ru"
+    },
+    {
+      "slug": "mvoku",
+      "name": "МВОКУ",
+      "website": "https://mvoku.mil.ru/"
+    },
+    {
+      "slug": "academy-gps",
+      "name": "Академия ГПС МЧС",
+      "website": "https://academygps.ru/"
+    },
+    {
+      "slug": "academy-sk",
+      "name": "Московская академия СК",
+      "website": "https://academy-skrf.ru/"
+    },
+    {
+      "slug": "academy-fsb",
+      "name": "Академия ФСБ",
+      "website": "https://academy.fsb.ru/"
+    },
+    {
+      "slug": "pa-fsb",
+      "name": "Пограничная академия ФСБ",
+      "website": "https://www.fsb.ru/fsb/supplement/employ/doc4.htm"
+    },
+    {
+      "slug": "mpi-fsb",
+      "name": "Московский пограничный институт",
+      "website": "https://mpi.fsb.ru/"
+    },
+    {
+      "slug": "au-mvd",
+      "name": "Академия управления МВД",
+      "website": "https://а.мвд.рф/"
+    },
+    {
+      "slug": "imeii",
+      "name": "ИМЭиИ",
+      "website": "https://imeii.ru/"
+    },
+    {
+      "slug": "avr",
+      "name": "Академия внешней разведки",
+      "website": "https://svr.gov.ru/pressburo/vopros6.htm"
+    },
+    {
+      "slug": "vumo",
+      "name": "Военный университет",
+      "website": "https://vumo.mil.ru/"
+    }
+  ],
+  "private": 77,
+  "branches": 3,
+  "checkedAt": "2026-09-17T20:51:27.328Z",
+  "completeness": "incomplete",
+  "licenseRegistryStatus": "unavailable",
+  "licenseRegistryUrl": "https://islod.obrnadzor.gov.ru/rlic/",
+  "excluded": [
+    {
+      "monitoringId": "1798",
+      "name": "Дипломатическая академия",
+      "reason": "Подразделение МГИМО после присоединения; не отдельный вуз",
+      "sourceUrl": "https://da.mgimo.ru/"
+    }
+  ],
+  "pendingOrganizations": [
+    {
+      "name": "Военная академия Генерального штаба ВС РФ",
+      "reason": "Официальный сайт не ответил; текущие сведения не внесены"
+    },
+    {
+      "name": "Военная академия Министерства обороны РФ",
+      "reason": "Недостаточно доступных официальных сведений для карточки"
+    }
+  ],
+  "profileFields": {
+    "fullName": 45,
+    "regDate": 45,
+    "telephone": 45,
+    "email": 46,
+    "admissionsUrl": 54,
+    "hostelInfo": 25
+  },
+  "licenseExtracts": 29,
+  "educationAreasUniversities": 150,
+  "educationAreaRecords": 1072,
+  "publishedOfferings": 419,
+  "offeringUniversities": 15,
+  "admissionContestGroups": 185,
+  "supplementaryAdmissionCampaignUniversities": 1,
+  "supplementaryAdmissionCampaignGroups": 5
+}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { EgeMatcherWorkspace } from "@/components/ege-matcher-workspace";
-import { programs, universities } from "@/lib/data";
+import { getCatalog } from "@/lib/catalog/server";
 
 export const metadata: Metadata = {
   title: "Подбор программ по ЕГЭ",
@@ -8,7 +8,8 @@ export const metadata: Metadata = {
     "Подбор программ московских вузов по предметам и баллам ЕГЭ с объяснением результата и официальными источниками.",
 };
 
-export default function MatchPage() {
+export default async function MatchPage() {
+  const { programs, universities } = await getCatalog();
   return (
     <main className="match-page">
       <EgeMatcherWorkspace programs={programs} universities={universities} />

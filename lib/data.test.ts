@@ -36,7 +36,7 @@ describe("официальное наполнение каталога", () => {
   });
 
   it("расширяет московский каталог без дубликатов и выдуманных чисел", () => {
-    expect(universities).toHaveLength(20);
+    expect(universities).toHaveLength(162);
     expect(programs.length).toBeGreaterThanOrEqual(100);
     expect(new Set(programs.map((program) => program.id)).size).toBe(
       programs.length,

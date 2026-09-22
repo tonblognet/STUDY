@@ -1,14 +1,26 @@
 import { createHash } from "node:crypto";
+import { validAggregateScore } from "../data-sources/core/score-range";
 import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { extname, join, relative } from "node:path";
-import { DataValueStatus, PrismaClient } from "@prisma/client";
-import { assertOfficialSource } from "../data-sources/core/adapter";
+import {
+  assertAdapterCoverage,
+  assertOfficialSource,
+} from "../data-sources/core/adapter";
+import { validateUniversityFactProfile } from "../data-sources/core/university-fact-validation";
 import {
   getUniversityAdapter,
   universityAdapters,
 } from "../data-sources/universities";
 import { programs, universities, type Program } from "../lib/data";
+import {
+  getAdmissionCampaign,
+  validateAdmissionCampaign,
+} from "../lib/university-admission-campaigns";
 import type { SourcedValue } from "../lib/admissions/types";
+import {
+  universityFactProfiles,
+  universitySourcedFields,
+} from "../lib/university-facts";
 
 const args = process.argv.slice(2);
 const command = args.find((arg) => !arg.startsWith("--")) ?? "report";
@@ -20,7 +32,6 @@ const option = (name: string) =>
     .join("=");
 const university = option("university");
 const year = Number(option("year") ?? 2026);
-const dryRun = args.includes("--dry-run");
 const selected = university
   ? universityAdapters.filter((adapter) => adapter.slug === university)
   : universityAdapters;
@@ -34,6 +45,11 @@ const PRIVATE_RESPONSE_HEADERS = new Set([
   "www-authenticate",
 ]);
 
+assertAdapterCoverage(
+  universityAdapters,
+  universities.map(({ slug }) => slug),
+);
+
 function safeResponseHeaders(headers: Headers) {
   return Object.fromEntries(
     [...headers].filter(
@@ -45,9 +61,6 @@ function safeResponseHeaders(headers: Headers) {
 if (university && selected.length === 0)
   throw new Error(`Неизвестный адаптер: ${university}`);
 
-function statusName(value: string): DataValueStatus {
-  return value.toUpperCase() as DataValueStatus;
-}
 function official(adapterSlug: string, url: string) {
   const adapter = getUniversityAdapter(adapterSlug);
   if (!adapter) return false;
@@ -75,6 +88,16 @@ function sourcedFields(
     ["tuition_year", program.tuitionValue],
     ["dvi", program.dviValue],
     ["dvi_max", program.dviMax],
+    ...(program.dviMinimum
+      ? [["dvi_minimum", program.dviMinimum] as [string, SourcedValue<unknown>]]
+      : []),
+    ...(program.durationValue
+      ? [["duration", program.durationValue] as [string, SourcedValue<unknown>]]
+      : []),
+    ...Object.entries(program.admissionsContact ?? {}).map(
+      ([key, field]) =>
+        [`admissions_${key}`, field] as [string, SourcedValue<unknown>],
+    ),
     ["individual_achievements_max", program.individualAchievementsMax],
     ["quota_general", program.quotas.general],
     ["quota_special", program.quotas.special],
@@ -82,12 +105,21 @@ function sourcedFields(
     ["quota_target", program.quotas.target],
     ["hostel", program.hostel],
     ["military_center", program.militaryCenter],
-    ...program.examRequirements.map(
-      (item) =>
-        [`exam_minimum:${item.subjects.join("|")}`, item.minimum] as [
-          string,
-          SourcedValue<unknown>,
-        ],
+    ...program.examRequirements.flatMap((item) =>
+      item.subjectMinimums
+        ? Object.entries(item.subjectMinimums).map(
+            ([subject, minimum]) =>
+              [`exam_minimum:${subject}`, minimum] as [
+                string,
+                SourcedValue<unknown>,
+              ],
+          )
+        : [
+            [`exam_minimum:${item.subjects.join("|")}`, item.minimum] as [
+              string,
+              SourcedValue<unknown>,
+            ],
+          ],
     ),
     ...program.passingHistory.map(
       (item) =>
@@ -117,7 +149,7 @@ export function validateProgram(program: Program) {
     if (
       typeof field.value === "number" &&
       key.includes("score") &&
-      (field.value < 0 || field.value > 410)
+      !validAggregateScore(field.value)
     )
       errors.push(`${key}: балл вне допустимого диапазона`);
     if (
@@ -313,6 +345,36 @@ async function parseCache() {
 
 async function validate() {
   let critical = 0;
+  for (const adapter of selected) {
+    const campaign = getAdmissionCampaign(adapter.slug);
+    if (!campaign) continue;
+    const errors = validateAdmissionCampaign(campaign);
+    for (const source of Object.values(campaign.sources)) {
+      const registered = adapter.sources.find(
+        (item) => item.url === source.url,
+      );
+      if (!registered)
+        errors.push(`Источник кампании не зарегистрирован: ${source.url}`);
+      else {
+        try {
+          assertOfficialSource(adapter, registered);
+        } catch (error) {
+          errors.push(String(error));
+        }
+      }
+    }
+    critical += errors.length;
+    console.log(JSON.stringify({ admissionCampaign: adapter.slug, errors }));
+  }
+  for (const profile of universityFactProfiles.filter(
+    (item) => !university || item.universitySlug === university,
+  )) {
+    const result = validateUniversityFactProfile(profile);
+    critical += result.errors.length;
+    console.log(
+      JSON.stringify({ universityFacts: profile.universitySlug, ...result }),
+    );
+  }
   for (const program of programs.filter(
     (item) => !university || item.universitySlug === university,
   )) {
@@ -324,118 +386,8 @@ async function validate() {
 }
 
 async function importPrograms() {
-  await validate();
-  const targetPrograms = programs.filter(
-    (item) => !university || item.universitySlug === university,
-  );
-  if (dryRun) {
-    console.log(
-      `DRY RUN: ${targetPrograms.length} программ прошли проверку; база не изменена.`,
-    );
-    return;
-  }
-  if (!process.env.DATABASE_URL)
-    throw new Error(
-      "DATABASE_URL не задан. Сайт использует проверенный статический снимок; для импорта в PostgreSQL задайте DATABASE_URL.",
-    );
-  const prisma = new PrismaClient();
-  try {
-    for (const program of targetPrograms) {
-      const universityRecord = universities.find(
-        (item) => item.slug === program.universitySlug,
-      )!;
-      const universityRow = await prisma.university.upsert({
-        where: { slug: universityRecord.slug },
-        update: {
-          name: universityRecord.name,
-          shortName: universityRecord.shortName,
-          websiteUrl: universityRecord.website,
-          city: universityRecord.city,
-          status: "PUBLISHED",
-        },
-        create: {
-          slug: universityRecord.slug,
-          name: universityRecord.name,
-          shortName: universityRecord.shortName,
-          websiteUrl: universityRecord.website,
-          city: universityRecord.city,
-          status: "PUBLISHED",
-        },
-      });
-      const row = await prisma.educationProgram.upsert({
-        where: { slug: program.slug },
-        update: {
-          name: program.title,
-          code: program.code,
-          level: program.level === "Бакалавриат" ? "BACHELOR" : "SPECIALIST",
-          form:
-            program.form === "Очная"
-              ? "FULL_TIME"
-              : program.form === "Очно-заочная"
-                ? "PART_TIME"
-                : "EXTRAMURAL",
-          durationMonths: Number.parseInt(program.duration) * 12,
-          status: "PUBLISHED",
-        },
-        create: {
-          universityId: universityRow.id,
-          slug: program.slug,
-          code: program.code,
-          name: program.title,
-          level: program.level === "Бакалавриат" ? "BACHELOR" : "SPECIALIST",
-          form:
-            program.form === "Очная"
-              ? "FULL_TIME"
-              : program.form === "Очно-заочная"
-                ? "PART_TIME"
-                : "EXTRAMURAL",
-          durationMonths: Number.parseInt(program.duration) * 12,
-          status: "PUBLISHED",
-          publishedAt: new Date(),
-        },
-      });
-      for (const [metricKey, field] of sourcedFields(program)) {
-        const current = await prisma.metricValue.findFirst({
-          where: { programId: row.id, metricKey, year: field.year },
-          orderBy: { version: "desc" },
-        });
-        const same =
-          current &&
-          JSON.stringify(current.value) === JSON.stringify(field.value) &&
-          current.status === statusName(field.status) &&
-          current.sourceUrl === field.sourceUrl;
-        if (same) continue;
-        await prisma.metricValue.create({
-          data: {
-            programId: row.id,
-            metricKey,
-            year: field.year,
-            value: field.value === null ? undefined : field.value,
-            status: statusName(field.status),
-            sourceUrl: field.sourceUrl,
-            sourceName: field.sourceName,
-            sourceDocumentTitle: field.sourceDocumentTitle,
-            sourcePage: field.sourcePage,
-            sourceSheet: field.sourceSheet,
-            sourceRange: field.sourceRange,
-            sourceSection: field.sourceSection,
-            retrievedAt: new Date(field.retrievedAt),
-            checkedAt: new Date(field.checkedAt),
-            checkedBy: field.checkedBy,
-            nextReviewAt: field.nextReviewAt
-              ? new Date(field.nextReviewAt)
-              : null,
-            note: field.note,
-            version: (current?.version ?? 0) + 1,
-            supersedesId: current?.id,
-          },
-        });
-      }
-    }
-  } finally {
-    await prisma.$disconnect();
-  }
-  console.log("Импорт завершён идемпотентно; неизменившиеся версии пропущены.");
+  const { runCatalogImport } = await import("./catalog");
+  await runCatalogImport(process.argv.slice(2));
 }
 
 async function report() {
@@ -443,7 +395,16 @@ async function report() {
     const items = programs.filter(
       (program) => program.universitySlug === adapter.slug,
     );
-    const fields = items.flatMap(sourcedFields).map(([, field]) => field);
+    const programFields = items
+      .flatMap(sourcedFields)
+      .map(([, field]) => field);
+    const profile = universityFactProfiles.find(
+      ({ universitySlug }) => universitySlug === adapter.slug,
+    )!;
+    const universityFields = universitySourcedFields(profile).map(
+      ([, field]) => field,
+    );
+    const fields = [...universityFields, ...programFields];
     const verified = fields.filter(
       (field) => field.status === "verified",
     ).length;
@@ -463,7 +424,27 @@ async function report() {
       university: adapter.name,
       slug: adapter.slug,
       programs: items.length,
+      supplementaryAdmissionCampaign: (() => {
+        const campaign = getAdmissionCampaign(adapter.slug);
+        return campaign
+          ? {
+              year: campaign.year,
+              groups: campaign.groups.length,
+              sourceDocuments: Object.values(campaign.sources),
+              matchingEnabled: false,
+              validationErrors: validateAdmissionCampaign(campaign),
+              knownTuition: campaign.groups.filter(
+                (group) => group.tuition.value !== null,
+              ).length,
+              unknownPaidPlaces: campaign.groups.filter(
+                (group) => group.paidPlaces.value === null,
+              ).length,
+            }
+          : null;
+      })(),
       indicators: fields.length,
+      universityIndicators: universityFields.length,
+      programIndicators: programFields.length,
       verified,
       missing,
       review,
@@ -471,6 +452,18 @@ async function report() {
       coverage,
       years: [...new Set(fields.map((field) => field.year))].sort(),
       sources: adapter.sources,
+      factSources: [
+        ...new Map(
+          universityFields.map((field) => [
+            field.sourceUrl,
+            {
+              url: field.sourceUrl,
+              type: field.sourceKind,
+              checkedAt: field.checkedAt,
+            },
+          ]),
+        ).values(),
+      ],
     };
   });
   const output = {

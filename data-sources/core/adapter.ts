@@ -4,7 +4,10 @@ export type SourceCategory =
   | "places"
   | "tuition"
   | "results"
-  | "exams";
+  | "exams"
+  | "facts"
+  | "logos"
+  | "campuses";
 
 export type OfficialSource = {
   category: SourceCategory;
@@ -23,7 +26,13 @@ export type UniversityAdapter = {
   parse: (
     content: string,
     source: OfficialSource,
-  ) => { source: OfficialSource; markers: string[]; requiresReview: boolean };
+  ) => {
+    source: OfficialSource;
+    markers: string[];
+    requiresReview: boolean;
+    parserVersion: string;
+    extractedFacts: number;
+  };
 };
 
 export function createUniversityAdapter(
@@ -36,7 +45,14 @@ export function createUniversityAdapter(
       const present = config.markers.filter((marker) =>
         normalized.includes(marker.toLowerCase()),
       );
-      return { source, markers: present, requiresReview: present.length === 0 };
+      // Detection is not extraction or verification. A matching word cannot approve admissions data.
+      return {
+        source,
+        markers: present,
+        requiresReview: true,
+        parserVersion: "source-detection-v1",
+        extractedFacts: 0,
+      };
     },
   };
 }
@@ -55,4 +71,33 @@ export function assertOfficialSource(
       `${adapter.slug}: URL ${source.url} не принадлежит реестру официальных доменов`,
     );
   }
+}
+
+export function assertAdapterCoverage(
+  adapters: readonly UniversityAdapter[],
+  catalogSlugs: readonly string[],
+) {
+  const catalog = new Set(catalogSlugs);
+  const counts = new Map<string, number>();
+  for (const adapter of adapters)
+    counts.set(adapter.slug, (counts.get(adapter.slug) ?? 0) + 1);
+
+  const missing = [...catalog].filter((slug) => !counts.has(slug)).sort();
+  const orphaned = [...counts.keys()]
+    .filter((slug) => !catalog.has(slug))
+    .sort();
+  const duplicated = [...counts]
+    .filter(([, count]) => count > 1)
+    .map(([slug]) => slug)
+    .sort();
+  const problems = [
+    missing.length ? `нет адаптера: ${missing.join(", ")}` : null,
+    orphaned.length ? `адаптер без вуза: ${orphaned.join(", ")}` : null,
+    duplicated.length ? `дубли адаптеров: ${duplicated.join(", ")}` : null,
+  ].filter(Boolean);
+
+  if (problems.length)
+    throw new Error(
+      `Некорректный реестр официальных источников — ${problems.join("; ")}`,
+    );
 }

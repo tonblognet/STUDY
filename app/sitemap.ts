@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
-import { programs, universities } from "@/lib/data";
+import { getCatalog } from "@/lib/catalog/server";
 import { getSiteBaseUrl } from "@/lib/site-url";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const { programs, universities } = await getCatalog();
   const base = (await getSiteBaseUrl()).toString().replace(/\/$/, "");
   const pages: MetadataRoute.Sitemap = [
     "",
