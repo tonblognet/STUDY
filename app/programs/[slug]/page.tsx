@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProgramDecisionPage } from "@/components/program-decision-page";
-import { getProgram, programs } from "@/lib/data";
-
-export function generateStaticParams() {
-  return programs.map((program) => ({ slug: program.slug }));
-}
+import { getCatalog } from "@/lib/catalog/server";
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const program = getProgram((await params).slug);
+  const { programs } = await getCatalog();
+  const { slug } = await params;
+  const program = programs.find((item) => item.slug === slug);
   if (!program) return { title: "Программа не найдена" };
   return {
     title: `${program.title} — ${program.universityShort}`,
@@ -25,7 +23,9 @@ export default async function ProgramPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const program = getProgram((await params).slug);
+  const { programs } = await getCatalog();
+  const { slug } = await params;
+  const program = programs.find((item) => item.slug === slug);
   if (!program) notFound();
   return <ProgramDecisionPage program={program} />;
 }

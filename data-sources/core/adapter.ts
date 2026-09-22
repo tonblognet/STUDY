@@ -26,7 +26,13 @@ export type UniversityAdapter = {
   parse: (
     content: string,
     source: OfficialSource,
-  ) => { source: OfficialSource; markers: string[]; requiresReview: boolean };
+  ) => {
+    source: OfficialSource;
+    markers: string[];
+    requiresReview: boolean;
+    parserVersion: string;
+    extractedFacts: number;
+  };
 };
 
 export function createUniversityAdapter(
@@ -39,7 +45,14 @@ export function createUniversityAdapter(
       const present = config.markers.filter((marker) =>
         normalized.includes(marker.toLowerCase()),
       );
-      return { source, markers: present, requiresReview: present.length === 0 };
+      // Detection is not extraction or verification. A matching word cannot approve admissions data.
+      return {
+        source,
+        markers: present,
+        requiresReview: true,
+        parserVersion: "source-detection-v1",
+        extractedFacts: 0,
+      };
     },
   };
 }

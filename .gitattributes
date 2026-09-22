@@ -1,0 +1,2 @@
+# Preserve exact official logo bytes and their provenance checksums.
+public/university-logos/moscow/* -text whitespace=-blank-at-eol

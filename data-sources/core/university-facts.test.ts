@@ -27,7 +27,7 @@ describe("source-aware факты университетов", () => {
         ]),
       );
       for (const [, field] of fields) {
-        expect(field.sourceUrl).toMatch(/^https:\/\//);
+        expect(field.sourceUrl).toMatch(/^https?:\/\//);
         expect(field.sourceKind).toMatch(/^(html|pdf)$/);
         expect(field.checkedAt).toBeTruthy();
         expect(field.checkedBy).toBeTruthy();

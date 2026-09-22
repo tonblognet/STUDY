@@ -76,6 +76,8 @@ describe("адаптеры официальных источников", () => {
         adapter.sources[0],
       );
       expect(result.source.url).toBe(adapter.sources[0].url);
+      expect(result.requiresReview).toBe(true);
+      expect(result.extractedFacts).toBe(0);
     });
   }
 });

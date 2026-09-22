@@ -31,6 +31,7 @@ export type ExamRequirement = {
   id: string;
   subjects: string[];
   minimum: SourcedValue<number>;
+  subjectMinimums?: Record<string, SourcedValue<number>>;
   required: boolean;
   label: string;
 };

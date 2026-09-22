@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import type { University } from "@/lib/data";
 
 export function UniversityLogo({
@@ -12,13 +12,26 @@ export function UniversityLogo({
 }) {
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  // A cached image may finish before React hydrates and attaches onLoad.
+  const imageRef = useCallback((node: HTMLImageElement | null) => {
+    if (node?.complete && node.naturalWidth > 0) setLoaded(true);
+  }, []);
   const fallback = university.shortName.replace(/[^А-ЯA-Z]/g, "").slice(0, 2);
 
   return (
     <span
       className={`official-university-logo ${size}`}
-      style={{ "--university-color": university.color } as React.CSSProperties}
-      title={`Логотип ${university.shortName} с официального сайта`}
+      style={
+        {
+          "--university-color": university.color,
+          backgroundColor: university.logoBackground,
+        } as React.CSSProperties
+      }
+      title={
+        university.logoUrl
+          ? `Логотип ${university.shortName} с официального сайта`
+          : `${university.shortName}: логотип пока не получен`
+      }
     >
       {(!loaded || failed || !university.logoUrl) && (
         <b aria-label={university.shortName}>{fallback}</b>
@@ -28,8 +41,10 @@ export function UniversityLogo({
         // img keeps their marks intact without Next Image transformations.
         // eslint-disable-next-line @next/next/no-img-element
         <img
+          ref={imageRef}
           className={loaded ? "loaded" : ""}
           src={university.logoUrl}
+          loading={size === "hero" ? "eager" : "lazy"}
           alt={`Логотип ${university.shortName}`}
           onError={() => setFailed(true)}
           onLoad={() => setLoaded(true)}

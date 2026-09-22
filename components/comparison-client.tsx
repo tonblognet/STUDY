@@ -5,7 +5,7 @@ import { useMemo } from "react";
 import { DataStatusBadge } from "@/components/data-status";
 import { useUserState } from "@/components/user-state-provider";
 import type { Program } from "@/lib/data";
-import { formatPrice } from "@/lib/data";
+import { formatPrice } from "@/lib/catalog/format";
 
 const rows: Array<{
   label: string;

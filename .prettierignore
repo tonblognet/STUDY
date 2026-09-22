@@ -7,3 +7,4 @@ prisma/migrations
 pnpm-lock.yaml
 *.tsbuildinfo
 *.toml
+public/university-logos/moscow

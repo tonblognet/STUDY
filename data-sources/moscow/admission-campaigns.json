@@ -1,0 +1,289 @@
+{
+  "campaigns": [
+    {
+      "universitySlug": "balletacademy",
+      "year": 2026,
+      "campus": "Москва",
+      "admissionsUrl": "https://balletacademy.ru/entering/higher/priemnaya-kampaniya-2026/bakalavriat-magistratura-20258513/",
+      "sources": {
+        "exams": {
+          "url": "https://balletacademy.ru/upload/iblock/108/vtcyfsmhnljg5ifw5c5iknnfskdtg0ly/1.Perechen-napravleniy-podgotovki-i-vstupitelnykh-ispytaniy.-2026-god.docx",
+          "title": "Направления и вступительные испытания 2026",
+          "kind": "docx",
+          "checkedAt": "2026-09-17T20:21:58.160888+00:00",
+          "sha256": "879571831799abec344806d83562b0a16cdbc8dfb72f99a3ac0f8e4e1710dafd"
+        },
+        "minima": {
+          "url": "https://balletacademy.ru/upload/iblock/72b/jogo10jqx5pm38rmq64xwqn14g84slt4/2.Minimalnoe-kolichestvo-ballov-dlya-kazhdogo-vstupitelnogo-ispytaniya-po-kazhdomu-konkursu.-2026-god.docx",
+          "title": "Минимальные баллы 2026",
+          "kind": "docx",
+          "checkedAt": "2026-09-17T20:21:42.503903+00:00",
+          "sha256": "5a49b6ea9666d8b7fb1f856070b47adef1bc24f65d905b0605f536edf5da49c9"
+        },
+        "budget": {
+          "url": "https://balletacademy.ru/upload/iblock/57c/kfgn6gn5z6eyfealgwj70buzi71q4k42/5.Kontrolnye-tsifry-priema-po-spetsialnostyam-i-napravleniyam.-2026-god.pdf",
+          "title": "Контрольные цифры приёма 2026/27",
+          "kind": "pdf",
+          "checkedAt": "2026-09-17T13:41:24.345597+00:00",
+          "sha256": "9d737c8aeb79096f8b4ca95aaa21d29744b1bb444e0257d03490e636decba1a6"
+        },
+        "paid": {
+          "url": "https://balletacademy.ru/upload/iblock/2e2/vglo3tdzj411ljn60wf4okjtpdvg0zj7/Kolichestvo-mest-dlya-priema-na-obuchenie-za-schet-fizicheskikh-i-yuridicheskikh-lits-na-2026_2027-uchebnyy-god.pdf",
+          "title": "Платные места 2026/27",
+          "kind": "pdf",
+          "checkedAt": "2026-09-17T13:41:24.345597+00:00",
+          "sha256": "341894af57f2cb5d7d326dd6120fa9da839e2b3f8ad8e0c95a10a0c5575e74dc"
+        },
+        "tuition": {
+          "url": "https://balletacademy.ru/upload/iblock/0ea/1j2jpvgr8xvrbp6ztxup597mwcjcqtu2/Prikaz_ob_utverzhdenii_stoimosti_obucheniya_na_20262027_uchebnyy_god_.pdf",
+          "title": "Стоимость обучения: приказ № 158-У от 17.04.2026",
+          "kind": "pdf",
+          "checkedAt": "2026-09-17T20:37:56.054381+00:00",
+          "sha256": "c7e02742db985c6cf2b5c088d82c827ec471978da370001d683110b60896e8b1"
+        },
+        "rules": {
+          "url": "https://balletacademy.ru/upload/iblock/eae/4wpqlis2q8lr9notujpr1j20lzpci8cl/PRAVILA-PRIEMA-2026_2027.pdf",
+          "title": "Правила приёма 2026/27",
+          "kind": "pdf",
+          "checkedAt": "2026-09-17T20:37:56.248706+00:00",
+          "sha256": "9f9db53d0ecb2b7c5a798ab55adbf82bfdc603db73c477a9c7ff354f40c9ec65"
+        }
+      },
+      "groups": [
+        {
+          "id": "balletacademy-2026-pedagogy",
+          "code": "52.03.01",
+          "title": "Хореографическое искусство",
+          "form": "Очная",
+          "profiles": [
+            {
+              "title": "Педагогика балета",
+              "exams": [
+                "Исполнительское мастерство: педагогика балета",
+                "Коллоквиум: педагогика балета",
+                "Русский язык (ЕГЭ)",
+                "Литература (ЕГЭ)"
+              ]
+            }
+          ],
+          "sharedPlaces": false,
+          "duration": {
+            "value": "4 года",
+            "source": "exams",
+            "section": "52.03.01; Очная"
+          },
+          "budgetPlaces": {
+            "value": 12,
+            "source": "exams",
+            "section": "52.03.01; Очная"
+          },
+          "paidPlaces": {
+            "value": 0,
+            "source": "paid",
+            "section": "52.03.01; Очная"
+          },
+          "tuition": {
+            "value": 489200,
+            "source": "tuition",
+            "section": "52.03.01; Очная; приложение 1, стр. 2"
+          }
+        },
+        {
+          "id": "balletacademy-2026-folk",
+          "code": "52.03.01",
+          "title": "Хореографическое искусство",
+          "form": "Очная",
+          "profiles": [
+            {
+              "title": "Педагогика народно-сценического танца",
+              "exams": [
+                "Профильный экзамен по народно-сценическому танцу",
+                "Коллоквиум: педагогика народно-сценического танца",
+                "Русский язык (ЕГЭ)",
+                "Литература (ЕГЭ)"
+              ]
+            }
+          ],
+          "sharedPlaces": false,
+          "duration": {
+            "value": "4 года",
+            "source": "exams",
+            "section": "52.03.01; Очная"
+          },
+          "budgetPlaces": {
+            "value": 6,
+            "source": "exams",
+            "section": "52.03.01; Очная"
+          },
+          "paidPlaces": {
+            "value": 0,
+            "source": "paid",
+            "section": "52.03.01; Очная"
+          },
+          "tuition": {
+            "value": null,
+            "source": null,
+            "section": "52.03.01; Очная; приложение 1, стр. 2"
+          }
+        },
+        {
+          "id": "balletacademy-2026-artist",
+          "code": "52.03.02",
+          "title": "Хореографическое исполнительство",
+          "form": "Очная",
+          "profiles": [
+            {
+              "title": "Артист балета",
+              "exams": [
+                "Исполнительское мастерство: артист балета",
+                "Коллоквиум: артист балета",
+                "Русский язык (ЕГЭ)",
+                "Литература (ЕГЭ)"
+              ]
+            }
+          ],
+          "sharedPlaces": false,
+          "duration": {
+            "value": "3 года",
+            "source": "exams",
+            "section": "52.03.02; Очная"
+          },
+          "budgetPlaces": {
+            "value": 9,
+            "source": "exams",
+            "section": "52.03.02; Очная"
+          },
+          "paidPlaces": {
+            "value": null,
+            "source": null,
+            "section": "52.03.02; Очная"
+          },
+          "tuition": {
+            "value": 489200,
+            "source": "tuition",
+            "section": "52.03.02; Очная; приложение 1, стр. 2"
+          }
+        },
+        {
+          "id": "balletacademy-2026-piano",
+          "code": "53.03.02",
+          "title": "Музыкально-инструментальное искусство",
+          "form": "Очная",
+          "profiles": [
+            {
+              "title": "Концертмейстер по классу балета",
+              "exams": [
+                "Исполнение сольной программы: специальное фортепиано",
+                "Коллоквиум: концертмейстер по классу балета",
+                "Русский язык (ЕГЭ)",
+                "Литература (ЕГЭ)"
+              ]
+            }
+          ],
+          "sharedPlaces": false,
+          "duration": {
+            "value": "4 года",
+            "source": "exams",
+            "section": "53.03.02; Очная"
+          },
+          "budgetPlaces": {
+            "value": 5,
+            "source": "exams",
+            "section": "53.03.02; Очная"
+          },
+          "paidPlaces": {
+            "value": null,
+            "source": null,
+            "section": "53.03.02; Очная"
+          },
+          "tuition": {
+            "value": 489200,
+            "source": "tuition",
+            "section": "53.03.02; Очная; приложение 1, стр. 2"
+          }
+        },
+        {
+          "id": "balletacademy-2026-part-time",
+          "code": "52.03.01",
+          "title": "Хореографическое искусство",
+          "form": "Заочная",
+          "profiles": [
+            {
+              "title": "Педагогика балета",
+              "exams": [
+                "Исполнительское мастерство: педагогика балета",
+                "Коллоквиум: педагогика балета",
+                "Русский язык (ЕГЭ)",
+                "Литература (ЕГЭ)"
+              ]
+            },
+            {
+              "title": "Менеджмент исполнительских искусств",
+              "exams": [
+                "Письменная работа по менеджменту хореографического искусства",
+                "Коллоквиум: менеджмент хореографического искусства",
+                "Русский язык (ЕГЭ)",
+                "Литература (ЕГЭ)"
+              ]
+            }
+          ],
+          "sharedPlaces": true,
+          "duration": {
+            "value": "4 года 9 месяцев",
+            "source": "exams",
+            "section": "52.03.01; Заочная"
+          },
+          "budgetPlaces": {
+            "value": 0,
+            "source": "budget",
+            "section": "52.03.01; Заочная"
+          },
+          "paidPlaces": {
+            "value": 8,
+            "source": "paid",
+            "section": "52.03.01; Заочная"
+          },
+          "tuition": {
+            "value": 260000,
+            "source": "tuition",
+            "section": "52.03.01; Заочная; приложение 1, стр. 2"
+          }
+        }
+      ],
+      "examMinimums": [
+        {
+          "title": "Творческое (профильное) испытание",
+          "minimum": 50,
+          "source": "minima"
+        },
+        {
+          "title": "Собеседование (профессиональное испытание)",
+          "minimum": 50,
+          "source": "minima"
+        },
+        {
+          "title": "Русский язык (ЕГЭ)",
+          "minimum": 40,
+          "source": "minima"
+        },
+        {
+          "title": "Литература (ЕГЭ)",
+          "minimum": 40,
+          "source": "minima"
+        }
+      ],
+      "mainApplicationPeriod": {
+        "opens": "2026-06-20",
+        "closes": "2026-07-10",
+        "source": "rules",
+        "section": "Пункты 1.15–1.16, стр. 5–6"
+      },
+      "notes": [
+        "Сроки относятся к основному приёму 2026; дополнительный набор и результаты проверяйте на сайте академии.",
+        "В перечне внутренние общеобразовательные экзамены вместо ЕГЭ указаны для поступающих с профильным СПО. Условия допуска требуют сверки правил для конкретного документа об образовании.",
+        "Бюджетные места включают квоты. Распределение общего конкурса здесь не вычисляется.",
+        "Наличие тарифа в приказе не подтверждает наличие платных мест. Неизвестные места и цены сохранены без числового значения."
+      ]
+    }
+  ]
+}

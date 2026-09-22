@@ -18,18 +18,41 @@ export function calculateCompleteness(program: Program): CompletenessResult {
       10,
       Boolean(program.code && program.title && program.university),
     ],
-    ["форма и продолжительность", 8, Boolean(program.form && program.duration)],
+    [
+      "форма и продолжительность",
+      8,
+      Boolean(
+        program.form &&
+          program.duration &&
+          program.duration !== "Срок уточняется",
+      ) &&
+        (!program.durationValue || usable(program.durationValue)),
+    ],
     [
       "вступительные испытания",
       16,
       program.examRequirements.length > 0 &&
-        program.examRequirements.every((item) => usable(item.minimum)),
+        program.examRequirements.every((item) =>
+          item.subjectMinimums
+            ? item.subjects.every(
+                (subject) =>
+                  Boolean(item.subjectMinimums?.[subject]) &&
+                  usable(item.subjectMinimums![subject]),
+              )
+            : usable(item.minimum),
+        ),
     ],
     ["проходной балл", 14, usable(program.passingScoreValue)],
     ["бюджетные места", 10, usable(program.budgetPlacesValue)],
     ["платные места", 8, usable(program.paidPlacesValue)],
     ["стоимость", 12, usable(program.tuitionValue)],
-    ["ДВИ", 8, usable(program.dviValue) && usable(program.dviMax)],
+    [
+      "ДВИ",
+      8,
+      usable(program.dviValue) &&
+        usable(program.dviMax) &&
+        (!program.dviMinimum || usable(program.dviMinimum)),
+    ],
     ["квоты", 8, Object.values(program.quotas).every(usable)],
     [
       "история",

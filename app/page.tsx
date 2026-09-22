@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { HeroDataViz } from "@/components/hero-data-viz";
-import { programs, universities, formatPrice } from "@/lib/data";
+import { getCatalog } from "@/lib/catalog/server";
+import { formatPrice } from "@/lib/catalog/format";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const { programs, universities } = await getCatalog();
   const budgetPlaces = programs.reduce(
     (sum, program) => sum + (program.budgetPlaces ?? 0),
     0,

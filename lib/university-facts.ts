@@ -1,5 +1,6 @@
 import type { DataStatus, SourceKind, SourcedValue } from "./admissions/types";
 import { universities, type University } from "./data";
+import { getDirectoryDetails } from "./university-directory-details";
 
 export type UniversityCampusFact = {
   id: string;
@@ -24,12 +25,19 @@ type FactOverride<T> = {
   sourceUrl: string;
   sourceKind?: SourceKind;
   sourceSection: string;
+  checkedAt?: string;
 };
 
 const CHECKED_AT = "2026-08-26T12:00:00.000Z";
 const NEXT_REVIEW_AT = "2026-09-26T12:00:00.000Z";
 
 const verifiedAddresses: Partial<Record<string, FactOverride<string>>> = {
+  mgu: {
+    value: "119991, Москва, Ленинские горы, д. 1",
+    sourceUrl: "https://international.msu.ru/ru",
+    sourceSection: "Контакты — адрес МГУ имени М. В. Ломоносова",
+    checkedAt: "2026-08-27T12:00:00.000Z",
+  },
   bmstu: {
     value: "Москва, 2-я Бауманская улица, 5, стр. 1",
     sourceUrl: "https://mil.bmstu.ru/",
@@ -81,12 +89,41 @@ function fact<T>(
 function buildProfile(university: University): UniversityFactProfile {
   const name = university.shortName;
   const factsSourceUrl = university.factsSourceUrl ?? university.website;
-  const addressOverride = verifiedAddresses[university.slug];
+  const directory = university.directory;
+  const currentAddress = getDirectoryDetails(university.slug)?.fields.address;
+  const directoryReview = directory
+    ? { checkedAt: directory.checkedAt, retrievedAt: directory.checkedAt }
+    : {};
+  const addressOverride =
+    verifiedAddresses[university.slug] ??
+    (currentAddress
+      ? {
+          value: currentAddress.value,
+          sourceUrl: currentAddress.sourceUrl,
+          sourceSection:
+            "Основные сведения — адрес образовательной организации",
+          checkedAt: currentAddress.checkedAt,
+        }
+      : undefined) ??
+    (directory && university.address !== university.city
+      ? {
+          value: university.address,
+          sourceUrl: directory.addressSourceUrl,
+          sourceSection:
+            "Общие сведения — адрес организации (не всех учебных корпусов)",
+          checkedAt: directory.checkedAt,
+        }
+      : undefined);
   const address = addressOverride
     ? fact(addressOverride.value, "verified", addressOverride.sourceUrl, name, {
         sourceKind:
           addressOverride.sourceKind ?? sourceKind(addressOverride.sourceUrl),
         sourceSection: addressOverride.sourceSection,
+        retrievedAt: addressOverride.checkedAt ?? CHECKED_AT,
+        checkedAt: addressOverride.checkedAt ?? CHECKED_AT,
+        ...(directory && !verifiedAddresses[university.slug]
+          ? { year: currentAddress?.sourceYear ?? directory.sourceYear }
+          : {}),
       })
     : fact<string>(
         university.address === university.city ? null : university.address,
@@ -95,6 +132,8 @@ function buildProfile(university: University): UniversityFactProfile {
         name,
         {
           sourceSection: "Адрес и сведения об университете",
+          ...directoryReview,
+          ...(directory ? { year: directory.sourceYear } : {}),
           note: "Точный адрес кампуса ожидает проверку по отдельной официальной странице.",
         },
       );
@@ -107,6 +146,7 @@ function buildProfile(university: University): UniversityFactProfile {
     name,
     {
       sourceSection: "Кампус и общежития",
+      ...directoryReview,
       note:
         university.dormitoriesCount === undefined
           ? "Официальное число общежитий ещё не подтверждено."
@@ -121,6 +161,12 @@ function buildProfile(university: University): UniversityFactProfile {
         name,
         {
           sourceSection: "Военный учебный центр",
+          ...(university.slug === "mgu"
+            ? {
+                retrievedAt: "2026-09-08T00:00:00.000Z",
+                checkedAt: "2026-09-08T00:00:00.000Z",
+              }
+            : {}),
           note:
             university.militaryCenter === true
               ? "Наличие ВУЦ подтверждено отдельной официальной страницей; доступ зависит от условий отбора."
@@ -129,15 +175,29 @@ function buildProfile(university: University): UniversityFactProfile {
       )
     : fact<boolean>(null, "pending_review", factsSourceUrl, name, {
         sourceSection: "Военный учебный центр",
+        ...directoryReview,
         note: "Отдельное официальное подтверждение наличия или отсутствия ВУЦ не зафиксировано.",
       });
 
   return {
     universitySlug: university.slug,
     facts: {
-      website: fact(university.website, "verified", university.website, name, {
-        sourceSection: "Официальный сайт университета",
-      }),
+      website: fact(
+        university.website,
+        "verified",
+        directory?.websiteSourceUrl ?? university.website,
+        name,
+        {
+          sourceSection: "Официальный сайт университета",
+          ...(directory
+            ? {
+                year: directory.sourceYear,
+                checkedAt: directory.checkedAt,
+                retrievedAt: directory.checkedAt,
+              }
+            : {}),
+        },
+      ),
       logoUrl: fact(
         university.logoUrl ?? null,
         university.logoUrl ? "verified" : "pending_review",
@@ -145,6 +205,13 @@ function buildProfile(university: University): UniversityFactProfile {
         name,
         {
           sourceSection: "Официальный логотип или фирменный стиль",
+          ...(!university.logoUrl ? directoryReview : {}),
+          ...(directory?.logoCheckedAt
+            ? {
+                checkedAt: directory.logoCheckedAt,
+                retrievedAt: directory.logoCheckedAt,
+              }
+            : {}),
           note: university.logoUrl
             ? "Asset опубликован официальным университетским ресурсом или сохранён локально с указанием официального источника."
             : "Официальный asset логотипа ещё не зафиксирован.",
@@ -160,7 +227,7 @@ function buildProfile(university: University): UniversityFactProfile {
         : [
             {
               id: `${university.slug}-main`,
-              name: "Основной кампус",
+              name: directory ? "Адрес организации" : "Основной кампус",
               address,
             },
           ],

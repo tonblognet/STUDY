@@ -33,3 +33,17 @@ Target: catalog RPO 24h, user/payment RPO 5m, service RTO 4h. A restore is compl
 ## Monitoring
 
 Alert on uptime, HTTP 5xx, latency, auth anomaly, payment/webhook failure, email failure, queue age, failed/stuck import, DB saturation and backup/restore status. Logs, traces, operational metrics and product analytics remain separate.
+
+## Catalog publication
+
+Set `CATALOG_STORAGE=database`, apply migrations, import a candidate with an
+existing editor identity, and approve it at `/admin/catalog` before routing
+public traffic to a fresh database. The initial import does not automatically
+publish. Database failures never fall back to repository evidence. See
+[CATALOG_PUBLICATION.md](docs/CATALOG_PUBLICATION.md) for migration, export,
+review and rollback procedures. The previous catalog importer is replaced by
+the review workflow; do not deploy old writers against the new publication model.
+
+CI provides PostgreSQL 16 and a dedicated `TEST_DATABASE_URL`; integration tests
+apply all migrations in a random schema, exercise transactions and production
+HTTP routes, then remove only that schema.

@@ -340,7 +340,7 @@ model EducationProgram {
   name            String
   level           EducationLevel
   form            StudyForm
-  durationMonths  Int
+  durationMonths  Int?
   status          PublicationStatus      @default(REVIEW)
   publishedAt     DateTime?
   updatedAt       DateTime               @updatedAt
@@ -352,7 +352,9 @@ model EducationProgram {
   metricValues    MetricValue[]
   trackerItems    AdmissionTrackerItem[]
 
-  @@unique([universityId, code, level, form])
+  // A specialty code can contain several distinct faculties/profiles/contest groups.
+  // The stable publication slug identifies the concrete program.
+  @@index([universityId, code, level, form])
   @@index([status, level, form])
   @@index([name])
 }
@@ -716,6 +718,37 @@ model AiUsage {
   user          User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
 
   @@index([userId, feature, createdAt])
+}
+
+enum CatalogRevisionStatus {
+  REVIEW
+  PUBLISHED
+  REJECTED
+}
+
+model CatalogRevision {
+  id             String                @id @default(cuid())
+  fingerprint    String                @unique
+  checksum       String
+  baseRevisionId String?
+  status         CatalogRevisionStatus @default(REVIEW)
+  payload        Json
+  changes        Json
+  reason         String
+  createdBy      String
+  createdAt      DateTime              @default(now())
+  reviewedBy     String?
+  reviewNote     String?
+  reviewedAt     DateTime?
+  head           CatalogHead?
+
+  @@index([status, createdAt])
+}
+
+model CatalogHead {
+  id         String           @id @default("public")
+  revisionId String?          @unique
+  revision   CatalogRevision? @relation(fields: [revisionId], references: [id], onDelete: Restrict)
 }
 
 model AuditLog {
