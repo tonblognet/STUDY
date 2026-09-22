@@ -231,6 +231,112 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
     );
     assert.equal(await db.catalogRevision.count(), count);
   });
+  it("rejects reassigned public identities before creating a review", async () => {
+    const current = await readPublishedCatalog(db);
+    const count = await db.catalogRevision.count();
+    for (const field of ["id", "slug"] as const) {
+      const candidate = structuredClone(current.snapshot);
+      candidate.programs[0][field] += "-changed";
+      await assert.rejects(
+        stageCatalog(db, candidate, options(published)),
+        /идентичность/,
+      );
+    }
+    assert.equal(await db.catalogRevision.count(), count);
+    assert.equal((await readPublishedCatalog(db)).revisionId, published);
+    const legacy = structuredClone(current.snapshot);
+    legacy.programs[0].id += "-legacy";
+    const legacyDraft = await db.catalogRevision.create({
+      data: {
+        fingerprint: randomUUID(),
+        checksum: catalogChecksum(legacy),
+        baseRevisionId: published,
+        payload: JSON.parse(JSON.stringify(legacy)),
+        changes: [],
+        reason: "Черновик до проверки идентификаторов",
+        createdBy: admin.id,
+      },
+    });
+    await assert.rejects(
+      reviewCatalog(db, legacyDraft.id, "publish", options(published)),
+      /идентичность/,
+    );
+    assert.equal((await readPublishedCatalog(db)).revisionId, published);
+    assert.equal(
+      (
+        await db.catalogRevision.findUniqueOrThrow({
+          where: { id: legacyDraft.id },
+        })
+      ).status,
+      "REVIEW",
+    );
+  });
+  it("restores a removed program without breaking saved references and reserves its identity", async () => {
+    const before = await readPublishedCatalog(db);
+    const program = before.snapshot.programs[0];
+    const row = await db.educationProgram.findUniqueOrThrow({
+      where: { slug: program.slug },
+    });
+    const favorite = await db.favorite.create({
+      data: { userId: admin.id, programId: row.id },
+    });
+    const savedState = {
+      favoriteIds: [program.id],
+      comparisonIds: [program.id],
+      scoreSets: [],
+    };
+    await db.userStateSnapshot.create({
+      data: { userId: admin.id, state: savedState },
+    });
+    const removed = structuredClone(before.snapshot);
+    removed.programs = removed.programs.filter(
+      (item) => item.slug !== program.slug,
+    );
+    const draft = await stageCatalog(db, removed, options(published));
+    await reviewCatalog(db, draft.id, "publish", options(published));
+    published = draft.id;
+    assert.equal(
+      (await db.educationProgram.findUniqueOrThrow({ where: { id: row.id } }))
+        .status,
+      "DRAFT",
+    );
+    for (const field of ["id", "slug"] as const) {
+      const reassigned = structuredClone(before.snapshot);
+      reassigned.programs[0][field] += "-reused";
+      await assert.rejects(
+        stageCatalog(db, reassigned, options(published)),
+        /идентичность/,
+      );
+    }
+    const restore = await stageCatalog(db, before.snapshot, options(published));
+    await reviewCatalog(db, restore.id, "publish", options(published));
+    published = restore.id;
+    assert.equal(
+      (
+        await db.educationProgram.findUniqueOrThrow({
+          where: { slug: program.slug },
+        })
+      ).id,
+      row.id,
+    );
+    assert.equal(
+      (await db.favorite.findUniqueOrThrow({ where: { id: favorite.id } }))
+        .programId,
+      row.id,
+    );
+    assert.deepEqual(
+      (
+        await db.userStateSnapshot.findUniqueOrThrow({
+          where: { userId: admin.id },
+        })
+      ).state,
+      savedState,
+    );
+    assert.equal(
+      catalogChecksum((await readPublishedCatalog(db)).snapshot),
+      catalogChecksum(before.snapshot),
+    );
+  });
   it(
     "routes enforce role, origin and bounded request bodies",
     { skip: process.env.CATALOG_HTTP_TESTS !== "true" },

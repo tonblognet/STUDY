@@ -17,6 +17,34 @@ const reasonText = (value: string) => {
   return reason;
 };
 
+/** IDs used by saved lists and slugs used by links remain reserved after removal. */
+async function assertProgramIdentities(
+  tx: Prisma.TransactionClient,
+  snapshot: CatalogSnapshot,
+) {
+  const incoming = JSON.stringify(
+    snapshot.programs.map(({ id, slug }) => ({ id, slug })),
+  );
+  const conflicts = await tx.$queryRaw<Array<{ slug: string }>>`
+    SELECT candidate.slug
+    FROM jsonb_to_recordset(${incoming}::jsonb) AS candidate(id text, slug text)
+    WHERE EXISTS (
+      SELECT 1
+      FROM "CatalogRevision" revision
+      CROSS JOIN LATERAL jsonb_array_elements(revision.payload->'programs') previous
+      WHERE revision.status = 'PUBLISHED'
+        AND ((previous->>'id' = candidate.id AND previous->>'slug' <> candidate.slug)
+          OR (previous->>'slug' = candidate.slug AND previous->>'id' <> candidate.id))
+    )
+    LIMIT 1
+  `;
+  if (conflicts.length)
+    throw new CatalogError(
+      `Нельзя менять опубликованную идентичность программы ${conflicts[0].slug}: сохраните прежние id и slug`,
+      409,
+    );
+}
+
 export async function readPublishedCatalog(db: PrismaClient) {
   const head = await db.catalogHead.findUnique({
     where: { id: "public" },
@@ -65,6 +93,7 @@ export async function stageCatalog(
           status: "PUBLISHED" as const,
           unchanged: true,
         };
+      await assertProgramIdentities(tx, snapshot);
       const fingerprint = catalogChecksum({ checksum, base: head.revisionId });
       const existing = await tx.catalogRevision.findUnique({
         where: { fingerprint },
@@ -135,6 +164,8 @@ export async function reviewCatalog(
         const snapshot = parseCatalog(revision.payload);
         if (catalogChecksum(snapshot) !== revision.checksum)
           throw new CatalogError("Контрольная сумма не совпадает", 409);
+        // Also protect drafts created before this validation was introduced.
+        await assertProgramIdentities(tx, snapshot);
         await syncCatalogEntities(tx, snapshot);
       }
       const status = decision === "publish" ? "PUBLISHED" : "REJECTED";
