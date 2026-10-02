@@ -45,7 +45,8 @@ describe("ключевые интерфейсы", () => {
     expect(html).toContain("Программа / вуз");
     expect(html).toContain(`Найдено ${programs.length} программ`);
     expect(html).toContain("Без ограничения балла");
-    expect(html).toContain("/programs/mgu-economics");
+    expect(html.match(/class="program-row"/g)).toHaveLength(24);
+    expect(html).toContain("Показать ещё");
   });
 
   it("страница программы отвечает на три вопроса и показывает источник", () => {

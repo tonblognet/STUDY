@@ -3,6 +3,11 @@ import Link from "next/link";
 import { UniversityCatalog } from "@/components/university-catalog";
 import { getCatalog } from "@/lib/catalog/server";
 import { directoryEvidenceSummary } from "@/lib/university-directory-details";
+import {
+  initialView,
+  universityViewSchema,
+  type ViewSearch,
+} from "@/lib/catalog/view-state";
 
 export const metadata: Metadata = {
   title: "Вузы Москвы",
@@ -10,7 +15,12 @@ export const metadata: Metadata = {
     "Государственные и негосударственные вузы Москвы: официальные сайты, логотипы, адреса и сведения об организациях.",
 };
 
-export default async function UniversitiesPage() {
+export default async function UniversitiesPage({
+  searchParams,
+}: {
+  searchParams: Promise<ViewSearch>;
+}) {
+  const params = await searchParams;
   const { programs, universities, directoryDetails, admissionCampaigns } =
     await getCatalog();
   const getDirectoryDetails = (slug: string) =>
@@ -53,6 +63,7 @@ export default async function UniversitiesPage() {
         сегодняшнему статусу организации.
       </p>
       <UniversityCatalog
+        initialView={initialView(universityViewSchema, params)}
         entries={universities.map((university) => ({
           ...university,
           campaignCount:

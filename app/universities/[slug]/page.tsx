@@ -69,7 +69,7 @@ export default async function UniversityPage({
   ).length;
 
   return (
-    <main className="university-profile">
+    <div className="university-profile">
       <div className="university-profile-shell">
         <div className="breadcrumbs">
           <Link href="/universities">Вузы Москвы</Link>
@@ -555,6 +555,6 @@ export default async function UniversityPage({
           </section>
         )}
       </div>
-    </main>
+    </div>
   );
 }

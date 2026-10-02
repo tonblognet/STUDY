@@ -43,6 +43,7 @@ const matches = (value: string, query: string) =>
 export function MguPrograms({ rows }: { rows: MguProgramRow[] }) {
   const [query, setQuery] = useState("");
   const [faculty, setFaculty] = useState("");
+  const [limit, setLimit] = useState(12);
   const faculties = [...new Set(rows.map((row) => row.faculty))].sort((a, b) =>
     a.localeCompare(b, "ru"),
   );
@@ -78,13 +79,22 @@ export function MguPrograms({ rows }: { rows: MguProgramRow[] }) {
           <input
             type="search"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setLimit(12);
+            }}
             placeholder="Например, физика или 38.03.01"
           />
         </label>
         <label>
           Факультет
-          <select value={faculty} onChange={(e) => setFaculty(e.target.value)}>
+          <select
+            value={faculty}
+            onChange={(e) => {
+              setFaculty(e.target.value);
+              setLimit(12);
+            }}
+          >
             <option value="">Все факультеты и школы</option>
             {faculties.map((item) => (
               <option key={item}>{item}</option>
@@ -96,6 +106,7 @@ export function MguPrograms({ rows }: { rows: MguProgramRow[] }) {
           onClick={() => {
             setQuery("");
             setFaculty("");
+            setLimit(12);
           }}
         >
           Сбросить
@@ -105,7 +116,7 @@ export function MguPrograms({ rows }: { rows: MguProgramRow[] }) {
         Найдено групп: {visible.length} из {rows.length}
       </p>
       <div className="mgu-programs">
-        {visible.map((row) => (
+        {visible.slice(0, limit).map((row) => (
           <details className="mgu-program" key={row.slug}>
             <summary>
               <div>
@@ -207,6 +218,7 @@ export function MguPrograms({ rows }: { rows: MguProgramRow[] }) {
               {row.contact && <ProgramContacts contact={row.contact} />}
               <div className="mgu-links">
                 <Link
+                  prefetch={false}
                   href={`/programs/${row.slug}`}
                   className="button button-primary"
                 >
@@ -224,6 +236,15 @@ export function MguPrograms({ rows }: { rows: MguProgramRow[] }) {
           </details>
         ))}
       </div>
+      {visible.length > limit && (
+        <button
+          type="button"
+          className="button button-secondary catalog-more"
+          onClick={() => setLimit(limit + 12)}
+        >
+          Показать ещё программы · {Math.min(12, visible.length - limit)}
+        </button>
+      )}
       {!visible.length && (
         <div className="mgu-empty">
           По этому запросу программ нет. Попробуйте другой факультет или более

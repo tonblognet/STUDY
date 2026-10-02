@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { matchViewSchema } from "@/lib/catalog/view-state";
+import { useSavedFilters } from "./use-saved-filters";
 import { useUserState } from "@/components/user-state-provider";
 import {
   EXAM_SUBJECTS,
@@ -45,20 +47,30 @@ const makeDraft = (): ScoreSet => ({
 export function EgeMatcherWorkspace({
   programs,
   universities,
+  initialView,
 }: {
   programs: Program[];
   universities: University[];
+  initialView?: string;
 }) {
   const { scoreSets, saveScoreSet, removeScoreSet } = useUserState();
   const [profile, setProfile] = useState<ScoreSet>(makeDraft);
   const [selected, setSelected] = useState<string[]>(
     Object.keys(profile.scores),
   );
-  const [category, setCategory] = useState<MatchCategory | "all">("all");
-  const [filters, setFilters] = useState<AdmissionFilters>(
-    DEFAULT_ADMISSION_FILTERS,
+  const [filters, setFilters] = useSavedFilters(
+    "/match",
+    matchViewSchema,
+    "",
+    initialView,
   );
-  const [eligibility, setEligibility] = useState("all");
+  const { category, eligibility } = filters;
+  const setCategory = (value: MatchCategory | "all") =>
+    setFilters((current) => ({ ...current, category: value }));
+  const setEligibility = (value: string) =>
+    setFilters((current) =>
+      matchViewSchema.parse({ ...current, eligibility: value }),
+    );
   const [saveError, setSaveError] = useState("");
   function filter<K extends keyof AdmissionFilters>(
     key: K,
@@ -84,6 +96,9 @@ export function EgeMatcherWorkspace({
       (category === "all" || match.category === category) &&
       (eligibility === "all" || match.eligibility === eligibility),
   );
+  const resultKey = JSON.stringify([filters, category, eligibility, profile]);
+  const [page, setPage] = useState({ key: "", limit: 24 });
+  const visibleLimit = page.key === resultKey ? page.limit : 24;
   const counts = useMemo(
     () =>
       matches.reduce<Record<MatchCategory, number>>(
@@ -288,11 +303,14 @@ export function EgeMatcherWorkspace({
           )}
         </aside>
 
-        <section className="match-results-column" aria-live="polite">
+        <section
+          className="match-results-column"
+          aria-label="Результаты подбора"
+        >
           <div className="match-results-summary">
             <div>
               <span className="overline">02 · Результат</span>
-              <h2>{visible.length} программ</h2>
+              <h2 role="status">{visible.length} программ</h2>
             </div>
             <p>
               Минимумы испытаний и сравнение с прошлым годом проверяются
@@ -301,14 +319,13 @@ export function EgeMatcherWorkspace({
           </div>
           <div
             className="match-category-tabs"
-            role="tablist"
+            role="group"
             aria-label="Категории результата"
           >
             {categories.map((item) => (
               <button
                 type="button"
-                role="tab"
-                aria-selected={category === item.id}
+                aria-pressed={category === item.id}
                 key={item.id}
                 onClick={() => setCategory(item.id)}
               >
@@ -324,7 +341,7 @@ export function EgeMatcherWorkspace({
             </p>
           )}
           <div className="match-decision-list">
-            {visible.map(({ program, match }) => {
+            {visible.slice(0, visibleLimit).map(({ program, match }) => {
               const open = expanded === program.id;
               return (
                 <article
@@ -339,7 +356,10 @@ export function EgeMatcherWorkspace({
                       </span>
                       <h3>
                         <SavedProgramActions id={program.id} />
-                        <Link href={`/programs/${program.slug}`}>
+                        <Link
+                          prefetch={false}
+                          href={`/programs/${program.slug}`}
+                        >
                           {program.title}
                         </Link>
                       </h3>
@@ -366,11 +386,12 @@ export function EgeMatcherWorkspace({
                   <div className="match-decision-actions">
                     <button
                       type="button"
+                      aria-expanded={open}
                       onClick={() => setExpanded(open ? null : program.id)}
                     >
                       {open ? "Скрыть объяснение" : "Почему такой результат"}
                     </button>
-                    <Link href={`/programs/${program.slug}`}>
+                    <Link prefetch={false} href={`/programs/${program.slug}`}>
                       Карточка программы →
                     </Link>
                   </div>
@@ -393,6 +414,17 @@ export function EgeMatcherWorkspace({
               );
             })}
           </div>
+          {visibleLimit < visible.length && (
+            <button
+              type="button"
+              className="button button-secondary catalog-more"
+              onClick={() =>
+                setPage({ key: resultKey, limit: visibleLimit + 24 })
+              }
+            >
+              Показать ещё · {Math.min(24, visible.length - visibleLimit)}
+            </button>
+          )}
         </section>
 
         <aside className="match-filter-rail" aria-label="Фильтры подбора">
@@ -540,9 +572,7 @@ export function EgeMatcherWorkspace({
             type="button"
             className="match-reset-filters"
             onClick={() => {
-              setFilters(DEFAULT_ADMISSION_FILTERS);
-              setEligibility("all");
-              setCategory("all");
+              setFilters(matchViewSchema.parse(DEFAULT_ADMISSION_FILTERS));
             }}
           >
             Сбросить фильтры
