@@ -24,6 +24,28 @@ function fakeWindow() {
 afterEach(() => vi.unstubAllGlobals());
 
 describe("локальные сохранения", () => {
+  it("round-trips separate exams and skips malformed local profiles", () => {
+    const browser = fakeWindow();
+    vi.stubGlobal("window", browser);
+    const profile = {
+      id: "creative",
+      name: "Творческий",
+      scores: { Литература: 90 },
+      individualAchievements: 0,
+      additionalExamScores: {
+        "program:creative": 80,
+        "program:professional": 70,
+      },
+      updatedAt: "2026-09-22T00:00:00.000Z",
+    };
+    writeScoreSets([profile]);
+    expect(readScoreSets()).toEqual([profile]);
+    browser.localStorage.setItem(
+      "postupai:score-sets",
+      JSON.stringify([{ id: "bad", scores: null }, profile]),
+    );
+    expect(readScoreSets()).toEqual([profile]);
+  });
   it("сохраняет список без дублей", () => {
     vi.stubGlobal("window", fakeWindow());
     writeStoredList("favorites", ["a", "a", "b"]);

@@ -5,6 +5,7 @@ import {
 } from "@/lib/university-directory-details";
 
 const labels = {
+  overview: "О вузе",
   fullName: "Юридическое наименование",
   shortName: "Официальное сокращение",
   regDate: "Дата создания по сведениям вуза",
@@ -12,6 +13,8 @@ const labels = {
   telephone: "Общий телефон вуза",
   email: "Общая электронная почта",
   admissionsUrl: "Раздел для поступающих",
+  admissionsPhone: "Телефон приёмной комиссии",
+  admissionsEmail: "Электронная почта приёмной комиссии",
 } as const;
 
 export function UniversityVerifiedDetails({
@@ -77,7 +80,16 @@ export function UniversityVerifiedDetails({
             return field ? (
               <div key={key}>
                 <dt>{label}</dt>
-                <dd>{field.value}</dd>
+                <dd>
+                  {key === "admissionsUrl" &&
+                  /^https?:\/\//.test(field.value) ? (
+                    <a href={field.value} target="_blank" rel="noreferrer">
+                      Открыть раздел для поступающих ↗
+                    </a>
+                  ) : (
+                    field.value
+                  )}
+                </dd>
                 <dd>
                   <a href={field.sourceUrl} target="_blank" rel="noreferrer">
                     Источник ↗

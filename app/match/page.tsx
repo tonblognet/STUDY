@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default async function MatchPage() {
   const { programs, universities } = await getCatalog();
   return (
-    <main className="match-page">
+    <div className="match-page">
       <EgeMatcherWorkspace programs={programs} universities={universities} />
-    </main>
+    </div>
   );
 }

@@ -441,4 +441,56 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
       assert.equal(repeat.status, 409);
     },
   );
+  it(
+    "round-trips separate creative exam results through authenticated user state",
+    { skip: process.env.CATALOG_HTTP_TESTS !== "true" },
+    async () => {
+      const state = {
+        favoriteIds: [],
+        comparisonIds: [],
+        scoreSets: [
+          {
+            id: "creative",
+            name: "Творческий",
+            scores: { Литература: 90 },
+            individualAchievements: 0,
+            additionalExamScores: {
+              "program:creative": 80,
+              "program:professional": 70,
+            },
+            updatedAt: "2026-09-22T00:00:00.000Z",
+          },
+        ],
+      };
+      const headers = {
+        cookie: userCookie,
+        origin: base,
+        "content-type": "application/json",
+      };
+      const response = await fetch(`${base}/api/user-state`, {
+        method: "PUT",
+        headers,
+        body: JSON.stringify(state),
+      });
+      assert.equal(response.status, 200, await response.clone().text());
+      const stored = await (
+        await fetch(`${base}/api/user-state`, {
+          headers: { cookie: userCookie },
+        })
+      ).json();
+      assert.deepEqual(stored.state.scoreSets, state.scoreSets);
+      const invalid = structuredClone(state);
+      invalid.scoreSets[0].additionalExamScores["program:creative"] = 101;
+      assert.equal(
+        (
+          await fetch(`${base}/api/user-state`, {
+            method: "PUT",
+            headers,
+            body: JSON.stringify(invalid),
+          })
+        ).status,
+        400,
+      );
+    },
+  );
 });

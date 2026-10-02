@@ -1,5 +1,6 @@
 import type {
   DataStatus,
+  AdditionalExam,
   ExamRequirement,
   HistoricalPoint,
   ProgramTrust,
@@ -52,6 +53,7 @@ export type University = {
   logoSourceUrl: string;
   militaryCenter: boolean | null;
   militaryCenterSourceUrl?: string;
+  militaryCenterCheckedAt?: string;
   admissionsUrl?: string;
   admissionsPhone?: string;
   admissionsEmail?: string;
@@ -109,6 +111,8 @@ export type Program = {
   dviValue: SourcedValue<string>;
   dviMax: SourcedValue<number>;
   dviMinimum?: SourcedValue<number>;
+  additionalExams?: AdditionalExam[];
+  accreditation?: SourcedValue<boolean>;
   individualAchievementsMax: SourcedValue<number>;
   quotas: Quotas;
   hostel: SourcedValue<boolean>;

@@ -1,7 +1,7 @@
 import { z } from "zod";
 import type { UserState } from "./types";
 
-const scoreSetSchema = z.object({
+export const scoreSetSchema = z.object({
   id: z
     .string()
     .trim()
@@ -15,6 +15,11 @@ const scoreSetSchema = z.object({
   ),
   individualAchievements: z.number().int().min(0).max(10),
   dviScore: z.number().int().min(0).max(100).optional(),
+  dviProgramSlug: z.string().min(1).max(100).optional(),
+  additionalExamScores: z
+    .record(z.string().min(1).max(220), z.number().int().min(0).max(100))
+    .refine((scores) => Object.keys(scores).length <= 300)
+    .optional(),
   updatedAt: z.string().datetime(),
 });
 

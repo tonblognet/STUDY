@@ -69,7 +69,10 @@ describe("official university profile evidence", () => {
     expect(getDirectoryDetails("msal")?.fields.hostelInfo?.value).toBe(
       "Количество общежитий: 4",
     );
-    expect(getDirectoryDetails("guu")?.fields.hostelInfo).toBeUndefined();
+    expect(getDirectoryDetails("guu")?.fields.hostelInfo?.value).toContain(
+      "2 общежития",
+    );
+    expect(getDirectoryDetails("mephi")?.fields.hostelInfo).toBeUndefined();
     const address = universityFactProfiles.find(
       (p) => p.universitySlug === "mgusit",
     )!.facts.address;
@@ -90,5 +93,55 @@ describe("official university profile evidence", () => {
         expect(area.sourceYear).toBe(2025);
         expect(area.sourceUrl).toContain("monitoring.miccedu.ru/");
       }
+  });
+
+  it("separates admissions contacts, accommodation types and redirected hosting pages", () => {
+    const institute = getDirectoryDetails("inpsycho")!;
+    expect(institute.fields.admissionsEmail?.value).toBe("zayavka@inpsycho.ru");
+    expect(institute.fields.admissionsPhone?.sourceUrl).toBe(
+      "https://inpsycho.ru/sveden/common/",
+    );
+    expect(
+      getDirectoryDetails("ippolitovka")?.fields.hostelInfo?.value,
+    ).toContain("вузов-партнёров");
+    expect(getDirectoryDetails("cms")?.fields.hostelInfo?.value).toContain(
+      "0 общежитий и 1 интернат",
+    );
+    expect(getDirectoryDetails("shaninka")?.fields.telephone).toBeUndefined();
+    for (const profile of directoryDetails)
+      for (const field of Object.values(profile.fields))
+        expect(new URL(field.sourceUrl).hostname).not.toBe("timeweb.com");
+  });
+
+  it("preserves the independent review date of a military center", () => {
+    const university = universities.find((row) => row.slug === "stankin")!;
+    const evidence = universityFactProfiles.find(
+      (row) => row.universitySlug === "stankin",
+    )!.facts.militaryCenter;
+    expect(evidence.value).toBe(true);
+    expect(evidence.sourceUrl).toBe("https://vuc.stankin.ru/");
+    expect(evidence.checkedAt).toBe(university.militaryCenterCheckedAt);
+    expect(evidence.checkedAt).not.toBe(university.directory?.checkedAt);
+  });
+
+  it("dates a newly verified website separately from the monitoring record", () => {
+    for (const slug of ["mti", "guppros", "sportedu"]) {
+      const university = universities.find((row) => row.slug === slug)!;
+      const website = universityFactProfiles.find(
+        (row) => row.universitySlug === slug,
+      )!.facts.website;
+      expect(website.value).toBe(university.website);
+      expect(website.sourceUrl).toBe(university.directory?.websiteSourceUrl);
+      expect(website.year).toBe(2026);
+      expect(website.checkedAt).toBe(university.directory?.websiteCheckedAt);
+      expect(website.checkedAt).not.toBe(university.directory?.checkedAt);
+      expect(university.directory?.sourceYear).toBe(2025);
+    }
+    const unchanged = universities.find((row) => row.slug === "sfi")!;
+    const original = universityFactProfiles.find(
+      (row) => row.universitySlug === "sfi",
+    )!.facts.website;
+    expect(original.checkedAt).toBe(unchanged.directory?.checkedAt);
+    expect(original.year).toBe(unchanged.directory?.sourceYear);
   });
 });

@@ -7,6 +7,40 @@ import { assertCatalogEditor } from "./service";
 import { mergeUniversity, parseImportEnvelope } from "@/scripts/catalog";
 
 describe("catalog publication boundaries", () => {
+  it("preserves sourced multiple exams and rejects duplicates, impossible bounds and foreign sources", () => {
+    const snapshot = baselineCatalog();
+    const program = snapshot.programs[0];
+    const fact = {
+      ...program.passingScoreValue,
+      year: program.trust.dataYear,
+      value: 50,
+      status: "verified" as const,
+    };
+    program.additionalExams = [
+      {
+        id: "creative",
+        title: { ...program.dviValue, value: "Творческое", status: "verified" },
+        minimum: fact,
+        maximum: { ...fact, value: 100 },
+      },
+    ];
+    program.accreditation = {
+      ...program.hostel,
+      value: null,
+      status: "pending_review",
+    };
+    expect(parseCatalog(snapshot).programs[0].additionalExams).toEqual(
+      program.additionalExams,
+    );
+    const duplicate = structuredClone(snapshot);
+    duplicate.programs[0].additionalExams!.push(program.additionalExams[0]);
+    expect(() => parseCatalog(duplicate)).toThrow(/Дубли/);
+    program.additionalExams[0].maximum.value = 40;
+    expect(() => parseCatalog(snapshot)).toThrow(/Минимум ДВИ/);
+    program.additionalExams[0].maximum.value = 100;
+    program.additionalExams[0].minimum.sourceUrl = "https://evil.example/exams";
+    expect(() => parseCatalog(snapshot)).toThrow(/Неофициальный/);
+  });
   it("rejects malformed import envelopes instead of silently importing the baseline", () => {
     for (const input of [
       null,

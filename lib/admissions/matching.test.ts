@@ -63,6 +63,7 @@ describe("детерминированный подбор", () => {
         status: "verified" as const,
       },
       dviMax: { ...hse.dviMax, value: 100, status: "verified" as const },
+      dviMinimum: { ...hse.dviMax, value: 50, status: "verified" as const },
     };
     const without = matchProgram(
       msu,
@@ -72,7 +73,7 @@ describe("детерминированный подбор", () => {
       msu,
       profile(
         { Математика: 100, "Русский язык": 100, Информатика: 100 },
-        { dviScore: 80 },
+        { dviScore: 80, dviProgramSlug: msu.slug },
       ),
     );
     expect(without.category).toBe("insufficient");

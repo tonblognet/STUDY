@@ -94,6 +94,9 @@ export const universityAdapters = [
               entry.directory!.sourceUrl,
               entry.directory!.websiteSourceUrl,
               entry.directory!.addressSourceUrl,
+              ...(entry.militaryCenterSourceUrl
+                ? [entry.militaryCenterSourceUrl]
+                : []),
             ]
               .map((url) => new URL(url).hostname)
               .concat(reviewedProfileDomains(entry.slug)),

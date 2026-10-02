@@ -43,6 +43,32 @@ after(() => {
   server?.kill();
 });
 
+test("university profiles render admissions links and distinct commission contacts", async () => {
+  const response = await fetch(`${base}/universities/inpsycho`);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Телефон приёмной комиссии/);
+  assert.match(html, /zayavka@inpsycho\.ru/);
+  assert.match(html, /href="https:\/\/inpsycho\.ru\/abitur\/"/);
+  assert.match(html, /Открыть раздел для поступающих/);
+  assert.match(html, /STEM|Московский институт психоанализа/);
+});
+
+test("matching renders separate eligibility, strict filters and program-specific exams", async () => {
+  const response = await fetch(`${base}/match`);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Минимумы испытаний выполнены/);
+  assert.match(html, /Аккредитация программы/);
+  assert.match(html, /Подтверждённые платные/);
+  assert.match(html, /Дополнительные испытания/);
+  assert.match(html, /Добавить в сравнение/);
+  const details = await (await fetch(`${base}/programs/hse-economics`)).text();
+  assert.match(details, /Требования нужно уточнить/);
+  assert.match(details, /Сравнение недоступно/);
+  assert.match(details, /шкала проходного балла/);
+});
+
 test("server-renders the new admissions landing", async () => {
   const response = await fetch(base);
   assert.equal(response.status, 200);

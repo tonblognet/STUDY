@@ -41,7 +41,10 @@ export type DirectoryDetails = {
       | "telephone"
       | "email"
       | "hostelInfo"
-      | "admissionsUrl",
+      | "admissionsUrl"
+      | "admissionsPhone"
+      | "admissionsEmail"
+      | "overview",
       DirectoryField
     >
   >;

@@ -15,18 +15,24 @@ import {
 import { HistoryChart } from "@/components/history-chart";
 import { SavedProgramActions } from "@/components/saved-program-actions";
 import { ProgramRequirement } from "./program-requirement";
+import { AdditionalExamInputs } from "./additional-exam-inputs";
+import { MatchExplanation } from "./match-explanation";
+import { MATCH_LABELS, ELIGIBILITY_LABELS } from "@/lib/admissions/constants";
 import { ProgramContacts } from "./program-contacts";
+import { updateScoreInput } from "@/lib/admissions/score-input";
 
 export function ProgramDecisionPage({ program }: { program: Program }) {
   const [scores, setScores] = useState<Record<string, number>>({});
   const [achievements, setAchievements] = useState(0);
-  const [dvi, setDvi] = useState<number | undefined>();
+  const [additionalExamScores, setAdditionalExamScores] = useState<
+    Record<string, number>
+  >({});
   const profile: ScoreSet = {
     id: "program-check",
     name: "Проверка программы",
     scores,
     individualAchievements: achievements,
-    dviScore: dvi,
+    additionalExamScores,
     updatedAt: new Date().toISOString(),
   };
   const match = matchProgram(program, profile);
@@ -100,10 +106,13 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
                       max="100"
                       placeholder="0–100"
                       onChange={(event) =>
-                        setScores((current) => ({
-                          ...current,
-                          [subject]: Number(event.target.value),
-                        }))
+                        setScores((current) =>
+                          updateScoreInput(
+                            current,
+                            subject,
+                            event.target.value,
+                          ),
+                        )
                       }
                     />
                   </label>
@@ -120,24 +129,13 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
                     }
                   />
                 </label>
-                {program.dvi && (
-                  <label>
-                    <span>ДВИ</span>
-                    <input
-                      type="number"
-                      min="0"
-                      max="100"
-                      value={dvi ?? ""}
-                      onChange={(event) =>
-                        setDvi(
-                          event.target.value
-                            ? Number(event.target.value)
-                            : undefined,
-                        )
-                      }
-                    />
-                  </label>
-                )}
+                <AdditionalExamInputs
+                  programs={[program]}
+                  profile={profile}
+                  onChange={(next) =>
+                    setAdditionalExamScores(next.additionalExamScores ?? {})
+                  }
+                />
               </div>
             ) : (
               <div className="partial-state">
@@ -148,22 +146,13 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
               </div>
             )}
             <div className={`fit-result fit-${match.category}`}>
-              <span>Категория</span>
-              <strong>
-                {
-                  {
-                    high: "Высокий запас",
-                    competitive: "Конкурентный вариант",
-                    ambitious: "Амбициозный вариант",
-                    insufficient: "Недостаточно данных",
-                  }[match.category]
-                }
-              </strong>
+              <span>{ELIGIBILITY_LABELS[match.eligibility]}</span>
+              <strong>{MATCH_LABELS[match.category]}</strong>
               <p>
-                {match.margin === null
-                  ? match.missing.join("; ") || "Введите все необходимые баллы."
-                  : `Учитываемая сумма ${match.consideredScore}; ${match.margin >= 0 ? "запас" : "дефицит"} ${Math.abs(match.margin)} баллов к проходному ${program.passingScoreValue.year} года.`}
+                Учитываемая сумма: {match.consideredScore ?? "—"}. Запас /
+                дефицит: {match.margin ?? "—"}.
               </p>
+              <MatchExplanation match={match} />
             </div>
             <HistoryChart
               title="Проходной балл общего конкурса"

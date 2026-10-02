@@ -11,6 +11,8 @@ export type DirectoryProvenance = {
   legalName: string;
   authority: string;
   websiteSourceUrl: string;
+  websiteSourceYear?: number;
+  websiteCheckedAt?: string;
   addressSourceUrl: string;
   logoAssetSourceUrl?: string;
   logoCheckedAt?: string;

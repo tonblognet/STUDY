@@ -38,6 +38,13 @@ export type ExamRequirement = {
 
 export type HistoricalPoint = SourcedValue<number>;
 
+export type AdditionalExam = {
+  id: string;
+  title: SourcedValue<string>;
+  minimum: SourcedValue<number>;
+  maximum: SourcedValue<number>;
+};
+
 export type ProgramTrust = {
   dataYear: number;
   status: DataStatus;
@@ -58,6 +65,9 @@ export type ScoreSet = {
   scores: Record<string, number>;
   individualAchievements: number;
   dviScore?: number;
+  /** Legacy single score is usable only when explicitly scoped to a program. */
+  dviProgramSlug?: string;
+  additionalExamScores?: Record<string, number>;
   updatedAt: string;
 };
 
@@ -68,6 +78,10 @@ export type MatchCategory =
   | "insufficient";
 
 export type MatchResult = {
+  eligibility: "eligible" | "ineligible" | "unknown";
+  blockers: string[];
+  requirementsMissing: string[];
+  comparisonMissing: string[];
   category: MatchCategory;
   consideredScore: number | null;
   passingScore: number | null;

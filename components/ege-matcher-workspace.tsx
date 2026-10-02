@@ -3,17 +3,35 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useUserState } from "@/components/user-state-provider";
-import { EXAM_SUBJECTS, MATCH_LABELS } from "@/lib/admissions/constants";
+import {
+  EXAM_SUBJECTS,
+  MATCH_LABELS,
+  ELIGIBILITY_LABELS,
+  DATA_STATUS_LABELS,
+} from "@/lib/admissions/constants";
 import { groupMatches } from "@/lib/admissions/matching";
+import {
+  selectScoreSubjects,
+  updateScoreInput,
+} from "@/lib/admissions/score-input";
+import { AdditionalExamInputs } from "./additional-exam-inputs";
+import { MatchExplanation } from "./match-explanation";
+import { SavedProgramActions } from "./saved-program-actions";
+import {
+  DEFAULT_ADMISSION_FILTERS,
+  matchesAdmissionFilters,
+  type AdmissionFilters,
+} from "@/lib/admissions/filters";
+import { scoreSetSchema } from "@/lib/user-state/validation";
 import type { MatchCategory, ScoreSet } from "@/lib/admissions/types";
 import type { Program, University } from "@/lib/data";
 
 const categories: Array<{ id: MatchCategory | "all"; label: string }> = [
   { id: "all", label: "Все" },
-  { id: "high", label: "С запасом" },
-  { id: "competitive", label: "Конкурентные" },
-  { id: "ambitious", label: "Амбициозные" },
-  { id: "insufficient", label: "Нужно уточнить" },
+  { id: "high", label: "Выше ориентира" },
+  { id: "competitive", label: "На уровне" },
+  { id: "ambitious", label: "Ниже ориентира" },
+  { id: "insufficient", label: "Без сравнения" },
 ];
 
 const makeDraft = (): ScoreSet => ({
@@ -37,25 +55,24 @@ export function EgeMatcherWorkspace({
     Object.keys(profile.scores),
   );
   const [category, setCategory] = useState<MatchCategory | "all">("all");
-  const [university, setUniversity] = useState("all");
-  const [level, setLevel] = useState("all");
-  const [onlyBudget, setOnlyBudget] = useState(false);
-  const [onlyHostel, setOnlyHostel] = useState(false);
-  const [onlyMilitary, setOnlyMilitary] = useState(false);
+  const [filters, setFilters] = useState<AdmissionFilters>(
+    DEFAULT_ADMISSION_FILTERS,
+  );
+  const [eligibility, setEligibility] = useState("all");
+  const [saveError, setSaveError] = useState("");
+  function filter<K extends keyof AdmissionFilters>(
+    key: K,
+    value: AdmissionFilters[K],
+  ) {
+    setFilters((current) => ({ ...current, [key]: value }));
+  }
   const [expanded, setExpanded] = useState<string | null>(null);
   const [savedNotice, setSavedNotice] = useState(false);
 
   const filteredPrograms = useMemo(
     () =>
-      programs.filter(
-        (program) =>
-          (university === "all" || program.universitySlug === university) &&
-          (level === "all" || program.level === level) &&
-          (!onlyBudget || (program.budgetPlaces ?? 0) > 0) &&
-          (!onlyHostel || program.hostel.value === true) &&
-          (!onlyMilitary || program.militaryCenter.value === true),
-      ),
-    [level, onlyBudget, onlyHostel, onlyMilitary, programs, university],
+      programs.filter((program) => matchesAdmissionFilters(program, filters)),
+    [programs, filters],
   );
 
   const matches = useMemo(
@@ -63,7 +80,9 @@ export function EgeMatcherWorkspace({
     [filteredPrograms, profile],
   );
   const visible = matches.filter(
-    ({ match }) => category === "all" || match.category === category,
+    ({ match }) =>
+      (category === "all" || match.category === category) &&
+      (eligibility === "all" || match.eligibility === eligibility),
   );
   const counts = useMemo(
     () =>
@@ -78,26 +97,33 @@ export function EgeMatcherWorkspace({
   );
 
   function toggleSubject(subject: string) {
-    setSelected((current) => {
-      const next = current.includes(subject)
-        ? current.filter((item) => item !== subject)
-        : [...current, subject];
-      setProfile((item) => ({
-        ...item,
-        scores: Object.fromEntries(
-          next.map((name) => [name, item.scores[name] ?? 80]),
-        ),
-        updatedAt: new Date().toISOString(),
-      }));
-      return next;
-    });
+    const next = selected.includes(subject)
+      ? selected.filter((item) => item !== subject)
+      : [...selected, subject];
+    setSelected(next);
+    setProfile((item) => ({
+      ...item,
+      scores: selectScoreSubjects(item.scores, next),
+      updatedAt: new Date().toISOString(),
+    }));
   }
 
   function save() {
     const id = profile.id === "match-draft" ? crypto.randomUUID() : profile.id;
     const next = { ...profile, id, updatedAt: new Date().toISOString() };
-    saveScoreSet(next);
-    setProfile(next);
+    const parsed = scoreSetSchema.safeParse({
+      ...next,
+      name: next.name.trim() || "Мой набор",
+    });
+    if (!parsed.success) {
+      setSaveError(
+        "Проверьте название и баллы: нужны целые числа в допустимом диапазоне.",
+      );
+      return;
+    }
+    setSaveError("");
+    saveScoreSet(parsed.data);
+    setProfile(parsed.data);
     setSavedNotice(true);
     window.setTimeout(() => setSavedNotice(false), 1800);
   }
@@ -132,6 +158,7 @@ export function EgeMatcherWorkspace({
         </div>
       </header>
 
+      {saveError && <p role="alert">{saveError}</p>}
       <div className="match-workspace-grid">
         <aside className="match-profile-rail" aria-label="Профиль ЕГЭ">
           <div className="match-rail-title">
@@ -144,6 +171,7 @@ export function EgeMatcherWorkspace({
           <label className="match-name-field">
             Название набора
             <input
+              maxLength={80}
               value={profile.name}
               onChange={(event) =>
                 setProfile((current) => ({
@@ -201,17 +229,15 @@ export function EgeMatcherWorkspace({
                   type="number"
                   min="0"
                   max="100"
-                  value={profile.scores[subject] ?? 0}
+                  value={profile.scores[subject] ?? ""}
                   onChange={(event) =>
                     setProfile((current) => ({
                       ...current,
-                      scores: {
-                        ...current.scores,
-                        [subject]: Math.max(
-                          0,
-                          Math.min(100, Number(event.target.value) || 0),
-                        ),
-                      },
+                      scores: updateScoreInput(
+                        current.scores,
+                        subject,
+                        event.target.value,
+                      ),
                     }))
                   }
                 />
@@ -229,34 +255,23 @@ export function EgeMatcherWorkspace({
                 onChange={(event) =>
                   setProfile((current) => ({
                     ...current,
-                    individualAchievements: Math.max(
-                      0,
-                      Math.min(10, Number(event.target.value) || 0),
-                    ),
-                  }))
-                }
-              />
-            </label>
-            <label>
-              ДВИ
-              <input
-                type="number"
-                min="0"
-                max="100"
-                value={profile.dviScore ?? ""}
-                placeholder="—"
-                onChange={(event) =>
-                  setProfile((current) => ({
-                    ...current,
-                    dviScore:
-                      event.target.value === ""
-                        ? undefined
-                        : Number(event.target.value),
+                    individualAchievements: Number(event.target.value),
                   }))
                 }
               />
             </label>
           </div>
+          <AdditionalExamInputs
+            programs={filteredPrograms}
+            profile={profile}
+            onChange={setProfile}
+          />
+          {profile.dviScore !== undefined && (
+            <p>
+              Старый общий балл ДВИ не переносится между программами. Укажите
+              результаты отдельных испытаний.
+            </p>
+          )}
           {profile.id !== "match-draft" && (
             <button
               className="match-delete-profile"
@@ -280,8 +295,8 @@ export function EgeMatcherWorkspace({
               <h2>{visible.length} программ</h2>
             </div>
             <p>
-              Оценка опирается на прошлый проходной балл. Это ориентир, а не
-              обещание зачисления.
+              Минимумы испытаний и сравнение с прошлым годом проверяются
+              отдельно. Право подачи документов уточняйте в приёмной комиссии.
             </p>
           </div>
           <div
@@ -302,6 +317,12 @@ export function EgeMatcherWorkspace({
               </button>
             ))}
           </div>
+          {visible.length === 0 && (
+            <p role="status">
+              Нет программ по выбранным условиям. Сбросьте фильтры или измените
+              баллы.
+            </p>
+          )}
           <div className="match-decision-list">
             {visible.map(({ program, match }) => {
               const open = expanded === program.id;
@@ -314,9 +335,10 @@ export function EgeMatcherWorkspace({
                     <span className="match-category-dot" aria-hidden="true" />
                     <div>
                       <span className="match-decision-category">
-                        {MATCH_LABELS[match.category]}
+                        {ELIGIBILITY_LABELS[match.eligibility]}
                       </span>
                       <h3>
+                        <SavedProgramActions id={program.id} />
                         <Link href={`/programs/${program.slug}`}>
                           {program.title}
                         </Link>
@@ -331,7 +353,8 @@ export function EgeMatcherWorkspace({
                         Ваши <b>{match.consideredScore ?? "—"}</b>
                       </span>
                       <span>
-                        Ориентир <b>{match.passingScore ?? "—"}</b>
+                        Ориентир {program.passingScoreValue.year}{" "}
+                        <b>{match.passingScore ?? "—"}</b>
                       </span>
                       <strong>
                         {match.margin === null
@@ -352,20 +375,19 @@ export function EgeMatcherWorkspace({
                     </Link>
                   </div>
                   {open && (
-                    <div className="match-explanation">
-                      {match.reasons.map((reason) => (
-                        <p key={reason}>✓ {reason}</p>
-                      ))}
-                      {match.missing.map((reason) => (
-                        <p className="missing" key={reason}>
-                          ! {reason}
-                        </p>
-                      ))}
+                    <>
+                      <MatchExplanation match={match} />
                       <p>
-                        Полнота данных: {program.trust.completeness}% ·{" "}
-                        {program.trust.note}
+                        {MATCH_LABELS[match.category]} ·{" "}
+                        <a
+                          href={program.admissionsUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Официальные условия приёма
+                        </a>
                       </p>
-                    </div>
+                    </>
                   )}
                 </article>
               );
@@ -382,10 +404,17 @@ export function EgeMatcherWorkspace({
             </div>
           </div>
           <label>
+            Направление или код
+            <input
+              value={filters.query}
+              onChange={(e) => filter("query", e.target.value)}
+            />
+          </label>
+          <label>
             Университет
             <select
-              value={university}
-              onChange={(event) => setUniversity(event.target.value)}
+              value={filters.university}
+              onChange={(e) => filter("university", e.target.value)}
             >
               <option value="all">Все вузы</option>
               {universities.map((item) => (
@@ -398,49 +427,121 @@ export function EgeMatcherWorkspace({
           <label>
             Уровень
             <select
-              value={level}
-              onChange={(event) => setLevel(event.target.value)}
+              value={filters.level}
+              onChange={(e) => filter("level", e.target.value)}
             >
               <option value="all">Любой</option>
               <option>Бакалавриат</option>
               <option>Специалитет</option>
             </select>
           </label>
+          <label>
+            Форма обучения
+            <select
+              value={filters.form}
+              onChange={(e) => filter("form", e.target.value)}
+            >
+              <option value="all">Любая</option>
+              <option>Очная</option>
+              <option>Очно-заочная</option>
+              <option>Заочная</option>
+            </select>
+          </label>
+          <label>
+            Места
+            <select
+              value={filters.funding}
+              onChange={(e) =>
+                filter("funding", e.target.value as AdmissionFilters["funding"])
+              }
+            >
+              <option value="all">Бюджет и платно</option>
+              <option value="budget">Подтверждённые бюджетные</option>
+              <option value="paid">Подтверждённые платные</option>
+            </select>
+          </label>
+          <label>
+            Стоимость платного обучения до, ₽/год
+            <input
+              type="number"
+              min="0"
+              value={filters.maxPrice}
+              onChange={(e) => filter("maxPrice", e.target.value)}
+              placeholder="Без ограничения"
+            />
+          </label>
+          <label>
+            Проверка испытаний
+            <select
+              value={eligibility}
+              onChange={(e) => setEligibility(e.target.value)}
+            >
+              <option value="all">Все результаты</option>
+              {Object.entries(ELIGIBILITY_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Аккредитация программы
+            <select
+              value={filters.accreditation}
+              onChange={(e) =>
+                filter(
+                  "accreditation",
+                  e.target.value as AdmissionFilters["accreditation"],
+                )
+              }
+            >
+              <option value="all">Любой статус</option>
+              <option value="verified">Подтверждена</option>
+              <option value="unknown">Не проверена</option>
+            </select>
+          </label>
+          <label>
+            Качество данных
+            <select
+              value={filters.quality}
+              onChange={(e) => filter("quality", e.target.value)}
+            >
+              <option value="all">Любое</option>
+              {Object.entries(DATA_STATUS_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+          </label>
           <div className="match-toggle-list">
             <label>
               <input
                 type="checkbox"
-                checked={onlyBudget}
-                onChange={(e) => setOnlyBudget(e.target.checked)}
-              />
-              Есть бюджетные места
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={onlyHostel}
-                onChange={(e) => setOnlyHostel(e.target.checked)}
+                checked={filters.hostel}
+                onChange={(e) => filter("hostel", e.target.checked)}
               />
               Подтверждено общежитие
             </label>
             <label>
               <input
                 type="checkbox"
-                checked={onlyMilitary}
-                onChange={(e) => setOnlyMilitary(e.target.checked)}
+                checked={filters.military}
+                onChange={(e) => filter("military", e.target.checked)}
               />
-              Есть военный учебный центр
+              Подтверждён военный учебный центр
             </label>
           </div>
+          <p>
+            Строгие фильтры исключают неизвестные значения. Наличие общежития не
+            гарантирует заселение.
+          </p>
           <button
             type="button"
             className="match-reset-filters"
             onClick={() => {
-              setUniversity("all");
-              setLevel("all");
-              setOnlyBudget(false);
-              setOnlyHostel(false);
-              setOnlyMilitary(false);
+              setFilters(DEFAULT_ADMISSION_FILTERS);
+              setEligibility("all");
               setCategory("all");
             }}
           >
