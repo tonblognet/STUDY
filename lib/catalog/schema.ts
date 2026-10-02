@@ -169,6 +169,21 @@ const program = z
     dviValue: stringFact,
     dviMax: numberFact,
     dviMinimum: numberFact.optional(),
+    additionalExams: z
+      .array(
+        z
+          .object({
+            id: slug,
+            title: sourcedSchema(text),
+            minimum: sourcedSchema(z.number().int().min(0).max(100)),
+            maximum: sourcedSchema(z.number().int().min(1).max(100)),
+          })
+          .strict(),
+      )
+      .min(1)
+      .max(10)
+      .optional(),
+    accreditation: booleanFact.optional(),
     individualAchievementsMax: numberFact,
     quotas: z
       .object({
@@ -205,6 +220,7 @@ const university = z
     logoSourceUrl: url,
     militaryCenter: z.boolean().nullable(),
     militaryCenterSourceUrl: url.optional(),
+    militaryCenterCheckedAt: date.optional(),
     admissionsUrl: url.optional(),
     admissionsPhone: z.string().optional(),
     admissionsEmail: z.string().optional(),
@@ -223,6 +239,8 @@ const university = z
         legalName: text,
         authority: z.string(),
         websiteSourceUrl: url,
+        websiteSourceYear: z.number().int().optional(),
+        websiteCheckedAt: date.optional(),
         addressSourceUrl: url,
         logoAssetSourceUrl: url.optional(),
         logoCheckedAt: date.optional(),
@@ -286,6 +304,9 @@ const details = z
         email: directoryField.optional(),
         hostelInfo: directoryField.optional(),
         admissionsUrl: directoryField.optional(),
+        admissionsPhone: directoryField.optional(),
+        admissionsEmail: directoryField.optional(),
+        overview: directoryField.optional(),
       })
       .strict(),
     licenseRegistry: z
@@ -462,6 +483,22 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
       visitSources(child, universitySlug, directory);
   };
   for (const row of snapshot.programs) {
+    unique(
+      row.examRequirements.map((exam) => exam.id),
+      `ID испытаний: ${row.slug}`,
+    );
+    unique(
+      (row.additionalExams ?? []).map((exam) => exam.id),
+      `ID ДВИ: ${row.slug}`,
+    );
+    for (const exam of row.additionalExams ?? []) {
+      if (
+        exam.minimum.value !== null &&
+        exam.maximum.value !== null &&
+        exam.minimum.value > exam.maximum.value
+      )
+        errors.push(`Минимум ДВИ выше максимума: ${row.slug}`);
+    }
     if (!universitySlugs.has(row.universitySlug))
       errors.push(`Вуз программы не найден: ${row.slug}`);
     visitSources(row, row.universitySlug);

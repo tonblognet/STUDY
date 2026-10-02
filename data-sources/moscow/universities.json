@@ -13,7 +13,7 @@
       "address": "105066, г. Москва, вн. тер. г. муниципальный округ Басманный, пер. Токмаков, д. 11",
       "website": "http://www.sfi.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111037",
+      "logoSourceUrl": "https://sfi.ru/about/sveden/common.html",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111037",
       "directory": {
@@ -27,8 +27,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111037",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111037",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://sfi.ru/_Resources/Static/Packages/Sfi.Sfi/Images/SiteLogoRu.svg?3",
+        "logoCheckedAt": "2026-09-25T00:13:18.992500+00:00",
+        "logoSha256": "0bc71d51a7f47ae95bf8ec0ebae06137ca724c3d56eb41f2d17fcefd8e0e524b"
+      },
+      "logoUrl": "/university-logos/moscow/111037.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "skoltech",
@@ -137,7 +142,7 @@
       "address": "129626, ГОРОД МОСКВА, УЛ. 1-Я МЫТИЩИНСКАЯ, Д. 23",
       "website": "https://www.huminst.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110188",
+      "logoSourceUrl": "http://www.huminst.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110188",
       "directory": {
@@ -151,8 +156,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110188",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110188",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://static.tildacdn.com/tild6132-6433-4630-b066-656635643633/Logo-IGNM_1.png",
+        "logoSha256": "fa854734cc584368e9ffc74bcbfa3f2eaaa7a08432ec9fced7d7652fafb75b4c",
+        "logoCheckedAt": "2026-09-25T00:29:36.139166+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/110188.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "bnd",
@@ -165,7 +175,7 @@
       "address": "129090, г Москва, пер Протопоповский, д 9 стр 1",
       "website": "https://obe.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110232",
+      "logoSourceUrl": "https://obe.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110232",
       "directory": {
@@ -179,8 +189,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110232",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110232",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://obe.ru/_next/static/media/logo.2c70e3a4.png",
+        "logoCheckedAt": "2026-09-24T23:48:24.021963+00:00",
+        "logoSha256": "981d711d368c11bc6fa5b50ebe85f0802c098d82bd14591b2908324f710760e7"
+      },
+      "logoUrl": "/university-logos/moscow/110232.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-110216",
@@ -193,7 +208,7 @@
       "address": "111024, г.Москва, ул. Авиамоторная, д. 50, стр. 2, пом.47А",
       "website": "http://www.ideka.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110216",
+      "logoSourceUrl": "https://www.ideka.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110216",
       "directory": {
@@ -207,8 +222,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110216",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110216",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.ideka.ru/manager/templates/ideka/images/logo.png",
+        "logoCheckedAt": "2026-09-24T23:48:24.021963+00:00",
+        "logoSha256": "994099fdb61e93f0a8a9004a4b7241414df9507a24ae811adff5af5152439a5f"
+      },
+      "logoUrl": "/university-logos/moscow/110216.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "gitr",
@@ -221,7 +241,7 @@
       "address": "125284, г.Москва, ш Хорошёвское, д 32А",
       "website": "https://gitr.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1938",
+      "logoSourceUrl": "https://gitr.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1938",
       "directory": {
@@ -235,8 +255,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1938",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1938",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://gitr.ru/wp-content/themes/gitr/img/logo.svg",
+        "logoCheckedAt": "2026-09-30T21:07:33.713454+00:00",
+        "logoSha256": "45c08e51b05baf717e31bb38e945359d5f0f21aa9a53d1004f87904072f6ef18"
+      },
+      "logoUrl": "/university-logos/moscow/1938.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-1860",
@@ -249,7 +274,7 @@
       "address": "109542, г Москва, пр-кт Рязанский, д 86/1",
       "website": "http://www.icone.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1860",
+      "logoSourceUrl": "http://www.icone.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1860",
       "directory": {
@@ -263,8 +288,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1860",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1860",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://www.icone.ru/images/logo.webp",
+        "logoCheckedAt": "2026-09-24T23:27:31.581742+00:00",
+        "logoSha256": "76fed9abad8583ae4363036e94180246ee192eae80eb10f86aa9f3c595865371"
+      },
+      "logoUrl": "/university-logos/moscow/1860.webp",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-110243",
@@ -277,7 +307,7 @@
       "address": "121309, г.Москва, ул Новозаводская, д 27А",
       "website": "http://www.isi-vuz.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110243",
+      "logoSourceUrl": "https://www.isi-vuz.ru:443/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110243",
       "directory": {
@@ -291,8 +321,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110243",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110243",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.isi-vuz.ru:443/images/logo-footer.svg",
+        "logoCheckedAt": "2026-09-24T23:27:35.602105+00:00",
+        "logoSha256": "3abc095b1e9d961b809ee60a794ecf303bab557b631ba14231714e94b2e6df56"
+      },
+      "logoUrl": "/university-logos/moscow/110243.svg",
+      "logoBackground": "#30354d"
     },
     {
       "id": "moscow-110248",
@@ -369,7 +404,7 @@
       "address": "105203, г Москва, ул 15-я Парковая, д 8",
       "website": "https://ineup.ru/",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110271",
+      "logoSourceUrl": "https://ineup.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110271",
       "directory": {
@@ -383,8 +418,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110271",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110271",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://ineup.ru/images/favicon.svg",
+        "logoCheckedAt": "2026-09-25T00:13:16.707768+00:00",
+        "logoSha256": "8709ecb785798870d2235311a08ac8a4839d5749b3b764682dc310366433fcd7"
+      },
+      "logoUrl": "/university-logos/moscow/110271.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-666669570",
@@ -567,8 +607,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://mi.university/",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2084",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://mi.university/",
+        "logoSha256": "734735560dd2ef97dc3898af65a22333457ac035e54462664e83f1321594bd0c",
+        "logoCheckedAt": "2026-09-30T21:57:05.776067+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/2084.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-110341",
@@ -613,7 +658,7 @@
       "address": "105005, г.Москва, Наб. Академика Туполева, д. 15, к. 29, этаж/помещение 3/31",
       "website": "https://nid-design.org",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1944",
+      "logoSourceUrl": "https://nid-design.org/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1944",
       "directory": {
@@ -627,8 +672,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1944",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1944",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://nid-design.org/images/NID_LOGO.svg",
+        "logoCheckedAt": "2026-09-24T23:27:45.364503+00:00",
+        "logoSha256": "f9392cb178589669da4657c4be73a25a5b84eeee8a77bab671aa0bd551d63df5"
+      },
+      "logoUrl": "/university-logos/moscow/1944.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-666666786",
@@ -673,7 +723,7 @@
       "address": "127473, г Москва, пер Чернышевского, д 11А стр 1",
       "website": "https://rpusib.ru/",
       "programsCount": 0,
-      "logoSourceUrl": "https://rpusib.ru/info/sveden/common/",
+      "logoSourceUrl": "https://rpusib.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1840",
       "directory": {
@@ -687,8 +737,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://rpusib.ru/info/sveden/common/",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1840",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://rpusib.ru/images/header-blue3.png",
+        "logoCheckedAt": "2026-09-24T23:48:24.021963+00:00",
+        "logoSha256": "05a956809a288d4fea954afe8e5813125071f5461474032dbdb4459872a8e201"
+      },
+      "logoUrl": "/university-logos/moscow/1840.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-110393",
@@ -799,7 +854,7 @@
       "address": "129110, г.Москва, Суворовская пл., д.2",
       "website": "http://www.uuait.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1961",
+      "logoSourceUrl": "https://uuait.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1961",
       "directory": {
@@ -813,8 +868,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1961",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1961",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://uuait.ru/manager/templates/uuait/images/logo.png",
+        "logoCheckedAt": "2026-09-24T23:27:52.047597+00:00",
+        "logoSha256": "09ba8c057e361b9fac92382a785f664125bf5664226303dd730625eaf7e80ad1"
+      },
+      "logoUrl": "/university-logos/moscow/1961.png",
+      "logoBackground": "#123c69"
     },
     {
       "id": "centraluniversity",
@@ -827,7 +887,7 @@
       "address": "г. Москва, ул. Гашека, д. 7, стр. 1",
       "website": "https://centraluniversity.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671171",
+      "logoSourceUrl": "https://cu.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671171",
       "directory": {
@@ -841,8 +901,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671171",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671171",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://cu.ru/assets/kit/favicon/fav.png",
+        "logoCheckedAt": "2026-09-24T23:27:53.993085+00:00",
+        "logoSha256": "9c2b8546411ddffb3111f824514952480b9c676e76072a3e1001a199ac80ea98"
+      },
+      "logoUrl": "/university-logos/moscow/666671171.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "igumo",
@@ -1302,7 +1367,7 @@
       "address": "105082, г. Москва, ул. Фридриха Энгельса, д. 75, стр. 3",
       "website": "https://mspi.moscow",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1960",
+      "logoSourceUrl": "https://mspi.moscow/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1960",
       "directory": {
@@ -1316,8 +1381,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1960",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1960",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://mspi.moscow/images/mspi-logo-newBLUE.png",
+        "logoSha256": "b9ea4c4a63b6abef8bcd7aa0007974ab5b81e33991ba1651e1f1600a611e3242",
+        "logoCheckedAt": "2026-09-25T00:26:36.251356+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1960.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "nes",
@@ -1330,7 +1400,7 @@
       "address": "121353, г Москва, ш Сколковское, д 45",
       "website": "http://www.nes.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2078",
+      "logoSourceUrl": "https://www.nes.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2078",
       "directory": {
@@ -1344,8 +1414,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2078",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2078",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.nes.ru/assets/images/logo/nes_new_logo_color_ru.svg",
+        "logoCheckedAt": "2026-09-25T00:13:30.846793+00:00",
+        "logoSha256": "66bd9a8ae6ef0b39957f0825687b5b78bc874e397ad997edf98fd96fa97c5ddd"
+      },
+      "logoUrl": "/university-logos/moscow/2078.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-2003",
@@ -1358,7 +1433,7 @@
       "address": "105203, ГОРОД МОСКВА, УЛ. 14-Я ПАРКОВАЯ, Д. 6",
       "website": "http://www.miyu.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2003",
+      "logoSourceUrl": "https://hsmanagement.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2003",
       "directory": {
@@ -1372,8 +1447,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2003",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2003",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://hsmanagement.ru/frontend/static/images/logo.svg",
+        "logoCheckedAt": "2026-09-24T23:28:07.596387+00:00",
+        "logoSha256": "a18f49eabde0a20ab72831e9068275cceeb3864bcec80590748c6023635a2113"
+      },
+      "logoUrl": "/university-logos/moscow/2003.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-666669477",
@@ -1386,7 +1466,7 @@
       "address": "г. Москва, ул. Гончарная, дом 15, стр. 1",
       "website": "https://muppi.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669477",
+      "logoSourceUrl": "https://muppi.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669477",
       "directory": {
@@ -1400,8 +1480,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669477",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669477",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://muppi.ru/assets/img/logo.png",
+        "logoCheckedAt": "2026-09-24T23:28:06.237658+00:00",
+        "logoSha256": "88b10a15b5801d631603b04200ed03fe467cb88285ebdc52601d052c1c3f800f"
+      },
+      "logoUrl": "/university-logos/moscow/666669477.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "inpsycho",
@@ -1414,7 +1499,7 @@
       "address": "121170, г Москва, пр-кт Кутузовский, д 34 стр 14",
       "website": "http://www.inpsycho.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1946",
+      "logoSourceUrl": "https://inpsycho.ru",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1946",
       "directory": {
@@ -1428,8 +1513,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1946",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1946",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://inpsycho.ru",
+        "logoSha256": "8c56da3e19be20eb11e9c96e1821e7e09367d477bb767b9612e9fbe8892c0918",
+        "logoCheckedAt": "2026-09-25T00:27:48.340687+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1946.svg",
+      "logoBackground": "#23468d"
     },
     {
       "id": "moscow-1973",
@@ -1506,7 +1596,7 @@
       "address": "125190, г. Москва, Ленинградский проспект, дом 80, корп. Г, а/я 82",
       "website": "https://synergyuniversity.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1834",
+      "logoSourceUrl": "https://synergyuniversity.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1834",
       "directory": {
@@ -1520,8 +1610,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1834",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1834",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://synergyuniversity.ru/",
+        "logoCheckedAt": "2026-09-25T00:13:34.209601+00:00",
+        "logoSha256": "bdd6ebed76964343a89290b4c51ee94f9897f9bbd3709b815d14796202069562"
+      },
+      "logoUrl": "/university-logos/moscow/1834.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-1881",
@@ -1598,7 +1693,7 @@
       "address": "105005, ГОРОД МОСКВА, УЛ. МАЛАЯ ПОЧТОВАЯ, Д. 2/2, СТР. 8",
       "website": "https://iotgn.institute/",
       "programsCount": 0,
-      "logoSourceUrl": "https://iotgn.institute/life/",
+      "logoSourceUrl": "https://iotgn.institute/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120266",
       "directory": {
@@ -1612,8 +1707,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://iotgn.institute/life/",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120266",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://iotgn.institute/simai.data/image/logo/logo.png",
+        "logoSha256": "fb3bbccb53b5822eec5a1459b2749b56226e9a4832ee72fd8b8ed51d80baddd6",
+        "logoCheckedAt": "2026-09-25T00:21:07.029393+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/120266.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mpsu",
@@ -1656,9 +1756,9 @@
       "description": "Негосударственная образовательная организация высшего образования. По мониторингу Минобрнауки 2025: техника и технологии строительства, информатика и вычислительная техника, электро- и теплоэнергетика, машиностроение и другие области.",
       "city": "Москва",
       "address": "125190, г. Москва, Ленинградский проспект, дом 80, к.5",
-      "website": "https://mti.edu.ru",
+      "website": "https://mti.moscow/",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2033",
+      "logoSourceUrl": "https://mti.moscow/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2033",
       "directory": {
@@ -1670,10 +1770,17 @@
         "kind": "university",
         "legalName": "Образовательная автономная некоммерческая организация высшего образования \"Московский технологический институт\"",
         "authority": "Частные организации",
-        "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2033",
+        "websiteSourceUrl": "https://mti.moscow/sveden/common",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2033",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки. Официальный сайт уточнён по разделу основных сведений 1 октября 2026 года.",
+        "logoAssetSourceUrl": "https://mti.moscow/assets/template/v2/img/logo.svg",
+        "logoSha256": "2ee92f375009873ddf75ec92f4958b672c3b7c96609284d426a72403ee84436e",
+        "logoCheckedAt": "2026-09-30T21:36:13.128391+00:00",
+        "websiteSourceYear": 2026,
+        "websiteCheckedAt": "2026-09-30T21:36:13.689305+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/2033.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "shaninka",
@@ -1718,7 +1825,7 @@
       "address": "115114, г.Москва, наб. Дербеневская, дом 11, пом. 14",
       "website": "https://mitu.msk.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669164",
+      "logoSourceUrl": "https://mitu.msk.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669164",
       "directory": {
@@ -1732,8 +1839,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669164",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669164",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://mitu.msk.ru/simai.data/image/logo/WhatsApp%20Image%202023-01-13%20at%2012.35.31.jpeg",
+        "logoCheckedAt": "2026-09-24T23:28:23.327567+00:00",
+        "logoSha256": "a47c353d176edfede01c6542efd837a8d7d8697a6098556cab29b83b8bfd3f0c"
+      },
+      "logoUrl": "/university-logos/moscow/666669164.jpeg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "atiso",
@@ -1907,7 +2019,7 @@
       "address": "105066, ГОРОД МОСКВА, УЛ. НОВАЯ БАСМАННАЯ, Д. 35, СТР. 1",
       "website": "http://www.iile.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110227",
+      "logoSourceUrl": "https://www.iile.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110227",
       "directory": {
@@ -1921,8 +2033,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110227",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110227",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.iile.ru/local/static/img/logo.svg",
+        "logoCheckedAt": "2026-09-24T23:48:24.021963+00:00",
+        "logoSha256": "5495847c23aa5967ed25892629397a603349d9b9cb269cd86f7b72bcb5ea7232"
+      },
+      "logoUrl": "/university-logos/moscow/110227.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "moscow-120119",
@@ -1967,7 +2084,7 @@
       "address": "111024, г. Москва, ул. Авиамоторная, 8а;",
       "website": "http://www.mtuci.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1593",
+      "logoSourceUrl": "https://life.mtuci.ru/brandbook",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1593",
       "directory": {
@@ -1981,8 +2098,13 @@
         "authority": "Министерство цифрового развития, связи и массовых коммуникаций Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1593",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1593",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://static.tildacdn.com/tild6634-3765-4330-a566-616566343563/logo_color.svg",
+        "logoSha256": "269491dea70bf90c054891be0a5ada2ee6256be6c515ded39acf1f5aedd0eda3",
+        "logoCheckedAt": "2026-09-30T21:29:11.699407+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1593.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "sretenskaya",
@@ -1995,7 +2117,7 @@
       "address": "107031, г Москва, ул Большая Лубянка, д 19 стр 3",
       "website": "http://sdamp.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120296",
+      "logoSourceUrl": "http://sdamp.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120296",
       "directory": {
@@ -2009,8 +2131,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120296",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120296",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://sdamp.ru/bitrix/templates/main/img/logo.png",
+        "logoCheckedAt": "2026-09-30T21:07:41.189544+00:00",
+        "logoSha256": "3b58616f35079be2d5b6027021654164620247ff1101cccf598de9112e6361e0"
+      },
+      "logoUrl": "/university-logos/moscow/120296.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "ppds",
@@ -2023,7 +2150,7 @@
       "address": "109383, г. Москва, ул. Шоссейная, 82, стр. 1",
       "website": "https://ppds.ru/",
       "programsCount": 0,
-      "logoSourceUrl": "https://www.uchkom.info/uchebnyy-komitet/uchebnye-zavedeniya/perervinskaya-dukhovnaya-seminariya/",
+      "logoSourceUrl": "https://ppds.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669100",
       "directory": {
@@ -2037,8 +2164,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://www.uchkom.info/uchebnyy-komitet/uchebnye-zavedeniya/perervinskaya-dukhovnaya-seminariya/",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669100",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://ppds.ru/wp-content/themes/seminariya/img/logo_white.png",
+        "logoCheckedAt": "2026-09-25T00:13:50.752670+00:00",
+        "logoSha256": "abd21cdc0a01b7e18ce743850eef04091c71627e2b589a14109381b99f30a926"
+      },
+      "logoUrl": "/university-logos/moscow/666669100.png",
+      "logoBackground": "#23468d"
     },
     {
       "id": "doctorantura",
@@ -2149,8 +2281,8 @@
       "address": "127055, г Москва, пер Вадковский, д 3А",
       "website": "https://www.stankin.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=148",
-      "militaryCenter": null,
+      "logoSourceUrl": "https://stankin.ru/about/firmennyy-stil/",
+      "militaryCenter": true,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=148",
       "directory": {
         "monitoringId": "148",
@@ -2163,8 +2295,15 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=148",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=148",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://stankin.ru/bitrix/templates/stankin/images/stankin-logo-main-color-ru-rgb.svg",
+        "logoSha256": "135ebf0dfd5807e00e50daf63c0447ad48a8ea3387d7283f8b3c953076dd4e2c",
+        "logoCheckedAt": "2026-09-30T20:37:15.709975+00:00"
+      },
+      "militaryCenterSourceUrl": "https://vuc.stankin.ru/",
+      "militaryCenterCheckedAt": "2026-09-24T23:35:50.150832+00:00",
+      "logoUrl": "/university-logos/moscow/148.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "msal",
@@ -2237,8 +2376,8 @@
       "address": "124498, г Москва, г Зеленоград, пл Шокина, д 1",
       "website": "http://www.miet.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=140",
-      "militaryCenter": null,
+      "logoSourceUrl": "https://www.miet.ru/",
+      "militaryCenter": true,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=140",
       "directory": {
         "monitoringId": "140",
@@ -2251,8 +2390,15 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=140",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=140",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.miet.ru/",
+        "logoCheckedAt": "2026-09-24T23:28:46.001713+00:00",
+        "logoSha256": "9a51d23492962d04fea8e80c588372f2ea6aa658ca74c0701b48a20593c6d14b"
+      },
+      "militaryCenterSourceUrl": "https://vk.miet.ru/about.html",
+      "militaryCenterCheckedAt": "2026-09-24T23:35:50.150832+00:00",
+      "logoUrl": "/university-logos/moscow/140.svg",
+      "logoBackground": "#23468d"
     },
     {
       "id": "rsuh",
@@ -2351,9 +2497,9 @@
       "description": "Государственная образовательная организация высшего образования. По мониторингу Минобрнауки 2025: физика и астрономия, науки о земле, биологические науки, клиническая медицина и другие области.",
       "city": "Москва",
       "address": "105005, г. Москва, вн. тер. г. муниципальный округ Басманный, ул. Радио, д. 10А, стр. 2",
-      "website": "https://guppros.ru",
+      "website": "https://eduprosvet.ru/",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110317",
+      "logoSourceUrl": "https://eduprosvet.ru/abiturientam/calc/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110317",
       "directory": {
@@ -2365,10 +2511,17 @@
         "kind": "university",
         "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Государственный университет просвещения»",
         "authority": "Министерство просвещения Российской Федерации",
-        "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110317",
+        "websiteSourceUrl": "https://eduprosvet.ru/sveden/common/",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110317",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки. Официальный сайт уточнён по разделу основных сведений 1 октября 2026 года.",
+        "logoAssetSourceUrl": "https://eduprosvet.ru/local/templates/images/logo_standart.svg",
+        "logoSha256": "f7309013561c931b02adb068e9298fba24bb65450a1e3e878c0c6b62bb8de222",
+        "logoCheckedAt": "2026-09-30T21:35:04.084478+00:00",
+        "websiteSourceYear": 2026,
+        "websiteCheckedAt": "2026-09-30T21:48:15.194141+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/110317.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mgimo",
@@ -2585,8 +2738,8 @@
       "address": "127994, ГСП-4, г. Москва, ул. Образцова, д.9, стр. 9",
       "website": "http://www.miit.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1566",
-      "militaryCenter": null,
+      "logoSourceUrl": "https://www.miit.ru/org/info/brand",
+      "militaryCenter": true,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1566",
       "directory": {
         "monitoringId": "1566",
@@ -2599,8 +2752,15 @@
         "authority": "Министерство транспорта Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1566",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1566",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.miit.ru/content_v1/Логотип%20РУТ%20(МИИТ)%20синий.svg?id_wm=902344",
+        "logoSha256": "923fae0b6cb1648b1f4c17628225f8a2166102ea30d076feabd5252fe3b4a5fd",
+        "logoCheckedAt": "2026-09-30T21:57:05.776067+00:00"
+      },
+      "militaryCenterSourceUrl": "https://miit.ru/depts/26145/people",
+      "militaryCenterCheckedAt": "2026-09-24T23:35:50.150832+00:00",
+      "logoUrl": "/university-logos/moscow/1566.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "sechenov",
@@ -2641,7 +2801,7 @@
       "address": "117133, г Москва, ул Академика Варги, д 15",
       "website": "https://academy-andriaka.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111029",
+      "logoSourceUrl": "http://academy-andriaka.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111029",
       "directory": {
@@ -2655,8 +2815,13 @@
         "authority": "Министерство культуры Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111029",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111029",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://academy-andriaka.ru/favicon.ico",
+        "logoSha256": "7a9ab58e823c24a0ab3bc10cc4c9b3e6c95f173437c8f467f01303ec38da4d36",
+        "logoCheckedAt": "2026-09-30T21:57:05.776067+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/111029.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "axu",
@@ -2669,7 +2834,7 @@
       "address": "125565, г.Москва, улица Фестивальная, дом 2",
       "website": "http://www.axu.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1651",
+      "logoSourceUrl": "http://axu.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1651",
       "directory": {
@@ -2683,8 +2848,13 @@
         "authority": "Министерство культуры Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1651",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1651",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://axu.ru/resources/images/HeadR1.jpg",
+        "logoCheckedAt": "2026-09-30T21:04:10.730666+00:00",
+        "logoSha256": "f57db734da8131d28c22e3c8294a9e6bad92fbdeff4eba880fb819ec78ab502a"
+      },
+      "logoUrl": "/university-logos/moscow/1651.jpg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "vavt",
@@ -2697,7 +2867,7 @@
       "address": "119285, г Москва, ш Воробьёвское, д 6А",
       "website": "http://www.vavt.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1810",
+      "logoSourceUrl": "https://www.vavt.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1810",
       "directory": {
@@ -2711,8 +2881,13 @@
         "authority": "Министерство экономического развития Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1810",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1810",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.vavt.ru/local/templates/vavt/img/logo_new.svg",
+        "logoCheckedAt": "2026-09-24T23:50:10.723463+00:00",
+        "logoSha256": "f205446df019f60911a4815a48c4068e76800094367317acde5f4895bc53e226"
+      },
+      "logoUrl": "/university-logos/moscow/1810.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "shepkin",
@@ -2757,7 +2932,7 @@
       "address": "105064, г Москва, ул Казакова, д 15",
       "website": "http://www.guz.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1639",
+      "logoSourceUrl": "https://new.guz.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1639",
       "directory": {
@@ -2771,8 +2946,13 @@
         "authority": "Министерство сельского хозяйства Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1639",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1639",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://new.guz.ru/images/logo.png",
+        "logoSha256": "aec496b193006b2b053cc5b1978b6fae0d20ea4495f9a4532e1dd8b53535671f",
+        "logoCheckedAt": "2026-09-30T21:29:45.994073+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1639.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "guu",
@@ -2910,8 +3090,8 @@
       "address": "125319, г Москва, пр-кт Ленинградский, д 64",
       "website": "https://www.madi.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=132",
-      "militaryCenter": null,
+      "logoSourceUrl": "https://www.madi.ru/",
+      "militaryCenter": true,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=132",
       "directory": {
         "monitoringId": "132",
@@ -2924,8 +3104,15 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=132",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=132",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.madi.ru/apple-touch-icon.png",
+        "logoCheckedAt": "2026-09-24T23:29:15.355086+00:00",
+        "logoSha256": "12bd049b96b7ba51443250055afd8d899b8a6e5ab462a949b3c656951a861133"
+      },
+      "logoUrl": "/university-logos/moscow/132.png",
+      "logoBackground": "#ffffff",
+      "militaryCenterSourceUrl": "https://pk.madi.ru/49-voennaya-kafedra-madi.html",
+      "militaryCenterCheckedAt": "2026-09-24T23:35:50.150832+00:00"
     },
     {
       "id": "marhi",
@@ -2938,7 +3125,7 @@
       "address": "107031, г Москва, ул Рождественка, д 11/4 к 1 стр 4",
       "website": "http://www.marhi.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=133",
+      "logoSourceUrl": "https://marhi.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=133",
       "directory": {
@@ -2952,8 +3139,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=133",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=133",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://marhi.ru/mh8_2011.jpg",
+        "logoCheckedAt": "2026-09-24T23:48:24.021963+00:00",
+        "logoSha256": "5912cae7972176f6b81606a8dfdbea4082acc15d0173f4bcaf08d0e6732bc5ed"
+      },
+      "logoUrl": "/university-logos/moscow/133.jpg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mslu",
@@ -2998,7 +3190,7 @@
       "address": "127051, г Москва, ул Сретенка, д 29",
       "website": "https://mgppu.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2151",
+      "logoSourceUrl": "https://mgppu.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2151",
       "directory": {
@@ -3012,8 +3204,13 @@
         "authority": "Министерство просвещения Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2151",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2151",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://mgppu.ru/theme/New/menu/logo_new_abbrev_1.svg",
+        "logoCheckedAt": "2026-09-24T23:29:18.564000+00:00",
+        "logoSha256": "0ea4e00266a7dfaa43fa6d48923b8f49e1e3a74707a95965d74335f7fa139d44"
+      },
+      "logoUrl": "/university-logos/moscow/2151.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mpgu",
@@ -3058,8 +3255,8 @@
       "address": "129337, г. Москва, Ярославское шоссе, д.26",
       "website": "http://www.mgsu.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=144",
-      "militaryCenter": null,
+      "logoSourceUrl": "https://euis.mgsu.ru/",
+      "militaryCenter": true,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=144",
       "directory": {
         "monitoringId": "144",
@@ -3072,8 +3269,15 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=144",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=144",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://www.mgsu.ru/logomgsu.svg",
+        "logoSha256": "7d6697e4d3dbf02dfc77e3ee9bb73cc67ba3a035560671d998383eaca9271347",
+        "logoCheckedAt": "2026-10-01T12:21:40.603549+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/144.svg",
+      "logoBackground": "#ffffff",
+      "militaryCenterSourceUrl": "https://euis.mgsu.ru/education/Voennaya_kafedra/",
+      "militaryCenterCheckedAt": "2026-10-01T12:21:40.603549+00:00"
     },
     {
       "id": "glazunov",
@@ -3146,7 +3350,7 @@
       "address": "121165, г Москва, проезд Резервный, д 12",
       "website": "http://www.rgsai.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1644",
+      "logoSourceUrl": "https://rgsai.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1644",
       "directory": {
@@ -3160,8 +3364,13 @@
         "authority": "Министерство культуры Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1644",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1644",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://rgsai.ru/local/templates/.default/assets/favicon/apple-touch-icon.png",
+        "logoCheckedAt": "2026-09-24T23:29:32.911055+00:00",
+        "logoSha256": "fbcc9c3efec3d373574d0f7f430aa05aa3f09560c2d72dd24d208b4d58c2bf17"
+      },
+      "logoUrl": "/university-logos/moscow/1644.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "timacad",
@@ -3174,8 +3383,8 @@
       "address": "127550, г.Москва, Тимирязевская, д. 49",
       "website": "http://www.timacad.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1640",
-      "militaryCenter": null,
+      "logoSourceUrl": "https://www.timacad.ru/",
+      "militaryCenter": true,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1640",
       "directory": {
         "monitoringId": "1640",
@@ -3188,8 +3397,15 @@
         "authority": "Министерство сельского хозяйства Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1640",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1640",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.timacad.ru/img/vector/logo-respons.svg",
+        "logoCheckedAt": "2026-09-24T23:29:30.199372+00:00",
+        "logoSha256": "556faed4bd3a91d9bf2eac1053c7ab9e1f593a16fa16572c236d016c48b2312b"
+      },
+      "logoUrl": "/university-logos/moscow/1640.svg",
+      "logoBackground": "#ffffff",
+      "militaryCenterSourceUrl": "https://www.timacad.ru/education/voennyi-uchebnyi-tsentr",
+      "militaryCenterCheckedAt": "2026-09-25T00:31:00.111395+00:00"
     },
     {
       "id": "kosygin",
@@ -3216,8 +3432,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://rguk.ru/",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=151",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://rguk.ru/local/templates/rguk_redesign/images/logo-new3.svg",
+        "logoCheckedAt": "2026-09-30T21:03:46.390977+00:00",
+        "logoSha256": "96da6033a4a7b29c87ab396e575eede900fe7211e0c9a4c52ce24779e8f25cf1"
+      },
+      "logoUrl": "/university-logos/moscow/151.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "rosunimed",
@@ -3230,7 +3451,7 @@
       "address": "127006, г.Москва, улица Долгоруковская, дом 4",
       "website": "https://www.rosunimed.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1610",
+      "logoSourceUrl": "https://futuredoc.minzdrav.gov.ru/pre-university-education/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%83%D0%B7%D1%8B/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1610",
       "directory": {
@@ -3244,8 +3465,13 @@
         "authority": "Министерство здравоохранения Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1610",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1610",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://futuredoc.minzdrav.gov.ru/wp-content/uploads/2025/11/%D0%A0%D0%BE%D1%81%D1%83%D0%BD%D0%B8%D0%BC%D0%B5%D0%B4_%D0%BB%D0%BE%D0%B3%D0%BE.svg_.png",
+        "logoSha256": "8ab2992cb7fd3e9db8a8f77725ee6e49337120da76595f01d20c525e97b75b1d",
+        "logoCheckedAt": "2026-09-30T21:35:02.222713+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1610.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "sportedu",
@@ -3256,9 +3482,9 @@
       "description": "Государственная образовательная организация высшего образования. Профиль по мониторингу: образовательные организации спортивной направленности. По мониторингу Минобрнауки 2025: психологические науки, экономика и управление, социология и социальная работа, средства массовой информации и информационно-библиотечное дело и другие области.",
       "city": "Москва",
       "address": "105122, г.Москва, Сиреневый бульвар, д.4",
-      "website": "http://www.sportedu.ru",
+      "website": "https://gtsolifk.ru/",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1787",
+      "logoSourceUrl": "https://gtsolifk.ru/ob_universitete/upravleniya_i_otdeli/upravlenie_sporta_i_molodyognoy_politiki/otdel_informatsii_i_svyazey_s_obschestvennostyu/firmenniy_stil",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1787",
       "directory": {
@@ -3270,10 +3496,17 @@
         "kind": "university",
         "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Российский университет спорта \"ГЦОЛИФК\"",
         "authority": "Министерство спорта Российской Федерации",
-        "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1787",
+        "websiteSourceUrl": "https://gtsolifk.ru/sveden/common/",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1787",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки. Официальный сайт уточнён по разделу основных сведений 1 октября 2026 года.",
+        "logoAssetSourceUrl": "https://gtsolifk.ru/content/images/pages/115/logo_rus_gcolifk_2022_prostoy.png?1691706615",
+        "logoSha256": "31392e9c2ddd1326dccc4fb314df9306318e792a9b4dd6f4617b04f4c18bd09f",
+        "logoCheckedAt": "2026-09-30T21:49:03.592679+00:00",
+        "websiteSourceYear": 2026,
+        "websiteCheckedAt": "2026-09-30T21:48:17.044613+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1787.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "muctr",
@@ -3318,7 +3551,7 @@
       "address": "119002, г Москва, пер Большой Николопесковский, д 12А",
       "website": "http://www.htvs.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1556",
+      "logoSourceUrl": "https://www.htvs.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1556",
       "directory": {
@@ -3332,8 +3565,13 @@
         "authority": "Министерство культуры Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1556",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1556",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.htvs.ru/local/static/build/img/header-logo.svg",
+        "logoCheckedAt": "2026-09-25T00:14:46.376496+00:00",
+        "logoSha256": "dcf91b7c985c7896b1dd1b0d4cd567d1a1745d180f120b524d86bd6127b5e250"
+      },
+      "logoUrl": "/university-logos/moscow/1556.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mhatschool",
@@ -3378,7 +3616,7 @@
       "address": "129226, г.Москва, ул.Вильгельма Пика, д.3",
       "website": "http://www.vgik.info",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1723",
+      "logoSourceUrl": "https://vgik.info/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1723",
       "directory": {
@@ -3392,8 +3630,13 @@
         "authority": "Министерство культуры Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1723",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1723",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://vgik.info/local/templates/vgik/img/logo.svg",
+        "logoCheckedAt": "2026-09-24T23:29:39.152477+00:00",
+        "logoSha256": "85e3e66be99411a0becb205a44177160100abbfd3e5b90737e04ea74fc2e50b0"
+      },
+      "logoUrl": "/university-logos/moscow/1723.svg",
+      "logoBackground": "#123c69"
     },
     {
       "id": "rpa",
@@ -3406,7 +3649,7 @@
       "address": "117638, г.Москва, ул.Азовская, д.2, кор.1",
       "website": "http://rpa-mu.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1654",
+      "logoSourceUrl": "https://journal.rpa-mu.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1654",
       "directory": {
@@ -3420,8 +3663,13 @@
         "authority": "Министерство юстиции Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1654",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1654",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://journal.rpa-mu.ru/Media/journal/banners/vguu.jpg",
+        "logoSha256": "0aaae5b950cd80881e75b6d89b3504d32aa97b3611ed51d26938577c53dbda1c",
+        "logoCheckedAt": "2026-09-30T21:57:05.776067+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1654.jpg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "gaugn",
@@ -3434,7 +3682,7 @@
       "address": "119049, г Москва, пер Мароновский, д 26",
       "website": "https://gaugn.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=57",
+      "logoSourceUrl": "https://gaugn.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=57",
       "directory": {
@@ -3448,8 +3696,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=57",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=57",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://gaugn.ru/upload/logo.gif",
+        "logoCheckedAt": "2026-09-24T23:29:38.303473+00:00",
+        "logoSha256": "d51014f04ac3eaf8c80e655218eeb974c3df9a674ec7f08e837e0a58191da48e"
+      },
+      "logoUrl": "/university-logos/moscow/57.gif",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "pushkin",
@@ -3462,7 +3715,7 @@
       "address": "117485, г Москва, ул Академика Волгина, д 6",
       "website": "https://www.pushkin.institute",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=58",
+      "logoSourceUrl": "https://www.pushkin.institute/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=58",
       "directory": {
@@ -3476,8 +3729,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=58",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=58",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.pushkin.institute/wp-content/themes/neve/assets/img/pushkin_logo.png",
+        "logoCheckedAt": "2026-09-24T23:29:40.433756+00:00",
+        "logoSha256": "25803d02fb2140682271c5368e71d168162106567dbe198b106a42dda16e7b6c"
+      },
+      "logoUrl": "/university-logos/moscow/58.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "ippolitovka",
@@ -3490,7 +3748,7 @@
       "address": "109147, г.Москва, ул.Марксистская, д.36",
       "website": "http://ippolitovka.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1729",
+      "logoSourceUrl": "https://ippolitovka.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1729",
       "directory": {
@@ -3504,8 +3762,13 @@
         "authority": "Министерство культуры Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1729",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1729",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://ippolitovka.ru/simai.data/image/logo/new%20logo%201920.png",
+        "logoCheckedAt": "2026-09-24T23:29:44.488828+00:00",
+        "logoSha256": "4234f4ffbdea555438307082dbef77dd3068a46cc73da0a7bf2ce1db0ad6489c"
+      },
+      "logoUrl": "/university-logos/moscow/1729.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mirea",
@@ -3518,7 +3781,7 @@
       "address": "119454, г Москва, пр-кт Вернадского, д 78",
       "website": "http://www.mirea.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=134",
+      "logoSourceUrl": "https://project.mirea.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=134",
       "directory": {
@@ -3532,8 +3795,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=134",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=134",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://static.tildacdn.com/tild6230-6534-4565-a239-356230346538/RTU_MIREA_CMYK_bez-s.svg",
+        "logoSha256": "5bf44ff8fa208e7c0312a41b2b6361f45ffef3af71838742aeb2c0ce2da15f79",
+        "logoCheckedAt": "2026-09-30T21:29:44.953352+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/134.svg",
+      "logoBackground": "#183447"
     },
     {
       "id": "mgavm",
@@ -3546,7 +3814,7 @@
       "address": "109472, г.Москва, ул.Академика Скрябина, д.23",
       "website": "http://www.mgavm.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1788",
+      "logoSourceUrl": "https://mgavm.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1788",
       "directory": {
@@ -3560,8 +3828,13 @@
         "authority": "Министерство сельского хозяйства Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1788",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1788",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://mgavm.ru/local/templates/mva/img/logo.svg",
+        "logoCheckedAt": "2026-09-24T23:29:53.054086+00:00",
+        "logoSha256": "c800d63114a1a8ff6e13b08f358e487b95134c8bfcc993a951356577e5c19fa7"
+      },
+      "logoUrl": "/university-logos/moscow/1788.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "balletacademy",
@@ -3639,7 +3912,7 @@
       "address": "125493, г.Москва, б-р Кронштадтский, д 20",
       "website": "http://www.mstuca.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1739",
+      "logoSourceUrl": "https://www.mstuca.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1739",
       "directory": {
@@ -3653,8 +3926,13 @@
         "authority": "Федеральное агентство воздушного транспорта",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1739",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1739",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.mstuca.ru/upload/medialibrary/6fa/5mb6bpbwmz2zvhhif5nua1ifj6vz2yxq.jpg",
+        "logoSha256": "96992a62f88a49f410e07e30aa4fdf6ffa858042dd82e60a2b069894f2628ff9",
+        "logoCheckedAt": "2026-09-25T00:21:07.029393+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1739.jpg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "miigaik",
@@ -3667,7 +3945,7 @@
       "address": "105064, г Москва, пер Гороховский, д 4",
       "website": "http://www.miigaik.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=150",
+      "logoSourceUrl": "https://www.miigaik.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=150",
       "directory": {
@@ -3681,8 +3959,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=150",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=150",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.miigaik.ru/images/yhPWLeuwGmtJ.svg",
+        "logoCheckedAt": "2026-09-24T23:29:54.657058+00:00",
+        "logoSha256": "86da6f038c6083c6eba17359dc5ca2cfc921c3438ab321c570bdf679ff69b91e"
+      },
+      "logoUrl": "/university-logos/moscow/150.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mgu",
@@ -3847,7 +4130,7 @@
       "address": "125080, г.Москва, Волоколамское шоссе, д.11",
       "website": "https://rosbiotech.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=155",
+      "logoSourceUrl": "https://rosbiotech.ru/sveden/common/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=155",
       "directory": {
@@ -3861,8 +4144,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=155",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=155",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://rosbiotech.ru/local/templates/biotech_new/img/logo.svg",
+        "logoCheckedAt": "2026-09-24T23:30:10.749446+00:00",
+        "logoSha256": "e6f804d097bfcf682b30e06d97e72717d5a4f30cf96556b1f432e478afd96b4e"
+      },
+      "logoUrl": "/university-logos/moscow/155.svg",
+      "logoBackground": "#23468d"
     },
     {
       "id": "mgri",
@@ -3875,7 +4163,7 @@
       "address": "117485, г Москва, ул Миклухо-Маклая, д 23",
       "website": "http://www.mgri.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=210",
+      "logoSourceUrl": "https://www.mgri.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=210",
       "directory": {
@@ -3889,8 +4177,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=210",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=210",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://www.mgri.ru/local/templates/mgri/images/logo-mgri.svg",
+        "logoCheckedAt": "2026-09-24T23:30:07.318880+00:00",
+        "logoSha256": "6c9b81353c40aba2b7c76affe63dd119aa1fef4e75b888cb671efde2a682cca7"
+      },
+      "logoUrl": "/university-logos/moscow/210.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "rgsu",
@@ -3964,7 +4257,7 @@
       "address": "125080, г.Москва, Волоколамское шоссе, д.9",
       "website": "https://академия-строганова.рф",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=159",
+      "logoSourceUrl": "https://rghpu.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=159",
       "directory": {
@@ -3978,8 +4271,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=159",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=159",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://rghpu.ru/uploads/logos/logo_2025.svg",
+        "logoSha256": "f05fdd7967ac05878b51602804909caf2aa43c27375b5ad99c696929919b98ce",
+        "logoCheckedAt": "2026-09-25T00:29:37.206726+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/159.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "gitis",
@@ -4052,7 +4350,7 @@
       "address": "125009, г.Москва, Малый Кисловский переулок, д.4, строение 5",
       "website": "https://cmsmoscow.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=109620",
+      "logoSourceUrl": "https://cmsmoscow.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=109620",
       "directory": {
@@ -4066,8 +4364,13 @@
         "authority": "Министерство культуры Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=109620",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=109620",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://cmsmoscow.ru/local/templates/main/assets/images/fav/cms_fav_32x32.png",
+        "logoCheckedAt": "2026-09-24T23:30:15.936804+00:00",
+        "logoSha256": "4af41bbb15cb5f0025ccced2cedcadec0e46ab150492d2a8a189cd4abbb36a7c"
+      },
+      "logoUrl": "/university-logos/moscow/109620.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "rgust",
@@ -4204,7 +4507,7 @@
       "address": "115432, г.Москва, 2-ой Кожуховский проезд, д.12, стр. 1",
       "website": "http://www.muiv.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1943",
+      "logoSourceUrl": "https://vitte-fund.ru/docs",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1943",
       "directory": {
@@ -4218,8 +4521,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1943",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1943",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://static.tildacdn.com/tild6263-6633-4966-b666-386136653630/1_1_.png",
+        "logoSha256": "7c6027990393ffd48518fe21c70708720cd8eaf3e3811de480e32f29b251087f",
+        "logoCheckedAt": "2026-09-30T21:49:03.090655+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/1943.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "pstgu",
@@ -4232,7 +4540,7 @@
       "address": "115184, г.Москва, ул. Новокузнецкая, д.23Б",
       "website": "http://pstgu.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1835",
+      "logoSourceUrl": "http://pstgu.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1835",
       "directory": {
@@ -4246,8 +4554,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1835",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1835",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://pstgu.ru/images/logo.png",
+        "logoCheckedAt": "2026-09-30T21:10:24.115184+00:00",
+        "logoSha256": "0b425273f40666e0128a5627a32ac3416c3a37a10295ca9bf2735358a3960716"
+      },
+      "logoUrl": "/university-logos/moscow/1835.png",
+      "logoBackground": "#183447"
     },
     {
       "id": "miu",
@@ -4260,7 +4573,7 @@
       "address": "109382, г. Москва, проезд Кирова 12",
       "website": "http://www.miu.su",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=5802",
+      "logoSourceUrl": "https://miu.su/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=5802",
       "directory": {
@@ -4274,8 +4587,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=5802",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=5802",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://miu.su/wp-content/uploads/2021/08/Logo_mii.svg",
+        "logoCheckedAt": "2026-09-24T23:30:26.146219+00:00",
+        "logoSha256": "e7a16c67567818cae88bda02f0d7670cb7f6525142d6f4af48543cb849f7b2a0"
+      },
+      "logoUrl": "/university-logos/moscow/5802.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mosap",
@@ -4288,7 +4606,7 @@
       "address": "ул. Планетная д. 36",
       "website": "http://www.mosap.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110308",
+      "logoSourceUrl": "https://mosap.ru:443",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110308",
       "directory": {
@@ -4302,8 +4620,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110308",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110308",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://mosap.ru:443/icons/footer/logo_min.svg",
+        "logoSha256": "c0846f66a1b1671fb7b703293d29f7ffe3eff9c2bf2895a65a28afd8dcd5768e",
+        "logoCheckedAt": "2026-09-25T00:21:07.029393+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/110308.svg",
+      "logoBackground": "#23468d"
     },
     {
       "id": "msei",
@@ -4348,7 +4671,7 @@
       "address": "119261, г Москва, пр-кт Ленинский, д 80",
       "website": "http://www.iga.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2096",
+      "logoSourceUrl": "https://iga.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2096",
       "directory": {
@@ -4362,8 +4685,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2096",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2096",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://iga.ru/logo-iga.png",
+        "logoCheckedAt": "2026-09-24T23:30:28.117640+00:00",
+        "logoSha256": "a2999e6f8ecb7a5b95e9b20c50f462c687af09b5eec3ff99bf48a3a682f791e5"
+      },
+      "logoUrl": "/university-logos/moscow/2096.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mmu-reaviz",
@@ -4376,7 +4704,7 @@
       "address": "117418, Россия, г. Москва, м.о. Черемушки, ул. Профсоюзная, д. 27, к. 2, стр. 3, помещ. 4",
       "website": "https://mmu.reaviz.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671165",
+      "logoSourceUrl": "https://pk.reaviz.ru/mos/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671165",
       "directory": {
@@ -4390,8 +4718,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671165",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671165",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://static.tildacdn.com/tild3766-6335-4631-b037-356334343931/Logo_Univer_Moscow.svg",
+        "logoCheckedAt": "2026-09-30T22:03:41.418772+00:00",
+        "logoSha256": "e1a7d370de044a465cb2d089be9842d8c990fb02c52de464c5ebe62b0228766d"
+      },
+      "logoUrl": "/university-logos/moscow/666671165.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "itpi",
@@ -4404,7 +4737,7 @@
       "address": "191186, г.Санкт-Петербург, набережная канала Грибоедова, дом 2, литера А",
       "website": "http://www.itpi-mf.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=10000150",
+      "logoSourceUrl": "http://www.itpi-mf.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=10000150",
       "directory": {
@@ -4418,8 +4751,13 @@
         "authority": "Министерство науки и высшего образования Российской Федерации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=10000150",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=10000150",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "http://itpi-mf.ru/favicon.ico",
+        "logoSha256": "726e3975f3979dec3604c535bacfb84326ad3cad80d0ac7014da881fc111cc54",
+        "logoCheckedAt": "2026-09-30T21:57:05.776067+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/10000150.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "rmat-moscow",
@@ -4464,7 +4802,7 @@
       "address": "125466, г. Москва, ул. Соколово-Мещерская, д. 29",
       "website": "http://www.reaviz.ru",
       "programsCount": 0,
-      "logoSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=12012811",
+      "logoSourceUrl": "https://pk.reaviz.ru/smr/",
       "militaryCenter": null,
       "factsSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=12012811",
       "directory": {
@@ -4478,8 +4816,13 @@
         "authority": "Частные организации",
         "websiteSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=12012811",
         "addressSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=12012811",
-        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки."
-      }
+        "note": "Наименование, адрес и ведомственная принадлежность — по мониторингу Минобрнауки 2025, обновлённому 3 февраля 2026 года. Наличие записи не подтверждает приём на конкретную программу; статус лицензии и аккредитация требуют отдельной проверки.",
+        "logoAssetSourceUrl": "https://static.tildacdn.com/tild3265-3131-4265-a231-396463636462/Logo_Univer_Samara.svg",
+        "logoCheckedAt": "2026-09-30T22:03:41.236879+00:00",
+        "logoSha256": "4faff935b5187b846a779c5162a77ced40608dc8a693db627295a03faa549f52"
+      },
+      "logoUrl": "/university-logos/moscow/12012811.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mvoku",
@@ -4534,8 +4877,13 @@
         "authority": "МЧС России",
         "websiteSourceUrl": "https://mchs.gov.ru/contacts/uchrezhdeniya-i-organizacii/obrazovatelnye-uchrezhdeniya",
         "addressSourceUrl": "https://mchs.gov.ru/contacts/uchrezhdeniya-i-organizacii/obrazovatelnye-uchrezhdeniya",
-        "note": "Ведомственная образовательная организация. Условия и доступность поступления проверяйте по официальному источнику; программы в каталог пока не загружены."
-      }
+        "note": "Ведомственная образовательная организация. Условия и доступность поступления проверяйте по официальному источнику; программы в каталог пока не загружены.",
+        "logoAssetSourceUrl": "https://academygps.ru/local/templates/zs_2023/assets/images/logo.svg",
+        "logoSha256": "833eb237741daf655fc30af63f6ebf73b28ce89b0dde6cf056121087740d883d",
+        "logoCheckedAt": "2026-09-25T00:21:50.261013+00:00"
+      },
+      "logoUrl": "/university-logos/moscow/academy-gps.svg",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "academy-sk",
@@ -4548,8 +4896,8 @@
       "address": "125080, Москва, ул. Врубеля, д. 12",
       "website": "https://academy-skrf.ru/",
       "programsCount": 0,
-      "logoSourceUrl": "https://academy-skrf.ru/",
-      "militaryCenter": null,
+      "logoSourceUrl": "https://academy-skrf.ru/simvol/",
+      "militaryCenter": true,
       "factsSourceUrl": "https://academy-skrf.ru/about_the_university/contacts/",
       "directory": {
         "monitoringId": "academy-sk",
@@ -4562,8 +4910,15 @@
         "authority": "Следственный комитет Российской Федерации",
         "websiteSourceUrl": "https://academy-skrf.ru/about_the_university/contacts/",
         "addressSourceUrl": "https://academy-skrf.ru/about_the_university/contacts/",
-        "note": "Ведомственная образовательная организация. Условия и доступность поступления проверяйте по официальному источнику; программы в каталог пока не загружены."
-      }
+        "note": "Ведомственная образовательная организация. Условия и доступность поступления проверяйте по официальному источнику; программы в каталог пока не загружены.",
+        "logoAssetSourceUrl": "https://academy-skrf.ru/news/2020/1610/01.png",
+        "logoCheckedAt": "2026-09-30T22:09:27.304087+00:00",
+        "logoSha256": "25af06b4557440ac833d8ecd2225abc1a434163c364fc2dea684f65a3c58796b"
+      },
+      "militaryCenterSourceUrl": "https://academy-skrf.ru/vuc/",
+      "militaryCenterCheckedAt": "2026-09-30T22:09:27.304087+00:00",
+      "logoUrl": "/university-logos/moscow/academy-sk.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "univerproc",
@@ -4664,7 +5019,7 @@
       "address": "129345, Москва, ул. Осташковская, д. 15",
       "website": "https://mpi.fsb.ru/",
       "programsCount": 0,
-      "logoSourceUrl": "https://mpi.fsb.ru/",
+      "logoSourceUrl": "http://mpi.fsb.ru/",
       "militaryCenter": null,
       "factsSourceUrl": "https://www.fsb.ru/fsb/supplement/employ/doc4.htm",
       "directory": {
@@ -4678,8 +5033,13 @@
         "authority": "ФСБ России",
         "websiteSourceUrl": "https://www.fsb.ru/fsb/supplement/employ/doc4.htm",
         "addressSourceUrl": "https://www.fsb.ru/fsb/supplement/employ/doc4.htm",
-        "note": "Ведомственная образовательная организация. Условия и доступность поступления проверяйте по официальному источнику; программы в каталог пока не загружены."
-      }
+        "note": "Ведомственная образовательная организация. Условия и доступность поступления проверяйте по официальному источнику; программы в каталог пока не загружены.",
+        "logoAssetSourceUrl": "http://mpi.fsb.ru/local/templates/mpi/markup/build/img/logo.png",
+        "logoCheckedAt": "2026-09-30T21:10:10.514106+00:00",
+        "logoSha256": "ee0a465668d7d3165e2a60a51179c6e9b2033d7dadcea7b9e697849aa5b276d0"
+      },
+      "logoUrl": "/university-logos/moscow/mpi-fsb.png",
+      "logoBackground": "#ffffff"
     },
     {
       "id": "mosu-mvd",

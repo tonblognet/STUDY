@@ -1,9 +1,11 @@
 "use client";
 
+import { AdditionalExamInputs } from "./additional-exam-inputs";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { EXAM_SUBJECTS, MATCH_LABELS } from "@/lib/admissions/constants";
 import { groupMatches } from "@/lib/admissions/matching";
+import { updateScoreInput } from "@/lib/admissions/score-input";
 import type { ScoreSet } from "@/lib/admissions/types";
 import type { Program } from "@/lib/data";
 
@@ -23,7 +25,9 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
   const [selected, setSelected] = useState(Object.keys(initialScores));
   const [scores, setScores] = useState(initialScores);
   const [achievements, setAchievements] = useState(0);
-  const [dviScore, setDviScore] = useState<number | undefined>();
+  const [additionalExamScores, setAdditionalExamScores] = useState<
+    Record<string, number>
+  >({});
   const [showResults, setShowResults] = useState(false);
 
   useEffect(() => {
@@ -43,20 +47,22 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
       id: "catalog-draft",
       name: "Баллы из каталога",
       scores: Object.fromEntries(
-        selected.map((subject) => [subject, scores[subject] ?? 0]),
+        Object.entries(scores).filter(([subject]) =>
+          selected.includes(subject),
+        ),
       ),
       individualAchievements: achievements,
-      dviScore,
+      additionalExamScores,
       updatedAt: new Date().toISOString(),
     }),
-    [achievements, dviScore, scores, selected],
+    [achievements, additionalExamScores, scores, selected],
   );
   const results = useMemo(
     () => groupMatches(programs, profile),
     [profile, programs],
   );
   const eligible = results.filter(
-    ({ match }) => match.category !== "insufficient",
+    ({ match }) => match.eligibility === "eligible",
   );
 
   function toggleSubject(subject: string) {
@@ -65,12 +71,11 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
         ? current.filter((item) => item !== subject)
         : [...current, subject],
     );
-    setScores((current) => ({ ...current, [subject]: current[subject] ?? 80 }));
     setShowResults(false);
   }
 
   const scoreLabel = selected
-    .map((subject) => `${subject} ${scores[subject] ?? 0}`)
+    .map((subject) => `${subject} ${scores[subject] ?? "не введён"}`)
     .join(" · ");
 
   return (
@@ -133,15 +138,15 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
                       min="0"
                       max="100"
                       inputMode="numeric"
-                      value={scores[subject] ?? 0}
+                      value={scores[subject] ?? ""}
                       onChange={(event) => {
-                        setScores((current) => ({
-                          ...current,
-                          [subject]: Math.max(
-                            0,
-                            Math.min(100, Number(event.target.value) || 0),
+                        setScores((current) =>
+                          updateScoreInput(
+                            current,
+                            subject,
+                            event.target.value,
                           ),
-                        }));
+                        );
                         setShowResults(false);
                       }}
                     />
@@ -161,38 +166,26 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
                 max="10"
                 value={achievements}
                 onChange={(event) => {
-                  setAchievements(
-                    Math.max(0, Math.min(10, Number(event.target.value) || 0)),
-                  );
-                  setShowResults(false);
-                }}
-              />
-            </label>
-            <label>
-              ДВИ, если уже известен
-              <input
-                type="number"
-                min="0"
-                max="100"
-                value={dviScore ?? ""}
-                placeholder="Не введён"
-                onChange={(event) => {
-                  setDviScore(
-                    event.target.value === ""
-                      ? undefined
-                      : Math.max(0, Math.min(100, Number(event.target.value))),
-                  );
+                  setAchievements(Number(event.target.value));
                   setShowResults(false);
                 }}
               />
             </label>
           </div>
+          <AdditionalExamInputs
+            programs={programs}
+            profile={profile}
+            onChange={(next) => {
+              setAdditionalExamScores(next.additionalExamScores ?? {});
+              setShowResults(false);
+            }}
+          />
 
           {!showResults ? (
             <button
               type="button"
               className="button button-primary ege-check-button"
-              disabled={selected.length < 3}
+              disabled={selected.length === 0}
               onClick={() => setShowResults(true)}
             >
               Проверить {programs.length} программ
@@ -203,9 +196,9 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
                 <span>Подбор завершён</span>
                 <strong>{eligible.length}</strong>
                 <p>
-                  программ можно оценить по опубликованным данным. Остальные не
-                  скрыты навсегда — им не хватает предмета или проверенного
-                  проходного балла.
+                  программ проходят проверку минимумов испытаний. Историческое
+                  сравнение доступно только при проверенной шкале. Все причины и
+                  остальные программы доступны в полном подборе.
                 </p>
               </div>
               <div className="ege-result-list">
@@ -218,8 +211,9 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
                       {program.title}
                     </Link>
                     <small>
-                      {program.universityShort} · ваши {match.consideredScore} ·
-                      ориентир {match.passingScore}
+                      {program.universityShort} · ваши{" "}
+                      {match.consideredScore ?? "—"} · ориентир{" "}
+                      {match.passingScore ?? "—"}
                     </small>
                   </article>
                 ))}

@@ -17,17 +17,24 @@ export const MATCH_RULES = {
 } as const;
 
 export const MATCH_LABELS: Record<MatchCategory, string> = {
-  high: "Высокий запас",
-  competitive: "Конкурентный вариант",
-  ambitious: "Амбициозный вариант",
-  insufficient: "Недостаточно данных для оценки",
+  high: "Выше исторического ориентира",
+  competitive: "На уровне исторического ориентира",
+  ambitious: "Ниже исторического ориентира",
+  insufficient: "Сравнение недоступно",
 };
+
+export const ELIGIBILITY_LABELS = {
+  eligible: "Минимумы испытаний выполнены",
+  ineligible: "Требования испытаний не выполнены",
+  unknown: "Требования нужно уточнить",
+} as const;
 
 export const EXAM_SUBJECTS = [
   "Русский язык",
   "Математика",
   "Информатика",
   "Физика",
+  "География",
   "Химия",
   "Биология",
   "Обществознание",

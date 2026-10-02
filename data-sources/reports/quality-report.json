@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T20:52:26.646Z",
+  "generatedAt": "2026-10-01T12:21:53.321Z",
   "publicationRule": "Только verified значения показаны как подтверждённые; null не заменяется нулём.",
   "universities": [
     {
@@ -106,6 +106,11 @@
           "url": "https://mai.ru/press/brand/",
           "type": "html",
           "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://mai.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:24.413046+00:00"
         },
         {
           "url": "https://priem.mai.ru/base/offers/programs-vuc/",
@@ -257,6 +262,11 @@
           "checkedAt": "2026-08-26T12:00:00.000Z"
         },
         {
+          "url": "https://mpei.ru/sveden/common/Pages/default.aspx",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:09.805002+00:00"
+        },
+        {
           "url": "https://vuc.mpei.ru/about/Pages/default.aspx",
           "type": "html",
           "checkedAt": "2026-08-26T12:00:00.000Z"
@@ -306,6 +316,11 @@
           "checkedAt": "2026-08-26T12:00:00.000Z"
         },
         {
+          "url": "https://mephi.ru/sveden/common",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:05.168049+00:00"
+        },
+        {
           "url": "https://admission.mephi.ru/about/military",
           "type": "html",
           "checkedAt": "2026-08-26T12:00:00.000Z"
@@ -353,6 +368,11 @@
           "url": "https://www.rudn.ru/media/dlya-smi",
           "type": "html",
           "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.rudn.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:03.791520+00:00"
         }
       ]
     },
@@ -420,11 +440,11 @@
       "indicators": 2699,
       "universityIndicators": 6,
       "programIndicators": 2693,
-      "verified": 2419,
+      "verified": 2447,
       "missing": 0,
-      "review": 259,
+      "review": 231,
       "conflicts": 4,
-      "coverage": 90,
+      "coverage": 91,
       "years": [
         2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
         2024, 2025, 2026
@@ -512,6 +532,22 @@
         },
         {
           "category": "tuition",
+          "url": "https://bio.msu.ru/incoming/bachelor_course/",
+          "title": "Биологический факультет: стоимость",
+          "year": 2026,
+          "format": "html",
+          "locator": "Обучение с оплатой из собственных средств; таблица стоимости 2026/2027, строка «Экология и природопользование»: 593,53 тыс. рублей за учебный год."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-895815136722-ekologiya-i-prirodopolzovanie",
+          "title": "Биологический факультет: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы биологического факультета: бакалавриат, срок обучения — 4 года."
+        },
+        {
+          "category": "tuition",
           "url": "https://soil.msu.ru/postuplenie/kontraktnoe-obuchenie",
           "title": "Факультет почвоведения: стоимость",
           "year": 2026,
@@ -525,6 +561,14 @@
           "year": 2026,
           "format": "html",
           "locator": "Официальная карточка программы: факультет, бакалавриат, срок обучения. Сопоставление с конкурсной группой 2026 по факультету, направлению и профилю."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-232604048222-ekologicheskii-menedzhment-i-ekobezopasn",
+          "title": "Факультет почвоведения: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026."
         },
         {
           "category": "tuition",
@@ -541,6 +585,22 @@
           "year": 2026,
           "format": "html",
           "locator": "Нормативный срок очного обучения"
+        },
+        {
+          "category": "tuition",
+          "url": "https://www.geogr.msu.ru/admission/struktura-plan-priema/",
+          "title": "Географический факультет: стоимость",
+          "year": 2026,
+          "format": "html",
+          "locator": "Стоимость обучения по контракту в 2026/2027 учебном году. Бакалавриат, граждане РФ: Науки о Земле — 593,53 тыс. рублей; Туризм — 557,58 тыс. рублей."
+        },
+        {
+          "category": "programs",
+          "url": "https://www.geogr.msu.ru/education/vo/uch_plan/",
+          "title": "Географический факультет: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Учебные планы бакалавриата, опубликованные факультетом: География (05.03.02), Картография и геоинформатика (05.03.03), Гидрометеорология (05.03.04), Экология и природопользование (05.03.06). На первой странице каждого из четырёх действующих опубликованных планов редакции 2024 года указан срок 4 года; сканы проверены визуально 25.09.2026. Совпадает с официальной карточкой группы 05.03.00 на international.msu.ru."
         },
         {
           "category": "programs",
@@ -567,6 +627,22 @@
           "locator": "ПРИЕМ — 2026; направление 04.03.02; срок обучения"
         },
         {
+          "category": "tuition",
+          "url": "http://www.fbm.msu.ru/admissions/reception-committee/",
+          "title": "Факультет фундаментальной медицины: стоимость",
+          "year": 2026,
+          "format": "html",
+          "locator": "Текущая страница приёмной комиссии, проверенная напрямую 25.09.2026: стоимость контрактного обучения в 2026 г. для граждан РФ. Лечебное дело — 724 000, фармация — 612 000 рублей в год. Поисковый кэш с пометкой 2025 года устарел."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-567208268342-lechebnoe-delo",
+          "title": "Факультет фундаментальной медицины: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Актуальная официальная карточка «Лечебное дело»: специалитет, срок обучения 7 лет. Старые шестилетние планы не подставляются для текущего набора."
+        },
+        {
           "category": "programs",
           "url": "https://msu.ru/sveden/eduStandarts/import/docs/33.05.01.pdf",
           "title": "Факультет фундаментальной медицины: срок обучения",
@@ -581,6 +657,14 @@
           "year": 2026,
           "format": "html",
           "locator": "Стоимость обучения для поступающих в 2026/2027 году, граждане РФ; рублей за учебный год"
+        },
+        {
+          "category": "programs",
+          "url": "https://www.hist.msu.ru/Abit/pr-bac/",
+          "title": "Исторический факультет: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Поступление в бакалавриат, план приёма 2026: обучение длится 4 года (8 семестров), форма обучения — очная."
         },
         {
           "category": "programs",
@@ -613,6 +697,30 @@
           "year": 2026,
           "format": "html",
           "locator": "Официальная карточка программы: факультет, бакалавриат, срок обучения. Сопоставление с конкурсной группой 2026 по факультету, направлению и профилю."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-767294039152-zarubezhnaya-filologiya",
+          "title": "Филологический факультет: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-302304103832-slavyanskaya-grecheskaya-i-klassicheskay",
+          "title": "Филологический факультет: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-909382056662-fundamentalnaya-i-prikladnaya-lingvistik",
+          "title": "Филологический факультет: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026."
         },
         {
           "category": "tuition",
@@ -695,6 +803,14 @@
           "locator": "Нормативный срок очного обучения"
         },
         {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-577783759162-vostokovedenie-i-afrikanistika",
+          "title": "Институт стран Азии и Африки: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Карточка программы: бакалавриат, нормативный срок обучения — 4 года, очная форма. Сопоставлено с направлением и факультетом конкурсной группы 2026."
+        },
+        {
           "category": "tuition",
           "url": "https://www.socio.msu.ru/index.php/абитуриентам",
           "title": "Социологический факультет: стоимость",
@@ -704,11 +820,67 @@
         },
         {
           "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-964218103012-sotsiologiya",
+          "title": "Социологический факультет: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-485797227822-publichnaya-politika-i-sotsialnie-nauki",
+          "title": "Социологический факультет: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026."
+        },
+        {
+          "category": "tuition",
+          "url": "http://www.ffl.msu.ru/apply/fees/index.php",
+          "title": "Факультет иностранных языков и регионоведения: стоимость",
+          "year": 2026,
+          "format": "html",
+          "locator": "Стоимость обучения для поступающих на факультет в 2026 году: бакалавриат — лингвистика, регионоведение России, зарубежное регионоведение, культурология; 557 580 рублей в год."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-384509406042-perevod-i-perevodovedenie",
+          "title": "Факультет иностранных языков и регионоведения: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-762580420402-teoriya-i-metodika-prepodavaniya-inostra",
+          "title": "Факультет иностранных языков и регионоведения: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026. Проверен также второй профиль группы: https://openday.msu.ru/programs/tproduct/2066875221-982618616462-mezhkulturnaya-kommunikatsiya — 4 года."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-614631174172-evropeiskie-issledovaniya",
+          "title": "Факультет иностранных языков и регионоведения: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026. Проверен также второй профиль группы: https://openday.msu.ru/programs/tproduct/2066875221-460311768892-amerikanskie-issledovaniya — 4 года."
+        },
+        {
+          "category": "programs",
           "url": "https://openday.msu.ru/programs/tproduct/2066875221-889578316382-regionovedenie-rossii",
           "title": "Факультет иностранных языков и регионоведения: срок обучения",
           "year": 2026,
           "format": "html",
           "locator": "Официальная карточка программы: факультет, бакалавриат, срок обучения. Сопоставление с конкурсной группой 2026 по факультету, направлению и профилю."
+        },
+        {
+          "category": "programs",
+          "url": "https://openday.msu.ru/programs/tproduct/2066875221-585209908492-kulturologiya",
+          "title": "Факультет иностранных языков и регионоведения: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Официальная карточка программы: факультет, уровень образования, срок обучения. Сопоставлено с конкурсной группой 2026."
         },
         {
           "category": "tuition",
@@ -800,11 +972,27 @@
         },
         {
           "category": "programs",
+          "url": "https://vshssn.msu.ru/sociologiya/cociologiya",
+          "title": "Высшая школа современных социальных наук: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Карточка программы: бакалавриат, нормативный срок обучения — 4 года, очная форма. Сопоставлено с направлением и факультетом конкурсной группы 2026."
+        },
+        {
+          "category": "programs",
           "url": "https://vshssn.msu.ru/menedzhment/menedzhment",
           "title": "Высшая школа современных социальных наук: срок обучения",
           "year": 2026,
           "format": "html",
           "locator": "Программа бакалавриата «Менеджмент» — нормативный срок обучения 4 года"
+        },
+        {
+          "category": "programs",
+          "url": "https://vshssn.msu.ru/upravlenie-personalom/upravlenie-personalom",
+          "title": "Высшая школа современных социальных наук: срок обучения",
+          "year": 2026,
+          "format": "html",
+          "locator": "Карточка программы: бакалавриат, нормативный срок обучения — 4 года, очная форма. Сопоставлено с направлением и факультетом конкурсной группы 2026."
         },
         {
           "category": "tuition",
@@ -1191,6 +1379,11 @@
           "url": "https://rea.ru/education/ob-universitete/simvolika",
           "type": "html",
           "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://www.rea.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:21.285950+00:00"
         }
       ]
     },
@@ -1332,6 +1525,11 @@
           "url": "https://rsmu.ru",
           "type": "html",
           "checkedAt": "2026-08-26T12:00:00.000Z"
+        },
+        {
+          "url": "https://rsmu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:48.758461+00:00"
         },
         {
           "url": "https://rsmu.ru/about",
@@ -1517,6 +1715,11 @@
           "checkedAt": "2026-09-15T00:00:00.000Z"
         },
         {
+          "url": "https://www.muctr.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:31.829825+00:00"
+        },
+        {
           "url": "https://www.muctr.ru/university/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
@@ -1653,6 +1856,11 @@
           "checkedAt": "2026-08-26T12:00:00.000Z"
         },
         {
+          "url": "https://mospolytech.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:53.808845+00:00"
+        },
+        {
           "url": "https://mospolytech.ru/university/about/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
@@ -1672,11 +1880,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -1693,6 +1901,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://sfi.ru/about/sveden/common.html",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -1700,6 +1915,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111037",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://sfi.ru/about/sveden/common.html",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:18.992500+00:00"
         }
       ]
     },
@@ -1751,6 +1971,11 @@
           "url": "https://www.skoltech.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.skoltech.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:33.802406+00:00"
         }
       ]
     },
@@ -1858,6 +2083,11 @@
           "url": "https://www.raikin-school.com/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.raikin-school.com/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:33.150656+00:00"
         }
       ]
     },
@@ -1869,11 +2099,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -1890,6 +2120,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "http://www.huminst.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -1897,6 +2134,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110188",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://www.huminst.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:29:36.139166+00:00"
         }
       ]
     },
@@ -1908,11 +2150,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -1929,6 +2171,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://obe.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -1936,6 +2185,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110232",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://obe.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:48:24.021963+00:00"
         }
       ]
     },
@@ -1947,11 +2201,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -1968,6 +2222,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.ideka.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -1975,6 +2236,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110216",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.ideka.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:48:24.021963+00:00"
         }
       ]
     },
@@ -1986,11 +2252,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2007,6 +2273,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://gitr.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -2014,6 +2287,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1938",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://gitr.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:07:33.713454+00:00"
+        },
+        {
+          "url": "https://gitr.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:16.024008+00:00"
         }
       ]
     },
@@ -2025,11 +2308,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2046,6 +2329,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "http://www.icone.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -2053,6 +2343,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1860",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://www.icone.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:31.581742+00:00"
+        },
+        {
+          "url": "http://www.icone.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:33.352832+00:00"
         }
       ]
     },
@@ -2064,11 +2364,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2085,6 +2385,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.isi-vuz.ru:443/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -2092,6 +2399,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110243",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.isi-vuz.ru:443/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:35.602105+00:00"
+        },
+        {
+          "url": "https://www.isi-vuz.ru:443/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:39.429506+00:00"
         }
       ]
     },
@@ -2210,11 +2527,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2231,6 +2548,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://ineup.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -2238,6 +2562,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110271",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://ineup.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:16.707768+00:00"
         },
         {
           "url": "https://www.ineup.ru/sveden/common/",
@@ -2338,6 +2667,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1818",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://мауп.рф/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:40.850046+00:00"
         }
       ]
     },
@@ -2445,6 +2779,11 @@
           "url": "https://www.mosgu.ru",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://mosgu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:42.966218+00:00"
         }
       ]
     },
@@ -2496,6 +2835,11 @@
           "url": "https://misaoinst.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://misaoinst.ru/sveden/common",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:22.848537+00:00"
         }
       ]
     },
@@ -2507,11 +2851,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2528,13 +2872,25 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://mi.university/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
         {
           "url": "https://mi.university/",
           "type": "html",
-          "checkedAt": "2026-09-15T00:00:00.000Z"
+          "checkedAt": "2026-09-30T21:57:05.776067+00:00"
+        },
+        {
+          "url": "https://mi.university/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:57:05.776067+00:00"
         },
         {
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2084",
@@ -2607,11 +2963,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2628,6 +2984,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://nid-design.org/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -2635,6 +2998,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1944",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://nid-design.org/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:45.364503+00:00"
+        },
+        {
+          "url": "https://nid-design.org/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:47.331911+00:00"
         }
       ]
     },
@@ -2702,11 +3075,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2723,13 +3096,25 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://rpusib.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
         {
           "url": "https://rpusib.ru/info/sveden/common/",
           "type": "html",
-          "checkedAt": "2026-09-15T00:00:00.000Z"
+          "checkedAt": "2026-09-24T23:27:51.204638+00:00"
+        },
+        {
+          "url": "https://rpusib.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:48:24.021963+00:00"
         },
         {
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1840",
@@ -2914,11 +3299,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2935,6 +3320,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://uuait.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -2942,6 +3334,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1961",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://uuait.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:52.047597+00:00"
         }
       ]
     },
@@ -2953,11 +3350,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -2974,6 +3371,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://cu.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -2981,6 +3385,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671171",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://cu.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:27:53.993085+00:00"
         }
       ]
     },
@@ -3743,6 +4152,11 @@
           "url": "https://miepvuz.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://miepvuz.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:03.392713+00:00"
         }
       ]
     },
@@ -3754,11 +4168,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -3775,6 +4189,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://mspi.moscow/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -3782,6 +4203,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1960",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://mspi.moscow/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:26:36.251356+00:00"
+        },
+        {
+          "url": "https://mspi.moscow/sveden/common",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:27.903265+00:00"
         }
       ]
     },
@@ -3793,11 +4224,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -3814,6 +4245,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.nes.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -3821,6 +4259,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2078",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.nes.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:30.846793+00:00"
+        },
+        {
+          "url": "https://www.nes.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:14.898819+00:00"
         }
       ]
     },
@@ -3832,11 +4280,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -3853,6 +4301,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://hsmanagement.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -3860,6 +4315,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2003",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://hsmanagement.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:07.596387+00:00"
         }
       ]
     },
@@ -3871,11 +4331,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -3892,6 +4352,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://muppi.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -3899,6 +4366,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669477",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://muppi.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:06.237658+00:00"
+        },
+        {
+          "url": "https://muppi.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:08.554040+00:00"
         }
       ]
     },
@@ -3910,11 +4387,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -3931,6 +4408,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://inpsycho.ru",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -3938,6 +4422,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1946",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://inpsycho.ru",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:27:48.340687+00:00"
+        },
+        {
+          "url": "https://inpsycho.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:15.388937+00:00"
         }
       ]
     },
@@ -4061,11 +4555,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -4082,6 +4576,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://synergyuniversity.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -4089,6 +4590,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1834",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://synergyuniversity.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:34.209601+00:00"
+        },
+        {
+          "url": "https://synergyuniversity.ru/sveden/common",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:19.668887+00:00"
         }
       ]
     },
@@ -4140,6 +4651,11 @@
           "url": "http://www.miepl.ru",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://www.miepl.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:13.595664+00:00"
         }
       ]
     },
@@ -4202,11 +4718,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -4223,6 +4739,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://iotgn.institute/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -4230,6 +4753,16 @@
           "url": "https://iotgn.institute/life/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://iotgn.institute/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:21:07.029393+00:00"
+        },
+        {
+          "url": "https://iotgn.institute/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:14:54.179614+00:00"
         },
         {
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120266",
@@ -4302,12 +4835,12 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
-      "years": [2025, 2026],
+      "coverage": 67,
+      "years": [2026],
       "sources": [
         {
           "category": "facts",
@@ -4319,13 +4852,35 @@
         },
         {
           "category": "facts",
-          "url": "https://mti.edu.ru",
+          "url": "https://mti.moscow/",
           "title": "Официальный сайт",
+          "year": 2026,
+          "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://mti.moscow/",
+          "title": "Источник символики",
           "year": 2026,
           "format": "html"
         }
       ],
       "factSources": [
+        {
+          "url": "https://mti.moscow/sveden/common",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:36:13.689305+00:00"
+        },
+        {
+          "url": "https://mti.moscow/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:36:13.128391+00:00"
+        },
+        {
+          "url": "https://mti.moscow/contacts",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:49:04.302593+00:00"
+        },
         {
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2033",
           "type": "html",
@@ -4392,11 +4947,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -4413,6 +4968,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://mitu.msk.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -4420,6 +4982,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669164",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://mitu.msk.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:23.327567+00:00"
+        },
+        {
+          "url": "https://mitu.msk.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:27.072222+00:00"
         }
       ]
     },
@@ -4471,6 +5043,11 @@
           "url": "http://www.atiso.ru",
           "type": "html",
           "checkedAt": "2026-09-15T20:41:32.723794+00:00"
+        },
+        {
+          "url": "https://atiso.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:27.777279+00:00"
         }
       ]
     },
@@ -4634,6 +5211,11 @@
           "url": "https://mmamos.ru:443/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://mmamos.ru:443/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:24.013506+00:00"
         }
       ]
     },
@@ -4701,11 +5283,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -4722,6 +5304,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.iile.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -4729,6 +5318,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110227",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.iile.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:48:24.021963+00:00"
         }
       ]
     },
@@ -4780,6 +5374,11 @@
           "url": "https://www.miu-edu.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.miu-edu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:26.553238+00:00"
         }
       ]
     },
@@ -4791,11 +5390,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -4812,6 +5411,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://life.mtuci.ru/brandbook",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -4819,6 +5425,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1593",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://life.mtuci.ru/brandbook",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:29:11.699407+00:00"
         }
       ]
     },
@@ -4830,11 +5441,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -4851,6 +5462,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "http://sdamp.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -4858,6 +5476,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120296",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://sdamp.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:07:41.189544+00:00"
+        },
+        {
+          "url": "https://sdamp.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:47.864597+00:00"
         }
       ]
     },
@@ -4869,11 +5497,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -4890,6 +5518,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://ppds.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -4897,6 +5532,16 @@
           "url": "https://www.uchkom.info/uchebnyy-komitet/uchebnye-zavedeniya/perervinskaya-dukhovnaya-seminariya/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://ppds.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:50.752670+00:00"
+        },
+        {
+          "url": "https://ppds.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:13:50.257865+00:00"
         },
         {
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666669100",
@@ -5081,11 +5726,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 5,
       "missing": 0,
-      "review": 3,
+      "review": 1,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 83,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5102,6 +5747,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://stankin.ru/about/firmennyy-stil/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5109,6 +5761,21 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=148",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://stankin.ru/about/firmennyy-stil/",
+          "type": "html",
+          "checkedAt": "2026-09-30T20:37:15.709975+00:00"
+        },
+        {
+          "url": "https://stankin.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:14:58.136853+00:00"
+        },
+        {
+          "url": "https://vuc.stankin.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:35:50.150832+00:00"
         }
       ]
     },
@@ -5120,11 +5787,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 5,
       "missing": 0,
-      "review": 3,
+      "review": 1,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 83,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5141,6 +5808,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.miet.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5148,6 +5822,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=140",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.miet.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:28:46.001713+00:00"
+        },
+        {
+          "url": "https://vk.miet.ru/about.html",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:35:50.150832+00:00"
         }
       ]
     },
@@ -5159,12 +5843,12 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
-      "years": [2025, 2026],
+      "coverage": 67,
+      "years": [2026],
       "sources": [
         {
           "category": "facts",
@@ -5176,13 +5860,30 @@
         },
         {
           "category": "facts",
-          "url": "https://guppros.ru",
+          "url": "https://eduprosvet.ru/",
           "title": "Официальный сайт",
+          "year": 2026,
+          "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://eduprosvet.ru/abiturientam/calc/",
+          "title": "Источник символики",
           "year": 2026,
           "format": "html"
         }
       ],
       "factSources": [
+        {
+          "url": "https://eduprosvet.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:48:15.194141+00:00"
+        },
+        {
+          "url": "https://eduprosvet.ru/abiturientam/calc/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:35:04.084478+00:00"
+        },
         {
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110317",
           "type": "html",
@@ -5198,11 +5899,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 5,
       "missing": 0,
-      "review": 3,
+      "review": 1,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 83,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5219,6 +5920,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.miit.ru/org/info/brand",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5228,9 +5936,19 @@
           "checkedAt": "2026-09-15T00:00:00.000Z"
         },
         {
+          "url": "https://www.miit.ru/org/info/brand",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:57:05.776067+00:00"
+        },
+        {
           "url": "https://www.miit.ru/sveden/common/",
           "type": "html",
           "checkedAt": "2026-09-15T20:24:39.746731+00:00"
+        },
+        {
+          "url": "https://miit.ru/depts/26145/people",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:35:50.150832+00:00"
         }
       ]
     },
@@ -5242,11 +5960,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5263,6 +5981,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "http://academy-andriaka.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5270,6 +5995,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111029",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://academy-andriaka.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:57:05.776067+00:00"
+        },
+        {
+          "url": "http://academy-andriaka.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:14:59.650863+00:00"
         }
       ]
     },
@@ -5281,11 +6016,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5302,6 +6037,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "http://axu.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5309,6 +6051,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1651",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://axu.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:04:10.730666+00:00"
+        },
+        {
+          "url": "https://axu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:14:31.424737+00:00"
         }
       ]
     },
@@ -5320,11 +6072,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5341,6 +6093,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.vavt.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5348,6 +6107,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1810",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.vavt.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:50:10.723463+00:00"
+        },
+        {
+          "url": "https://www.vavt.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:12.562122+00:00"
         }
       ]
     },
@@ -5415,11 +6184,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5436,6 +6205,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://new.guz.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5443,6 +6219,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1639",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://new.guz.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:29:45.994073+00:00"
         }
       ]
     },
@@ -5494,6 +6275,11 @@
           "url": "https://guu.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://guu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:09.151775+00:00"
         }
       ]
     },
@@ -5617,11 +6403,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 5,
       "missing": 0,
-      "review": 3,
+      "review": 1,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 83,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5638,6 +6424,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.madi.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5645,6 +6438,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=132",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.madi.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:15.355086+00:00"
+        },
+        {
+          "url": "https://pk.madi.ru/49-voennaya-kafedra-madi.html",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:35:50.150832+00:00"
         }
       ]
     },
@@ -5656,11 +6459,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5677,6 +6480,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://marhi.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5684,6 +6494,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=133",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://marhi.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:48:24.021963+00:00"
+        },
+        {
+          "url": "https://marhi.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:22.173450+00:00"
         }
       ]
     },
@@ -5751,11 +6571,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5772,6 +6592,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://mgppu.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5779,6 +6606,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2151",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://mgppu.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:18.564000+00:00"
+        },
+        {
+          "url": "https://mgppu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:21.138998+00:00"
         }
       ]
     },
@@ -5830,6 +6667,11 @@
           "url": "https://www.mpgu.su/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://mpgu.su/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:15:02.132623+00:00"
         }
       ]
     },
@@ -5841,11 +6683,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 5,
       "missing": 0,
-      "review": 3,
+      "review": 1,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 83,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5862,6 +6704,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://euis.mgsu.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5869,6 +6718,21 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=144",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://euis.mgsu.ru/",
+          "type": "html",
+          "checkedAt": "2026-10-01T12:21:40.603549+00:00"
+        },
+        {
+          "url": "https://euis.mgsu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-10-01T12:21:40.603549+00:00"
+        },
+        {
+          "url": "https://euis.mgsu.ru/education/Voennaya_kafedra/",
+          "type": "html",
+          "checkedAt": "2026-10-01T12:21:40.603549+00:00"
         }
       ]
     },
@@ -5908,6 +6772,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1807",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.glazunov-academy.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:24.007952+00:00"
         }
       ]
     },
@@ -5959,6 +6828,11 @@
           "url": "https://rgiis.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://rgiis.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:14:43.826235+00:00"
         }
       ]
     },
@@ -5970,11 +6844,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -5991,6 +6865,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://rgsai.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -5998,6 +6879,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1644",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://rgsai.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:32.911055+00:00"
+        },
+        {
+          "url": "https://rgsai.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:37.958560+00:00"
         }
       ]
     },
@@ -6009,11 +6900,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 5,
       "missing": 0,
-      "review": 3,
+      "review": 1,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 83,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6030,6 +6921,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.timacad.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6037,6 +6935,21 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1640",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.timacad.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:30.199372+00:00"
+        },
+        {
+          "url": "https://www.timacad.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:34.149470+00:00"
+        },
+        {
+          "url": "https://www.timacad.ru/education/voennyi-uchebnyi-tsentr",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:31:00.111395+00:00"
         }
       ]
     },
@@ -6048,11 +6961,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6069,13 +6982,25 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://rguk.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
         {
           "url": "https://rguk.ru/",
           "type": "html",
-          "checkedAt": "2026-09-15T00:00:00.000Z"
+          "checkedAt": "2026-09-30T21:03:46.390977+00:00"
+        },
+        {
+          "url": "https://rguk.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:34.246297+00:00"
         },
         {
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=151",
@@ -6092,11 +7017,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6113,6 +7038,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://futuredoc.minzdrav.gov.ru/pre-university-education/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%83%D0%B7%D1%8B/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6120,6 +7052,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1610",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://futuredoc.minzdrav.gov.ru/pre-university-education/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%83%D0%B7%D1%8B/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:35:02.222713+00:00"
         }
       ]
     },
@@ -6131,12 +7068,12 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
-      "years": [2025, 2026],
+      "coverage": 67,
+      "years": [2026],
       "sources": [
         {
           "category": "facts",
@@ -6148,13 +7085,30 @@
         },
         {
           "category": "facts",
-          "url": "http://www.sportedu.ru",
+          "url": "https://gtsolifk.ru/",
           "title": "Официальный сайт",
+          "year": 2026,
+          "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://gtsolifk.ru/ob_universitete/upravleniya_i_otdeli/upravlenie_sporta_i_molodyognoy_politiki/otdel_informatsii_i_svyazey_s_obschestvennostyu/firmenniy_stil",
+          "title": "Источник символики",
           "year": 2026,
           "format": "html"
         }
       ],
       "factSources": [
+        {
+          "url": "https://gtsolifk.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:48:17.044613+00:00"
+        },
+        {
+          "url": "https://gtsolifk.ru/ob_universitete/upravleniya_i_otdeli/upravlenie_sporta_i_molodyognoy_politiki/otdel_informatsii_i_svyazey_s_obschestvennostyu/firmenniy_stil",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:49:03.592679+00:00"
+        },
         {
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1787",
           "type": "html",
@@ -6170,11 +7124,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6191,6 +7145,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.htvs.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6198,6 +7159,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1556",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.htvs.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:14:46.376496+00:00"
+        },
+        {
+          "url": "https://www.htvs.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:14:46.381919+00:00"
         }
       ]
     },
@@ -6249,6 +7220,11 @@
           "url": "https://mhatschool.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T20:41:32.723794+00:00"
+        },
+        {
+          "url": "https://mhatschool.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:33.544308+00:00"
         }
       ]
     },
@@ -6260,11 +7236,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6281,6 +7257,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://vgik.info/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6288,6 +7271,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1723",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://vgik.info/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:39.152477+00:00"
+        },
+        {
+          "url": "https://vgik.info/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:42.247071+00:00"
         }
       ]
     },
@@ -6299,11 +7292,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6320,6 +7313,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://journal.rpa-mu.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6327,6 +7327,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1654",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://journal.rpa-mu.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:57:05.776067+00:00"
         }
       ]
     },
@@ -6338,11 +7343,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6359,6 +7364,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://gaugn.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6366,6 +7378,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=57",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://gaugn.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:38.303473+00:00"
+        },
+        {
+          "url": "https://gaugn.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:40.568005+00:00"
         }
       ]
     },
@@ -6377,11 +7399,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6398,6 +7420,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.pushkin.institute/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6405,6 +7434,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=58",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.pushkin.institute/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:40.433756+00:00"
+        },
+        {
+          "url": "https://www.pushkin.institute/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:43.594336+00:00"
         }
       ]
     },
@@ -6416,11 +7455,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6437,6 +7476,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://ippolitovka.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6444,6 +7490,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1729",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://ippolitovka.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:44.488828+00:00"
+        },
+        {
+          "url": "https://ippolitovka.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:48.444412+00:00"
         }
       ]
     },
@@ -6455,11 +7511,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6476,6 +7532,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://project.mirea.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6483,6 +7546,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=134",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://project.mirea.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:29:44.953352+00:00"
         }
       ]
     },
@@ -6494,11 +7562,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6515,6 +7583,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://mgavm.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6522,6 +7597,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1788",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://mgavm.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:53.054086+00:00"
+        },
+        {
+          "url": "https://mgavm.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:58.749343+00:00"
         }
       ]
     },
@@ -6738,11 +7823,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6759,6 +7844,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.mstuca.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6766,6 +7858,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1739",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.mstuca.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:21:07.029393+00:00"
+        },
+        {
+          "url": "https://www.mstuca.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:14:54.946142+00:00"
         }
       ]
     },
@@ -6777,11 +7879,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6798,6 +7900,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.miigaik.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6805,6 +7914,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=150",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.miigaik.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:54.657058+00:00"
+        },
+        {
+          "url": "https://www.miigaik.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:58.558955+00:00"
         }
       ]
     },
@@ -6856,6 +7975,11 @@
           "url": "http://mgutm.ru",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://mgutm.ru:443/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:52.334559+00:00"
         }
       ]
     },
@@ -6907,6 +8031,11 @@
           "url": "http://www.gnesin-academy.ru",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://gnesin-academy.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:29:59.720867+00:00"
         }
       ]
     },
@@ -6918,11 +8047,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6939,6 +8068,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://rosbiotech.ru/sveden/common/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6946,6 +8082,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=155",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://rosbiotech.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:10.749446+00:00"
         }
       ]
     },
@@ -6957,11 +8098,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -6978,6 +8119,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://www.mgri.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -6985,6 +8133,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=210",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://www.mgri.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:07.318880+00:00"
+        },
+        {
+          "url": "https://www.mgri.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:10.869648+00:00"
         }
       ]
     },
@@ -7075,6 +8233,11 @@
           "url": "https://rgup.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://rgup.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:07.866888+00:00"
         }
       ]
     },
@@ -7086,11 +8249,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7107,6 +8270,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://rghpu.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7114,6 +8284,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=159",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://rghpu.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:29:37.206726+00:00"
+        },
+        {
+          "url": "https://rghpu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:15:07.664372+00:00"
         }
       ]
     },
@@ -7165,6 +8345,11 @@
           "url": "https://gitis.net/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://gitis.net/about/svedeniya-ob-obrazovatelnoy-organizatsii/osnovnye-svedeniya2056/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:13.278983+00:00"
         }
       ]
     },
@@ -7176,11 +8361,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7197,6 +8382,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://cmsmoscow.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7204,6 +8396,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=109620",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://cmsmoscow.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:15.936804+00:00"
+        },
+        {
+          "url": "https://cmsmoscow.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:18.204319+00:00"
         }
       ]
     },
@@ -7311,6 +8513,11 @@
           "url": "https://amp1996.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://amp1996.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:20.075450+00:00"
         }
       ]
     },
@@ -7378,11 +8585,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7399,6 +8606,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://vitte-fund.ru/docs",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7406,6 +8620,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1943",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://vitte-fund.ru/docs",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:49:03.090655+00:00"
         }
       ]
     },
@@ -7417,11 +8636,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7438,6 +8657,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "http://pstgu.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7445,6 +8671,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1835",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://pstgu.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:10:24.115184+00:00"
+        },
+        {
+          "url": "https://pstgu.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:15:04.538416+00:00"
         }
       ]
     },
@@ -7456,11 +8692,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7477,6 +8713,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://miu.su/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7484,6 +8727,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=5802",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://miu.su/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:26.146219+00:00"
+        },
+        {
+          "url": "https://miu.su/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:15:09.133586+00:00"
         }
       ]
     },
@@ -7495,11 +8748,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7516,6 +8769,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://mosap.ru:443",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7523,6 +8783,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=110308",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://mosap.ru:443",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:21:07.029393+00:00"
+        },
+        {
+          "url": "https://mosap.ru:443/sveden/common",
+          "type": "html",
+          "checkedAt": "2026-09-25T00:15:10.898803+00:00"
         }
       ]
     },
@@ -7585,11 +8855,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7606,6 +8876,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://iga.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7613,6 +8890,16 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=2096",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://iga.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:28.117640+00:00"
+        },
+        {
+          "url": "https://iga.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:32.279719+00:00"
         }
       ]
     },
@@ -7624,11 +8911,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7645,6 +8932,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://pk.reaviz.ru/mos/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7652,6 +8946,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=666671165",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://pk.reaviz.ru/mos/",
+          "type": "html",
+          "checkedAt": "2026-09-30T22:03:10.287964+00:00"
         }
       ]
     },
@@ -7663,11 +8962,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7684,6 +8983,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "http://www.itpi-mf.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7691,6 +8997,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=10000150",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://www.itpi-mf.ru/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:57:05.776067+00:00"
         }
       ]
     },
@@ -7753,11 +9064,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2025, 2026],
       "sources": [
         {
@@ -7774,6 +9085,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://pk.reaviz.ru/smr/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7781,6 +9099,11 @@
           "url": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=12012811",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "https://pk.reaviz.ru/smr/",
+          "type": "html",
+          "checkedAt": "2026-09-30T22:03:41.236879+00:00"
         }
       ]
     },
@@ -7836,11 +9159,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2026],
       "sources": [
         {
@@ -7857,6 +9180,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://academygps.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7868,7 +9198,12 @@
         {
           "url": "https://academygps.ru/",
           "type": "html",
-          "checkedAt": "2026-09-15T00:00:00.000Z"
+          "checkedAt": "2026-09-25T00:21:50.261013+00:00"
+        },
+        {
+          "url": "https://academygps.ru/sveden/common/",
+          "type": "html",
+          "checkedAt": "2026-09-24T23:30:36.926043+00:00"
         }
       ]
     },
@@ -7880,11 +9215,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 5,
       "missing": 0,
-      "review": 3,
+      "review": 1,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 83,
       "years": [2026],
       "sources": [
         {
@@ -7901,6 +9236,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "https://academy-skrf.ru/simvol/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -7910,9 +9252,19 @@
           "checkedAt": "2026-09-15T00:00:00.000Z"
         },
         {
-          "url": "https://academy-skrf.ru/",
+          "url": "https://academy-skrf.ru/simvol/",
           "type": "html",
-          "checkedAt": "2026-09-15T00:00:00.000Z"
+          "checkedAt": "2026-09-30T22:09:27.304087+00:00"
+        },
+        {
+          "url": "https://academy-skrf.ru/about_the_university/",
+          "type": "html",
+          "checkedAt": "2026-09-30T22:09:27.304087+00:00"
+        },
+        {
+          "url": "https://academy-skrf.ru/vuc/",
+          "type": "html",
+          "checkedAt": "2026-09-30T22:09:27.304087+00:00"
         }
       ]
     },
@@ -8008,6 +9360,11 @@
           "url": "https://academy.fsb.ru/",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://academy.fsb.ru/contacts/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:10:39.513835+00:00"
         }
       ]
     },
@@ -8047,6 +9404,11 @@
           "url": "https://www.fsb.ru/fsb/supplement/employ/doc4.htm",
           "type": "html",
           "checkedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "url": "http://fsb.ru/fsb/supplement/employ/doc4.htm",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:04:20.369933+00:00"
         }
       ]
     },
@@ -8058,11 +9420,11 @@
       "indicators": 6,
       "universityIndicators": 6,
       "programIndicators": 0,
-      "verified": 3,
+      "verified": 4,
       "missing": 0,
-      "review": 3,
+      "review": 2,
       "conflicts": 0,
-      "coverage": 50,
+      "coverage": 67,
       "years": [2026],
       "sources": [
         {
@@ -8079,6 +9441,13 @@
           "title": "Официальный сайт",
           "year": 2026,
           "format": "html"
+        },
+        {
+          "category": "logos",
+          "url": "http://mpi.fsb.ru/",
+          "title": "Источник символики",
+          "year": 2026,
+          "format": "html"
         }
       ],
       "factSources": [
@@ -8088,9 +9457,14 @@
           "checkedAt": "2026-09-15T00:00:00.000Z"
         },
         {
-          "url": "https://mpi.fsb.ru/",
+          "url": "http://mpi.fsb.ru/",
           "type": "html",
-          "checkedAt": "2026-09-15T00:00:00.000Z"
+          "checkedAt": "2026-09-30T21:10:10.514106+00:00"
+        },
+        {
+          "url": "http://mpi.fsb.ru/contacts/",
+          "type": "html",
+          "checkedAt": "2026-09-30T21:10:39.051116+00:00"
         }
       ]
     },

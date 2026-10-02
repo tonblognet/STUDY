@@ -1,5 +1,6 @@
 "use client";
 
+import { isCurrentFact } from "@/lib/admissions/exams";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { CatalogEgeDrawer } from "@/components/catalog-ege-drawer";
@@ -24,7 +25,11 @@ export function CatalogClient({
   const [query, setQuery] = useState(initialQuery);
   const [subjects, setSubjects] = useState<string[]>([]);
   const [onlyBudget, setOnlyBudget] = useState(false);
-  const [maxScore, setMaxScore] = useState(300);
+  const scoreLimit = Math.max(
+    300,
+    ...items.map((item) => Math.ceil((item.passingScore ?? 0) / 5) * 5),
+  );
+  const [maxScore, setMaxScore] = useState<number | null>(null);
   const [maxPrice, setMaxPrice] = useState(MAX_CATALOG_PRICE);
   const [form, setForm] = useState("Любая");
   const [hostel, setHostel] = useState("Любое");
@@ -72,7 +77,7 @@ export function CatalogClient({
   const activeCount =
     subjects.length +
     Number(onlyBudget) +
-    Number(maxScore < 300) +
+    Number(maxScore !== null) +
     Number(maxPrice < MAX_CATALOG_PRICE) +
     Number(form !== "Любая") +
     Number(hostel !== "Любое") +
@@ -97,21 +102,27 @@ export function CatalogClient({
           subjects.every((subject) =>
             itemSubjects.some((value) => value.includes(subject)),
           ) &&
-          (!onlyBudget || (item.budgetPlaces ?? 0) > 0) &&
-          (item.passingScore === null || item.passingScore <= maxScore) &&
-          (item.tuition === null || item.tuition <= maxPrice) &&
+          (!onlyBudget ||
+            (isCurrentFact(item.budgetPlacesValue, item.trust.dataYear) &&
+              item.budgetPlacesValue.value > 0)) &&
+          (maxScore === null ||
+            (isCurrentFact(item.passingScoreValue, item.trust.dataYear - 1) &&
+              item.passingScoreValue.value <= maxScore)) &&
+          (maxPrice === MAX_CATALOG_PRICE ||
+            (isCurrentFact(item.tuitionValue, item.trust.dataYear) &&
+              item.tuitionValue.value <= maxPrice &&
+              isCurrentFact(item.paidPlacesValue, item.trust.dataYear) &&
+              item.paidPlacesValue.value > 0)) &&
           (form === "Любая" || item.form === form) &&
           (university === "Все вузы" || item.universitySlug === university) &&
           (level === "Любой" || item.level === level) &&
           (dataStatus === "Любой" || item.trust.status === dataStatus) &&
           (hostel === "Любое" ||
-            (hostel === "Есть"
-              ? item.hostel.value === true
-              : item.hostel.value === false)) &&
+            (isCurrentFact(item.hostel, item.trust.dataYear) &&
+              item.hostel.value === (hostel === "Есть"))) &&
           (militaryCenter === "Любое" ||
-            (militaryCenter === "Есть"
-              ? item.militaryCenter.value === true
-              : item.militaryCenter.value === false)) &&
+            (isCurrentFact(item.militaryCenter, item.trust.dataYear) &&
+              item.militaryCenter.value === (militaryCenter === "Есть"))) &&
           (matchedIds === null || matchedIds.includes(item.id))
         );
       })
@@ -155,7 +166,7 @@ export function CatalogClient({
   function reset() {
     setSubjects([]);
     setOnlyBudget(false);
-    setMaxScore(300);
+    setMaxScore(null);
     setMaxPrice(MAX_CATALOG_PRICE);
     setForm("Любая");
     setHostel("Любое");
@@ -266,14 +277,22 @@ export function CatalogClient({
           </FilterGroup>
           <FilterGroup title="Проходной балл">
             <label className="range-control">
-              <span>до {maxScore}</span>
+              <span>
+                {maxScore === null ? "Без ограничения балла" : `до ${maxScore}`}
+              </span>
               <input
                 type="range"
                 min="150"
-                max="300"
+                max={scoreLimit}
                 step="5"
-                value={maxScore}
-                onChange={(event) => setMaxScore(Number(event.target.value))}
+                value={maxScore ?? scoreLimit}
+                onChange={(event) =>
+                  setMaxScore(
+                    Number(event.target.value) === scoreLimit
+                      ? null
+                      : Number(event.target.value),
+                  )
+                }
               />
             </label>
           </FilterGroup>

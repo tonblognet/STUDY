@@ -161,6 +161,12 @@ function buildProfile(university: University): UniversityFactProfile {
         name,
         {
           sourceSection: "Военный учебный центр",
+          ...(university.militaryCenterCheckedAt
+            ? {
+                retrievedAt: university.militaryCenterCheckedAt,
+                checkedAt: university.militaryCenterCheckedAt,
+              }
+            : {}),
           ...(university.slug === "mgu"
             ? {
                 retrievedAt: "2026-09-08T00:00:00.000Z",
@@ -191,9 +197,9 @@ function buildProfile(university: University): UniversityFactProfile {
           sourceSection: "Официальный сайт университета",
           ...(directory
             ? {
-                year: directory.sourceYear,
-                checkedAt: directory.checkedAt,
-                retrievedAt: directory.checkedAt,
+                year: directory.websiteSourceYear ?? directory.sourceYear,
+                checkedAt: directory.websiteCheckedAt ?? directory.checkedAt,
+                retrievedAt: directory.websiteCheckedAt ?? directory.checkedAt,
               }
             : {}),
         },

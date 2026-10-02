@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 31.749998 31.749999"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="favicon1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     inkscape:zoom="4.1928018"
+     inkscape:cx="66.065608"
+     inkscape:cy="51.397612"
+     inkscape:window-width="1904"
+     inkscape:window-height="1001"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2"
+     id="namedview941"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false" />
+  <defs
+     id="defs943">
+    <linearGradient
+       id="linearGradient880"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop878" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient880"
+       id="linearGradient882"
+       x1="-1.322915"
+       y1="15.875"
+       x2="33.072915"
+       y2="15.875"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.06866805)" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Fol">
+    <rect
+       style="fill:url(#linearGradient882);fill-opacity:1;fill-rule:evenodd;stroke:#1067bd;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect"
+       width="31.749998"
+       height="31.75"
+       x="-0.068668053"
+       y="0" />
+    <rect
+       style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#0084ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1101"
+       width="31.749998"
+       height="1.8520832"
+       x="-0.18931253"
+       y="28.241798" />
+    <rect
+       style="fill:#0028ff;fill-opacity:1;fill-rule:evenodd;stroke:#0084ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1223"
+       width="31.749998"
+       height="1.8520832"
+       x="-0.18931253"
+       y="26.389715" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.1111px;line-height:1.25;font-family:'Vladimir Script';-inkscape-font-specification:'Vladimir Script';letter-spacing:1.32292px;fill:#0028ff;fill-opacity:1;stroke-width:0.402779"
+       x="-0.40212965"
+       y="17.745928"
+       id="text"
+       transform="scale(0.81634279,1.2249756)"><tspan
+         sodipodi:role="line"
+         id="tspan4379"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#0028ff;fill-opacity:1;stroke-width:0.402779"
+         x="-0.40212965"
+         y="17.745928">ИЭУП</tspan></text>
+  </g>
+</svg>

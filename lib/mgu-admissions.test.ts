@@ -83,6 +83,7 @@ describe("МГУ: правила кампании 2026", () => {
         Информатика: 39,
       },
       dviScore: 100,
+      dviProgramSlug: program.slug,
       individualAchievements: 0,
       updatedAt: "2026-09-14",
     });
@@ -93,6 +94,7 @@ describe("МГУ: правила кампании 2026", () => {
   it("не допускает ДВИ ниже порога и некорректные результаты", () => {
     const economics = programs.find((p) => p.slug === "mgu-economics")!;
     const profile = {
+      dviProgramSlug: economics.slug,
       id: "test",
       name: "test",
       scores: {
@@ -139,16 +141,53 @@ describe("МГУ: правила кампании 2026", () => {
           Обществознание: 100,
         },
         dviScore: 100,
+        dviProgramSlug: economics.slug,
         individualAchievements: 10,
         updatedAt: "2026-09-14",
       },
     );
-    expect(result.consideredScore).toBeNull();
+    expect(result.consideredScore).not.toBeNull();
+    expect(result.margin).toBeNull();
     expect(result.missing.join(" ")).toContain("шкала");
   });
 });
 
 describe("МГУ: факультетские сведения", () => {
+  it("сохраняет семилетнюю медицину и не переносит цену иностранцев на граждан РФ", () => {
+    const medicine = mguCatalogPrograms.find(
+      (p) =>
+        p.faculty === "Факультет фундаментальной медицины" &&
+        p.code === "31.05.01",
+    )!;
+    const evidence = getMguDetails(medicine);
+    expect(evidence.duration.value).toBe("7 лет");
+    expect(evidence.duration.sourceUrl).toContain(
+      "567208268342-lechebnoe-delo",
+    );
+    expect(evidence.tuition.value).toBe(724000);
+    expect(evidence.tuition.sourceUrl).toBe(
+      "http://www.fbm.msu.ru/admissions/reception-committee/",
+    );
+    for (const program of mguCatalogPrograms.filter(
+      (p) => p.faculty === "Факультет иностранных языков и регионоведения",
+    ))
+      expect(getMguDetails(program).tuition.value).toBe(557580);
+  });
+  it("не угадывает неоднозначную цену ИСАА и различает тарифы географического факультета", () => {
+    const isaa = mguCatalogPrograms.find((p) => p.code === "58.03.01")!;
+    expect(getMguDetails(isaa).tuition.value).toBeNull();
+    expect(getMguDetails(isaa).tuition.status).toBe("pending_review");
+    const geography = mguCatalogPrograms.filter(
+      (p) => p.faculty === "Географический факультет",
+    );
+    expect(geography).toHaveLength(2);
+    for (const program of geography) {
+      expect(getMguDetails(program).tuition.value).toBe(
+        program.code === "43.03.02" ? 557580 : 593530,
+      );
+      expect(getMguDetails(program).duration.value).toBe("4 года");
+    }
+  });
   it("сохраняет точные идентичности и контакты всех факультетов", () => {
     expect(details.programs).toHaveLength(85);
     expect(contacts.contacts).toHaveLength(39);
@@ -187,7 +226,7 @@ describe("МГУ: факультетские сведения", () => {
     for (const record of details.programs) {
       for (const field of [record.tuition, record.duration]) {
         if (!field) continue;
-        expect(field.sourceUrl).toMatch(/^https:\/\//);
+        expect(field.sourceUrl).toMatch(/^https?:\/\//);
         expect(field.sourceSection.length).toBeGreaterThan(10);
       }
     }

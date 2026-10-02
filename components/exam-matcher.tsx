@@ -1,9 +1,20 @@
 "use client";
 
+import { AdditionalExamInputs } from "./additional-exam-inputs";
+import { MatchExplanation } from "./match-explanation";
+import { scoreSetSchema } from "@/lib/user-state/validation";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { EXAM_SUBJECTS, MATCH_LABELS } from "@/lib/admissions/constants";
+import {
+  EXAM_SUBJECTS,
+  MATCH_LABELS,
+  ELIGIBILITY_LABELS,
+} from "@/lib/admissions/constants";
 import { groupMatches } from "@/lib/admissions/matching";
+import {
+  selectScoreSubjects,
+  updateScoreInput,
+} from "@/lib/admissions/score-input";
 import { useUserState } from "@/components/user-state-provider";
 import type { ScoreSet } from "@/lib/admissions/types";
 import type { Program } from "@/lib/data";
@@ -30,6 +41,7 @@ export function ExamMatcher({
     "Информатика",
   ]);
   const { scoreSets: saved, saveScoreSet, removeScoreSet } = useUserState();
+  const [saveError, setSaveError] = useState("");
   const [showResults, setShowResults] = useState(false);
   const results = useMemo(
     () => groupMatches(programs, profile),
@@ -37,20 +49,20 @@ export function ExamMatcher({
   );
 
   function toggleSubject(subject: string) {
-    setSelected((current) =>
-      current.includes(subject)
-        ? current.filter((item) => item !== subject)
-        : [...current, subject],
-    );
-  }
-
-  function setScore(subject: string, value: number) {
+    const next = selected.includes(subject)
+      ? selected.filter((item) => item !== subject)
+      : [...selected, subject];
+    setSelected(next);
     setProfile((current) => ({
       ...current,
-      scores: {
-        ...current.scores,
-        [subject]: Math.max(0, Math.min(100, value || 0)),
-      },
+      scores: selectScoreSubjects(current.scores, next),
+    }));
+  }
+
+  function setScore(subject: string, value: string) {
+    setProfile((current) => ({
+      ...current,
+      scores: updateScoreInput(current.scores, subject, value),
       updatedAt: new Date().toISOString(),
     }));
   }
@@ -62,7 +74,13 @@ export function ExamMatcher({
       name: profile.name.trim() || `Набор ${saved.length + 1}`,
       updatedAt: new Date().toISOString(),
     };
-    saveScoreSet(item);
+    const parsed = scoreSetSchema.safeParse(item);
+    if (!parsed.success) {
+      setSaveError("Проверьте баллы и название набора.");
+      return;
+    }
+    setSaveError("");
+    saveScoreSet(parsed.data);
     setProfile(item);
   }
 
@@ -115,6 +133,7 @@ export function ExamMatcher({
                 onClick={() => {
                   removeScoreSet(profile.id);
                   setProfile(makeInitial());
+                  setSelected(Object.keys(makeInitial().scores));
                 }}
               >
                 Удалить набор
@@ -147,10 +166,8 @@ export function ExamMatcher({
               min="0"
               max="100"
               inputMode="numeric"
-              value={profile.scores[subject] ?? 0}
-              onChange={(event) =>
-                setScore(subject, Number(event.target.value))
-              }
+              value={profile.scores[subject] ?? ""}
+              onChange={(event) => setScore(subject, event.target.value)}
             />
             <small>из 100</small>
           </label>
@@ -167,34 +184,18 @@ export function ExamMatcher({
             onChange={(event) =>
               setProfile((current) => ({
                 ...current,
-                individualAchievements: Math.max(
-                  0,
-                  Math.min(10, Number(event.target.value) || 0),
-                ),
-              }))
-            }
-          />
-        </label>
-        <label>
-          ДВИ, если сдаёте
-          <input
-            type="number"
-            min="0"
-            max="100"
-            value={profile.dviScore ?? ""}
-            placeholder="не введён"
-            onChange={(event) =>
-              setProfile((current) => ({
-                ...current,
-                dviScore:
-                  event.target.value === ""
-                    ? undefined
-                    : Number(event.target.value),
+                individualAchievements: Number(event.target.value),
               }))
             }
           />
         </label>
       </div>
+      <AdditionalExamInputs
+        programs={programs}
+        profile={profile}
+        onChange={setProfile}
+      />
+      {saveError && <p role="alert">{saveError}</p>}
       <div className="matcher-actions">
         <button
           type="button"
@@ -239,6 +240,7 @@ export function ExamMatcher({
             >
               <div>
                 <span className="match-label">
+                  {ELIGIBILITY_LABELS[match.eligibility]} ·{" "}
                   {MATCH_LABELS[match.category]}
                 </span>
                 <h4>
@@ -269,14 +271,7 @@ export function ExamMatcher({
               </div>
               <details>
                 <summary>Почему такой результат</summary>
-                {match.reasons.map((reason) => (
-                  <p key={reason}>✓ {reason}</p>
-                ))}
-                {match.missing.map((reason) => (
-                  <p className="match-missing" key={reason}>
-                    ! {reason}
-                  </p>
-                ))}
+                <MatchExplanation match={match} />
                 <p>Полнота карточки: {program.trust.completeness}%.</p>
               </details>
             </article>

@@ -1,5 +1,6 @@
 import type { ScoreSet } from "./types";
 import type { UserState } from "@/lib/user-state/types";
+import { scoreSetSchema } from "@/lib/user-state/validation";
 
 export const STORAGE_KEYS = {
   catalogView: "postupai:catalog-view",
@@ -34,12 +35,18 @@ export function readScoreSets(): ScoreSet[] {
       window.localStorage.getItem(STORAGE_KEYS.scoreSets) ?? "[]",
     );
     return Array.isArray(value)
-      ? value.filter(
-          (item) =>
-            item &&
-            typeof item.id === "string" &&
-            typeof item.scores === "object",
-        )
+      ? value
+          .flatMap((item) => {
+            if (!item || typeof item !== "object") return [];
+            const updatedAt =
+              typeof item.updatedAt === "string" &&
+              /^\d{4}-\d{2}-\d{2}$/.test(item.updatedAt)
+                ? `${item.updatedAt}T00:00:00.000Z`
+                : item.updatedAt;
+            const parsed = scoreSetSchema.safeParse({ ...item, updatedAt });
+            return parsed.success ? [parsed.data] : [];
+          })
+          .slice(0, 8)
       : [];
   } catch {
     return [];
