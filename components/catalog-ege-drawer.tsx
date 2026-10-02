@@ -2,7 +2,8 @@
 
 import { AdditionalExamInputs } from "./additional-exam-inputs";
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useModalFocus } from "./use-modal-focus";
+import { useRef, useMemo, useState } from "react";
 import { EXAM_SUBJECTS, MATCH_LABELS } from "@/lib/admissions/constants";
 import { groupMatches } from "@/lib/admissions/matching";
 import { updateScoreInput } from "@/lib/admissions/score-input";
@@ -30,17 +31,8 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
   >({});
   const [showResults, setShowResults] = useState(false);
 
-  useEffect(() => {
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
-    };
-    document.addEventListener("keydown", onKeyDown);
-    document.body.classList.add("drawer-open");
-    return () => {
-      document.removeEventListener("keydown", onKeyDown);
-      document.body.classList.remove("drawer-open");
-    };
-  }, [onClose]);
+  const panelRef = useRef<HTMLElement>(null);
+  useModalFocus(panelRef, true, onClose);
 
   const profile = useMemo<ScoreSet>(
     () => ({
@@ -83,10 +75,13 @@ export function CatalogEgeDrawer({ programs, onApply, onClose }: Props) {
       <button
         type="button"
         className="ege-drawer-backdrop"
+        tabIndex={-1}
         aria-label="Закрыть подбор по ЕГЭ"
         onClick={onClose}
       />
       <section
+        ref={panelRef}
+        tabIndex={-1}
         className="ege-drawer"
         role="dialog"
         aria-modal="true"

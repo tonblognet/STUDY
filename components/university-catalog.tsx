@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { universityViewSchema } from "@/lib/catalog/view-state";
+import { useSavedFilters } from "./use-saved-filters";
 import type { University } from "@/lib/data";
 import type { directoryEvidenceSummary } from "@/lib/university-directory-details";
 import { UniversityLogo } from "./university-logo";
@@ -10,7 +11,9 @@ const PAGE_SIZE = 24;
 
 export function UniversityCatalog({
   entries,
+  initialView,
 }: {
+  initialView?: string;
   entries: Array<
     University & {
       catalogProgramCount: number;
@@ -20,10 +23,23 @@ export function UniversityCatalog({
     }
   >;
 }) {
-  const [query, setQuery] = useState("");
-  const [ownership, setOwnership] = useState("all");
-  const [detailsFilter, setDetailsFilter] = useState("all");
-  const [limit, setLimit] = useState(PAGE_SIZE);
+  const [view, setView] = useSavedFilters(
+    "/universities",
+    universityViewSchema,
+    "",
+    initialView,
+  );
+  const { query, ownership, detailsFilter, limit } = view;
+  function update<K extends keyof typeof view>(
+    key: K,
+    value: (typeof view)[K],
+  ) {
+    setView((current) => ({
+      ...current,
+      [key]: value,
+      ...(key === "limit" ? {} : { limit: PAGE_SIZE }),
+    }));
+  }
   const normalizedQuery = query
     .trim()
     .toLocaleLowerCase("ru")
@@ -46,12 +62,12 @@ export function UniversityCatalog({
         <label>
           Найти вуз
           <input
+            maxLength={200}
             type="search"
             value={query}
             placeholder="Название, сокращение или адрес"
             onChange={(event) => {
-              setQuery(event.target.value);
-              setLimit(PAGE_SIZE);
+              update("query", event.target.value);
             }}
           />
         </label>
@@ -60,8 +76,7 @@ export function UniversityCatalog({
           <select
             value={ownership}
             onChange={(event) => {
-              setOwnership(event.target.value);
-              setLimit(PAGE_SIZE);
+              update("ownership", event.target.value as typeof ownership);
             }}
           >
             <option value="all">Все вузы</option>
@@ -74,8 +89,10 @@ export function UniversityCatalog({
           <select
             value={detailsFilter}
             onChange={(event) => {
-              setDetailsFilter(event.target.value);
-              setLimit(PAGE_SIZE);
+              update(
+                "detailsFilter",
+                event.target.value as typeof detailsFilter,
+              );
             }}
           >
             <option value="all">Все карточки</option>
@@ -88,6 +105,9 @@ export function UniversityCatalog({
           Найдено: {filtered.length} из {entries.length}
         </p>
       </div>
+      <p className="filter-persistence-note">
+        Поиск и фильтры сохраняются при возвращении в каталог.
+      </p>
       <div className="university-grid">
         {filtered.slice(0, limit).map((u) => (
           <article className="university-card university-card-rich" key={u.id}>
@@ -106,7 +126,9 @@ export function UniversityCatalog({
             </div>
             <div>
               <h2>
-                <Link href={`/universities/${u.slug}`}>{u.name}</Link>
+                <Link prefetch={false} href={`/universities/${u.slug}`}>
+                  {u.name}
+                </Link>
               </h2>
               <p>{u.description}</p>
             </div>
@@ -155,10 +177,7 @@ export function UniversityCatalog({
           <button
             className="button button-secondary"
             onClick={() => {
-              setQuery("");
-              setOwnership("all");
-              setDetailsFilter("all");
-              setLimit(PAGE_SIZE);
+              setView(universityViewSchema.parse({}));
             }}
           >
             Сбросить поиск
@@ -168,7 +187,7 @@ export function UniversityCatalog({
       {limit < filtered.length && (
         <button
           className="button button-secondary university-directory-more"
-          onClick={() => setLimit(limit + PAGE_SIZE)}
+          onClick={() => update("limit", limit + PAGE_SIZE)}
         >
           Показать ещё · {Math.min(PAGE_SIZE, filtered.length - limit)}
         </button>

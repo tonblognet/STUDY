@@ -43,6 +43,46 @@ after(() => {
   server?.kill();
 });
 
+test("public journeys have one main landmark and a keyboard skip link", async () => {
+  for (const route of [
+    "/programs",
+    "/universities",
+    "/universities/mgu",
+    "/programs/hse-economics",
+    "/match",
+    "/compare",
+  ]) {
+    const response = await fetch(`${base}${route}`);
+    assert.equal(response.status, 200, route);
+    const html = await response.text();
+    assert.equal((html.match(/<main(?:\s|>)/g) ?? []).length, 1, route);
+    assert.match(html, /id="main-content"/);
+    assert.match(html, /href="#main-content"/);
+  }
+});
+
+test("shared filters are applied before hydration and invalid URLs recover", async () => {
+  for (const [route, filters] of [
+    ["/programs", { query: "no-such-program-xyz" }],
+    ["/universities", { query: "no-such-university-xyz" }],
+  ]) {
+    const html = await (
+      await fetch(
+        `${base}${route}?filters=${encodeURIComponent(JSON.stringify(filters))}`,
+      )
+    ).text();
+    assert.match(
+      html,
+      route === "/programs"
+        ? /Подходящих программ не найдено/
+        : /Вуз не найден/,
+    );
+    assert.match(html, /value="no-such-/);
+  }
+  const invalid = await (await fetch(`${base}/programs?filters=null`)).text();
+  assert.match(invalid, /Найдено <!-- -->185/);
+});
+
 test("university profiles render admissions links and distinct commission contacts", async () => {
   const response = await fetch(`${base}/universities/inpsycho`);
   assert.equal(response.status, 200);
@@ -93,6 +133,8 @@ test("MGU page exposes sourced contest groups, archive and opt-in map", async ()
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Найдите своё направление/);
+  assert.equal((html.match(/class="mgu-program"/g) ?? []).length, 12);
+  assert.match(html, /Показать ещё программы/);
   assert.match(html, /2011–2025/);
   assert.match(html, /kcp_bak.pdf/);
   assert.match(html, /Год поступления/);

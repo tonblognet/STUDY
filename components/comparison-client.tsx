@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
+import { PageLoading, PageState } from "./page-state";
 import { DataStatusBadge } from "@/components/data-status";
 import { useUserState } from "@/components/user-state-provider";
 import type { Program } from "@/lib/data";
@@ -106,26 +107,14 @@ export function ComparisonClient({ programs }: { programs: Program[] }) {
   );
 
   if (storageMode === "loading")
-    return (
-      <div className="empty-page" role="status">
-        <span>Загружаем сравнение</span>
-        <h1>Проверяем сохранённые программы…</h1>
-      </div>
-    );
+    return <PageLoading label="Проверяем сохранённые программы" />;
 
   if (!selected.length)
     return (
-      <div className="empty-page">
-        <span>Сравнение пусто</span>
-        <h1>Добавьте программы из каталога</h1>
-        <p>
-          В таблицу попадут только выбранные вами программы; неизвестные
-          значения останутся неизвестными.
-        </p>
-        <Link className="button button-primary" href="/programs">
-          Открыть каталог
-        </Link>
-      </div>
+      <PageState
+        title="Добавьте программы для сравнения"
+        description="Выберите программы в каталоге кнопкой «Сравнить» или отметьте их в списке. Здесь появится таблица условий с источниками."
+      />
     );
 
   return (
@@ -138,17 +127,29 @@ export function ComparisonClient({ programs }: { programs: Program[] }) {
           отмечает различия, а статус объясняет качество значения.
         </p>
       </header>
+      <div className="journey-actions">
+        <Link className="button button-secondary" href="/programs">
+          Добавить программы
+        </Link>
+        <Link className="button button-primary" href="/match">
+          Проверить мои баллы
+        </Link>
+      </div>
       <div
+        role="region"
         className="comparison-wrap"
         tabIndex={0}
         aria-label="Сравнение программ. Доступна горизонтальная и вертикальная прокрутка."
       >
         <table className="comparison-table">
+          <caption className="sr-only">
+            Условия выбранных программ с годом и статусом данных
+          </caption>
           <thead>
             <tr>
-              <th>Показатель</th>
+              <th scope="col">Показатель</th>
               {selected.map((program) => (
-                <th key={program.id}>
+                <th scope="col" key={program.id}>
                   <button
                     type="button"
                     onClick={() => removeFromComparison(program.id)}
@@ -185,8 +186,9 @@ export function ComparisonClient({ programs }: { programs: Program[] }) {
         </table>
       </div>
       <p className="compare-note">
-        Архитектура таблицы отделяет строки показателей от колонок программ; это
-        позволит позже сформировать PDF из тех же нормализованных данных.
+        Перед подачей документов сверьте условия в карточке программы и на
+        официальном сайте вуза. Неизвестные значения не означают отсутствие
+        мест.
       </p>
     </div>
   );

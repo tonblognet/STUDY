@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Brand } from "@/components/brand";
 
 export function HeaderClient({
@@ -13,6 +13,18 @@ export function HeaderClient({
   displayName?: string | null;
 }) {
   const [open, setOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setOpen(false);
+        menuButton.current?.focus();
+      }
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
   const pathname = usePathname();
   const links = [
     ["/universities", "Вузы"],
@@ -62,6 +74,7 @@ export function HeaderClient({
             Подобрать программу
           </Link>
           <button
+            ref={menuButton}
             className="menu-button"
             type="button"
             onClick={() => setOpen(!open)}

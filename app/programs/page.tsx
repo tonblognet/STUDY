@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { CatalogClient } from "@/components/catalog-client";
 import { getCatalog } from "@/lib/catalog/server";
+import {
+  initialView,
+  programViewSchema,
+  type ViewSearch,
+} from "@/lib/catalog/view-state";
 
 export const metadata: Metadata = {
   title: "Программы московских вузов",
@@ -11,9 +16,9 @@ export const metadata: Metadata = {
 export default async function ProgramsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<ViewSearch>;
 }) {
-  const { q = "" } = await searchParams;
+  const params = await searchParams;
   const { programs, universities } = await getCatalog();
   return (
     <div className="catalog-page container">
@@ -26,7 +31,7 @@ export default async function ProgramsPage({
         </p>
         <div className="catalog-title-facts" aria-label="О каталоге">
           <span>
-            <b>{programs.length}</b> программа
+            Программ: <b>{programs.length}</b>
           </span>
           <span>
             <b>2026</b> год данных
@@ -42,7 +47,7 @@ export default async function ProgramsPage({
       <CatalogClient
         universities={universities}
         items={programs}
-        initialQuery={q}
+        initialView={initialView(programViewSchema, params)}
       />
     </div>
   );

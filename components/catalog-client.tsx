@@ -2,11 +2,13 @@
 
 import { isCurrentFact } from "@/lib/admissions/exams";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 import { CatalogEgeDrawer } from "@/components/catalog-ege-drawer";
 import { UniversityLogo } from "@/components/university-logo";
 import { useUserState } from "@/components/user-state-provider";
-import type { DataStatus } from "@/lib/admissions/types";
+import { programViewSchema } from "@/lib/catalog/view-state";
+import { useSavedFilters } from "./use-saved-filters";
+import { useModalFocus } from "./use-modal-focus";
 import type { Program, University } from "@/lib/data";
 import { formatPrice } from "@/lib/catalog/format";
 
@@ -17,28 +19,60 @@ export function CatalogClient({
   items,
   universities,
   initialQuery = "",
+  initialView,
 }: {
   items: Program[];
   universities: University[];
   initialQuery?: string;
+  initialView?: string;
 }) {
-  const [query, setQuery] = useState(initialQuery);
-  const [subjects, setSubjects] = useState<string[]>([]);
-  const [onlyBudget, setOnlyBudget] = useState(false);
+  const [view, setView] = useSavedFilters(
+    "/programs",
+    programViewSchema,
+    initialQuery,
+    initialView,
+  );
+  const {
+    query,
+    subjects,
+    onlyBudget,
+    maxScore,
+    maxPrice,
+    form,
+    hostel,
+    militaryCenter,
+    university,
+    level,
+    dataStatus,
+    sort,
+    limit,
+  } = view;
+  function update<K extends keyof typeof view>(
+    key: K,
+    value: (typeof view)[K],
+  ) {
+    setView((current) => ({
+      ...current,
+      [key]: value,
+      ...(key === "limit" ? {} : { limit: 24 }),
+    }));
+  }
   const scoreLimit = Math.max(
     300,
     ...items.map((item) => Math.ceil((item.passingScore ?? 0) / 5) * 5),
   );
-  const [maxScore, setMaxScore] = useState<number | null>(null);
-  const [maxPrice, setMaxPrice] = useState(MAX_CATALOG_PRICE);
-  const [form, setForm] = useState("Любая");
-  const [hostel, setHostel] = useState("Любое");
-  const [militaryCenter, setMilitaryCenter] = useState("Любое");
-  const [university, setUniversity] = useState("Все вузы");
-  const [level, setLevel] = useState("Любой");
-  const [dataStatus, setDataStatus] = useState("Любой");
-  const [sort, setSort] = useState<Sort>("quality");
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const filterRef = useRef<HTMLElement>(null);
+  useModalFocus(filterRef, filtersOpen, () => setFiltersOpen(false));
+  useEffect(() => {
+    if (!filtersOpen) return;
+    const desktop = window.matchMedia("(min-width: 761px)");
+    const closeOnDesktop = (event: MediaQueryListEvent) => {
+      if (event.matches) setFiltersOpen(false);
+    };
+    desktop.addEventListener("change", closeOnDesktop);
+    return () => desktop.removeEventListener("change", closeOnDesktop);
+  }, [filtersOpen]);
   const [matcherOpen, setMatcherOpen] = useState(false);
   const [matchedIds, setMatchedIds] = useState<string[] | null>(null);
   const [matchLabel, setMatchLabel] = useState("");
@@ -156,24 +190,15 @@ export function CatalogClient({
   ]);
 
   function toggleSubject(subject: string) {
-    setSubjects((current) =>
-      current.includes(subject)
-        ? current.filter((item) => item !== subject)
-        : [...current, subject],
+    update(
+      "subjects",
+      subjects.includes(subject)
+        ? subjects.filter((item) => item !== subject)
+        : [...subjects, subject],
     );
   }
-
   function reset() {
-    setSubjects([]);
-    setOnlyBudget(false);
-    setMaxScore(null);
-    setMaxPrice(MAX_CATALOG_PRICE);
-    setForm("Любая");
-    setHostel("Любое");
-    setMilitaryCenter("Любое");
-    setUniversity("Все вузы");
-    setLevel("Любой");
-    setDataStatus("Любой");
+    setView(programViewSchema.parse({}));
     setMatchedIds(null);
     setMatchLabel("");
   }
@@ -192,8 +217,9 @@ export function CatalogClient({
             <path d="m20 20-4-4" />
           </svg>
           <input
+            maxLength={200}
             value={query}
-            onChange={(event) => setQuery(event.target.value)}
+            onChange={(event) => update("query", event.target.value)}
             placeholder="Название программы, направление или вуз"
           />
         </label>
@@ -209,6 +235,8 @@ export function CatalogClient({
       <button
         className="mobile-filter-button"
         type="button"
+        aria-expanded={filtersOpen}
+        aria-controls="program-filters"
         onClick={() => setFiltersOpen(true)}
       >
         <FilterIcon />
@@ -216,6 +244,11 @@ export function CatalogClient({
       </button>
       <div className="catalog-shell">
         <aside
+          ref={filterRef}
+          id="program-filters"
+          role={filtersOpen ? "dialog" : undefined}
+          aria-modal={filtersOpen || undefined}
+          tabIndex={-1}
           className={filtersOpen ? "filter-rail open" : "filter-rail"}
           aria-label="Фильтры программ"
         >
@@ -230,7 +263,7 @@ export function CatalogClient({
           </div>
           <FilterGroup title="Предметы ЕГЭ">
             <div className="check-list">
-              {subjectOptions.slice(0, 7).map((subject) => (
+              {subjectOptions.map((subject) => (
                 <label key={subject}>
                   <input
                     type="checkbox"
@@ -244,8 +277,9 @@ export function CatalogClient({
           </FilterGroup>
           <FilterGroup title="Вуз">
             <select
+              aria-label="Вуз"
               value={university}
-              onChange={(event) => setUniversity(event.target.value)}
+              onChange={(event) => update("university", event.target.value)}
             >
               <option>Все вузы</option>
               {universityOptions.map((item) => (
@@ -257,8 +291,11 @@ export function CatalogClient({
           </FilterGroup>
           <FilterGroup title="Уровень образования">
             <select
+              aria-label="Уровень образования"
               value={level}
-              onChange={(event) => setLevel(event.target.value)}
+              onChange={(event) =>
+                update("level", event.target.value as typeof level)
+              }
             >
               <option>Любой</option>
               <option>Бакалавриат</option>
@@ -270,7 +307,7 @@ export function CatalogClient({
               <input
                 type="checkbox"
                 checked={onlyBudget}
-                onChange={(event) => setOnlyBudget(event.target.checked)}
+                onChange={(event) => update("onlyBudget", event.target.checked)}
               />
               <span>Только с бюджетными местами</span>
             </label>
@@ -285,9 +322,11 @@ export function CatalogClient({
                 min="150"
                 max={scoreLimit}
                 step="5"
+                aria-label="Максимальный проходной балл"
                 value={maxScore ?? scoreLimit}
                 onChange={(event) =>
-                  setMaxScore(
+                  update(
+                    "maxScore",
                     Number(event.target.value) === scoreLimit
                       ? null
                       : Number(event.target.value),
@@ -306,15 +345,21 @@ export function CatalogClient({
                 min="100000"
                 max={MAX_CATALOG_PRICE}
                 step="25000"
+                aria-label="Максимальная стоимость года"
                 value={maxPrice}
-                onChange={(event) => setMaxPrice(Number(event.target.value))}
+                onChange={(event) =>
+                  update("maxPrice", Number(event.target.value))
+                }
               />
             </label>
           </FilterGroup>
           <FilterGroup title="Форма обучения">
             <select
+              aria-label="Форма обучения"
               value={form}
-              onChange={(event) => setForm(event.target.value)}
+              onChange={(event) =>
+                update("form", event.target.value as typeof form)
+              }
             >
               <option>Любая</option>
               <option>Очная</option>
@@ -324,8 +369,11 @@ export function CatalogClient({
           </FilterGroup>
           <FilterGroup title="Общежитие">
             <select
+              aria-label="Общежитие"
               value={hostel}
-              onChange={(event) => setHostel(event.target.value)}
+              onChange={(event) =>
+                update("hostel", event.target.value as typeof hostel)
+              }
             >
               <option>Любое</option>
               <option>Есть</option>
@@ -334,8 +382,14 @@ export function CatalogClient({
           </FilterGroup>
           <FilterGroup title="Военный учебный центр">
             <select
+              aria-label="Военный учебный центр"
               value={militaryCenter}
-              onChange={(event) => setMilitaryCenter(event.target.value)}
+              onChange={(event) =>
+                update(
+                  "militaryCenter",
+                  event.target.value as typeof militaryCenter,
+                )
+              }
             >
               <option>Любое</option>
               <option>Есть</option>
@@ -348,9 +402,10 @@ export function CatalogClient({
           </FilterGroup>
           <FilterGroup title="Статус данных">
             <select
+              aria-label="Статус данных"
               value={dataStatus}
               onChange={(event) =>
-                setDataStatus(event.target.value as DataStatus | "Любой")
+                update("dataStatus", event.target.value as typeof dataStatus)
               }
             >
               <option>Любой</option>
@@ -371,18 +426,21 @@ export function CatalogClient({
           </button>
         </aside>
 
-        <section className="program-results" aria-live="polite">
+        <section
+          className="program-results"
+          aria-label="Результаты поиска программ"
+        >
           <div className="results-toolbar">
-            <strong>
+            <strong role="status">
               Найдено {filtered.length} {pluralize(filtered.length)}
             </strong>
             <label>
               <span className="sr-only">Сортировка</span>
               <select
                 value={sort}
-                onChange={(event) => setSort(event.target.value as Sort)}
+                onChange={(event) => update("sort", event.target.value as Sort)}
               >
-                <option value="quality">По соответствию</option>
+                <option value="quality">По полноте данных</option>
                 <option value="score">Сначала ниже балл</option>
                 <option value="price">Сначала дешевле</option>
                 <option value="places">Больше бюджетных мест</option>
@@ -427,13 +485,16 @@ export function CatalogClient({
           </div>
           {filtered.length ? (
             <div className="program-list">
-              {filtered.map((program) => {
+              {filtered.slice(0, limit).map((program) => {
                 const isFavorite = favoriteIds.includes(program.id);
                 const inComparison = comparisonIds.includes(program.id);
-                const itemSubjects = program.examRequirements
-                  .flatMap((requirement) => requirement.subjects)
-                  .concat(program.subjects)
-                  .slice(0, 3);
+                const itemSubjects = [
+                  ...new Set(
+                    program.examRequirements
+                      .flatMap((requirement) => requirement.subjects)
+                      .concat(program.subjects),
+                  ),
+                ].slice(0, 3);
                 return (
                   <article
                     className={
@@ -453,6 +514,7 @@ export function CatalogClient({
                     </label>
                     <Link
                       className="program-name"
+                      prefetch={false}
                       href={`/programs/${program.slug}`}
                     >
                       {universities.find(
@@ -520,6 +582,7 @@ export function CatalogClient({
                     </button>
                     <Link
                       className="row-arrow"
+                      prefetch={false}
                       href={`/programs/${program.slug}`}
                       aria-label={`Открыть ${program.title}`}
                     >
@@ -545,6 +608,19 @@ export function CatalogClient({
               </button>
             </div>
           )}
+          {limit < filtered.length && (
+            <button
+              type="button"
+              className="button button-secondary catalog-more"
+              onClick={() => update("limit", limit + 24)}
+            >
+              Показать ещё · {Math.min(24, filtered.length - limit)}
+            </button>
+          )}
+          <p className="filter-persistence-note">
+            Фильтры сохраняются в этом браузере и в адресе страницы. Баллы ЕГЭ в
+            ссылку не входят.
+          </p>
         </section>
       </div>
 
@@ -576,6 +652,7 @@ export function CatalogClient({
       {filtersOpen && (
         <button
           className="filter-backdrop"
+          tabIndex={-1}
           aria-label="Закрыть фильтры"
           onClick={() => setFiltersOpen(false)}
         />

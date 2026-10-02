@@ -49,7 +49,9 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
         <nav aria-label="Хлебные крошки">
           <Link href="/programs">Каталог</Link>
           <span>→</span>
-          <span>{program.universityShort}</span>
+          <Link href={`/universities/${program.universitySlug}`}>
+            {program.universityShort}
+          </Link>
         </nav>
         <div className="program-hero-grid">
           <div>
