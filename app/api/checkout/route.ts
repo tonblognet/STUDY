@@ -1,130 +1,49 @@
-import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { prisma } from "@/db";
-import { getSessionUser } from "@/lib/auth/session";
-import { customerKey, initTbankPayment } from "@/lib/payments/tbank";
-import { hasValidOrigin } from "@/lib/security/request";
+import { readBoundedJson } from "@/lib/security/body";
+import { checkRateLimit } from "@/lib/security/rate-limit";
+import {
+  attemptKeySchema,
+  billingAccess,
+  billingFailure,
+} from "@/lib/payments/http";
+import { BillingError } from "@/lib/payments/errors";
+import { startCheckout } from "@/lib/payments/service";
 
-const requestSchema = z.object({
-  planCode: z.string().regex(/^[a-z0-9_]{1,48}$/),
-});
-
+const schema = z
+  .object({ planCode: z.string().regex(/^[a-z0-9_]{1,48}$/) })
+  .strict();
 export async function POST(request: Request) {
-  if (!hasValidOrigin(request))
-    return NextResponse.json(
-      { error: "Некорректный источник запроса" },
-      { status: 403 },
-    );
-  const user = await getSessionUser();
-  if (!user)
-    return NextResponse.json(
-      { error: "Сначала войдите в аккаунт." },
-      { status: 401 },
-    );
-  const parsed = requestSchema.safeParse(
-    await request.json().catch(() => null),
-  );
-  if (!parsed.success)
-    return NextResponse.json({ error: "Неизвестный тариф." }, { status: 400 });
-  const product = await prisma.product.findFirst({
-    where: { code: parsed.data.planCode, active: true, purchasable: true },
-  });
-  if (!product)
-    return NextResponse.json({ error: "Тариф недоступен." }, { status: 404 });
-
-  if (
-    process.env.PAYMENT_PROVIDER !== "tbank" ||
-    process.env.PAYMENTS_LIVE !== "true"
-  ) {
-    return NextResponse.json(
-      {
-        error:
-          "Боевые платежи ещё не включены. Доступ не активируется без подтверждённой оплаты.",
-      },
-      { status: 503 },
-    );
-  }
-  const terminalKey = process.env.TBANK_TERMINAL_KEY;
-  const password = process.env.TBANK_PASSWORD;
-  const siteUrl = process.env.APP_URL;
-  const notificationUrl = process.env.TBANK_NOTIFICATION_URL;
-  if (
-    !terminalKey ||
-    !password ||
-    !siteUrl ||
-    !notificationUrl ||
-    process.env.TBANK_FISCALIZATION_READY !== "true"
-  ) {
-    return NextResponse.json(
-      { error: "Платёжный контур не прошёл обязательную настройку." },
-      { status: 503 },
-    );
-  }
-
-  const idempotencyKey = request.headers.get("idempotency-key") ?? randomUUID();
-  const payment = await prisma.payment.upsert({
-    where: { idempotencyKey },
-    update: {},
-    create: {
-      userId: user.id,
-      productId: product.id,
-      idempotencyKey,
-      amount: product.price,
-      currency: product.currency,
-      status: "PENDING",
-      description: product.code,
-    },
-  });
-  if (payment.providerPaymentId)
-    return NextResponse.json(
-      {
-        error:
-          "Этот checkout уже создан. Начните оплату повторно из списка платежей.",
-      },
-      { status: 409 },
-    );
-
   try {
-    const result = await initTbankPayment(
-      {
-        TerminalKey: terminalKey,
-        Amount: product.price,
-        OrderId: payment.id,
-        Description: product.name,
-        CustomerKey: customerKey(user.id),
-        NotificationURL: notificationUrl,
-        SuccessURL: `${siteUrl}/account?payment=success`,
-        FailURL: `${siteUrl}/pricing?payment=failed`,
-        DATA: { Email: user.email, planCode: product.code },
-      },
-      { password, apiUrl: process.env.TBANK_API_URL },
+    const access = await billingAccess(request, true);
+    const key = attemptKeySchema.safeParse(
+      request.headers.get("idempotency-key"),
     );
-    await prisma.payment.update({
-      where: { id: payment.id },
-      data: {
-        providerPaymentId: result.PaymentId,
-        providerStatus: result.Status,
-      },
-    });
-    return NextResponse.json({
-      paymentUrl: result.PaymentURL,
-      paymentId: result.PaymentId,
+    const input = schema.safeParse(await readBoundedJson(request, 4096));
+    if (!key.success || !input.success)
+      throw new BillingError(
+        400,
+        "CHECKOUT_INPUT",
+        "Обновите страницу и выберите тариф.",
+      );
+    if (
+      !(await checkRateLimit(`checkout:${access.user.id}`, 60, 3600000)).allowed
+    )
+      throw new BillingError(
+        429,
+        "RATE_LIMIT",
+        "Слишком много попыток. Повторите позже.",
+      );
+    const result = await startCheckout(access, input.data.planCode, key.data);
+    return NextResponse.json(result, {
+      status:
+        result.paymentUrl ||
+        result.payment.status !== "PENDING" ||
+        result.payment.attemptState === "REJECTED"
+          ? 200
+          : 202,
     });
   } catch (error) {
-    await prisma.payment.update({
-      where: { id: payment.id },
-      data: { status: "FAILED", providerStatus: "INIT_ERROR" },
-    });
-    console.error("Payment initialization failed", {
-      paymentId: payment.id,
-      error: error instanceof Error ? error.name : "unknown",
-    });
-    return NextResponse.json(
-      {
-        error: "Не удалось открыть защищённую форму оплаты. Попробуйте позже.",
-      },
-      { status: 502 },
-    );
+    return billingFailure(error);
   }
 }

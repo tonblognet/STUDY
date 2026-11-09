@@ -1,0 +1,198 @@
+.center {
+  display: grid;
+  gap: 42px;
+  min-width: 0;
+}
+.pageContent {
+  display: grid;
+  gap: 48px;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.2fr);
+  gap: 24px;
+  align-items: start;
+}
+.list,
+.thread {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+}
+.list h2,
+.thread h2 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+.filters,
+.toolbar,
+.pagination,
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.filters {
+  margin-bottom: 18px;
+}
+.filters label {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+}
+.filters label:last-child {
+  display: flex;
+  align-items: center;
+}
+.filters select {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid var(--line-dark);
+  border-radius: 5px;
+  background: white;
+}
+.tickets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tickets li + li {
+  border-top: 1px solid var(--line);
+}
+.ticket {
+  display: grid;
+  width: 100%;
+  gap: 8px;
+  padding: 18px 10px;
+  border: 0;
+  background: white;
+  text-align: left;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+.ticket[aria-pressed="true"] {
+  background: var(--blue-soft);
+  box-shadow: inset 3px 0 var(--blue);
+}
+.ticket small,
+.meta,
+.date,
+.hint {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ticket strong {
+  font-size: 15px;
+}
+.meta {
+  margin-block: 12px 20px;
+}
+.overdue {
+  color: var(--danger);
+  font-weight: 700;
+}
+.pagination {
+  margin-top: 20px;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.toolbar {
+  margin-bottom: 16px;
+}
+.messages {
+  display: grid;
+  gap: 14px;
+  padding: 0;
+  margin: 24px 0;
+  list-style: none;
+}
+.message {
+  padding: 16px;
+  background: #f8faff;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  min-width: 0;
+}
+.message[data-owner="false"] {
+  border-left: 3px solid var(--blue);
+}
+.message header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+}
+.body {
+  margin-bottom: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.65;
+  font-size: 14px;
+}
+.form {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+.form label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+}
+.form textarea,
+.form select,
+.createForm textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line-dark);
+  border-radius: 6px;
+  background: white;
+}
+.form textarea,
+.createForm textarea {
+  resize: vertical;
+}
+.form fieldset {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+}
+.empty {
+  padding: 28px 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.feedback {
+  margin: 0;
+  padding: 12px;
+  background: var(--blue-soft);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .list,
+  .thread {
+    padding: 16px;
+  }
+  .toolbar .button,
+  .pagination .button {
+    min-height: 44px;
+  }
+}

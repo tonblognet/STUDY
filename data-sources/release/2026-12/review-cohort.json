@@ -1,0 +1,4609 @@
+{
+  "schemaVersion": 1,
+  "cohortDate": "2026-11-10",
+  "scope": "repository_candidate_editorial_queue",
+  "selectionReviewedBy": "Codex",
+  "selectionRule": {
+    "total": 100,
+    "firstGroup": "All 20 existing universities with admissionPrograms>0 in pinned coverage order.",
+    "secondGroup": "80 remaining scope=existing universities sorted by the ranking tuple.",
+    "readinessScore": "10*sourcedFields + 25*(faculties>0) + 25*(educationalListings>0)",
+    "rankingTupleAscending": [
+      "-readinessScore",
+      "-sourcedFields",
+      "-present_admissions_contact_field_count",
+      "-hostelInfo_present",
+      "-faculties_present",
+      "-educationalListings_present",
+      "slug_ASC_unicode_codepoint"
+    ],
+    "limits": "No record-volume bonus, license inference or editorial acceptance. This proposal requires review before becoming an agreed release cohort."
+  },
+  "sourceCoverage": {
+    "file": "data-sources/russia/coverage.json",
+    "sha256": "69d777b10e501d069509c43c01612a5983f882b7f1160c0092821c88703fad6c",
+    "generatedAt": "2026-11-09T20:51:54.100Z",
+    "scope": "repository_candidate"
+  },
+  "requiredSections": [
+    "general_information",
+    "structure",
+    "educational_inventory",
+    "admissions_contacts",
+    "housing"
+  ],
+  "baseline": {
+    "admissionPrograms": 185,
+    "trustVerifiedPrograms": 18,
+    "universitiesWithTrustVerifiedPrograms": 7,
+    "historicalEditorialAcceptedCount": null
+  },
+  "cards": [
+    {
+      "priority": 1,
+      "id": "hse",
+      "slug": "hse",
+      "name": "Национальный исследовательский университет «Высшая школа экономики»",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/0",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview"
+      ],
+      "officialWebsite": "https://www.hse.ru"
+    },
+    {
+      "priority": 2,
+      "id": "mai",
+      "slug": "mai",
+      "name": "Московский авиационный институт (национальный исследовательский университет)",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/1",
+      "baselineMissingFields": [
+        "telephone",
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings"
+      ],
+      "officialWebsite": "https://mai.ru"
+    },
+    {
+      "priority": 3,
+      "id": "mipt",
+      "slug": "mipt",
+      "name": "Московский физико-технический институт (национальный исследовательский университет)",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/2",
+      "baselineMissingFields": ["overview", "educationalListings"],
+      "officialWebsite": "https://mipt.ru"
+    },
+    {
+      "priority": 4,
+      "id": "misis",
+      "slug": "misis",
+      "name": "Национальный исследовательский технологический университет МИСИС",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/3",
+      "baselineMissingFields": ["hostelInfo", "overview"],
+      "officialWebsite": "https://misis.ru"
+    },
+    {
+      "priority": 5,
+      "id": "mpei",
+      "slug": "mpei",
+      "name": "Национальный исследовательский университет «МЭИ»",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/4",
+      "baselineMissingFields": ["overview"],
+      "officialWebsite": "https://mpei.ru"
+    },
+    {
+      "priority": 6,
+      "id": "mephi",
+      "slug": "mephi",
+      "name": "Национальный исследовательский ядерный университет «МИФИ»",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/5",
+      "baselineMissingFields": ["overview"],
+      "officialWebsite": "https://mephi.ru"
+    },
+    {
+      "priority": 7,
+      "id": "rudn",
+      "slug": "rudn",
+      "name": "Российский университет дружбы народов имени Патриса Лумумбы",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/6",
+      "baselineMissingFields": ["overview", "educationalListings"],
+      "officialWebsite": "https://www.rudn.ru"
+    },
+    {
+      "priority": 8,
+      "id": "ranepa",
+      "slug": "ranepa",
+      "name": "Российская академия народного хозяйства и государственной службы при Президенте Российской Федерации",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/7",
+      "baselineMissingFields": [
+        "admissionsUrl",
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties"
+      ],
+      "officialWebsite": "https://www.ranepa.ru"
+    },
+    {
+      "priority": 9,
+      "id": "mgu",
+      "slug": "mgu",
+      "name": "Московский государственный университет имени М. В. Ломоносова",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/8",
+      "baselineMissingFields": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "address",
+        "telephone",
+        "email",
+        "hostelInfo",
+        "overview",
+        "educationalListings"
+      ],
+      "officialWebsite": "https://www.msu.ru"
+    },
+    {
+      "priority": 10,
+      "id": "rea",
+      "slug": "rea",
+      "name": "Российский экономический университет имени Г. В. Плеханова",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/9",
+      "baselineMissingFields": [
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings"
+      ],
+      "officialWebsite": "https://www.rea.ru"
+    },
+    {
+      "priority": 11,
+      "id": "bmstu",
+      "slug": "bmstu",
+      "name": "Московский государственный технический университет имени Н. Э. Баумана",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/10",
+      "baselineMissingFields": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "address",
+        "telephone",
+        "email",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings"
+      ],
+      "officialWebsite": "https://bmstu.ru"
+    },
+    {
+      "priority": 12,
+      "id": "mgimo",
+      "slug": "mgimo",
+      "name": "Московский государственный институт международных отношений МИД России",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/11",
+      "baselineMissingFields": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "address",
+        "telephone",
+        "email",
+        "admissionsUrl",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings"
+      ],
+      "officialWebsite": "https://mgimo.ru"
+    },
+    {
+      "priority": 13,
+      "id": "pirogov",
+      "slug": "pirogov",
+      "name": "Российский национальный исследовательский медицинский университет имени Н. И. Пирогова",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/12",
+      "baselineMissingFields": [
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings"
+      ],
+      "officialWebsite": "https://rsmu.ru"
+    },
+    {
+      "priority": 14,
+      "id": "sechenov",
+      "slug": "sechenov",
+      "name": "Первый Московский государственный медицинский университет имени И. М. Сеченова",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/13",
+      "baselineMissingFields": ["admissionsPhone", "overview"],
+      "officialWebsite": "https://www.sechenov.ru"
+    },
+    {
+      "priority": 15,
+      "id": "gubkin",
+      "slug": "gubkin",
+      "name": "Российский государственный университет нефти и газа имени И. М. Губкина",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/14",
+      "baselineMissingFields": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "address",
+        "telephone",
+        "email",
+        "admissionsUrl",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings"
+      ],
+      "officialWebsite": "https://www.gubkin.ru"
+    },
+    {
+      "priority": 16,
+      "id": "msal",
+      "slug": "msal",
+      "name": "Московский государственный юридический университет имени О. Е. Кутафина",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/15",
+      "baselineMissingFields": ["admissionsPhone", "overview"],
+      "officialWebsite": "https://msal.ru"
+    },
+    {
+      "priority": 17,
+      "id": "muctr",
+      "slug": "muctr",
+      "name": "Российский химико-технологический университет имени Д. И. Менделеева",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/16",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview"
+      ],
+      "officialWebsite": "https://www.muctr.ru"
+    },
+    {
+      "priority": 18,
+      "id": "rsuh",
+      "slug": "rsuh",
+      "name": "Российский государственный гуманитарный университет",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/17",
+      "baselineMissingFields": ["overview"],
+      "officialWebsite": "https://www.rsuh.ru"
+    },
+    {
+      "priority": 19,
+      "id": "fa",
+      "slug": "fa",
+      "name": "Финансовый университет при Правительстве Российской Федерации",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/18",
+      "baselineMissingFields": ["hostelInfo", "overview"],
+      "officialWebsite": "https://www.fa.ru"
+    },
+    {
+      "priority": 20,
+      "id": "mospolytech",
+      "slug": "mospolytech",
+      "name": "Московский политехнический университет",
+      "selectionGroup": "existing_admission_program_university",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/19",
+      "baselineMissingFields": ["hostelInfo", "overview"],
+      "officialWebsite": "https://mospolytech.ru"
+    },
+    {
+      "priority": 21,
+      "id": "inpsycho",
+      "slug": "inpsycho",
+      "name": "Московский институт психоанализа",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/66",
+      "baselineMissingFields": ["admissionPrograms"],
+      "officialWebsite": "http://www.inpsycho.ru"
+    },
+    {
+      "priority": 22,
+      "id": "gaugn",
+      "slug": "gaugn",
+      "name": "Государственный академический университет гуманитарных наук",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/119",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "https://gaugn.ru"
+    },
+    {
+      "priority": 23,
+      "id": "guu",
+      "slug": "guu",
+      "name": "Государственный университет управления",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/99",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "https://guu.ru/"
+    },
+    {
+      "priority": 24,
+      "id": "mgppu",
+      "slug": "mgppu",
+      "name": "Московский государственный психолого-педагогический университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/105",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "https://mgppu.ru"
+    },
+    {
+      "priority": 25,
+      "id": "mirea",
+      "slug": "mirea",
+      "name": "МИРЭА - Российский технологический университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/122",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "http://www.mirea.ru"
+    },
+    {
+      "priority": 26,
+      "id": "mtuci",
+      "slug": "mtuci",
+      "name": "Московский технический университет связи и информатики",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/84",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "http://www.mtuci.ru"
+    },
+    {
+      "priority": 27,
+      "id": "pushkin",
+      "slug": "pushkin",
+      "name": "Государственный институт русского языка им. А.С. Пушкина",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/120",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "https://www.pushkin.institute"
+    },
+    {
+      "priority": 28,
+      "id": "rgust",
+      "slug": "rgust",
+      "name": "Российский государственный университет социальных технологий",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/137",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "https://rgust.ru/"
+    },
+    {
+      "priority": 29,
+      "id": "sportedu",
+      "slug": "sportedu",
+      "name": "Российский университет спорта \"ГЦОЛИФК",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/114",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "https://gtsolifk.ru/"
+    },
+    {
+      "priority": 30,
+      "id": "surikov",
+      "slug": "surikov",
+      "name": "Московский государственный академический художественный институт имени В.И. Сурикова при Российской академии художеств",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/125",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "https://surikov-vuz.com/"
+    },
+    {
+      "priority": 31,
+      "id": "universal",
+      "slug": "universal",
+      "name": "Универсальный Университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/44",
+      "baselineMissingFields": ["overview", "admissionPrograms"],
+      "officialWebsite": "https://u.university"
+    },
+    {
+      "priority": 32,
+      "id": "guppros",
+      "slug": "guppros",
+      "name": "Государственный университет просвещения",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/92",
+      "baselineMissingFields": ["hostelInfo", "overview", "admissionPrograms"],
+      "officialWebsite": "https://eduprosvet.ru/"
+    },
+    {
+      "priority": 33,
+      "id": "iga",
+      "slug": "iga",
+      "name": "Институт государственного администрирования",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/145",
+      "baselineMissingFields": ["hostelInfo", "overview", "admissionPrograms"],
+      "officialWebsite": "http://www.iga.ru"
+    },
+    {
+      "priority": 34,
+      "id": "kosygin",
+      "slug": "kosygin",
+      "name": "Российский государственный университет им. А.Н. Косыгина (Технологии. Дизайн. Искусство)",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/112",
+      "baselineMissingFields": ["hostelInfo", "overview", "admissionPrograms"],
+      "officialWebsite": "https://rguk.ru/"
+    },
+    {
+      "priority": 35,
+      "id": "mgavm",
+      "slug": "mgavm",
+      "name": "Московская государственная академия ветеринарной медицины и биотехнологии - МВА имени К.И. Скрябина",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/123",
+      "baselineMissingFields": ["hostelInfo", "overview", "admissionPrograms"],
+      "officialWebsite": "http://www.mgavm.ru"
+    },
+    {
+      "priority": 36,
+      "id": "mgpu",
+      "slug": "mgpu",
+      "name": "Московский городской педагогический университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/57",
+      "baselineMissingFields": ["hostelInfo", "overview", "admissionPrograms"],
+      "officialWebsite": "https://www.mgpu.ru/"
+    },
+    {
+      "priority": 37,
+      "id": "mgsu",
+      "slug": "mgsu",
+      "name": "Национальный исследовательский Московский государственный строительный университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/107",
+      "baselineMissingFields": ["hostelInfo", "overview", "admissionPrograms"],
+      "officialWebsite": "http://www.mgsu.ru"
+    },
+    {
+      "priority": 38,
+      "id": "pstgu",
+      "slug": "pstgu",
+      "name": "Православный Свято-Тихоновский гуманитарный университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/141",
+      "baselineMissingFields": ["hostelInfo", "overview", "admissionPrograms"],
+      "officialWebsite": "http://pstgu.ru"
+    },
+    {
+      "priority": 39,
+      "id": "vgik",
+      "slug": "vgik",
+      "name": "Всероссийский государственный университет кинематографии имени С.А.Герасимова",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/117",
+      "baselineMissingFields": ["hostelInfo", "overview", "admissionPrograms"],
+      "officialWebsite": "http://www.vgik.info"
+    },
+    {
+      "priority": 40,
+      "id": "mfua",
+      "slug": "mfua",
+      "name": "Московский финансово-юридический университет МФЮА",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/55",
+      "baselineMissingFields": [
+        "admissionsEmail",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.mfua.ru/"
+    },
+    {
+      "priority": 41,
+      "id": "gnesin",
+      "slug": "gnesin",
+      "name": "Российская академия музыки имени Гнесиных",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/129",
+      "baselineMissingFields": [
+        "regDate",
+        "hostelInfo",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.gnesin-academy.ru"
+    },
+    {
+      "priority": 42,
+      "id": "igumo",
+      "slug": "igumo",
+      "name": "Институт гуманитарного образования и информационных технологий",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/48",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.igumo.ru/"
+    },
+    {
+      "priority": 43,
+      "id": "mhpi",
+      "slug": "mhpi",
+      "name": "Московский художественно-промышленный институт",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/89",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.mhpidesign.ru"
+    },
+    {
+      "priority": 44,
+      "id": "sfi",
+      "slug": "sfi",
+      "name": "Свято-Филаретовский институт",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/20",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.sfi.ru"
+    },
+    {
+      "priority": 45,
+      "id": "guz",
+      "slug": "guz",
+      "name": "Государственный университет по землеустройству",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/98",
+      "baselineMissingFields": [
+        "overview",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.guz.ru"
+    },
+    {
+      "priority": 46,
+      "id": "masi",
+      "slug": "masi",
+      "name": "Московский гуманитарно-технологический университет - Московский архитектурно-строительный институт",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/35",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://masi.ru/"
+    },
+    {
+      "priority": 47,
+      "id": "mosgu",
+      "slug": "mosgu",
+      "name": "Московский гуманитарный университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/36",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.mosgu.ru"
+    },
+    {
+      "priority": 48,
+      "id": "mpsu",
+      "slug": "mpsu",
+      "name": "Московский психолого-социальный университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/73",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.mpsu.ru/"
+    },
+    {
+      "priority": 49,
+      "id": "rosnou",
+      "slug": "rosnou",
+      "name": "Российский новый университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/51",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://rosnou.ru/"
+    },
+    {
+      "priority": 50,
+      "id": "timacad",
+      "slug": "timacad",
+      "name": "Российский государственный аграрный университет - МСХА имени К.А.Тимирязева",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/111",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.timacad.ru"
+    },
+    {
+      "priority": 51,
+      "id": "mstuca",
+      "slug": "mstuca",
+      "name": "Московский государственный технический университет гражданской авиации",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/126",
+      "baselineMissingFields": [
+        "admissionsUrl",
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.mstuca.ru"
+    },
+    {
+      "priority": 52,
+      "id": "moscow-110266",
+      "slug": "moscow-110266",
+      "name": "Институт современного образования и информационных технологий",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/53",
+      "baselineMissingFields": [
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://imeit.ru/"
+    },
+    {
+      "priority": 53,
+      "id": "ippolitovka",
+      "slug": "ippolitovka",
+      "name": "Государственный музыкально-педагогический институт имени М.М. Ипполитова-Иванова",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/121",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://ippolitovka.ru"
+    },
+    {
+      "priority": 54,
+      "id": "litinstitut",
+      "slug": "litinstitut",
+      "name": "Литературный институт имени А.М. Горького",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/100",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://litinstitut.ru/"
+    },
+    {
+      "priority": 55,
+      "id": "mhatschool",
+      "slug": "mhatschool",
+      "name": "Школа-студия (институт) имени Вл. И.Немировича-Данченко при Московском Художественном академическом театре имени А.П.Чехова",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/116",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mhatschool.ru/"
+    },
+    {
+      "priority": 56,
+      "id": "mip",
+      "slug": "mip",
+      "name": "МОСКОВСКИЙ ИНСТИТУТ ПСИХОЛОГИИ",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/81",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.psycho.msk.ru/"
+    },
+    {
+      "priority": 57,
+      "id": "mitu",
+      "slug": "mitu",
+      "name": "Московский институт технологий и управления",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/76",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mitu.msk.ru"
+    },
+    {
+      "priority": 58,
+      "id": "moscow-110324",
+      "slug": "moscow-110324",
+      "name": "Московский институт современного академического образования",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/37",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://misaoinst.ru/"
+    },
+    {
+      "priority": 59,
+      "id": "moscow-2089",
+      "slug": "moscow-2089",
+      "name": "Еврейский университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/78",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://j-univer.ru/"
+    },
+    {
+      "priority": 60,
+      "id": "moscow-666666786",
+      "slug": "moscow-666666786",
+      "name": "Открытый университет экономики, управления и права",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/41",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://ouep.ru/"
+    },
+    {
+      "priority": 61,
+      "id": "mpgu",
+      "slug": "mpgu",
+      "name": "Московский педагогический государственный университет",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/106",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.mpgu.su/"
+    },
+    {
+      "priority": 62,
+      "id": "mti",
+      "slug": "mti",
+      "name": "Московский технологический институт",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/74",
+      "baselineMissingFields": [
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mti.moscow/"
+    },
+    {
+      "priority": 63,
+      "id": "nes",
+      "slug": "nes",
+      "name": "Российская экономическая школа\" (институт)",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/63",
+      "baselineMissingFields": [
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.nes.ru"
+    },
+    {
+      "priority": 64,
+      "id": "ppds",
+      "slug": "ppds",
+      "name": "Перервинская Духовная семинария Русской Православной Церкви",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/86",
+      "baselineMissingFields": [
+        "shortName",
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://ppds.ru/"
+    },
+    {
+      "priority": 65,
+      "id": "marhi",
+      "slug": "marhi",
+      "name": "Московский архитектурный институт (государственная академия)",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/103",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.marhi.ru"
+    },
+    {
+      "priority": 66,
+      "id": "mosconsv",
+      "slug": "mosconsv",
+      "name": "Московская государственная консерватория имени П.И. Чайковского",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/101",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mosconsv.ru/"
+    },
+    {
+      "priority": 67,
+      "id": "moscow-1840",
+      "slug": "moscow-1840",
+      "name": "Российский православный университет святого Иоанна Богослова",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/42",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://rpusib.ru/"
+    },
+    {
+      "priority": 68,
+      "id": "mgusit",
+      "slug": "mgusit",
+      "name": "МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ СПОРТА И ТУРИЗМА",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/58",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mgusit.mossport.ru/"
+    },
+    {
+      "priority": 69,
+      "id": "miigaik",
+      "slug": "miigaik",
+      "name": "Московский государственный университет геодезии и картографии",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/127",
+      "baselineMissingFields": [
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.miigaik.ru"
+    },
+    {
+      "priority": 70,
+      "id": "moscow-110186",
+      "slug": "moscow-110186",
+      "name": "Академия управления и производства",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/138",
+      "baselineMissingFields": [
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://amp1996.ru/"
+    },
+    {
+      "priority": 71,
+      "id": "nid",
+      "slug": "nid",
+      "name": "Национальный Институт Дизайна",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/40",
+      "baselineMissingFields": [
+        "email",
+        "hostelInfo",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://nid-design.org"
+    },
+    {
+      "priority": 72,
+      "id": "rosbiotech",
+      "slug": "rosbiotech",
+      "name": "Российский биотехнологический университет (РОСБИОТЕХ)",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/130",
+      "baselineMissingFields": [
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://rosbiotech.ru"
+    },
+    {
+      "priority": 73,
+      "id": "shchukin",
+      "slug": "shchukin",
+      "name": "Театральный институт имени Бориса Щукина при Государственном академическом театре имени Евгения Вахтангова",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/115",
+      "baselineMissingFields": [
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.htvs.ru"
+    },
+    {
+      "priority": 74,
+      "id": "sretenskaya",
+      "slug": "sretenskaya",
+      "name": "Сретенская духовная академия Русской Православной Церкви",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/85",
+      "baselineMissingFields": [
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://sdamp.ru"
+    },
+    {
+      "priority": 75,
+      "id": "stankin",
+      "slug": "stankin",
+      "name": "Московский государственный технологический университет \"СТАНКИН",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/90",
+      "baselineMissingFields": [
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.stankin.ru"
+    },
+    {
+      "priority": 76,
+      "id": "skoltech",
+      "slug": "skoltech",
+      "name": "Сколковский институт науки и технологий",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/21",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.skoltech.ru/"
+    },
+    {
+      "priority": 77,
+      "id": "vavt",
+      "slug": "vavt",
+      "name": "Всероссийская академия внешней торговли министерства экономического развития Российской Федерации",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/96",
+      "baselineMissingFields": [
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.vavt.ru"
+    },
+    {
+      "priority": 78,
+      "id": "academy-sk",
+      "slug": "academy-sk",
+      "name": "Московская академия Следственного комитета Российской Федерации имени А.Я. Сухарева",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/152",
+      "baselineMissingFields": [
+        "admissionsEmail",
+        "hostelInfo",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://academy-skrf.ru/"
+    },
+    {
+      "priority": 79,
+      "id": "miit",
+      "slug": "miit",
+      "name": "Российский университет транспорта",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/93",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.miit.ru"
+    },
+    {
+      "priority": 80,
+      "id": "moscow-110187",
+      "slug": "moscow-110187",
+      "name": "Гуманитарный институт имени П.А. Столыпина",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/71",
+      "baselineMissingFields": [
+        "email",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.rgis.ru"
+    },
+    {
+      "priority": 81,
+      "id": "axu",
+      "slug": "axu",
+      "name": "Академия хорового искусства имени В.С. Попова",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/95",
+      "baselineMissingFields": [
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.axu.ru"
+    },
+    {
+      "priority": 82,
+      "id": "mgri",
+      "slug": "mgri",
+      "name": "Российский государственный геологоразведочный университет имени Серго Орджоникидзе",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/131",
+      "baselineMissingFields": [
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.mgri.ru"
+    },
+    {
+      "priority": 83,
+      "id": "raikin",
+      "slug": "raikin",
+      "name": "Высшая школа сценических искусств",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/23",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.raikin-school.com/"
+    },
+    {
+      "priority": 84,
+      "id": "academy-gps",
+      "slug": "academy-gps",
+      "name": "Академия Государственной противопожарной службы МЧС России",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/151",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://academygps.ru/"
+    },
+    {
+      "priority": 85,
+      "id": "atiso",
+      "slug": "atiso",
+      "name": "Академия труда и социальных отношений",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/77",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.atiso.ru"
+    },
+    {
+      "priority": 86,
+      "id": "doctorantura",
+      "slug": "doctorantura",
+      "name": "Общецерковная аспирантура и докторантура им. святых равноапостольных Кирилла и Мефодия",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/87",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://doctorantura.ru/"
+    },
+    {
+      "priority": 87,
+      "id": "gitis",
+      "slug": "gitis",
+      "name": "Российский институт театрального искусства – ГИТИС",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/135",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://gitis.net/"
+    },
+    {
+      "priority": 88,
+      "id": "gitr",
+      "slug": "gitr",
+      "name": "Институт кино и телевидения (ГИТР)",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/27",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://gitr.ru"
+    },
+    {
+      "priority": 89,
+      "id": "lawacademy",
+      "slug": "lawacademy",
+      "name": "Международный юридический институт",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/79",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://lawacademy.ru/"
+    },
+    {
+      "priority": 90,
+      "id": "mdab",
+      "slug": "mdab",
+      "name": "Духовная Академия \"Благодать\" христиан веры евангельской",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/88",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://mdab.ru/"
+    },
+    {
+      "priority": 91,
+      "id": "miu",
+      "slug": "miu",
+      "name": "Московский исламский институт",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/142",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.miu.su"
+    },
+    {
+      "priority": 92,
+      "id": "mma",
+      "slug": "mma",
+      "name": "Московская международная академия",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/80",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mmamos.ru:443/"
+    },
+    {
+      "priority": 93,
+      "id": "mmu",
+      "slug": "mmu",
+      "name": "МОСКОВСКИЙ МЕЖДУНАРОДНЫЙ УНИВЕРСИТЕТ",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/38",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mi.university/"
+    },
+    {
+      "priority": 94,
+      "id": "mosap",
+      "slug": "mosap",
+      "name": "Московская академия предпринимательства",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/143",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.mosap.ru"
+    },
+    {
+      "priority": 95,
+      "id": "moscow-110248",
+      "slug": "moscow-110248",
+      "name": "Институт социальных наук",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/30",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mskisn.ru/"
+    },
+    {
+      "priority": 96,
+      "id": "moscow-110295",
+      "slug": "moscow-110295",
+      "name": "Международная академия бизнеса и управления",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/50",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.mabiu.ru"
+    },
+    {
+      "priority": 97,
+      "id": "moscow-110341",
+      "slug": "moscow-110341",
+      "name": "Национальный институт бизнеса",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/39",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://nibmoscow.ru/"
+    },
+    {
+      "priority": 98,
+      "id": "moscow-110393",
+      "slug": "moscow-110393",
+      "name": "Славяно-Греко-Латинская Академия",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/43",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://sgla.ru/"
+    },
+    {
+      "priority": 99,
+      "id": "moscow-113596",
+      "slug": "moscow-113596",
+      "name": "Институт театрального искусства",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/22",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mos-iti.ru/"
+    },
+    {
+      "priority": 100,
+      "id": "moscow-120266",
+      "slug": "moscow-120266",
+      "name": "Институт образовательных технологий и гуманитарных наук",
+      "selectionGroup": "existing_readiness_ranking",
+      "status": "pending_editorial_review",
+      "reviewer": null,
+      "reviewedAt": null,
+      "decision": null,
+      "sections": {
+        "general_information": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "structure": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "educational_inventory": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "admissions_contacts": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        },
+        "housing": {
+          "status": "not_reviewed",
+          "evidence": [],
+          "gaps": []
+        }
+      },
+      "baselineCoveragePointer": "/universities/72",
+      "baselineMissingFields": [
+        "admissionsPhone",
+        "admissionsEmail",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://iotgn.institute/"
+    }
+  ],
+  "note": "Selection is an operational queue, not editorial acceptance. All 100 cards still require review. Directory listings and program trust statuses remain separate; no runtime facts/statuses are changed."
+}

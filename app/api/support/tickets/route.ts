@@ -1,49 +1,42 @@
 import { NextResponse } from "next/server";
-import { z } from "zod";
-import { prisma } from "@/db";
-import { getSessionUser } from "@/lib/auth/session";
-import { hasValidOrigin } from "@/lib/security/request";
-
-const ticketSchema = z.object({
-  subject: z.string().trim().min(5).max(140),
-  category: z.enum(["DATA", "AUTH", "PAYMENT", "OTHER"]),
-  message: z.string().trim().min(20).max(5000),
-});
-
-export async function GET() {
-  const user = await getSessionUser();
-  if (!user)
-    return NextResponse.json({ error: "Требуется вход" }, { status: 401 });
-  const tickets = await prisma.supportTicket.findMany({
-    where: { userId: user.id },
-    orderBy: { updatedAt: "desc" },
-    include: { messages: { orderBy: { createdAt: "asc" } } },
-  });
-  return NextResponse.json({ tickets });
+import {
+  supportAccess,
+  supportBody,
+  supportFailure,
+  supportRate,
+} from "@/lib/support/http";
+import { createTicketSchema, ticketListSchema } from "@/lib/support/policy";
+import {
+  createSupportTicket,
+  listSupportTickets,
+  SupportError,
+} from "@/lib/support/service";
+export async function GET(request: Request) {
+  try {
+    const access = await supportAccess(request);
+    const query = ticketListSchema.safeParse(
+      Object.fromEntries(new URL(request.url).searchParams),
+    );
+    if (!query.success || query.data.mine)
+      throw new SupportError("Проверьте параметры списка");
+    return NextResponse.json(await listSupportTickets(access, query.data));
+  } catch (error) {
+    return supportFailure(error);
+  }
 }
-
 export async function POST(request: Request) {
-  if (!hasValidOrigin(request))
-    return NextResponse.json(
-      { error: "Некорректный источник запроса" },
-      { status: 403 },
-    );
-  const user = await getSessionUser();
-  if (!user)
-    return NextResponse.json({ error: "Требуется вход" }, { status: 401 });
-  const parsed = ticketSchema.safeParse(await request.json().catch(() => null));
-  if (!parsed.success)
-    return NextResponse.json(
-      { error: parsed.error.issues[0]?.message ?? "Проверьте обращение" },
-      { status: 400 },
-    );
-  const ticket = await prisma.supportTicket.create({
-    data: {
-      userId: user.id,
-      subject: parsed.data.subject,
-      category: parsed.data.category,
-      messages: { create: { authorId: user.id, body: parsed.data.message } },
-    },
-  });
-  return NextResponse.json({ ticket }, { status: 201 });
+  try {
+    const access = await supportAccess(request, false, true);
+    const input = createTicketSchema.safeParse(await supportBody(request));
+    if (!input.success)
+      throw new SupportError(
+        "Укажите тему от 5 до 140 символов, категорию и сообщение от 20 до 5000 символов",
+      );
+    await supportRate(access.user.id, true);
+    return NextResponse.json(await createSupportTicket(access, input.data), {
+      status: 201,
+    });
+  } catch (error) {
+    return supportFailure(error);
+  }
 }

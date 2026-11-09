@@ -1,0 +1,77 @@
+.section {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.section > button {
+  justify-self: start;
+}
+.list {
+  display: grid;
+  gap: 1rem;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  min-width: 0;
+  background: white;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.heading h2,
+.heading h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.details {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1rem 0 0;
+}
+.details div {
+  display: grid;
+  grid-template-columns: minmax(8rem, 1fr) minmax(0, 2fr);
+  gap: 1rem;
+}
+.details dt {
+  color: var(--muted);
+}
+.details dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.confirm {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.identifier {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .card {
+    padding: 1rem;
+  }
+  .details div {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  .actions > button {
+    max-width: 100%;
+    white-space: normal;
+  }
+}

@@ -3,6 +3,7 @@ import { DATA_STATUS_LABELS } from "@/lib/admissions/constants";
 import { requireRole } from "@/lib/auth/session";
 import { getCatalog, catalogStorage } from "@/lib/catalog/server";
 import { prisma } from "@/db";
+import { AdminNavigation } from "@/components/admin-navigation";
 
 export const metadata = { title: "Администрирование" };
 export const dynamic = "force-dynamic";
@@ -12,7 +13,12 @@ export default async function AdminPage({
 }: {
   searchParams: Promise<{ q?: string; page?: string }>;
 }) {
-  const user = await requireRole(["CONTENT_MANAGER", "ADMIN", "SUPERADMIN"]);
+  const user = await requireRole([
+    "SUPPORT",
+    "CONTENT_MANAGER",
+    "ADMIN",
+    "SUPERADMIN",
+  ]);
   if (!user)
     return (
       <div className="page-shell">
@@ -25,6 +31,16 @@ export default async function AdminPage({
         </div>
       </div>
     );
+  if (user.role === "SUPPORT")
+    return (
+      <div className="admin-page">
+        <h1>Рабочая область поддержки</h1>
+        <AdminNavigation role={user.role} />
+        <Link href="/admin/support" className="button button-primary">
+          Открыть обращения
+        </Link>
+      </div>
+    );
   if (
     catalogStorage() === "database" &&
     !(await prisma.catalogHead.findUnique({ where: { id: "public" } }))
@@ -33,6 +49,7 @@ export default async function AdminPage({
     return (
       <div className="page-shell">
         <h1>Каталог ещё не опубликован</h1>
+        <AdminNavigation role={user.role} />
         <Link className="button button-primary" href="/admin/catalog">
           Открыть очередь публикаций
         </Link>
@@ -84,10 +101,7 @@ export default async function AdminPage({
           Проверить систему
         </Link>
       </div>
-      <nav className="account-nav" aria-label="Разделы администрирования">
-        <a href="#content">Контент</a>
-        <Link href="/admin/catalog">Импорты и публикации</Link>
-      </nav>
+      <AdminNavigation role={user.role} />
       <div className="admin-stats">
         <article>
           <span>Вузов</span>

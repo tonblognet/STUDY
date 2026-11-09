@@ -1,5 +1,61 @@
 # Handoff текущего слоя
 
+## Передача технического кандидата слоя 06 — 10 ноября 2026
+
+Слой 04 закрыт: [PR #7](https://github.com/tonblognet/STUDY/pull/7) слит
+squash-merge `ed8133c7ed37ac4a95a29ba84e13fa77f328c6bf`, CI текущего head
+`fe2d39c` — [42708132672](https://github.com/tonblognet/STUDY/actions/runs/42708132672),
+success. Ветка 04 удалена на origin, issue #6 закрыт. Это разрешённая владельцем
+самопроверка, не независимое одобрение.
+
+От актуального `origin/main` создана `codex/layer-06-support-billing-admin`,
+[issue #8](https://github.com/tonblognet/STUDY/issues/8). Объём, критерии и
+отдельные границы — [LAYER_06_SUPPORT_BILLING.md](LAYER_06_SUPPORT_BILLING.md).
+Следующий слой 07 не начат. Preview свежей сборки 06 доступен на
+`http://127.0.0.1:3100`; он не является production-окружением.
+
+До реализации прочитаны Next route-handler guides из установленного пакета,
+существующие checkout/webhook/support routes, Prisma-модели, auth/session locks,
+тесты подписей и интеграционный harness. Подтверждены дефекты owner/product
+idempotency, concurrent grants, mutable product duration, late status rollback,
+неопределённого Init и чтения неограниченного stream. Они исправлены в 06.
+
+Выполнены история оплат, сохранённая попытка checkout, неизменяемые условия
+покупки, единый grant под блокировкой, банковская сверка и полный возврат.
+Поддержка получила приватную историю, ответы, назначение, статусы и целевой
+срок ответа; роли и отзыв сессий меняются через отдельный защищённый интерфейс.
+Runbook — [BILLING_OPERATIONS.md](BILLING_OPERATIONS.md), отдельная самопроверка —
+[LAYER_06_SECURITY_REVIEW.md](LAYER_06_SECURITY_REVIEW.md).
+
+Семь обязательных gates прошли по порядку: `format:check`, `lint`, `typecheck`,
+`test` (1 578 тестов / 52 файла), `build`, `test:integration` (69 проверок:
+17 SSR, 1 account migration, 11 catalog, 26 account, 14 operations),
+`security:audit` (известных production-уязвимостей нет). Итог текущей редакции:
+`tmp/nov10-layer06-gate-results.json`. Только выделенная локальная тестовая
+PostgreSQL UTF8/UTC, без production-данных.
+
+Сборка `CRojeHz8VR7PypulL6FTB`: Chrome через Playwright CLI, 1440×1000 и
+390×844, по 24 успешные проверки. Проверены `/account`, `/account/billing`,
+`/pricing`, `/support`, `/admin`, `/admin/support`, `/admin/billing`,
+`/admin/users`, гостевой переход в `/login`. Повтор и новая вкладка используют
+тот же заказ; подписанное тестовое событие выдаёт один доступ, полный возврат
+его отзывает; конфликт поддержки сохраняет черновик; смена роли завершает
+target session. Неожиданных HTTP-ответов, console/runtime errors и переполнений
+нет. Обе изолированные QA-схемы удалены, тестовая PostgreSQL остановлена.
+Маршруты, ограничения и артефакты — [LAYER_06_BROWSER_QA.md](LAYER_06_BROWSER_QA.md).
+
+Дополнительно зафиксирована операционная очередь 100 существующих карточек
+`data-sources/release/2026-12/review-cohort.json`: все pending, новых принятых 0.
+Факты каталога и runtime trust-статусы не менялись. Передача не завершает слой:
+PR и CI текущего коммита ещё должны подтвердить опубликованный кандидат.
+
+Внешние ресурсы отсутствуют, реальная банковская приёмка и live-списания не
+выполнены; оплаты по умолчанию выключены. `RELEASE_PLAN_2026.md` требует
+«Проверенные sandbox-сценарии» для закрытия 06. Локальный fixture этого не
+доказывает; до реальной приёмки или отдельного решения владельца о переносе
+этого критерия в обязательный гейт публичного запуска PR остаётся открытым,
+07 не начинается. Доступная работа с каталогом продолжается независимо.
+
 ## Передача слоя 04 на ревью — 10 ноября 2026
 
 По прямому поручению владельца выполняется оставшийся объём Stage 1;

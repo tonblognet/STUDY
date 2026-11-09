@@ -28,7 +28,7 @@ Next.js routes ── server actions/API ── application services
 - Validation: Zod на каждой границе ввода.
 - Queue: интерфейс `JobQueue`; production adapter может использовать Redis/BullMQ или managed queue. Domain не зависит от реализации.
 - Cache: Next.js data cache для публичных снимков; Redis-ready интерфейс для rate limits, locks и горячих поисковых запросов.
-- Payments: provider port + T‑Bank adapter; webhook — единственный источник активации подписки.
+- Payments: T‑Bank adapter и журнал попыток; доступ активирует только подтверждённое состояние банка из подписанного webhook или серверной сверки. Возврат отзывает grant конкретного платежа.
 - Email/notifications: transactional outbox + provider adapters; dev adapter пишет сообщения в Mailpit.
 - Analytics: first-party event contract, optional Yandex Metrica only after consent.
 - AI: permission-scoped tool gateway; AI provider не получает unrestricted DB access.
