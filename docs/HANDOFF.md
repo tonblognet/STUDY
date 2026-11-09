@@ -9,7 +9,8 @@ success. Ветка 04 удалена на origin, issue #6 закрыт. Это
 самопроверка, не независимое одобрение.
 
 От актуального `origin/main` создана `codex/layer-06-support-billing-admin`,
-[issue #8](https://github.com/tonblognet/STUDY/issues/8). Объём, критерии и
+[issue #8](https://github.com/tonblognet/STUDY/issues/8),
+[draft PR #9](https://github.com/tonblognet/STUDY/pull/9). Объём, критерии и
 отдельные границы — [LAYER_06_SUPPORT_BILLING.md](LAYER_06_SUPPORT_BILLING.md).
 Следующий слой 07 не начат. Preview свежей сборки 06 доступен на
 `http://127.0.0.1:3100`; он не является production-окружением.
@@ -24,7 +25,8 @@ idempotency, concurrent grants, mutable product duration, late status rollback,
 покупки, единый grant под блокировкой, банковская сверка и полный возврат.
 Поддержка получила приватную историю, ответы, назначение, статусы и целевой
 срок ответа; роли и отзыв сессий меняются через отдельный защищённый интерфейс.
-Runbook — [BILLING_OPERATIONS.md](BILLING_OPERATIONS.md), отдельная самопроверка —
+Runbooks — [поддержка](SUPPORT_OPERATIONS.md) и
+[платежи](BILLING_OPERATIONS.md), отдельная самопроверка —
 [LAYER_06_SECURITY_REVIEW.md](LAYER_06_SECURITY_REVIEW.md).
 
 Семь обязательных gates прошли по порядку: `format:check`, `lint`, `typecheck`,
@@ -47,7 +49,7 @@ target session. Неожиданных HTTP-ответов, console/runtime erro
 Дополнительно зафиксирована операционная очередь 100 существующих карточек
 `data-sources/release/2026-12/review-cohort.json`: все pending, новых принятых 0.
 Факты каталога и runtime trust-статусы не менялись. Передача не завершает слой:
-PR и CI текущего коммита ещё должны подтвердить опубликованный кандидат.
+PR #9 содержит опубликованный кандидат; CI текущего head отслеживается в PR.
 
 Внешние ресурсы отсутствуют, реальная банковская приёмка и live-списания не
 выполнены; оплаты по умолчанию выключены. `RELEASE_PLAN_2026.md` требует
