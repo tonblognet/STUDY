@@ -10,6 +10,10 @@ import {
   trackerCreateSchema,
   trackerUpdateSchema,
 } from "@/lib/account/tracker";
+import {
+  getTrackerProgramIdentity,
+  preferredTrackerItem,
+} from "@/lib/account/tracker-program";
 export async function GET(request: Request) {
   const user = await getSessionUser();
   if (user && request.headers.get("x-account-id") !== user.id)
@@ -50,17 +54,27 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   const { programs } = await getCatalog();
-  if (!programs.some((p) => p.id === parsed.data.programKey))
+  const program = programs.find((p) => p.id === parsed.data.programKey);
+  if (!program)
     return NextResponse.json(
       { error: "Программа не найдена в каталоге" },
       { status: 400 },
     );
+  const identity = getTrackerProgramIdentity(program, programs);
+  if (!identity)
+    return NextResponse.json(
+      { error: "Связь программы с трекером требует уточнения" },
+      { status: 409 },
+    );
   const saved = await withActiveSession(access, async (tx) => {
-    const current = await tx.accountTrackerItem.findUnique({
+    const existing = await tx.accountTrackerItem.findMany({
       where: {
-        userId_programKey_admissionYear: { userId: user.id, ...parsed.data },
+        userId: user.id,
+        programKey: { in: identity.aliases },
+        admissionYear: parsed.data.admissionYear,
       },
     });
+    const current = preferredTrackerItem(existing, identity);
     if (current) return current;
     if (
       (await tx.accountTrackerItem.count({ where: { userId: user.id } })) >= 200
@@ -69,7 +83,8 @@ export async function POST(request: Request) {
     const item = await tx.accountTrackerItem.create({
       data: {
         userId: user.id,
-        ...parsed.data,
+        programKey: identity.canonicalKey,
+        admissionYear: parsed.data.admissionYear,
         history: [
           { at: new Date().toISOString(), action: "Программа добавлена" },
         ],

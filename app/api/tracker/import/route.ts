@@ -5,6 +5,10 @@ import { withActiveSession } from "@/lib/auth/session-access";
 import { hasValidOrigin } from "@/lib/security/request";
 import { getCatalog } from "@/lib/catalog/server";
 import { legacyImportSchema } from "@/lib/account/legacy-tracker";
+import {
+  getTrackerProgramIdentity,
+  type TrackerProgramIdentity,
+} from "@/lib/account/tracker-program";
 export async function POST(request: Request) {
   if (!hasValidOrigin(request))
     return NextResponse.json(
@@ -29,15 +33,25 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   const { programs } = await getCatalog();
-  const allowed = new Set(programs.map((p) => p.id));
-  if (parsed.data.items.some((item) => !allowed.has(item.programId)))
-    return NextResponse.json(
-      {
-        error:
-          "Часть программ больше не опубликована. Локальная копия сохранена; перенесите нужные записи вручную",
-      },
-      { status: 400 },
-    );
+  const identities = new Map<string, TrackerProgramIdentity>();
+  for (const item of parsed.data.items) {
+    const program = programs.find((program) => program.id === item.programId);
+    if (!program)
+      return NextResponse.json(
+        {
+          error:
+            "Часть программ больше не опубликована. Локальная копия сохранена; перенесите нужные записи вручную",
+        },
+        { status: 400 },
+      );
+    const identity = getTrackerProgramIdentity(program, programs);
+    if (!identity)
+      return NextResponse.json(
+        { error: "Связь программы с трекером требует уточнения" },
+        { status: 409 },
+      );
+    identities.set(item.programId, identity);
+  }
   const saved = await withActiveSession(access, async (tx) => {
     const existing = await tx.accountTrackerItem.findMany({
       where: { userId: user.id },
@@ -50,7 +64,7 @@ export async function POST(request: Request) {
       (item) =>
         !existing.some(
           (row) =>
-            row.programKey === item.programId &&
+            identities.get(item.programId)!.aliases.includes(row.programKey) &&
             row.admissionYear === parsed.data.admissionYear,
         ),
     );
@@ -59,7 +73,7 @@ export async function POST(request: Request) {
       data: items.map(({ programId, ...item }) => ({
         ...item,
         userId: user.id,
-        programKey: programId,
+        programKey: identities.get(programId)!.canonicalKey,
         admissionYear: parsed.data.admissionYear,
         history: [
           {

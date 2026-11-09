@@ -4,6 +4,7 @@ import { randomUUID } from "node:crypto";
 import { execFileSync, spawn, type ChildProcess } from "node:child_process";
 import { PrismaClient, type Prisma } from "@prisma/client";
 import { smtpInbox } from "./smtp-inbox";
+import { exerciseNotificationBacklog } from "./account-notifications-regression";
 import { createOpaqueToken, hashPassword, hashToken } from "../lib/auth/crypto";
 const testUrl = process.env.TEST_DATABASE_URL;
 if (!testUrl || !new URL(testUrl).pathname.endsWith("_test"))
@@ -551,6 +552,162 @@ describe("account HTTP and PostgreSQL security", { concurrency: false }, () => {
       ).status,
       200,
     );
+  });
+  it("reuses migrated slug and earlier ID tracker records when the public ID differs", async () => {
+    const programId = "mai-ami";
+    const slug = "mai-applied-math";
+    for (const [index, programKey] of [slug, programId].entries()) {
+      const admissionYear = 2091 + index;
+      const original = await db.accountTrackerItem.create({
+        data: {
+          userId: userA,
+          programKey,
+          admissionYear,
+          priority: 7,
+          stage: "documents",
+          documentsReady: true,
+          notes: "Сохранённая личная запись",
+          version: 4,
+          history: [{ at: "2026-10-01T12:00:00.000Z", action: "Сохранено" }],
+        },
+      });
+      try {
+        const response = await api(
+          "/api/tracker",
+          "POST",
+          { programKey: programId, admissionYear },
+          cookieA,
+        );
+        assert.equal(response.status, 201, await response.clone().text());
+        assert.equal((await response.json()).item.id, original.id);
+        const imported = await api(
+          "/api/tracker/import",
+          "POST",
+          {
+            admissionYear,
+            confirmedOwner: true,
+            items: [
+              {
+                programId,
+                priority: 1,
+                stage: "shortlist",
+                documentsReady: false,
+                consentReady: false,
+              },
+            ],
+          },
+          cookieA,
+        );
+        assert.equal(imported.status, 200, await imported.clone().text());
+        assert.equal((await imported.json()).count, 0);
+        const rows = await db.accountTrackerItem.findMany({
+          where: {
+            userId: userA,
+            programKey: { in: [programId, slug] },
+            admissionYear,
+          },
+        });
+        assert.deepEqual(rows, [original]);
+      } finally {
+        await db.accountTrackerItem.deleteMany({
+          where: { userId: userA, admissionYear },
+        });
+      }
+    }
+  });
+  it("creates one canonical tracker record across a simultaneous POST and legacy import", async () => {
+    const admissionYear = 2093;
+    try {
+      const [created, imported] = await Promise.all([
+        api(
+          "/api/tracker",
+          "POST",
+          { programKey: "mai-ami", admissionYear },
+          cookieA,
+        ),
+        api(
+          "/api/tracker/import",
+          "POST",
+          {
+            admissionYear,
+            confirmedOwner: true,
+            items: [
+              {
+                programId: "mai-ami",
+                priority: 4,
+                stage: "documents",
+                documentsReady: true,
+                consentReady: false,
+              },
+            ],
+          },
+          cookieA,
+        ),
+      ]);
+      assert.equal(created.status, 201, await created.clone().text());
+      assert.equal(imported.status, 200, await imported.clone().text());
+      const { item } = await created.json();
+      const rows = await db.accountTrackerItem.findMany({
+        where: { userId: userA, admissionYear },
+      });
+      assert.equal(rows.length, 1);
+      assert.equal(rows[0].id, item.id);
+      assert.equal(rows[0].programKey, "mai-applied-math");
+      assert.equal(
+        await db.accountTrackerItem.count({
+          where: { userId: userB, admissionYear },
+        }),
+        0,
+      );
+    } finally {
+      await db.accountTrackerItem.deleteMany({
+        where: { userId: userA, admissionYear },
+      });
+    }
+  });
+  it("keeps both historical alias records and deterministically reuses the canonical one", async () => {
+    const admissionYear = 2094;
+    try {
+      await db.accountTrackerItem.createMany({
+        data: [
+          { programKey: "mai-ami", notes: "Ранее сохранено по ID" },
+          { programKey: "mai-applied-math", notes: "Перенесено по slug" },
+        ].map((item) => ({
+          ...item,
+          userId: userA,
+          admissionYear,
+          history: [],
+          version: 3,
+        })),
+      });
+      const original = await db.accountTrackerItem.findMany({
+        where: { userId: userA, admissionYear },
+        orderBy: { programKey: "asc" },
+      });
+      const response = await api(
+        "/api/tracker",
+        "POST",
+        { programKey: "mai-ami", admissionYear },
+        cookieA,
+      );
+      assert.equal(response.status, 201, await response.clone().text());
+      const { item } = await response.json();
+      assert.equal(item.programKey, "mai-applied-math");
+      assert.deepEqual(
+        await db.accountTrackerItem.findMany({
+          where: { userId: userA, admissionYear },
+          orderBy: { programKey: "asc" },
+        }),
+        original,
+      );
+    } finally {
+      await db.accountTrackerItem.deleteMany({
+        where: { userId: userA, admissionYear },
+      });
+    }
+  });
+  it("drains migrated notification backlogs without starving later records", async () => {
+    await exerciseNotificationBacklog(db, base);
   });
   for (const change of ["deadline moved", "reminders disabled"] as const) {
     it(`rechecks eligibility of a waiting reminder when ${change}`, async () => {

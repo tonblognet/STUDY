@@ -6,6 +6,7 @@ import { trackerStages, type TrackerItem } from "@/lib/account/tracker";
 import { useUserState } from "@/components/user-state-provider";
 import { accountRequest } from "@/lib/account/client";
 import { LegacyTrackerImport } from "@/components/legacy-tracker-import";
+import { resolveTrackerProgramKey } from "@/lib/account/tracker-program";
 import {
   applyTrackerChange,
   commitTrackerChange,
@@ -136,9 +137,7 @@ export function AdmissionTracker({ programs }: { programs: Program[] }) {
             <TrackerRow
               key={`${item.id}:${item.version}`}
               item={item}
-              program={programs.find(
-                (p) => p.id === item.programKey || p.slug === item.programKey,
-              )}
+              program={resolveTrackerProgramKey(item.programKey, programs)}
               busy={busy}
               save={(data) => void mutate("PATCH", data)}
               remove={() =>

@@ -43,7 +43,8 @@ test("account migration preserves legacy tracker data and explicit document read
     // Date parameter that PostgreSQL would convert through the session timezone.
     const utcTimestamp = at.toISOString().slice(0, -1);
     const state = {
-      favoriteIds: ["synthetic-program"],
+      // The public saved-list ID deliberately differs from the relational slug.
+      favoriteIds: ["synthetic-public-id"],
       comparisonIds: [],
       scoreSets: [],
     };
