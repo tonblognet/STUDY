@@ -1,0 +1,285 @@
+{
+  "sourceYear": 2026,
+  "profiles": [
+    {
+      "universitySlug": "russia-1601",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://klgtu.ru/abitur/contacts/",
+          "sourceUrl": "https://klgtu.ru/abitur/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:19.678371+00:00",
+          "sourceSha256": "95db89714a8916b71489156dac6271a8bdcae5bf5551ce4e3dedc5715a5b7788"
+        },
+        "admissionsPhone": {
+          "value": "+7 (4012) 99-59-99",
+          "sourceUrl": "https://klgtu.ru/abitur/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:19.678371+00:00",
+          "sourceSha256": "95db89714a8916b71489156dac6271a8bdcae5bf5551ce4e3dedc5715a5b7788"
+        },
+        "admissionsEmail": {
+          "value": "pk@klgtu.ru",
+          "sourceUrl": "https://klgtu.ru/abitur/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:19.678371+00:00",
+          "sourceSha256": "95db89714a8916b71489156dac6271a8bdcae5bf5551ce4e3dedc5715a5b7788"
+        },
+        "hostelInfo": {
+          "value": "При заселении в общежитие обучающиеся должны быть ознакомлены с Положением о Студенческом городке, Правилами проживания в общежитии и пройти соответствующие инструктажи по пожарной безопасности, технике безопасности при эксплуатации электробытовых приборов и др. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+          "sourceUrl": "https://klgtu.ru/divisions/studencheskiy_gorodok/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:16.331485+00:00",
+          "sourceSha256": "09ffe1eea9055aa0b82f44d056215a59627c6a1189356d9b060946afa0be6297"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-12",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://bgu.ru/abitur/address.aspx",
+          "sourceUrl": "https://bgu.ru/abitur/address.aspx",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:19.657133+00:00",
+          "sourceSha256": "2ab4c30ad3a1558cecfaac9c8d4f221b6c288cd48a4ab951c702d64d56c4a7df"
+        },
+        "admissionsPhone": {
+          "value": "+7 (3952) 500-005",
+          "sourceUrl": "https://bgu.ru/abitur/address.aspx",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:19.657133+00:00",
+          "sourceSha256": "2ab4c30ad3a1558cecfaac9c8d4f221b6c288cd48a4ab951c702d64d56c4a7df"
+        },
+        "admissionsEmail": {
+          "value": "priem@bgu.ru",
+          "sourceUrl": "https://bgu.ru/abitur/address.aspx",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:19.657133+00:00",
+          "sourceSha256": "2ab4c30ad3a1558cecfaac9c8d4f221b6c288cd48a4ab951c702d64d56c4a7df"
+        },
+        "hostelInfo": {
+          "value": "Абитуриентам, зачисленным на 1 курс (заочная форма обучения) места предоставляются на период сессии при наличии свободных, за исключением лиц, проживающих в городах Иркутск, Ангарск, Шелехов. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+          "sourceUrl": "https://bgu.ru/abitur/hostel.aspx",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:16.423646+00:00",
+          "sourceSha256": "1a75f9ea84b1fef9e2a3052bc900b298347f571748875531151efed108888531"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-83",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://isu.ru/Abitur/pk2026/main/",
+          "sourceUrl": "https://isu.ru/Abitur/pk2026/main/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:16.424215+00:00",
+          "sourceSha256": "d1ffaacb08a1f38f246fd3a2e8c0d4277c74c14918f9752db1a2b8a55e378502"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-258",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy",
+          "sourceUrl": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:45:44.141327+00:00",
+          "sourceSha256": "6dcbd80e4269f0110134a10ac9aad8aa5c7ab0a3bf7f0016a63875e920e88712"
+        },
+        "admissionsPhone": {
+          "value": "+7 (8452) 51 - 92 - 26",
+          "sourceUrl": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:45:44.141327+00:00",
+          "sourceSha256": "6dcbd80e4269f0110134a10ac9aad8aa5c7ab0a3bf7f0016a63875e920e88712"
+        },
+        "admissionsEmail": {
+          "value": "cpk@sgu.ru",
+          "sourceUrl": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:45:44.141327+00:00",
+          "sourceSha256": "6dcbd80e4269f0110134a10ac9aad8aa5c7ab0a3bf7f0016a63875e920e88712"
+        },
+        "hostelInfo": {
+          "value": "По вопросам заселения иногородних поступающих в общежития университета следует обращаться в приёмные комиссии учебных подразделений университета при подаче документов для поступления. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+          "sourceUrl": "https://www.sgu.ru/obschezhitiya-i-predostavlenie-mest",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:45:15.456851+00:00",
+          "sourceSha256": "279cb3fefb0d4ffee79ecfa5572f53cebc400a492f9897f96498978526648558"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-11",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html",
+          "sourceUrl": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:45:42.912196+00:00",
+          "sourceSha256": "71fafb8a6950a28caecf55a2a1b3238bc6cdb25efdf9329bdcf6416cc29fb3cd"
+        },
+        "admissionsPhone": {
+          "value": "+7 (8512) 24-64-37; +7 (8512) 24-64-09",
+          "sourceUrl": "https://asu-edu.ru/universitet/12465-contacti.html",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:19.817257+00:00",
+          "sourceSha256": "54c385f75ae2650b9850716dfef5fcb1892249defed4bd97486728bd23446070"
+        },
+        "admissionsEmail": {
+          "value": "priem@asu-edu.ru",
+          "sourceUrl": "https://asu-edu.ru/universitet/12465-contacti.html",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:19.817257+00:00",
+          "sourceSha256": "54c385f75ae2650b9850716dfef5fcb1892249defed4bd97486728bd23446070"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-342",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://www.uniyar.ac.ru/Abitur/",
+          "sourceUrl": "https://www.uniyar.ac.ru/Abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:21.097594+00:00",
+          "sourceSha256": "6f99cece502aa8e2a16c0414c0c5d6f94efd25be0dcccd7f9c61cc6f19f17da9"
+        },
+        "admissionsPhone": {
+          "value": "8 (4852) 78-85-32; 8 (4852) 78-85-33",
+          "sourceUrl": "https://www.uniyar.ac.ru/Abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:21.097594+00:00",
+          "sourceSha256": "6f99cece502aa8e2a16c0414c0c5d6f94efd25be0dcccd7f9c61cc6f19f17da9"
+        },
+        "admissionsEmail": {
+          "value": "abitur@uniyar.ac.ru; priem@uniyar.ac.ru",
+          "sourceUrl": "https://www.uniyar.ac.ru/Abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:21.097594+00:00",
+          "sourceSha256": "6f99cece502aa8e2a16c0414c0c5d6f94efd25be0dcccd7f9c61cc6f19f17da9"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-341",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/",
+          "sourceUrl": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:16.851165+00:00",
+          "sourceSha256": "07bcbd920f3f813a0378bec6be17f73860afd2929e0f0424d573e150487bd031"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-199",
+      "fields": {
+        "hostelInfo": {
+          "value": "Предоставление места в общежитии иногородним студентам после зачисления осуществляется на основании личного заявления, поданного на портале \"Цифровое пространство студента ПетрГУ\". Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+          "sourceUrl": "https://petrsu.ru/page/education/bakalavriat_i_spec/rules/hostel",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:45:14.225980+00:00",
+          "sourceSha256": "a4c2fe5c75a96f9ea6983cea04a65d3bd6b4644ef0ea7ed0bd99e71449c06ac3"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    }
+  ],
+  "summary": {
+    "batch": "2026-11-09",
+    "profiles": 8,
+    "newFields": 21,
+    "scope": "Gap-only admission-office URLs/contacts and published housing conditions. Existing values are preserved. Housing does not confirm availability or guarantee placement.",
+    "baselineFieldKeys": {
+      "russia-11": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-12": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-1601": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-199": [
+        "address",
+        "admissionsEmail",
+        "admissionsPhone",
+        "admissionsUrl",
+        "email",
+        "telephone"
+      ],
+      "russia-258": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-341": [
+        "address",
+        "admissionsEmail",
+        "admissionsPhone",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-342": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-83": [
+        "address",
+        "admissionsEmail",
+        "admissionsPhone",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ]
+    },
+    "runtimeSnapshotSha256": "9dece098339ad5c9cb6c83e90f47093c5960dfb83fbea58961d249409c5ff7e8"
+  }
+}

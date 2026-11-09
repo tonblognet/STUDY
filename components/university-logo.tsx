@@ -7,7 +7,10 @@ export function UniversityLogo({
   university,
   size = "card",
 }: {
-  university: University;
+  university: Pick<
+    University,
+    "shortName" | "color" | "logoBackground" | "logoUrl"
+  >;
   size?: "card" | "row" | "hero";
 }) {
   const [failed, setFailed] = useState(false);

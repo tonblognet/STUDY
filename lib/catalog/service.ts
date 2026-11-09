@@ -48,7 +48,17 @@ async function assertProgramIdentities(
 export async function readPublishedCatalog(db: PrismaClient) {
   const head = await db.catalogHead.findUnique({
     where: { id: "public" },
-    include: { revision: true },
+    select: {
+      revision: {
+        select: {
+          id: true,
+          status: true,
+          checksum: true,
+          payload: true,
+          reviewedAt: true,
+        },
+      },
+    },
   });
   if (!head?.revision || head.revision.status !== "PUBLISHED")
     throw new CatalogError("Каталог ещё не опубликован", 503);
@@ -74,13 +84,45 @@ export async function stageCatalog(
   const snapshot = parseCatalog(input);
   const reason = reasonText(options.reason);
   const checksum = catalogChecksum(snapshot);
+  const base = await db.catalogHead.findUniqueOrThrow({
+    where: { id: "public" },
+    select: {
+      revisionId: true,
+      revision: { select: { checksum: true, payload: true } },
+    },
+  });
+  if (base.revisionId !== options.expectedRevisionId)
+    throw new CatalogError(
+      "Каталог уже изменился. Загрузите опубликованную версию и повторите импорт",
+      409,
+    );
+  // Published evidence is immutable. Prepare the potentially large diff and JSON
+  // before taking the shared lock, then verify its base again inside the transaction.
+  const changes =
+    base.revision?.checksum === checksum
+      ? null
+      : catalogDiff(
+          base.revision ? parseCatalog(base.revision.payload) : null,
+          snapshot,
+        );
+  const prepared = changes
+    ? {
+        payload: json(snapshot),
+        changes: json(changes),
+        changeCount: changes.length,
+      }
+    : null;
+  const fingerprint = catalogChecksum({ checksum, base: base.revisionId });
   return db.$transaction(
     async (tx) => {
       // A transaction-scoped database lock works across CLI imports and web replicas.
       await tx.$queryRaw`SELECT "id" FROM "CatalogHead" WHERE "id" = 'public' FOR UPDATE`;
       const head = await tx.catalogHead.findUniqueOrThrow({
         where: { id: "public" },
-        include: { revision: true },
+        select: {
+          revisionId: true,
+          revision: { select: { id: true, checksum: true } },
+        },
       });
       if (head.revisionId !== options.expectedRevisionId)
         throw new CatalogError(
@@ -94,26 +136,25 @@ export async function stageCatalog(
           unchanged: true,
         };
       await assertProgramIdentities(tx, snapshot);
-      const fingerprint = catalogChecksum({ checksum, base: head.revisionId });
       const existing = await tx.catalogRevision.findUnique({
         where: { fingerprint },
+        select: { id: true, status: true },
       });
       if (existing)
         return { id: existing.id, status: existing.status, unchanged: true };
-      const changes = catalogDiff(
-        head.revision ? parseCatalog(head.revision.payload) : null,
-        snapshot,
-      );
+      if (!prepared)
+        throw new CatalogError("Нарушена целостность публикации каталога", 503);
       const revision = await tx.catalogRevision.create({
         data: {
           fingerprint,
           checksum,
           baseRevisionId: head.revisionId,
-          payload: json(snapshot),
-          changes: json(changes),
+          payload: prepared.payload,
+          changes: prepared.changes,
           reason,
           createdBy: options.actor.id,
         },
+        select: { id: true, status: true },
       });
       await tx.auditLog.create({
         data: {
@@ -121,7 +162,7 @@ export async function stageCatalog(
           action: "CATALOG_REVIEW_CREATED",
           entityType: "CatalogRevision",
           entityId: revision.id,
-          after: { checksum, changes: changes.length },
+          after: { checksum, changes: prepared.changeCount },
         },
       });
       return { id: revision.id, status: revision.status, unchanged: false };
@@ -146,8 +187,18 @@ export async function reviewCatalog(
       await tx.$queryRaw`SELECT "id" FROM "CatalogHead" WHERE "id" = 'public' FOR UPDATE`;
       const head = await tx.catalogHead.findUniqueOrThrow({
         where: { id: "public" },
+        select: { revisionId: true },
       });
-      const revision = await tx.catalogRevision.findUnique({ where: { id } });
+      const revision = await tx.catalogRevision.findUnique({
+        where: { id },
+        select: {
+          id: true,
+          status: true,
+          baseRevisionId: true,
+          checksum: true,
+          payload: true,
+        },
+      });
       if (!revision) throw new CatalogError("Изменение не найдено", 404);
       if (decision === "publish" && head.revisionId === id)
         return { id, status: "PUBLISHED" as const, unchanged: true };
@@ -177,6 +228,7 @@ export async function reviewCatalog(
           reviewNote: reason,
           reviewedAt: new Date(),
         },
+        select: { id: true },
       });
       if (decision === "publish")
         await tx.catalogHead.update({

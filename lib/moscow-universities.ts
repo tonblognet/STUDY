@@ -17,6 +17,10 @@ export type DirectoryProvenance = {
   logoAssetSourceUrl?: string;
   logoCheckedAt?: string;
   logoSha256?: string;
+  region?: string;
+  federalDistrict?: string;
+  sourceSha256?: string;
+  listSourceUrl?: string;
   note: string;
 };
 

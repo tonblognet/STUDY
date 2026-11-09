@@ -1,0 +1,585 @@
+{
+  "reviewedAt": "2026-10-20T10:10:37Z",
+  "batch": "data-sources/russia/regional-south-enrichment-2026-10-20.json",
+  "scope": "Только новые разделы файловой матрицы. Текущий набор, ЕГЭ, цена, лицензия и доступность места в общежитии не подтверждаются.",
+  "stats": {
+    "universitiesAttempted": 10,
+    "universitiesWithCurrentFields": 1,
+    "universitiesWithFaculties": 1,
+    "fields": 8,
+    "faculties": 9,
+    "implementedOfferings": 117,
+    "pagesRequested": 61,
+    "discoveredPathsDeferred": 0
+  },
+  "factsVerified": 134,
+  "allFactSourceAudit": {
+    "errors": 0,
+    "warnings": 0,
+    "sourceRowsAssociated": 117
+  },
+  "educationalOverview": {
+    "sourceUrl": "https://www.vvsu.ru/sveden/education/1/",
+    "rowsWithCode": 207,
+    "rowsByPublishedLevel": {
+      "Высшее образование - Бакалавриат": 95,
+      "Высшее образование - Специалитет": 7,
+      "Высшее образование - Магистратура": 25,
+      "Среднее профессиональное образование - Подготовка специалистов среднего звена (Основное общее образование)": 50,
+      "Среднее профессиональное образование - Подготовка специалистов среднего звена (Среднее общее образование)": 29,
+      "Среднее профессиональное образование - Подготовка квалифицированных рабочих, служащих (Основное общее образование)": 1
+    },
+    "retainedRows": 117,
+    "excludedSpoRows": 80,
+    "duplicateHigherEducationRows": 10,
+    "note": "Прочитан явно помеченный table itemprop=eduAccred; таблицы численности и учебных планов не используются. 127 строк высшего образования дают 117 уникальных записей; 80 строк СПО исключены. Все записанные формы и сроки сверены с соответствующими исходными строками."
+  },
+  "manualReview": {
+    "publishedLevels": {
+      "Высшее образование - Бакалавриат": 85,
+      "Высшее образование - Специалитет": 7,
+      "Высшее образование - Магистратура": 25
+    },
+    "publishedForms": {
+      "очная": 84,
+      "очно-заочная": 19,
+      "заочная": 14
+    },
+    "excludedUnits": [
+      "Институт военно-патриотического воспитания",
+      "Институт подготовки иностранных граждан",
+      "Институт постдипломного образования"
+    ],
+    "excludedUnitReason": "На доступной странице структуры не подтверждена самостоятельная реализация высшего образования; подготовительные, военно-воспитательные и постдипломные единицы не добавлены в HE-перечень. Полнота структуры не заявляется.",
+    "unitUrlNormalization": "Убраны только начальные/конечные пробелы официальных href, исходный HTTP-снимок сохранён.",
+    "residenceNote": "Буквальные подписи источника: 6 общежитий, 2134 места. Свободное место и гарантия заселения не выводятся.",
+    "otherCityExcludedUnits": [
+      {
+        "universitySlug": "russia-28",
+        "kind": "other_city_unit_excluded",
+        "name": "Педагогический институт",
+        "publishedAddress": "692500, Приморский край, г. Уссурийск, ул. Володарского, 67",
+        "sourceUrl": "https://www.vvsu.ru/sveden/struct/",
+        "sourceYear": 2026,
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "sourceSha256": "7b09ffef74fdacb221322c62351c2a50b21653df91f30e37f1ec28c35cc1b365",
+        "note": "Подразделение опубликовано в Уссурийске и не добавлено в список учебных подразделений владивостокской карточки. Это ограничение географического охвата, а не отсутствие подразделения или высшего образования; нужна отдельная проверка кампуса."
+      }
+    ],
+    "unitCount": 9
+  },
+  "failures": {
+    "russia-1560": [
+      {
+        "requestedUrl": "https://www.tgmu.ru",
+        "url": "https://www.tgmu.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5010 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.tgmu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.tgmu.ru/sveden/common/",
+        "url": "https://www.tgmu.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5016 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.tgmu.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://www.tgmu.ru/sveden/common",
+        "url": "https://www.tgmu.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5008 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.tgmu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.tgmu.ru/sveden/struct/",
+        "url": "https://www.tgmu.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5015 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.tgmu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.tgmu.ru/sveden/education/",
+        "url": "https://www.tgmu.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5004 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.tgmu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.tgmu.ru/sveden/education",
+        "url": "https://www.tgmu.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5013 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.tgmu.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ],
+    "russia-1606": [
+      {
+        "requestedUrl": "https://www.stgmu.ru",
+        "url": "https://www.stgmu.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5056 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgmu.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://www.stgmu.ru/sveden/common/",
+        "url": "https://www.stgmu.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5012 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgmu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.stgmu.ru/sveden/common",
+        "url": "https://www.stgmu.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5011 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgmu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.stgmu.ru/sveden/struct/",
+        "url": "https://www.stgmu.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5016 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgmu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.stgmu.ru/sveden/education/",
+        "url": "https://www.stgmu.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5004 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgmu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.stgmu.ru/sveden/education",
+        "url": "https://www.stgmu.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5006 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgmu.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ],
+    "russia-1642": [
+      {
+        "requestedUrl": "https://www.stgau.ru",
+        "url": "https://www.stgau.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Resolving timed out after 5008 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgau.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.stgau.ru/sveden/common/",
+        "url": "https://www.stgau.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5009 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgau.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.stgau.ru/sveden/common",
+        "url": "https://www.stgau.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5010 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgau.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.stgau.ru/sveden/struct/",
+        "url": "https://www.stgau.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5003 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgau.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.stgau.ru/sveden/education/",
+        "url": "https://www.stgau.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5009 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgau.ru', port=443): Max retries exceeded with url: /sveden/education/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://www.stgau.ru/sveden/education",
+        "url": "https://www.stgau.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5003 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.stgau.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ],
+    "russia-1691": [
+      {
+        "requestedUrl": "https://www.dvgups.ru",
+        "url": "https://www.dvgups.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5045 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.dvgups.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://www.dvgups.ru/sveden/common/",
+        "url": "https://www.dvgups.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5008 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.dvgups.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.dvgups.ru/sveden/common",
+        "url": "https://www.dvgups.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5013 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.dvgups.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.dvgups.ru/sveden/struct/",
+        "url": "https://www.dvgups.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5011 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.dvgups.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.dvgups.ru/sveden/education/",
+        "url": "https://www.dvgups.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5012 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.dvgups.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.dvgups.ru/sveden/education",
+        "url": "https://www.dvgups.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5006 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.dvgups.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ],
+    "russia-288": [
+      {
+        "requestedUrl": "https://togudv.ru",
+        "url": "https://togudv.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5063 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='togudv.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://togudv.ru/sveden/common/",
+        "url": "https://togudv.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5002 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='togudv.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://togudv.ru/sveden/common",
+        "url": "https://togudv.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5000 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='togudv.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://togudv.ru/sveden/struct/",
+        "url": "https://togudv.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5003 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='togudv.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://togudv.ru/sveden/education/",
+        "url": "https://togudv.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5007 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='togudv.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://togudv.ru/sveden/education",
+        "url": "https://togudv.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5015 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='togudv.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ],
+    "russia-337": [
+      {
+        "requestedUrl": "https://www.sfedu.ru",
+        "url": "https://www.sfedu.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5013 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.sfedu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.sfedu.ru/sveden/common/",
+        "url": "https://www.sfedu.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5014 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.sfedu.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://www.sfedu.ru/sveden/common",
+        "url": "https://www.sfedu.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5011 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.sfedu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.sfedu.ru/sveden/struct/",
+        "url": "https://www.sfedu.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5015 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.sfedu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.sfedu.ru/sveden/education/",
+        "url": "https://www.sfedu.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5014 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.sfedu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.sfedu.ru/sveden/education",
+        "url": "https://www.sfedu.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5003 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.sfedu.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ],
+    "russia-40": [
+      {
+        "requestedUrl": "https://vgltu.ru",
+        "url": "https://vgltu.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5007 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='vgltu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://vgltu.ru/sveden/common/",
+        "url": "https://vgltu.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5009 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='vgltu.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://vgltu.ru/sveden/common",
+        "url": "https://vgltu.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5006 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='vgltu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://vgltu.ru/sveden/struct/",
+        "url": "https://vgltu.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5018 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='vgltu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://vgltu.ru/sveden/education/",
+        "url": "https://vgltu.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5015 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='vgltu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://vgltu.ru/sveden/education",
+        "url": "https://vgltu.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5015 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='vgltu.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ],
+    "russia-41": [
+      {
+        "requestedUrl": "https://www.vsuet.ru",
+        "url": "https://www.vsuet.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5010 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.vsuet.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.vsuet.ru/sveden/common/",
+        "url": "https://www.vsuet.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5015 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.vsuet.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://www.vsuet.ru/sveden/common",
+        "url": "https://www.vsuet.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5012 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.vsuet.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.vsuet.ru/sveden/struct/",
+        "url": "https://www.vsuet.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5001 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.vsuet.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.vsuet.ru/sveden/education/",
+        "url": "https://www.vsuet.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5001 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.vsuet.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://www.vsuet.ru/sveden/education",
+        "url": "https://vsuet.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "301",
+        "exitCode": 28,
+        "error": "curl: (28) Resolving timed out after 5010 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='www.vsuet.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ],
+    "russia-44": [
+      {
+        "requestedUrl": "https://cchgeu.ru",
+        "url": "https://cchgeu.ru/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5002 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='cchgeu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://cchgeu.ru/sveden/common/",
+        "url": "https://cchgeu.ru/sveden/common/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5016 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='cchgeu.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+      },
+      {
+        "requestedUrl": "https://cchgeu.ru/sveden/common",
+        "url": "https://cchgeu.ru/sveden/common",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5016 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='cchgeu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://cchgeu.ru/sveden/struct/",
+        "url": "https://cchgeu.ru/sveden/struct/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5009 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='cchgeu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://cchgeu.ru/sveden/education/",
+        "url": "https://cchgeu.ru/sveden/education/",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5004 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='cchgeu.ru', port=443): Read timed out. (read timeout=5)"
+      },
+      {
+        "requestedUrl": "https://cchgeu.ru/sveden/education",
+        "url": "https://cchgeu.ru/sveden/education",
+        "checkedAt": "2026-10-20T10:03:57Z",
+        "httpStatus": "000",
+        "exitCode": 28,
+        "error": "curl: (28) Connection timed out after 5012 milliseconds",
+        "requestsError": "HTTPSConnectionPool(host='cchgeu.ru', port=443): Read timed out. (read timeout=5)"
+      }
+    ]
+  },
+  "limitations": [
+    "Образовательные записи pending_review/sourceYear=null; это реализуемые программы, не конкурсные группы.",
+    "Остальные девять целей не дали доступных сведений в этом проходе; недоступность источника не означает закрытие организации.",
+    "Ручной аудит всех 117 строк и 9 имён подразделений выполнен, независимый обзор передан корневому агенту.",
+    "Педагогический институт опубликован в Уссурийске; исключён из владивостокской карточки с точным адресом и происхождением. Дата проверки исходной структуры остаётся 20 октября; исправление охвата не является повторным HTTP-получением."
+  ],
+  "reproduce": "python scripts/collect-regional-south-enrichment.py --checked-at 2026-10-20T10:03:57Z --collection-date 2026-10-20 --offline --gaps-only --monitoring-ids 337,288,28,44,41,40,1642,1606,1691,1560 --gap-baseline data-sources/russia/regional-south-enrichment-2026-10-20.json --output tmp/regional-south-replay-2026-10-20.json --cache-dir tmp/russia-research/regional-south-enrichment-2026-10-20",
+  "scopeCorrectionReviewedAt": "2026-10-21"
+}

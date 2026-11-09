@@ -76,4 +76,23 @@ describe("public filter persistence boundaries", () => {
       decodeView(matchViewSchema, '{"quality":"not_applicable"}').quality,
     ).toBe("not_applicable");
   });
+  it("preserves city and faculty filters beyond a thousand directory entries", () => {
+    const state = decodeView(
+      universityViewSchema,
+      JSON.stringify({
+        city: "Казань",
+        detailsFilter: "faculties",
+        limit: 1200,
+      }),
+    );
+    expect(state).toMatchObject({
+      city: "Казань",
+      detailsFilter: "faculties",
+      limit: 1200,
+    });
+    expect(decodeView(universityViewSchema, '{"city":42}').city).toBe("all");
+    expect(decodeView(universityViewSchema, '{"ownership":"state"}').city).toBe(
+      "all",
+    );
+  });
 });

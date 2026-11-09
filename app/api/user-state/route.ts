@@ -1,16 +1,24 @@
 import { NextResponse } from "next/server";
-import { getSessionUser } from "@/lib/auth/session";
+import { getActiveSession, getSessionUser } from "@/lib/auth/session";
 import { getCatalog } from "@/lib/catalog/server";
-import { loadUserState, saveUserState } from "@/lib/user-state/repository";
 import {
-  normalizeUserState,
-  userStateSchema,
-} from "@/lib/user-state/validation";
+  loadUserState,
+  saveUserState,
+  StateConflict,
+} from "@/lib/user-state/repository";
+import { z } from "zod";
+import { readBoundedJson, PayloadTooLarge } from "@/lib/security/body";
+import { userStateSchema } from "@/lib/user-state/validation";
 
 export const dynamic = "force-dynamic";
 
-export async function GET() {
+export async function GET(request: Request) {
   const user = await getSessionUser();
+  if (user && request.headers.get("x-account-id") !== user.id)
+    return NextResponse.json(
+      { error: "Аккаунт в другой вкладке изменился. Перезагрузите страницу" },
+      { status: 409 },
+    );
   if (!user)
     return NextResponse.json(
       { error: "authentication_required" },
@@ -19,7 +27,7 @@ export async function GET() {
 
   try {
     return NextResponse.json({
-      state: await loadUserState(user),
+      ...(await loadUserState(user)),
       storage: "account",
     });
   } catch (error) {
@@ -29,8 +37,14 @@ export async function GET() {
 }
 
 export async function PUT(request: Request) {
-  const user = await getSessionUser();
-  if (!user)
+  const access = await getActiveSession();
+  const user = access?.user;
+  if (user && request.headers.get("x-account-id") !== user.id)
+    return NextResponse.json(
+      { error: "Аккаунт в другой вкладке изменился. Перезагрузите страницу" },
+      { status: 409 },
+    );
+  if (!access || !user)
     return NextResponse.json(
       { error: "authentication_required" },
       { status: 401 },
@@ -44,8 +58,17 @@ export async function PUT(request: Request) {
   if (contentLength > 64_000)
     return NextResponse.json({ error: "payload_too_large" }, { status: 413 });
 
-  const payload = await request.json().catch(() => null);
-  const parsed = userStateSchema.safeParse(payload);
+  let payload: unknown;
+  try {
+    payload = await readBoundedJson(request);
+  } catch (error) {
+    if (error instanceof PayloadTooLarge)
+      return NextResponse.json({ error: "payload_too_large" }, { status: 413 });
+    payload = null;
+  }
+  const parsed = userStateSchema
+    .extend({ version: z.number().int().min(0) })
+    .safeParse(payload);
   if (!parsed.success) {
     return NextResponse.json(
       { error: "invalid_payload", issues: parsed.error.issues },
@@ -55,15 +78,24 @@ export async function PUT(request: Request) {
 
   try {
     const { programs } = await getCatalog();
-    const state = normalizeUserState(
+    const saved = await saveUserState(
+      access,
       parsed.data,
+      parsed.data.version,
       new Set(programs.map((program) => program.id)),
     );
+    if (!saved)
+      return NextResponse.json(
+        { error: "authentication_required" },
+        { status: 401 },
+      );
     return NextResponse.json({
-      state: await saveUserState(user, state),
+      ...saved.value,
       storage: "account",
     });
   } catch (error) {
+    if (error instanceof StateConflict)
+      return NextResponse.json({ error: "state_conflict" }, { status: 409 });
     console.error("Unable to save user state", error);
     return NextResponse.json({ error: "storage_unavailable" }, { status: 503 });
   }

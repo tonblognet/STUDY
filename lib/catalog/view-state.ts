@@ -20,11 +20,12 @@ export const programViewSchema = z.object({
 });
 export const universityViewSchema = z.object({
   query: text.catch(""),
+  city: text.catch("all"),
   ownership: z.enum(["all", "state", "private"]).catch("all"),
   detailsFilter: z
-    .enum(["all", "contacts", "offerings", "extract"])
+    .enum(["all", "contacts", "offerings", "faculties", "extract"])
     .catch("all"),
-  limit: z.number().int().min(24).max(1000).catch(24),
+  limit: z.number().int().min(24).max(10000).catch(24),
 });
 export const matchViewSchema = z.object({
   category: z

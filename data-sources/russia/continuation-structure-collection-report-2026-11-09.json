@@ -1,0 +1,994 @@
+{
+  "batchDate": "2026-11-09",
+  "scope": "Частичные перечни факультетов/институтов и шесть основных сведений УлГТУ, УлГУ, ВолГУ и ЛГТУ из официальных страниц. Вложенные единицы считаются подразделениями. Условия поступления, текущие лицензии, конкурсные программы и наличие мест не подтверждаются этой партией.",
+  "baseline": {
+    "runtimeSnapshotSha256": "9dece098339ad5c9cb6c83e90f47093c5960dfb83fbea58961d249409c5ff7e8",
+    "fields": {
+      "russia-117": {},
+      "russia-305": {},
+      "russia-306": {},
+      "russia-36": {}
+    },
+    "facultyNames": {
+      "russia-117": [],
+      "russia-305": [],
+      "russia-306": [],
+      "russia-36": []
+    }
+  },
+  "workDirectory": "tmp/russia-research/continuation-structure-2026-11-09",
+  "stats": {
+    "universities": 4,
+    "fields": 24,
+    "faculties": 31,
+    "offerings": 0
+  },
+  "reviewed": [
+    {
+      "universitySlug": "russia-305",
+      "fields": [
+        {
+          "field": "fullName",
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ульяновский государственный технический университет\"",
+          "xpath": "/html/body/main/div/div[1]/div",
+          "literalFieldText": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ульяновский государственный технический университет\"",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        {
+          "field": "shortName",
+          "value": "УлГТУ, Ульяновский государственный технический университет",
+          "xpath": "/html/body/main/div/div[2]/div",
+          "literalFieldText": "УлГТУ, Ульяновский государственный технический университет",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        {
+          "field": "regDate",
+          "value": "18.09.1957",
+          "xpath": "/html/body/main/div/div[3]/div",
+          "literalFieldText": "18.09.1957",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        {
+          "field": "address",
+          "value": "432027, Ульяновская область, г. Ульяновск, улица Северный Венец, дом 32",
+          "xpath": "/html/body/main/div/div[4]/div",
+          "literalFieldText": "432027, Ульяновская область, г. Ульяновск, улица Северный Венец, дом 32",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        {
+          "field": "telephone",
+          "value": "8(8422)43-02-37",
+          "xpath": "/html/body/main/div/div[6]/div",
+          "literalFieldText": "8(8422)43-02-37",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        {
+          "field": "email",
+          "value": "rector@ulstu.ru",
+          "xpath": "/html/body/main/div/div[7]/div",
+          "literalFieldText": "rector@ulstu.ru",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        }
+      ],
+      "faculties": [
+        {
+          "name": "Машиностроительный факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/mf/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[2]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[2]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[2]/td[5]",
+          "address": "г. Ульяновск, ул. Андрея Блаженного, здание 3/16",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Машиностроительный факультет Крупенников Олег Геннадьевич декан г. Ульяновск, ул. Андрея Блаженного, здание 3/16 https://ulstu.ru/education/institutes-and-faculties/mf/ dmf@ulstu.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Самолетостроительный факультет ИАТУ",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/ssf-iatu/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[3]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[3]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[3]/td[5]",
+          "address": "г. Ульяновск, проспект Созидателей, д. 13а",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Самолетостроительный факультет ИАТУ Денисова Татьяна Валентиновна И.о. декана г. Ульяновск, проспект Созидателей, д. 13а https://ulstu.ru/education/institutes-and-faculties/ssf-iatu/ t.denisova@ulstu.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Факультет информационных систем и технологий",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/fist/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[4]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[4]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[4]/td[5]",
+          "address": "г.Ульяновск, ул. Северный Венец, д.32",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Факультет информационных систем и технологий Святов Кирилл Валерьевич декан г.Ульяновск, ул. Северный Венец, д.32 https://ulstu.ru/education/institutes-and-faculties/fist/ fist@ulstu.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Радиотехнический факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/rtf/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[5]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[5]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[5]/td[5]",
+          "address": "г.Ульяновск, ул. Северный Венец, д.32",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Радиотехнический факультет Покладова Юлия Валерьевна декан г.Ульяновск, ул. Северный Венец, д.32 https://ulstu.ru/education/institutes-and-faculties/rtf/ rtf@ulstu.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Энергетический факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/ef/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[6]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[6]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[6]/td[5]",
+          "address": "г.Ульяновск, ул. Северный Венец, д.32",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Энергетический факультет Дубов Александр Леонидович декан г.Ульяновск, ул. Северный Венец, д.32 https://ulstu.ru/education/institutes-and-faculties/ef/ kvn@ulstu.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Строительный факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/sf/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[7]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[7]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[7]/td[5]",
+          "address": "г.Ульяновск, ул. Северный Венец, д.32",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Строительный факультет Тур Виталий Иванович декан г.Ульяновск, ул. Северный Венец, д.32 https://ulstu.ru/education/institutes-and-faculties/sf/ v_tur@mail.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Гуманитарный факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/gf/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[8]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[8]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[8]/td[5]",
+          "address": "г.Ульяновск, ул. Северный Венец, д.32",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Гуманитарный факультет Соснина Екатерина Петровна декан г.Ульяновск, ул. Северный Венец, д.32 https://ulstu.ru/education/institutes-and-faculties/gf/ gf@ulstu.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Заочно-вечерний факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/zvf/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[9]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[9]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[9]/td[5]",
+          "address": "г.Ульяновск, ул. Северный Венец, д.32",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Заочно-вечерний факультет отсутствует и.о. декана г.Ульяновск, ул. Северный Венец, д.32 https://ulstu.ru/education/institutes-and-faculties/zvf/ zvf@ulstu.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Инженерно-экономический факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/ief/",
+          "xpath": "/html/body/main/div/div[1]/div/table/tbody/tr[10]/td[1]",
+          "rowXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[10]",
+          "siteXPath": "/html/body/main/div/div[1]/div/table/tbody/tr[10]/td[5]",
+          "address": "г.Ульяновск, ул. Северный Венец, д.32",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Инженерно-экономический факультет Старостина Татьяна Геннадьевна декан г.Ульяновск, ул. Северный Венец, д.32 https://ulstu.ru/education/institutes-and-faculties/ief/ emf@ulstu.ru fakultet.pdf",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        }
+      ]
+    },
+    {
+      "universitySlug": "russia-306",
+      "fields": [
+        {
+          "field": "fullName",
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ульяновский государственный университет\"",
+          "xpath": "/html/body/main/div/table[1]/tr[1]/td[2]",
+          "literalFieldText": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ульяновский государственный университет\"",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        {
+          "field": "shortName",
+          "value": "Ульяновский государственный университет, УлГУ, ФГБОУ ВО \"Ульяновский государственный университет\"",
+          "xpath": "/html/body/main/div/table[1]/tr[2]/td[2]",
+          "literalFieldText": "Ульяновский государственный университет, УлГУ, ФГБОУ ВО \"Ульяновский государственный университет\"",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        {
+          "field": "regDate",
+          "value": "11.02.1988",
+          "xpath": "/html/body/main/div/table[1]/tr[3]/td[2]",
+          "literalFieldText": "11.02.1988",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        {
+          "field": "address",
+          "value": "432017, Ульяновская область, город Ульяновск, улица Льва Толстого, дом 42",
+          "xpath": "/html/body/main/div/table[1]/tr[4]/td[2]",
+          "literalFieldText": "432017, Ульяновская область, город Ульяновск, улица Льва Толстого, дом 42",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        {
+          "field": "telephone",
+          "value": "8 (8422) 41-29-97",
+          "xpath": "/html/body/main/div/table[1]/tr[8]/td[2]",
+          "literalFieldText": "8 (8422) 41-29-97",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        {
+          "field": "email",
+          "value": "contact@ulsu.ru",
+          "xpath": "/html/body/main/div/table[1]/tr[9]/td[2]",
+          "literalFieldText": "contact@ulsu.ru",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        }
+      ],
+      "faculties": [
+        {
+          "name": "Институт экономики и бизнеса",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/1b4496d9-f201-11de-8bdd-001a92e75bb4/",
+          "xpath": "/html/body/main/div/table[1]/tr[47]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[47]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[47]/td[5]",
+          "address": "432071, г. Ульяновск, ул. Федерации, д. 29, каб. 8",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Институт экономики и бизнеса Романова Ирина Борисовна Директор института 432071, г. Ульяновск, ул. Федерации, д. 29, каб. 8 https://www.ulsu.ru/ru/sveden/struct/1b4496d9-f201-11de-8bdd-001a92e75bb4/ priemnaya@ulsu.ru Положение электронная подпись",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Институт медицины, экологии и физической культуры",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/13829066-f201-11de-8bdd-001a92e75bb4/",
+          "xpath": "/html/body/main/div/table[1]/tr[48]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[48]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[48]/td[5]",
+          "address": "432017, г. Ульяновск, ул. архитектора Ливчака, 2, каб.110",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Институт медицины, экологии и физической культуры Машин Виктор Владимирович Директор института 432017, г. Ульяновск, ул. архитектора Ливчака, 2, каб.110 https://www.ulsu.ru/ru/sveden/struct/13829066-f201-11de-8bdd-001a92e75bb4/ imefc@ulsu.ru Положение электронная подпись",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Факультет лингвистики, межкультурных связей и профессиональной коммуникации",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/33ec6471-0b44-11e4-b93f-00237dcf6128/",
+          "xpath": "/html/body/main/div/table[1]/tr[49]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[49]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[49]/td[5]",
+          "address": "432017, г. Ульяновск, ул. Набережная р.Свияги 106, корпус 1, ауд. 313",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Факультет лингвистики, межкультурных связей и профессиональной коммуникации Крашенинникова Наталья Александровна Декан 432017, г. Ульяновск, ул. Набережная р.Свияги 106, корпус 1, ауд. 313 https://www.ulsu.ru/ru/sveden/struct/33ec6471-0b44-11e4-b93f-00237dcf6128/ flimsdekanat@ulsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Факультет математики, информационных и авиационных технологий",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/fmiat/",
+          "xpath": "/html/body/main/div/table[1]/tr[50]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[50]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[50]/td[5]",
+          "address": "432017, г. Ульяновск, ул. Набережная р. Свияги, 106, корпус 1, ауд. 602, 605, корп. 3, ауд. 220",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Факультет математики, информационных и авиационных технологий Волков Максим Анатольевич Декан 432017, г. Ульяновск, ул. Набережная р. Свияги, 106, корпус 1, ауд. 602, 605, корп. 3, ауд. 220 https://www.ulsu.ru/ru/sveden/struct/fmiat/ fmit@ulsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Инженерно-физический факультет высоких технологий",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/1382904b-f201-11de-8bdd-001a92e75bb4/",
+          "xpath": "/html/body/main/div/table[1]/tr[51]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[51]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[51]/td[5]",
+          "address": "432017, г. Ульяновск, ул. Набережная р. Свияги, 106, корпус 1, ауд. 207",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Инженерно-физический факультет высоких технологий Рыбин Владислав Витальевич Декан 432017, г. Ульяновск, ул. Набережная р. Свияги, 106, корпус 1, ауд. 207 https://www.ulsu.ru/ru/sveden/struct/1382904b-f201-11de-8bdd-001a92e75bb4/ rybinvv@ulsu.ru Положение электронная подпись",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Юридический факультет",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/2301d974-f201-11de-8bdd-001a92e75bb4/",
+          "xpath": "/html/body/main/div/table[1]/tr[52]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[52]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[52]/td[5]",
+          "address": "432970, г. Ульяновск, ул. Гончарова, 40/9, каб.204",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Юридический факультет Морозов Сергей Юрьевич Декан 432970, г. Ульяновск, ул. Гончарова, 40/9, каб.204 https://www.ulsu.ru/ru/sveden/struct/2301d974-f201-11de-8bdd-001a92e75bb4/ morozovsi@ulsu.ru Положение электронная подпись",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Факультет гуманитарных наук и социальных технологий",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/2301d923-f201-11de-8bdd-001a92e75bb4/",
+          "xpath": "/html/body/main/div/table[1]/tr[53]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[53]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[53]/td[5]",
+          "address": "432063, г. Ульяновск, Университетская Набережная, 40, корпус 2",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Факультет гуманитарных наук и социальных технологий Митин Сергей Николаевич Декан 432063, г. Ульяновск, Университетская Набережная, 40, корпус 2 https://www.ulsu.ru/ru/sveden/struct/2301d923-f201-11de-8bdd-001a92e75bb4/ gumfak@ulsu.ru Положение электронная подпись",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Факультет культуры и искусства",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/2301d931-f201-11de-8bdd-001a92e75bb4/",
+          "xpath": "/html/body/main/div/table[1]/tr[54]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[54]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[54]/td[5]",
+          "address": "432017, г. Ульяновск, ул. 12 Сентября, 5a, к.16",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Факультет культуры и искусства Сафронов Николай Степанович Декан 432017, г. Ульяновск, ул. 12 Сентября, 5a, к.16 https://www.ulsu.ru/ru/sveden/struct/2301d931-f201-11de-8bdd-001a92e75bb4/ fki@ulsu.ru Положение электронная подпись",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Заволжский экономико-гуманитарный факультет",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/493a9ad1-364e-11df-8ee4-00237dcf6128/",
+          "xpath": "/html/body/main/div/table[1]/tr[57]/td[1]",
+          "rowXPath": "/html/body/main/div/table[1]/tr[57]",
+          "siteXPath": "/html/body/main/div/table[1]/tr[57]/td[5]",
+          "address": "432072, г. Ульяновск, бульвар Львовский, 5",
+          "mainCity": "Ульяновск",
+          "literalRowText": "Заволжский экономико-гуманитарный факультет Вершинина Елена Львовна Декан 432072, г. Ульяновск, бульвар Львовский, 5 https://www.ulsu.ru/ru/sveden/struct/493a9ad1-364e-11df-8ee4-00237dcf6128/ zegf@ulsu.ru Положение электронная подпись",
+          "campusReview": "Буквальный адрес строки содержит основной город Ульяновск",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        }
+      ]
+    },
+    {
+      "universitySlug": "russia-36",
+      "fields": [
+        {
+          "field": "fullName",
+          "value": "Федеральное государственное автономное образовательное учреждение высшего образования \"Волгоградский государственный университет\"",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/div[1]/section[1]/div/span[1]",
+          "literalFieldText": "Федеральное государственное автономное образовательное учреждение высшего образования \"Волгоградский государственный университет\"",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        {
+          "field": "shortName",
+          "value": "ВолГУ; ФГАОУ ВО \"Волгоградский государственный университет\"; Волгоградский государственный университет; ФГАОУ ВО ВолГУ",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/div[1]/section[2]/div/span[1]",
+          "literalFieldText": "ВолГУ; ФГАОУ ВО \"Волгоградский государственный университет\"; Волгоградский государственный университет; ФГАОУ ВО ВолГУ",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        {
+          "field": "regDate",
+          "value": "1980 г.",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/div[1]/section[3]/div/span",
+          "literalFieldText": "1980 г.",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        {
+          "field": "address",
+          "value": "400062, Волгоградская область, г. Волгоград, просп. Университетский, д.100",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/div[1]/section[5]/div/span[1]",
+          "literalFieldText": "400062, Волгоградская область, г. Волгоград, просп. Университетский, д.100",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        {
+          "field": "telephone",
+          "value": "+7 (8442) 460-263",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/div[1]/section[7]/div/p[2]/span",
+          "literalFieldText": "+7 (8442) 460-263",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        {
+          "field": "email",
+          "value": "rector@volsu.ru",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/div[1]/section[7]/div/p[1]/a",
+          "literalFieldText": "rector@volsu.ru",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        }
+      ],
+      "faculties": [
+        {
+          "name": "Институт естественных наук",
+          "url": "https://volsu.ru/struct/institutes/ien/",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[20]/td[1]/p",
+          "rowXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[20]",
+          "siteXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[20]/td[5]/p",
+          "address": "400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 3-07В",
+          "mainCity": "Волгоград",
+          "literalRowText": "Институт естественных наук Иванцова Елена Анатольевна Директор института 400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 3-07В https://volsu.ru/struct/institutes/ien/ nature@volsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Волгоград",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт истории, международных отношений и социальных технологий",
+          "url": "https://volsu.ru/struct/institutes/iimost/",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[21]/td[1]/p",
+          "rowXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[21]",
+          "siteXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[21]/td[5]/p",
+          "address": "400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 3-23 Б",
+          "mainCity": "Волгоград",
+          "literalRowText": "Институт истории, международных отношений и социальных технологий Власюк Ирина Вячеславовна Директор института 400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 3-23 Б https://volsu.ru/struct/institutes/iimost/ hist@volsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Волгоград",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт математики и информационных технологий",
+          "url": "https://volsu.ru/struct/institutes/mathematicandit/",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[22]/td[1]/p",
+          "rowXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[22]",
+          "siteXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[22]/td[5]/p",
+          "address": "400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 3-09А",
+          "mainCity": "Волгоград",
+          "literalRowText": "Институт математики и информационных технологий Лосев Александр Георгиевич Директор института 400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 3-09А https://volsu.ru/struct/institutes/mathematicandit/ math@volsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Волгоград",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт права",
+          "url": "https://volsu.ru/struct/institutes/philsocandlaw/",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[24]/td[1]/p",
+          "rowXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[24]",
+          "siteXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[24]/td[5]/p",
+          "address": "400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 3-15В",
+          "mainCity": "Волгоград",
+          "literalRowText": "Институт права Дикарев Илья Степанович Директор института 400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 3-15В https://volsu.ru/struct/institutes/philsocandlaw/ law@volsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Волгоград",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Физико-технический институт",
+          "url": "https://volsu.ru/struct/institutes/fti/",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[25]/td[1]/p",
+          "rowXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[25]",
+          "siteXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[25]/td[5]/p",
+          "address": "400062, Южный федеральный округ, Волгоградская область, г. Волгоград, ул. Богданова, 3-18 К",
+          "mainCity": "Волгоград",
+          "literalRowText": "Физико-технический институт Михайлова Валентина Александровна Директор института 400062, Южный федеральный округ, Волгоградская область, г. Волгоград, ул. Богданова, 3-18 К https://volsu.ru/struct/institutes/fti/ fti@volsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Волгоград",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт филологии и межкультурной коммуникации",
+          "url": "https://volsu.ru/struct/institutes/ffmk/",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[26]/td[1]/p",
+          "rowXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[26]",
+          "siteXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[26]/td[5]/p",
+          "address": "400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 4-03Б",
+          "mainCity": "Волгоград",
+          "literalRowText": "Институт филологии и межкультурной коммуникации Фадеева Марина Юрьевна Директор института 400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 4-03Б https://volsu.ru/struct/institutes/ffmk/ ling@volsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Волгоград",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт экономики и управления",
+          "url": "https://volsu.ru/struct/institutes/regionaleconomics/dekanat/",
+          "xpath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[27]/td[1]/p",
+          "rowXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[27]",
+          "siteXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/table[1]/tbody/tr[27]/td[5]/p",
+          "address": "400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 4-19 Б",
+          "mainCity": "Волгоград",
+          "literalRowText": "Институт экономики и управления Аникина Ирина Дмитриевна Директор института 400062, Южный федеральный округ, Волгоградская область, г. Волгоград, проспект Университетский, 100, 4-19 Б https://volsu.ru/struct/institutes/regionaleconomics/dekanat/ iem@volsu.ru Положение",
+          "campusReview": "Буквальный адрес строки содержит основной город Волгоград",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        }
+      ]
+    },
+    {
+      "universitySlug": "russia-117",
+      "fields": [
+        {
+          "field": "fullName",
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Липецкий государственный технический университет»",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/p[1]",
+          "literalFieldText": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Липецкий государственный технический университет»",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        {
+          "field": "shortName",
+          "value": "ФГБОУ ВО “ЛГТУ”",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/p[3]",
+          "literalFieldText": "ФГБОУ ВО “ЛГТУ”",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        {
+          "field": "regDate",
+          "value": "01.11.1956",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[1]/td[2]/p",
+          "literalFieldText": "01.11.1956",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        {
+          "field": "address",
+          "value": "398055, Россия, г. Липецк, ул. Московская, д. 30",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[2]/td[2]/p",
+          "literalFieldText": "398055, Россия, г. Липецк, ул. Московская, д. 30",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        {
+          "field": "telephone",
+          "value": "+7 (4742) 328-000",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[7]/td[2]/p",
+          "literalFieldText": "+7 (4742) 328-000",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        {
+          "field": "email",
+          "value": "mailbox@lstu.ru",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[9]/td[2]/p",
+          "literalFieldText": "mailbox@lstu.ru",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        }
+      ],
+      "faculties": [
+        {
+          "name": "Институт машиностроения и транспорта",
+          "url": "https://www.stu.lipetsk.ru/fak/imit/",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[32]/td[1]",
+          "rowXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[32]",
+          "siteXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[32]/td[5]",
+          "address": "ул. Московская, 30, к5-291",
+          "mainCity": "Липецк",
+          "literalRowText": "Институт машиностроения и транспорта Кадасев Дмитрий Анатольевич Директор института ул. Московская, 30, к5-291 веб-адрес imt@lstu.ru Положение об институте",
+          "campusReview": "Улица Московская, 30 совпадает с основным адресом ЛГТУ в Липецке; корпус/аудитория сохранены в строке",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Металлургический институт",
+          "url": "https://www.stu.lipetsk.ru/fak/mi/",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[33]/td[1]",
+          "rowXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[33]",
+          "siteXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[33]/td[5]",
+          "address": "ул. Московская, 30, к9-202",
+          "mainCity": "Липецк",
+          "literalRowText": "Металлургический институт Дергунова Елена Сергеевна Директор института ул. Московская, 30, к9-202 веб-адрес mi@lstu.ru Положение об институте",
+          "campusReview": "Улица Московская, 30 совпадает с основным адресом ЛГТУ в Липецке; корпус/аудитория сохранены в строке",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Институт социальных наук экономики и права",
+          "url": "https://www.stu.lipetsk.ru/fak/isnep/",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[34]/td[1]",
+          "rowXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[34]",
+          "siteXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[34]/td[5]",
+          "address": "ул. Московская, 30, к5-491",
+          "mainCity": "Липецк",
+          "literalRowText": "Институт социальных наук экономики и права Маслова Ольга Михайловна Директор института ул. Московская, 30, к5-491 веб-адрес isnep@lstu.ru Положение о институте",
+          "campusReview": "Улица Московская, 30 совпадает с основным адресом ЛГТУ в Липецке; корпус/аудитория сохранены в строке",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Институт строительства и архитектуры",
+          "url": "https://www.stu.lipetsk.ru/fak/isa/",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[35]/td[1]",
+          "rowXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[35]",
+          "siteXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[35]/td[5]",
+          "address": "ул. Московская, 30, к4-277",
+          "mainCity": "Липецк",
+          "literalRowText": "Институт строительства и архитектуры Бабкин Владимир Ильич Директор института ул. Московская, 30, к4-277 веб-адрес isf@lstu.ru Положение о институте",
+          "campusReview": "Улица Московская, 30 совпадает с основным адресом ЛГТУ в Липецке; корпус/аудитория сохранены в строке",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Физико-энергетический институт",
+          "url": "https://www.stu.lipetsk.ru/fak/fei/",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[36]/td[1]",
+          "rowXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[36]",
+          "siteXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[36]/td[5]",
+          "address": "ул. Московская, 30, к9-302",
+          "mainCity": "Липецк",
+          "literalRowText": "Физико-энергетический институт Коваленко Ирина Анатольевна Директор института ул. Московская, 30, к9-302 веб-адрес ftf@lstu.ru Положение о институте",
+          "campusReview": "Улица Московская, 30 совпадает с основным адресом ЛГТУ в Липецке; корпус/аудитория сохранены в строке",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Институт компьютерных наук",
+          "url": "https://www.stu.lipetsk.ru/fak/ikn/",
+          "xpath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[37]/td[1]",
+          "rowXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[37]",
+          "siteXPath": "/html/body/div[2]/div[2]/div[2]/table[1]/tbody/tr[37]/td[5]",
+          "address": "ул. Московская, 30, к1-344",
+          "mainCity": "Липецк",
+          "literalRowText": "Институт компьютерных наук Галкин Александр Васильевич Директор института ул. Московская, 30, к1-344 веб-адрес fai@lstu.ru Положение об институте",
+          "campusReview": "Улица Московская, 30 совпадает с основным адресом ЛГТУ в Липецке; корпус/аудитория сохранены в строке",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+      "url": "https://www.stu.lipetsk.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/2e29dea5dc5d3387.html",
+      "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+    },
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+      "url": "https://www.stu.lipetsk.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/a7322974954b4f7d.html",
+      "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+    },
+    {
+      "universitySlug": "russia-194",
+      "requestedUrl": "https://pnzgu.ru/sveden/common",
+      "url": "https://pnzgu.ru/sveden/common",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:08.911891+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-194/71d81a69d2bbfd53.html",
+      "sourceSha256": "97f7dc3da0291379b2c19fc9fa3a046cd2f3de5637dea672b0e32df7dfbc6f6d"
+    },
+    {
+      "universitySlug": "russia-194",
+      "requestedUrl": "https://pnzgu.ru/sveden/common/",
+      "url": "https://pnzgu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.322277+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-194/b8730f5cd4c4449e.html",
+      "sourceSha256": "b7ad1e7c14f167eb951fc0b46063da50b683f2cfc8fee2e2b0644b9886438481"
+    },
+    {
+      "universitySlug": "russia-194",
+      "requestedUrl": "https://pnzgu.ru/sveden/struct/",
+      "url": "https://pnzgu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.808608+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-194/bb42a5a024c5a93f.html",
+      "sourceSha256": "7eb4af3b11b10eb6a928d79f5fc1317d3e751e08555e54331aaff73f30ee6f25"
+    },
+    {
+      "universitySlug": "russia-251",
+      "requestedUrl": "https://ssau.ru/sveden/struct/",
+      "checkedAt": "2026-11-09T15:43:29.117617+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-251",
+      "requestedUrl": "https://ssau.ru/sveden/common/",
+      "checkedAt": "2026-11-09T15:43:29.120447+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/sveden/common/",
+      "url": "https://ulstu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "body": "russia-305/aa3aa94b359838e2.html",
+      "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/sveden/struct/",
+      "url": "https://ulstu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "body": "russia-305/eaa6b7f98845be60.html",
+      "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/ru/sveden/struct/",
+      "url": "https://ulsu.ru/ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/0a000af0007142ec.html",
+      "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/sveden/common/",
+      "url": "https://ulsu.ru/ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/c4dd6b4b91db08c4.html",
+      "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/ru/sveden/osnstruct/",
+      "url": "https://ulsu.ru/ru/sveden/osnstruct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:10.007151+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/c919f0df051efe64.html",
+      "sourceSha256": "2071e12d538dd49c04d5def5f2c6c89dfb7ca28c4b2ce1059c07695404f25b66"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/sveden/struct/",
+      "checkedAt": "2026-11-09T15:43:39.897760+00:00",
+      "error": "HTTPSConnectionPool(host='ulsu.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "universitySlug": "russia-35",
+      "requestedUrl": "https://www.vstu.ru/sveden/common/",
+      "url": "https://www.vstu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.537327+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-35/5079532d1f6e33ef.html",
+      "sourceSha256": "28635dae73a5bbb60ad674e0f51792111d5b301c0dbcb54cbd1c6d9392b26f3d"
+    },
+    {
+      "universitySlug": "russia-35",
+      "requestedUrl": "https://www.vstu.ru/sveden/struct/",
+      "url": "https://www.vstu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.681939+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-35/7cf370c31232a6df.html",
+      "sourceSha256": "7fc16ffc1389f39cec9c518563a84ae598f8a348a8d239d2a5355480cddeac1e"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/sveden/common/",
+      "url": "https://volsu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/7f2ba29cb11090da.html",
+      "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/sveden/struct/",
+      "url": "https://volsu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/caf445c0b6390010.html",
+      "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+    }
+  ],
+  "issues": [
+    {
+      "universitySlug": "russia-251",
+      "sourceUrl": "https://ssau.ru/sveden/struct/",
+      "reason": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-251",
+      "sourceUrl": "https://ssau.ru/sveden/common/",
+      "reason": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-306",
+      "sourceUrl": "https://ulsu.ru/sveden/struct/",
+      "reason": "HTTPSConnectionPool(host='ulsu.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "universitySlug": "russia-194",
+      "sourceUrl": "https://pnzgu.ru/sveden/common/",
+      "reason": "HTTP 200 с заголовком ошибки 404 исключён. Другие страницы ПГУ требуют отдельного разбора вложенной структуры; сведения не добавлены."
+    }
+  ],
+  "scopeExclusions": [
+    {
+      "universitySlug": "russia-306",
+      "names": [
+        "Передовая инженерная школа «ФармИнжиниринг»",
+        "Факультет трансферных специальностей"
+      ],
+      "reason": "Основной профиль высшего образования отдельно не проверен; короткие курсы, трансфер и дополнительное образование не выводятся из структурного перечня."
+    },
+    {
+      "universitySlug": "russia-36",
+      "names": ["Институт международного образования"],
+      "reason": "Нужна отдельная сверка участия в основном высшем образовании; подготовительные функции не трактуются как образовательные программы."
+    },
+    {
+      "scope": "global",
+      "reason": "Частичные списки факультетов/институтов основного города. Управления, научные, подготовительные, СПО, ДПО и филиалы других городов не включены. У УлГУ отдельные вложенные факультеты с другой страницы не объединяются без дополнительной проверки."
+    }
+  ],
+  "reproduction": {
+    "offline": "python -X utf8 scripts/collect-regional-nov09-continuation-structure.py",
+    "replay": "python -X utf8 scripts/collect-regional-nov09-continuation-structure.py --output tmp/continuation-structure-replay.json --report tmp/continuation-structure-replay-report.json"
+  }
+}

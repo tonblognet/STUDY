@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { programs, universities } from "./data";
+import moscowDirectory from "@/data-sources/moscow/universities.json";
 
 describe("официальное наполнение каталога", () => {
   it("публикует расширенную линейку МИФИ без дублирования программ", () => {
@@ -36,7 +37,12 @@ describe("официальное наполнение каталога", () => {
   });
 
   it("расширяет московский каталог без дубликатов и выдуманных чисел", () => {
-    expect(universities).toHaveLength(162);
+    const moscowSlugs = new Set(
+      moscowDirectory.universities.map((university) => university.slug),
+    );
+    expect(
+      universities.filter((university) => moscowSlugs.has(university.slug)),
+    ).toHaveLength(moscowDirectory.universities.length);
     expect(programs.length).toBeGreaterThanOrEqual(100);
     expect(new Set(programs.map((program) => program.id)).size).toBe(
       programs.length,

@@ -1,0 +1,866 @@
+{
+  "summary": {
+    "batch": "2026-11-09",
+    "profiles": 8,
+    "newFields": 21,
+    "scope": "Gap-only admission-office URLs/contacts and published housing conditions. Existing values are preserved. Housing does not confirm availability or guarantee placement.",
+    "baselineFieldKeys": {
+      "russia-11": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-12": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-1601": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-199": [
+        "address",
+        "admissionsEmail",
+        "admissionsPhone",
+        "admissionsUrl",
+        "email",
+        "telephone"
+      ],
+      "russia-258": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-341": [
+        "address",
+        "admissionsEmail",
+        "admissionsPhone",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-342": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-83": [
+        "address",
+        "admissionsEmail",
+        "admissionsPhone",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ]
+    },
+    "runtimeSnapshotSha256": "9dece098339ad5c9cb6c83e90f47093c5960dfb83fbea58961d249409c5ff7e8"
+  },
+  "sources": [
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/abitur/contacts/",
+      "url": "https://klgtu.ru/abitur/contacts/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.678371+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/f43964651d25c512.html",
+      "sourceSha256": "95db89714a8916b71489156dac6271a8bdcae5bf5551ce4e3dedc5715a5b7788"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/divisions/studencheskiy_gorodok/",
+      "url": "https://klgtu.ru/divisions/studencheskiy_gorodok/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.331485+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/17dec37134397d7b.html",
+      "sourceSha256": "09ffe1eea9055aa0b82f44d056215a59627c6a1189356d9b060946afa0be6297"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/abitur/address.aspx",
+      "url": "https://bgu.ru/abitur/address.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.657133+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/23c3ecd64010aff5.html",
+      "sourceSha256": "2ab4c30ad3a1558cecfaac9c8d4f221b6c288cd48a4ab951c702d64d56c4a7df"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/abitur/hostel.aspx",
+      "url": "https://bgu.ru/abitur/hostel.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.423646+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/50cc28267dd1c83e.html",
+      "sourceSha256": "1a75f9ea84b1fef9e2a3052bc900b298347f571748875531151efed108888531"
+    },
+    {
+      "universitySlug": "russia-83",
+      "requestedUrl": "https://isu.ru/Abitur/pk2026/main/",
+      "url": "https://isu.ru/Abitur/pk2026/main/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.424215+00:00",
+      "contentType": "text/html;charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-83/509111d7909c556f.html",
+      "sourceSha256": "d1ffaacb08a1f38f246fd3a2e8c0d4277c74c14918f9752db1a2b8a55e378502"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/node/235357",
+      "url": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:44.141327+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/5e8fa23290c66058.html",
+      "sourceSha256": "6dcbd80e4269f0110134a10ac9aad8aa5c7ab0a3bf7f0016a63875e920e88712"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/obschezhitiya-i-predostavlenie-mest",
+      "url": "https://www.sgu.ru/obschezhitiya-i-predostavlenie-mest",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:15.456851+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/49b3dc3adecf26e4.html",
+      "sourceSha256": "279cb3fefb0d4ffee79ecfa5572f53cebc400a492f9897f96498978526648558"
+    },
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html",
+      "url": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:42.912196+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-11/2aa6a0cd1cb70ffd.html",
+      "sourceSha256": "71fafb8a6950a28caecf55a2a1b3238bc6cdb25efdf9329bdcf6416cc29fb3cd"
+    },
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/universitet/12465-contacti.html",
+      "url": "https://asu-edu.ru/universitet/12465-contacti.html",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.817257+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-11/bc138664109bb870.html",
+      "sourceSha256": "54c385f75ae2650b9850716dfef5fcb1892249defed4bd97486728bd23446070"
+    },
+    {
+      "universitySlug": "russia-342",
+      "requestedUrl": "https://www.uniyar.ac.ru/Abitur/",
+      "url": "https://www.uniyar.ac.ru/Abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:21.097594+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-342/f167b9db94f604ae.html",
+      "sourceSha256": "6f99cece502aa8e2a16c0414c0c5d6f94efd25be0dcccd7f9c61cc6f19f17da9"
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/",
+      "url": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.851165+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-341/af07b0ee38d73032.html",
+      "sourceSha256": "07bcbd920f3f813a0378bec6be17f73860afd2929e0f0424d573e150487bd031"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/page/education/bakalavriat_i_spec/rules/hostel",
+      "url": "https://petrsu.ru/page/education/bakalavriat_i_spec/rules/hostel",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:14.225980+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-199/cb3774063a4db171.html",
+      "sourceSha256": "a4c2fe5c75a96f9ea6983cea04a65d3bd6b4644ef0ea7ed0bd99e71449c06ac3"
+    }
+  ],
+  "attempts": [
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html",
+      "url": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:42.912196+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-11/2aa6a0cd1cb70ffd.html",
+      "sourceSha256": "71fafb8a6950a28caecf55a2a1b3238bc6cdb25efdf9329bdcf6416cc29fb3cd"
+    },
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/",
+      "checkedAt": "2026-11-09T15:43:30.534813+00:00",
+      "error": "HTTPSConnectionPool(host='asu-edu.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/universitet/12465-contacti.html",
+      "url": "https://asu-edu.ru/universitet/12465-contacti.html",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.817257+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-11/bc138664109bb870.html",
+      "sourceSha256": "54c385f75ae2650b9850716dfef5fcb1892249defed4bd97486728bd23446070"
+    },
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/Abitur/10368-obshejitiia.html",
+      "checkedAt": "2026-11-09T15:44:25.801413+00:00",
+      "error": "HTTPSConnectionPool(host='asu-edu.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/abitur/address.aspx",
+      "url": "https://bgu.ru/abitur/address.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.657133+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/23c3ecd64010aff5.html",
+      "sourceSha256": "2ab4c30ad3a1558cecfaac9c8d4f221b6c288cd48a4ab951c702d64d56c4a7df"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/abitur/hostel.aspx",
+      "url": "https://bgu.ru/abitur/hostel.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.423646+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/50cc28267dd1c83e.html",
+      "sourceSha256": "1a75f9ea84b1fef9e2a3052bc900b298347f571748875531151efed108888531"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/abitur/",
+      "url": "https://bgu.ru/abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.622980+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/6d72b7760f18a6d6.html",
+      "sourceSha256": "2c562fa0aab53d089127fae072ba3c31d8dc6deb805a6ae6ae1fc82046d64a20"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/abitur/",
+      "url": "https://klgtu.ru/abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.569763+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/0814ec242034430a.html",
+      "sourceSha256": "375b7e3a90642bcd61b48352c013b196f7e41aace88dd5cfd2fa7d614020c560"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/divisions/studencheskiy_gorodok/",
+      "url": "https://klgtu.ru/divisions/studencheskiy_gorodok/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.331485+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/17dec37134397d7b.html",
+      "sourceSha256": "09ffe1eea9055aa0b82f44d056215a59627c6a1189356d9b060946afa0be6297"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/abitur/contacts/",
+      "url": "https://klgtu.ru/abitur/contacts/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.678371+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/f43964651d25c512.html",
+      "sourceSha256": "95db89714a8916b71489156dac6271a8bdcae5bf5551ce4e3dedc5715a5b7788"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/",
+      "url": "https://petrsu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:17.223863+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-199/990546af90415f12.html",
+      "sourceSha256": "dcd19fe15795e2d28a6c059caf967830349e97102a97d0d362a238445e42a1fb"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/page/students/social/obshchezhitiya",
+      "url": "https://petrsu.ru/page/students/social/obshchezhitiya",
+      "httpStatus": "404",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:21.067100+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "error": "HTTP 404"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/page/students/dormitory",
+      "url": "https://petrsu.ru/page/students/dormitory",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:14.231859+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-199/c7159332d5ed63c8.html",
+      "sourceSha256": "aa684a641d7058f0567459b4b132b8238bca9594e1a2ed832f312d538498afe9"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/page/education/bakalavriat_i_spec/rules/hostel",
+      "url": "https://petrsu.ru/page/education/bakalavriat_i_spec/rules/hostel",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:14.225980+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-199/cb3774063a4db171.html",
+      "sourceSha256": "a4c2fe5c75a96f9ea6983cea04a65d3bd6b4644ef0ea7ed0bd99e71449c06ac3"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://sgu.ru/abiturientam",
+      "url": "https://sgu.ru/abiturientam",
+      "httpStatus": "404",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.814509+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "error": "HTTP 404"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/contacts-priem",
+      "url": "https://www.sgu.ru/contacts-priem",
+      "httpStatus": "404",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:14.526901+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "error": "HTTP 404"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/",
+      "url": "https://www.sgu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.423114+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/3944a9432b8099da.html",
+      "sourceSha256": "132380e23f00cfc6a95387c7666fe5d720d10648e5426d93f23d7172ed8e0649"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/obschezhitiya-i-predostavlenie-mest",
+      "url": "https://www.sgu.ru/obschezhitiya-i-predostavlenie-mest",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:15.456851+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/49b3dc3adecf26e4.html",
+      "sourceSha256": "279cb3fefb0d4ffee79ecfa5572f53cebc400a492f9897f96498978526648558"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/abiturientam",
+      "url": "https://www.sgu.ru/abiturientam",
+      "httpStatus": "404",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.687173+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "error": "HTTP 404"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/node/235357",
+      "url": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:44.141327+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/5e8fa23290c66058.html",
+      "sourceSha256": "6dcbd80e4269f0110134a10ac9aad8aa5c7ab0a3bf7f0016a63875e920e88712"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/priemnaya-komissiya",
+      "checkedAt": "2026-11-09T15:45:23.516590+00:00",
+      "error": "HTTPSConnectionPool(host='www.sgu.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/cpk",
+      "url": "https://www.sgu.ru/cpk",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:45:43.259129+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/c04f6996f7f0bed1.html",
+      "sourceSha256": "eb3ed1c76ff14ef05f78ead593a7eed39e93c9a9b5ddefafa88997a44fc27436"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://sgu.ru/",
+      "url": "https://sgu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.260147+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/eb7041b8ff0733b4.html",
+      "sourceSha256": "132380e23f00cfc6a95387c7666fe5d720d10648e5426d93f23d7172ed8e0649"
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://www.ystu.ru/abiturient/",
+      "url": "https://www.ystu.ru/abiturient/",
+      "httpStatus": "502",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:23.929198+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "error": "HTTP 502"
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://ystu.ru/admissions/",
+      "url": "https://ystu.ru/admissions/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.169571+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-341/756b4fb4fc87f074.html",
+      "sourceSha256": "9b361717b73519b03f53be90984bb6b4611036b565904f626a590b2ba3764685"
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://www.ystu.ru/abiturientu/",
+      "url": "https://www.ystu.ru/abiturientu/",
+      "httpStatus": "502",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:23.928129+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "error": "HTTP 502"
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/",
+      "url": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.851165+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-341/af07b0ee38d73032.html",
+      "sourceSha256": "07bcbd920f3f813a0378bec6be17f73860afd2929e0f0424d573e150487bd031"
+    },
+    {
+      "universitySlug": "russia-342",
+      "requestedUrl": "https://www.uniyar.ac.ru/Abitur/contacts/",
+      "url": "https://www.uniyar.ac.ru/Abitur/contacts/",
+      "httpStatus": "404",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:21.134015+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "error": "HTTP 404"
+    },
+    {
+      "universitySlug": "russia-342",
+      "requestedUrl": "https://www.uniyar.ac.ru/Abitur/",
+      "url": "https://www.uniyar.ac.ru/Abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:21.097594+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-342/f167b9db94f604ae.html",
+      "sourceSha256": "6f99cece502aa8e2a16c0414c0c5d6f94efd25be0dcccd7f9c61cc6f19f17da9"
+    },
+    {
+      "universitySlug": "russia-83",
+      "requestedUrl": "https://isu.ru/Abitur/pk2026/main/",
+      "url": "https://isu.ru/Abitur/pk2026/main/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:16.424215+00:00",
+      "contentType": "text/html;charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-83/509111d7909c556f.html",
+      "sourceSha256": "d1ffaacb08a1f38f246fd3a2e8c0d4277c74c14918f9752db1a2b8a55e378502"
+    },
+    {
+      "universitySlug": "russia-83",
+      "requestedUrl": "https://isu.ru/Abitur/main/",
+      "url": "https://isu.ru/Abitur/main/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:19.688308+00:00",
+      "contentType": "text/html;charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-83/72e3684ad1e789c9.html",
+      "sourceSha256": "caf2f3995a9613a232711951a1d2365f4c3285921a21b83dbb5dc1f64071de30"
+    },
+    {
+      "universitySlug": "russia-83",
+      "requestedUrl": "https://my.isu.ru/campus",
+      "url": "https://my.isu.ru/campus",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:17.068147+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-83/eea3f01bd7183a65.html",
+      "sourceSha256": "b61f9c51f233074be606dbea0703c1cef5bf4d8251bf0d0e2e2c1b4e66ac1086"
+    }
+  ],
+  "reviews": [
+    {
+      "universitySlug": "russia-1601",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://klgtu.ru/abitur/contacts/",
+      "xpath": "//h1",
+      "evidence": "Абитуриентам 2026",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://klgtu.ru/abitur/contacts/",
+      "literalEvidence": "Абитуриентам 2026",
+      "sourceUrl": "https://klgtu.ru/abitur/contacts/"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://klgtu.ru/abitur/contacts/",
+      "xpath": "/html/body/main/section[7]/div[2]/div[2]/div[3]",
+      "evidence": "+7 (4012) 99-59-99",
+      "value": "+7 (4012) 99-59-99",
+      "context": "admissions-office",
+      "publishedValue": "+7 (4012) 99-59-99",
+      "literalEvidence": "г. Калининград, Советский пр-т, д. 1, каб. 109 +7 (4012) 99-59-99 pk@klgtu.ru",
+      "sourceUrl": "https://klgtu.ru/abitur/contacts/"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "field": "admissionsEmail",
+      "requestedUrl": "https://klgtu.ru/abitur/contacts/",
+      "xpath": "/html/body/main/section[7]/div[2]/div[2]/div[3]",
+      "evidence": "pk@klgtu.ru",
+      "value": "pk@klgtu.ru",
+      "context": "admissions-office",
+      "publishedValue": "pk@klgtu.ru",
+      "literalEvidence": "г. Калининград, Советский пр-т, д. 1, каб. 109 +7 (4012) 99-59-99 pk@klgtu.ru",
+      "sourceUrl": "https://klgtu.ru/abitur/contacts/"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "field": "hostelInfo",
+      "requestedUrl": "https://klgtu.ru/divisions/studencheskiy_gorodok/",
+      "xpath": "/html/body/main/section[2]/div/div[2]/div/p[5]",
+      "evidence": "При заселении в общежитие обучающиеся должны быть ознакомлены с Положением о Студенческом городке, Правилами проживания в общежитии и пройти соответствующие инструктажи по пожарной безопасности, технике безопасности при эксплуатации электробытовых приборов и др.",
+      "value": "При заселении в общежитие обучающиеся должны быть ознакомлены с Положением о Студенческом городке, Правилами проживания в общежитии и пройти соответствующие инструктажи по пожарной безопасности, технике безопасности при эксплуатации электробытовых приборов и др.",
+      "context": "housing-description",
+      "publishedValue": "При заселении в общежитие обучающиеся должны быть ознакомлены с Положением о Студенческом городке, Правилами проживания в общежитии и пройти соответствующие инструктажи по пожарной безопасности, технике безопасности при эксплуатации электробытовых приборов и др. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+      "literalEvidence": "При заселении в общежитие обучающиеся должны быть ознакомлены с Положением о Студенческом городке, Правилами проживания в общежитии и пройти соответствующие инструктажи по пожарной безопасности, технике безопасности при эксплуатации электробытовых приборов и др.",
+      "sourceUrl": "https://klgtu.ru/divisions/studencheskiy_gorodok/"
+    },
+    {
+      "universitySlug": "russia-12",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://bgu.ru/abitur/address.aspx",
+      "xpath": "//head/title",
+      "evidence": "БГУ: Адреса приема документов и режим работы приемной комиссии",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://bgu.ru/abitur/address.aspx",
+      "literalEvidence": "БГУ: Адреса приема документов и режим работы приемной комиссии",
+      "sourceUrl": "https://bgu.ru/abitur/address.aspx"
+    },
+    {
+      "universitySlug": "russia-12",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://bgu.ru/abitur/address.aspx",
+      "xpath": "/html/body/form/div/div[2]",
+      "evidence": "Телефон: +7 (3952) 500-005 (многоканальный)",
+      "value": "+7 (3952) 500-005",
+      "context": "admissions-office",
+      "publishedValue": "+7 (3952) 500-005",
+      "literalEvidence": "Телефон: +7 (3952) 500-005 (многоканальный) Электронная почта: priem@bgu.ru",
+      "sourceUrl": "https://bgu.ru/abitur/address.aspx"
+    },
+    {
+      "universitySlug": "russia-12",
+      "field": "admissionsEmail",
+      "requestedUrl": "https://bgu.ru/abitur/address.aspx",
+      "xpath": "/html/body/form/div/div[2]",
+      "evidence": "Электронная почта: priem@bgu.ru",
+      "value": "priem@bgu.ru",
+      "context": "admissions-office",
+      "publishedValue": "priem@bgu.ru",
+      "literalEvidence": "Телефон: +7 (3952) 500-005 (многоканальный) Электронная почта: priem@bgu.ru",
+      "sourceUrl": "https://bgu.ru/abitur/address.aspx"
+    },
+    {
+      "universitySlug": "russia-12",
+      "field": "hostelInfo",
+      "requestedUrl": "https://bgu.ru/abitur/hostel.aspx",
+      "xpath": "/html/body/form/div/p[3]",
+      "evidence": "Абитуриентам, зачисленным на 1 курс (заочная форма обучения) места предоставляются на период сессии при наличии свободных, за исключением лиц, проживающих в городах Иркутск, Ангарск, Шелехов.",
+      "value": "Абитуриентам, зачисленным на 1 курс (заочная форма обучения) места предоставляются на период сессии при наличии свободных, за исключением лиц, проживающих в городах Иркутск, Ангарск, Шелехов.",
+      "context": "housing-description",
+      "publishedValue": "Абитуриентам, зачисленным на 1 курс (заочная форма обучения) места предоставляются на период сессии при наличии свободных, за исключением лиц, проживающих в городах Иркутск, Ангарск, Шелехов. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+      "literalEvidence": "Абитуриентам, зачисленным на 1 курс (заочная форма обучения) места предоставляются на период сессии при наличии свободных, за исключением лиц, проживающих в городах Иркутск, Ангарск, Шелехов.",
+      "sourceUrl": "https://bgu.ru/abitur/hostel.aspx"
+    },
+    {
+      "universitySlug": "russia-83",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://isu.ru/Abitur/pk2026/main/",
+      "xpath": "//head/title",
+      "evidence": "Приемная кампания 2026",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://isu.ru/Abitur/pk2026/main/",
+      "literalEvidence": "Приемная кампания 2026",
+      "sourceUrl": "https://isu.ru/Abitur/pk2026/main/"
+    },
+    {
+      "universitySlug": "russia-258",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://www.sgu.ru/node/235357",
+      "xpath": "//head/title",
+      "evidence": "Адреса приемных комиссий",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy",
+      "literalEvidence": "Адреса приемных комиссий | СГУ",
+      "sourceUrl": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy"
+    },
+    {
+      "universitySlug": "russia-258",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://www.sgu.ru/node/235357",
+      "xpath": "/html/body/div/footer/section[1]/div/div/div[1]/div[3]",
+      "evidence": "Отдел по организации приёма на основные образовательные программы (Центральная приёмная комиссия): +7 (8452) 51 - 92 - 26, cpk@sgu.ru",
+      "value": "+7 (8452) 51 - 92 - 26",
+      "context": "admissions-office",
+      "publishedValue": "+7 (8452) 51 - 92 - 26",
+      "literalEvidence": "Отдел по организации приёма на основные образовательные программы (Центральная приёмная комиссия): +7 (8452) 51 - 92 - 26, cpk@sgu.ru",
+      "sourceUrl": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy"
+    },
+    {
+      "universitySlug": "russia-258",
+      "field": "admissionsEmail",
+      "requestedUrl": "https://www.sgu.ru/node/235357",
+      "xpath": "/html/body/div/footer/section[1]/div/div/div[1]/div[3]",
+      "evidence": "Отдел по организации приёма на основные образовательные программы (Центральная приёмная комиссия): +7 (8452) 51 - 92 - 26, cpk@sgu.ru",
+      "value": "cpk@sgu.ru",
+      "context": "admissions-office",
+      "publishedValue": "cpk@sgu.ru",
+      "literalEvidence": "Отдел по организации приёма на основные образовательные программы (Центральная приёмная комиссия): +7 (8452) 51 - 92 - 26, cpk@sgu.ru",
+      "sourceUrl": "https://www.sgu.ru/node/8082/adresa-priemnykh-komissiy"
+    },
+    {
+      "universitySlug": "russia-258",
+      "field": "hostelInfo",
+      "requestedUrl": "https://www.sgu.ru/obschezhitiya-i-predostavlenie-mest",
+      "xpath": "/html/body/div/main/div[3]/div[2]/section[2]/div[1]/p[3]",
+      "evidence": "ВАЖНО! По вопросам заселения иногородних поступающих в общежития университета следует обращаться в приёмные комиссии учебных подразделений университета при подаче документов для поступления.",
+      "value": "По вопросам заселения иногородних поступающих в общежития университета следует обращаться в приёмные комиссии учебных подразделений университета при подаче документов для поступления.",
+      "context": "housing-description",
+      "publishedValue": "По вопросам заселения иногородних поступающих в общежития университета следует обращаться в приёмные комиссии учебных подразделений университета при подаче документов для поступления. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+      "literalEvidence": "ВАЖНО! По вопросам заселения иногородних поступающих в общежития университета следует обращаться в приёмные комиссии учебных подразделений университета при подаче документов для поступления.",
+      "sourceUrl": "https://www.sgu.ru/obschezhitiya-i-predostavlenie-mest"
+    },
+    {
+      "universitySlug": "russia-11",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html",
+      "xpath": "//head/title",
+      "evidence": "Управление довузовского образования и организации приема абитуриентов",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html",
+      "literalEvidence": "Управление довузовского образования и организации приема абитуриентов",
+      "sourceUrl": "https://asu-edu.ru/departments/147-upravlenie-dovuzovskogo-obrazovaniia-i-organizacii-priema-abiturientov.html"
+    },
+    {
+      "universitySlug": "russia-11",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://asu-edu.ru/universitet/12465-contacti.html",
+      "xpath": "/html/body/div/div[4]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]",
+      "evidence": "Приёмная комиссия Телефоны: +7 (8512) 24-64-37, +7 (8512) 24-64-09 (только по вопросам поступления)",
+      "value": "+7 (8512) 24-64-37; +7 (8512) 24-64-09",
+      "context": "admissions-office",
+      "publishedValue": "+7 (8512) 24-64-37; +7 (8512) 24-64-09",
+      "literalEvidence": "Приёмная комиссия Телефоны: +7 (8512) 24-64-37, +7 (8512) 24-64-09 (только по вопросам поступления) E-mail: priem@asu-edu.ru Адрес: ул. Татищева, 20а, главный корпус, ауд. № 112",
+      "sourceUrl": "https://asu-edu.ru/universitet/12465-contacti.html"
+    },
+    {
+      "universitySlug": "russia-11",
+      "field": "admissionsEmail",
+      "requestedUrl": "https://asu-edu.ru/universitet/12465-contacti.html",
+      "xpath": "/html/body/div/div[4]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]",
+      "evidence": "E-mail: priem@asu-edu.ru",
+      "value": "priem@asu-edu.ru",
+      "context": "admissions-office",
+      "publishedValue": "priem@asu-edu.ru",
+      "literalEvidence": "Приёмная комиссия Телефоны: +7 (8512) 24-64-37, +7 (8512) 24-64-09 (только по вопросам поступления) E-mail: priem@asu-edu.ru Адрес: ул. Татищева, 20а, главный корпус, ауд. № 112",
+      "sourceUrl": "https://asu-edu.ru/universitet/12465-contacti.html"
+    },
+    {
+      "universitySlug": "russia-342",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://www.uniyar.ac.ru/Abitur/",
+      "xpath": "//head/title",
+      "evidence": "Абитуриенту",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://www.uniyar.ac.ru/Abitur/",
+      "literalEvidence": "Абитуриенту",
+      "sourceUrl": "https://www.uniyar.ac.ru/Abitur/"
+    },
+    {
+      "universitySlug": "russia-342",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://www.uniyar.ac.ru/Abitur/",
+      "xpath": "/html/body/div[1]/div[3]/div/div[1]/div[4]/div/div/div/div/p[3]",
+      "evidence": "Телефоны для связи: 8 (4852) 78-85-32 и 8 (4852) 78-85-33.",
+      "value": "8 (4852) 78-85-32; 8 (4852) 78-85-33",
+      "context": "admissions-office",
+      "publishedValue": "8 (4852) 78-85-32; 8 (4852) 78-85-33",
+      "literalEvidence": "Телефоны для связи: 8 (4852) 78-85-32 и 8 (4852) 78-85-33. e-mail: abitur@uniyar.ac.ru priem@uniyar.ac.ru Телефоны технических комиссий Юридический факультет 78-85-60 Физико-технический факультет 78-85-62 Экономический факультет 78-85-65 Факультет филологии, иностранных языков и международной коммуникации 78-86-95 Исторический факультет 78-85-49 Математический факультет 78-85-67 Факультет психологии 78-85-66 Факультет биологии и экологии 78-85-50 Факультет социально-политических наук 78-85-47 Факультет Информатики и вычислительной техники 78-86-98 Отдел оформления договоров находится по адресу г. Ярославль, ул. Кирова, 8/10. Пн-пт: 09:00-16:00 Cб: 10.00-13.00 Вс: выходной Тел. 8 (4852) 78-85-45, 78-85-44 Приемная комиссия университетского колледжа Адрес: ул. Слепнева 14б / ул. Кирова, 8/10 Тел: 8(4852) 78-85-64 8(4852) 44-02-78 Пн-пт: 09:00-16:00 Cуббота с 10:00-13:00",
+      "sourceUrl": "https://www.uniyar.ac.ru/Abitur/"
+    },
+    {
+      "universitySlug": "russia-342",
+      "field": "admissionsEmail",
+      "requestedUrl": "https://www.uniyar.ac.ru/Abitur/",
+      "xpath": "/html/body/div[1]/div[3]/div/div[1]/div[4]/div/div/div/div/p[3]",
+      "evidence": "e-mail: abitur@uniyar.ac.ru priem@uniyar.ac.ru",
+      "value": "abitur@uniyar.ac.ru; priem@uniyar.ac.ru",
+      "context": "admissions-office",
+      "publishedValue": "abitur@uniyar.ac.ru; priem@uniyar.ac.ru",
+      "literalEvidence": "Телефоны для связи: 8 (4852) 78-85-32 и 8 (4852) 78-85-33. e-mail: abitur@uniyar.ac.ru priem@uniyar.ac.ru Телефоны технических комиссий Юридический факультет 78-85-60 Физико-технический факультет 78-85-62 Экономический факультет 78-85-65 Факультет филологии, иностранных языков и международной коммуникации 78-86-95 Исторический факультет 78-85-49 Математический факультет 78-85-67 Факультет психологии 78-85-66 Факультет биологии и экологии 78-85-50 Факультет социально-политических наук 78-85-47 Факультет Информатики и вычислительной техники 78-86-98 Отдел оформления договоров находится по адресу г. Ярославль, ул. Кирова, 8/10. Пн-пт: 09:00-16:00 Cб: 10.00-13.00 Вс: выходной Тел. 8 (4852) 78-85-45, 78-85-44 Приемная комиссия университетского колледжа Адрес: ул. Слепнева 14б / ул. Кирова, 8/10 Тел: 8(4852) 78-85-64 8(4852) 44-02-78 Пн-пт: 09:00-16:00 Cуббота с 10:00-13:00",
+      "sourceUrl": "https://www.uniyar.ac.ru/Abitur/"
+    },
+    {
+      "universitySlug": "russia-341",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/",
+      "xpath": "//head/title",
+      "evidence": "Приемная комиссия",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/",
+      "literalEvidence": "Приемная комиссия | Ярославский государственный технический университет",
+      "sourceUrl": "https://ystu.ru/university/pordrazdelenia/sluzhby-i-otdely/priemnaya-komissiya/"
+    },
+    {
+      "universitySlug": "russia-199",
+      "field": "hostelInfo",
+      "requestedUrl": "https://petrsu.ru/page/education/bakalavriat_i_spec/rules/hostel",
+      "xpath": "/html/body/div[2]/div/div[1]/div[1]/div/div[2]/p[5]",
+      "evidence": "Предоставление места в общежитии иногородним студентам после зачисления осуществляется на основании личного заявления, поданного на портале \"Цифровое пространство студента ПетрГУ\".",
+      "value": "Предоставление места в общежитии иногородним студентам после зачисления осуществляется на основании личного заявления, поданного на портале \"Цифровое пространство студента ПетрГУ\".",
+      "context": "housing-description",
+      "publishedValue": "Предоставление места в общежитии иногородним студентам после зачисления осуществляется на основании личного заявления, поданного на портале \"Цифровое пространство студента ПетрГУ\". Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+      "literalEvidence": "Предоставление места в общежитии иногородним студентам после зачисления осуществляется на основании личного заявления, поданного на портале \"Цифровое пространство студента ПетрГУ\".",
+      "sourceUrl": "https://petrsu.ru/page/education/bakalavriat_i_spec/rules/hostel"
+    }
+  ],
+  "issues": [
+    {
+      "universitySlug": "russia-258",
+      "reason": "The in-page unified commission hotline 210-500 is explicitly limited to seasonal office hours. The year-round central admission-office block (+7 (8452) 51 - 92 - 26, cpk@sgu.ru) is used instead. The housing total also includes Balashov and is excluded from the Saratov card."
+    },
+    {
+      "universitySlug": "russia-342",
+      "reason": "Only the central applicant contact block is used; faculty technical commissions, contract department, and university college contacts are excluded. Both centrally published email addresses are preserved."
+    },
+    {
+      "universitySlug": "russia-12",
+      "reason": "The retained housing sentence applies specifically to part-time students during sessions, with explicit availability and city restrictions. Numbers of beds and first-year allocations are excluded."
+    },
+    {
+      "universitySlug": "russia-11",
+      "reason": "The checked contact page is marked last-edited 2024-06-03, while the same central phone is still published in its current site navigation. checkedAt records observation on 2026-11-09 and does not imply a new admissions campaign. The housing page timed out; no housing fact inferred."
+    },
+    {
+      "universitySlug": "russia-83",
+      "reason": "The old admissions route redirects through inline JavaScript. The directly fetched official 2026 campaign page supplies the URL. Existing phones and emails are preserved; complex campus description not added."
+    },
+    {
+      "universitySlug": "russia-199",
+      "reason": "Only the published requirement for a personal housing application after admission is reproduced. 2026 bed allocations, past August settlement dates, tariffs and placement guarantees are excluded."
+    }
+  ]
+}

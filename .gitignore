@@ -47,3 +47,5 @@ next-env.d.ts
 /tmp/
 *.log
 *.tsbuildinfo
+__pycache__/
+*.pyc

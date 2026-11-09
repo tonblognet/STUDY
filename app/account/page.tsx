@@ -2,6 +2,10 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { AccountSavedPrograms } from "@/components/account-saved-programs";
 import { AdmissionTracker } from "@/components/admission-tracker";
+import {
+  AccountSecurity,
+  AccountNotifications,
+} from "@/components/account-settings";
 import { ExamMatcher } from "@/components/exam-matcher";
 import { LogoutButton } from "@/components/logout-button";
 import { UserStateStatus } from "@/components/user-state-provider";
@@ -9,7 +13,10 @@ import { getSessionUser } from "@/lib/auth/session";
 import { getCatalog } from "@/lib/catalog/server";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Личный кабинет" };
+export const metadata = {
+  title: "Личный кабинет",
+  robots: { index: false, follow: false },
+};
 
 export default async function AccountPage() {
   const user = await getSessionUser();
@@ -21,7 +28,7 @@ export default async function AccountPage() {
         <div>
           <span className="overline">Личный кабинет</span>
           <h1>Мой маршрут</h1>
-          <p>{user.name ?? user.email} · поступление 2027</p>
+          <p>{user.name ?? user.email} · личный план поступления</p>
         </div>
         <LogoutButton />
       </div>
@@ -43,7 +50,7 @@ export default async function AccountPage() {
             </p>
           </div>
         </div>
-        <ExamMatcher programs={programs} />
+        <ExamMatcher programs={programs} compact />
       </section>
       <section id="saved" className="account-section">
         <AccountSavedPrograms programs={programs} />
@@ -63,28 +70,11 @@ export default async function AccountPage() {
         </div>
         <AdmissionTracker programs={programs} />
       </section>
-      <section id="notifications" className="account-section settings-row">
-        <div>
-          <h2>Уведомления</h2>
-          <p>
-            Дедлайны, изменения программы, платежи и безопасность управляются
-            независимо.
-          </p>
-        </div>
-        <Link href="/support" className="text-link">
-          Настроить каналы →
-        </Link>
+      <section id="notifications" className="account-section">
+        <AccountNotifications />
       </section>
-      <section id="security" className="account-section settings-row">
-        <div>
-          <h2>Безопасность</h2>
-          <p>
-            Двухэтапный вход по email:{" "}
-            {user.emailTwoFactorEnabled ? "включён" : "выключен"}. Активные
-            сессии можно отозвать.
-          </p>
-        </div>
-        <LogoutButton all />
+      <section id="security" className="account-section">
+        <AccountSecurity enabled={user.emailTwoFactorEnabled} />
       </section>
     </div>
   );

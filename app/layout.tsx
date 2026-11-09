@@ -56,9 +56,13 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const user = await getSessionUser();
   return (
-    <html lang="ru" suppressHydrationWarning>
+    <html lang="ru" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body className={`${manrope.variable} ${literata.variable}`}>
-        <UserStateProvider signedIn={Boolean(user)}>
+        <UserStateProvider
+          key={user?.id ?? "guest"}
+          signedIn={Boolean(user)}
+          accountId={user?.id}
+        >
           <a className="skip-link" href="#main-content">
             Перейти к содержимому
           </a>

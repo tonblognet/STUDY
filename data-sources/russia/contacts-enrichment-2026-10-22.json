@@ -1,0 +1,471 @@
+{
+  "profiles": [
+    {
+      "universitySlug": "mfua",
+      "fields": {
+        "hostelInfo": {
+          "value": "Общежитие расположено по адресу: г. Москва, ул. Большая Черемушкинская, д. 17А, стр. 6. Условия проживания предусматривают размещение в четырёхместных комнатах, в каждом жилом блоке есть санузел и душ. На каждом этаже оборудована кухня. Наличие свободных мест и предоставление места требуют отдельного подтверждения.",
+          "sourceUrl": "https://www.mfua.ru/features/obshchezhitie/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:25:47.659107+00:00",
+          "sourceSha256": "e950fc2a05efa05563155930e47f1caf484a4eb6616795e78dd160dd967a2b4b"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "moscow-110266",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7 495 795 00 10, доб. 1",
+          "sourceUrl": "https://imeit.ru/abitur/bachelor/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:25:47.200934+00:00",
+          "sourceSha256": "29d33fc30187105b7e1a8fa0849997f4ce8383abc2f8d1ce4af2a871ed3d9ae6"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "guu",
+      "fields": {
+        "telephone": {
+          "value": "8 (495) 377-89-14",
+          "sourceUrl": "https://guu.ru/abiturguu/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.377993+00:00",
+          "sourceSha256": "f4e907c3e36644ed84c85dad3b33a3e34f5184ee26c120b65c9aa5a2ce78b5f1"
+        },
+        "admissionsPhone": {
+          "value": "8 (495) 371-00-55",
+          "sourceUrl": "https://guu.ru/abiturguu/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.377993+00:00",
+          "sourceSha256": "f4e907c3e36644ed84c85dad3b33a3e34f5184ee26c120b65c9aa5a2ce78b5f1"
+        },
+        "admissionsEmail": {
+          "value": "priem@guu.ru",
+          "sourceUrl": "https://guu.ru/abiturguu/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.377993+00:00",
+          "sourceSha256": "f4e907c3e36644ed84c85dad3b33a3e34f5184ee26c120b65c9aa5a2ce78b5f1"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-292",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7 (3822) 90-33-06",
+          "sourceUrl": "https://tsuab.ru/departments/admissionCommittee",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.676111+00:00",
+          "sourceSha256": "026f16c55ee59f8d1427ffcebfa699dfe3861b35d6114bcb4d3a20d5d96f3186"
+        },
+        "admissionsEmail": {
+          "value": "pk@tsuab.ru",
+          "sourceUrl": "https://tsuab.ru/departments/admissionCommittee",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.676111+00:00",
+          "sourceSha256": "026f16c55ee59f8d1427ffcebfa699dfe3861b35d6114bcb4d3a20d5d96f3186"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-1715",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7-383-328-05-85; 8-993-023-01-11",
+          "sourceUrl": "https://www.stu.ru/abiturient/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.799826+00:00",
+          "sourceSha256": "935f7d3ecec2622e1e8b5c5b1bb2a1f970da6b008835bdcc4a009b73ad77a9f0"
+        },
+        "admissionsEmail": {
+          "value": "pk@sgups.stu.ru",
+          "sourceUrl": "https://www.stu.ru/abiturient/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.799826+00:00",
+          "sourceSha256": "935f7d3ecec2622e1e8b5c5b1bb2a1f970da6b008835bdcc4a009b73ad77a9f0"
+        },
+        "hostelInfo": {
+          "value": "Большая часть помещений общежитий реконструирована, студенты проживают как по два, так и по три- четыре человека в комнате в блоках гостиничного типа с обеспечением необходимых санитарно-гигиенических условий. Для самостоятельного приготовления пищи студентам оборудованы кухни, где расположены плиты, разделочные столы и мойки. Наличие свободных мест и предоставление места требуют отдельного подтверждения.",
+          "sourceUrl": "https://www.stu.ru/abiturient/index.php?page=2239",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:26:49.209196+00:00",
+          "sourceSha256": "93bf9bd849561c0baa1d75b2a4588035752ec5b69b8499ae525f7052def0723d"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-1763",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7 (383) 222-12-00; 8-800-200-48-63",
+          "sourceUrl": "https://www.ssuwt.ru/abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.420223+00:00",
+          "sourceSha256": "116209da266b3cd190e292c0bee9941592855d42601d90f653fedbc4fdda0446"
+        },
+        "admissionsEmail": {
+          "value": "fdp@nsawt.ru",
+          "sourceUrl": "https://www.ssuwt.ru/abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.420223+00:00",
+          "sourceSha256": "116209da266b3cd190e292c0bee9941592855d42601d90f653fedbc4fdda0446"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-28",
+      "fields": {
+        "admissionsPhone": {
+          "value": "8 (800) 700-04-65",
+          "sourceUrl": "https://www.vvsu.ru/admission/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.740008+00:00",
+          "sourceSha256": "b5d8c4bc2ffbaa4d04b48e211832ef4bf2fc089db955fac9619350876f41148d"
+        },
+        "admissionsEmail": {
+          "value": "abiturient@vvsu.ru",
+          "sourceUrl": "https://www.vvsu.ru/admission/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-22T08:23:54.740008+00:00",
+          "sourceSha256": "b5d8c4bc2ffbaa4d04b48e211832ef4bf2fc089db955fac9619350876f41148d"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    }
+  ],
+  "sources": [
+    {
+      "universitySlug": "guu",
+      "requestedUrl": "https://guu.ru/abiturguu/",
+      "url": "https://guu.ru/abiturguu/",
+      "httpStatus": "200",
+      "checkedAt": "2026-10-22T08:23:54.377993+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "guu/908f8508a86f5c3b.html",
+      "exitCode": 0,
+      "sourceSha256": "f4e907c3e36644ed84c85dad3b33a3e34f5184ee26c120b65c9aa5a2ce78b5f1"
+    },
+    {
+      "universitySlug": "mfua",
+      "requestedUrl": "https://www.mfua.ru/features/obshchezhitie/",
+      "url": "https://www.mfua.ru/features/obshchezhitie/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:25:47.659107+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mfua/56b04d50ca493289.html",
+      "sourceSha256": "e950fc2a05efa05563155930e47f1caf484a4eb6616795e78dd160dd967a2b4b"
+    },
+    {
+      "universitySlug": "mfua",
+      "requestedUrl": "https://www.mfua.ru/abiturientu/",
+      "url": "https://www.mfua.ru/abiturientu/",
+      "httpStatus": "200",
+      "checkedAt": "2026-10-22T08:23:56.346466+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mfua/9c6bf229a51ca074.html",
+      "exitCode": 0,
+      "sourceSha256": "28b837d725dda3aa684e5649289efa9890cc22c7eff852f0c9340741ca0d4d63"
+    },
+    {
+      "universitySlug": "mfua",
+      "requestedUrl": "https://www.mfua.ru/sveden/struct/",
+      "url": "https://www.mfua.ru/sveden/struct/",
+      "httpStatus": "200",
+      "checkedAt": "2026-10-22T08:23:54.451508+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "body": "mfua/e467abe3e8ae82fc.html",
+      "exitCode": 0,
+      "sourceSha256": "9c6d14c518022f11e10b776c6e6f480445a595a29248030df99e8f9ee381dbea"
+    },
+    {
+      "universitySlug": "moscow-110266",
+      "requestedUrl": "https://imeit.ru/abitur/bachelor",
+      "url": "https://imeit.ru/abitur/bachelor/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:25:47.200934+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "moscow-110266/663f107608e37af4.html",
+      "sourceSha256": "29d33fc30187105b7e1a8fa0849997f4ce8383abc2f8d1ce4af2a871ed3d9ae6"
+    },
+    {
+      "universitySlug": "moscow-110266",
+      "requestedUrl": "https://imeit.ru/abitur/",
+      "url": "https://imeit.ru/abitur/",
+      "httpStatus": "200",
+      "checkedAt": "2026-10-22T08:23:54.412110+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "moscow-110266/fa64e02ddb09ebbc.html",
+      "exitCode": 0,
+      "sourceSha256": "f82a39e3a1762e8314532d025ea5895120c249a51261a8473f2404b16271363f"
+    },
+    {
+      "universitySlug": "russia-1715",
+      "requestedUrl": "https://www.stu.ru/abiturient/",
+      "url": "https://www.stu.ru/abiturient/",
+      "httpStatus": "200",
+      "checkedAt": "2026-10-22T08:23:54.799826+00:00",
+      "contentType": "text/html; charset=\"windows-1251\"",
+      "encoding": "windows-1251",
+      "body": "russia-1715/0af1f20482191182.html",
+      "exitCode": 0,
+      "sourceSha256": "935f7d3ecec2622e1e8b5c5b1bb2a1f970da6b008835bdcc4a009b73ad77a9f0"
+    },
+    {
+      "universitySlug": "russia-1715",
+      "requestedUrl": "https://www.stu.ru/abiturient/index.php?page=3673",
+      "url": "https://www.stu.ru/abiturient/index.php?page=3673",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:25:48.266218+00:00",
+      "contentType": "text/html; charset=\"windows-1251\"",
+      "encoding": "windows-1251",
+      "body": "russia-1715/1dee43ec53e5379c.html",
+      "sourceSha256": "0f1175795ba2baf7b2b9fb8eee7e8064a601597a32aec18f05ec59c52475cd56"
+    },
+    {
+      "universitySlug": "russia-1715",
+      "requestedUrl": "https://www.stu.ru/abiturient/index.php?page=2239",
+      "url": "https://www.stu.ru/abiturient/index.php?page=2239",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:26:49.209196+00:00",
+      "contentType": "text/html; charset=\"windows-1251\"",
+      "encoding": "windows-1251",
+      "body": "russia-1715/b58c6a1ca21c9d45.html",
+      "sourceSha256": "93bf9bd849561c0baa1d75b2a4588035752ec5b69b8499ae525f7052def0723d"
+    },
+    {
+      "universitySlug": "russia-1763",
+      "requestedUrl": "https://www.ssuwt.ru/abitur/",
+      "url": "https://www.ssuwt.ru/abitur/",
+      "httpStatus": "200",
+      "checkedAt": "2026-10-22T08:23:54.420223+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1763/8e7b3416ba89051c.html",
+      "exitCode": 0,
+      "sourceSha256": "116209da266b3cd190e292c0bee9941592855d42601d90f653fedbc4fdda0446"
+    },
+    {
+      "universitySlug": "russia-28",
+      "requestedUrl": "https://www.vvsu.ru/admission/",
+      "url": "https://www.vvsu.ru/admission/",
+      "httpStatus": "200",
+      "checkedAt": "2026-10-22T08:23:54.740008+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-28/f9e6f63f2f2b44ed.html",
+      "exitCode": 0,
+      "sourceSha256": "b5d8c4bc2ffbaa4d04b48e211832ef4bf2fc089db955fac9619350876f41148d"
+    },
+    {
+      "universitySlug": "russia-292",
+      "requestedUrl": "https://tsuab.ru/departments/admissionCommittee",
+      "url": "https://tsuab.ru/departments/admissionCommittee",
+      "httpStatus": "200",
+      "checkedAt": "2026-10-22T08:23:54.676111+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-292/fd141ce0cc97fdc5.html",
+      "exitCode": 0,
+      "sourceSha256": "026f16c55ee59f8d1427ffcebfa699dfe3861b35d6114bcb4d3a20d5d96f3186"
+    }
+  ],
+  "issues": [
+    {
+      "universitySlug": "mfua",
+      "field": "admissionsEmail",
+      "sourceUrl": "https://www.mfua.ru/sveden/struct/",
+      "reason": "The admission-commission structural row lists the named secretary's personal address belenko.t@masi.ru. It is not promoted to a generic admissions-office email."
+    },
+    {
+      "universitySlug": "moscow-110266",
+      "field": "admissionsEmail",
+      "sourceUrl": "https://imeit.ru/abitur/bachelor/",
+      "reason": "The current bachelor's-admissions page supplies an application form URL rather than an email address. No generic or personal email is substituted."
+    },
+    {
+      "universitySlug": "moscow-110266",
+      "sourceUrl": "https://imeit.ru/abitur/",
+      "reason": "The landing page still prints commission working dates in 2025. Dates are excluded; the phone is sourced instead from the separate 2026/2027 bachelor's-admissions contact table."
+    },
+    {
+      "universitySlug": "russia-1715",
+      "field": "hostelInfo",
+      "sourceUrl": "https://www.stu.ru/abiturient/index.php?page=3673",
+      "reason": "The promotional room-description page was last updated 16.06.2023. Its dated details are excluded; the hostel field uses the separate admissions-hostel page updated 25.05.2026."
+    },
+    {
+      "universitySlug": "russia-1715",
+      "sourceUrl": "https://www.stu.ru/abiturient/",
+      "reason": "Ministry hotline/email and faculty-specific commission contacts are excluded; only the university admission commission's own local contact block is used."
+    },
+    {
+      "universitySlug": "russia-1763",
+      "sourceUrl": "https://www.ssuwt.ru/abitur/",
+      "reason": "Ministry hotlines/email and general university header contacts are excluded; only the local applicant-interaction block is used."
+    },
+    {
+      "universitySlug": "pushkin",
+      "reason": "All admission URL, telephone, email and hostel fields already exist in the frozen baseline. No prior value or check date is rewritten."
+    }
+  ],
+  "summary": {
+    "batch": "2026-10-22",
+    "profiles": 7,
+    "newFields": 14,
+    "scope": "Gap-only admission contacts and hostel facts; no place-availability guarantee, no admissions programs.",
+    "baseline": "Frozen baseline.json in the evidence directory; existing values and dates are preserved.",
+    "baselineFields": {
+      "mfua": [
+        "address",
+        "admissionsPhone",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "pushkin": [
+        "address",
+        "admissionsEmail",
+        "admissionsPhone",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "hostelInfo",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "moscow-110266": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "hostelInfo",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "guu": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "hostelInfo",
+        "regDate",
+        "shortName"
+      ],
+      "russia-292": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "hostelInfo",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-1715": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-1763": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "hostelInfo",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-28": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "hostelInfo",
+        "regDate",
+        "shortName",
+        "telephone"
+      ]
+    },
+    "baselineSources": [
+      {
+        "path": "data-sources/moscow/profiles.json",
+        "sha256": "bab745259edbe9aa3fc8918debdb0d914f39a1075f7bb415dd7dc82baaa59b46"
+      },
+      {
+        "path": "data-sources/russia/profiles.json",
+        "sha256": "c3ac03fe4b7b5abe0806e496ec5353a06f0d9cac5f91ec2e3aad62acfc35c2b0"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-09.json",
+        "sha256": "8eda6d2642ab560557f101a238a0c78b82096f71477f448beca56ea2ec31ed9b"
+      },
+      {
+        "path": "data-sources/russia/regional-enrichment-2026-10-09.json",
+        "sha256": "5d7c68d1ce570e48f579f115a4d9aa57af42ec923c44ea12f33e202eb5c8e590"
+      },
+      {
+        "path": "data-sources/russia/regional-enrichment-2026-10-10.json",
+        "sha256": "f08a985610b68d62b772754964fdf026d7d584c8184b9d126d02e8b270fe1148"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-10.json",
+        "sha256": "733190337cef2a84027db7fe1d0418b2aebeaf23fd4d90cbb71c838060c5c71e"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-11.json",
+        "sha256": "dde112b767344afbfd33508a6ec7978ec635fbb1b0be3e4e3b02043b286d4b33"
+      },
+      {
+        "path": "data-sources/russia/regional-enrichment-2026-10-11.json",
+        "sha256": "fc720afe6f79e9691fe17c59e02618f1b77045ab03033faa4b4a17ea4d6ccf26"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-20.json",
+        "sha256": "51023ccd17065bc43453a0d981f9c0165f2129f997490a8f7bd6cf5a1072f07c"
+      },
+      {
+        "path": "data-sources/russia/regional-north-enrichment-2026-10-20.json",
+        "sha256": "b89389a98df1150ac983a2e3b0891d24940e6498b4aa1305fd4fd90d4a787f6f"
+      },
+      {
+        "path": "data-sources/russia/regional-south-enrichment-2026-10-20.json",
+        "sha256": "6b66ede590b91a0afbd3abcd2689b63aa3f0133b1ec0343cea1e160d093e5985"
+      }
+    ]
+  }
+}

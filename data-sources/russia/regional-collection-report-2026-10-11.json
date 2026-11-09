@@ -1,0 +1,100 @@
+{
+  "collectionDate": "2026-10-11",
+  "reviewedAt": "2026-10-15T07:11:31Z",
+  "collectionCheckedAt": "2026-10-11T08:07:00Z",
+  "dataFile": "data-sources/russia/regional-enrichment-2026-10-11.json",
+  "dataFileSha256": "c9b778ee20dc43899db6dff7a0d1ad87bd3d40ea98b2bf85316a943c7d2fb61c",
+  "rawCache": "tmp/russia-research/regional-enrichment-2026-10-11",
+  "scope": "Дельта недостающих разделов существующих карточек без новых организаций. Исходные HTTP-ответы получены 11 октября; повторный разбор и сверка 15 октября не являются новой проверкой вузовских сайтов. Образовательные перечни не подтверждают текущий приём и не добавляют конкурсные программы подбора.",
+  "stats": {
+    "universitiesAttempted": 16,
+    "universitiesWithCurrentFields": 3,
+    "universitiesWithFaculties": 0,
+    "fields": 4,
+    "faculties": 0,
+    "implementedOfferings": 561,
+    "pagesRequested": 100,
+    "discoveredPathsDeferred": 0
+  },
+  "newValues": {
+    "fields": 4,
+    "faculties": 0,
+    "implementedOfferings": 561,
+    "total": 565
+  },
+  "previouslyCoveredExcluded": {
+    "fields": 19,
+    "faculties": 39,
+    "offerings": 0
+  },
+  "universityResults": [
+    {
+      "universitySlug": "russia-109",
+      "fields": 1,
+      "faculties": 0,
+      "implementedOfferings": 224,
+      "offeringUrls": ["https://www.kubsu.ru/node/13687"]
+    },
+    {
+      "universitySlug": "russia-1507",
+      "fields": 2,
+      "faculties": 0,
+      "implementedOfferings": 251,
+      "offeringUrls": ["https://www.sfu-kras.ru/sveden/education/eduAccred"]
+    },
+    {
+      "universitySlug": "russia-323",
+      "fields": 1,
+      "faculties": 0,
+      "implementedOfferings": 86,
+      "offeringUrls": ["https://www.cspu.ru:443/sveden/education/eduaccred/"]
+    }
+  ],
+  "sourceChecks": {
+    "valuesWithMatchingRawHttp200UrlDateSha256": 565,
+    "uniqueFactSourceUrls": 7,
+    "sourceHttpStatuses": {
+      "000": 77,
+      "301": 3,
+      "200": 20
+    },
+    "factRecordsUnchangedFromCollectedCandidate": true,
+    "rawSourceRecordsUnchangedFromCollectedCandidate": true,
+    "offeringsWithUnknownIntakeYear": 561,
+    "durationConflicts": 0
+  },
+  "issues": {
+    "faculties_unresolved": 13,
+    "offerings_unresolved": 13,
+    "common_fields_unresolved": 13,
+    "source_inconsistent_residence_counts": 1
+  },
+  "unresolvedUniversities": [
+    "russia-170",
+    "russia-178",
+    "russia-184",
+    "russia-197",
+    "russia-266",
+    "russia-288",
+    "russia-295",
+    "russia-296",
+    "russia-302",
+    "russia-313",
+    "russia-319",
+    "russia-337",
+    "russia-4"
+  ],
+  "knownUncertainty": [
+    "У 13 вузов не получены пригодные официальные страницы; ошибки TLS, timeout и redirect сохранены в sources.",
+    "Исходник ЮУрГГПУ сообщает 3 общежития и «Нет» для жилых помещений иногородним: сохранён буквальный текст и source_inconsistent_residence_counts, не false/0.",
+    "Названия профилей, сроки и сочетания форм сохраняются буквально. СПО, магистратура, аспирантура, ДПО и когортные планы не включены.",
+    "Таблицы eduAccred используются как перечни реализуемого образования, не реестр действующей аккредитации."
+  ],
+  "reproduction": {
+    "command": "python scripts/collect-regional-enrichment.py --checked-at 2026-10-11T08:07:00Z --collection-date 2026-10-11 --offline --gaps-only --monitoring-ids 109,1507,170,178,184,197,266,288,295,296,302,313,319,323,337,4",
+    "gapBaseline": "Встроенный gapBaseline фиксирует missing для 16 целевых карточек из матрицы 10 октября. Offline повторно использует его независимо от последующих data:coverage. Для другого --output передать --gap-baseline data-sources/russia/regional-enrichment-2026-10-11.json.",
+    "tests": "python scripts/test-collect-regional-enrichment.py",
+    "testsPassed": 20,
+    "offlineReplayProfilesStatsSourcesAndExclusionsEqual": true
+  }
+}

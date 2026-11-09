@@ -1,0 +1,172 @@
+{
+  "sourceYear": 2026,
+  "profiles": [
+    {
+      "universitySlug": "russia-305",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://ulstu.ru/abitur/",
+          "sourceUrl": "https://ulstu.ru/abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:22.492347+00:00",
+          "sourceSha256": "885b0debc00c1fc97616f417fc680767f7d2c531c7706988ece76ee3eaf49050"
+        },
+        "admissionsPhone": {
+          "value": "+7 (8422) 43-05-05; +7 (960) 375-64-60",
+          "sourceUrl": "https://ulstu.ru/abitur/common/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:22.230139+00:00",
+          "sourceSha256": "1bb7eb6d8a4dbed570e35b7660be2e483fce449fefdcd6c40c397223e4f983e5"
+        },
+        "admissionsEmail": {
+          "value": "pk@ulstu.ru",
+          "sourceUrl": "https://ulstu.ru/abitur/common/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:22.230139+00:00",
+          "sourceSha256": "1bb7eb6d8a4dbed570e35b7660be2e483fce449fefdcd6c40c397223e4f983e5"
+        },
+        "hostelInfo": {
+          "value": "Лицам, зарегистрированным вне г.Ульяновска и нуждающимся в общежитии, таковое может быть предоставлено. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+          "sourceUrl": "https://ulstu.ru/for_student/dormitories/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:16:04.842888+00:00",
+          "sourceSha256": "0da6201f415e7b7a8df1cc3fd47b2e66dbd7e1d7e3b3580f87a777b7c16b079f"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-306",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://abiturient.ulsu.ru/",
+          "sourceUrl": "https://abiturient.ulsu.ru/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:16:04.413957+00:00",
+          "sourceSha256": "8b7ac50a60323d2a3f157708f5644ed347cc8cc60e568278ab3f4d2bb48da54d"
+        },
+        "admissionsPhone": {
+          "value": "(8422) 41-20-90",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:22.194278+00:00",
+          "sourceSha256": "074cd6dd94eb90987ca6c415c65b203d429fcecb843ca1ec8cef49b9268bd425"
+        },
+        "admissionsEmail": {
+          "value": "pk@ulsu.ru",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:22.194278+00:00",
+          "sourceSha256": "074cd6dd94eb90987ca6c415c65b203d429fcecb843ca1ec8cef49b9268bd425"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-36",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://volsu.ru/Abitur/",
+          "sourceUrl": "https://volsu.ru/Abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:21.738842+00:00",
+          "sourceSha256": "72203a151e7fd2d8421651dddfedebd31b8a2186c4f74391bbf162acd791ce3f"
+        },
+        "admissionsPhone": {
+          "value": "(8442) 40-55-47",
+          "sourceUrl": "https://volsu.ru/Abitur/feedback/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:21.726246+00:00",
+          "sourceSha256": "a3d46c48531a195f21e448b29a9d50573cd324628b1351bc41e27c4d8fe168a5"
+        },
+        "admissionsEmail": {
+          "value": "priem@volsu.ru",
+          "sourceUrl": "https://volsu.ru/Abitur/feedback/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:21.726246+00:00",
+          "sourceSha256": "a3d46c48531a195f21e448b29a9d50573cd324628b1351bc41e27c4d8fe168a5"
+        },
+        "hostelInfo": {
+          "value": "В пределах имеющегося жилищного фонда для семейных обучающихся выделяются изолированные жилые помещения в соответствии с локальными нормативными актами и требованиями жилищного законодательства. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+          "sourceUrl": "https://volsu.ru/struct/generalservices/obshchezhitie/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:16:04.421214+00:00",
+          "sourceSha256": "dc5cad8a2abfd35d229d964ed07e0b84d61f47b3f17fbce495b19872d2da4ac6"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-117",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://www.stu.lipetsk.ru/abit/",
+          "sourceUrl": "https://www.stu.lipetsk.ru/abit/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:22.814287+00:00",
+          "sourceSha256": "11faadca5582bb4df156ef12da072a5802505e9036e67e279ca1de6a0f46c2d6"
+        },
+        "admissionsPhone": {
+          "value": "+7 (4742) 328-223",
+          "sourceUrl": "https://www.stu.lipetsk.ru/abit/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:15:22.814287+00:00",
+          "sourceSha256": "11faadca5582bb4df156ef12da072a5802505e9036e67e279ca1de6a0f46c2d6"
+        },
+        "hostelInfo": {
+          "value": "ЛГТУ располагает благоустроенным общежитием. Иногородние студенты при наличии соответствующего жилищного фонда обеспечиваются местами в общежитии ЛГТУ. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+          "sourceUrl": "https://www.stu.lipetsk.ru/struct/management/rectorat/pro-vos/sub/uvsr/sub/hostel/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T16:16:48.045453+00:00",
+          "sourceSha256": "7ce4d8f1ce395245f4708c7c73f0a55837074db64ed2532c49226c34e81ed607"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    }
+  ],
+  "summary": {
+    "batch": "2026-11-09",
+    "profiles": 4,
+    "newFields": 14,
+    "scope": "Gap-only central admission contacts and published housing conditions for UlSTU, UlSU, VolSU and LSTU. No fees, exams, places, deadlines or admission programs added.",
+    "baselineFieldKeys": {
+      "russia-117": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-305": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-306": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-36": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ]
+    },
+    "runtimeSnapshotSha256": "f9a4988287e155dbbbd14a2e864f9fcf7edcd3304021dbcd07bb4b70b1bc9586"
+  }
+}

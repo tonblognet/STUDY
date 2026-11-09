@@ -1,0 +1,671 @@
+{
+  "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+  "sourceYear": 2026,
+  "scope": "Частичные перечни факультетов/институтов и шесть основных сведений УлГТУ, УлГУ, ВолГУ и ЛГТУ из официальных страниц. Вложенные единицы считаются подразделениями. Условия поступления, текущие лицензии, конкурсные программы и наличие мест не подтверждаются этой партией.",
+  "profiles": [
+    {
+      "universitySlug": "russia-305",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ульяновский государственный технический университет\"",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "shortName": {
+          "value": "УлГТУ, Ульяновский государственный технический университет",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "regDate": {
+          "value": "18.09.1957",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "address": {
+          "value": "432027, Ульяновская область, г. Ульяновск, улица Северный Венец, дом 32",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "telephone": {
+          "value": "8(8422)43-02-37",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "email": {
+          "value": "rector@ulstu.ru",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Машиностроительный факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/mf/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Самолетостроительный факультет ИАТУ",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/ssf-iatu/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Факультет информационных систем и технологий",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/fist/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Радиотехнический факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/rtf/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Энергетический факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/ef/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Строительный факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/sf/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Гуманитарный факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/gf/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Заочно-вечерний факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/zvf/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        },
+        {
+          "name": "Инженерно-экономический факультет",
+          "url": "https://ulstu.ru/education/institutes-and-faculties/ief/",
+          "sourceUrl": "https://ulstu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+          "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-306",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ульяновский государственный университет\"",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "shortName": {
+          "value": "Ульяновский государственный университет, УлГУ, ФГБОУ ВО \"Ульяновский государственный университет\"",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "regDate": {
+          "value": "11.02.1988",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "address": {
+          "value": "432017, Ульяновская область, город Ульяновск, улица Льва Толстого, дом 42",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "telephone": {
+          "value": "8 (8422) 41-29-97",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "email": {
+          "value": "contact@ulsu.ru",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Институт экономики и бизнеса",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/1b4496d9-f201-11de-8bdd-001a92e75bb4/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Институт медицины, экологии и физической культуры",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/13829066-f201-11de-8bdd-001a92e75bb4/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Факультет лингвистики, межкультурных связей и профессиональной коммуникации",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/33ec6471-0b44-11e4-b93f-00237dcf6128/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Факультет математики, информационных и авиационных технологий",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/fmiat/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Инженерно-физический факультет высоких технологий",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/1382904b-f201-11de-8bdd-001a92e75bb4/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Юридический факультет",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/2301d974-f201-11de-8bdd-001a92e75bb4/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Факультет гуманитарных наук и социальных технологий",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/2301d923-f201-11de-8bdd-001a92e75bb4/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Факультет культуры и искусства",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/2301d931-f201-11de-8bdd-001a92e75bb4/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        },
+        {
+          "name": "Заволжский экономико-гуманитарный факультет",
+          "url": "https://www.ulsu.ru/ru/sveden/struct/493a9ad1-364e-11df-8ee4-00237dcf6128/",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+          "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-36",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное автономное образовательное учреждение высшего образования \"Волгоградский государственный университет\"",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "shortName": {
+          "value": "ВолГУ; ФГАОУ ВО \"Волгоградский государственный университет\"; Волгоградский государственный университет; ФГАОУ ВО ВолГУ",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "regDate": {
+          "value": "1980 г.",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "address": {
+          "value": "400062, Волгоградская область, г. Волгоград, просп. Университетский, д.100",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "telephone": {
+          "value": "+7 (8442) 460-263",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "email": {
+          "value": "rector@volsu.ru",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Институт естественных наук",
+          "url": "https://volsu.ru/struct/institutes/ien/",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт истории, международных отношений и социальных технологий",
+          "url": "https://volsu.ru/struct/institutes/iimost/",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт математики и информационных технологий",
+          "url": "https://volsu.ru/struct/institutes/mathematicandit/",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт права",
+          "url": "https://volsu.ru/struct/institutes/philsocandlaw/",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Физико-технический институт",
+          "url": "https://volsu.ru/struct/institutes/fti/",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт филологии и межкультурной коммуникации",
+          "url": "https://volsu.ru/struct/institutes/ffmk/",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        },
+        {
+          "name": "Институт экономики и управления",
+          "url": "https://volsu.ru/struct/institutes/regionaleconomics/dekanat/",
+          "sourceUrl": "https://volsu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+          "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-117",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Липецкий государственный технический университет»",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "shortName": {
+          "value": "ФГБОУ ВО “ЛГТУ”",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "regDate": {
+          "value": "01.11.1956",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "address": {
+          "value": "398055, Россия, г. Липецк, ул. Московская, д. 30",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "telephone": {
+          "value": "+7 (4742) 328-000",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "email": {
+          "value": "mailbox@lstu.ru",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Институт машиностроения и транспорта",
+          "url": "https://www.stu.lipetsk.ru/fak/imit/",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Металлургический институт",
+          "url": "https://www.stu.lipetsk.ru/fak/mi/",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Институт социальных наук экономики и права",
+          "url": "https://www.stu.lipetsk.ru/fak/isnep/",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Институт строительства и архитектуры",
+          "url": "https://www.stu.lipetsk.ru/fak/isa/",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Физико-энергетический институт",
+          "url": "https://www.stu.lipetsk.ru/fak/fei/",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        },
+        {
+          "name": "Институт компьютерных наук",
+          "url": "https://www.stu.lipetsk.ru/fak/ikn/",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+          "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+        }
+      ],
+      "offerings": []
+    }
+  ],
+  "sources": [
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+      "url": "https://www.stu.lipetsk.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/2e29dea5dc5d3387.html",
+      "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+    },
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/sveden/struct/",
+      "url": "https://www.stu.lipetsk.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:31.401990+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/a7322974954b4f7d.html",
+      "sourceSha256": "5f01af5c7231cd2493188386ed3eb4f4df3c574701b8965cd400bcbbe810a354"
+    },
+    {
+      "universitySlug": "russia-194",
+      "requestedUrl": "https://pnzgu.ru/sveden/common",
+      "url": "https://pnzgu.ru/sveden/common",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:08.911891+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-194/71d81a69d2bbfd53.html",
+      "sourceSha256": "97f7dc3da0291379b2c19fc9fa3a046cd2f3de5637dea672b0e32df7dfbc6f6d"
+    },
+    {
+      "universitySlug": "russia-194",
+      "requestedUrl": "https://pnzgu.ru/sveden/common/",
+      "url": "https://pnzgu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.322277+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-194/b8730f5cd4c4449e.html",
+      "sourceSha256": "b7ad1e7c14f167eb951fc0b46063da50b683f2cfc8fee2e2b0644b9886438481"
+    },
+    {
+      "universitySlug": "russia-194",
+      "requestedUrl": "https://pnzgu.ru/sveden/struct/",
+      "url": "https://pnzgu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.808608+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-194/bb42a5a024c5a93f.html",
+      "sourceSha256": "7eb4af3b11b10eb6a928d79f5fc1317d3e751e08555e54331aaff73f30ee6f25"
+    },
+    {
+      "universitySlug": "russia-251",
+      "requestedUrl": "https://ssau.ru/sveden/struct/",
+      "checkedAt": "2026-11-09T15:43:29.117617+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-251",
+      "requestedUrl": "https://ssau.ru/sveden/common/",
+      "checkedAt": "2026-11-09T15:43:29.120447+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/sveden/common/",
+      "url": "https://ulstu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "body": "russia-305/aa3aa94b359838e2.html",
+      "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/sveden/struct/",
+      "url": "https://ulstu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.156454+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "body": "russia-305/eaa6b7f98845be60.html",
+      "sourceSha256": "cff64c4f026fef3a0a7c789cda0d79f31d57320484681028b97843bfd97b93c5"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/ru/sveden/struct/",
+      "url": "https://ulsu.ru/ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:11.190075+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/0a000af0007142ec.html",
+      "sourceSha256": "02bd803c0fd6195fe45ff83c579aefb64b3c24a14aa2042d1f0ddb47cd18215b"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/sveden/common/",
+      "url": "https://ulsu.ru/ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/c4dd6b4b91db08c4.html",
+      "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/ru/sveden/osnstruct/",
+      "url": "https://ulsu.ru/ru/sveden/osnstruct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:44:10.007151+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/c919f0df051efe64.html",
+      "sourceSha256": "2071e12d538dd49c04d5def5f2c6c89dfb7ca28c4b2ce1059c07695404f25b66"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/sveden/struct/",
+      "checkedAt": "2026-11-09T15:43:39.897760+00:00",
+      "error": "HTTPSConnectionPool(host='ulsu.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "universitySlug": "russia-35",
+      "requestedUrl": "https://www.vstu.ru/sveden/common/",
+      "url": "https://www.vstu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.537327+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-35/5079532d1f6e33ef.html",
+      "sourceSha256": "28635dae73a5bbb60ad674e0f51792111d5b301c0dbcb54cbd1c6d9392b26f3d"
+    },
+    {
+      "universitySlug": "russia-35",
+      "requestedUrl": "https://www.vstu.ru/sveden/struct/",
+      "url": "https://www.vstu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:29.681939+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-35/7cf370c31232a6df.html",
+      "sourceSha256": "7fc16ffc1389f39cec9c518563a84ae598f8a348a8d239d2a5355480cddeac1e"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/sveden/common/",
+      "url": "https://volsu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/7f2ba29cb11090da.html",
+      "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/sveden/struct/",
+      "url": "https://volsu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:43:30.172742+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/caf445c0b6390010.html",
+      "sourceSha256": "5fbba64d7a16dc14fc3905bc2d0aaabed2a85006ecdc4bfd4ebb2c78e89aaace"
+    }
+  ],
+  "issues": [
+    {
+      "universitySlug": "russia-251",
+      "sourceUrl": "https://ssau.ru/sveden/struct/",
+      "reason": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-251",
+      "sourceUrl": "https://ssau.ru/sveden/common/",
+      "reason": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-306",
+      "sourceUrl": "https://ulsu.ru/sveden/struct/",
+      "reason": "HTTPSConnectionPool(host='ulsu.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "universitySlug": "russia-194",
+      "sourceUrl": "https://pnzgu.ru/sveden/common/",
+      "reason": "HTTP 200 с заголовком ошибки 404 исключён. Другие страницы ПГУ требуют отдельного разбора вложенной структуры; сведения не добавлены."
+    }
+  ],
+  "stats": {
+    "universities": 4,
+    "fields": 24,
+    "faculties": 31,
+    "offerings": 0
+  }
+}

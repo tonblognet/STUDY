@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   credentialsSchema,
   registerSchema,
+  resetPasswordSchema,
   twoFactorSchema,
 } from "@/lib/auth/schemas";
 
@@ -30,5 +31,33 @@ describe("auth boundary validation", () => {
     expect(
       twoFactorSchema.safeParse({ challengeId, code: "12ab56" }).success,
     ).toBe(false);
+  });
+  it("rejects passwords that bcrypt would silently truncate", () => {
+    const legacyPassword = "Aa1" + "я".repeat(35);
+    const token = "x".repeat(32);
+    expect(
+      registerSchema.safeParse({
+        email: "a@example.ru",
+        name: "Анна",
+        password: legacyPassword,
+      }).success,
+    ).toBe(false);
+    expect(
+      resetPasswordSchema.safeParse({ token, password: legacyPassword })
+        .success,
+    ).toBe(false);
+    expect(
+      registerSchema.safeParse({
+        email: "a@example.ru",
+        name: "Анна",
+        password: "Aa1" + "x".repeat(69),
+      }).success,
+    ).toBe(true);
+  });
+  it("accepts legacy bcrypt passwords at login", () => {
+    const password = "Aa1" + "я".repeat(35);
+    expect(
+      credentialsSchema.safeParse({ email: "a@example.ru", password }).success,
+    ).toBe(true);
   });
 });

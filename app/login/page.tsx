@@ -16,6 +16,7 @@ export default function LoginPage() {
         <div className="auth-links">
           <Link href="/forgot-password">Забыли пароль?</Link>
           <Link href="/register">Создать аккаунт</Link>
+          <Link href="/verify-email">Повторить подтверждение email</Link>
         </div>
       </section>
       <aside>

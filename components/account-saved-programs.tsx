@@ -11,13 +11,19 @@ export function AccountSavedPrograms({ programs }: { programs: Program[] }) {
     toggleFavorite,
     removeFromComparison,
     storageMode,
+    error,
   } = useUserState();
-  const favorites = favoriteIds
-    .map((id) => programs.find((program) => program.id === id))
-    .filter((program): program is Program => Boolean(program));
-  const comparison = comparisonIds
-    .map((id) => programs.find((program) => program.id === id))
-    .filter((program): program is Program => Boolean(program));
+  const favorites = favoriteIds.map((id) => ({
+    id,
+    program: programs.find((program) => program.id === id),
+  }));
+  const comparison = comparisonIds.map((id) => ({
+    id,
+    program: programs.find((program) => program.id === id),
+  }));
+  const loading = storageMode === "loading";
+  const unavailable = storageMode === "unavailable";
+  const cannotChange = loading || unavailable || Boolean(error);
 
   return (
     <section className="account-saved" aria-labelledby="saved-programs-title">
@@ -31,7 +37,9 @@ export function AccountSavedPrograms({ programs }: { programs: Program[] }) {
             ? "В аккаунте"
             : storageMode === "local"
               ? "На устройстве"
-              : "Загрузка…"}
+              : unavailable
+                ? "Хранилище недоступно"
+                : "Загрузка…"}
         </span>
       </header>
       <div className="account-saved-grid">
@@ -40,22 +48,40 @@ export function AccountSavedPrograms({ programs }: { programs: Program[] }) {
             <h3>Избранное</h3>
             <b>{favorites.length}</b>
           </div>
-          {favorites.length ? (
+          {loading ? (
+            <p role="status">Загружаем избранное…</p>
+          ) : unavailable ? (
+            <p>
+              Не удалось получить избранное. Повторите загрузку данных выше.
+            </p>
+          ) : favorites.length ? (
             <ul>
-              {favorites.map((program) => (
-                <li key={program.id}>
+              {favorites.map(({ id, program }) => (
+                <li key={id}>
                   <div>
-                    <Link href={`/programs/${program.slug}`}>
-                      {program.title}
-                    </Link>
-                    <span>
-                      {program.universityShort} · {program.code}
-                    </span>
+                    {program ? (
+                      <>
+                        <Link href={`/programs/${program.slug}`}>
+                          {program.title}
+                        </Link>
+                        <span>
+                          {program.universityShort} · {program.code}
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <strong>
+                          Программа отсутствует в текущем каталоге
+                        </strong>
+                        <span>Сохранённый ключ: {id}</span>
+                      </>
+                    )}
                   </div>
                   <button
                     type="button"
-                    onClick={() => toggleFavorite(program.id)}
-                    aria-label={`Удалить ${program.title} из избранного`}
+                    onClick={() => toggleFavorite(id)}
+                    disabled={cannotChange}
+                    aria-label={`Удалить ${program?.title ?? id} из избранного`}
                   >
                     Удалить
                   </button>
@@ -76,22 +102,40 @@ export function AccountSavedPrograms({ programs }: { programs: Program[] }) {
             <h3>Сравнение</h3>
             <b>{comparison.length}</b>
           </div>
-          {comparison.length ? (
+          {loading ? (
+            <p role="status">Загружаем сравнение…</p>
+          ) : unavailable ? (
+            <p>
+              Не удалось получить сравнение. Повторите загрузку данных выше.
+            </p>
+          ) : comparison.length ? (
             <ul>
-              {comparison.map((program) => (
-                <li key={program.id}>
+              {comparison.map(({ id, program }) => (
+                <li key={id}>
                   <div>
-                    <Link href={`/programs/${program.slug}`}>
-                      {program.title}
-                    </Link>
-                    <span>
-                      {program.universityShort} · {program.code}
-                    </span>
+                    {program ? (
+                      <>
+                        <Link href={`/programs/${program.slug}`}>
+                          {program.title}
+                        </Link>
+                        <span>
+                          {program.universityShort} · {program.code}
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <strong>
+                          Программа отсутствует в текущем каталоге
+                        </strong>
+                        <span>Сохранённый ключ: {id}</span>
+                      </>
+                    )}
                   </div>
                   <button
                     type="button"
-                    onClick={() => removeFromComparison(program.id)}
-                    aria-label={`Удалить ${program.title} из сравнения`}
+                    onClick={() => removeFromComparison(id)}
+                    disabled={cannotChange}
+                    aria-label={`Удалить ${program?.title ?? id} из сравнения`}
                   >
                     Удалить
                   </button>

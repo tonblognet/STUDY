@@ -1,14 +1,114 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
+import type { PrismaClient } from "@prisma/client";
 import { baselineCatalog } from "./baseline";
 import { parseCatalog } from "./schema";
 import { catalogChecksum, catalogDiff } from "./diff";
 import { applyProgramEdit } from "./program-edit";
-import { assertCatalogEditor } from "./service";
+import { assertCatalogEditor, stageCatalog } from "./service";
 import { mergeUniversity, parseImportEnvelope } from "@/scripts/catalog";
+import { universities } from "@/lib/data";
+import type { CatalogSnapshot } from "./types";
+
+const repositoryCatalog = baselineCatalog();
+
+/** Isolate mutations while keeping every relation within the requested universities. */
+function scopedCatalog(...slugs: string[]): CatalogSnapshot {
+  const scope = new Set(slugs);
+  return structuredClone({
+    schemaVersion: repositoryCatalog.schemaVersion,
+    programs: repositoryCatalog.programs.filter((row) =>
+      scope.has(row.universitySlug),
+    ),
+    universities: repositoryCatalog.universities.filter((row) =>
+      scope.has(row.slug),
+    ),
+    universityFacts: repositoryCatalog.universityFacts.filter((row) =>
+      scope.has(row.universitySlug),
+    ),
+    directoryDetails: repositoryCatalog.directoryDetails.filter((row) =>
+      scope.has(row.universitySlug),
+    ),
+    admissionCampaigns: repositoryCatalog.admissionCampaigns.filter((row) =>
+      scope.has(row.universitySlug),
+    ),
+  });
+}
 
 describe("catalog publication boundaries", () => {
+  it("rejects a prepared import if a publication advances its base before the lock", async () => {
+    const before = scopedCatalog("hse");
+    const incoming = structuredClone(before);
+    incoming.universities[0].description += " — prepared import";
+    let publishedId = "base";
+    const tx = {
+      $queryRaw: vi.fn().mockResolvedValue([]),
+      catalogHead: {
+        findUniqueOrThrow: vi.fn(async () => ({
+          revisionId: publishedId,
+          revision: { id: publishedId, checksum: "new-publication" },
+        })),
+      },
+      catalogRevision: { findUnique: vi.fn(), create: vi.fn() },
+      auditLog: { create: vi.fn() },
+    };
+    const db = {
+      catalogHead: {
+        findUniqueOrThrow: vi.fn(async () => ({
+          revisionId: publishedId,
+          revision: { checksum: catalogChecksum(before), payload: before },
+        })),
+      },
+      $transaction: vi.fn(
+        async (work: (client: typeof tx) => Promise<unknown>) => {
+          // Another editor commits after the immutable base was read but before
+          // this transaction can acquire the shared publication lock.
+          publishedId = "advanced";
+          return work(tx);
+        },
+      ),
+    };
+    await expect(
+      stageCatalog(db as unknown as PrismaClient, incoming, {
+        actor: { id: "test-editor", role: "ADMIN" },
+        reason: "Проверка смены основы во время импорта",
+        expectedRevisionId: "base",
+      }),
+    ).rejects.toMatchObject({ status: 409 });
+    expect(db.catalogHead.findUniqueOrThrow).toHaveBeenCalledOnce();
+    expect(tx.$queryRaw).toHaveBeenCalledOnce();
+    expect(tx.catalogHead.findUniqueOrThrow).toHaveBeenCalledOnce();
+    expect(tx.catalogRevision.findUnique).not.toHaveBeenCalled();
+    expect(tx.catalogRevision.create).not.toHaveBeenCalled();
+    expect(tx.auditLog.create).not.toHaveBeenCalled();
+  });
+  it("requires faculty provenance and rejects duplicate units and untrusted unit links", () => {
+    const snapshot = scopedCatalog("sfi");
+    const profile = snapshot.directoryDetails.find(
+      (row) => row.universitySlug === "sfi",
+    )!;
+    const faculty = {
+      name: "Исторический факультет",
+      url: "https://sfi.ru/study/",
+      sourceUrl: "https://sfi.ru/about/sveden/struct.html",
+      sourceYear: 2026,
+      checkedAt: "2026-10-09T12:00:00Z",
+      sourceSha256: "a".repeat(64),
+    };
+    profile.faculties = [faculty];
+    expect(
+      parseCatalog(snapshot).directoryDetails.find(
+        (row) => row.universitySlug === "sfi",
+      )!.faculties,
+    ).toEqual([faculty]);
+    profile.faculties.push({ ...faculty, name: "ИСТОРИЧЕСКИЙ ФАКУЛЬТЕТ" });
+    expect(() => parseCatalog(snapshot)).toThrow(/Дубли.*Факультеты/);
+    profile.faculties = [{ ...faculty, url: "https://evil.example/faculty" }];
+    expect(() => parseCatalog(snapshot)).toThrow(/Неофициальный/);
+    profile.faculties = [{ ...faculty, sourceSha256: "missing" }];
+    expect(() => parseCatalog(snapshot)).toThrow(/sourceSha256/);
+  });
   it("preserves sourced multiple exams and rejects duplicates, impossible bounds and foreign sources", () => {
-    const snapshot = baselineCatalog();
+    const snapshot = scopedCatalog("hse");
     const program = snapshot.programs[0];
     const fact = {
       ...program.passingScoreValue,
@@ -45,22 +145,22 @@ describe("catalog publication boundaries", () => {
     for (const input of [
       null,
       {},
-      { snapshot: baselineCatalog() },
-      { snapshot: baselineCatalog(), baseRevisionId: 42 },
+      { snapshot: repositoryCatalog },
+      { snapshot: repositoryCatalog, baseRevisionId: 42 },
     ]) {
       expect(() => parseImportEnvelope(input)).toThrow(
         /snapshot.*baseRevisionId/,
       );
     }
     expect(
-      parseImportEnvelope({ snapshot: baselineCatalog(), baseRevisionId: null })
+      parseImportEnvelope({ snapshot: repositoryCatalog, baseRevisionId: null })
         .snapshot.programs,
     ).toHaveLength(185);
   });
   it("accepts every existing program, source profile and separate creative campaign", () => {
-    const snapshot = parseCatalog(baselineCatalog());
+    const snapshot = parseCatalog(repositoryCatalog);
     expect(snapshot.programs).toHaveLength(185);
-    expect(snapshot.universities).toHaveLength(162);
+    expect(snapshot.universities).toHaveLength(universities.length);
     expect(snapshot.admissionCampaigns[0].groups).toHaveLength(5);
     expect(
       snapshot.programs.find((row) => row.slug === "mgu-01-05-01-1")
@@ -69,27 +169,27 @@ describe("catalog publication boundaries", () => {
   });
   it("rejects untrusted domains, malformed dates and inconsistent public values", () => {
     for (const mutate of [
-      (s: ReturnType<typeof baselineCatalog>) => {
+      (s: CatalogSnapshot) => {
         s.programs[0].tuitionValue.sourceUrl = "https://evil.example/fees";
       },
-      (s: ReturnType<typeof baselineCatalog>) => {
+      (s: CatalogSnapshot) => {
         s.programs[0].tuitionValue.checkedAt = "yesterday";
       },
-      (s: ReturnType<typeof baselineCatalog>) => {
+      (s: CatalogSnapshot) => {
         s.programs[0].tuition = 1;
       },
-      (s: ReturnType<typeof baselineCatalog>) => {
+      (s: CatalogSnapshot) => {
         s.programs.push(s.programs[0]);
       },
     ]) {
-      const snapshot = baselineCatalog();
+      const snapshot = scopedCatalog("hse");
       mutate(snapshot);
       expect(() => parseCatalog(snapshot)).toThrow();
     }
   });
   it("keeps source-only changes and suspicious quantities visible in the diff", () => {
-    const before = baselineCatalog(),
-      after = baselineCatalog();
+    const before = scopedCatalog("hse"),
+      after = scopedCatalog("hse");
     after.programs[0].budgetPlacesValue.value = 10000;
     after.programs[0].tuitionValue.sourceSection = "New official section";
     const changes = catalogDiff(before, after);
@@ -106,7 +206,7 @@ describe("catalog publication boundaries", () => {
     );
   });
   it("does not turn a pending correction into a public number or mutate the original", () => {
-    const original = baselineCatalog(),
+    const original = scopedCatalog("hse"),
       program = original.programs[0];
     const next = applyProgramEdit(original, program.slug, {
       baseRevisionId: "base",
@@ -127,8 +227,8 @@ describe("catalog publication boundaries", () => {
     ).toThrow(/Год/);
   });
   it("keeps other universities' approved edits during a scoped import", () => {
-    const current = baselineCatalog(),
-      incoming = baselineCatalog();
+    const current = scopedCatalog("hse", "mgu"),
+      incoming = scopedCatalog("hse", "mgu");
     current.programs[0].tuitionValue.note = "Approved editor note";
     const next = mergeUniversity(current, incoming, "mgu");
     expect(

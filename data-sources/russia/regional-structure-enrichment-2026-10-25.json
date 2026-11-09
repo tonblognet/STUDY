@@ -1,0 +1,1525 @@
+{
+  "checkedAt": "2026-10-25T07:06:58.835659+00:00",
+  "sourceYear": 2026,
+  "scope": "Недостающие общие сведения и точные учебные подразделения восьми существующих региональных карточек. Включены только проверенные подразделения высшего образования основного города; институты и вложенные факультеты учитываются как подразделения. Филиалы других городов, управление, научные, подготовительные, СПО и ДПО единицы исключены. Перечни могут быть неполными. Образовательные и конкурсные программы, ЕГЭ, места, цены, баллы и лицензии в этой партии не добавляются.",
+  "profiles": [
+    {
+      "universitySlug": "russia-11",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Астраханский государственный университет имени В. Н. Татищева»",
+          "sourceUrl": "https://asu-edu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.715056+00:00",
+          "sourceSha256": "4a9525d53e8bcca09b039367d9c523725b17e78910867dad30e23c808d722b60"
+        },
+        "shortName": {
+          "value": "ФГБОУ ВО «Астраханский государственный университет им. В. Н. Татищева» ФГБОУ ВО «АГУ им. В. Н. Татищева» Астраханский государственный университет им. В. Н. Татищева АГУ им. В. Н. Татищева",
+          "sourceUrl": "https://asu-edu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.715056+00:00",
+          "sourceSha256": "4a9525d53e8bcca09b039367d9c523725b17e78910867dad30e23c808d722b60"
+        },
+        "regDate": {
+          "value": "01.10.1932 год",
+          "sourceUrl": "https://asu-edu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.715056+00:00",
+          "sourceSha256": "4a9525d53e8bcca09b039367d9c523725b17e78910867dad30e23c808d722b60"
+        },
+        "address": {
+          "value": "414056, Южный федеральный округ, Астраханская область, г. Астрахань, ул. Татищева, 20а",
+          "sourceUrl": "https://asu-edu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.715056+00:00",
+          "sourceSha256": "4a9525d53e8bcca09b039367d9c523725b17e78910867dad30e23c808d722b60"
+        },
+        "telephone": {
+          "value": "8 (8512) 24-64-00",
+          "sourceUrl": "https://asu-edu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.715056+00:00",
+          "sourceSha256": "4a9525d53e8bcca09b039367d9c523725b17e78910867dad30e23c808d722b60"
+        },
+        "email": {
+          "value": "asu@asu-edu.ru",
+          "sourceUrl": "https://asu-edu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.715056+00:00",
+          "sourceSha256": "4a9525d53e8bcca09b039367d9c523725b17e78910867dad30e23c808d722b60"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Агро-биологический факультет",
+          "url": "https://asu-edu.ru/departments/681-agro-biologicheskii-fakultet.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        },
+        {
+          "name": "Факультет иностранных языков",
+          "url": "https://asu-edu.ru/departments/716-fakultet-inostrannyh-iazykov.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        },
+        {
+          "name": "Факультет истории и социальных коммуникаций",
+          "url": "https://asu-edu.ru/departments/676-fakultet-istorii-i-socialnyh-kommunikacii.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        },
+        {
+          "name": "Факультет педагогики, психологии, гостеприимства и спорта",
+          "url": "https://asu-edu.ru/departments/684-fakultet-pedagogiki-psihologii-gostepriimstva-i-sporta.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        },
+        {
+          "name": "Факультет физики, математики и инженерных технологий",
+          "url": "https://asu-edu.ru/departments/709-fakultet-fiziki-matematiki-i-injenernyh-tehnologii.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        },
+        {
+          "name": "Факультет филологии и журналистики",
+          "url": "https://asu-edu.ru/departments/666-fakultet-filologii-i-jurnalistiki.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        },
+        {
+          "name": "Факультет цифровых технологий и кибербезопасности",
+          "url": "https://asu-edu.ru/departments/705-fakultet-cifrovyh-tehnologii-i-kiberbezopasnosti.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        },
+        {
+          "name": "Факультет экономики и управления",
+          "url": "https://asu-edu.ru/departments/725-fakultet-ekonomiki-i-upravleniia.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        },
+        {
+          "name": "Юридический факультет",
+          "url": "https://asu-edu.ru/departments/671-uridicheskii-fakultet.html",
+          "sourceUrl": "https://asu-edu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+          "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-12",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Байкальский государственный университет»",
+          "sourceUrl": "https://bgu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:18.608656+00:00",
+          "sourceSha256": "128b9a95dd94db7438e92db9b510a2bf368a666fb34bc5a0098e7ac30ed1f259"
+        },
+        "shortName": {
+          "value": "ФГБОУ ВО «БГУ»",
+          "sourceUrl": "https://bgu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:18.608656+00:00",
+          "sourceSha256": "128b9a95dd94db7438e92db9b510a2bf368a666fb34bc5a0098e7ac30ed1f259"
+        },
+        "regDate": {
+          "value": "11 августа 1930 г.",
+          "sourceUrl": "https://bgu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:18.608656+00:00",
+          "sourceSha256": "128b9a95dd94db7438e92db9b510a2bf368a666fb34bc5a0098e7ac30ed1f259"
+        },
+        "address": {
+          "value": "664003, Сибирский федеральный округ, Иркутская обл., г. Иркутск, ул. Ленина, д. 11.",
+          "sourceUrl": "https://bgu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:18.608656+00:00",
+          "sourceSha256": "128b9a95dd94db7438e92db9b510a2bf368a666fb34bc5a0098e7ac30ed1f259"
+        },
+        "telephone": {
+          "value": "+7 (3952) 52-26-22",
+          "sourceUrl": "https://bgu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:18.608656+00:00",
+          "sourceSha256": "128b9a95dd94db7438e92db9b510a2bf368a666fb34bc5a0098e7ac30ed1f259"
+        },
+        "email": {
+          "value": "info@bgu.ru",
+          "sourceUrl": "https://bgu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:18.608656+00:00",
+          "sourceSha256": "128b9a95dd94db7438e92db9b510a2bf368a666fb34bc5a0098e7ac30ed1f259"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Институт управления, экономики и финансов",
+          "url": "https://bgu.ru/iuf/",
+          "sourceUrl": "https://bgu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:22.830522+00:00",
+          "sourceSha256": "70d766fda51f836cb72b7f1683f7a88f8fd91c89766e9ec2994050e79afbe7ee"
+        },
+        {
+          "name": "Институт юстиции",
+          "url": "https://bgu.ru/iu/",
+          "sourceUrl": "https://bgu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:22.830522+00:00",
+          "sourceSha256": "70d766fda51f836cb72b7f1683f7a88f8fd91c89766e9ec2994050e79afbe7ee"
+        },
+        {
+          "name": "Институт государственного права и национальной безопасности",
+          "url": "https://bgu.ru/igpnb/",
+          "sourceUrl": "https://bgu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:22.830522+00:00",
+          "sourceSha256": "70d766fda51f836cb72b7f1683f7a88f8fd91c89766e9ec2994050e79afbe7ee"
+        },
+        {
+          "name": "Институт мировой экономики и международных отношений",
+          "url": "https://bgu.ru/imemo/",
+          "sourceUrl": "https://bgu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:22.830522+00:00",
+          "sourceSha256": "70d766fda51f836cb72b7f1683f7a88f8fd91c89766e9ec2994050e79afbe7ee"
+        },
+        {
+          "name": "Институт культуры, социальных коммуникаций и информационных технологий",
+          "url": "https://bgu.ru/ikskit/",
+          "sourceUrl": "https://bgu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:22.830522+00:00",
+          "sourceSha256": "70d766fda51f836cb72b7f1683f7a88f8fd91c89766e9ec2994050e79afbe7ee"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-1601",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Калининградский государственный технический университет»",
+          "sourceUrl": "https://klgtu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:52.293951+00:00",
+          "sourceSha256": "38f8d4815b222084a8398b83c77815d94d830fcd367b252dc7644b3e79f194ff"
+        },
+        "shortName": {
+          "value": "ФГБОУ ВО «Калининградский государственный технический университет», ФГБОУ ВО «КГТУ», КГТУ",
+          "sourceUrl": "https://klgtu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:52.293951+00:00",
+          "sourceSha256": "38f8d4815b222084a8398b83c77815d94d830fcd367b252dc7644b3e79f194ff"
+        },
+        "regDate": {
+          "value": "22 мая 1958 г.",
+          "sourceUrl": "https://klgtu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:52.293951+00:00",
+          "sourceSha256": "38f8d4815b222084a8398b83c77815d94d830fcd367b252dc7644b3e79f194ff"
+        },
+        "address": {
+          "value": "Юридический адрес: 236022, Северо-Западный федеральный округ, Калининградская обл., г. Калининград, Советский проспект, д. 1. Дополнительный юридический адрес: - Фактический адрес: 236022, Северо-Западный федеральный округ, Калининградская обл., г. Калининград, Советский проспект, д. 1.",
+          "sourceUrl": "https://klgtu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:52.293951+00:00",
+          "sourceSha256": "38f8d4815b222084a8398b83c77815d94d830fcd367b252dc7644b3e79f194ff"
+        },
+        "telephone": {
+          "value": "8 (4012) 99-59-01",
+          "sourceUrl": "https://klgtu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:52.293951+00:00",
+          "sourceSha256": "38f8d4815b222084a8398b83c77815d94d830fcd367b252dc7644b3e79f194ff"
+        },
+        "email": {
+          "value": "klgtu@klgtu.ru",
+          "sourceUrl": "https://klgtu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:52.293951+00:00",
+          "sourceSha256": "38f8d4815b222084a8398b83c77815d94d830fcd367b252dc7644b3e79f194ff"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Институт рыболовства и аквакультуры",
+          "url": null,
+          "sourceUrl": "https://klgtu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:55.104683+00:00",
+          "sourceSha256": "002f974370a8867e8ff66328b8dc53987bfbaee493002203371affae35f556fb"
+        },
+        {
+          "name": "Институт агроинженерии и пищевых систем",
+          "url": null,
+          "sourceUrl": "https://klgtu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:55.104683+00:00",
+          "sourceSha256": "002f974370a8867e8ff66328b8dc53987bfbaee493002203371affae35f556fb"
+        },
+        {
+          "name": "Институт цифровых технологий",
+          "url": null,
+          "sourceUrl": "https://klgtu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:55.104683+00:00",
+          "sourceSha256": "002f974370a8867e8ff66328b8dc53987bfbaee493002203371affae35f556fb"
+        },
+        {
+          "name": "Институт морских технологий, энергетики и строительства",
+          "url": null,
+          "sourceUrl": "https://klgtu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:55.104683+00:00",
+          "sourceSha256": "002f974370a8867e8ff66328b8dc53987bfbaee493002203371affae35f556fb"
+        },
+        {
+          "name": "Институт отраслевой экономики и управления",
+          "url": null,
+          "sourceUrl": "https://klgtu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:55.104683+00:00",
+          "sourceSha256": "002f974370a8867e8ff66328b8dc53987bfbaee493002203371affae35f556fb"
+        },
+        {
+          "name": "Морской институт",
+          "url": null,
+          "sourceUrl": "https://klgtu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:55.104683+00:00",
+          "sourceSha256": "002f974370a8867e8ff66328b8dc53987bfbaee493002203371affae35f556fb"
+        },
+        {
+          "name": "Институт инженерной педагогики и гуманитарной подготовки",
+          "url": null,
+          "sourceUrl": "https://klgtu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:05:55.104683+00:00",
+          "sourceSha256": "002f974370a8867e8ff66328b8dc53987bfbaee493002203371affae35f556fb"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-199",
+      "fields": {},
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-258",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Саратовский национальный исследовательский государственный университет имени Н.Г. Чернышевского»",
+          "sourceUrl": "https://www.sgu.ru/sveden/common",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:23.673303+00:00",
+          "sourceSha256": "69395234d3c95a541240099190842a5c126643567971dcfa4c43d71478b64268"
+        },
+        "shortName": {
+          "value": "СГУ",
+          "sourceUrl": "https://www.sgu.ru/sveden/common",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:23.673303+00:00",
+          "sourceSha256": "69395234d3c95a541240099190842a5c126643567971dcfa4c43d71478b64268"
+        },
+        "regDate": {
+          "value": "10.06.1909",
+          "sourceUrl": "https://www.sgu.ru/sveden/common",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:23.673303+00:00",
+          "sourceSha256": "69395234d3c95a541240099190842a5c126643567971dcfa4c43d71478b64268"
+        },
+        "address": {
+          "value": "410012, г. Саратов, ул. Астраханская, 83",
+          "sourceUrl": "https://www.sgu.ru/sveden/common",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:23.673303+00:00",
+          "sourceSha256": "69395234d3c95a541240099190842a5c126643567971dcfa4c43d71478b64268"
+        },
+        "telephone": {
+          "value": "+7 (495) 547 - 13 - 16 , +7 (8452) 51 - 57 - 33 , +7 (8452) 26 - 16 - 96",
+          "sourceUrl": "https://www.sgu.ru/sveden/common",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:23.673303+00:00",
+          "sourceSha256": "69395234d3c95a541240099190842a5c126643567971dcfa4c43d71478b64268"
+        },
+        "email": {
+          "value": "rector@sgu.ru",
+          "sourceUrl": "https://www.sgu.ru/sveden/common",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:23.673303+00:00",
+          "sourceSha256": "69395234d3c95a541240099190842a5c126643567971dcfa4c43d71478b64268"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Биологический факультет",
+          "url": "https://www.sgu.ru/struktura/biological",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Географический факультет",
+          "url": "https://www.sgu.ru/struktura/geographic",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Геологический факультет",
+          "url": "https://www.sgu.ru/struktura/geological",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Институт истории и международных отношений",
+          "url": "https://www.sgu.ru/struktura/imimo",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Институт физики",
+          "url": "https://www.sgu.ru/struktura/physicsinstitute",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Институт филологии и журналистики",
+          "url": "https://www.sgu.ru/struktura/philological",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Институт химии",
+          "url": "https://www.sgu.ru/struktura/chemical",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Механико-математический факультет",
+          "url": "https://www.sgu.ru/struktura/mechmath",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Педагогический институт",
+          "url": "https://www.sgu.ru/struktura/pedinst",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Социологический факультет",
+          "url": "https://www.sgu.ru/struktura/sociological",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Факультет гуманитарных дисциплин, русского и иностранных языков",
+          "url": "https://www.sgu.ru/pedinst/facgumdis",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Факультет искусств",
+          "url": "https://www.sgu.ru/pedinst/facisk",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Факультет компьютерных наук и информационных технологий",
+          "url": "https://www.sgu.ru/struktura/computersciences",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Факультет психологии",
+          "url": "https://www.sgu.ru/struktura/fps",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Факультет психолого-педагогического и специального образования",
+          "url": "https://www.sgu.ru/struktura/pedinst/fppiso",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Факультет физико-математических и естественно-научных дисциплин",
+          "url": "https://www.sgu.ru/pedinst/facfm",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Факультет фундаментальной медицины и медицинских технологий",
+          "url": "https://www.sgu.ru/struktura/ffmimt",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Философский факультет",
+          "url": "https://www.sgu.ru/struktura/philosophic",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Экономический факультет",
+          "url": "https://www.sgu.ru/struktura/economy",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Юридический факультет",
+          "url": "https://www.sgu.ru/struktura/jurist",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        },
+        {
+          "name": "Факультет физической культуры и спорта",
+          "url": "https://www.sgu.ru/struktura/pedinst/facfkis",
+          "sourceUrl": "https://www.sgu.ru/sveden/struct",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+          "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-341",
+      "fields": {
+        "fullName": {
+          "value": "федеральное государственное бюджетное образовательное учреждение высшего образования «Ярославский государственный технический университет»",
+          "sourceUrl": "https://ystu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.815293+00:00",
+          "sourceSha256": "bbe70458902b7a85982f985ddfa003d358751e483c132674d1b773c0259d53fd"
+        },
+        "shortName": {
+          "value": "ФГБОУ ВО \"ЯГТУ\", ЯГТУ, Ярославский государственный технический университет",
+          "sourceUrl": "https://ystu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.815293+00:00",
+          "sourceSha256": "bbe70458902b7a85982f985ddfa003d358751e483c132674d1b773c0259d53fd"
+        },
+        "regDate": {
+          "value": "15 июня 1944 года",
+          "sourceUrl": "https://ystu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.815293+00:00",
+          "sourceSha256": "bbe70458902b7a85982f985ddfa003d358751e483c132674d1b773c0259d53fd"
+        },
+        "address": {
+          "value": "150023, г. Ярославль, Московский пр., д. 88",
+          "sourceUrl": "https://ystu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.815293+00:00",
+          "sourceSha256": "bbe70458902b7a85982f985ddfa003d358751e483c132674d1b773c0259d53fd"
+        },
+        "telephone": {
+          "value": "+7 (4852) 44-15-30",
+          "sourceUrl": "https://ystu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.815293+00:00",
+          "sourceSha256": "bbe70458902b7a85982f985ddfa003d358751e483c132674d1b773c0259d53fd"
+        },
+        "email": {
+          "value": "info@ystu.ru",
+          "sourceUrl": "https://ystu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:20.815293+00:00",
+          "sourceSha256": "bbe70458902b7a85982f985ddfa003d358751e483c132674d1b773c0259d53fd"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Институт архитектуры и дизайна",
+          "url": "https://www.ystu.ru/admissions/faculties/institut-arkhitektury-i-dizayna/",
+          "sourceUrl": "https://ystu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:26.808796+00:00",
+          "sourceSha256": "defecd6121dc3c7f1b6ecaa40fc134ecdd8c395c7965517e23ddbc30736d1630"
+        },
+        {
+          "name": "Институт инженерии и машиностроения",
+          "url": "https://www.ystu.ru/admissions/faculties/inzhenerii-i-mashinostroeniya/",
+          "sourceUrl": "https://ystu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:26.808796+00:00",
+          "sourceSha256": "defecd6121dc3c7f1b6ecaa40fc134ecdd8c395c7965517e23ddbc30736d1630"
+        },
+        {
+          "name": "Институт инженеров строительства и транспорта",
+          "url": "https://www.ystu.ru/admissions/faculties/institut-stroitelstva-i-transporta/",
+          "sourceUrl": "https://ystu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:26.808796+00:00",
+          "sourceSha256": "defecd6121dc3c7f1b6ecaa40fc134ecdd8c395c7965517e23ddbc30736d1630"
+        },
+        {
+          "name": "Институт химии и химической технологии",
+          "url": "https://www.ystu.ru/admissions/faculties/khimii-i-khimicheskoy-tekhnologii/",
+          "sourceUrl": "https://ystu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:26.808796+00:00",
+          "sourceSha256": "defecd6121dc3c7f1b6ecaa40fc134ecdd8c395c7965517e23ddbc30736d1630"
+        },
+        {
+          "name": "Институт цифровых систем",
+          "url": "https://www.ystu.ru/admissions/faculties/tsifrovykh-sistem/",
+          "sourceUrl": "https://ystu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:26.808796+00:00",
+          "sourceSha256": "defecd6121dc3c7f1b6ecaa40fc134ecdd8c395c7965517e23ddbc30736d1630"
+        },
+        {
+          "name": "Институт экономики и менеджмента",
+          "url": "https://www.ystu.ru/admissions/faculties/ekonomiki-i-menedzhmenta/",
+          "sourceUrl": "https://ystu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:26.808796+00:00",
+          "sourceSha256": "defecd6121dc3c7f1b6ecaa40fc134ecdd8c395c7965517e23ddbc30736d1630"
+        },
+        {
+          "name": "Институт базовой инженерной подготовки",
+          "url": "https://www.ystu.ru/admissions/institutes/institut-bazovoy-inzhenernoy-podgotovki/",
+          "sourceUrl": "https://ystu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:26.808796+00:00",
+          "sourceSha256": "defecd6121dc3c7f1b6ecaa40fc134ecdd8c395c7965517e23ddbc30736d1630"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-342",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ярославский государственный университет им. П.Г. Демидова»",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:17.852745+00:00",
+          "sourceSha256": "3d037c3900ffef2bc1a436ccab3cb1a7a6b146f00df05653638aedb76badf308"
+        },
+        "shortName": {
+          "value": "ФГБОУ «Ярославский государственный университет им. П.Г. Демидова», Ярославский государственный университет им. П.Г. Демидова, Ярославский госуниверситет им. П.Г. Демидова, ЯрГУ им. П.Г. Демидова, ЯрГУ",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:17.852745+00:00",
+          "sourceSha256": "3d037c3900ffef2bc1a436ccab3cb1a7a6b146f00df05653638aedb76badf308"
+        },
+        "regDate": {
+          "value": "18.06.1803",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:17.852745+00:00",
+          "sourceSha256": "3d037c3900ffef2bc1a436ccab3cb1a7a6b146f00df05653638aedb76badf308"
+        },
+        "address": {
+          "value": "150003, Ярославская область, г. Ярославль, ул. Советская, д. 14",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:17.852745+00:00",
+          "sourceSha256": "3d037c3900ffef2bc1a436ccab3cb1a7a6b146f00df05653638aedb76badf308"
+        },
+        "telephone": {
+          "value": "(485) 278-86-05; (485) 273-21-50; (485) 279-77-02; (485) 279-77-94",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:17.852745+00:00",
+          "sourceSha256": "3d037c3900ffef2bc1a436ccab3cb1a7a6b146f00df05653638aedb76badf308"
+        },
+        "email": {
+          "value": "rectorat@uniyar.ac.ru",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:17.852745+00:00",
+          "sourceSha256": "3d037c3900ffef2bc1a436ccab3cb1a7a6b146f00df05653638aedb76badf308"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Математический факультет",
+          "url": "https://math.uniyar.ac.ru/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Факультет информатики и вычислительной техники",
+          "url": "http://ivt.uniyar.ac.ru/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Физико-технический факультет",
+          "url": "http://fiz.uniyar.ac.ru/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Факультет социально-политических наук",
+          "url": "https://fspn.yarsu.ru/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Юридический факультет",
+          "url": "https://www.uniyar.ac.ru/faculties/juridical/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Экономический факультет",
+          "url": "https://www.uniyar.ac.ru/faculties/economic/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Исторический факультет",
+          "url": "http://hist.uniyar.ac.ru/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Факультет психологии",
+          "url": "https://www.uniyar.ac.ru/faculties/psychological/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Факультет биологии и экологии",
+          "url": "https://www.uniyar.ac.ru/faculties/biological/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        },
+        {
+          "name": "Факультет филологии, иностранных языков и международной коммуникации",
+          "url": "https://www.uniyar.ac.ru/faculties/institut/",
+          "sourceUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+          "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-83",
+      "fields": {
+        "fullName": {
+          "value": "федеральное государственное бюджетное образовательное учреждение высшего образования «Иркутский государственный университет»",
+          "sourceUrl": "https://isu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.386499+00:00",
+          "sourceSha256": "fb5a5a53f0b81b3b0350bfc77aefffdf14ef4bc9bd8d04747679bdc94e55500e"
+        },
+        "shortName": {
+          "value": "ФГБОУ ВО «ИГУ», ИГУ",
+          "sourceUrl": "https://isu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.386499+00:00",
+          "sourceSha256": "fb5a5a53f0b81b3b0350bfc77aefffdf14ef4bc9bd8d04747679bdc94e55500e"
+        },
+        "regDate": {
+          "value": "27.10.1918",
+          "sourceUrl": "https://isu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.386499+00:00",
+          "sourceSha256": "fb5a5a53f0b81b3b0350bfc77aefffdf14ef4bc9bd8d04747679bdc94e55500e"
+        },
+        "address": {
+          "value": "664003, Сибирский федеральный округ, Иркутская область, г. Иркутск, ул. Карла Маркса, д. 1",
+          "sourceUrl": "https://isu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.386499+00:00",
+          "sourceSha256": "fb5a5a53f0b81b3b0350bfc77aefffdf14ef4bc9bd8d04747679bdc94e55500e"
+        },
+        "telephone": {
+          "value": "+7 (3952) 521-900",
+          "sourceUrl": "https://isu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.386499+00:00",
+          "sourceSha256": "fb5a5a53f0b81b3b0350bfc77aefffdf14ef4bc9bd8d04747679bdc94e55500e"
+        },
+        "email": {
+          "value": "rector@isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:29.386499+00:00",
+          "sourceSha256": "fb5a5a53f0b81b3b0350bfc77aefffdf14ef4bc9bd8d04747679bdc94e55500e"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Байкальская международная бизнес-школа (институт)",
+          "url": "http://www.buk.irk.ru/",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Факультет бизнеса и менеджмента",
+          "url": "http://www.buk.irk.ru/fbm/index.php",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Институт Биологических наук",
+          "url": "http://biosoil.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Институт математики, экономики и информатики",
+          "url": "http://math.isu.ru/ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Институт социальных наук",
+          "url": "http://socio.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Социальный факультет",
+          "url": "http://socio.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Институт филологии, иностранных языков и медиакоммуникации",
+          "url": "http://word.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Факультет иностранных языков",
+          "url": "http://word.isu.ru/",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Факультет теоретической и прикладной филологии",
+          "url": "http://word.isu.ru/",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Международный институт экономики и лингвистики",
+          "url": "http://miel.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Педагогический институт",
+          "url": "http://pi.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Юридический институт",
+          "url": "http://lawinstitut.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Географический факультет",
+          "url": "http://geogr.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Геологический факультет",
+          "url": "http://geo.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Исторический факультет",
+          "url": "http://hist.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Факультет психологии",
+          "url": "http://psy.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Факультет бизнес-коммуникаций и информатики",
+          "url": "https://fbki.isu.ru/",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Физический факультет",
+          "url": "http://physdep.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        },
+        {
+          "name": "Химический факультет",
+          "url": "http://chem.isu.ru",
+          "sourceUrl": "https://isu.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+          "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+        }
+      ],
+      "offerings": []
+    }
+  ],
+  "sources": [
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/",
+      "url": "https://asu-edu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:14.881126+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-11/9a93799ac4bcc2ee.html",
+      "sourceSha256": "eee96897e75c1d6fa55290fbf404e86244cb4124a87e1933e4d4a2d0621c665e"
+    },
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/sveden/common/",
+      "url": "https://asu-edu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:20.715056+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-11/88da2b0628b37f71.html",
+      "sourceSha256": "4a9525d53e8bcca09b039367d9c523725b17e78910867dad30e23c808d722b60"
+    },
+    {
+      "universitySlug": "russia-11",
+      "requestedUrl": "https://asu-edu.ru/sveden/struct/",
+      "url": "https://asu-edu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:24.643943+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-11/8ae710ef48d1938a.html",
+      "sourceSha256": "521539c6581c16d0521b2c5059a8bce71154eca0da46365079fd7673a0e26866"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/",
+      "url": "https://bgu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:14.614579+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/0f71e58bd60f1b1c.html",
+      "sourceSha256": "720a0c502c25a092bedbed611cc803d9b7391f46bc5c126d85d7d80e3687c9f4"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/common/",
+      "url": "https://bgu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:18.608656+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/39c65c784b575f60.html",
+      "sourceSha256": "128b9a95dd94db7438e92db9b510a2bf368a666fb34bc5a0098e7ac30ed1f259"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/struct/",
+      "url": "https://bgu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:22.830522+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/f5f1580eb82227cd.html",
+      "sourceSha256": "70d766fda51f836cb72b7f1683f7a88f8fd91c89766e9ec2994050e79afbe7ee"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/",
+      "url": "https://klgtu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:05:49.715504+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/bd9c424bcd47bd12.html",
+      "sourceSha256": "0b86e21ffb2c2670cdae62be919a5e9e9ea5de6b06d1ee7adf30fb157b65927f"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/sveden/common/",
+      "url": "https://klgtu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:05:52.293951+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/82f5462ee8d37b9a.html",
+      "sourceSha256": "38f8d4815b222084a8398b83c77815d94d830fcd367b252dc7644b3e79f194ff"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/sveden/struct/",
+      "url": "https://klgtu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:05:55.104683+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/77063c6705922c53.html",
+      "sourceSha256": "002f974370a8867e8ff66328b8dc53987bfbaee493002203371affae35f556fb"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://www.klgtu.ru/",
+      "checkedAt": "2026-10-25T07:03:14.272535+00:00",
+      "error": "HTTPSConnectionPool(host='www.klgtu.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://www.klgtu.ru/sveden/common/",
+      "checkedAt": "2026-10-25T07:03:17.152767+00:00",
+      "error": "HTTPSConnectionPool(host='www.klgtu.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://www.klgtu.ru/sveden/struct/",
+      "checkedAt": "2026-10-25T07:03:21.823085+00:00",
+      "error": "HTTPSConnectionPool(host='www.klgtu.ru', port=443): Max retries exceeded with url: /sveden/struct/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/",
+      "url": "https://petrsu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:05:50.799684+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-199/990546af90415f12.html",
+      "sourceSha256": "4dad9e11b536d72808ba1b49b6226bf245083a858217037c6ed1e867989646d2"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/sveden/common",
+      "checkedAt": "2026-10-25T07:06:57.376069+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/sveden/common/",
+      "checkedAt": "2026-10-25T07:05:52.784396+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/sveden/struct",
+      "checkedAt": "2026-10-25T07:06:58.835659+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/sveden/struct/",
+      "checkedAt": "2026-10-25T07:05:54.657110+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://www.petrsu.ru/",
+      "url": "https://petrsu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:17.535083+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-199/513211dc27722e95.html",
+      "sourceSha256": "368f011e4b3798de86a553a212d51ef612e9e1bdbe17bd129a9964cf65a5bbd2"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://www.petrsu.ru/sveden/common/",
+      "checkedAt": "2026-10-25T07:03:23.750109+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://www.petrsu.ru/sveden/struct/",
+      "checkedAt": "2026-10-25T07:03:28.547695+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/",
+      "url": "https://www.sgu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:14.625972+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/3944a9432b8099da.html",
+      "sourceSha256": "47a8d745486e1f7a2a713c53214fc5baf6971b79537f36325a97a6e3b9503a73"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/sveden/common/",
+      "url": "https://www.sgu.ru/sveden/common",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:23.673303+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/f0e3e5242d7513c2.html",
+      "sourceSha256": "69395234d3c95a541240099190842a5c126643567971dcfa4c43d71478b64268"
+    },
+    {
+      "universitySlug": "russia-258",
+      "requestedUrl": "https://www.sgu.ru/sveden/struct/",
+      "url": "https://www.sgu.ru/sveden/struct",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:29.788082+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-258/cd96de295bdf911c.html",
+      "sourceSha256": "e3f11cca1f98a20db7f84f3c2163d9714dfb24e77bec584e9c18c818d1cc1496"
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://ystu.ru/",
+      "url": "https://ystu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:14.511412+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-341/4e98e6f044dcbd18.html",
+      "sourceSha256": "c174f32610df0629cb46643d53530c6d7c16c66f9786e8b96f39595d496deb9b"
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://ystu.ru/sveden/common/",
+      "url": "https://ystu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:20.815293+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-341/c8ad5b865322013a.html",
+      "sourceSha256": "bbe70458902b7a85982f985ddfa003d358751e483c132674d1b773c0259d53fd"
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://ystu.ru/sveden/struct/",
+      "url": "https://ystu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:26.808796+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-341/536d7fde52d6668f.html",
+      "sourceSha256": "defecd6121dc3c7f1b6ecaa40fc134ecdd8c395c7965517e23ddbc30736d1630"
+    },
+    {
+      "universitySlug": "russia-342",
+      "requestedUrl": "https://www.uniyar.ac.ru/",
+      "url": "https://www.uniyar.ac.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:14.152823+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-342/e9b91ed11dff41f5.html",
+      "sourceSha256": "e508bed78295f9c3e2fabe87c225a61c2a6c6a7811923cfd9ca71440961b1a6c"
+    },
+    {
+      "universitySlug": "russia-342",
+      "requestedUrl": "https://www.uniyar.ac.ru/sveden/common/",
+      "url": "https://www.uniyar.ac.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:17.852745+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-342/d70c575054b5136d.html",
+      "sourceSha256": "3d037c3900ffef2bc1a436ccab3cb1a7a6b146f00df05653638aedb76badf308"
+    },
+    {
+      "universitySlug": "russia-342",
+      "requestedUrl": "https://www.uniyar.ac.ru/sveden/struct/",
+      "url": "https://www.uniyar.ac.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:21.439442+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-342/eed8aebe8898cba4.html",
+      "sourceSha256": "f8bb1c974c509c234acc3910ef75f7c54ecc6c0d997d92ac5eb9adb64d3b09b6"
+    },
+    {
+      "universitySlug": "russia-83",
+      "requestedUrl": "https://www.isu.ru/",
+      "url": "https://isu.ru/ru/index.html",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:22.534135+00:00",
+      "contentType": "text/html;charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-83/e749434d741047e7.html",
+      "sourceSha256": "768b70abdfff98b1a15eb107c0e27418a66db2394ac5de72160677f09386fb94"
+    },
+    {
+      "universitySlug": "russia-83",
+      "requestedUrl": "https://www.isu.ru/sveden/common/",
+      "url": "https://isu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:29.386499+00:00",
+      "contentType": "text/html;charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-83/5c2a2b6a545b0f1c.html",
+      "sourceSha256": "fb5a5a53f0b81b3b0350bfc77aefffdf14ef4bc9bd8d04747679bdc94e55500e"
+    },
+    {
+      "universitySlug": "russia-83",
+      "requestedUrl": "https://www.isu.ru/sveden/struct/",
+      "url": "https://isu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:34.117303+00:00",
+      "contentType": "text/html;charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-83/1ee4392e579d4feb.html",
+      "sourceSha256": "de1058e0de5e58e1f1dc006c108729f459ff568f198bd862907bc21864d07d89"
+    }
+  ],
+  "issues": [
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://www.klgtu.ru/",
+      "note": "HTTPSConnectionPool(host='www.klgtu.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://www.klgtu.ru/sveden/common/",
+      "note": "HTTPSConnectionPool(host='www.klgtu.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://www.klgtu.ru/sveden/struct/",
+      "note": "HTTPSConnectionPool(host='www.klgtu.ru', port=443): Max retries exceeded with url: /sveden/struct/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-199",
+      "kind": "faculties_unresolved",
+      "note": "В этой партии подтверждённые недостающие сведения не получены; отсутствие результата не означает отсутствия подразделений или сведений."
+    },
+    {
+      "universitySlug": "russia-199",
+      "kind": "fields_unresolved",
+      "note": "В этой партии подтверждённые недостающие сведения не получены; отсутствие результата не означает отсутствия подразделений или сведений."
+    },
+    {
+      "universitySlug": "russia-199",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://petrsu.ru/sveden/common",
+      "note": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://petrsu.ru/sveden/common/",
+      "note": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://petrsu.ru/sveden/struct",
+      "note": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://petrsu.ru/sveden/struct/",
+      "note": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://www.petrsu.ru/sveden/common/",
+      "note": "Unsafe source URL scheme, credentials or host"
+    },
+    {
+      "universitySlug": "russia-199",
+      "kind": "source_unavailable",
+      "requestedUrl": "https://www.petrsu.ru/sveden/struct/",
+      "note": "Unsafe source URL scheme, credentials or host"
+    }
+  ],
+  "alreadyCoveredExcluded": [],
+  "stats": {
+    "universitiesAttempted": 8,
+    "universitiesWithCurrentFields": 7,
+    "universitiesWithFaculties": 7,
+    "fields": 42,
+    "faculties": 78,
+    "implementedOfferings": 0,
+    "pagesRequested": 32
+  },
+  "gapBaseline": {
+    "russia-11": [
+      "fullName",
+      "shortName",
+      "regDate",
+      "address",
+      "telephone",
+      "email",
+      "admissionsUrl",
+      "admissionsPhone",
+      "admissionsEmail",
+      "hostelInfo",
+      "overview",
+      "faculties",
+      "educationalListings",
+      "admissionPrograms"
+    ],
+    "russia-12": [
+      "fullName",
+      "shortName",
+      "regDate",
+      "address",
+      "telephone",
+      "email",
+      "admissionsUrl",
+      "admissionsPhone",
+      "admissionsEmail",
+      "hostelInfo",
+      "overview",
+      "faculties",
+      "educationalListings",
+      "admissionPrograms"
+    ],
+    "russia-83": [
+      "fullName",
+      "shortName",
+      "regDate",
+      "address",
+      "telephone",
+      "email",
+      "admissionsUrl",
+      "admissionsPhone",
+      "admissionsEmail",
+      "hostelInfo",
+      "overview",
+      "faculties",
+      "educationalListings",
+      "admissionPrograms"
+    ],
+    "russia-1601": [
+      "fullName",
+      "shortName",
+      "regDate",
+      "address",
+      "telephone",
+      "email",
+      "admissionsUrl",
+      "admissionsPhone",
+      "admissionsEmail",
+      "hostelInfo",
+      "overview",
+      "faculties",
+      "educationalListings",
+      "admissionPrograms"
+    ],
+    "russia-199": [
+      "fullName",
+      "shortName",
+      "regDate",
+      "address",
+      "telephone",
+      "email",
+      "admissionsUrl",
+      "admissionsPhone",
+      "admissionsEmail",
+      "hostelInfo",
+      "overview",
+      "faculties",
+      "educationalListings",
+      "admissionPrograms"
+    ],
+    "russia-258": [
+      "fullName",
+      "shortName",
+      "regDate",
+      "address",
+      "telephone",
+      "email",
+      "admissionsUrl",
+      "admissionsPhone",
+      "admissionsEmail",
+      "hostelInfo",
+      "overview",
+      "faculties",
+      "educationalListings",
+      "admissionPrograms"
+    ],
+    "russia-341": [
+      "fullName",
+      "shortName",
+      "regDate",
+      "address",
+      "telephone",
+      "email",
+      "admissionsUrl",
+      "admissionsPhone",
+      "admissionsEmail",
+      "hostelInfo",
+      "overview",
+      "faculties",
+      "educationalListings",
+      "admissionPrograms"
+    ],
+    "russia-342": [
+      "fullName",
+      "shortName",
+      "regDate",
+      "address",
+      "telephone",
+      "email",
+      "admissionsUrl",
+      "admissionsPhone",
+      "admissionsEmail",
+      "hostelInfo",
+      "overview",
+      "faculties",
+      "educationalListings",
+      "admissionPrograms"
+    ]
+  }
+}

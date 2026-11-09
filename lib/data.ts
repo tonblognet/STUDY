@@ -19,6 +19,7 @@ import {
   completeMoscowDirectory,
   type DirectoryProvenance,
 } from "./moscow-universities";
+import { completeRussiaDirectory } from "./russia-universities";
 import {
   expandedPrograms,
   expandedUniversities,
@@ -163,7 +164,7 @@ const naNumber = (year: number, url: string, name: string) =>
 const naString = (year: number, url: string, name: string) =>
   sourced<string>(null, year, "not_applicable", url, name);
 
-export const universities: University[] = completeMoscowDirectory([
+const moscowUniversities: University[] = completeMoscowDirectory([
   {
     id: "hse",
     slug: "hse",
@@ -347,6 +348,9 @@ export const universities: University[] = completeMoscowDirectory([
   },
   ...expandedUniversities,
 ]);
+
+export const universities: University[] =
+  completeRussiaDirectory(moscowUniversities);
 
 const bySlug = Object.fromEntries(
   universities.map((university) => [university.slug, university]),

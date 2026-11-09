@@ -18,14 +18,10 @@ import {
 import { useUserState } from "@/components/user-state-provider";
 import type { ScoreSet } from "@/lib/admissions/types";
 import type { Program } from "@/lib/data";
-
-const makeInitial = (): ScoreSet => ({
-  id: "draft",
-  name: "Мой набор",
-  scores: { "Русский язык": 80, Математика: 80, Информатика: 80 },
-  individualAchievements: 0,
-  updatedAt: new Date().toISOString(),
-});
+import {
+  makeInitialScoreProfile as makeInitial,
+  selectScoreProfile,
+} from "@/lib/admissions/score-profiles";
 
 export function ExamMatcher({
   programs,
@@ -40,7 +36,17 @@ export function ExamMatcher({
     "Математика",
     "Информатика",
   ]);
-  const { scoreSets: saved, saveScoreSet, removeScoreSet } = useUserState();
+  const {
+    scoreSets: saved,
+    saveScoreSet,
+    removeScoreSet,
+    storageMode,
+    error,
+  } = useUserState();
+  const cannotSave =
+    storageMode === "loading" ||
+    storageMode === "unavailable" ||
+    Boolean(error);
   const [saveError, setSaveError] = useState("");
   const [showResults, setShowResults] = useState(false);
   const results = useMemo(
@@ -87,7 +93,7 @@ export function ExamMatcher({
   function loadProfile(item: ScoreSet) {
     setProfile(item);
     setSelected(Object.keys(item.scores));
-    setShowResults(true);
+    setShowResults(item.id !== "draft");
   }
 
   const visibleResults = compact ? results.slice(0, 3) : results;
@@ -112,9 +118,7 @@ export function ExamMatcher({
               <select
                 value={profile.id}
                 onChange={(event) => {
-                  const item = saved.find(
-                    (entry) => entry.id === event.target.value,
-                  );
+                  const item = selectScoreProfile(event.target.value, saved);
                   if (item) loadProfile(item);
                 }}
               >
@@ -130,10 +134,10 @@ export function ExamMatcher({
               <button
                 type="button"
                 className="text-button"
+                disabled={cannotSave}
                 onClick={() => {
                   removeScoreSet(profile.id);
-                  setProfile(makeInitial());
-                  setSelected(Object.keys(makeInitial().scores));
+                  loadProfile(makeInitial());
                 }}
               >
                 Удалить набор
@@ -220,6 +224,7 @@ export function ExamMatcher({
           type="button"
           className="button outline-button"
           onClick={saveProfile}
+          disabled={cannotSave}
         >
           Сохранить набор
         </button>

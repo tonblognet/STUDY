@@ -19,6 +19,7 @@ import rsuh from "./rsuh/adapter";
 import fa from "./fa/adapter";
 import mospolytech from "./mospolytech/adapter";
 import directory from "../moscow/universities.json";
+import { completeRussiaDirectory } from "../../lib/russia-universities";
 import { createUniversityAdapter } from "../core/adapter";
 import type { University } from "../../lib/data";
 import { getDirectoryDetails } from "../../lib/university-directory-details";
@@ -55,7 +56,9 @@ const programAdapters = [
   fa,
   mospolytech,
 ];
-const directoryRecords = directory.universities as University[];
+const directoryRecords = completeRussiaDirectory(
+  directory.universities as University[],
+);
 export const universityAdapters = [
   ...programAdapters.map((adapter) => {
     const record = directoryRecords.find(
@@ -94,6 +97,9 @@ export const universityAdapters = [
               entry.directory!.sourceUrl,
               entry.directory!.websiteSourceUrl,
               entry.directory!.addressSourceUrl,
+              ...(entry.directory!.listSourceUrl
+                ? [entry.directory!.listSourceUrl]
+                : []),
               ...(entry.militaryCenterSourceUrl
                 ? [entry.militaryCenterSourceUrl]
                 : []),

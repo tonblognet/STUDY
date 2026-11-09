@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { UserState } from "./types";
+import { EMPTY_USER_STATE, type UserState } from "./types";
 
 export const scoreSetSchema = z.object({
   id: z
@@ -32,13 +32,30 @@ export const userStateSchema = z.object({
 export function normalizeUserState(
   state: UserState,
   allowedProgramIds: ReadonlySet<string>,
+  previousState: UserState = EMPTY_USER_STATE,
 ): UserState {
-  const uniquePrograms = (ids: string[], limit: number) =>
-    [...new Set(ids)].filter((id) => allowedProgramIds.has(id)).slice(0, limit);
+  const uniquePrograms = (
+    ids: string[],
+    previousIds: string[],
+    limit: number,
+  ) => {
+    const retainedIds = new Set(previousIds);
+    return [...new Set(ids)]
+      .filter((id) => allowedProgramIds.has(id) || retainedIds.has(id))
+      .slice(0, limit);
+  };
 
   return {
-    favoriteIds: uniquePrograms(state.favoriteIds, 200),
-    comparisonIds: uniquePrograms(state.comparisonIds, 20),
+    favoriteIds: uniquePrograms(
+      state.favoriteIds,
+      previousState.favoriteIds,
+      200,
+    ),
+    comparisonIds: uniquePrograms(
+      state.comparisonIds,
+      previousState.comparisonIds,
+      20,
+    ),
     scoreSets: [
       ...new Map(state.scoreSets.map((item) => [item.id, item])).values(),
     ]

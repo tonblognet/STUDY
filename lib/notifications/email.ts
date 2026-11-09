@@ -23,9 +23,7 @@ class SmtpEmailProvider implements EmailProvider {
 
 class DisabledEmailProvider implements EmailProvider {
   async send() {
-    if (process.env.NODE_ENV === "production") {
-      throw new Error("SMTP_URL is required in production");
-    }
+    throw new Error("SMTP_URL is required to send email");
   }
 }
 

@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
+import styles from "@/app/home.module.css";
 
-type Point = { label: string; value: number };
+type Point = { id: string; label: string; title: string; value: number };
 
 export function HeroDataViz({
   points,
@@ -14,15 +15,7 @@ export function HeroDataViz({
   const [active, setActive] = useState(Math.max(0, points.length - 1));
   const [selected, setSelected] = useState(() => subjects.slice(0, 3));
   const max = Math.max(...points.map((point) => point.value), 1);
-  const coordinates = useMemo(
-    () =>
-      points.map((point, index) => ({
-        x: points.length === 1 ? 50 : 8 + (index / (points.length - 1)) * 84,
-        y: 82 - (point.value / max) * 58,
-      })),
-    [max, points],
-  );
-  const polygon = `8,82 ${coordinates.map((point) => `${point.x},${point.y}`).join(" ")} ${coordinates.at(-1)?.x ?? 92},82`;
+  const currentPoint = points[active];
 
   function toggleSubject(subject: string) {
     setSelected((current) =>
@@ -33,78 +26,72 @@ export function HeroDataViz({
   }
 
   return (
-    <div className="hero-viz" aria-label="Обзор опубликованных бюджетных мест">
-      <div className="viz-head">
-        <div>
-          <strong>Бюджетные места</strong>
-          <span>в проверенной выборке</span>
-        </div>
-        <span className="viz-source">официальные источники</span>
+    <section className={styles.preview} aria-labelledby="budget-preview">
+      <div className={styles.previewHead}>
+        <h2 id="budget-preview">Бюджетные места</h2>
+        <p>Примеры программ из каталога</p>
       </div>
-      <div className="chart-legend">
-        <i /> опубликовано по программам
-      </div>
-      <svg
-        className="hero-chart"
-        viewBox="0 0 100 92"
-        role="img"
-        aria-label={points
-          .map((point) => `${point.label}: ${point.value}`)
-          .join(", ")}
-      >
-        {[24, 53, 82].map((y) => (
-          <line key={y} x1="8" y1={y} x2="92" y2={y} />
-        ))}
-        <polygon points={polygon} />
-        <polyline
-          points={coordinates.map((point) => `${point.x},${point.y}`).join(" ")}
-        />
-        {coordinates.map((point, index) => (
-          <g
-            key={points[index]?.label}
-            onMouseEnter={() => setActive(index)}
-            onFocus={() => setActive(index)}
-            tabIndex={0}
-            role="button"
-            aria-label={`${points[index]?.label}: ${points[index]?.value} мест`}
+      {currentPoint ? (
+        <>
+          <div
+            className={styles.chart}
+            role="group"
+            aria-label="Бюджетные места по программам"
           >
-            <circle
-              cx={point.x}
-              cy={point.y}
-              r={active === index ? 2.2 : 1.4}
-            />
-          </g>
-        ))}
-      </svg>
-      <div className="chart-axis">
-        {points.map((point) => (
-          <span key={point.label}>{point.label}</span>
-        ))}
-      </div>
-      <div className="chart-tooltip">
-        <b>{points[active]?.value ?? 0}</b>
-        <span>{points[active]?.label}</span>
-      </div>
-      <div className="subject-match">
-        <div className="subject-title">
-          <strong>Подходит по ЕГЭ</strong>
-          <span>{selected.length} предмета выбрано</span>
+            {points.map((point, index) => (
+              <button
+                key={point.id}
+                type="button"
+                onMouseEnter={() => setActive(index)}
+                onFocus={() => setActive(index)}
+                onClick={() => setActive(index)}
+                aria-pressed={active === index}
+                aria-label={`${point.label}, ${point.title}. Бюджетные места: ${point.value}`}
+              >
+                <span className={styles.barTrack} aria-hidden="true">
+                  <span style={{ height: `${(point.value / max) * 100}%` }} />
+                </span>
+                <span className={styles.barLabel}>{point.label}</span>
+              </button>
+            ))}
+          </div>
+          <div className={styles.programReading}>
+            <div>
+              <strong>{currentPoint.title}</strong>
+              <span>{currentPoint.label}</span>
+            </div>
+            <span>
+              <b>{currentPoint.value}</b> мест
+            </span>
+          </div>
+        </>
+      ) : (
+        <p className={styles.noBudget}>
+          В этой выборке пока нет опубликованных данных о местах.
+        </p>
+      )}
+      <div className={styles.subjects}>
+        <div className={styles.subjectTitle}>
+          <strong>Пример набора ЕГЭ</strong>
+          <span>Выбрано {selected.length} из 3</span>
         </div>
-        <div className="subject-options">
+        <div
+          className={styles.subjectOptions}
+          role="group"
+          aria-label="Предметы для примера"
+        >
           {subjects.slice(0, 4).map((subject) => (
             <button
               type="button"
               key={subject}
-              className={selected.includes(subject) ? "selected" : ""}
               onClick={() => toggleSubject(subject)}
               aria-pressed={selected.includes(subject)}
             >
-              <i />
               {subject}
             </button>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

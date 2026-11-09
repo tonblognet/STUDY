@@ -238,6 +238,10 @@ const university = z
         kind: z.enum(["university", "branch"]),
         legalName: text,
         authority: z.string(),
+        region: text.optional(),
+        federalDistrict: text.optional(),
+        sourceSha256: text.regex(/^[a-f0-9]{64}$/).optional(),
+        listSourceUrl: url.optional(),
         websiteSourceUrl: url,
         websiteSourceYear: z.number().int().optional(),
         websiteCheckedAt: date.optional(),
@@ -283,6 +287,21 @@ const directoryField = z
 const details = z
   .object({
     universitySlug: slug,
+    faculties: z
+      .array(
+        z
+          .object({
+            name: text,
+            url: url.nullable(),
+            sourceUrl: url,
+            sourceYear: z.number().int().min(1900).max(2200),
+            checkedAt: date,
+            sourceSha256: text.regex(/^[a-f0-9]{64}$/),
+            sourceSection: z.string().optional(),
+          })
+          .strict(),
+      )
+      .optional(),
     educationAreas: z.array(
       z
         .object({
@@ -546,6 +565,14 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     errors.push(...validateUniversityFactProfile(row).errors);
   for (const row of snapshot.directoryDetails) {
     visitSources(row, row.universitySlug, true);
+    unique(
+      (row.faculties ?? []).map((faculty) =>
+        faculty.name.trim().toLocaleLowerCase("ru"),
+      ),
+      `Факультеты: ${row.universitySlug}`,
+    );
+    for (const faculty of row.faculties ?? [])
+      if (faculty.url) official(row.universitySlug, faculty.url, true);
     if (
       row.fields.admissionsUrl &&
       !url.safeParse(row.fields.admissionsUrl.value).success

@@ -18,7 +18,7 @@ Production-oriented платформа для выбора программ ро
 - SEO, analytics configuration, health check, CI, Docker, monitoring and backup runbooks;
 - provider-neutral AI/tool gateway and deterministic admission probability interface.
 
-Полное наполнение всех московских вузов — самостоятельный непрерывный data-operations поток. Непроверенные факты не генерируются и не публикуются ради количества.
+Полное наполнение существующих вузов и постепенное расширение каталога по всей России — самостоятельная непрерывная работа с данными. Матрица и очередь: [RUSSIA_CATALOG_COVERAGE.md](docs/RUSSIA_CATALOG_COVERAGE.md), `pnpm data:coverage`. Непроверенные факты не генерируются и не публикуются ради количества.
 
 ## Стек
 
@@ -55,6 +55,10 @@ pnpm test:integration
 pnpm security:audit
 ```
 
+Для `test:integration` нужна отдельная PostgreSQL БД с суффиксом `_test`,
+UTF8 и UTC. Создание БД и настройка `TEST_DATABASE_URL`:
+[интеграционные проверки](docs/INTEGRATION_TESTS.md).
+
 ## Данные
 
 Адаптеры находятся в `data-sources/universities`, orchestration — в `scripts/data-pipeline.ts`.
@@ -68,7 +72,7 @@ pnpm data:import -- --university=hse --year=2026 --dry-run
 pnpm data:report
 ```
 
-Импорт создаёт идемпотентный черновик с checksum и diff; отдельное подтверждение в `/admin/catalog` атомарно публикует его на сайте. Команды экспорта, редакторские исправления, откат и ограничения: [CATALOG_PUBLICATION.md](docs/CATALOG_PUBLICATION.md). Для `test:integration` нужен `TEST_DATABASE_URL` отдельной PostgreSQL БД с суффиксом `_test`; тесты создают и удаляют только собственную случайную схему.
+Импорт создаёт идемпотентный черновик с checksum и diff; отдельное подтверждение в `/admin/catalog` атомарно публикует его на сайте. Команды экспорта, редакторские исправления, откат и ограничения: [CATALOG_PUBLICATION.md](docs/CATALOG_PUBLICATION.md).
 
 ## Production blockers
 

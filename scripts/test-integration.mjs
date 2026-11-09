@@ -1,7 +1,9 @@
 import { spawnSync } from "node:child_process";
 for (const args of [
   ["--test", "tests/rendered-html.test.mjs"],
+  ["--test", "tests/account-migration.test.mjs"],
   ["--import", "tsx", "--test", "tests/catalog-db.test.ts"],
+  ["--import", "tsx", "--test", "tests/account-db.test.ts"],
 ]) {
   const result = spawnSync(process.execPath, args, {
     stdio: "inherit",
