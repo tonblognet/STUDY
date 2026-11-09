@@ -2,10 +2,9 @@
 
 import type { FormEvent } from "react";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { accountRequest } from "@/lib/account/client";
 
 export function AuthForm({ mode }: { mode: "login" | "register" }) {
-  const router = useRouter();
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
@@ -19,28 +18,29 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
     const endpoint = challengeId ? "/api/auth/two-factor" : `/api/auth/${mode}`;
     const form = Object.fromEntries(new FormData(event.currentTarget));
     const payload = challengeId ? { challengeId, code: form.code } : form;
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-    const json = await response.json().catch(() => ({}));
-    setLoading(false);
-    if (!response.ok) {
-      setError(json.error ?? "Не удалось выполнить запрос");
-      return;
+    try {
+      const json = await accountRequest(endpoint, "POST", payload);
+      if (json.requiresTwoFactor) {
+        setChallengeId(json.challengeId);
+        setMessage("Отправили шестизначный код на email.");
+        return;
+      }
+      if (mode === "register") {
+        setMessage(json.message ?? "Проверьте почту и подтвердите адрес.");
+        return;
+      }
+      // Full navigation clears sensitive client state after authentication changes.
+      // eslint-disable-next-line @next/next/no-location-assign-relative-destination
+      window.location.assign("/account");
+    } catch (caught) {
+      setError(
+        caught instanceof Error
+          ? caught.message
+          : "Не удалось выполнить запрос",
+      );
+    } finally {
+      setLoading(false);
     }
-    if (json.requiresTwoFactor) {
-      setChallengeId(json.challengeId);
-      setMessage("Отправили шестизначный код на email.");
-      return;
-    }
-    if (mode === "register") {
-      setMessage(json.message ?? "Проверьте почту и подтвердите адрес.");
-      return;
-    }
-    router.push("/account");
-    router.refresh();
   }
 
   return (
@@ -108,6 +108,20 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
         <p className="form-success" role="status">
           {message}
         </p>
+      )}
+      {challengeId && (
+        <button
+          type="button"
+          className="text-link"
+          disabled={loading}
+          onClick={() => {
+            setChallengeId(null);
+            setMessage("");
+            setError("");
+          }}
+        >
+          Повторить вход и получить новый код
+        </button>
       )}
       <button className="button button-primary" disabled={loading}>
         {loading

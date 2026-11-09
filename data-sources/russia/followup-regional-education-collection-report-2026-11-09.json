@@ -1,0 +1,2519 @@
+{
+  "generatedAt": "2026-11-09T16:17:50.718017+00:00",
+  "scope": "Частичная дельта реализуемых образовательных программ КГТУ (Калининград) и Байкальского государственного университета (Иркутск), только коды .03/.05. Перечни не являются конкурсными группами: sourceYear=null, pending_review. В БГУ выбран только явно опубликованный раздел «1 курс»; год приёма из него не выводится. Каждая форма БГУ связана только со своим сроком в том же сегменте ячейки; общий срок для нескольких форм КГТУ не выведен. Не добавляются поля, подразделения, ЕГЭ, места, цены, проходные баллы, дедлайны, лицензии, аккредитация или гарантии поступления.",
+  "sourceCheckedAtRange": [
+    "2026-11-09T16:15:18.194833+00:00",
+    "2026-11-09T16:17:50.718017+00:00"
+  ],
+  "dataFile": "followup-regional-education-2026-11-09.json",
+  "stats": {
+    "universitiesReviewed": 2,
+    "universitiesWithEducationalListings": 2,
+    "implementedOfferings": 96,
+    "fields": 0,
+    "faculties": 0,
+    "admissionPrograms": 0
+  },
+  "perUniversity": [
+    {
+      "universitySlug": "russia-1601",
+      "name": "Калининградский государственный технический университет",
+      "city": "Калининград",
+      "educationalListings": 0,
+      "profileSha256": "f7c8927e711f53ffd76e534179a0a83a4e4c3b4c8df8fc092e8d76ccbde9f94b",
+      "newEducationalListings": 51,
+      "sourceRowsBeforeDeduplication": 51,
+      "completeness": "partial"
+    },
+    {
+      "universitySlug": "russia-12",
+      "name": "Байкальский государственный университет",
+      "city": "Иркутск",
+      "educationalListings": 0,
+      "profileSha256": "7b1dd2666f3b375947f5b77b09677a955be213e92252672f65eb4d6b37e8774d",
+      "newEducationalListings": 45,
+      "sourceRowsBeforeDeduplication": 45,
+      "completeness": "partial"
+    }
+  ],
+  "baseline": {
+    "runtimeSnapshot": "tmp/russia-before-nov09-followup.json",
+    "runtimeSnapshotSha256": "f9a4988287e155dbbbd14a2e864f9fcf7edcd3304021dbcd07bb4b70b1bc9586",
+    "universities": {
+      "russia-1601": {
+        "name": "Калининградский государственный технический университет",
+        "city": "Калининград",
+        "educationalListings": 0,
+        "profileSha256": "f7c8927e711f53ffd76e534179a0a83a4e4c3b4c8df8fc092e8d76ccbde9f94b"
+      },
+      "russia-12": {
+        "name": "Байкальский государственный университет",
+        "city": "Иркутск",
+        "educationalListings": 0,
+        "profileSha256": "7b1dd2666f3b375947f5b77b09677a955be213e92252672f65eb4d6b37e8774d"
+      }
+    }
+  },
+  "sources": [
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/sveden/education/",
+      "url": "https://klgtu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:18.295535+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/c02cfe1cd00fbebf.html",
+      "sourceSha256": "33d9d25d230795be14aa81be6aab2db997f9e1c358b6c014d962ed7911019674"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/sveden/education/eduop",
+      "url": "https://klgtu.ru/sveden/education/eduop",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/a56798e9607f7a5c.html",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/education/",
+      "url": "https://bgu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:18.194833+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/2c8d606dd97ae812.html",
+      "sourceSha256": "82da7e4105fac10f1a6e0620e907b033cc52c93e8232e302abb8281fecd1e578"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "url": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:17:50.718017+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/aadf78ef43afb7fb.html",
+      "sourceSha256": "33c66bfcaecabee4e8cb276978a9f8d2bc3f63744d4efb0e6b2c3cfdb878614e"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "url": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:17:50.214016+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/c373cf2da89c7562.html",
+      "sourceSha256": "3dae6b9846d64a396d27ec3918a7bf89047e6218f117fb55593f2327f490a7d4"
+    }
+  ],
+  "sourceAssociations": [
+    {
+      "universitySlug": "russia-1601",
+      "url": "https://klgtu.ru/sveden/education/eduop",
+      "discoveredFrom": "https://klgtu.ru/sveden/education/",
+      "publishedLabel": "Информация о реализуемых образовательных программах, включая адаптированные образовательные программы (при наличии), представляемую в виде образовательной программы в виде электронного документа или в виде активных ссылок, непосредственный переход по которым позволяет получить доступ к страницам Сайта, содержащим отдельные компоненты образовательной программы, в том числе: об учебном плане с приложением его в виде электронного документа; о календарном учебном графике с приложением его в виде электронного документа; о рабочих программах учебных предметов, курсов, дисциплин (модулей); об иных компонентах, оценочных и методических материалах, а также в предусмотренных Федеральным законом от 29.12.2012 № 273-ФЗ «Об образовании в Российской Федерации» случаях в виде рабочей программы воспитания, календарного плана воспитательной работы, форм аттестации в виде электронного документа.",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div/div[2]/a"
+    },
+    {
+      "universitySlug": "russia-12",
+      "url": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "discoveredFrom": "https://bgu.ru/sveden/education/",
+      "publishedLabel": "Бакалавриат",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/p[2]/span[1]/a"
+    },
+    {
+      "universitySlug": "russia-12",
+      "url": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "discoveredFrom": "https://bgu.ru/sveden/education/",
+      "publishedLabel": "Специалитет",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/p[2]/span[2]/a"
+    }
+  ],
+  "literalSourceRows": {
+    "russia-1601-official-e54b8cf3bc2b4d87": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[1]",
+        "tableIndex": 1,
+        "rowIndex": 1,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "05.03.06",
+          "eduName": "Экология и природопользование",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Экология и природопользование",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-64dbebb5c7972a62": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[2]",
+        "tableIndex": 1,
+        "rowIndex": 2,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "08.03.01",
+          "eduName": "Строительство",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Промышленное и гражданское строительство",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-c7feeb4441dc1554": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[3]",
+        "tableIndex": 1,
+        "rowIndex": 3,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "08.03.01",
+          "eduName": "Строительство",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Теплогазоснабжение и вентиляция",
+          "eduForm": "Очная Очно-заочная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-57541240ddc64634": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[4]",
+        "tableIndex": 1,
+        "rowIndex": 4,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "08.03.01",
+          "eduName": "Строительство",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Водоснабжение и водоотведение",
+          "eduForm": "Очно-заочная Заочная"
+        },
+        "publishedFormItems": ["Очно-заочная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-5d1a148da30722ea": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[5]",
+        "tableIndex": 1,
+        "rowIndex": 5,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "08.03.01",
+          "eduName": "Строительство",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Инжиниринг энергетической инфраструктуры объектов капитального строительства",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-2c5d8a43487ae71a": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[6]",
+        "tableIndex": 1,
+        "rowIndex": 6,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "08.03.01",
+          "eduName": "Строительство",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Проектирование, строительство и эксплуатация газонефтепроводов и газонефтехранилищ",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-6cd2815ad4485e5a": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[7]",
+        "tableIndex": 1,
+        "rowIndex": 7,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "08.03.01",
+          "eduName": "Строительство",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Технологии информационного моделирования в строительстве",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-472d88ea2ac7453c": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[8]",
+        "tableIndex": 1,
+        "rowIndex": 8,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "09.03.01",
+          "eduName": "Информатика и вычислительная техника",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Автоматизированные системы обработки информации и управления",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-e9ce23c67d85cf40": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[9]",
+        "tableIndex": 1,
+        "rowIndex": 9,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "09.03.01",
+          "eduName": "Информатика и вычислительная техника",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Промышленная информатика и системы управления",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-3a1ba85e7a60af7b": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[10]",
+        "tableIndex": 1,
+        "rowIndex": 10,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "09.03.02",
+          "eduName": "Информационные системы и технологии",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Проектирование корпоративных информационных систем",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-808963e96ff22b8a": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[11]",
+        "tableIndex": 1,
+        "rowIndex": 11,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "09.03.03",
+          "eduName": "Прикладная информатика",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Прикладная информатика в экономике",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-ec5157023a0ea95c": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[12]",
+        "tableIndex": 1,
+        "rowIndex": 12,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "09.03.03",
+          "eduName": "Прикладная информатика",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Прикладная информатика",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-9c1b0ee9d155ad48": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[13]",
+        "tableIndex": 1,
+        "rowIndex": 13,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "13.03.01",
+          "eduName": "Теплоэнергетика и теплотехника",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Тепловые электрические станции",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-b8b83ed30dce4476": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[14]",
+        "tableIndex": 1,
+        "rowIndex": 14,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "13.03.02",
+          "eduName": "Электроэнергетика и электротехника",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Электроэнергетика и электротехника",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-be3fcf954692ccc5": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[15]",
+        "tableIndex": 1,
+        "rowIndex": 15,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "15.03.01",
+          "eduName": "Машиностроение",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Технологии, оборудование и автоматизация машиностроительных производств",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-832d39ec3a4cd80c": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[16]",
+        "tableIndex": 1,
+        "rowIndex": 16,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "15.03.02",
+          "eduName": "Технологические машины и оборудование",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Технологические машины и оборудование",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-f40a6f537d919a36": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[17]",
+        "tableIndex": 1,
+        "rowIndex": 17,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "15.03.04",
+          "eduName": "Автоматизация технологических процессов и производств",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Автоматизация технологических процессов и производств",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-8bc0d378ad54a0fa": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[18]",
+        "tableIndex": 1,
+        "rowIndex": 18,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "19.03.01",
+          "eduName": "Биотехнология",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Пищевая биотехнология",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-0a8a906763956033": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[19]",
+        "tableIndex": 1,
+        "rowIndex": 19,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "19.03.01",
+          "eduName": "Биотехнология",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Биотехнология и биоинженерия",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-a0f3473abcb7c51a": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[20]",
+        "tableIndex": 1,
+        "rowIndex": 20,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "19.03.03",
+          "eduName": "Продукты питания животного происхождения",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Продукты питания животного происхождения",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-8c11430718f951a8": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[21]",
+        "tableIndex": 1,
+        "rowIndex": 21,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "19.03.03",
+          "eduName": "Продукты питания животного происхождения",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Технологии пищевых производств",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-62a6e0a4be5af358": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[22]",
+        "tableIndex": 1,
+        "rowIndex": 22,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "19.03.04",
+          "eduName": "Технология продукции и организация общественного питания",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Технология продукции и организация общественного питания",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-305f326f2e37a2bf": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[23]",
+        "tableIndex": 1,
+        "rowIndex": 23,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "19.03.04",
+          "eduName": "Технология продукции и организация общественного питания",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Балтийская высшая школа гастрономии",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-34b351262e84d794": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[24]",
+        "tableIndex": 1,
+        "rowIndex": 24,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "20.03.01",
+          "eduName": "Техносферная безопасность",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Защита в чрезвычайных ситуациях",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-a18baeaa9a77886e": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[25]",
+        "tableIndex": 1,
+        "rowIndex": 25,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "20.03.01",
+          "eduName": "Техносферная безопасность",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Безопасность технологических процессов и производств",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-17286b7920770677": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[26]",
+        "tableIndex": 1,
+        "rowIndex": 26,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "20.03.02",
+          "eduName": "Природообустройство и водопользование",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Инженерное обустройство и комплексное использование водных ресурсов",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-47824080c2e18850": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[27]",
+        "tableIndex": 1,
+        "rowIndex": 27,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "20.03.02",
+          "eduName": "Природообустройство и водопользование",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Комплексное использование и охрана водных ресурсов",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-1829a4a363901d4f": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[28]",
+        "tableIndex": 1,
+        "rowIndex": 28,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "26.03.01",
+          "eduName": "Управление водным транспортом и гидрографическое обеспечение судоходства",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Управление транспортными системами и логистическим сервисом на водном транспорте",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-da0a51b195be42c4": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[29]",
+        "tableIndex": 1,
+        "rowIndex": 29,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "26.03.02",
+          "eduName": "Кораблестроение, океанотехника и системотехника объектов морской инфраструктуры",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Кораблестроение",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-f858196c701fe54d": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[30]",
+        "tableIndex": 1,
+        "rowIndex": 30,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "26.03.02",
+          "eduName": "Кораблестроение, океанотехника и системотехника объектов морской инфраструктуры",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Технология и организация судостроения и судоремонта",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-7a87fca6bb7d3c3a": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[31]",
+        "tableIndex": 1,
+        "rowIndex": 31,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "35.03.04",
+          "eduName": "Агрономия",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Агрономия",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-90198f459c5604bd": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[32]",
+        "tableIndex": 1,
+        "rowIndex": 32,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "35.03.08",
+          "eduName": "Водные биоресурсы и аквакультура",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Водные биоресурсы и аквакультура",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-8d727e6aee2eac97": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[33]",
+        "tableIndex": 1,
+        "rowIndex": 33,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "35.03.08",
+          "eduName": "Водные биоресурсы и аквакультура",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Индустриальная аквакультура",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-02a71a2655a14e53": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[34]",
+        "tableIndex": 1,
+        "rowIndex": 34,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "35.03.09",
+          "eduName": "Промышленное рыболовство",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Цифровые технологии промышленного рыболовства",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-c07b1beb4d527e88": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[35]",
+        "tableIndex": 1,
+        "rowIndex": 35,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "35.03.09",
+          "eduName": "Промышленное рыболовство",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Промышленное рыболовство",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-9c7f25eaaf528170": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[36]",
+        "tableIndex": 1,
+        "rowIndex": 36,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "36.03.01",
+          "eduName": "Ветеринарно-санитарная экспертиза",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Ветеринарно-санитарная экспертиза",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-de9493a2757085cf": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[37]",
+        "tableIndex": 1,
+        "rowIndex": 37,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "36.03.02",
+          "eduName": "Зоотехния",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Зоотехния",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-c28da64abafce5cf": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[38]",
+        "tableIndex": 1,
+        "rowIndex": 38,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Прикладная экономика",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-88269ade6593696d": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[39]",
+        "tableIndex": 1,
+        "rowIndex": 39,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Бизнес-аналитика и корпоративные финансы",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-2e189fd170e4d4e9": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[40]",
+        "tableIndex": 1,
+        "rowIndex": 40,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Учет, анализ и аудит",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-0b3e52458a267a1f": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[41]",
+        "tableIndex": 1,
+        "rowIndex": 41,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Инженерная экономика",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-0e49b85556e77063": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[42]",
+        "tableIndex": 1,
+        "rowIndex": 42,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.02",
+          "eduName": "Менеджмент",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Менеджмент",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-b1e264c5730080c7": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[43]",
+        "tableIndex": 1,
+        "rowIndex": 43,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.02",
+          "eduName": "Менеджмент",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Маркетинговая аналитика",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-2e27eec0de1978ac": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[44]",
+        "tableIndex": 1,
+        "rowIndex": 44,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.02",
+          "eduName": "Менеджмент",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Производственный менеджмент",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-0bb7fe5e9a44cfed": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[45]",
+        "tableIndex": 1,
+        "rowIndex": 45,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.03",
+          "eduName": "Управление персоналом",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Аудит и контроллинг персонала",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-1601-official-a9e00dc5ea7fa543": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[46]",
+        "tableIndex": 1,
+        "rowIndex": 46,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "26.03.04",
+          "eduName": "Инженерно-экономическое обеспечение технологий и бизнес-процессов водного транспорта",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Инженерно-экономическое обеспечение бизнес-процессов предприятия",
+          "eduForm": "Очная Заочная"
+        },
+        "publishedFormItems": ["Очная", "Заочная"]
+      }
+    ],
+    "russia-1601-official-336c3fc61fd98bec": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[47]",
+        "tableIndex": 1,
+        "rowIndex": 47,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "15.03.03",
+          "eduName": "Прикладная механика",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Основы прочности машиностроительных конструкций",
+          "eduForm": "Заочная"
+        },
+        "publishedFormItems": ["Заочная"]
+      }
+    ],
+    "russia-1601-official-0badc9b48bae03dd": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[48]",
+        "tableIndex": 1,
+        "rowIndex": 48,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "26.03.03",
+          "eduName": "Водные пути, порты и гидротехнические сооружения",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Водные пути, порты и гидротехнические сооружения",
+          "eduForm": "Очная"
+        },
+        "publishedFormItems": ["Очная"]
+      }
+    ],
+    "russia-1601-official-88f1a4595f5aba2e": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[49]",
+        "tableIndex": 1,
+        "rowIndex": 49,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "35.03.10",
+          "eduName": "Ландшафтная архитектура",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Ландшафтная архитектура",
+          "eduForm": "Заочная"
+        },
+        "publishedFormItems": ["Заочная"]
+      }
+    ],
+    "russia-1601-official-344d9cf080cbf439": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[50]",
+        "tableIndex": 1,
+        "rowIndex": 50,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "35.03.07",
+          "eduName": "Технология производства и переработки сельскохозяйственной продукции",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Технология производства и переработки сельскохозяйственной продукции",
+          "eduForm": "Заочная"
+        },
+        "publishedFormItems": ["Заочная"]
+      }
+    ],
+    "russia-1601-official-0a189ea4df272bd5": [
+      {
+        "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+        "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[5]/table/tbody/tr[51]",
+        "tableIndex": 1,
+        "rowIndex": 51,
+        "section": "Программы бакалавриата",
+        "literalCells": {
+          "eduCode": "38.03.05",
+          "eduName": "Бизнес-информатика",
+          "eduLevel": "Высшее образование — бакалавриат",
+          "eduProf": "Информационная бизнес-аналитика",
+          "eduForm": "Очная Очно-заочная"
+        },
+        "publishedFormItems": ["Очная", "Очно-заочная"]
+      }
+    ],
+    "russia-12-official-f158ba620c0036f9": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[2]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "08.03.01",
+          "eduName": "Строительство",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Организация строительного производства",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[2]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[2]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-aac07e2db466dbf7": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "09.03.03",
+          "eduName": "Прикладная информатика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Информационные системы и технологии в управлении",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-73f905adee2abd18": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "09.03.03",
+          "eduName": "Прикладная информатика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Информационные системы и технологии в управлении",
+          "eduForm": "Заочная",
+          "learningTerm": "4 года 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-2038ebd0af2cc617": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "09.03.03",
+          "eduName": "Прикладная информатика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Системы искусственного интеллекта",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-5fe1f679c9a301a4": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "09.03.03",
+          "eduName": "Прикладная информатика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Системы искусственного интеллекта",
+          "eduForm": "Заочная",
+          "learningTerm": "4 года 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-5ca2693f5f638e3a": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "21.03.02",
+          "eduName": "Землеустройство и кадастры",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Управление и экспертиза недвижимости",
+          "eduForm": "Заочная",
+          "learningTerm": "4 года 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-3564478d418ecf1c": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "27.03.02",
+          "eduName": "Управление качеством",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Управление бизнес-процессами в производственных системах",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-cad3e1ef563653b3": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[7]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "35.03.01",
+          "eduName": "Лесное дело",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Лесное хозяйство и управление лесами",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[7]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[7]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-de55715a6d139d8d": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[8]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "37.03.01",
+          "eduName": "Психология",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Психология в экономике и управлении",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[8]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[8]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-030c5f79b7c46dbc": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[9]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Бухгалтерский учет и налогообложение",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[9]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[9]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-0d5a8bafc541ce1f": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[10]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Внешнеэкономическая деятельность",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[10]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[10]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-68cabd966159a3b6": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[11]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Мировая экономика (Русско-китайская программа двойного дипломирования - г. Пекин)",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[11]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[11]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-3873c265bd085bc8": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[12]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Финансы и кредит",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[12]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[12]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-cf54f7eca90a3407": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[14]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Экономика и управление отраслевыми комплексами (нефтегазовый комплекс; инвестиционно-строительный комплекс)",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[14]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[14]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-cc1fcad7efeee401": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[15]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.01",
+          "eduName": "Экономика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Экономика предприятия и предпринимательская деятельность",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[15]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[15]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-1f6573576490768f": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[17]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.02",
+          "eduName": "Менеджмент",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Управление бизнесом",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[17]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[17]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-e8d567c437d5d84f": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[18]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.02",
+          "eduName": "Менеджмент",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Управление бизнесом (Русско-китайская программа двойного дипломирования г. Шеньян)",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[18]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[18]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-fc6821064e855303": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[20]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.03",
+          "eduName": "Управление персоналом",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Управление персоналом",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[20]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[20]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-3b8ee3ac948db9a6": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[22]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.04",
+          "eduName": "Государственное и муниципальное управление",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Государственное и муниципальное управление",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[22]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[22]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-386d0af01bbc6592": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[23]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.05",
+          "eduName": "Бизнес-информатика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Цифровая экономика",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[23]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[23]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-0cdafe55856751d9": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[25]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.06",
+          "eduName": "Торговое дело",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Маркетинг, продажи и логистика",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[25]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[25]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-aee2f54a8e7ae94d": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[26]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.03.06",
+          "eduName": "Торговое дело",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Маркетинг, продажи и логистика (Русско-китайская программа двойного дипломирования г.Пекин)",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[26]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[26]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-7750076c756af2ec": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[28]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "40.03.01",
+          "eduName": "Юриспруденция",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Юриспруденция",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[28]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[28]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-42a60def8178d98e": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[28]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "40.03.01",
+          "eduName": "Юриспруденция",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Юриспруденция",
+          "eduForm": "Очно-заочная",
+          "learningTerm": "4 года 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[28]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[28]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-86db65743dd8769f": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[29]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "41.03.05",
+          "eduName": "Международные отношения",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Международные отношения",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[29]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[29]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-fcc10cf2e56b441e": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[30]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "42.03.01",
+          "eduName": "Реклама и связи с общественностью",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Реклама и связи с общественностью",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[30]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[30]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-8e38dd1ce9a815ad": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[30]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "42.03.01",
+          "eduName": "Реклама и связи с общественностью",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Реклама и связи с общественностью",
+          "eduForm": "Заочная",
+          "learningTerm": "4 года 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[30]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[30]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-2113750969fd8369": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[31]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "42.03.02",
+          "eduName": "Журналистика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Журналистика",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[31]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[31]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-3b3d724219bbbf8c": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[32]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "43.03.02",
+          "eduName": "Туризм",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Туристский и гостиничный бизнес",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[32]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[32]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-290468020959dc6f": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[32]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "43.03.02",
+          "eduName": "Туризм",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Туристский и гостиничный бизнес",
+          "eduForm": "Заочная",
+          "learningTerm": "4 года 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[32]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[32]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-3ac5bf19ca892216": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[33]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "44.03.01",
+          "eduName": "Педагогическое образование",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Русский язык",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[33]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[33]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-50d909889b281078": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[34]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "45.03.02",
+          "eduName": "Лингвистика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Русский язык как иностранный",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[34]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[34]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-9fbd5b08529a31eb": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[35]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "45.03.02",
+          "eduName": "Лингвистика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Теория и методика преподавания иностранных языков и культур",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[35]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[35]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-22ab58ac40962f79": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[37]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "50.03.02",
+          "eduName": "Изящные искусства",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Организационная деятельность в сфере культуры, искусства и массовых коммуникаций",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[37]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[37]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-2db04b0fb6ed7d7c": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[38]",
+        "section": "Бакалавриат — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "58.03.01",
+          "eduName": "Востоковедение и африканистика",
+          "eduLevel": "Высшее - Бакалавриат",
+          "eduProf": "Востоковедение и африканистика",
+          "eduForm": "Очная",
+          "learningTerm": "4 года"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[38]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[38]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-7fb5756f73db224c": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[2]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "37.05.02",
+          "eduName": "Психология служебной деятельности",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Морально-психологическое обеспечение служебной деятельности",
+          "eduForm": "Очная",
+          "learningTerm": "5 лет"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[2]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[2]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-496aac22df5b60bc": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.05.01",
+          "eduName": "Экономическая безопасность",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Экономико-правовое обеспечение экономической безопасности",
+          "eduForm": "Очная",
+          "learningTerm": "5 лет"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-fc14fb1924427c5d": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.05.01",
+          "eduName": "Экономическая безопасность",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Экономико-правовое обеспечение экономической безопасности",
+          "eduForm": "Заочная",
+          "learningTerm": "5 лет 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[3]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-5392454e034e399f": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.05.02",
+          "eduName": "Таможенное дело",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Таможенное дело",
+          "eduForm": "Очная",
+          "learningTerm": "5 лет"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-feda12629af870f7": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "38.05.02",
+          "eduName": "Таможенное дело",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Таможенное дело",
+          "eduForm": "Заочная",
+          "learningTerm": "5 лет 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[4]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-4db8d220898be97e": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "40.05.01",
+          "eduName": "Правовое обеспечение национальной безопасности",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Уголовно-правовая",
+          "eduForm": "Очная",
+          "learningTerm": "5 лет"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-ef92241d5a578f51": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "40.05.01",
+          "eduName": "Правовое обеспечение национальной безопасности",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Уголовно-правовая",
+          "eduForm": "Заочная",
+          "learningTerm": "5 лет 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[5]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-772e4b05a62a0fb0": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "40.05.04",
+          "eduName": "Судебная и прокурорская деятельность",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Судебная деятельность",
+          "eduForm": "Очная",
+          "learningTerm": "5 лет"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]/td[3]/span[2]"
+      }
+    ],
+    "russia-12-official-130a78b1d962ef50": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "40.05.04",
+          "eduName": "Судебная и прокурорская деятельность",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Судебная деятельность",
+          "eduForm": "Заочная",
+          "learningTerm": "5 лет 6 месяцев"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]/td[3]/span[3]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[6]/td[3]/span[4]"
+      }
+    ],
+    "russia-12-official-ae566a38d6f1ef0c": [
+      {
+        "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+        "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[7]",
+        "section": "Специалитет — 1 курс; год приёма не установлен",
+        "literalCells": {
+          "eduCode": "45.05.01",
+          "eduName": "Перевод и переводоведение",
+          "eduLevel": "Высшее - Специалитет",
+          "eduProf": "Лингвистическое обеспечение межгосударственных отношений",
+          "eduForm": "Очная",
+          "learningTerm": "5 лет"
+        },
+        "publishedCourseLabel": "1 курс",
+        "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[7]/td[3]/span[1]",
+        "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[7]/td[3]/span[2]"
+      }
+    ]
+  },
+  "editorialExclusions": [
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "10.05.03",
+      "title": "Информационная безопасность автоматизированных систем",
+      "profile": "Безопасность открытых информационных систем",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[1]",
+      "tableIndex": 2,
+      "rowIndex": 1,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "10.05.03",
+        "eduName": "Информационная безопасность автоматизированных систем",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Безопасность открытых информационных систем",
+        "eduForm": "Очная"
+      },
+      "publishedFormItems": ["Очная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "25.05.03",
+      "title": "Техническая эксплуатация транспортного радиооборудования",
+      "profile": "Техническая эксплуатация и ремонт радиооборудования промыслового флота",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная, Заочная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[2]",
+      "tableIndex": 2,
+      "rowIndex": 2,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "25.05.03",
+        "eduName": "Техническая эксплуатация транспортного радиооборудования",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Техническая эксплуатация и ремонт радиооборудования промыслового флота",
+        "eduForm": "Очная Заочная"
+      },
+      "publishedFormItems": ["Очная", "Заочная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "25.05.03",
+      "title": "Техническая эксплуатация транспортного радиооборудования",
+      "profile": "Информационно-телекоммуникационные системы на транспорте и их информационная защита",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная, Заочная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[3]",
+      "tableIndex": 2,
+      "rowIndex": 3,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "25.05.03",
+        "eduName": "Техническая эксплуатация транспортного радиооборудования",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Информационно-телекоммуникационные системы на транспорте и их информационная защита",
+        "eduForm": "Очная Заочная"
+      },
+      "publishedFormItems": ["Очная", "Заочная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "26.05.05",
+      "title": "Судовождение",
+      "profile": "Промысловое судовождение",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная, Заочная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[4]",
+      "tableIndex": 2,
+      "rowIndex": 4,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "26.05.05",
+        "eduName": "Судовождение",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Промысловое судовождение",
+        "eduForm": "Очная Заочная"
+      },
+      "publishedFormItems": ["Очная", "Заочная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "26.05.06",
+      "title": "Эксплуатация судовых энергетических установок",
+      "profile": "Эксплуатация главной судовой двигательной установки",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная, Заочная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[5]",
+      "tableIndex": 2,
+      "rowIndex": 5,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "26.05.06",
+        "eduName": "Эксплуатация судовых энергетических установок",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Эксплуатация главной судовой двигательной установки",
+        "eduForm": "Очная Заочная"
+      },
+      "publishedFormItems": ["Очная", "Заочная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "26.05.07",
+      "title": "Эксплуатация судового электрооборудования и средств автоматики",
+      "profile": "Эксплуатация судового электрооборудования и средств автоматики",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная, Заочная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[6]",
+      "tableIndex": 2,
+      "rowIndex": 6,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "26.05.07",
+        "eduName": "Эксплуатация судового электрооборудования и средств автоматики",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Эксплуатация судового электрооборудования и средств автоматики",
+        "eduForm": "Очная Заочная"
+      },
+      "publishedFormItems": ["Очная", "Заочная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "36.05.01",
+      "title": "Ветеринария",
+      "profile": "Ветеринария",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная, Очно-заочная, Заочная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[7]",
+      "tableIndex": 2,
+      "rowIndex": 7,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "36.05.01",
+        "eduName": "Ветеринария",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Ветеринария",
+        "eduForm": "Очная Очно-заочная Заочная"
+      },
+      "publishedFormItems": ["Очная", "Очно-заочная", "Заочная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "38.05.01",
+      "title": "Экономическая безопасность",
+      "profile": "Экономико-правовое обеспечение экономической безопасности",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная, Заочная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[8]",
+      "tableIndex": 2,
+      "rowIndex": 8,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "38.05.01",
+        "eduName": "Экономическая безопасность",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Экономико-правовое обеспечение экономической безопасности",
+        "eduForm": "Очная Заочная"
+      },
+      "publishedFormItems": ["Очная", "Заочная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "source_level_conflict",
+      "code": "38.05.01",
+      "title": "Экономическая безопасность",
+      "profile": "Экономическая безопасность",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная, Заочная",
+      "sourceUrl": "https://klgtu.ru/sveden/education/eduop",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e",
+      "xpath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[6]/table/tbody/tr[9]",
+      "tableIndex": 2,
+      "rowIndex": 9,
+      "section": "Программы специалитета",
+      "literalCells": {
+        "eduCode": "38.05.01",
+        "eduName": "Экономическая безопасность",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduProf": "Экономическая безопасность",
+        "eduForm": "Очная Заочная"
+      },
+      "publishedFormItems": ["Очная", "Заочная"],
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    }
+  ],
+  "scopeExclusions": [
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Программы подготовки специалистов среднего звена",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[4]/table",
+      "rows": 19
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Программы магистратуры",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[7]/table",
+      "rows": 35
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Программы подготовки научных и научно-педагогических кадров в аспирантуре ФГОС",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[8]/table",
+      "rows": 1
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Программы подготовки научных и научно-педагогических кадров в аспирантуре ФГТ",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[9]/table",
+      "rows": 30
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Дополнительные общеобразовательные программы",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[10]/table",
+      "rows": 34
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Программы повышения квалификации",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[11]/table",
+      "rows": 201
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Программы профессиональной переподготовки",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[12]/table",
+      "rows": 35
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Программы профессиональной подготовки по профессиям рабочих, должностям служащих",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[13]/table",
+      "rows": 33
+    },
+    {
+      "universitySlug": "russia-1601",
+      "kind": "other_level_or_section",
+      "section": "Программы повышения квалификации рабочих, служащих",
+      "tableXPath": "/html/body/main/section/div/div[2]/div[2]/div/div/div[1]/div[14]/table",
+      "rows": 3
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "sectionId": "course-2",
+      "rows": 37,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "sectionId": "course-3",
+      "rows": 35,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[3]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "sectionId": "course-4",
+      "rows": 31,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[4]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "sectionId": "course-5",
+      "rows": 13,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[5]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[9]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "38.03.01",
+        "eduName": "Экономика",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Бухгалтерский учет и налогообложение",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[9]/td[3]/span[3]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[9]/td[3]/span[4]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[12]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "38.03.01",
+        "eduName": "Экономика",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Финансы и кредит",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[12]/td[3]/span[3]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[12]/td[3]/span[4]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[13]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "38.03.01",
+        "eduName": "Экономика",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Экономика и организация фирмы",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[13]/td[3]/span[1]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[13]/td[3]/span[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[16]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "38.03.02",
+        "eduName": "Менеджмент",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Менеджмент и бизнес-технологии",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[16]/td[3]/span[1]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[16]/td[3]/span[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[19]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "38.03.03",
+        "eduName": "Управление персоналом",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Технологии управления персоналом",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[19]/td[3]/span[1]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[19]/td[3]/span[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[21]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "38.03.04",
+        "eduName": "Государственное и муниципальное управление",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Государственная и муниципальная служба",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[21]/td[3]/span[1]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[21]/td[3]/span[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[24]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "38.03.06",
+        "eduName": "Торговое дело",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Логистика и маркетинг в закупках и продажах",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[24]/td[3]/span[1]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[24]/td[3]/span[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[27]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "39.03.02",
+        "eduName": "Социальная работа",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Организация социальной работы с разными группами населения",
+        "eduForm": "Заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[27]/td[3]/span[1]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[27]/td[3]/span[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "bgu_mode_condition_excluded",
+      "publishedConditions": [
+        "с примененем дистанционных образовательных технологий"
+      ],
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[36]",
+      "section": "Бакалавриат — 1 курс; год приёма не установлен",
+      "literalCells": {
+        "eduCode": "50.03.01",
+        "eduName": "Искусства и гуманитарные науки",
+        "eduLevel": "Высшее - Бакалавриат",
+        "eduProf": "Искусства и гуманитарные науки",
+        "eduForm": "Заочная",
+        "learningTerm": "4 года 6 месяцев"
+      },
+      "publishedCourseLabel": "1 курс",
+      "formXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[36]/td[3]/span[1]",
+      "durationXPath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[1]/table/tr[36]/td[3]/span[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "sectionId": "course-2",
+      "rows": 6,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[2]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "sectionId": "course-3",
+      "rows": 7,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[3]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "sectionId": "course-4",
+      "rows": 6,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[4]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "sectionId": "course-5",
+      "rows": 6,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[5]"
+    },
+    {
+      "universitySlug": "russia-12",
+      "kind": "other_published_course",
+      "sourceUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "sectionId": "course-6",
+      "rows": 3,
+      "xpath": "/html/body/form/div[2]/section/div/div/div[2]/div/div[3]/div[6]"
+    }
+  ],
+  "exclusionCounts": {
+    "source_level_conflict": 9,
+    "other_level_or_section": 9,
+    "other_published_course": 9,
+    "bgu_mode_condition_excluded": 9
+  },
+  "sourceAttempts": [
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/education/",
+      "url": "https://bgu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:18.194833+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/2c8d606dd97ae812.html",
+      "sourceSha256": "82da7e4105fac10f1a6e0620e907b033cc52c93e8232e302abb8281fecd1e578"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/education/opop-spec.aspx",
+      "url": "https://bgu.ru/sveden/education/opop-spec.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:41.254799+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/67a1f58745db965a.html",
+      "sourceSha256": "969546a352b11fb857ab040179510f692b6be78bef68c25dabd0438359ea691a"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "url": "https://bgu.ru/sveden/education/accred-bach.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:17:50.718017+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/aadf78ef43afb7fb.html",
+      "sourceSha256": "33c66bfcaecabee4e8cb276978a9f8d2bc3f63744d4efb0e6b2c3cfdb878614e"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "url": "https://bgu.ru/sveden/education/accred-spec.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:17:50.214016+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/c373cf2da89c7562.html",
+      "sourceSha256": "3dae6b9846d64a396d27ec3918a7bf89047e6218f117fb55593f2327f490a7d4"
+    },
+    {
+      "universitySlug": "russia-12",
+      "requestedUrl": "https://bgu.ru/sveden/education/opop-bach.aspx",
+      "url": "https://bgu.ru/sveden/education/opop-bach.aspx",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:41.220443+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-12/cb6ace8b76636be2.html",
+      "sourceSha256": "bf2b90163e612734ee2b78bfcbe4f55a75250bda5675d0cabc87dc651fcbd7f2"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/sveden/education/eduaccred",
+      "url": "https://klgtu.ru/sveden/education/eduaccred",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:58.160488+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/391d70a0e27f3871.html",
+      "sourceSha256": "0a78f0ee71cbe16aa9a084547db17daf60c90775c10722ec088bf514c9cdd485"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/sveden/education/eduop",
+      "url": "https://klgtu.ru/sveden/education/eduop",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:58.857282+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/a56798e9607f7a5c.html",
+      "sourceSha256": "cc1e067971cc1f9dd0a0ea16d8d4f89c24e95f0923f164a4660fd4eedb1f514e"
+    },
+    {
+      "universitySlug": "russia-1601",
+      "requestedUrl": "https://klgtu.ru/sveden/education/",
+      "url": "https://klgtu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:18.295535+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-1601/c02cfe1cd00fbebf.html",
+      "sourceSha256": "33d9d25d230795be14aa81be6aab2db997f9e1c358b6c014d962ed7911019674"
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://petrsu.ru/sveden/education/",
+      "checkedAt": "2026-11-09T16:15:17.851591+00:00",
+      "error": "Unsafe source URL scheme, credentials or host"
+    }
+  ],
+  "campusReview": [
+    {
+      "universitySlug": "russia-1601",
+      "scope": "Only the university's own bachelor/specialist overview tables; no separate branch section. Exact table heading and row properties retained. Global header branch-navigation links do not assign those branches to program rows."
+    },
+    {
+      "universitySlug": "russia-12",
+      "scope": "Only the first-course panels of the university's own bachelor/specialist tables; no separate branch section. Row-level branch/city markers are excluded."
+    }
+  ],
+  "limitations": [
+    "General implemented-program inventories do not establish a current or future admissions campaign, admission conditions, licensing or accreditation. SourceYear remains null.",
+    "KGTU mixed specialist/master rows are excluded even with .05 codes. Its bachelor rows have no independent normative duration on the selected eduOp source; duration remains null.",
+    "BGU is limited to the explicitly labelled first-course section. Other course panels are excluded. Each mode and term is associated only within its own explicit hr-separated cell segment.",
+    "BGU mode segments with a separately printed educational-technology condition are excluded individually rather than silently reduced to plain study forms. Other modes of the same row retain their own literal terms.",
+    "SGU is deferred because campus attribution including Balashov requires separate review. No source failure implies absence of education.",
+    "PetrSU education URL redirected toward non-HTTPS and was rejected. Astrakhan SU and remaining cities are deferred. Existing fields, units and 185 admission programs are untouched."
+  ],
+  "cacheDirectory": "tmp/russia-research/followup-regional-education-2026-11-09",
+  "candidateSha256": "e1deefa9738daf4077e3e49272e107f584b3c5d3f3a3d0fd2f6be1d3d0718c85",
+  "reproduction": {
+    "offline": "python -X utf8 scripts/collect-regional-nov09-followup-education.py --output tmp/followup-education-replay.json --report tmp/followup-education-replay-report.json",
+    "baseline": "tmp/russia-research/followup-regional-education-2026-11-09/baseline.json",
+    "note": "No --collect means no network. Original official bytes, SHA-256 and UTC retrieval dates are retained."
+  },
+  "collectorCandidateSha256": "4ec857d19c931594bdb3eedeaf0014f250669036aeda61e5de7dc4e12380fac0"
+}

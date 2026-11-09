@@ -1,0 +1,3215 @@
+{
+  "generatedAt": "2026-10-22T08:38:40.007477Z",
+  "sourceCheckedAt": "2026-10-22T08:23:27Z",
+  "scope": "Regional repository candidate only; no DB writes, merge, deploy or current-admission inference.",
+  "dataFile": "data-sources/russia/regional-enrichment-2026-10-22.json",
+  "stats": {
+    "universitiesAttempted": 10,
+    "universitiesWithCurrentFields": 8,
+    "universitiesWithFaculties": 9,
+    "fields": 58,
+    "faculties": 83,
+    "implementedOfferings": 379,
+    "pagesRequested": 72,
+    "discoveredPathsDeferred": 4
+  },
+  "perUniversity": [
+    {
+      "universitySlug": "russia-111",
+      "fields": 8,
+      "faculties": 7,
+      "educationalListings": 0
+    },
+    {
+      "universitySlug": "russia-16",
+      "fields": 8,
+      "faculties": 7,
+      "educationalListings": 86
+    },
+    {
+      "universitySlug": "russia-1638",
+      "fields": 0,
+      "faculties": 0,
+      "educationalListings": 0
+    },
+    {
+      "universitySlug": "russia-183",
+      "fields": 7,
+      "faculties": 6,
+      "educationalListings": 0
+    },
+    {
+      "universitySlug": "russia-187",
+      "fields": 6,
+      "faculties": 13,
+      "educationalListings": 178
+    },
+    {
+      "universitySlug": "russia-197",
+      "fields": 7,
+      "faculties": 9,
+      "educationalListings": 0
+    },
+    {
+      "universitySlug": "russia-302",
+      "fields": 6,
+      "faculties": 10,
+      "educationalListings": 0
+    },
+    {
+      "universitySlug": "russia-330",
+      "fields": 0,
+      "faculties": 16,
+      "educationalListings": 0
+    },
+    {
+      "universitySlug": "russia-4",
+      "fields": 8,
+      "faculties": 9,
+      "educationalListings": 0
+    },
+    {
+      "universitySlug": "russia-79",
+      "fields": 8,
+      "faculties": 6,
+      "educationalListings": 115
+    }
+  ],
+  "baselineCoverage": {
+    "generatedAt": "2026-10-21T10:17:06.333Z",
+    "sha256": "d2905abb137a28474c1ccccb31a90abcb230284394087e736c680a5374be6623",
+    "selected": [
+      {
+        "slug": "russia-111",
+        "name": "Кузбасский государственный технический университет имени Т.Ф. Горбачева",
+        "city": "Кемерово",
+        "region": "Кемеровская область",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=111",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "https://kuzstu.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 13,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-16",
+        "name": "Белгородский государственный технологический университет им. В.Г. Шухова",
+        "city": "Белгород",
+        "region": "Белгородская область",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=16",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "https://www.bstu.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 19,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-1638",
+        "name": "Омский государственный аграрный университет имени П.А.Столыпина",
+        "city": "Омск",
+        "region": "Омская область",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1638",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "http://omgau.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 11,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-183",
+        "name": "Омский государственный технический университет",
+        "city": "Омск",
+        "region": "Омская область",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=183",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "http://www.omgtu.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 24,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-187",
+        "name": "Оренбургский государственный университет",
+        "city": "Оренбург",
+        "region": "Оренбургская область",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=187",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "http://www.osu.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 36,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-197",
+        "name": "Пермский национальный исследовательский политехнический университет",
+        "city": "Пермь",
+        "region": "Пермский край",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=197",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "http://www.pstu.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 23,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-302",
+        "name": "Тюменский государственный университет",
+        "city": "Тюмень",
+        "region": "Тюменская область",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=302",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "http://www.utmn.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 25,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-330",
+        "name": "Чувашский государственный университет имени И.Н. Ульянова",
+        "city": "Чебоксары",
+        "region": "Чувашская Республика",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=330",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "http://www.chuvsu.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 29,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-4",
+        "name": "Алтайский государственный университет",
+        "city": "Барнаул",
+        "region": "Алтайский край",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=4",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "https://www.asu.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 33,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      },
+      {
+        "slug": "russia-79",
+        "name": "Ижевский государственный технический университет имени М.Т. Калашникова",
+        "city": "Ижевск",
+        "region": "Удмуртская Республика",
+        "scope": "regional",
+        "organizationSourceYear": 2025,
+        "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=79",
+        "organizationCheckedAt": "2026-10-09T20:06:26Z",
+        "officialWebsite": "http://www.istu.ru",
+        "sourcedFields": 0,
+        "faculties": 0,
+        "educationalListings": 0,
+        "historicalEducationAreas": 25,
+        "admissionPrograms": 0,
+        "verifiedAdmissionPrograms": 0,
+        "currentLicenseStatus": "not_checked",
+        "missing": [
+          "fullName",
+          "shortName",
+          "regDate",
+          "address",
+          "telephone",
+          "email",
+          "admissionsUrl",
+          "admissionsPhone",
+          "admissionsEmail",
+          "hostelInfo",
+          "overview",
+          "faculties",
+          "educationalListings",
+          "admissionPrograms"
+        ]
+      }
+    ]
+  },
+  "sourceAttempts": [
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru",
+      "url": "https://omgau.ru/",
+      "httpStatus": "000",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (28) Connection timed out after 5002 milliseconds",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='omgau.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru/sveden/common/",
+      "url": "https://omgau.ru/sveden/common/",
+      "httpStatus": "000",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (28) Connection timed out after 5016 milliseconds",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='omgau.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru/sveden/common",
+      "url": "https://omgau.ru/sveden/common",
+      "httpStatus": "000",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (28) Connection timed out after 5006 milliseconds",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='omgau.ru', port=443): Max retries exceeded with url: /sveden/common (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru/sveden/struct/",
+      "url": "https://omgau.ru/sveden/struct/",
+      "httpStatus": "000",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (28) Connection timed out after 5011 milliseconds",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='omgau.ru', port=443): Max retries exceeded with url: /sveden/struct/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru/sveden/education/",
+      "url": "https://omgau.ru/sveden/education/",
+      "httpStatus": "000",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (28) Connection timed out after 5003 milliseconds",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='omgau.ru', port=443): Max retries exceeded with url: /sveden/education/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru/sveden/education",
+      "url": "https://omgau.ru/sveden/education",
+      "httpStatus": "000",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (28) Connection timed out after 5004 milliseconds",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='omgau.ru', port=443): Max retries exceeded with url: /sveden/education (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://www.omgtu.ru",
+      "url": "https://www.omgtu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "a57709770608025fb48f54c0410e32ffa343170622f9401d0f53a53c4196f103"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://omgtu.ru/sveden/common/",
+      "url": "https://omgtu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "6c8873b1cc854bc21023c174a469ba3354246f3b6550f33d0b63ca630ff1f65c"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://omgtu.ru/sveden/struct/",
+      "url": "https://omgtu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "8197cf35b58612bb75497e13874712d62fba872448606d0752452e90845a14e3"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://www.omgtu.ru/sveden/struct/",
+      "url": "https://www.omgtu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "66763bbb926a65d515d1577025247041a1574f277a86526bd6f6b5d681960f24"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://omgtu.ru/general_information/faculties/",
+      "url": "https://omgtu.ru/general_information/faculties/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "456f9572641d5599d52a4adb6696d05f067c17dae94bde384479eb7663d41d35"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://omgtu.ru/sveden/education/",
+      "url": "https://omgtu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "4f9874d53412eb64760d7a4083d8a92f690b1e5bc15de1b249da248347985fef"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://omgtu.ru/sveden/education/tablitsa-2-2-obrazovanie-informatsiya-po-obrazovatelnym-programmam-bakalvriat-spetsialitet-magistrat/",
+      "url": "https://omgtu.ru/sveden/education/tablitsa-2-2-obrazovanie-informatsiya-po-obrazovatelnym-programmam-bakalvriat-spetsialitet-magistrat/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "1f5dd8a225eebb2881760df912b73f0ea361aa8bc0a5e5cc2aa0606f340a0285"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://omgtu.ru/sveden/objects/",
+      "url": "https://omgtu.ru/sveden/objects/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "38e31a558838f41891726b59499b787ec20718037ebf728f409bc9fcec39fd0d"
+    },
+    {
+      "universitySlug": "russia-183",
+      "requestedUrl": "https://omgtu.ru/entrant/",
+      "url": "https://omgtu.ru/entrant/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "ad22ec03b1aa394bef95c0457292054990c619a9fb80f60dde6d820c705d571b"
+    },
+    {
+      "universitySlug": "russia-187",
+      "requestedUrl": "https://www.osu.ru",
+      "url": "http://www.osu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "68924fa9d7c94cc224555d562f8edf915f42bacdb9b3d55b65757426d820a05a"
+    },
+    {
+      "universitySlug": "russia-187",
+      "requestedUrl": "https://www.osu.ru/sveden/common/",
+      "url": "http://www.osu.ru/doc/2999",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "5a53b899c0f3bfd45d935c53c8830188b727c8d01454389439931090a2d523de"
+    },
+    {
+      "universitySlug": "russia-187",
+      "requestedUrl": "https://www.osu.ru/sveden/struct/",
+      "url": "http://www.osu.ru/doc/4125",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "3d87cf4c50892590642f3761f335f6b5fa6e1349995979080ab578d9fdf02765"
+    },
+    {
+      "universitySlug": "russia-187",
+      "requestedUrl": "https://www.osu.ru/sveden/education/",
+      "url": "http://www.osu.ru/doc/4127",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "b44cf8b44d788649450792d4a4179e18070d7e797ed4868c45184a57531beea9"
+    },
+    {
+      "universitySlug": "russia-187",
+      "requestedUrl": "https://www.osu.ru/doc/4642",
+      "url": "http://www.osu.ru/doc/4642",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f"
+    },
+    {
+      "universitySlug": "russia-187",
+      "requestedUrl": "https://abiturient.osu.ru/",
+      "url": "https://abiturient.osu.ru/",
+      "httpStatus": "000",
+      "exitCode": 60,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (60) schannel: SNI or certificate check failed: SEC_E_WRONG_PRINCIPAL (0x80090322) - ������� �������� ��� �������. More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secure connection to it. To learn more",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='abiturient.osu.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ab"
+    },
+    {
+      "universitySlug": "russia-16",
+      "requestedUrl": "https://www.bstu.ru",
+      "url": "https://www.bstu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "ac808cfe1495af3301c86ad981c25b7467b2fee7c254835835d4387de8f4691a"
+    },
+    {
+      "universitySlug": "russia-16",
+      "requestedUrl": "https://bstu.ru/sveden/common/",
+      "url": "https://bstu.ru/sveden/common",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "c89ffe44eb2013c307d4a139287822ed50c7c53ca73a8f5ea53386e9c18c9d0f"
+    },
+    {
+      "universitySlug": "russia-16",
+      "requestedUrl": "https://bstu.ru/sveden/struct/",
+      "url": "https://bstu.ru/sveden/struct",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "64faf51f4da08f1469f07a914b62a3c0675627cc21d54f6578cc58bbde66c23a"
+    },
+    {
+      "universitySlug": "russia-16",
+      "requestedUrl": "https://bstu.ru/sveden/education/",
+      "url": "https://bstu.ru/sveden/education",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "458abf3c609ecd6788c43204dfb69fc7dd820b4076b8b5f120fba48911a12241"
+    },
+    {
+      "universitySlug": "russia-16",
+      "requestedUrl": "https://bstu.ru/sveden/objects/",
+      "url": "https://bstu.ru/sveden/objects",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "8550f51444dc84805e2e0478144c93f94360a70803aca12648e9a72cef276707"
+    },
+    {
+      "universitySlug": "russia-16",
+      "requestedUrl": "https://www.bstu.ru/abitur",
+      "url": "https://www.bstu.ru/abitur",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "b368f552a548d0dd7a800150a138f6eaa090f46b6dc98b4dbd051dd672a803df"
+    },
+    {
+      "universitySlug": "russia-111",
+      "requestedUrl": "https://kuzstu.ru",
+      "url": "https://kuzstu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "5cd475d5d251c0a449cc90b272f3f30e06d44068584d391a499e6c3c9d93dda0"
+    },
+    {
+      "universitySlug": "russia-111",
+      "requestedUrl": "https://kuzstu.ru/sveden/common/",
+      "url": "https://kuzstu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "7d8a1df46a862ef2b7c4be28d6b01ff482431ed8322d935bee30873deb21b349"
+    },
+    {
+      "universitySlug": "russia-111",
+      "requestedUrl": "https://kuzstu.ru/sveden/struct/",
+      "url": "https://kuzstu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "5008678baba6a0a5cbc6d8fc01871c534d8084b5ab850f9610ece552b26411fd"
+    },
+    {
+      "universitySlug": "russia-111",
+      "requestedUrl": "https://kuzstu.ru/sveden/education/",
+      "url": "https://kuzstu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "de5bcf2cbff1096850df7d9f4d25e89c7a92b1fd1f073163ecdb98245c9a157e"
+    },
+    {
+      "universitySlug": "russia-111",
+      "requestedUrl": "https://kuzstu.ru/web-content/sitecontent/sveden/education/Reestrovaya_vypiska_licenzij_29_04_2026.pdf",
+      "url": "https://kuzstu.ru/web-content/sitecontent/sveden/education/Reestrovaya_vypiska_licenzij_29_04_2026.pdf",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "88419d18c9f65e48dcb0ac60b797bee00f5a3f149f76b4b766d16b49aa7ac62c"
+    },
+    {
+      "universitySlug": "russia-111",
+      "requestedUrl": "https://kuzstu.ru/sveden/objects/",
+      "url": "https://kuzstu.ru/sveden/objects/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "e9a97e369a651290088f7887299e254b9fb642300739a7f3a5fb2b383bc3489f"
+    },
+    {
+      "universitySlug": "russia-111",
+      "requestedUrl": "https://kuzstu.ru/abiturientu/",
+      "url": "https://kuzstu.ru/abiturientu/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "9acda7999d4d9568553b3eefd0f851b8fb6042e548896483d87a546d506ce0a4"
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://www.utmn.ru",
+      "url": "https://www.utmn.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "367417d2dbfc3b60030158f0236e60b34742df20a4f9de7af1cd32a1e803d7f2",
+      "requestsAttempted": true
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://sveden.utmn.ru/sveden/common/",
+      "url": "https://sveden.utmn.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "f7372a8fc6626d1f9c01022d41ae3d5ac83cb2c87d2d46296425d71aac695984",
+      "error": "curl: (28) Operation timed out after 18015 milliseconds with 179797 out of 972398 bytes received",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='sveden.utmn.ru', port=443): Read timed out. (read timeout=5)"
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://www.utmn.ru/sveden/common/",
+      "url": "https://sveden.utmn.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "7df35babb224a9e4ee003654c9dd9e8d24a099daa52a35295e4263bb64b8ce7a",
+      "error": "curl: (28) Operation timed out after 18017 milliseconds with 196181 out of 972398 bytes received",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='www.utmn.ru', port=443): Read timed out. (read timeout=5)"
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://www.utmn.ru/sveden/common/",
+      "url": "https://sveden.utmn.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "7df35babb224a9e4ee003654c9dd9e8d24a099daa52a35295e4263bb64b8ce7a",
+      "error": "curl: (28) Operation timed out after 18017 milliseconds with 196181 out of 972398 bytes received",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='www.utmn.ru', port=443): Read timed out. (read timeout=5)"
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://www.utmn.ru/sveden/common",
+      "url": "https://sveden.utmn.ru:443/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "8b7f994784a310dd7331d9bb884b370b2e430bc6d241d0748064d2568eac9d0c",
+      "requestsAttempted": true
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://sveden.utmn.ru:443/sveden/struct",
+      "url": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "89c227cc5454d97656a47d22dea670a17b3586ca4be6cc59647eab59fc5000c6",
+      "requestsAttempted": true
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://sveden.utmn.ru:443/sveden/education",
+      "url": "https://sveden.utmn.ru:443/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "90de98f4d6aece236e9375c8abdd1622587ff02b2471bf55640fab251c1cab1f"
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://sveden.utmn.ru:443/sveden/education/eduaccred",
+      "url": "https://sveden.utmn.ru:443/sveden/education/eduaccred/",
+      "httpStatus": "200",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "dffddfee88e65d7118dea99f0bfa7f812c3fc225c082d91b47bf634b0fe1c573",
+      "error": "curl: (28) Operation timed out after 18790 milliseconds with 147027 out of 20078197 bytes received"
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://sveden.utmn.ru:443/sveden/education/eduop",
+      "url": "https://sveden.utmn.ru:443/sveden/education/eduop",
+      "httpStatus": "not_fetched",
+      "exitCode": 1,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "note": "Новый путь обнаружен в официальной странице; проверка содержимого отложена."
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://sveden.utmn.ru/sveden/education/",
+      "url": "https://sveden.utmn.ru/sveden/education/",
+      "httpStatus": "not_fetched",
+      "exitCode": 1,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "note": "Новый путь обнаружен в официальной странице; проверка содержимого отложена."
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://sveden.utmn.ru:443/sveden/objects",
+      "url": "https://sveden.utmn.ru:443/sveden/objects",
+      "httpStatus": "not_fetched",
+      "exitCode": 1,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "note": "Новый путь обнаружен в официальной странице; проверка содержимого отложена."
+    },
+    {
+      "universitySlug": "russia-302",
+      "requestedUrl": "https://sveden.utmn.ru/abitur/",
+      "url": "https://sveden.utmn.ru/abitur/",
+      "httpStatus": "not_fetched",
+      "exitCode": 1,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "note": "Новый путь обнаружен в официальной странице; проверка содержимого отложена."
+    },
+    {
+      "universitySlug": "russia-4",
+      "requestedUrl": "https://www.asu.ru",
+      "url": "https://www.asu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "91438b41f3f6809c674dca24ab1341ba55410341900d18b22f8fa1d46dfe50d5"
+    },
+    {
+      "universitySlug": "russia-4",
+      "requestedUrl": "https://www.asu.ru/sveden/common/",
+      "url": "https://www.asu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "e5f978c9d4942e1229b26d127fa2b577fbb10630d0e6f88deb8d3f7102c01b31"
+    },
+    {
+      "universitySlug": "russia-4",
+      "requestedUrl": "https://www.asu.ru/sveden/struct/",
+      "url": "https://www.asu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "1b53513d900c94e8034458f692ca9850c0f6a8ef99e64796dbdb714846da7538"
+    },
+    {
+      "universitySlug": "russia-4",
+      "requestedUrl": "https://www.asu.ru/sveden/education/programs/",
+      "url": "https://www.asu.ru/sveden/education/programs/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "72501dc0d353093a17b69b64477314012cb4eb18b0dc08f9f942f84595d053fc"
+    },
+    {
+      "universitySlug": "russia-4",
+      "requestedUrl": "https://www.asu.ru/sveden/education/programs/",
+      "url": "https://www.asu.ru/sveden/education/programs/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "72501dc0d353093a17b69b64477314012cb4eb18b0dc08f9f942f84595d053fc"
+    },
+    {
+      "universitySlug": "russia-4",
+      "requestedUrl": "https://www.asu.ru/sveden/objects/",
+      "url": "https://www.asu.ru/sveden/objects/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "51142d88688df91395e24c9c8ac4a495bc8c9776e9d702025a501c9560706668"
+    },
+    {
+      "universitySlug": "russia-4",
+      "requestedUrl": "https://www.asu.ru/incoming/",
+      "url": "https://www.asu.ru/incoming/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "367b9495ba75b831e43939d7d1612ec0ca54daf37c13cdc47fb16d86e5eebf51",
+      "requestsAttempted": true
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://www.chuvsu.ru",
+      "url": "https://www.chuvsu.ru/",
+      "httpStatus": "000",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (28) Operation timed out after 8370 milliseconds with 0 bytes received",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='www.chuvsu.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://chuvsu.ru",
+      "url": "https://www.chuvsu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "7f185ca542771d005eb581eee0cb988a48eda246ee916ae9631b36a1999d7de6"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://www.chuvsu.ru/sveden/common/",
+      "url": "https://www.chuvsu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "5fcbd573cf47a1d0dbc1d6b0cb8759b24552c46e69fa394a73fa6eeac10857a3",
+      "error": "curl: (28) Operation timed out after 18008 milliseconds with 1064960 out of 2218566 bytes received",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='www.chuvsu.ru', port=443): Max retries exceeded with url: /sveden/common/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://www.chuvsu.ru/sveden/common",
+      "url": "https://www.chuvsu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "3ca8b6ba84cf431348efaa4ec07730f4df33a3459bb1dc1555a605f669110f4c",
+      "error": "curl: (28) Operation timed out after 18632 milliseconds with 1572864 out of 2218566 bytes received",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='www.chuvsu.ru', port=443): Max retries exceeded with url: /sveden/common (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_s"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "url": "https://www.chuvsu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "2adffac455ec09280f3f0b8fc4eac9fb80c587a22ae8ef0c52ea4c2d108f6fee"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://www.chuvsu.ru/sveden/education",
+      "url": "https://www.chuvsu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "29300a33d76b1a889c923549568745987da7cc09cfd4ed6d63e781b3a589e57e"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://www.chuvsu.ru/sveden/education/eduaccred",
+      "url": "https://www.chuvsu.ru/sveden/education/eduaccred/",
+      "httpStatus": "200",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "b51d1d3be24d49075725a4c239684578f4050935ff791b7abb5ffb37ade2daaa",
+      "error": "curl: (28) Operation timed out after 18040 milliseconds with 1507328 out of 5173061 bytes received",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='www.chuvsu.ru', port=443): Max retries exceeded with url: /sveden/education/eduaccred (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer ce"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://www.chuvsu.ru/sveden/education/eduop",
+      "url": "https://www.chuvsu.ru/sveden/education/eduop/",
+      "httpStatus": "200",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "aeeb2ef7b0bc6ad425c8e7e6eb155f4ec4f01f25136c1b969be609f79706b714",
+      "error": "curl: (28) Operation timed out after 18011 milliseconds with 1556480 out of 12143477 bytes received",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='www.chuvsu.ru', port=443): Max retries exceeded with url: /sveden/education/eduop (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certif"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://www.chuvsu.ru/sveden/education/",
+      "url": "https://www.chuvsu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "29300a33d76b1a889c923549568745987da7cc09cfd4ed6d63e781b3a589e57e"
+    },
+    {
+      "universitySlug": "russia-330",
+      "requestedUrl": "https://abiturient.chuvsu.ru",
+      "url": "https://abiturient.chuvsu.ru/",
+      "httpStatus": "000",
+      "exitCode": 28,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "error": "curl: (28) Resolving timed out after 5000 milliseconds",
+      "requestsAttempted": true,
+      "requestsError": "HTTPSConnectionPool(host='abiturient.chuvsu.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1"
+    },
+    {
+      "universitySlug": "russia-197",
+      "requestedUrl": "https://www.pstu.ru",
+      "url": "https://pstu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "2f3ea747c62a756ada96858ba25e9c77e616cf8c893d27c4feba16d1a2e2840b"
+    },
+    {
+      "universitySlug": "russia-197",
+      "requestedUrl": "https://pstu.ru/sveden/common/",
+      "url": "https://pstu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "2aa29d4b931e9ddc6e7ff16d0cab11c098236f15e62618bc3af640389c259d2a"
+    },
+    {
+      "universitySlug": "russia-197",
+      "requestedUrl": "https://pstu.ru/sveden/struct/",
+      "url": "https://pstu.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "a4577ecfcc8253d3c17f3fefe5aeb45924a84922ec6b0542bb2e28316d55ee30"
+    },
+    {
+      "universitySlug": "russia-197",
+      "requestedUrl": "https://pstu.ru/sveden/education/",
+      "url": "https://pstu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "f61a050437a6e1ced4297913029ebee501263bf85de684e7eeb1b3d3bd733e90"
+    },
+    {
+      "universitySlug": "russia-197",
+      "requestedUrl": "https://pstu.ru/sveden/education",
+      "url": "https://pstu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "8790cc0ec55319cdb1ac043ea065c469d181efdd5c6270a8acab183f9e161bdc"
+    },
+    {
+      "universitySlug": "russia-197",
+      "requestedUrl": "https://pstu.ru/sveden/objects/",
+      "url": "https://pstu.ru/sveden/objects/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "db912cd7e83b778433c37700d3f4cc100c0c5b0fc7ffe60d50c8b18286a109b5"
+    },
+    {
+      "universitySlug": "russia-197",
+      "requestedUrl": "https://pstu.ru/enrollee/",
+      "url": "https://pstu.ru/enrollee/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "28d1386b19e2cd957d378168da8fbc1a50ce452bde8e9091f38818eab8dbf812"
+    },
+    {
+      "universitySlug": "russia-79",
+      "requestedUrl": "https://www.istu.ru",
+      "url": "https://istu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "2d7bd310483d0a67994f2a1973f2bfea1f7d58e3389d591b44b11339213ab1dd"
+    },
+    {
+      "universitySlug": "russia-79",
+      "requestedUrl": "https://istu.ru/sveden/common",
+      "url": "https://istu.ru/sveden/common",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "aa5fc475a64207b610913f9f7adb4d9f7dd1899bf154d49a6fcf08a6c33e1f80"
+    },
+    {
+      "universitySlug": "russia-79",
+      "requestedUrl": "https://istu.ru/sveden/struct",
+      "url": "https://istu.ru/sveden/struct",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "d6211a6d811344564f7a718b46afcdb6dfd7fc64104fe50acd481b50e30c4b8d"
+    },
+    {
+      "universitySlug": "russia-79",
+      "requestedUrl": "https://istu.ru/sveden/education",
+      "url": "https://istu.ru/sveden/education",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "b3ec78d549201e8a4ad9a42a54f408797bfc50cef3578f4a8eb41353c11704ed",
+      "requestsAttempted": true
+    },
+    {
+      "universitySlug": "russia-79",
+      "requestedUrl": "https://istu.ru/sveden/objects",
+      "url": "https://istu.ru/sveden/objects",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "a9d4566d34b2d60d415993e16979825e0352386259f32ffcb0fe61bc80e69ca7"
+    },
+    {
+      "universitySlug": "russia-79",
+      "requestedUrl": "https://istu.ru/abiturients",
+      "url": "https://istu.ru/abiturients",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceKind": "official_university_page",
+      "sourceSha256": "84c0a8d521f6f04997f030214d7aa72b7354c531e4b95fbf7f72536954c0464d"
+    }
+  ],
+  "editorialExclusions": [
+    {
+      "universitySlug": "russia-111",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Институт профессионального образования",
+      "unitUrl": "https://kuzstu.ru/department/institut-professionalnogo-obrazovaniya-ipo/",
+      "sourceUrl": "https://kuzstu.ru/sveden/struct/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "5008678baba6a0a5cbc6d8fc01871c534d8084b5ab850f9610ece552b26411fd",
+      "note": "Профессиональное образование; высшее образование подразделения не подтверждено, требуется отдельная проверка."
+    },
+    {
+      "universitySlug": "russia-16",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Институт развития человеческого капитала",
+      "unitUrl": "https://www.bstu.ru/struct/hcd",
+      "sourceUrl": "https://bstu.ru/sveden/struct",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "64faf51f4da08f1469f07a914b62a3c0675627cc21d54f6578cc58bbde66c23a",
+      "note": "Смешанное административное/дополнительное образование; самостоятельное высшее образование подразделения не подтверждено."
+    },
+    {
+      "universitySlug": "russia-183",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Факультет информационных технологий и компьютерных систем",
+      "unitUrl": "https://omgtu.ru/general_information/faculties/faculty_of_information_technology_and_computer_systems/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "456f9572641d5599d52a4adb6696d05f067c17dae94bde384479eb7663d41d35",
+      "note": "Повтор той же учебной единицы по URL с алиасом протокола/www; сохранено первое точное официальное название."
+    },
+    {
+      "universitySlug": "russia-183",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Факультет транспорта, нефти и газа",
+      "unitUrl": "https://omgtu.ru/general_information/faculties/faculty_of_transport_oil_and_gas/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "456f9572641d5599d52a4adb6696d05f067c17dae94bde384479eb7663d41d35",
+      "note": "Повтор той же учебной единицы по URL с алиасом протокола/www; сохранено первое точное официальное название."
+    },
+    {
+      "universitySlug": "russia-183",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Радиотехнический факультет",
+      "unitUrl": "https://omgtu.ru/general_information/faculties/radio_engineering_department/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "456f9572641d5599d52a4adb6696d05f067c17dae94bde384479eb7663d41d35",
+      "note": "Повтор той же учебной единицы по URL с алиасом протокола/www; сохранено первое точное официальное название."
+    },
+    {
+      "universitySlug": "russia-183",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Факультет гуманитарного образования",
+      "unitUrl": "https://omgtu.ru/general_information/faculties/faculty_of_liberal_education/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "456f9572641d5599d52a4adb6696d05f067c17dae94bde384479eb7663d41d35",
+      "note": "Повтор той же учебной единицы по URL с алиасом протокола/www; сохранено первое точное официальное название."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "ИНСТИТУТ НЕПРЕРЫВНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ",
+      "unitUrl": "http://inpo.osu.ru/",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "3d87cf4c50892590642f3761f335f6b5fa6e1349995979080ab578d9fdf02765",
+      "note": "Непрерывное профессиональное образование; высшее образование подразделения отдельно не подтверждено."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Школа китайского языка",
+      "unitUrl": "http://osu.ru/doc/635/kafedra/6961",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "3d87cf4c50892590642f3761f335f6b5fa6e1349995979080ab578d9fdf02765",
+      "note": "Языковая школа/кафедра не считается самостоятельным факультетом высшего образования."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "ФАКУЛЬТЕТ ПОДГОТОВКИ ИНОСТРАННЫХ ГРАЖДАН",
+      "unitUrl": "http://osu.ru/doc/636/facult/6857",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "3d87cf4c50892590642f3761f335f6b5fa6e1349995979080ab578d9fdf02765",
+      "note": "Подготовительный факультет."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Университетская физико-математическая школа",
+      "unitUrl": "http://osu.ru/doc/635/kafedra/6212",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "3d87cf4c50892590642f3761f335f6b5fa6e1349995979080ab578d9fdf02765",
+      "note": "Школьное образование."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Институт биоэлементологии",
+      "unitUrl": "http://bioelement.osu.ru/",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "3d87cf4c50892590642f3761f335f6b5fa6e1349995979080ab578d9fdf02765",
+      "note": "Научная единица; самостоятельное высшее образование подразделения не подтверждено."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Институт управления проектами",
+      "unitUrl": "http://osu.ru/doc/5084",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "3d87cf4c50892590642f3761f335f6b5fa6e1349995979080ab578d9fdf02765",
+      "note": "Управление проектами; самостоятельное высшее образование подразделения не подтверждено."
+    },
+    {
+      "universitySlug": "russia-197",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Факультет иностранных студентов",
+      "unitUrl": null,
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "a4577ecfcc8253d3c17f3fefe5aeb45924a84922ec6b0542bb2e28316d55ee30",
+      "note": "Высшее образование подразделения отдельно не подтверждено; подготовительные/сопровождающие функции не считаются факультетом."
+    },
+    {
+      "universitySlug": "russia-302",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Международная школа предпринимательства",
+      "unitUrl": "https://businessutmn.ru/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "89c227cc5454d97656a47d22dea670a17b3586ca4be6cc59647eab59fc5000c6",
+      "note": "Бизнес-школа; самостоятельные программы высшего образования подразделения в этой партии не подтверждены."
+    },
+    {
+      "universitySlug": "russia-302",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Региональный институт международного сотрудничества",
+      "unitUrl": "https://www.utmn.ru/riic/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "89c227cc5454d97656a47d22dea670a17b3586ca4be6cc59647eab59fc5000c6",
+      "note": "Международное сотрудничество; административная/языковая деятельность не считается подтверждением высшего образования подразделения."
+    },
+    {
+      "universitySlug": "russia-302",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Школа метапредметных компетенций",
+      "unitUrl": "https://www.utmn.ru/metaschool/index.php",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "89c227cc5454d97656a47d22dea670a17b3586ca4be6cc59647eab59fc5000c6",
+      "note": "Общие компетенции и сопровождение учебного процесса; самостоятельное высшее образование подразделения не подтверждено."
+    },
+    {
+      "universitySlug": "russia-4",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Школа ИТ-превосходства «Digital Up»",
+      "unitUrl": "https://digitalup.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "1b53513d900c94e8034458f692ca9850c0f6a8ef99e64796dbdb714846da7538",
+      "note": "Цифровые компетенции; самостоятельное высшее образование подразделения не подтверждено."
+    },
+    {
+      "universitySlug": "russia-4",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Школа бакалавриата",
+      "unitUrl": "https://www.asu.ru/structure/faculties/ign/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "1b53513d900c94e8034458f692ca9850c0f6a8ef99e64796dbdb714846da7538",
+      "note": "Вложенная административная единица Института гуманитарных наук, с тем же URL; не отдельный факультет."
+    },
+    {
+      "universitySlug": "russia-4",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Школа современных компетенций «Профессиональный Ренессанс»",
+      "unitUrl": "https://www.asu.ru/structure/faculties/ign/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "1b53513d900c94e8034458f692ca9850c0f6a8ef99e64796dbdb714846da7538",
+      "note": "Дополнительные компетенции; самостоятельное высшее образование подразделения не подтверждено."
+    },
+    {
+      "universitySlug": "russia-79",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Институт международных образовательных программ",
+      "unitUrl": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "d6211a6d811344564f7a718b46afcdb6dfd7fc64104fe50acd481b50e30c4b8d",
+      "note": "Подготовка и международные программы; высшее образование подразделения отдельно не подтверждено."
+    },
+    {
+      "universitySlug": "russia-79",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Институт непрерывного профессионального образования",
+      "unitUrl": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "d6211a6d811344564f7a718b46afcdb6dfd7fc64104fe50acd481b50e30c4b8d",
+      "note": "Непрерывное профессиональное образование не принимается за факультет высшего образования без отдельного подтверждения."
+    },
+    {
+      "universitySlug": "russia-79",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Институт образовательных технологий",
+      "unitUrl": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "d6211a6d811344564f7a718b46afcdb6dfd7fc64104fe50acd481b50e30c4b8d",
+      "note": "Образовательные технологии; самостоятельное высшее образование подразделения не подтверждено."
+    },
+    {
+      "universitySlug": "russia-79",
+      "kind": "academic_unit_excluded_after_source_review",
+      "name": "Научное подразделение \"Институт механики имени профессора Гольдфарба В.И.\"",
+      "unitUrl": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceYear": 2026,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "d6211a6d811344564f7a718b46afcdb6dfd7fc64104fe50acd481b50e30c4b8d",
+      "note": "В источнике прямо названо научным подразделением."
+    }
+  ],
+  "remainingIssues": [
+    {
+      "universitySlug": "russia-1638",
+      "kind": "faculties_unresolved",
+      "note": "Однозначный официальный перечень не подтверждён в доступных страницах этой партии; требуется продолжение проверки."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offerings_unresolved",
+      "note": "Однозначный официальный перечень не подтверждён в доступных страницах этой партии; требуется продолжение проверки."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "common_fields_unresolved",
+      "note": "Основные сведения не подтверждены в доступной структурированной странице."
+    },
+    {
+      "universitySlug": "russia-183",
+      "kind": "offerings_unresolved",
+      "note": "Однозначный официальный перечень не подтверждён в доступных страницах этой партии; требуется продолжение проверки."
+    },
+    {
+      "universitySlug": "russia-111",
+      "kind": "offerings_unresolved",
+      "note": "Однозначный официальный перечень не подтверждён в доступных страницах этой партии; требуется продолжение проверки."
+    },
+    {
+      "universitySlug": "russia-302",
+      "kind": "offerings_unresolved",
+      "note": "Однозначный официальный перечень не подтверждён в доступных страницах этой партии; требуется продолжение проверки."
+    },
+    {
+      "universitySlug": "russia-4",
+      "kind": "offerings_unresolved",
+      "note": "Однозначный официальный перечень не подтверждён в доступных страницах этой партии; требуется продолжение проверки."
+    },
+    {
+      "universitySlug": "russia-330",
+      "kind": "offerings_unresolved",
+      "note": "Однозначный официальный перечень не подтверждён в доступных страницах этой партии; требуется продолжение проверки."
+    },
+    {
+      "universitySlug": "russia-330",
+      "kind": "common_fields_unresolved",
+      "note": "Основные сведения не подтверждены в доступной структурированной странице."
+    },
+    {
+      "universitySlug": "russia-197",
+      "kind": "offerings_unresolved",
+      "note": "Однозначный официальный перечень не подтверждён в доступных страницах этой партии; требуется продолжение проверки."
+    },
+    {
+      "universitySlug": "russia-79",
+      "kind": "offering_duration_conflict",
+      "code": "15.03.05",
+      "title": "Конструкторско-технологическое обеспечение машиностроительных производств",
+      "profile": "Технология машиностроения Индустрии 4.0",
+      "level": "Бакалавриат",
+      "forms": "Очная",
+      "values": ["4 года", "5 лет"],
+      "sourceUrl": "https://istu.ru/sveden/education",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "b3ec78d549201e8a4ad9a42a54f408797bfc50cef3578f4a8eb41353c11704ed",
+      "note": "Один профиль и форма имеют разные опубликованные сроки в строках по учебным годам. Общий срок оставлен неизвестным; год приёма не подтверждён."
+    },
+    {
+      "universitySlug": "russia-79",
+      "kind": "offering_duration_conflict",
+      "code": "38.03.01",
+      "title": "Экономика",
+      "profile": "Экономика предприятий и организаций",
+      "level": "Бакалавриат",
+      "forms": "Очная",
+      "values": ["4 года", "3 года"],
+      "sourceUrl": "https://istu.ru/sveden/education",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "b3ec78d549201e8a4ad9a42a54f408797bfc50cef3578f4a8eb41353c11704ed",
+      "note": "Один профиль и форма имеют разные опубликованные сроки в строках по учебным годам. Общий срок оставлен неизвестным; год приёма не подтверждён."
+    },
+    {
+      "universitySlug": "russia-79",
+      "kind": "offering_duration_conflict",
+      "code": "38.03.01",
+      "title": "Экономика",
+      "profile": "Финансовый и бухгалтерский учет",
+      "level": "Бакалавриат",
+      "forms": "Очно-заочная",
+      "values": ["4 года 6 месяцев", "3 года 6 месяцев"],
+      "sourceUrl": "https://istu.ru/sveden/education",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "b3ec78d549201e8a4ad9a42a54f408797bfc50cef3578f4a8eb41353c11704ed",
+      "note": "Один профиль и форма имеют разные опубликованные сроки в строках по учебным годам. Общий срок оставлен неизвестным; год приёма не подтверждён."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "08.03.01",
+      "title": "Строительство",
+      "profile": "Автомобильные дороги",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "08.03.01",
+      "title": "Строительство",
+      "profile": "Промышленное и гражданское строительство",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "09.03.01",
+      "title": "Информатика и вычислительная техника",
+      "profile": "Системы автоматизированного проектирования",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "09.03.03",
+      "title": "Прикладная информатика",
+      "profile": "Прикладная информатика в экономике",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "09.03.04",
+      "title": "Программная инженерия",
+      "profile": "Разработка программно-информационных систем",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "12.03.04",
+      "title": "Биотехнические системы и технологии",
+      "profile": "Инженерное дело в медико-биологической практике",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "13.03.01",
+      "title": "Теплоэнергетика и теплотехника",
+      "profile": "Энергообеспечение предприятий",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "13.03.02",
+      "title": "Электроэнергетика и электротехника",
+      "profile": "Электропривод и автоматика",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "13.03.02",
+      "title": "Электроэнергетика и электротехника",
+      "profile": "Электроснабжение",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "15.03.01",
+      "title": "Машиностроение",
+      "profile": "Оборудование и технология повышения износостойкости и восстановление деталей машин и аппаратов",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "15.03.02",
+      "title": "Технологические машины и оборудование",
+      "profile": "Машины и аппараты пищевых производств",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "15.03.02",
+      "title": "Технологические машины и оборудование",
+      "profile": "Машины и аппараты поточных технологических линий",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "15.03.04",
+      "title": "Автоматизация технологических процессов и производств",
+      "profile": "Системы автоматизации технологических процессов и производств",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "15.03.05",
+      "title": "Конструкторско-технологическое обеспечение машиностроительных производств",
+      "profile": "Технология машиностроения",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "15.03.06",
+      "title": "Мехатроника и робототехника",
+      "profile": "Мехатроника",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "18.03.01",
+      "title": "Химическая технология",
+      "profile": "Химическая технология веществ и материалов",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "18.03.02",
+      "title": "Энерго- и ресурсосберегающие процессы в химической технологии, нефтехимии и биотехнологии",
+      "profile": "Машины и аппараты химических производств",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "19.03.02",
+      "title": "Продукты питания из растительного сырья",
+      "profile": "Технология продуктов питания из растительного сырья",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "19.03.04",
+      "title": "Технология продукции и организация общественного питания",
+      "profile": "Технология производства продукции общественного питания и ресторанный сервис",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "20.03.01",
+      "title": "Техносферная безопасность",
+      "profile": "Безопасность жизнедеятельности и охрана труда",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "20.03.01",
+      "title": "Техносферная безопасность",
+      "profile": "Экологическая безопасность и защита в чрезвычайных ситуациях",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "21.03.01",
+      "title": "Нефтегазовое дело",
+      "profile": "Эксплуатация и обслуживание объектов добычи нефти",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "21.03.01",
+      "title": "Нефтегазовое дело",
+      "profile": "Эксплуатация и обслуживание объектов добычи нефти и газа",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "21.03.02",
+      "title": "Землеустройство и кадастры",
+      "profile": "Кадастр застроенных территорий",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "23.03.01",
+      "title": "Технология транспортных процессов",
+      "profile": "Автотранспортные технологии в нефтегазовом комплексе",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "23.03.03",
+      "title": "Эксплуатация транспортно-технологических машин и комплексов",
+      "profile": "Автомобильный сервис",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "23.03.03",
+      "title": "Эксплуатация транспортно-технологических машин и комплексов",
+      "profile": "Сервис транспортных и технологических машин и оборудования (нефтегазодобыча)",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "27.03.02",
+      "title": "Управление качеством",
+      "profile": "Управление качеством в социальных и производственно-технологических системах",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "27.03.04",
+      "title": "Управление в технических системах",
+      "profile": "Управление и информатика в технических системах",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "35.03.08",
+      "title": "Водные биоресурсы и аквакультура",
+      "profile": "Водные биоресурсы, ихтиология и аквакультура",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "37.03.01",
+      "title": "Психология",
+      "profile": "Психология личности",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "37.03.01",
+      "title": "Психология",
+      "profile": "Социальная психология",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "38.03.01",
+      "title": "Экономика",
+      "profile": "Финансы государства и бизнеса",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "38.03.01",
+      "title": "Экономика",
+      "profile": "Финансы и кредит",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "38.03.03",
+      "title": "Управление персоналом",
+      "profile": "Управление персоналом организации",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "38.03.04",
+      "title": "Государственное и муниципальное управление",
+      "profile": "Государственная и муниципальная служба",
+      "level": "высшее образование — бакалавриат",
+      "forms": "очно-заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "39.03.02",
+      "title": "Социальная работа",
+      "profile": "Социально-правовая работа",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "42.03.01",
+      "title": "Реклама и связи с общественностью",
+      "profile": "Реклама и связи с общественностью в информационном обществе",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "42.03.01",
+      "title": "Реклама и связи с общественностью",
+      "profile": "Цифровые медиакоммуникации и связи с общественностью",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "42.03.02",
+      "title": "Журналистика",
+      "profile": "Масс-медиа",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "43.03.02",
+      "title": "Туризм",
+      "profile": "Технология и организация туроператорских и турагентских услуг",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "44.03.01",
+      "title": "Педагогическое образование",
+      "profile": "Дополнительное образование (воспитательная работа)",
+      "level": "высшее образование — бакалавриат",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "4 года",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "21.05.02",
+      "title": "Прикладная геология",
+      "profile": "Геологическая съемка, поиски и разведка месторождений твердых полезных ископаемых",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "21.05.02",
+      "title": "Прикладная геология",
+      "profile": "Геология месторождений нефти и газа",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "23.05.01",
+      "title": "Наземные транспортно-технологические средства",
+      "profile": "Автомобильная техника в транспортных технологиях",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "38.05.01",
+      "title": "Экономическая безопасность",
+      "profile": "Анализ, контроль и правовое обеспечение экономической безопасности хозяйствующих субъектов",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "38.05.01",
+      "title": "Экономическая безопасность",
+      "profile": "Финансовый учет и контроль в правоохранительных органах",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "38.05.01",
+      "title": "Экономическая безопасность",
+      "profile": "Экономико-правовое обеспечение экономической безопасности",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "38.05.02",
+      "title": "Таможенное дело",
+      "profile": "Внешнеэкономическая деятельность",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "40.05.02",
+      "title": "Правоохранительная деятельность",
+      "profile": "Административная деятельность полиции",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "40.05.04",
+      "title": "Судебная и прокурорская деятельность",
+      "profile": "Прокурорская деятельность",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    },
+    {
+      "universitySlug": "russia-187",
+      "kind": "offering_duration_other_form_column",
+      "code": "40.05.04",
+      "title": "Судебная и прокурорская деятельность",
+      "profile": "Судебная деятельность",
+      "level": "высшее образование — специалитет",
+      "forms": "заочная",
+      "publishedColumn": "Нормативный срок обучения по очной форме",
+      "publishedValue": "5 лет",
+      "sourceUrl": "http://www.osu.ru/doc/4642",
+      "sourceYear": null,
+      "checkedAt": "2026-10-22T08:23:27Z",
+      "sourceSha256": "0f5f34e9f41068f2a702f6068187d69a72f67be86598ea73fb1b9e4fd70e295f",
+      "note": "Колонка источника указывает срок только очной формы. Она не подтверждает срок этой неочной формы; duration=null."
+    }
+  ],
+  "networkCollection": {
+    "status": "bounded_partial",
+    "note": "Initial shared collector process 14632 (exact dated arguments checked) was stopped after the last TyumGU network fallback made no progress for over three minutes. Preserved raw/meta were reparsed offline; four new paths remain deferred. No retried source timestamp was invented."
+  },
+  "reproduction": {
+    "offlineCommand": "python -X utf8 scripts/collect-regional-oct22-enrichment.py --checked-at 2026-10-22T08:23:27Z --collection-date 2026-10-22 --monitoring-ids 4,183,111,79,197,302,330,16,187,1638 --gaps-only --try-bare-host --offline --cache-dir tmp/russia-research/regional-enrichment-2026-10-22 --output data-sources/russia/regional-enrichment-2026-10-22.json",
+    "replayCommand": "python -X utf8 scripts/collect-regional-oct22-enrichment.py --checked-at 2026-10-22T08:23:27Z --collection-date 2026-10-22 --monitoring-ids 4,183,111,79,197,302,330,16,187,1638 --gaps-only --try-bare-host --offline --cache-dir tmp/russia-research/regional-enrichment-2026-10-22 --gap-baseline data-sources/russia/regional-enrichment-2026-10-22.json --output tmp/regional-enrichment-replay-2026-10-22.json",
+    "canonicalReplayEqual": true,
+    "canonicalMethod": "Sort object keys and unordered JSON collections recursively; facts, dates and values must all match."
+  },
+  "validation": {
+    "counts": {
+      "fields": 58,
+      "raw_provenance_pass": 520,
+      "faculties": 83,
+      "offerings": 379
+    },
+    "errors": [],
+    "warnings": [],
+    "tests": [
+      {
+        "command": "python -X utf8 scripts/test-collect-regional-enrichment.py",
+        "exitCode": 0,
+        "output": "russia-123 fields 0 faculties 1 offerings 0\n........................\n----------------------------------------------------------------------\nRan 24 tests in 0.050s\n\nOK\n"
+      },
+      {
+        "command": "python -X utf8 scripts/test-collect-regional-oct22-enrichment.py",
+        "exitCode": 0,
+        "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.004s\n\nOK\n"
+      }
+    ],
+    "testsPassed": 31,
+    "diffCheck": {
+      "command": "git diff --check -- scripts/collect-regional-oct22-enrichment.py scripts/test-collect-regional-oct22-enrichment.py data-sources/russia/regional-enrichment-2026-10-22.json data-sources/russia/regional-collection-report-2026-10-22.json",
+      "exitCode": 0,
+      "note": "Selected files are new/untracked in the preserved dirty layer-04 working tree; full staged review belongs to root handoff."
+    }
+  },
+  "facultySourceReview": [
+    {
+      "universitySlug": "russia-111",
+      "name": "Горный институт",
+      "url": "https://kuzstu.ru/department/gornii-institut/",
+      "sourceUrl": "https://kuzstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Горный институт Ермаков Александр Николаевич Директор (института) 1036а Ссылка ermakovan@kuzstu.ru"
+      ]
+    },
+    {
+      "universitySlug": "russia-111",
+      "name": "Институт промышленной и экологической безопасности",
+      "url": "https://kuzstu.ru/department/institut-promecobez/",
+      "sourceUrl": "https://kuzstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Институт промышленной и экологической безопасности Тациенко Виктор Прокопьевич Директор 1319 Ссылка tatsienkovp@kuzstu.ru"
+      ]
+    },
+    {
+      "universitySlug": "russia-111",
+      "name": "Институт информационных технологий, машиностроения и автотранспорта",
+      "url": "https://kuzstu.ru/department/institut-informatsionnikh-tekhnologii-mashinostroeniya-i-avtotransporta/",
+      "sourceUrl": "https://kuzstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Институт информационных технологий, машиностроения и автотранспорта Дубинкин Дмитрий Михайлович Директор (института) 3206а Ссылка ddm.tm@kuzstu.ru"
+      ]
+    },
+    {
+      "universitySlug": "russia-111",
+      "name": "Институт химических и нефтегазовых технологий",
+      "url": "https://kuzstu.ru/department/institut-himicheskih-i-neftegazovyh-tekhnologij/",
+      "sourceUrl": "https://kuzstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Институт химических и нефтегазовых технологий Тихонов Виктор Владимирович Директор (института) 5215 Ссылка tikhonovvv@kuzstu.ru"
+      ]
+    },
+    {
+      "universitySlug": "russia-111",
+      "name": "Институт экономики и управления",
+      "url": "https://kuzstu.ru/department/institut-ekonomiki-i-upravleniya/",
+      "sourceUrl": "https://kuzstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Институт экономики и управления Кудреватых Наталья Владимировна Директор (института) 2214 Ссылка knv.fk@kuzstu.ru"
+      ]
+    },
+    {
+      "universitySlug": "russia-111",
+      "name": "Институт энергетики",
+      "url": "https://kuzstu.ru/department/institut-energetiki/",
+      "sourceUrl": "https://kuzstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Институт энергетики Мамзина Татьяна Федоровна Директор (института) 3307 Ссылка mtf.fk@kuzstu.ru"
+      ]
+    },
+    {
+      "universitySlug": "russia-111",
+      "name": "Строительный институт",
+      "url": "https://kuzstu.ru/department/stroitelnyj-institut/",
+      "sourceUrl": "https://kuzstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Строительный институт Покатилов Андрей Владимирович Директор (института) 4212 Ссылка pav.tsp@kuzstu.ru"
+      ]
+    },
+    {
+      "universitySlug": "russia-16",
+      "name": "Архитектурный институт",
+      "url": "https://bstu.ru/struct/ai",
+      "sourceUrl": "https://bstu.ru/sveden/struct",
+      "sourceContext": [
+        "Архитектурный институт Перцев Виталий Владимирович директор АИ 308012, Центральный федеральный округ, Белгородская область, г. Белгород, ул. Костюкова, 46, ГУК, каб. 618 https://bstu.ru/struct/ai ai@bstu.ru Положение"
+      ]
+    },
+    {
+      "universitySlug": "russia-16",
+      "name": "Инженерно-строительный институт",
+      "url": "https://www.bstu.ru/struct/isi",
+      "sourceUrl": "https://bstu.ru/sveden/struct",
+      "sourceContext": [
+        "Инженерно-строительный институт Гольцов Александр Борисович директор ИСИ 308012, Центральный федеральный округ, Белгородская область, г. Белгород, ул. Костюкова, 46, ГУК, каб. 401 https://www.bstu.ru/struct/isi isi@bstu.ru Положение"
+      ]
+    },
+    {
+      "universitySlug": "russia-16",
+      "name": "Химико-технологический институт",
+      "url": "https://www.bstu.ru/struct/hti",
+      "sourceUrl": "https://bstu.ru/sveden/struct",
+      "sourceContext": [
+        "Химико-технологический институт Ястребинский Роман Николаевич директор ХТИ 308012, Центральный федеральный округ, Белгородская область, г. Белгород, ул. Костюкова, 46, УК2, каб. 333 https://www.bstu.ru/struct/hti hti@bstu.ru Положение"
+      ]
+    },
+    {
+      "universitySlug": "russia-16",
+      "name": "Институт технологического оборудования и машиностроения",
+      "url": "https://www.bstu.ru/struct/itom",
+      "sourceUrl": "https://bstu.ru/sveden/struct",
+      "sourceContext": [
+        "Институт технологического оборудования и машиностроения Латышев Сергей Сергеевич директор ИТОМ 308012, Центральный федеральный округ, Белгородская область, г. Белгород, ул. Костюкова, 46, ГУК, каб. 114 https://www.bstu.ru/struct/itom itom@bstu.ru Положение"
+      ]
+    },
+    {
+      "universitySlug": "russia-16",
+      "name": "Транспортно-технологический институт",
+      "url": "https://www.bstu.ru/struct/tti",
+      "sourceUrl": "https://bstu.ru/sveden/struct",
+      "sourceContext": [
+        "Транспортно-технологический институт Загородний Николай Александрович директор ТТИ 308012, Центральный федеральный округ, Белгородская область, г. Белгород, ул. Костюкова, 46, УК4, каб. 320. https://www.bstu.ru/struct/tti tti@bstu.ru Положение"
+      ]
+    },
+    {
+      "universitySlug": "russia-16",
+      "name": "Институт экономики и менеджмента",
+      "url": "https://www.bstu.ru/struct/iem",
+      "sourceUrl": "https://bstu.ru/sveden/struct",
+      "sourceContext": [
+        "Институт экономики и менеджмента Трошин Александр Сергеевич директор ИЭМ 308012, Центральный федеральный округ, Белгородская область, г. Белгород, ул. Костюкова, 46, учебный корпус, ауд. 30 https://www.bstu.ru/struct/iem iem@bstu.ru Положение"
+      ]
+    },
+    {
+      "universitySlug": "russia-16",
+      "name": "Институт заочного образования",
+      "url": "https://www.bstu.ru/struct/izo",
+      "sourceUrl": "https://bstu.ru/sveden/struct",
+      "sourceContext": [
+        "Институт заочного образования Спесивцева Светлана Евгеньевна директор ИЗО 308012, Центральный федеральный округ, Белгородская область, г. Белгород, ул. Костюкова, 46, УК5 (Бизнес-инкубатор), каб. 205, 208, 209, 210 https://www.bstu.ru/struct/izo izo@bstu.ru Положение"
+      ]
+    },
+    {
+      "universitySlug": "russia-183",
+      "name": "Факультет информационных технологий и компьютерных систем (ФИТиКС)",
+      "url": "http://www.omgtu.ru/general_information/faculties/faculty_of_information_technology_and_computer_systems/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceContext": [
+        "мский государственный технический университет включает в себя семь факультетов: Факультет информационных технологий и компьютерных систем (ФИТиКС) Факультет транспорта, нефти и газа (ФТНГ) Радиотехнический факультет (РТФ) Факультет экономики, сервиса и управления (ФЭСиУ) Художественно-технологический факу"
+      ]
+    },
+    {
+      "universitySlug": "russia-183",
+      "name": "Факультет транспорта, нефти и газа (ФТНГ)",
+      "url": "http://www.omgtu.ru/general_information/faculties/faculty_of_transport_oil_and_gas/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceContext": [
+        "факультетов: Факультет информационных технологий и компьютерных систем (ФИТиКС) Факультет транспорта, нефти и газа (ФТНГ) Радиотехнический факультет (РТФ) Факультет экономики, сервиса и управления (ФЭСиУ) Художественно-технологический факультет (ХТФ) Факультет гуманитарного образо"
+      ]
+    },
+    {
+      "universitySlug": "russia-183",
+      "name": "Радиотехнический факультет (РТФ)",
+      "url": "http://www.omgtu.ru/general_information/faculties/radio_engineering_department/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceContext": [
+        "ологий и компьютерных систем (ФИТиКС) Факультет транспорта, нефти и газа (ФТНГ) Радиотехнический факультет (РТФ) Факультет экономики, сервиса и управления (ФЭСиУ) Художественно-технологический факультет (ХТФ) Факультет гуманитарного образования (ФГО) Факультет довузовской"
+      ]
+    },
+    {
+      "universitySlug": "russia-183",
+      "name": "Факультет экономики, сервиса и управления (ФЭСиУ)",
+      "url": "http://omgtu.ru/general_information/institutes/institute-of-design-and-technology/faculty-of-economics-service-and-management/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceContext": [
+        "иКС) Факультет транспорта, нефти и газа (ФТНГ) Радиотехнический факультет (РТФ) Факультет экономики, сервиса и управления (ФЭСиУ) Художественно-технологический факультет (ХТФ) Факультет гуманитарного образования (ФГО) Факультет довузовской подготовки (ФДП) С составом и структурой факульте"
+      ]
+    },
+    {
+      "universitySlug": "russia-183",
+      "name": "Художественно-технологический факультет (ХТФ)",
+      "url": "http://omgtu.ru/general_information/faculties/the-art-technological-faculty/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceContext": [
+        "иотехнический факультет (РТФ) Факультет экономики, сервиса и управления (ФЭСиУ) Художественно-технологический факультет (ХТФ) Факультет гуманитарного образования (ФГО) Факультет довузовской подготовки (ФДП) С составом и структурой факультетов Вы можете ознакомиться, используя левое ме"
+      ]
+    },
+    {
+      "universitySlug": "russia-183",
+      "name": "Факультет гуманитарного образования (ФГО)",
+      "url": "http://www.omgtu.ru/general_information/faculties/faculty_of_liberal_education/",
+      "sourceUrl": "https://omgtu.ru/general_information/faculties/",
+      "sourceContext": [
+        "ики, сервиса и управления (ФЭСиУ) Художественно-технологический факультет (ХТФ) Факультет гуманитарного образования (ФГО) Факультет довузовской подготовки (ФДП) С составом и структурой факультетов Вы можете ознакомиться, используя левое меню. Меню раздела Факультет информационных "
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ ФАКУЛЬТЕТ",
+      "url": "http://osu.ru/doc/636/facult/200",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ ФАКУЛЬТЕТ Дергунов Сергей Александрович декан 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/200 asf@mail.osu.ru Положение о факультете"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "АЭРОКОСМИЧЕСКИЙ ИНСТИТУТ",
+      "url": "http://osu.ru/doc/636/facult/5220",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "АЭРОКОСМИЧЕСКИЙ ИНСТИТУТ Сергеев Александр Иванович директор 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/5220 aki@mail.osu.ru Положение об Институте"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ИНСТИТУТ МАТЕМАТИКИ И ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ",
+      "url": "http://osu.ru/doc/636/facult/6963",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ИНСТИТУТ МАТЕМАТИКИ И ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ Герасименко Сергей Алексеевич директор 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/6963 fmit@mail.osu.ru Положение об институте"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ИНСТИТУТ МЕНЕДЖМЕНТА, ЭКОНОМИКИ И ПРЕДПРИНИМАТЕЛЬСТВА",
+      "url": "http://osu.ru/doc/636/facult/6964",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ИНСТИТУТ МЕНЕДЖМЕНТА, ЭКОНОМИКИ И ПРЕДПРИНИМАТЕЛЬСТВА Боброва Виктория Викторовна директор 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/6964 instmang@mail.osu.ru Положение об Институте"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ИНСТИТУТ НАУК О ЗЕМЛЕ",
+      "url": "http://osu.ru/doc/636/facult/6910",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ИНСТИТУТ НАУК О ЗЕМЛЕ Воробьев Андрей Львович директор 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/6910 ggf@mail.osu.ru Положение об Институте"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ИНСТИТУТ ОБЩЕСТВЕННЫХ НАУК",
+      "url": "http://osu.ru/doc/636/facult/6996",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ИНСТИТУТ ОБЩЕСТВЕННЫХ НАУК Мороз Виктория Викторовна директор 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/6996 ion@mail.osu.ru Положение об Институте"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ИНСТИТУТ ЭНЕРГЕТИКИ, ЭЛЕКТРОНИКИ И СВЯЗИ",
+      "url": "http://osu.ru/doc/636/facult/6917",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ИНСТИТУТ ЭНЕРГЕТИКИ, ЭЛЕКТРОНИКИ И СВЯЗИ Митрофанов Сергей Владимирович директор 460005, г. Оренбург, ул. Шевченко, 28 http://osu.ru/doc/636/facult/6917 eef@unpk.osu.ru Положение об Институте"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ИНСТИТУТ ЯЗЫКОВ И КУЛЬТУР",
+      "url": "http://osu.ru/doc/636/facult/6966",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ИНСТИТУТ ЯЗЫКОВ И КУЛЬТУР Солодилова Ирина Анатольевна директор 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/6966 ffj@mail.osu.ru Положение об Институте"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ТРАНСПОРТНЫЙ ФАКУЛЬТЕТ",
+      "url": "http://osu.ru/doc/636/facult/400",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ТРАНСПОРТНЫЙ ФАКУЛЬТЕТ Рассоха Владимир Иванович декан 460048, г. Оренбург, пр. Победы, 147 http://osu.ru/doc/636/facult/400 trf@mail.osu.ru Положение о факультете"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ФАКУЛЬТЕТ ПРИКЛАДНОЙ БИОТЕХНОЛОГИИ И ИНЖЕНЕРИИ",
+      "url": "http://osu.ru/doc/636/facult/6120",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ФАКУЛЬТЕТ ПРИКЛАДНОЙ БИОТЕХНОЛОГИИ И ИНЖЕНЕРИИ Бочкарева Ирина Анатольевна декан 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/6120 fpp@mail.osu.ru Положение о факультете"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ФИЗИЧЕСКИЙ ФАКУЛЬТЕТ",
+      "url": "http://osu.ru/doc/636/facult/5682",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ФИЗИЧЕСКИЙ ФАКУЛЬТЕТ Четверикова Анна Геннадьевна декан 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/5682 fizfak@unpk.osu.ru Положение о факультете"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ХИМИКО-БИОЛОГИЧЕСКИЙ ФАКУЛЬТЕТ",
+      "url": "http://osu.ru/doc/636/facult/5764",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ХИМИКО-БИОЛОГИЧЕСКИЙ ФАКУЛЬТЕТ Сальникова Елена Владимировна декан 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/5764 fns@mail.osu.ru Положение о факультете"
+      ]
+    },
+    {
+      "universitySlug": "russia-187",
+      "name": "ЮРИДИЧЕСКИЙ ФАКУЛЬТЕТ",
+      "url": "http://osu.ru/doc/636/facult/700",
+      "sourceUrl": "http://www.osu.ru/doc/4125",
+      "sourceContext": [
+        "ЮРИДИЧЕСКИЙ ФАКУЛЬТЕТ Мищенко Елена Валерьевна декан 460018, г. Оренбург, пр. Победы, 13 http://osu.ru/doc/636/facult/700 jurfac@mail.osu.ru Положение о факультете"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Аэрокосмический факультет",
+      "url": "https://vk.com/pnrpuakf",
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Аэрокосмический факультет Модорский Владимир Яковлевич Декан аэрокосмического факультета 614013, г. Пермь, ул. Академика Королева, 15,корпус Д, к. 202 https://vk.com/pnrpuakf modorsky@pstu.ru Положение о факультете"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Горно-нефтяной факультет",
+      "url": null,
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Горно-нефтяной факультет Галкин Сергей Владиславович Декан горно-нефтяного факультета 614990, г. Пермь, Комсомольский пр., 29,глав. корпус pstu.ru gnfd@pstu.ru Положение о факультете"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Гуманитарный факультет",
+      "url": "https://vk.com/gumf59",
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Гуманитарный факультет Мохов Виктор Павлович Декан гуманитарного факультета 614990, г. Пермь, Комсомольский пр., 29, корпус А https://vk.com/gumf59 gf@pstu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Механико-технологический факультет",
+      "url": "https://vk.com/club_mtf_pnrpu",
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Механико-технологический факультет Песин Михаил Владимирович Декан механико-технологического факультета 614990, г. Пермь, Комсомольский пр., 29, корпус А, к. 208 https://vk.com/club_mtf_pnrpu mtf-dekanat@pstu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Строительный факультет",
+      "url": "https://vk.com/stf_pstu",
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Строительный факультет Шаманов Виталий Альбертович Декан строительного факультета 614010, г. Пермь, ул. Куйбышева, 109, к. 310 https://vk.com/stf_pstu dekstf@pstu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Факультет химических технологий, промышленной экологии и биотехнологий",
+      "url": "https://vk.com/stud_sovet_xtf",
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Факультет химических технологий, промышленной экологии и биотехнологий Коротаев Владимир Николаевич Декан факультета химических технологий, промышленной экологии и биотехнологий 614013, г. Пермь, ул. Профессора Поздеева, 9, корпус Б, к. 314 https://vk.com/stud_sovet_xtf xtf@pstu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Электротехнический факультет",
+      "url": "https://vk.com/dekanatetf",
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Электротехнический факультет Черняев Владислав Васильевич Декан электротехнического факультета 614068, г. Пермь, ул. Профессора Поздеева, 7, корпус А, к. 215 https://vk.com/dekanatetf dekan@etf.pstu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Институт дорожного строительства и транспорта",
+      "url": null,
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Институт дорожного строительства и транспорта Щелудяков Алексей Михайлович Директор института дорожного строительства и транспорта 614018, г. Пермь, ул. Академика Королева, д. 19 pstu.ru dekanatadf@pstu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-197",
+      "name": "Передовая Инженерная Школа",
+      "url": null,
+      "sourceUrl": "https://pstu.ru/sveden/struct/",
+      "sourceContext": [
+        "Передовая Инженерная Школа Абляз Тимур Ризович Директор Передовой Инженерной Школы 614013, г. Пермь, Профессора Поздеева, 11, к. 202 pstu.ru pish@pstu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Аграрный институт",
+      "url": "https://www.utmn.ru/agricultural-institute/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "1 Аграрный институт Приданникова Екатерина Андреевна Директор Тюменская область, г. Тюмень, ул. Республики, 7 https://www.utmn.ru/agricultural-institute/ e.a.pridannikova@utmn.ru Положение (3452) 59-74-00, внутр. 16501"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Институт социально-гуманитарных наук",
+      "url": "https://www.utmn.ru/ihss/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "3 Институт социально-гуманитарных наук Костомаров Владимир Михайлович Директор г. Тюмень, ул. Ленина, 23 https://www.utmn.ru/ihss/ socgum@utmn.ru Положение 8-3452-59-77-10"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Институт физической культуры",
+      "url": "https://www.utmn.ru/ifk/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "4 Институт физической культуры Лютенко Руслан Владимирович Руководитель группы 625000, Уральский федеральный округ, Тюменская область, г. Тюмень, ул. Пржевальского, 37/1 https://www.utmn.ru/ifk/ ifk@utmn.ru Положение (3452) 41-38-88"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Институт экологической и сельскохозяйственной биологии (X-BIO)",
+      "url": "https://www.utmn.ru/x-bio/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "5 Институт экологической и сельскохозяйственной биологии (X-BIO) Яковлев Роман Викторович Директор 625000, Уральский федеральный округ, Тюменская область, г. Тюмень, ул. Ленина, 25 https://www.utmn.ru/x-bio/ r.v.iakovlev@utmn.ru Положение 8-3452-59-74-00"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Передовая инженерная школа",
+      "url": "https://www.utmn.ru/engineering-school/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "8 Передовая инженерная школа Лисс Дмитрий Александрович Директор г. Тюмень, ул. Ленина, д.16, 4 этаж https://www.utmn.ru/engineering-school/ psch@utmn.ru Положение +7 (3452) 59-74-00, внутр. 14912"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Финансово-экономический институт",
+      "url": "https://www.utmn.ru/fei/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "11 Финансово-экономический институт Лазутина Дарья Васильевна Директор г. Тюмень, ул. Ленина, 16 https://www.utmn.ru/fei/ fei@utmn.ru Положение 8-3452-59-74-97"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Школа естественных наук",
+      "url": "https://www.utmn.ru/sns/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "12 Школа естественных наук Елышев Андрей Владимирович Директор Тюмень, Перекопская, 15А, к. 418 https://www.utmn.ru/sns/ a.v.elyshev@utmn.ru Положение (3452) 59-74-00, вн.т. 15570"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Школа компьютерных наук",
+      "url": "https://www.utmn.ru/scs/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "13 Школа компьютерных наук Вдовин Евгений Петрович Директор г. Тюмень, ул. Перекопская, 15а https://www.utmn.ru/scs/ e.p.vdovin@utmn.ru Положение (3452) 59-77-45"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Школа образования",
+      "url": "https://www.utmn.ru/soe/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "15 Школа образования Раведовская Ульяна Юрьевна Директор г. Тюмень, ул.Республики 9 https://www.utmn.ru/soe/ EDSCHOOL@UTMN.RU Положение 59-74-52, внутр. 11057"
+      ]
+    },
+    {
+      "universitySlug": "russia-302",
+      "name": "Школа права и управления",
+      "url": "https://www.utmn.ru/igip/",
+      "sourceUrl": "https://sveden.utmn.ru:443/redirect/struct/index.php",
+      "sourceContext": [
+        "17 Школа права и управления Япрынцев Иван Михайлович Директор 625000, Уральский федеральный округ, Тюменская область, г. Тюмень, ул. Ленина, 38 https://www.utmn.ru/igip/ shpiu@utmn.ru Положение (3452) 59-76-45"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Высшая инженерная школа",
+      "url": "https://vish.chuvsu.ru",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "7 Высшая инженерная школа Троешестова Дарья Анатольевна Директор г. Чебоксары, Московский пр-т, д. 15 https://vish.chuvsu.ru vish@chuvsu.ru Положение о структурном подразделении:Положение о Высшей инженерной школе +7 (8352) 58-36-30 (доп. 2441)"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Машиностроительный факультет",
+      "url": "http://mashfak.chuvsu.ru",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "1 Машиностроительный факультет Максимов Евгений Альбертович и.о. декана г. Чебоксары, ул. Спиридона Михайлова, д. 3 http://mashfak.chuvsu.ru msf68@bk.ru Положение о структурном подразделении:Положение о машиностроительном факультете ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-21-93"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Историко-географический факультет",
+      "url": "https://igf.chuvsu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "2 Историко-географический факультет Широков Олег Николаевич Декан г. Чебоксары, ул. Университетская, 38, 1-511 https://igf.chuvsu.ru/ Geo_his@chuvsu.ru Положение о структурном подразделении:Положение о историко-географическом факультете ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-01-67 доб. 3350"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Медицинский факультет",
+      "url": "https://med_inst.chuvsu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "3 Медицинский факультет Диомидова Валентина Николаевна Декан г. Чебоксары, Московский пр., 45 https://med_inst.chuvsu.ru/ mfchgu@gmail.com Положение о структурном подразделении:Положение о медицинском факультете ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-26-97"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Строительный факультет",
+      "url": "https://stroyfak.chuvsu.ru",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "4 Строительный факультет Плотников Алексей Николаевич Декан г. Чебоксары, пр. Ленина, 6 https://stroyfak.chuvsu.ru strf@chuvsu.ru Положение о структурном подразделении:Положение о строительном факультете ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 62-45-96 доб. 6100"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Факультет иностранных языков",
+      "url": "https://fiya.chuvsu.ru",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "5 Факультет иностранных языков Емельянова Маргарита Валентиновна Декан г. Чебоксары, ул. Университетская, д. 38, корп. 3, каб. 306 https://fiya.chuvsu.ru dekin@chuvsu.ru Положение о структурном подразделении:Положение о факультете иностранных языков ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-15-01 доб. 3500"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Факультет информатики и вычислительной техники",
+      "url": "https://vt.chuvsu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "6 Факультет информатики и вычислительной техники Щипцова Анна Владимировна Декан г. Чебоксары, Московский проспект, 15, корпус «Б», каб. 104 https://vt.chuvsu.ru/ fivt@chuvsu.ru Положение о структурном подразделении:Положение о факультете информатики и вычислительной техники ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 58-01-45"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Факультет искусств",
+      "url": "https://isfak.chuvsu.ru",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "7 Факультет искусств Яклашкин Морис Николаевич Декан г. Чебоксары, ул. Университетская, 38, корп.3 https://isfak.chuvsu.ru isfak@chuvsu.ru Положение о структурном подразделении:Положение о факультете искусств ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-39-66 доб. 3250"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Факультет прикладной математики, физики и информационных технологий",
+      "url": "https://pmfit-chgu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "8 Факультет прикладной математики, физики и информационных технологий Иваницкий Александр Юрьевич Декан г. Чебоксары, ул. Университетская 38, корпус I, 3 этаж https://pmfit-chgu.ru/ phiz-matdek@mail.ru Положение о структурном подразделении:Положение о факультете прикладной математики, физики и информационных технологий ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-56-00 доб. 3600"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Факультет радиоэлектроники и автоматики",
+      "url": "https://rtechuvsu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "9 Факультет радиоэлектроники и автоматики Охоткин Григорий Петрович Декан г. Чебоксары, Московский пр-т, 15 https://rtechuvsu.ru/ frte@chuvsu.ru Положение о структурном подразделении:Положение о факультете радиоэлектроники и автоматики ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 58-12-59 доб. 2700"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Факультет русской и чувашской филологии и журналистики",
+      "url": "https://richfizh.chuvsu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "10 Факультет русской и чувашской филологии и журналистики Иванова Алена Михайловна Декан г. Чебоксары, ул. Университетская, д. 38/1 https://richfizh.chuvsu.ru/ richfizh@chuvsu.ru Положение о структурном подразделении:Положение о факультете русской и чувашской филологии и журналистики ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) (45-93-90) доб. 3150"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Факультет управления и социальных технологий",
+      "url": "https://fuist.chuvsu.ru",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "11 Факультет управления и социальных технологий Семенов Владислав Львович Декан г. Чебоксары, Московский пр., д. 19 корпус «О» https://fuist.chuvsu.ru fuip@chuvsu.ru Положение о структурном подразделении:Положение о факультете управления и социальных технологий ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-20-31 доб. 2400"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Факультет энергетики и электротехники",
+      "url": "https://elf21.chuvsu.ru",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "12 Факультет энергетики и электротехники Руссова Наталия Валерьевна Декан г. Чебоксары, Московский проспект, д. 15, корп. «Г», Г-307 (очное отделение), Г-306 (заочное отделение) https://elf21.chuvsu.ru elendecanat@rambler.ru Положение о структурном подразделении:Положение о факультете энергетики и электротехники ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 58-46-00 доб. 2510"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Химико-фармацевтический факультет",
+      "url": "https://chimfac.chuvsu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "13 Химико-фармацевтический факультет Насакин Олег Евгеньевич Декан г. Чебоксары, Московский пр., 19 (корпус \"О\") https://chimfac.chuvsu.ru/ chemdec@chuvsu.ru Положение о структурном подразделении:Положение о химико-фармацевтическом факультете ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-24-68 доб. 2300"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Экономический факультет",
+      "url": "https://econom.chuvsu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "14 Экономический факультет Морозова Наталия Витальевна Декан г. Чебоксары, Московский проспект, 29 https://econom.chuvsu.ru/ dekd@chuvsu.ru Положение о структурном подразделении:Положение об экономическом факультете ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-84-49"
+      ]
+    },
+    {
+      "universitySlug": "russia-330",
+      "name": "Юридический факультет",
+      "url": "https://ufchuvgu.ru/",
+      "sourceUrl": "https://www.chuvsu.ru/sveden/struct/",
+      "sourceContext": [
+        "15 Юридический факультет Иванова Елена Витальевна Декан г. Чебоксары, ул. Университетская, 38 https://ufchuvgu.ru/ dekanatu@chuvsu.ru Положение о структурном подразделении:Положение о юридическом факультете ФГБОУ ВО «ЧГУ им. И.Н. Ульянова» +7 (8352) 45-12-04"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Институт истории и международных отношений",
+      "url": "http://hist.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.1.Институт истории и международных отношенийНазаров Иван Ивановичдиректор656049, г. Барнаул, пр. Ленина, 61, ауд. 305МТел. (3852) 291-269nazarov@mail.asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Международный институт экономики, менеджмента и информационных систем (МИЭМИС)",
+      "url": "https://miemis.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.2.Международный институт экономики, менеджмента и информационных систем (МИЭМИС)Титова Ольга Викторовнадиректор656049, г. Барнаул, пр. Социалистический, 68, ауд. 101Тел. (3852) 296-525ef@asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Юридический институт",
+      "url": "http://new.law.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.3.Юридический институтАничкин Евгений Сергеевичдиректор656049, г. Барнаул, пр. Социалистический, 68, ауд. 105Тел. +7 (3852) 296-532AnichkinES@law.asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Институт математики и информационных технологий",
+      "url": "http://www.math.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.4.Институт математики и информационных технологийЖуравлев Евгений Владимировичдиректор656049, г. Барнаул, пр. Ленина, 61zhuravlev@math.asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Институт цифровых технологий, электроники и физики",
+      "url": "http://phys.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.5.Институт цифровых технологий, электроники и физикиМакаров Сергей Викторовичдиректор656049, г. Барнаул, пр. Красноармейский, 90Тел. (3852) 291-224makarov@phys.asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Институт химии и химико-фармацевтических технологий",
+      "url": "http://www.chem.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.6.Институт химии и химико-фармацевтических технологийАверьянова Елена ВитальевнаДиректор656049, г. Барнаул, пр. Красноармейский, 90Тел. (3852) 298-150dekanat@chem.asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Институт биологии и биотехнологии",
+      "url": "http://www.bio.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.7.Институт биологии и биотехнологииСмирнов Сергей Владимировичи.о. директора656049, г. Барнаул, пр. Ленина, 61, ауд. 215ЛТел. +7 (3852) 298-182smirnov@bio.asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Институт географии",
+      "url": "http://www.geo.asu.ru/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.8.Институт географииКозырева Юлия Вячеславовнадиректор656049, г. Барнаул, пр. Ленина, 61, ауд. 511МТел. (3852) 291-275kozyreva@geo.asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-4",
+      "name": "Институт гуманитарных наук",
+      "url": "https://www.asu.ru/structure/faculties/ign/",
+      "sourceUrl": "https://www.asu.ru/sveden/struct/",
+      "sourceContext": [
+        "11.9.Институт гуманитарных наукНехвядович Лариса Ивановнадиректор656049, г. Барнаул, ул. Димитрова, 66, ауд. 202ДТел. (3852) 296-581lin@mail.asu.ruСайтПоложение"
+      ]
+    },
+    {
+      "universitySlug": "russia-79",
+      "name": "Факультет строительства, архитектуры и дизайна имени В.А. Шумилова",
+      "url": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceContext": [
+        "Факультет строительства, архитектуры и дизайна имени В.А. Шумилова - - 426069, г. Ижевск, ул. Студенческая 42, корпус 3 ауд. 304, 306 ссылка isf@istu.ru - очное отделение<br> isfzo@istu.ru - заочное отделение Ссылка"
+      ]
+    },
+    {
+      "universitySlug": "russia-79",
+      "name": "Институт энергетики",
+      "url": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceContext": [
+        "Институт энергетики Абрамова Анна Александровна директор института 426069, г. Ижевск, ул. Студенческая 42, корпус 3 каб. 507 ссылка ttech@istu.ru Ссылка"
+      ]
+    },
+    {
+      "universitySlug": "russia-79",
+      "name": "Факультет «Машиностроение»",
+      "url": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceContext": [
+        "Факультет «Машиностроение» - - 426069, г. Ижевск, ул. Студенческая 7, корпус 1 ссылка info@istu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-79",
+      "name": "Факультет «Информационные технологии, радиоэлектроника и приборостроение»",
+      "url": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceContext": [
+        "Факультет «Информационные технологии, радиоэлектроника и приборостроение» Архипов Игорь Олегович декан факультета 426069, г. Ижевск, ул. Студенческая 7, корпус 1 ссылка info@istu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-79",
+      "name": "Факультет «Школа базового инженерного образования»",
+      "url": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceContext": [
+        "Факультет «Школа базового инженерного образования» Соболев Валентин Валентинович декан факультета 426069, г. Ижевск, ул. Студенческая 7, корпус 1 ссылка info@istu.ru -"
+      ]
+    },
+    {
+      "universitySlug": "russia-79",
+      "name": "Институт физической культуры и спорта имени А.И. Тихонова четырехкратного олимпийского чемпиона",
+      "url": null,
+      "sourceUrl": "https://istu.ru/sveden/struct",
+      "sourceContext": [
+        "Институт физической культуры и спорта имени А.И. Тихонова четырехкратного олимпийского чемпиона - - 426069, г. Ижевск, ул. Студенческая 7, корпус 1 ссылка info@istu.ru Ссылка"
+      ]
+    }
+  ],
+  "limitations": [
+    "9 enriched organizations out of 10 attempted; Omsk agricultural university remains unresolved.",
+    "Only bachelor and specialist implementation overviews are included; magistracy and unsupported dynamic/column layouts remain gaps.",
+    "PSTU unlabelled duration units and repeated column tables were deliberately not inferred.",
+    "Three conflicting ISTU durations are null with exact published alternatives in issues.",
+    "The OSU duration column explicitly applies to full-time study only: all 52 part-time and mixed-mode listings retain duration=null with the exact column label and published value in issues.",
+    "KuzSTU structural rows give rooms rather than postal addresses; no branch unit is included. OmGTU supplies a separately titled local faculty link list; four protocol/www aliases are removed.",
+    "General fields and structure are sourced in 2026; all educational listings have sourceYear=null and pending_review. No EGE, fees, scores, places or licenses inferred."
+  ],
+  "candidateSha256": "3fe812a1cee958774b9db52da73b2cf546b89306f4facac22a2e0102e08b93a6",
+  "cacheDirectory": "tmp/russia-research/regional-enrichment-2026-10-22",
+  "collectorOutputSha256": "1d1edebdfaf06f4ca677391a9075c42d941de608d4a355baf20e6d5264b1ca07",
+  "candidateHashNote": "candidateSha256 hashes the repository file after formatting; collectorOutputSha256 retains the original collector output hash. Source-body hashes and acquisition dates are unchanged. Offline semantic comparison preserves object values and array order."
+}

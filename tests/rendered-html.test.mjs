@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
 import { join } from "node:path";
+import { readFileSync } from "node:fs";
 import test, { after, before } from "node:test";
 
 const port = 3217;
@@ -27,16 +28,30 @@ before(async () => {
       stdio: "ignore",
     },
   );
-  for (let attempt = 0; attempt < 60; attempt += 1) {
+  const readyDeadline = Date.now() + 60_000;
+  let lastReadiness = "No response";
+  while (Date.now() < readyDeadline) {
     if (server.exitCode !== null)
-      throw new Error("Production server exited before readiness");
+      throw new Error(
+        `Production server exited before readiness: ${server.exitCode}`,
+      );
     try {
-      const response = await fetch(base);
+      const response = await fetch(base, {
+        signal: AbortSignal.timeout(
+          Math.max(1, Math.min(30_000, readyDeadline - Date.now())),
+        ),
+      });
+      lastReadiness = `HTTP ${response.status}`;
+      await response.body?.cancel();
       if (response.ok) return;
-    } catch {}
+    } catch (error) {
+      lastReadiness = error instanceof Error ? error.message : String(error);
+    }
     await new Promise((resolve) => setTimeout(resolve, 250));
   }
-  throw new Error("Production server did not become ready");
+  throw new Error(
+    `Production server did not become ready within 60s: ${lastReadiness}`,
+  );
 });
 
 after(() => {
@@ -94,6 +109,41 @@ test("university profiles render admissions links and distinct commission contac
   assert.match(html, /STEM|Московский институт психоанализа/);
 });
 
+test("nationwide directory filters a city and keeps historical records separate from intake", async () => {
+  const { universities } = JSON.parse(
+    readFileSync("data-sources/russia/universities.json", "utf8"),
+  );
+  const sample = universities.find((row) => row.city === "Казань");
+  assert.ok(sample, "reviewed Kazan directory entry");
+  const filters = encodeURIComponent(JSON.stringify({ city: "Казань" }));
+  const html = await (
+    await fetch(`${base}/universities?filters=${filters}`)
+  ).text();
+  assert.match(html, /Вузы России/);
+  assert.match(html, /value="Казань" selected=""/);
+  assert.match(html, new RegExp(`/universities/${sample.slug}`));
+  const profile = await (
+    await fetch(`${base}/universities/${sample.slug}`)
+  ).text();
+  assert.match(profile, /Период источника: <!-- -->2025/);
+  assert.match(profile, /Программы ещё не добавлены/);
+  assert.match(profile, /Нет подтверждённых данных/);
+  assert.match(profile, /monitoring\.miccedu\.ru/);
+});
+
+test("reviewed faculty names expose the exact source without claiming admission", async () => {
+  const html = await (await fetch(`${base}/universities/mgu`)).text();
+  assert.match(html, /id="faculties"/);
+  assert.match(html, /Факультеты и институты/);
+  assert.match(html, /Поиск по факультетам и институтам/);
+  assert.match(
+    html,
+    /Показать ещё(?:<!-- -->|\s)+12(?:<!-- -->|\s)+подразделений/,
+  );
+  assert.match(html, /Механико-математический факультет/);
+  assert.match(html, /наличие подразделения не подтверждает набор/);
+});
+
 test("matching renders separate eligibility, strict filters and program-specific exams", async () => {
   const response = await fetch(`${base}/match`);
   assert.equal(response.status, 200);
@@ -116,6 +166,11 @@ test("server-renders the new admissions landing", async () => {
   assert.match(html, /Поступление начинается с ясного выбора/);
   assert.match(html, /Спокойно сравните всё важное/);
   assert.match(html, /официальные источники/i);
+  assert.match(html, /справочник вузов России/);
+  assert.match(html, /role="group"/);
+  assert.match(html, /aria-pressed="true"/);
+  assert.match(html, /aria-label="Бюджетные места по программам"/);
+  assert.match(html, /href="\/match"[^>]*>Подобрать варианты/);
   assert.doesNotMatch(html, /codex-preview/);
 });
 
@@ -161,10 +216,13 @@ test("university directory exposes search, ownership and university-only profile
   assert.equal(profile.status, 200);
   const profileHtml = await profile.text();
   assert.match(profileHtml, /Негосударственный вуз/);
-  assert.match(profileHtml, /Программы ещё не добавлены/);
+  assert.match(profileHtml, /Направления из официального перечня/);
+  assert.match(profileHtml, /Эти записи пока не участвуют в подборе по ЕГЭ/);
   assert.match(profileHtml, /monitoring\.miccedu\.ru/);
   assert.match(profileHtml, /Источник символики/);
   assert.doesNotMatch(profileHtml, /Полностью проверено/);
+  const unknown = await (await fetch(`${base}/universities/avr`)).text();
+  assert.match(unknown, /Программы ещё не добавлены/);
 });
 
 test("MGU program retains mixed-scale history without a misleading chart", async () => {
@@ -200,6 +258,20 @@ test("university evidence separates license dates and education lists from admis
   );
 });
 
+test("university listings show a dated source and keep unknown intake years explicit", async () => {
+  const [mephi, omsk] = await Promise.all([
+    fetch(`${base}/universities/mephi`),
+    fetch(`${base}/universities/russia-1638`),
+  ]);
+  assert.equal(mephi.status, 200);
+  assert.equal(omsk.status, 200);
+  assert.match(await mephi.text(), /Перечень за 2026 год/);
+  const omskHtml = await omsk.text();
+  assert.match(omskHtml, /Год набора не подтверждён/);
+  assert.match(omskHtml, /omgau\.ru\/sveden\/education\/eduaccred/);
+  assert.match(omskHtml, /65-53-44/);
+});
+
 test("auth mutations reject cross-origin requests before touching persistence", async () => {
   const response = await fetch(`${base}/api/auth/login`, {
     method: "POST",
@@ -214,6 +286,28 @@ test("auth mutations reject cross-origin requests before touching persistence", 
   });
   assert.equal(response.status, 403);
   assert.equal(response.headers.get("set-cookie"), null);
+});
+
+test("privacy describes guest storage, server accounts and current delivery limits", async () => {
+  const response = await fetch(`${base}/privacy`);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Без входа избранные программы, сравнение и наборы ЕГЭ/);
+  assert.match(html, /локально в браузере/);
+  assert.match(html, /После входа избранное, сравнение и наборы ЕГЭ/);
+  assert.match(html, /базе данных PostgreSQL/);
+  assert.match(html, /хеш bcrypt/);
+  assert.match(html, /cookie с токеном сессии/);
+  assert.match(html, /в базе хранится только хеш этого токена/);
+  assert.match(html, /передаются почтовому провайдеру/);
+  assert.match(html, /Email-рассылка дедлайнов не подключена/);
+  assert.match(
+    html,
+    /Самостоятельное удаление аккаунта и выгрузка всех его данных пока/,
+  );
+  assert.match(html, /До публичного запуска нужны юридическая проверка/);
+  assert.doesNotMatch(html, /не принимает и не хранит пользовательские пароли/);
+  assert.doesNotMatch(html, /получает от платформы идентификатор/);
 });
 
 test("creative admission campaign preserves shared places and separate exams", async () => {

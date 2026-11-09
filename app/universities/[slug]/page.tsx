@@ -21,6 +21,7 @@ import { universityTypeLabel } from "@/lib/moscow-universities";
 import { UniversityVerifiedDetails } from "@/components/university-verified-details";
 import { UniversityOfferings } from "@/components/university-offerings";
 import { UniversityAdmissionCampaign } from "@/components/university-admission-campaign";
+import styles from "./university-profile.module.css";
 
 export async function generateMetadata({
   params,
@@ -69,34 +70,42 @@ export default async function UniversityPage({
   ).length;
 
   return (
-    <div className="university-profile">
+    <div className={`university-profile ${styles.profile}`}>
       <div className="university-profile-shell">
         <div className="breadcrumbs">
-          <Link href="/universities">Вузы Москвы</Link>
+          <Link href="/universities">Вузы России</Link>
           <span>/</span>
           <span>{university.shortName}</span>
         </div>
 
-        <section className="university-profile-hero">
-          <div className="university-profile-mark">
-            <UniversityLogo university={university} size="hero" />
-            {university.logoUrl ? (
-              <a
-                href={university.logoSourceUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Источник символики ↗
-              </a>
-            ) : (
-              <span className="university-muted">Логотип пока не получен</span>
-            )}
-          </div>
+        <section
+          className="university-profile-hero"
+          aria-labelledby="university-title"
+        >
           <div className="university-profile-copy">
-            <span className="overline">
-              {university.city} · {universityTypeLabel(university)}
-            </span>
-            <h1>{university.name}</h1>
+            <div className={styles.identity}>
+              <UniversityLogo university={university} size="hero" />
+              <div className="university-profile-mark">
+                <div className={styles.identityMetadata}>
+                  <span>{university.city}</span>
+                  <span>{universityTypeLabel(university)}</span>
+                </div>
+                {university.logoUrl ? (
+                  <a
+                    href={university.logoSourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Источник символики ↗
+                  </a>
+                ) : (
+                  <span className="university-muted">
+                    Логотип пока не получен
+                  </span>
+                )}
+              </div>
+            </div>
+            <h1 id="university-title">{university.name}</h1>
             <p>{university.description}</p>
             <div className="hero-actions">
               <a
@@ -118,6 +127,9 @@ export default async function UniversityPage({
             </div>
           </div>
           <aside className="university-facts-rail" aria-label="Ключевые факты">
+            <p className={styles.railTitle} aria-hidden="true">
+              Ключевые факты
+            </p>
             {related.length === 0 ? (
               <>
                 <div>
@@ -169,7 +181,13 @@ export default async function UniversityPage({
         </section>
 
         <nav className="university-profile-nav" aria-label="Разделы страницы">
+          <span className={styles.indexLabel} aria-hidden="true">
+            На странице
+          </span>
           <a href="#overview">О вузе</a>
+          {(directoryDetails?.faculties?.length ?? 0) > 0 && (
+            <a href="#faculties">Факультеты и институты</a>
+          )}
           <a href="#programs">Программы</a>
           {isMgu && <a href="#history">Баллы по годам</a>}
           {isMgu && <a href="#map">Карта</a>}
@@ -180,7 +198,6 @@ export default async function UniversityPage({
 
         <section id="overview" className="university-overview-grid">
           <div>
-            <span className="overline">Образовательная среда</span>
             <h2>Главное для выбора</h2>
             <p className="editorial-lead">
               Мы отделяем сведения о самом вузе от параметров конкретной
@@ -238,22 +255,24 @@ export default async function UniversityPage({
         {university.directory && (
           <section className="university-directory-provenance">
             <h2>Официальные сведения</h2>
-            <p>{university.directory.legalName}</p>
-            <p>{university.directory.note}</p>
-            <a
-              href={university.directory.sourceUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Источник сведений об организации ↗
-            </a>
-            <span>
-              Проверено{" "}
-              {new Date(university.directory.checkedAt).toLocaleDateString(
-                "ru-RU",
-              )}
-              . Период источника: {university.directory.sourceYear}.
-            </span>
+            <div className={styles.provenanceCopy}>
+              <p>{university.directory.legalName}</p>
+              <p>{university.directory.note}</p>
+              <a
+                href={university.directory.sourceUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Источник сведений об организации ↗
+              </a>
+              <span>
+                Проверено{" "}
+                {new Date(university.directory.checkedAt).toLocaleDateString(
+                  "ru-RU",
+                )}
+                . Период источника: {university.directory.sourceYear}.
+              </span>
+            </div>
           </section>
         )}
 
@@ -386,7 +405,6 @@ export default async function UniversityPage({
 
         <section className="university-practical-grid">
           <article id="campus">
-            <span className="overline">Кампус</span>
             <h2>Общежития</h2>
             <strong>
               {isMgu
@@ -424,7 +442,6 @@ export default async function UniversityPage({
             </a>
           </article>
           <article id="military">
-            <span className="overline">Подготовка</span>
             <h2>Военный учебный центр</h2>
             <strong>
               {university.militaryCenter === true
@@ -452,7 +469,6 @@ export default async function UniversityPage({
             )}
           </article>
           <article id="contacts">
-            <span className="overline">Связь</span>
             <h2>{admissionsUrl ? "Приёмная комиссия" : "Адрес и сайт"}</h2>
             <address>
               {factProfile.facts.address.value ??

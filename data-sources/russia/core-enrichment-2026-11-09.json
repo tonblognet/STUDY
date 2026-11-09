@@ -1,0 +1,3292 @@
+{
+  "checkedAt": "2026-11-09T15:05:27.543299Z",
+  "scope": "Общие сведения, приёмные контакты, образовательные институты и перечень бакалавриата по официальным источникам. Перечень ОмГАУ относится к головному вузу. Конкурсные группы не добавляются.",
+  "profiles": [
+    {
+      "universitySlug": "russia-1638",
+      "fields": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Омский государственный аграрный университет имени П.А.Столыпина»",
+          "sourceUrl": "https://omgau.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.876478Z",
+          "sourceSha256": "4764c886809e8a64defddd9d8d84b05ec2d7d6e650555b5d493b6833fa5d9922"
+        },
+        "shortName": {
+          "value": "ФГБОУ ВО Омский ГАУ",
+          "sourceUrl": "https://omgau.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.876478Z",
+          "sourceSha256": "4764c886809e8a64defddd9d8d84b05ec2d7d6e650555b5d493b6833fa5d9922"
+        },
+        "regDate": {
+          "value": "31 мая 1994 г.",
+          "sourceUrl": "https://omgau.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.876478Z",
+          "sourceSha256": "4764c886809e8a64defddd9d8d84b05ec2d7d6e650555b5d493b6833fa5d9922"
+        },
+        "telephone": {
+          "value": "+7 (3812) 65-11-46",
+          "sourceUrl": "https://omgau.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.876478Z",
+          "sourceSha256": "4764c886809e8a64defddd9d8d84b05ec2d7d6e650555b5d493b6833fa5d9922"
+        },
+        "email": {
+          "value": "adm@omgau.ru",
+          "sourceUrl": "https://omgau.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.876478Z",
+          "sourceSha256": "4764c886809e8a64defddd9d8d84b05ec2d7d6e650555b5d493b6833fa5d9922"
+        },
+        "address": {
+          "value": "644008, Сибирский федеральный округ, Омская область, г. Омск, Институтская площадь, 1",
+          "sourceUrl": "https://www.omgau.ru/o-universitete/kontakti/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:18.053864Z",
+          "sourceSha256": "c8aa5aa5525b1e7ced4759b6215ad60df2026ce3edd6711162b36409a24e2ae3"
+        },
+        "admissionsPhone": {
+          "value": "+7 (3812) 65-53-44",
+          "sourceUrl": "https://www.omgau.ru/o-universitete/kontakti/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:18.053864Z",
+          "sourceSha256": "c8aa5aa5525b1e7ced4759b6215ad60df2026ce3edd6711162b36409a24e2ae3"
+        },
+        "admissionsUrl": {
+          "value": "https://www.omgau.ru/abiturientu/",
+          "sourceUrl": "https://www.omgau.ru/abiturientu/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:18.085103Z",
+          "sourceSha256": "493d73f9fcd6e47590c0301e34791686a2020600757341411ec1bbf48782ff37"
+        },
+        "hostelInfo": {
+          "value": "Для заселения в общежитие нужны личное заявление, решение комиссии по предоставлению мест и договор найма.",
+          "sourceUrl": "https://www.omgau.ru/campus/obshchezhitiya/pravila-prozhivaniya/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:18.352544Z",
+          "sourceSha256": "47e4452cc33bc937fbdb150f40deacf27bcd9ba774fe0fe08ce46bfb04786ace"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Агротехнологический факультет ФГБОУ ВО Омский ГАУ",
+          "url": null,
+          "sourceSection": "Структура и органы управления образовательной организацией",
+          "sourceUrl": "https://omgau.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.942529Z",
+          "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a"
+        },
+        {
+          "name": "Факультет агрохимии, почвоведения, экологии, природообустройства и водопользования ФГБОУ ВО Омский ГАУ",
+          "url": null,
+          "sourceSection": "Структура и органы управления образовательной организацией",
+          "sourceUrl": "https://omgau.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.942529Z",
+          "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a"
+        },
+        {
+          "name": "Землеустроительный факультет ФГБОУ ВО Омский ГАУ",
+          "url": null,
+          "sourceSection": "Структура и органы управления образовательной организацией",
+          "sourceUrl": "https://omgau.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.942529Z",
+          "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a"
+        },
+        {
+          "name": "Факультет технического сервиса в АПК ФГБОУ ВО Омский ГАУ",
+          "url": null,
+          "sourceSection": "Структура и органы управления образовательной организацией",
+          "sourceUrl": "https://omgau.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.942529Z",
+          "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a"
+        },
+        {
+          "name": "Институт ветеринарной медицины и биотехнологии (ИВМиБ) ФГБОУ ВО Омский ГАУ",
+          "url": null,
+          "sourceSection": "Структура и органы управления образовательной организацией",
+          "sourceUrl": "https://omgau.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.942529Z",
+          "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a"
+        },
+        {
+          "name": "Факультет ветеринарной медицины ИВМиБ ФГБОУ ВО Омский ГАУ",
+          "url": null,
+          "sourceSection": "Структура и органы управления образовательной организацией",
+          "sourceUrl": "https://omgau.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.942529Z",
+          "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a"
+        },
+        {
+          "name": "Факультет зоотехнии, товароведения и стандартизации ИВМиБ ФГБОУ ВО Омский ГАУ",
+          "url": null,
+          "sourceSection": "Структура и органы управления образовательной организацией",
+          "sourceUrl": "https://omgau.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.942529Z",
+          "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a"
+        },
+        {
+          "name": "Экономический факультет ФГБОУ ВО Омский ГАУ",
+          "url": null,
+          "sourceSection": "Структура и органы управления образовательной организацией",
+          "sourceUrl": "https://omgau.ru/sveden/struct/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:04:17.942529Z",
+          "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a"
+        }
+      ],
+      "offerings": [
+        {
+          "id": "russia-1638-official-ccf6e3831e9ef412",
+          "code": "05.03.06",
+          "title": "Экология и природопользование",
+          "profile": "Экология",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-d5fbe997405bc168",
+          "code": "05.03.06",
+          "title": "Экология и природопользование",
+          "profile": "Экология и природопользование в АПК с ДК \"Специалист государственного и муниципального управления в сфере охраны окружающей среды и природопользования\"",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-170abe68e1807f3c",
+          "code": "09.03.02",
+          "title": "Информационные системы и технологии",
+          "profile": "Информационные системы и технологии в бизнесе",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-54ffeacb30f9c5e9",
+          "code": "09.03.02",
+          "title": "Информационные системы и технологии",
+          "profile": "Информационные системы и технологии в бизнесе",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-8bc0d378ad54a0fa",
+          "code": "19.03.01",
+          "title": "Биотехнология",
+          "profile": "Пищевая биотехнология",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-4c0c6cbf0fdf042e",
+          "code": "19.03.01",
+          "title": "Биотехнология",
+          "profile": "Пищевая биотехнология",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-df66da329be8ba4a",
+          "code": "19.03.01",
+          "title": "Биотехнология",
+          "profile": "Агробиотехнология",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-816ddce0d9ab4d9e",
+          "code": "19.03.01",
+          "title": "Биотехнология",
+          "profile": "Биотехнология и биоинформатика",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-308531430e4d0469",
+          "code": "19.03.02",
+          "title": "Продукты питания из растительного сырья",
+          "profile": "Технология хлеба, кондитерских и макаронных изделий",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-f8288318f4b3b763",
+          "code": "19.03.02",
+          "title": "Продукты питания из растительного сырья",
+          "profile": "Технология хлеба, кондитерских и макаронных изделий",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-d47f9d1658964e9e",
+          "code": "19.03.03",
+          "title": "Продукты питания животного происхождения",
+          "profile": "Технология молока и молочных продуктов",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-772411f0e8525b2e",
+          "code": "19.03.03",
+          "title": "Продукты питания животного происхождения",
+          "profile": "Технология молока и молочных продуктов",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-69a53703009b5dff",
+          "code": "19.03.03",
+          "title": "Продукты питания животного происхождения",
+          "profile": "Технология мяса и мясных продуктов",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-b6fe0d2ebc60103f",
+          "code": "20.03.01",
+          "title": "Техносферная безопасность",
+          "profile": "Охрана природной среды и ресурсосбережение",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-f8f2642bc465dcae",
+          "code": "20.03.01",
+          "title": "Техносферная безопасность",
+          "profile": "Охрана природной среды и ресурсосбережение",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-e5c022fa3a2be72c",
+          "code": "20.03.01",
+          "title": "Техносферная безопасность",
+          "profile": "Безопасность жизнедеятельности в техносфере",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-d92c1c5742ff494f",
+          "code": "20.03.01",
+          "title": "Техносферная безопасность",
+          "profile": "Безопасность жизнедеятельности в техносфере",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-d17ee30503e57322",
+          "code": "20.03.01",
+          "title": "Техносферная безопасность",
+          "profile": "Техносферная безопасность",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-7ff8d1fde08db7e7",
+          "code": "20.03.02",
+          "title": "Природообустройство и водопользование",
+          "profile": "Инженерные системы сельскохозяйственного водоснабжения, обводнение и водоотведение",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-f2883c6e55a4484f",
+          "code": "20.03.02",
+          "title": "Природообустройство и водопользование",
+          "profile": "Инженерные системы сельскохозяйственного водоснабжения, обводнение и водоотведение",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-dc7aa6b655875959",
+          "code": "20.03.02",
+          "title": "Природообустройство и водопользование",
+          "profile": "Управление водными ресурсами и водопользование",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-872430afda3a18ff",
+          "code": "20.03.02",
+          "title": "Природообустройство и водопользование",
+          "profile": "Управление водными ресурсами и водопользование",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-71ae415334c18222",
+          "code": "20.03.02",
+          "title": "Природообустройство и водопользование",
+          "profile": "Управление водными ресурсами и водопользование с ДК \"Экономист предприятия\"",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-a9639802fe46d929",
+          "code": "20.03.02",
+          "title": "Природообустройство и водопользование",
+          "profile": "Управление водными ресурсами и водопользование с ДК \"Экономист предприятия\"",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-b579d7c8a4753565",
+          "code": "21.03.02",
+          "title": "Землеустройство и кадастры",
+          "profile": "Землеустройство и кадастры",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-2193f5f4b57d6728",
+          "code": "21.03.02",
+          "title": "Землеустройство и кадастры",
+          "profile": "Землеустройство и кадастры",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-91454ce20798558a",
+          "code": "21.03.03",
+          "title": "Геодезия и дистанционное зондирование",
+          "profile": "Геодезия и дистанционное зондирование",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-e4c7c07d739d7802",
+          "code": "21.03.03",
+          "title": "Геодезия и дистанционное зондирование",
+          "profile": "Геодезия и дистанционное зондирование",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-2215c8ec6c3bb2e5",
+          "code": "23.03.03",
+          "title": "Эксплуатация транспортно-технологических машин и комплексов",
+          "profile": "Автомобильный сервис",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-3da08e51ba81ccbc",
+          "code": "23.03.03",
+          "title": "Эксплуатация транспортно-технологических машин и комплексов",
+          "profile": "Автомобильный сервис",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-8c269b91d5703a3a",
+          "code": "27.03.01",
+          "title": "Стандартизация и метрология",
+          "profile": "Техническое регулирование и стандартизация в пищевой промышленности",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-7449361c35c4e752",
+          "code": "27.03.01",
+          "title": "Стандартизация и метрология",
+          "profile": "Техническое регулирование и стандартизация в пищевой промышленности",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-80d8c4a917bfb05a",
+          "code": "35.03.01",
+          "title": "Лесное дело",
+          "profile": "Лесное хозяйство",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-3f3dc986a102541b",
+          "code": "35.03.01",
+          "title": "Лесное дело",
+          "profile": "Лесное хозяйство",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-7e7f51424fba1007",
+          "code": "35.03.03",
+          "title": "Агрохимия и агропочвоведение",
+          "profile": "Агроэкология",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-9fa87cf21a643110",
+          "code": "35.03.03",
+          "title": "Агрохимия и агропочвоведение",
+          "profile": "Агроэкология",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-0cbf9834947817c4",
+          "code": "35.03.04",
+          "title": "Агрономия",
+          "profile": "Селекция и генетика сельскохозяйственных культур",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-079cdc9cfa03b847",
+          "code": "35.03.04",
+          "title": "Агрономия",
+          "profile": "Полеводство",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-d2c096502d1016fa",
+          "code": "35.03.04",
+          "title": "Агрономия",
+          "profile": "Полеводство",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-5bfb4db6ac247427",
+          "code": "35.03.04",
+          "title": "Агрономия",
+          "profile": "Агробизнес",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-a3b1207689e8b0c1",
+          "code": "35.03.04",
+          "title": "Агрономия",
+          "profile": "Агробизнес",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-7e6f24dd15c5c1c3",
+          "code": "35.03.04",
+          "title": "Агрономия",
+          "profile": "Селекция и семеноводство сельскохозяйственных культур",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-a3ec8d11e8e3d5b5",
+          "code": "35.03.05",
+          "title": "Садоводство",
+          "profile": "Плодоовощеводство и виноградарство",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-a6aee9a87f181658",
+          "code": "35.03.05",
+          "title": "Садоводство",
+          "profile": "Плодоовощеводство и виноградарство",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-62959f2fd4ee70bc",
+          "code": "35.03.06",
+          "title": "Агроинженерия",
+          "profile": "Цифровые системы в АПК",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-7f9a314585f1176e",
+          "code": "35.03.06",
+          "title": "Агроинженерия",
+          "profile": "Технический сервис в АПК",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-ccbddb7d9723a03f",
+          "code": "35.03.06",
+          "title": "Агроинженерия",
+          "profile": "Технический сервис в АПК",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-1c1bf2f342ea943b",
+          "code": "35.03.11",
+          "title": "Гидромелиорация",
+          "profile": "Строительство и эксплуатация гидромелиоративных систем",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-64005f08685fdafb",
+          "code": "35.03.11",
+          "title": "Гидромелиорация",
+          "profile": "Строительство и эксплуатация гидромелиоративных систем с ДК \"Экономист предприятия\"",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-dcfa6783d4600fe8",
+          "code": "36.03.01",
+          "title": "Ветеринарно-санитарная экспертиза",
+          "profile": "Ветеринарно-санитарная медицина",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-e6f20bf6423cd56d",
+          "code": "36.03.01",
+          "title": "Ветеринарно-санитарная экспертиза",
+          "profile": "Ветеринарно-санитарная экспертиза сырья и продуктов животного и растительного происхождения",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-cf55d8527d3a3755",
+          "code": "36.03.02",
+          "title": "Зоотехния",
+          "profile": "Зоотехнологии и агробизнес",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-0a137308877eb624",
+          "code": "36.03.02",
+          "title": "Зоотехния",
+          "profile": "Зоотехнологии и агробизнес",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-3a09a364e3cc300c",
+          "code": "36.03.02",
+          "title": "Зоотехния",
+          "profile": "IT-технологии в животноводстве",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-24c10146603d7633",
+          "code": "36.03.02",
+          "title": "Зоотехния",
+          "profile": "IT-технологии в животноводстве",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-f4b7858c88a12216",
+          "code": "36.03.02",
+          "title": "Зоотехния",
+          "profile": "Зооинжиниринг с ДК \"Руководитель предприятия\"",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-ed89264537a96eba",
+          "code": "36.03.02",
+          "title": "Зоотехния",
+          "profile": "Зооинжиниринг с ДК \"Руководитель предприятия\"",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-396899e74b3e5885",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Бухгалтерский учет, анализ и аудит",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-b9c59b6b3c7d00f1",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Бухгалтерский учет, анализ и аудит",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-0d2457b382559c7d",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Бухгалтерский учет, анализ и аудит",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-e4171c7d6e4f59c8",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Финансы и кредит",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-c8fcfbaa3a737a32",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Финансы и кредит",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-ee5da9d5377fcc8c",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Финансы и кредит",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-a4da855f67ce5dd1",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Учет, контроль и финансовый анализ в бизнесе",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-640094be94827214",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Учет, контроль и финансовый анализ в бизнесе",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-a81a816e538876ce",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Учет, контроль и финансовый анализ в бизнесе",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-fe9e893832af24a2",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Прикладная экономика и финансы",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-b328a7a6fd35bff4",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Прикладная экономика и финансы",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-178c1d0ab48d7924",
+          "code": "38.03.01",
+          "title": "Экономика",
+          "profile": "Прикладная экономика и финансы",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-7354dd204826c437",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Производственный менеджмент",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-8b43baf5b63957aa",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Производственный менеджмент",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-5b51b20e1490d6da",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Производственный менеджмент",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-8485aa61ba65cc5c",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Экономика и управление организацией",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-5af5418b93334bf5",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Экономика и управление организацией",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-7b973edd61f96cd7",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Экономика и управление организацией",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": null,
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-3996424fca764ba6",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Государственное и муниципальное управление",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-799357aa4964f8a1",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Государственное и муниципальное управление",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-91f1183dc5d54946",
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "profile": "Государственное и муниципальное управление",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-92aca21affe54c9a",
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "profile": "Гражданское право",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очная",
+          "duration": "4 года",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-3981ae17408904b0",
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "profile": "Гражданское право",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Очно-заочная",
+          "duration": "4 года 6 месяцев",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        },
+        {
+          "id": "russia-1638-official-81c2c5d38ab5eba3",
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "profile": "Гражданское право",
+          "level": "Высшее образование — бакалавриат",
+          "forms": "Заочная",
+          "duration": "5 лет",
+          "admissionsStatus": "pending_review",
+          "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+          "sourceYear": null,
+          "checkedAt": "2026-11-09T15:05:03.439073Z",
+          "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+          "sourceSection": "Программы бакалавриата"
+        }
+      ]
+    },
+    {
+      "universitySlug": "russia-199",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://petrsu.ru/page/aggr/abit",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        "admissionsPhone": {
+          "value": "(814-2) 71-10-30",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        "admissionsEmail": {
+          "value": "priem@petrsu.ru",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        "address": {
+          "value": "185910, Россия, Республика Карелия, г. Петрозаводск, пр. Ленина, 33",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        "email": {
+          "value": "rectorat@petrsu.ru",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        "telephone": {
+          "value": "(814-2) 71-10-29",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Институт биологии, экологии и агротехнологий",
+          "url": "https://petrsu.ru/structure/626/institut-biologii-ek",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Институт иностранных языков",
+          "url": "https://petrsu.ru/structure/450/institutinostrannykh",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Институт математики и информационных технологий",
+          "url": "https://petrsu.ru/structure/624/matematitcheskijfaku",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Институт филологии",
+          "url": "https://petrsu.ru/structure/638/institut-filologii",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Институт физической культуры, спорта и туризма",
+          "url": "https://petrsu.ru/structure/907/institutfizitcheskoj",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Физико-технический институт",
+          "url": "https://petrsu.ru/structure/294/fizikotekhnitcheskij",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Институт истории, политических и социальных наук",
+          "url": "https://petrsu.ru/structure/483/institutistoriipolit",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Институт лесных, горных и строительных наук",
+          "url": "https://petrsu.ru/structure/484/institut-lesnyh-gorn",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Институт педагогики и психологии",
+          "url": "https://petrsu.ru/structure/449/institutpedagogikiip",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Институт экономики и права",
+          "url": "https://petrsu.ru/structure/308/institut-ekonomiki-i",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        },
+        {
+          "name": "Медицинский институт имени профессора А.П. Зильбера",
+          "url": "https://petrsu.ru/structure/485/meditsinskijinstitut",
+          "sourceSection": "ОБРАЗОВАТЕЛЬНЫЕ ИНСТИТУТЫ",
+          "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:27.543299Z",
+          "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08"
+        }
+      ],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-83",
+      "fields": {
+        "admissionsPhone": {
+          "value": "(3952) 521-555",
+          "sourceUrl": "https://isu.ru/ru/contacts/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:05.537468Z",
+          "sourceSha256": "9c9f90de59444d8f1495d6ff9ed911d9c98c1685313956b50cb5757110ff9003"
+        },
+        "admissionsEmail": {
+          "value": "priem@isu.ru",
+          "sourceUrl": "https://isu.ru/ru/contacts/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:05.537468Z",
+          "sourceSha256": "9c9f90de59444d8f1495d6ff9ed911d9c98c1685313956b50cb5757110ff9003"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "russia-341",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7 800 250-76-77",
+          "sourceUrl": "https://ystu.ru/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:04.155487Z",
+          "sourceSha256": "453914cd0f8c1e068093a6c7236654483a37a3908187e034687816fc8a981ce4"
+        },
+        "admissionsEmail": {
+          "value": "priem@ystu.ru",
+          "sourceUrl": "https://ystu.ru/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:05:04.155487Z",
+          "sourceSha256": "453914cd0f8c1e068093a6c7236654483a37a3908187e034687816fc8a981ce4"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    }
+  ],
+  "sources": [
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru/sveden/common/",
+      "sourceKind": "official_university_page",
+      "url": "https://omgau.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:17.876478Z",
+      "redirects": [
+        {
+          "url": "https://omgau.ru/sveden/common/",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html; charset=UTF-8",
+      "body": "russia-1638/da55de8c06dcceec.html",
+      "sourceSha256": "4764c886809e8a64defddd9d8d84b05ec2d7d6e650555b5d493b6833fa5d9922",
+      "bytes": 105437
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru/sveden/struct/",
+      "sourceKind": "official_university_page",
+      "url": "https://omgau.ru/sveden/struct/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:17.942529Z",
+      "redirects": [
+        {
+          "url": "https://omgau.ru/sveden/struct/",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html; charset=UTF-8",
+      "body": "russia-1638/31e8f52fd6a6d596.html",
+      "sourceSha256": "5bc89b44b4206203e15743f19b0918cae8c159043587937dfb6ce3ab30b58e7a",
+      "bytes": 241417
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://omgau.ru/sveden/education/eduaccred",
+      "sourceKind": "official_university_page",
+      "url": "https://omgau.ru/sveden/education/eduaccred/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "redirects": [
+        {
+          "url": "https://omgau.ru/sveden/education/eduaccred",
+          "httpStatus": "301"
+        },
+        {
+          "url": "https://omgau.ru/sveden/education/eduaccred/",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html; charset=UTF-8",
+      "body": "russia-1638/924392adcdfec986.html",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "bytes": 1602742
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://www.omgau.ru/o-universitete/kontakti/",
+      "sourceKind": "official_university_page",
+      "url": "https://www.omgau.ru/o-universitete/kontakti/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:18.053864Z",
+      "redirects": [
+        {
+          "url": "https://www.omgau.ru/o-universitete/kontakti/",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html; charset=UTF-8",
+      "body": "russia-1638/293377894061370d.html",
+      "sourceSha256": "c8aa5aa5525b1e7ced4759b6215ad60df2026ce3edd6711162b36409a24e2ae3",
+      "bytes": 67987
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://www.omgau.ru/abiturientu/",
+      "sourceKind": "official_university_page",
+      "url": "https://www.omgau.ru/abiturientu/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:18.085103Z",
+      "redirects": [
+        {
+          "url": "https://www.omgau.ru/abiturientu/",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html; charset=UTF-8",
+      "body": "russia-1638/5fd6989f26006881.html",
+      "sourceSha256": "493d73f9fcd6e47590c0301e34791686a2020600757341411ec1bbf48782ff37",
+      "bytes": 66449
+    },
+    {
+      "universitySlug": "russia-1638",
+      "requestedUrl": "https://www.omgau.ru/campus/obshchezhitiya/pravila-prozhivaniya/",
+      "sourceKind": "official_university_page",
+      "url": "https://www.omgau.ru/campus/obshchezhitiya/pravila-prozhivaniya/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:18.352544Z",
+      "redirects": [
+        {
+          "url": "https://www.omgau.ru/campus/obshchezhitiya/pravila-prozhivaniya/",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html; charset=UTF-8",
+      "body": "russia-1638/3bc5ca9ca24cbe1d.html",
+      "sourceSha256": "47e4452cc33bc937fbdb150f40deacf27bcd9ba774fe0fe08ce46bfb04786ace",
+      "bytes": 72438
+    },
+    {
+      "universitySlug": "russia-199",
+      "requestedUrl": "https://www.petrsu.ru/page/aggr/abit",
+      "sourceKind": "official_university_page",
+      "url": "https://petrsu.ru/page/aggr/abit",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:05:27.543299Z",
+      "redirects": [
+        {
+          "url": "https://www.petrsu.ru/page/aggr/abit",
+          "httpStatus": "301"
+        },
+        {
+          "url": "https://petrsu.ru/page/aggr/abit",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html; charset=UTF-8",
+      "body": "russia-199/babeeffae3a18151.html",
+      "sourceSha256": "1613961f0d74fd757884a7e278c0a638082e65b4cc97b8530af9d1d531333c08",
+      "bytes": 317014
+    },
+    {
+      "universitySlug": "russia-83",
+      "requestedUrl": "https://www.isu.ru/ru/contacts/contacts/",
+      "sourceKind": "official_university_page",
+      "url": "https://isu.ru/ru/contacts/contacts/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:05:05.537468Z",
+      "redirects": [
+        {
+          "url": "https://www.isu.ru/ru/contacts/contacts/",
+          "httpStatus": "301"
+        },
+        {
+          "url": "https://isu.ru/ru/contacts/contacts/",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html;charset=UTF-8",
+      "body": "russia-83/e721007b62ddcdf2.html",
+      "sourceSha256": "9c9f90de59444d8f1495d6ff9ed911d9c98c1685313956b50cb5757110ff9003",
+      "bytes": 82962
+    },
+    {
+      "universitySlug": "russia-341",
+      "requestedUrl": "https://ystu.ru/contacts/",
+      "sourceKind": "official_university_page",
+      "url": "https://ystu.ru/contacts/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:05:04.155487Z",
+      "redirects": [
+        {
+          "url": "https://ystu.ru/contacts/",
+          "httpStatus": "200"
+        }
+      ],
+      "contentType": "text/html; charset=UTF-8",
+      "body": "russia-341/fb64007e5c81b73d.html",
+      "sourceSha256": "453914cd0f8c1e068093a6c7236654483a37a3908187e034687816fc8a981ce4",
+      "bytes": 94057
+    }
+  ],
+  "review": [
+    {
+      "universitySlug": "russia-1638",
+      "field": "fullName",
+      "sourceUrl": "https://omgau.ru/sveden/common/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[2]/div[1]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "field": "shortName",
+      "sourceUrl": "https://omgau.ru/sveden/common/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[2]/div[3]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "field": "regDate",
+      "sourceUrl": "https://omgau.ru/sveden/common/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[3]/span"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "field": "telephone",
+      "sourceUrl": "https://omgau.ru/sveden/common/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[8]/div/p[1]/span"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "field": "email",
+      "sourceUrl": "https://omgau.ru/sveden/common/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[8]/div/p[3]/span"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "field": "address",
+      "sourceUrl": "https://www.omgau.ru/o-universitete/kontakti/",
+      "xpath": "/html/body/div[3]/div[2]/div[2]/div[1]/table/tbody/tr[1]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "field": "admissionsPhone",
+      "sourceUrl": "https://www.omgau.ru/o-universitete/kontakti/",
+      "xpath": "/html/body/div[3]/div[2]/div[2]/div[1]/table/tbody/tr[3]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "field": "admissionsUrl",
+      "sourceUrl": "https://www.omgau.ru/abiturientu/",
+      "xpath": "/html/head/title"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "field": "hostelInfo",
+      "sourceUrl": "https://www.omgau.ru/campus/obshchezhitiya/pravila-prozhivaniya/",
+      "xpath": "/html/body/div[3]/div[2]/div[2]/ol[1]/li[1]"
+    },
+    {
+      "universitySlug": "russia-199",
+      "field": "admissionsUrl",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/head/title"
+    },
+    {
+      "universitySlug": "russia-199",
+      "field": "admissionsPhone",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[8]/div/p[1]"
+    },
+    {
+      "universitySlug": "russia-199",
+      "field": "admissionsEmail",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[8]/div/p[1]/a[1]"
+    },
+    {
+      "universitySlug": "russia-199",
+      "field": "address",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/footer/div[1]/div/div/div[4]/address"
+    },
+    {
+      "universitySlug": "russia-199",
+      "field": "email",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/footer/div[1]/div/div/div[4]/address/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "field": "telephone",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/footer/div[1]/div/div/div[4]/p[5]"
+    },
+    {
+      "universitySlug": "russia-83",
+      "field": "admissionsPhone",
+      "sourceUrl": "https://isu.ru/ru/contacts/contacts/",
+      "xpath": "/html/body/div[1]/div[2]/div[3]/article/div/div/q-layout/div/div/div[1]/div/p[6]"
+    },
+    {
+      "universitySlug": "russia-83",
+      "field": "admissionsEmail",
+      "sourceUrl": "https://isu.ru/ru/contacts/contacts/",
+      "xpath": "/html/body/div[1]/div[2]/div[3]/article/div/div/q-layout/div/div/div[1]/div/p[6]/a[2]"
+    },
+    {
+      "universitySlug": "russia-341",
+      "field": "admissionsPhone",
+      "sourceUrl": "https://ystu.ru/contacts/",
+      "xpath": "/html/body/section[2]/section[3]/div/article[1]/div/a[2]"
+    },
+    {
+      "universitySlug": "russia-341",
+      "field": "admissionsEmail",
+      "sourceUrl": "https://ystu.ru/contacts/",
+      "xpath": "/html/body/section[2]/section[3]/div/article[1]/div/a[3]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "faculty": "Агротехнологический факультет ФГБОУ ВО Омский ГАУ",
+      "sourceUrl": "https://omgau.ru/sveden/struct/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[4]/div/table/tbody/tr[1]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "faculty": "Факультет агрохимии, почвоведения, экологии, природообустройства и водопользования ФГБОУ ВО Омский ГАУ",
+      "sourceUrl": "https://omgau.ru/sveden/struct/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[4]/div/table/tbody/tr[2]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "faculty": "Землеустроительный факультет ФГБОУ ВО Омский ГАУ",
+      "sourceUrl": "https://omgau.ru/sveden/struct/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[4]/div/table/tbody/tr[3]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "faculty": "Факультет технического сервиса в АПК ФГБОУ ВО Омский ГАУ",
+      "sourceUrl": "https://omgau.ru/sveden/struct/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[4]/div/table/tbody/tr[4]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "faculty": "Институт ветеринарной медицины и биотехнологии (ИВМиБ) ФГБОУ ВО Омский ГАУ",
+      "sourceUrl": "https://omgau.ru/sveden/struct/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[4]/div/table/tbody/tr[5]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "faculty": "Факультет ветеринарной медицины ИВМиБ ФГБОУ ВО Омский ГАУ",
+      "sourceUrl": "https://omgau.ru/sveden/struct/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[4]/div/table/tbody/tr[6]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "faculty": "Факультет зоотехнии, товароведения и стандартизации ИВМиБ ФГБОУ ВО Омский ГАУ",
+      "sourceUrl": "https://omgau.ru/sveden/struct/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[4]/div/table/tbody/tr[7]/td[2]"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "faculty": "Экономический факультет ФГБОУ ВО Омский ГАУ",
+      "sourceUrl": "https://omgau.ru/sveden/struct/",
+      "xpath": "/html/body/div/section/div/div/div[2]/div[4]/div/table/tbody/tr[8]/td[2]"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт биологии, экологии и агротехнологий",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[1]/ul/li[1]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт иностранных языков",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[1]/ul/li[2]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт математики и информационных технологий",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[1]/ul/li[3]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт филологии",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[1]/ul/li[4]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт физической культуры, спорта и туризма",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[1]/ul/li[5]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Физико-технический институт",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[1]/ul/li[6]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт истории, политических и социальных наук",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[2]/ul/li[1]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт лесных, горных и строительных наук",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[2]/ul/li[2]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт педагогики и психологии",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[2]/ul/li[3]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Институт экономики и права",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[2]/ul/li[4]/a"
+    },
+    {
+      "universitySlug": "russia-199",
+      "faculty": "Медицинский институт имени профессора А.П. Зильбера",
+      "sourceUrl": "https://petrsu.ru/page/aggr/abit",
+      "xpath": "/html/body/div[10]/div/div/div[2]/ul/li[5]/a"
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-ccf6e3831e9ef412",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[1]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-d5fbe997405bc168",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[2]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-170abe68e1807f3c",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[3]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-54ffeacb30f9c5e9",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[4]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-8bc0d378ad54a0fa",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[5]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-4c0c6cbf0fdf042e",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[6]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-df66da329be8ba4a",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[7]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-816ddce0d9ab4d9e",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[8]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-308531430e4d0469",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[9]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-f8288318f4b3b763",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[10]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-d47f9d1658964e9e",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[11]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-772411f0e8525b2e",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[12]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-69a53703009b5dff",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[13]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-b6fe0d2ebc60103f",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[14]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-f8f2642bc465dcae",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[15]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-e5c022fa3a2be72c",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[16]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-d92c1c5742ff494f",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[17]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-d17ee30503e57322",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[18]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-7ff8d1fde08db7e7",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[19]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-f2883c6e55a4484f",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[20]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-dc7aa6b655875959",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[21]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-872430afda3a18ff",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[22]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-71ae415334c18222",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[23]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-a9639802fe46d929",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[24]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-b579d7c8a4753565",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[25]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-2193f5f4b57d6728",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[26]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-91454ce20798558a",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[29]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-e4c7c07d739d7802",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[30]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-2215c8ec6c3bb2e5",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[31]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-3da08e51ba81ccbc",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[32]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-8c269b91d5703a3a",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[33]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-7449361c35c4e752",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[34]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-80d8c4a917bfb05a",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[35]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-3f3dc986a102541b",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[36]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-7e7f51424fba1007",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[37]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-9fa87cf21a643110",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[38]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-0cbf9834947817c4",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[39]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-079cdc9cfa03b847",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[41]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-d2c096502d1016fa",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[42]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-5bfb4db6ac247427",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[43]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-a3b1207689e8b0c1",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[44]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-7e6f24dd15c5c1c3",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[46]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-a3ec8d11e8e3d5b5",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[48]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-a6aee9a87f181658",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[49]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-62959f2fd4ee70bc",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[50]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-7f9a314585f1176e",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[53]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-ccbddb7d9723a03f",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[54]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-1c1bf2f342ea943b",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[57]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-64005f08685fdafb",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[58]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-dcfa6783d4600fe8",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[59]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-e6f20bf6423cd56d",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[60]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-cf55d8527d3a3755",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[61]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-0a137308877eb624",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[62]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-3a09a364e3cc300c",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[63]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-24c10146603d7633",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[64]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-f4b7858c88a12216",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[65]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-ed89264537a96eba",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[66]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-396899e74b3e5885",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[68]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-b9c59b6b3c7d00f1",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[69]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-0d2457b382559c7d",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[70]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-e4171c7d6e4f59c8",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[71]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-c8fcfbaa3a737a32",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[72]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-ee5da9d5377fcc8c",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[73]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-a4da855f67ce5dd1",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[74]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-640094be94827214",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[75]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-a81a816e538876ce",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[76]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-fe9e893832af24a2",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[77]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-b328a7a6fd35bff4",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[78]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-178c1d0ab48d7924",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[79]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-7354dd204826c437",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[80]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-8b43baf5b63957aa",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[81]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-5b51b20e1490d6da",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[82]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-8485aa61ba65cc5c",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[83]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-5af5418b93334bf5",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[84]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-7b973edd61f96cd7",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[85]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-3996424fca764ba6",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[86]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-799357aa4964f8a1",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[87]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-91f1183dc5d54946",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[88]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-92aca21affe54c9a",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[89]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-3981ae17408904b0",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[90]"
+      ]
+    },
+    {
+      "universitySlug": "russia-1638",
+      "offeringId": "russia-1638-official-81c2c5d38ab5eba3",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "xpaths": [
+        "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[91]"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-b579d7c8a4753565",
+      "publishedValue": "4",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[25]",
+      "literalCells": {
+        "eduCode": "21.03.02",
+        "eduName": "Землеустройство и кадастры",
+        "eduProf": "Землеустройство и кадастры",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-2193f5f4b57d6728",
+      "publishedValue": "5",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[26]",
+      "literalCells": {
+        "eduCode": "21.03.02",
+        "eduName": "Землеустройство и кадастры",
+        "eduProf": "Землеустройство и кадастры",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Заочная",
+        "learningTerm": "5"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "21.03.02",
+      "title": "Землеустройство и кадастры",
+      "profile": "Землеустройство и кадастры. Профиль Землеустройство и кадастры. Тарский филиал 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[27]",
+      "literalCells": {
+        "eduCode": "21.03.02",
+        "eduName": "Землеустройство и кадастры",
+        "eduProf": "Землеустройство и кадастры. Профиль Землеустройство и кадастры. Тарский филиал 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4 года"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "21.03.02",
+      "title": "Землеустройство и кадастры",
+      "profile": "Землеустройство и кадастры. Профиль Землеустройство и кадастры. Тарский филиал 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[28]",
+      "literalCells": {
+        "eduCode": "21.03.02",
+        "eduName": "Землеустройство и кадастры",
+        "eduProf": "Землеустройство и кадастры. Профиль Землеустройство и кадастры. Тарский филиал 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Заочная",
+        "learningTerm": "5 лет"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-91454ce20798558a",
+      "publishedValue": "4",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[29]",
+      "literalCells": {
+        "eduCode": "21.03.03",
+        "eduName": "Геодезия и дистанционное зондирование",
+        "eduProf": "Геодезия и дистанционное зондирование",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-e4c7c07d739d7802",
+      "publishedValue": "5",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[30]",
+      "literalCells": {
+        "eduCode": "21.03.03",
+        "eduName": "Геодезия и дистанционное зондирование",
+        "eduProf": "Геодезия и дистанционное зондирование",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Заочная",
+        "learningTerm": "5"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-8c269b91d5703a3a",
+      "publishedValue": "4",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[33]",
+      "literalCells": {
+        "eduCode": "27.03.01",
+        "eduName": "Стандартизация и метрология",
+        "eduProf": "Техническое регулирование и стандартизация в пищевой промышленности",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-7449361c35c4e752",
+      "publishedValue": "5",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[34]",
+      "literalCells": {
+        "eduCode": "27.03.01",
+        "eduName": "Стандартизация и метрология",
+        "eduProf": "Техническое регулирование и стандартизация в пищевой промышленности",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Заочная",
+        "learningTerm": "5"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "35.03.04",
+      "title": "Агрономия",
+      "profile": "Агрономия. Профиль Полеводство. Тарский филиал. 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[40]",
+      "literalCells": {
+        "eduCode": "35.03.04",
+        "eduName": "Агрономия",
+        "eduProf": "Агрономия. Профиль Полеводство. Тарский филиал. 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4 года"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "35.03.04",
+      "title": "Агрономия",
+      "profile": "Агрономия. Профиль Агробизнес. Тарский филиал. 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[45]",
+      "literalCells": {
+        "eduCode": "35.03.04",
+        "eduName": "Агрономия",
+        "eduProf": "Агрономия. Профиль Агробизнес. Тарский филиал. 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4 года"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "35.03.04",
+      "title": "Агрономия",
+      "profile": "Агрономия. Профиль Агробизнес (2026). Тарский филиал. 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[47]",
+      "literalCells": {
+        "eduCode": "35.03.04",
+        "eduName": "Агрономия",
+        "eduProf": "Агрономия. Профиль Агробизнес (2026). Тарский филиал. 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4 года"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-62959f2fd4ee70bc",
+      "publishedValue": "4",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[50]",
+      "literalCells": {
+        "eduCode": "35.03.06",
+        "eduName": "Агроинженерия",
+        "eduProf": "Цифровые системы в АПК",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "35.03.06",
+      "title": "Агроинженерия",
+      "profile": "Агроинженерия. Профиль Технический сервис в АПК. Тарский филиал 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[51]",
+      "literalCells": {
+        "eduCode": "35.03.06",
+        "eduName": "Агроинженерия",
+        "eduProf": "Агроинженерия. Профиль Технический сервис в АПК. Тарский филиал 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4 года"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "35.03.06",
+      "title": "Агроинженерия",
+      "profile": "Агроинженерия. Профиль Технический сервис в АПК. Тарский филиал 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[52]",
+      "literalCells": {
+        "eduCode": "35.03.06",
+        "eduName": "Агроинженерия",
+        "eduProf": "Агроинженерия. Профиль Технический сервис в АПК. Тарский филиал 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Заочная",
+        "learningTerm": "5 лет"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "35.03.06",
+      "title": "Агроинженерия",
+      "profile": "Агроинженерия. Профиль Технический сервис в АПК (2026). Тарский филиал 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[55]",
+      "literalCells": {
+        "eduCode": "35.03.06",
+        "eduName": "Агроинженерия",
+        "eduProf": "Агроинженерия. Профиль Технический сервис в АПК (2026). Тарский филиал 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4 года"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "35.03.06",
+      "title": "Агроинженерия",
+      "profile": "Агроинженерия. Профиль Технический сервис в АПК (2026). Тарский филиал 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[56]",
+      "literalCells": {
+        "eduCode": "35.03.06",
+        "eduName": "Агроинженерия",
+        "eduProf": "Агроинженерия. Профиль Технический сервис в АПК (2026). Тарский филиал 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Заочная",
+        "learningTerm": "5 лет"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-3a09a364e3cc300c",
+      "publishedValue": "4",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[63]",
+      "literalCells": {
+        "eduCode": "36.03.02",
+        "eduName": "Зоотехния",
+        "eduProf": "IT-технологии в животноводстве",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-24c10146603d7633",
+      "publishedValue": "5",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[64]",
+      "literalCells": {
+        "eduCode": "36.03.02",
+        "eduName": "Зоотехния",
+        "eduProf": "IT-технологии в животноводстве",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Заочная",
+        "learningTerm": "5"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_other_campus_excluded",
+      "code": "38.03.01",
+      "title": "Экономика",
+      "profile": "Экономика. Профиль Бухгалтерский учет, анализ и аудит. Тарский филиал 3++",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[67]",
+      "literalCells": {
+        "eduCode": "38.03.01",
+        "eduName": "Экономика",
+        "eduProf": "Экономика. Профиль Бухгалтерский учет, анализ и аудит. Тарский филиал 3++",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4 года 6 месяцев"
+      }
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-8485aa61ba65cc5c",
+      "publishedValue": "4",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[83]",
+      "literalCells": {
+        "eduCode": "38.03.02",
+        "eduName": "Менеджмент",
+        "eduProf": "Экономика и управление организацией",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очная",
+        "learningTerm": "4"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-5af5418b93334bf5",
+      "publishedValue": "4,6",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[84]",
+      "literalCells": {
+        "eduCode": "38.03.02",
+        "eduName": "Менеджмент",
+        "eduProf": "Экономика и управление организацией",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Очно-заочная",
+        "learningTerm": "4,6"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "offering_duration_without_units",
+      "offeringId": "russia-1638-official-7b973edd61f96cd7",
+      "publishedValue": "5",
+      "publishedColumn": "Нормативный срок обучения",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы бакалавриата",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[6]/table/tbody/tr[85]",
+      "literalCells": {
+        "eduCode": "38.03.02",
+        "eduName": "Менеджмент",
+        "eduProf": "Экономика и управление организацией",
+        "eduLevel": "Высшее образование — бакалавриат",
+        "eduForm": "Заочная",
+        "learningTerm": "5"
+      },
+      "note": "Срок не выведен из числа без единиц или из неоднозначной связи формы и колонки; duration=null."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "source_level_conflict",
+      "code": "21.05.01",
+      "title": "Прикладная геодезия",
+      "profile": "Инженерная геодезия",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы специалитета",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[7]/table/tbody/tr[1]",
+      "literalCells": {
+        "eduCode": "21.05.01",
+        "eduName": "Прикладная геодезия",
+        "eduProf": "Инженерная геодезия",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduForm": "Очная",
+        "learningTerm": "5 лет"
+      },
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "source_level_conflict",
+      "code": "21.05.01",
+      "title": "Прикладная геодезия",
+      "profile": "Инженерная геодезия",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Заочная",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы специалитета",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[7]/table/tbody/tr[2]",
+      "literalCells": {
+        "eduCode": "21.05.01",
+        "eduName": "Прикладная геодезия",
+        "eduProf": "Инженерная геодезия",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduForm": "Заочная",
+        "learningTerm": "6 лет"
+      },
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "source_level_conflict",
+      "code": "36.05.01",
+      "title": "Ветеринария",
+      "profile": "Ветеринарная медицина",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы специалитета",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[7]/table/tbody/tr[3]",
+      "literalCells": {
+        "eduCode": "36.05.01",
+        "eduName": "Ветеринария",
+        "eduProf": "Ветеринарная медицина",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduForm": "Очная",
+        "learningTerm": "5 лет"
+      },
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "source_level_conflict",
+      "code": "36.05.01",
+      "title": "Ветеринария",
+      "profile": "Ветеринарная медицина",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Заочная",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы специалитета",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[7]/table/tbody/tr[4]",
+      "literalCells": {
+        "eduCode": "36.05.01",
+        "eduName": "Ветеринария",
+        "eduProf": "Ветеринарная медицина",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduForm": "Заочная",
+        "learningTerm": "6 лет"
+      },
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "source_level_conflict",
+      "code": "36.05.01",
+      "title": "Ветеринария",
+      "profile": "Ветеринарная медицина с ДК \"Ветеринарный фармацевт\"",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы специалитета",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[7]/table/tbody/tr[5]",
+      "literalCells": {
+        "eduCode": "36.05.01",
+        "eduName": "Ветеринария",
+        "eduProf": "Ветеринарная медицина с ДК \"Ветеринарный фармацевт\"",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduForm": "Очная",
+        "learningTerm": "5 лет"
+      },
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "source_level_conflict",
+      "code": "36.05.01",
+      "title": "Ветеринария",
+      "profile": "Ветеринарная медицина с ДК \"Ветеринарный фармацевт\"",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Заочная",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы специалитета",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[7]/table/tbody/tr[6]",
+      "literalCells": {
+        "eduCode": "36.05.01",
+        "eduName": "Ветеринария",
+        "eduProf": "Ветеринарная медицина с ДК \"Ветеринарный фармацевт\"",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduForm": "Заочная",
+        "learningTerm": "6 лет"
+      },
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "source_level_conflict",
+      "code": "36.05.01",
+      "title": "Ветеринария",
+      "profile": "Общеклиническая ветеринария (по отраслям АПК) с ДК \"Ветеринарный фармацевт\"",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Очная",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы специалитета",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[7]/table/tbody/tr[7]",
+      "literalCells": {
+        "eduCode": "36.05.01",
+        "eduName": "Ветеринария",
+        "eduProf": "Общеклиническая ветеринария (по отраслям АПК) с ДК \"Ветеринарный фармацевт\"",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduForm": "Очная",
+        "learningTerm": "5 лет"
+      },
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    },
+    {
+      "universitySlug": "russia-1638",
+      "kind": "source_level_conflict",
+      "code": "36.05.01",
+      "title": "Ветеринария",
+      "profile": "Общеклиническая ветеринария (по отраслям АПК) с ДК \"Ветеринарный фармацевт\"",
+      "level": "Высшее образование — специалитет, магистратура",
+      "forms": "Заочная",
+      "sourceUrl": "https://omgau.ru/sveden/education/eduaccred/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-09T15:05:03.439073Z",
+      "sourceSha256": "b05b5f52050c9997c89a940b3a22f5ae3be6df88ee21379f0af54da9da34d3d0",
+      "section": "Программы специалитета",
+      "xpath": "/html/body/div/section/div/div/div[1]/div[7]/table/tbody/tr[8]",
+      "literalCells": {
+        "eduCode": "36.05.01",
+        "eduName": "Ветеринария",
+        "eduProf": "Общеклиническая ветеринария (по отраслям АПК) с ДК \"Ветеринарный фармацевт\"",
+        "eduLevel": "Высшее образование — специалитет, магистратура",
+        "eduForm": "Заочная",
+        "learningTerm": "6 лет"
+      },
+      "note": "Неоднозначный или противоречащий коду уровень не разрешается по самому коду; строка исключена."
+    }
+  ],
+  "limitations": [
+    "Личный адрес сотрудника приёмной комиссии ОмГАУ и адрес Минобрнауки исключены. Адрес комиссии ОмГАУ остаётся неизвестным.",
+    "СПО, ДПО, Тарский филиал и аспирантура ОмГАУ исключены. Опубликованный объединённый уровень «специалитет, магистратура» требует отдельного уточнения.",
+    "У ПетрГУ взят опубликованный список образовательных институтов для поступающих; подготовительное отделение исключено. Даты из смешанных блоков разных приёмных кампаний не использованы."
+  ]
+}

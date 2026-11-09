@@ -2,6 +2,16 @@ import Link from "next/link";
 import { HeroDataViz } from "@/components/hero-data-viz";
 import { getCatalog } from "@/lib/catalog/server";
 import { formatPrice } from "@/lib/catalog/format";
+import styles from "./home.module.css";
+
+const comparisonLabels = [
+  "Форма",
+  "Бюджет",
+  "Проходной",
+  "Стоимость",
+  "Статус",
+];
+const numberFormat = new Intl.NumberFormat("ru-RU");
 
 export default async function HomePage() {
   const { programs, universities } = await getCatalog();
@@ -27,16 +37,17 @@ export default async function HomePage() {
     .slice(0, 3);
 
   return (
-    <>
-      <section className="new-hero">
-        <div className="container hero-layout">
-          <div className="hero-copy">
+    <div className={styles.home}>
+      <section className={styles.hero}>
+        <div className={`container ${styles.heroLayout}`}>
+          <div className={styles.heroCopy}>
             <h1>Поступление начинается с ясного выбора</h1>
             <p>
-              Собрали программы московских вузов, требования и официальные
-              источники — чтобы вы сравнивали варианты без десятков вкладок.
+              Собрали справочник вузов России и проверенную выборку программ
+              Москвы — чтобы вы сравнивали варианты и открывали официальные
+              источники без десятков вкладок.
             </p>
-            <div className="hero-actions">
+            <div className={styles.actions}>
               <Link href="/programs" className="button button-primary">
                 Найти свою программу
               </Link>
@@ -44,28 +55,12 @@ export default async function HomePage() {
                 Подобрать по ЕГЭ
               </Link>
             </div>
-            <dl className="hero-stats">
-              <div>
-                <dt>Вузы Москвы</dt>
-                <dd>{universities.length}</dd>
-              </div>
-              <div>
-                <dt>Программы</dt>
-                <dd>{programs.length}</dd>
-              </div>
-              <div>
-                <dt>Бюджетные места</dt>
-                <dd>{budgetPlaces}</dd>
-              </div>
-            </dl>
-            <p className="hero-footnote">
-              Только опубликованные значения текущей проверенной выборки.
-              Неподтверждённые данные не считаются.
-            </p>
           </div>
           <HeroDataViz
             points={chartPrograms.map((program) => ({
+              id: program.id,
               label: program.universityShort,
+              title: program.title,
               value: program.budgetPlaces ?? 0,
             }))}
             subjects={
@@ -75,65 +70,104 @@ export default async function HomePage() {
             }
           />
         </div>
+        <div className={`container ${styles.stats}`}>
+          <dl>
+            <div>
+              <dt>Вузы и филиалы</dt>
+              <dd>{numberFormat.format(universities.length)}</dd>
+            </div>
+            <div>
+              <dt>Программы в подборе</dt>
+              <dd>{numberFormat.format(programs.length)}</dd>
+            </div>
+            <div>
+              <dt>Бюджетные места по опубликованным данным</dt>
+              <dd>
+                {chartPrograms.length ? numberFormat.format(budgetPlaces) : "—"}
+              </dd>
+            </div>
+          </dl>
+          <Link href="/universities" className={styles.directoryLink}>
+            Открыть каталог вузов <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
       </section>
 
-      <section className="comparison-preview">
+      <section className={styles.comparison}>
         <div className="container">
-          <div className="section-intro">
+          <div className={styles.sectionIntro}>
             <div>
               <h2>Спокойно сравните всё важное</h2>
               <p>
-                В одной строке — экзамены, места, исторический ориентир,
-                стоимость и точный источник.
+                Посмотрите форму обучения, бюджетные места, прошлый проходной
+                балл и стоимость. Откройте программу, чтобы сверить источник.
               </p>
             </div>
             <Link href="/compare" className="text-link">
-              Открыть сравнение <span aria-hidden="true">→</span>
+              Открыть сравнение
             </Link>
           </div>
           <div
-            className="open-table"
+            className={styles.table}
             role="region"
             aria-label="Пример сравнения программ"
-            tabIndex={0}
           >
-            <div className="open-table-row table-head">
+            <div
+              className={`${styles.comparisonRow} ${styles.tableHead}`}
+              aria-hidden="true"
+            >
               <span>Вуз и программа</span>
-              <span>Форма</span>
-              <span>Бюджет</span>
-              <span>Проходной</span>
-              <span>Стоимость</span>
-              <span>Статус</span>
+              {comparisonLabels.map((label) => (
+                <span key={label}>{label}</span>
+              ))}
             </div>
             {comparable.map((program) => (
               <Link
-                className="open-table-row"
+                className={styles.comparisonRow}
                 href={`/programs/${program.slug}`}
                 key={program.id}
               >
-                <span>
+                <span className={styles.programTitle}>
                   <b>{program.title}</b>
                   <small>
-                    {program.universityShort} · {program.code}
+                    {program.universityShort}, {program.code}
                   </small>
                 </span>
-                <span>{program.form}</span>
-                <span>{program.budgetPlaces ?? "—"}</span>
-                <span>{program.passingScore ?? "—"}</span>
-                <span>{formatPrice(program.tuition)}</span>
-                <span className={`quality-dot ${program.trust.status}`}>
-                  {program.trust.status === "verified"
-                    ? "Проверено"
-                    : "На проверке"}
-                </span>
+                {[
+                  program.form,
+                  program.budgetPlaces ?? "—",
+                  program.passingScore ?? "—",
+                  formatPrice(program.tuition),
+                  <span
+                    key="quality"
+                    className={`quality-dot ${program.trust.status}`}
+                  >
+                    {program.trust.status === "verified"
+                      ? "Проверено"
+                      : "На проверке"}
+                  </span>,
+                ].map((value, index) => (
+                  <span
+                    key={comparisonLabels[index]}
+                    className={styles.comparisonValue}
+                  >
+                    <span className={styles.valueLabel}>
+                      {comparisonLabels[index]}
+                    </span>
+                    <span>{value}</span>
+                  </span>
+                ))}
               </Link>
             ))}
+            {comparable.length === 0 && (
+              <p>Данные для примера пока уточняются.</p>
+            )}
           </div>
         </div>
       </section>
 
-      <section className="exam-section" id="exam-match">
-        <div className="container exam-layout">
+      <section className={styles.exam} id="exam-match">
+        <div className={`container ${styles.examLayout}`}>
           <div>
             <h2>Начните с того, что уже знаете</h2>
             <p>
@@ -141,27 +175,27 @@ export default async function HomePage() {
               набор испытаний совпадает, и отдельно отметим неопубликованные
               условия.
             </p>
-            <Link href="/programs" className="button button-primary">
+            <Link href="/match" className={`button ${styles.examButton}`}>
               Подобрать варианты
             </Link>
           </div>
           <ol>
             <li>
-              <b>01</b>
+              <b aria-hidden="true">1</b>
               <span>
                 <strong>Добавьте предметы</strong>
                 <small>Обязательные и возможные альтернативы</small>
               </span>
             </li>
             <li>
-              <b>02</b>
+              <b aria-hidden="true">2</b>
               <span>
                 <strong>Сравните условия</strong>
                 <small>Места, стоимость и проходные баллы по годам</small>
               </span>
             </li>
             <li>
-              <b>03</b>
+              <b aria-hidden="true">3</b>
               <span>
                 <strong>Сохраните маршрут</strong>
                 <small>Избранное, приоритеты и дедлайны</small>
@@ -171,8 +205,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="source-section">
-        <div className="container source-layout">
+      <section className={styles.sources}>
+        <div className={`container ${styles.sourceLayout}`}>
           <div>
             <h2>Каждое важное число можно проверить</h2>
             <p>
@@ -181,18 +215,18 @@ export default async function HomePage() {
               честно показывает «нет данных».
             </p>
           </div>
-          <div className="source-flow">
-            <span>Официальный источник</span>
-            <i>→</i>
-            <span>Проверка и история</span>
-            <i>→</i>
-            <span>Публикация</span>
+          <div>
+            <ol className={styles.sourceFlow}>
+              <li>Находим официальный документ</li>
+              <li>Сверяем значение и год</li>
+              <li>Публикуем со ссылкой</li>
+            </ol>
+            <Link href="/methodology" className="text-link">
+              Как устроены данные
+            </Link>
           </div>
-          <Link href="/methodology" className="text-link">
-            Как устроены данные →
-          </Link>
         </div>
       </section>
-    </>
+    </div>
   );
 }

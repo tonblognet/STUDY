@@ -1,0 +1,439 @@
+.profile:global(.university-profile) {
+  --profile-paper: #f7f6f1;
+  --profile-ink: #151b36;
+  --profile-muted: #525a70;
+  --profile-accent: #2548ed;
+  --profile-line: #d8dbe4;
+  --profile-lilac: #eeefff;
+  --profile-sticky-offset: 76px;
+  --profile-scroll-offset: 145px;
+  background: var(--profile-paper);
+  color: var(--profile-ink);
+}
+
+.profile :global([id]),
+.profile :global(#faculties),
+.profile :global(input),
+.profile :global(:focus-visible) {
+  scroll-margin-block-start: var(--profile-scroll-offset);
+}
+
+.profile :global(.breadcrumbs) {
+  flex-wrap: wrap;
+  align-items: baseline;
+  color: var(--profile-muted);
+  overflow-wrap: anywhere;
+}
+
+.profile :global(.breadcrumbs) a {
+  color: var(--profile-accent);
+  font-weight: 750;
+}
+
+.profile :global(.university-profile-hero) {
+  grid-template-columns: minmax(0, 1fr) minmax(13rem, 24%);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: stretch;
+  padding: clamp(1.5rem, 4.5vw, 4.5rem);
+  border-radius: 1.5rem;
+  background: var(--profile-ink);
+  color: #fff;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.identity :global(.official-university-logo.hero) {
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  border: 1px solid #d8dcfb;
+  border-radius: 1rem;
+  box-shadow: none;
+}
+
+.identity :global(.official-university-logo.hero) b {
+  font-size: 1.6rem;
+}
+
+.identity :global(.university-profile-mark) {
+  gap: 0.3rem;
+  overflow-wrap: anywhere;
+}
+
+.identityMetadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.75rem;
+  color: #d0d9ff;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.identity a,
+.identity :global(.university-muted) {
+  color: #d8dcf0;
+  font-size: 0.75rem;
+}
+
+.identity a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.profile :global(.university-profile-copy) h1 {
+  max-width: 24ch;
+  font-family: var(--font-literata), Georgia, serif;
+  font-size: clamp(2.25rem, 4.1vw, 3.85rem);
+  font-weight: 650;
+  line-height: 1.07;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.profile :global(.university-profile-copy) > p {
+  max-width: 62ch;
+  color: #d8dcf0;
+  font-family: inherit;
+  font-size: clamp(0.9375rem, 1.35vw, 1.0625rem);
+  line-height: 1.65;
+}
+
+.profile :global(.university-profile-copy .hero-actions) {
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.profile :global(.university-profile-copy .button-primary) {
+  border-color: #e6eaff;
+  background: #e6eaff;
+  color: #17224f;
+}
+
+.profile :global(.university-profile-copy .button-primary:hover) {
+  border-color: #fff;
+  background: #fff;
+}
+
+.profile :global(.university-profile-copy .button-secondary) {
+  border-color: #a7b1df;
+  background: transparent;
+  color: #f4f6ff;
+}
+
+.profile :global(.university-profile-copy .button-secondary:hover) {
+  background: #353f6b;
+}
+
+.profile :global(.university-profile-hero :focus-visible) {
+  outline-color: #d0d9ff;
+}
+
+.profile :global(.university-facts-rail) {
+  display: flex;
+  flex-direction: column;
+  grid-column: auto;
+  gap: 0;
+  padding: 0.5rem 0 0 1.35rem;
+  border: 0;
+  border-inline-start: 1px solid #58658d;
+}
+
+.railTitle {
+  margin-bottom: 0.75rem;
+  color: #d0d9ff;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.profile :global(.university-facts-rail) > div {
+  display: grid;
+  min-height: 0;
+  gap: 0.3rem;
+  padding: 0.8rem 0;
+  border: 0;
+  border-top: 1px solid #58658d;
+  overflow-wrap: anywhere;
+}
+
+.profile :global(.university-facts-rail) span {
+  color: #d8dcf0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.profile :global(.university-facts-rail) strong {
+  color: #fff;
+  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+  line-height: 1.2;
+}
+
+.profile :global(.university-profile-nav) {
+  top: var(--profile-sticky-offset);
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 0.9rem;
+  padding: 0.2rem 0;
+  border-color: var(--profile-line);
+  background: var(--profile-paper);
+}
+
+.indexLabel {
+  flex: 0 0 auto;
+  padding-inline-end: 1rem;
+  border-inline-end: 1px solid var(--profile-line);
+  color: var(--profile-muted);
+  font-size: 0.6875rem;
+  font-weight: 800;
+}
+
+.profile :global(.university-profile-nav) a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: var(--profile-ink);
+  font-size: 0.8125rem;
+}
+
+.profile :global(.university-profile-nav) a:hover {
+  color: var(--profile-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.profile :global(.university-profile-nav) a:focus-visible {
+  outline-offset: -3px;
+}
+
+.profile :global(.university-overview-grid) {
+  grid-template-columns: 1.25fr 1fr minmax(12rem, 0.85fr);
+  gap: clamp(1.25rem, 4vw, 3.5rem);
+  align-items: start;
+  padding-block: clamp(2rem, 5.5vw, 5rem);
+  border-color: var(--profile-line);
+}
+
+.profile :global(.university-overview-grid .editorial-lead) {
+  color: var(--profile-muted);
+}
+
+.profile :global(.university-direction-list) {
+  padding-top: 0.25rem;
+  color: var(--profile-ink);
+  overflow-wrap: anywhere;
+}
+
+.profile :global(.university-direction-list) p {
+  margin-top: 0.55rem;
+  color: var(--profile-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.profile :global(.university-direction-list) > strong,
+.profile :global(.university-source-card) span {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.profile :global(.university-direction-list) span {
+  padding: 0.35rem 0.6rem;
+  border-color: var(--profile-line);
+  background: #fff;
+  font-size: 0.78rem;
+}
+
+.profile :global(.university-source-card) {
+  grid-column: auto;
+  padding: 1.25rem;
+  border-inline-start: 3px solid var(--profile-accent);
+  background: var(--profile-lilac);
+}
+
+.profile :global(.university-source-card) :is(p, a) {
+  font-size: 0.8125rem;
+}
+
+.profile :global(.university-source-card) p {
+  margin-block: 0.5rem 0.85rem;
+  color: var(--profile-muted);
+}
+
+.profile :global(.university-directory-provenance) {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) 2fr;
+  gap: 1.25rem 2rem;
+  margin: 0;
+  padding: clamp(1.5rem, 3.5vw, 3rem) 0;
+  border: 0;
+  border-bottom: 1px solid var(--profile-line);
+  border-radius: 0;
+}
+
+.profile :global(.university-directory-provenance) h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.provenanceCopy p:first-child {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.provenanceCopy p:not(:first-child) {
+  color: var(--profile-muted);
+}
+
+.provenanceCopy a {
+  color: var(--profile-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.profile :global(.university-faculties) {
+  margin-block: 2.5rem;
+}
+
+.profile :global(.university-faculties > .university-faculty-list),
+.profile :global(.university-details-grid) {
+  gap: 0 clamp(1rem, 4vw, 3rem);
+  border-top: 1px solid var(--profile-line);
+}
+
+.profile :global(.university-faculty-list > li),
+.profile :global(.university-details-grid > div) {
+  padding: 1rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--profile-line);
+  border-radius: 0;
+}
+
+.profile :global(.university-details-grid) dd:last-child {
+  margin-bottom: 0;
+  color: var(--profile-muted);
+  font-size: 0.8125rem;
+}
+
+.profile :global(.university-license-evidence) {
+  margin-top: 1.5rem;
+  border-radius: 0.625rem;
+  border-color: var(--profile-line);
+  background: #fff;
+}
+
+.profile :global(.university-practical-grid) {
+  grid-template-areas:
+    "campus military"
+    "campus contacts";
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  margin-top: 3rem;
+  border: 0;
+  border-top: 1px solid var(--profile-line);
+}
+
+.profile :global(.university-practical-grid) article {
+  min-height: 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 0;
+  border-bottom: 1px solid var(--profile-line);
+  overflow-wrap: anywhere;
+}
+
+.profile :global(#campus) {
+  grid-area: campus;
+  background: var(--profile-lilac);
+}
+
+.profile :global(#military) {
+  grid-area: military;
+}
+
+.profile :global(#contacts) {
+  grid-area: contacts;
+}
+
+.profile :global(.university-practical-grid) h2 {
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+}
+
+.profile :global(.university-practical-grid) article > strong {
+  color: var(--profile-ink);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.profile :global(.university-practical-grid) :is(p, address, a) {
+  font-size: 0.875rem;
+}
+
+@media (max-width: 980px) {
+  .profile :global(.university-overview-grid) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile :global(.university-source-card) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .profile:global(.university-profile) {
+    --profile-scroll-offset: 84px;
+  }
+
+  .profile :global(.university-profile-hero) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+    border-radius: 1rem;
+  }
+
+  .identity :global(.official-university-logo.hero) {
+    width: 60px;
+    height: 60px;
+    border-radius: 0.75rem;
+  }
+
+  .profile :global(.university-profile-copy) h1 {
+    font-size: clamp(1.75rem, 7.8vw, 2.75rem);
+  }
+
+  .profile :global(.university-facts-rail) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 1rem;
+    padding: 0;
+    border-inline-start: 0;
+  }
+
+  .railTitle {
+    grid-column: 1 / -1;
+  }
+
+  .profile :global(.university-profile-nav) {
+    position: static;
+  }
+
+  .indexLabel {
+    display: none;
+  }
+
+  .profile :global(.university-overview-grid),
+  .profile :global(.university-directory-provenance) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .profile :global(.university-practical-grid) {
+    grid-template-areas:
+      "campus"
+      "military"
+      "contacts";
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

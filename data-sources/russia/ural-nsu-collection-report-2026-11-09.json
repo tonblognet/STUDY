@@ -1,0 +1,1021 @@
+{
+  "batch": "2026-11-09",
+  "scope": "Общие сведения, приёмные комиссии, общежития, учебные подразделения и образовательные перечни УрФУ (Екатеринбург) и НГУ (Новосибирск). Перечни частичные: бакалавриат, специалитет и базовое высшее с кодами .03/.05. Год приёма не установлен. Условия конкурсного отбора не добавляются.",
+  "totals": {
+    "russia-313": {
+      "fields": 11,
+      "faculties": 13,
+      "offerings": 174
+    },
+    "russia-178": {
+      "fields": 10,
+      "faculties": 11,
+      "offerings": 43
+    }
+  },
+  "sources": [
+    {
+      "universitySlug": "russia-313",
+      "requestedUrl": "https://urfu.ru/sveden/common/",
+      "url": "https://urfu.ru/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:03:40.976283+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-313/25ac73b1b886e289.html",
+      "sourceSha256": "db34fda5c525441ae764c925fa06bf341004acb3e2a3921b8f616d419f3eac37"
+    },
+    {
+      "universitySlug": "russia-313",
+      "requestedUrl": "https://urfu.ru/sveden/education/",
+      "url": "https://urfu.ru/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:03:42.257829+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-313/f2e34672912f434b.html",
+      "sourceSha256": "30b3891ec6cc1f93fec57406122e173445b9071bac280424c6e1649badc6c560"
+    },
+    {
+      "universitySlug": "russia-313",
+      "requestedUrl": "https://urfu.ru/ru/applicant/",
+      "url": "https://urfu.ru/ru/applicant/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:41.986809+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-313/b83529984699b6b1.html",
+      "sourceSha256": "32edf94ed48f3903b7fbfb68edea310650267500249f676b70fd5f2c159c94c8"
+    },
+    {
+      "universitySlug": "russia-313",
+      "requestedUrl": "https://urfu.ru/ru/students/social/campus/",
+      "url": "https://urfu.ru/ru/students/social/campus/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:07:25.143991+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-313/769e8406eb2e1415.html",
+      "sourceSha256": "c3d40136f263ecdebb6255cdd03b6786406d84b4b342ebe0f81bcbbd0a992421"
+    },
+    {
+      "universitySlug": "russia-313",
+      "requestedUrl": "https://privet.urfu.ru/about",
+      "url": "https://privet.urfu.ru/about",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:03:42.051178+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "body": "russia-313/963488006ec95a55.html",
+      "sourceSha256": "1bef01530bd02bed6fc8359da0606a6d2b6610c542dc99f03f94b5a7658f42c4"
+    },
+    {
+      "universitySlug": "russia-313",
+      "requestedUrl": "https://urfu.ru/ru/instituty/",
+      "url": "https://urfu.ru/ru/instituty/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:41.931637+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-313/182fc3e7e92e54b2.html",
+      "sourceSha256": "85f70c703e8c40311913f758e86321c208579ab22c0b440856c87d05dcb3c13e"
+    },
+    {
+      "universitySlug": "russia-313",
+      "requestedUrl": "https://urfu.ru/priemurfu/",
+      "url": "https://urfu.ru/priemurfu/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:07:25.619172+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "body": "russia-313/9e066684a9733844.html",
+      "sourceSha256": "b6bc2e9313747d15c34847197c9056f053836ae733f2cc9a61dac2cd97a0590a"
+    },
+    {
+      "universitySlug": "russia-313",
+      "requestedUrl": "https://programs.edu.urfu.ru/ru/10144/",
+      "url": "https://programs.edu.urfu.ru/ru/10144/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:13:40.393104+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-313/440b4f9c2768ae52.html",
+      "sourceSha256": "b978bbe897ed58a469752149b13145cb4fa6d7e5746898cfc3a690e885ce3332"
+    },
+    {
+      "universitySlug": "russia-178",
+      "requestedUrl": "https://www.nsu.ru/n/sveden/common/",
+      "url": "https://www.nsu.ru/n/sveden/common/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:03:44.748314+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-178/c582901704874630.html",
+      "sourceSha256": "0d3ce2f23cd693acee034ac8b700e737400b9872761798d0a30161d90b4e45cc"
+    },
+    {
+      "universitySlug": "russia-178",
+      "requestedUrl": "https://www.nsu.ru/n/sveden/education/",
+      "url": "https://www.nsu.ru/n/sveden/education/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:03:49.374746+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-178/e24f744d9e989caa.html",
+      "sourceSha256": "27fb27aba2f8ea088bc11bb582ce25afad75163f2228fc0b28e3b0f59fa1f36a"
+    },
+    {
+      "universitySlug": "russia-178",
+      "requestedUrl": "https://future.nsu.ru/",
+      "url": "https://future.nsu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:03:44.722891+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "body": "russia-178/2eef2d1eb44a7690.html",
+      "sourceSha256": "f389de5b722c8978ed3cb9294a4eaf116b11cc72bffd6eac3c37241a6584c022"
+    },
+    {
+      "universitySlug": "russia-178",
+      "requestedUrl": "https://www.nsu.ru/n/life/campus/dormitories/",
+      "url": "https://www.nsu.ru/n/life/campus/dormitories/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:44.516206+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-178/fe533fb15c574cf6.html",
+      "sourceSha256": "ae50ef515c267c6d0d29eef9308f01ddea6135c106999623282ecaeb323d0e97"
+    },
+    {
+      "universitySlug": "russia-178",
+      "requestedUrl": "https://www.nsu.ru/n/education/departments-sections/",
+      "url": "https://www.nsu.ru/n/education/departments-sections/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T15:04:44.230151+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-178/0e0c20d8849a4073.html",
+      "sourceSha256": "9498f20cd3788a5b9ce5a985ef9d1f21b78a89b238d8ab60dc08c5578e9f3766"
+    }
+  ],
+  "fieldEvidence": {
+    "russia-313": {
+      "admissionsUrl": {
+        "value": "https://urfu.ru/ru/applicant/",
+        "literalEvidence": "620062, Россия, г. Екатеринбург, ул. Мира, 19, каб. ГУК-100 Приемная комиссия priem@urfu.ru 8 (499) 270-62-99 , +7 (343) 375-44-74",
+        "sourceUrl": "https://urfu.ru/ru/applicant/"
+      },
+      "admissionsPhone": {
+        "value": "+7 (343) 375-44-74",
+        "literalEvidence": "620062, Россия, г. Екатеринбург, ул. Мира, 19, каб. ГУК-100 Приемная комиссия priem@urfu.ru 8 (499) 270-62-99 , +7 (343) 375-44-74",
+        "sourceUrl": "https://urfu.ru/ru/applicant/"
+      },
+      "admissionsEmail": {
+        "value": "priem@urfu.ru",
+        "literalEvidence": "620062, Россия, г. Екатеринбург, ул. Мира, 19, каб. ГУК-100 Приемная комиссия priem@urfu.ru 8 (499) 270-62-99 , +7 (343) 375-44-74",
+        "sourceUrl": "https://urfu.ru/ru/applicant/"
+      },
+      "hostelInfo": {
+        "value": "УрФУ предоставляет общежития. По информации о заселении на 2026 год, места распределяют жилищные комиссии институтов по графикам и при наличии свободных мест.",
+        "literalEvidence": "Поселение поступающих в 2026 году проводится жилищными комиссиями институтов в 2 этапа: С 12 по 23 октября на места, не занятые обучающимися 2-6 курсов. С 26 октября по 6 ноября на невостребованные места по итогам первого этапа, в случае их наличия. Заселение проходит строго по графикам и спискам, которые готовят и размещают на своих информационных ресурсах жилищные комиссии институтов и подразделений. Информация актуальна на момент размещения, график может быть скорректирован.",
+        "sourceUrl": "https://urfu.ru/ru/students/social/campus/"
+      },
+      "overview": {
+        "value": "УрФУ создан на базе Уральского государственного технического университета — УПИ и Уральского государственного университета. Новый кампус расположен в Новокольцовском районе Екатеринбурга.",
+        "literalEvidence": [
+          "Создан федеральный вуз УрФУ имени первого Президента России Б. Н. Ельцина на базе УГТУ-УПИ и УрГУ",
+          "Открыт новый кампус УрФУ «Центр цифровой трансформации» в Новокольцовском районе Екатеринбурга. В нем расположены три учебных корпуса (ИРИТ-РТФ и ИнЭУ, СУНЦ УрФУ) общежития на 6 тысяч студентов, медицинский центр и спортивные объекты международного уровня."
+        ],
+        "sourceUrl": "https://privet.urfu.ru/about"
+      }
+    },
+    "russia-178": {
+      "fullName": {
+        "value": "Федеральное государственное автономное образовательное учреждение высшего образования «Новосибирский национальный исследовательский государственный университет»",
+        "literalEvidence": "Полное наименование: Федеральное государственное автономное образовательное учреждение высшего образования «Новосибирский национальный исследовательский государственный университет»",
+        "sourceUrl": "https://www.nsu.ru/n/sveden/common/"
+      },
+      "shortName": {
+        "value": "Новосибирский государственный университет, НГУ",
+        "literalEvidence": "Сокращенное наименование: Новосибирский государственный университет, НГУ",
+        "sourceUrl": "https://www.nsu.ru/n/sveden/common/"
+      },
+      "regDate": {
+        "value": "9 января 1958 г.",
+        "literalEvidence": "Дата создания образовательной организации 9 января 1958 г. Организован Новосибирский государственный университет. (Постановление Совета Министров",
+        "sourceUrl": "https://www.nsu.ru/n/sveden/common/"
+      },
+      "address": {
+        "value": "630090, Новосибирская область, г. Новосибирск, ул. Пирогова, д. 1.",
+        "literalEvidence": "Адрес: 630090, Новосибирская область, г. Новосибирск, ул. Пирогова, д. 1.",
+        "sourceUrl": "https://www.nsu.ru/n/sveden/common/"
+      },
+      "telephone": {
+        "value": "+7 (383) 363 40 00",
+        "literalEvidence": "Контактные телефоны: +7 (383) 363 40 00",
+        "sourceUrl": "https://www.nsu.ru/n/sveden/common/"
+      },
+      "email": {
+        "value": "rector@nsu.ru",
+        "literalEvidence": "Электронная почта: rector@nsu.ru",
+        "sourceUrl": "https://www.nsu.ru/n/sveden/common/"
+      },
+      "admissionsUrl": {
+        "value": "https://future.nsu.ru/",
+        "literalEvidence": "Приемная комиссия: +7 (383) 363-40-37 priem@nsu.ru",
+        "sourceUrl": "https://future.nsu.ru/"
+      },
+      "admissionsPhone": {
+        "value": "+7 (383) 363-40-37",
+        "literalEvidence": "Приемная комиссия: +7 (383) 363-40-37 priem@nsu.ru",
+        "sourceUrl": "https://future.nsu.ru/"
+      },
+      "admissionsEmail": {
+        "value": "priem@nsu.ru",
+        "literalEvidence": "Приемная комиссия: +7 (383) 363-40-37 priem@nsu.ru",
+        "sourceUrl": "https://future.nsu.ru/"
+      },
+      "hostelInfo": {
+        "value": "По данным НГУ, общежитие предоставляется иногородним студентам на бюджетной и платной основе. Студенты из Бердска, Искитима, Краснообска и Кольцово могут заселиться при наличии свободных мест.",
+        "literalEvidence": "Все иногородние обучающиеся НГУ получают общежитие (обучающиеся на бюджетной или платной основе). Студенты, проживающие в Бердске, Искитиме, Краснообске, Кольцово, имеют право на заселение в общежитие при наличии свободных мест.",
+        "sourceUrl": "https://www.nsu.ru/n/life/campus/dormitories/"
+      }
+    }
+  },
+  "urfuMainCity": {
+    "educationTable": "https://urfu.ru/sveden/education/",
+    "officialInstituteDirectory": "https://urfu.ru/ru/instituty/",
+    "officialAdmissionsPortal": "https://urfu.ru/priemurfu/",
+    "review": "Строка сохраняется при буквальном совпадении кода, названия направления, профиля, уровня и формы с программой подразделения Екатеринбурга. Записи с явной связью с филиалом, неполными значениями и без однозначной привязки пропущены.",
+    "educationRowsWithoutExactMatch": 178,
+    "evidence": {
+      "russia-313-official-f855cd4152bdfe7d": {
+        "educationTableRows": [1],
+        "admissionsPortalProgramIds": [9985]
+      },
+      "russia-313-official-c38caab7f224dc23": {
+        "educationTableRows": [2],
+        "admissionsPortalProgramIds": [9986]
+      },
+      "russia-313-official-1794ee213dcf0d88": {
+        "educationTableRows": [3],
+        "admissionsPortalProgramIds": [9987]
+      },
+      "russia-313-official-825a47d95e8e0195": {
+        "educationTableRows": [7],
+        "admissionsPortalProgramIds": [10139]
+      },
+      "russia-313-official-ec18d61eaf3d94db": {
+        "educationTableRows": [8],
+        "admissionsPortalProgramIds": [9897]
+      },
+      "russia-313-official-c6cd45633a2569c3": {
+        "educationTableRows": [11],
+        "admissionsPortalProgramIds": [9898]
+      },
+      "russia-313-official-f46d1a93f647cd1a": {
+        "educationTableRows": [12],
+        "admissionsPortalProgramIds": [9899]
+      },
+      "russia-313-official-6bf3ac124b1da522": {
+        "educationTableRows": [14],
+        "admissionsPortalProgramIds": [9843]
+      },
+      "russia-313-official-8a419e411c4c49ff": {
+        "educationTableRows": [19],
+        "admissionsPortalProgramIds": [9826]
+      },
+      "russia-313-official-1ec2a8f8e2fd9571": {
+        "educationTableRows": [20],
+        "admissionsPortalProgramIds": [9826, 1000000]
+      },
+      "russia-313-official-b226a107b412a9ad": {
+        "educationTableRows": [22],
+        "admissionsPortalProgramIds": [10591]
+      },
+      "russia-313-official-76eda2903433fac5": {
+        "educationTableRows": [23],
+        "admissionsPortalProgramIds": [9795]
+      },
+      "russia-313-official-d99ca6f44a40e204": {
+        "educationTableRows": [32, 33],
+        "admissionsPortalProgramIds": [9796]
+      },
+      "russia-313-official-b04a5cd7b0366ff8": {
+        "educationTableRows": [34, 35],
+        "admissionsPortalProgramIds": [9796, 1000002]
+      },
+      "russia-313-official-2f1b659651839668": {
+        "educationTableRows": [36, 37],
+        "admissionsPortalProgramIds": [9796, 1000002]
+      },
+      "russia-313-official-a66bb93dbe7da0ab": {
+        "educationTableRows": [38],
+        "admissionsPortalProgramIds": [10680]
+      },
+      "russia-313-official-d5ddd8a9938731a0": {
+        "educationTableRows": [39],
+        "admissionsPortalProgramIds": [9797]
+      },
+      "russia-313-official-65c7b650715704cc": {
+        "educationTableRows": [40],
+        "admissionsPortalProgramIds": [10216]
+      },
+      "russia-313-official-4826f56a09589fe8": {
+        "educationTableRows": [44],
+        "admissionsPortalProgramIds": [9813]
+      },
+      "russia-313-official-a23e480337297ef3": {
+        "educationTableRows": [47],
+        "admissionsPortalProgramIds": [9814]
+      },
+      "russia-313-official-ab23e864e920d01c": {
+        "educationTableRows": [48],
+        "admissionsPortalProgramIds": [9955]
+      },
+      "russia-313-official-06ecb9a77ae1f9bf": {
+        "educationTableRows": [49],
+        "admissionsPortalProgramIds": [10758]
+      },
+      "russia-313-official-2745beab611dc103": {
+        "educationTableRows": [51],
+        "admissionsPortalProgramIds": [10329]
+      },
+      "russia-313-official-91bfe710c4c4d00e": {
+        "educationTableRows": [52],
+        "admissionsPortalProgramIds": [9959]
+      },
+      "russia-313-official-87d9a73d20ef45c8": {
+        "educationTableRows": [53],
+        "admissionsPortalProgramIds": [10205]
+      },
+      "russia-313-official-f5f59358d84cf3ed": {
+        "educationTableRows": [55, 56],
+        "admissionsPortalProgramIds": [9979]
+      },
+      "russia-313-official-faabe5430fddc20c": {
+        "educationTableRows": [58, 59],
+        "admissionsPortalProgramIds": [9979, 1000003]
+      },
+      "russia-313-official-7e18dfd861deb1a7": {
+        "educationTableRows": [65, 66],
+        "admissionsPortalProgramIds": [9980]
+      },
+      "russia-313-official-65387127cefc5284": {
+        "educationTableRows": [68],
+        "admissionsPortalProgramIds": [9981]
+      },
+      "russia-313-official-bad013ebeb300b66": {
+        "educationTableRows": [113],
+        "admissionsPortalProgramIds": [10184]
+      },
+      "russia-313-official-40dd225aafe92c0e": {
+        "educationTableRows": [114],
+        "admissionsPortalProgramIds": [10184]
+      },
+      "russia-313-official-da060bc16d065fe6": {
+        "educationTableRows": [115],
+        "admissionsPortalProgramIds": [9901]
+      },
+      "russia-313-official-f882b3dab6c0107f": {
+        "educationTableRows": [140],
+        "admissionsPortalProgramIds": [9846]
+      },
+      "russia-313-official-b32950f71768ad82": {
+        "educationTableRows": [144],
+        "admissionsPortalProgramIds": [9968]
+      },
+      "russia-313-official-10e39d8f21a1ab1b": {
+        "educationTableRows": [145],
+        "admissionsPortalProgramIds": [9833]
+      },
+      "russia-313-official-3b95e5f8e76ef759": {
+        "educationTableRows": [151],
+        "admissionsPortalProgramIds": [10071]
+      },
+      "russia-313-official-4fdb869134b63bb6": {
+        "educationTableRows": [156],
+        "admissionsPortalProgramIds": [10075]
+      },
+      "russia-313-official-439728745c309cf7": {
+        "educationTableRows": [158],
+        "admissionsPortalProgramIds": [10077]
+      },
+      "russia-313-official-2b2b5860ce5fe407": {
+        "educationTableRows": [159],
+        "admissionsPortalProgramIds": [10076]
+      },
+      "russia-313-official-0ab0c55c4385d0e8": {
+        "educationTableRows": [161],
+        "admissionsPortalProgramIds": [10144]
+      },
+      "russia-313-official-1e099032bec3eae7": {
+        "educationTableRows": [164],
+        "admissionsPortalProgramIds": [9804]
+      },
+      "russia-313-official-dcb5f25ee9e38b81": {
+        "educationTableRows": [172],
+        "admissionsPortalProgramIds": [9864]
+      },
+      "russia-313-official-62a09a20612e90a9": {
+        "educationTableRows": [174],
+        "admissionsPortalProgramIds": [10694]
+      },
+      "russia-313-official-dfdd8437b3f1f646": {
+        "educationTableRows": [175],
+        "admissionsPortalProgramIds": [10293]
+      },
+      "russia-313-official-65b630cc81252ab3": {
+        "educationTableRows": [177],
+        "admissionsPortalProgramIds": [9918]
+      },
+      "russia-313-official-cd019de1a52e47b9": {
+        "educationTableRows": [178],
+        "admissionsPortalProgramIds": [9918]
+      },
+      "russia-313-official-3b0fd031222b3d6b": {
+        "educationTableRows": [179],
+        "admissionsPortalProgramIds": [10712]
+      },
+      "russia-313-official-2cf414368d7b653d": {
+        "educationTableRows": [180],
+        "admissionsPortalProgramIds": [10696]
+      },
+      "russia-313-official-49a0f8134441287c": {
+        "educationTableRows": [181],
+        "admissionsPortalProgramIds": [10362]
+      },
+      "russia-313-official-9dfc05fce1b8113d": {
+        "educationTableRows": [182],
+        "admissionsPortalProgramIds": [10312]
+      },
+      "russia-313-official-bc8a77039f337af7": {
+        "educationTableRows": [183],
+        "admissionsPortalProgramIds": [9866]
+      },
+      "russia-313-official-2ae0e2cfff4777f4": {
+        "educationTableRows": [185],
+        "admissionsPortalProgramIds": [10331]
+      },
+      "russia-313-official-74be09e2ba893637": {
+        "educationTableRows": [186],
+        "admissionsPortalProgramIds": [9806]
+      },
+      "russia-313-official-719860eae5e452f5": {
+        "educationTableRows": [190],
+        "admissionsPortalProgramIds": [9869]
+      },
+      "russia-313-official-35e1ef09dd14e8b0": {
+        "educationTableRows": [191],
+        "admissionsPortalProgramIds": [9869]
+      },
+      "russia-313-official-3d82a4e0dcbfeeac": {
+        "educationTableRows": [192],
+        "admissionsPortalProgramIds": [10292]
+      },
+      "russia-313-official-b9352ed70f6415c7": {
+        "educationTableRows": [205],
+        "admissionsPortalProgramIds": [10210]
+      },
+      "russia-313-official-9343dd7862452fdb": {
+        "educationTableRows": [207],
+        "admissionsPortalProgramIds": [10375]
+      },
+      "russia-313-official-86e457bcb21660d2": {
+        "educationTableRows": [210],
+        "admissionsPortalProgramIds": [10600]
+      },
+      "russia-313-official-30b84272ab656e45": {
+        "educationTableRows": [212],
+        "admissionsPortalProgramIds": [10147]
+      },
+      "russia-313-official-aed2ff7b8592e3c5": {
+        "educationTableRows": [213],
+        "admissionsPortalProgramIds": [10146]
+      },
+      "russia-313-official-957058e46cdfe8c7": {
+        "educationTableRows": [214, 215],
+        "admissionsPortalProgramIds": [10145]
+      },
+      "russia-313-official-7d06ed689d665b12": {
+        "educationTableRows": [217],
+        "admissionsPortalProgramIds": [10149]
+      },
+      "russia-313-official-68f4d87bbc399bf1": {
+        "educationTableRows": [218],
+        "admissionsPortalProgramIds": [10708]
+      },
+      "russia-313-official-942e3a5fdf70bc20": {
+        "educationTableRows": [219],
+        "admissionsPortalProgramIds": [10150]
+      },
+      "russia-313-official-c0f4cb92ead4986b": {
+        "educationTableRows": [221],
+        "admissionsPortalProgramIds": [9874]
+      },
+      "russia-313-official-541b5079fdb77201": {
+        "educationTableRows": [222, 223],
+        "admissionsPortalProgramIds": [9875]
+      },
+      "russia-313-official-ae5119d2264edd4e": {
+        "educationTableRows": [225],
+        "admissionsPortalProgramIds": [10151]
+      },
+      "russia-313-official-50467a2251f8343f": {
+        "educationTableRows": [226],
+        "admissionsPortalProgramIds": [10151]
+      },
+      "russia-313-official-1b1952353f2722c6": {
+        "educationTableRows": [227],
+        "admissionsPortalProgramIds": [10152]
+      },
+      "russia-313-official-a1e28d545df54f11": {
+        "educationTableRows": [228],
+        "admissionsPortalProgramIds": [10152]
+      },
+      "russia-313-official-0a6ebf3c7307a6ec": {
+        "educationTableRows": [229],
+        "admissionsPortalProgramIds": [10153]
+      },
+      "russia-313-official-8030705e5ed03a89": {
+        "educationTableRows": [230],
+        "admissionsPortalProgramIds": [10154]
+      },
+      "russia-313-official-990415b185a2e35b": {
+        "educationTableRows": [233],
+        "admissionsPortalProgramIds": [10620]
+      },
+      "russia-313-official-b983149dace33421": {
+        "educationTableRows": [234],
+        "admissionsPortalProgramIds": [10156]
+      },
+      "russia-313-official-752647a35f75ccbc": {
+        "educationTableRows": [249],
+        "admissionsPortalProgramIds": [10158]
+      },
+      "russia-313-official-8190fd50c63fe06c": {
+        "educationTableRows": [250],
+        "admissionsPortalProgramIds": [10601]
+      },
+      "russia-313-official-a7b1818d0d200486": {
+        "educationTableRows": [251],
+        "admissionsPortalProgramIds": [10037]
+      },
+      "russia-313-official-358a71938af5db02": {
+        "educationTableRows": [252],
+        "admissionsPortalProgramIds": [10308]
+      },
+      "russia-313-official-7505c09c53e66560": {
+        "educationTableRows": [254],
+        "admissionsPortalProgramIds": [9845]
+      },
+      "russia-313-official-8c6e544a99cf6f36": {
+        "educationTableRows": [255],
+        "admissionsPortalProgramIds": [10330]
+      },
+      "russia-313-official-a6feec4a219ccb49": {
+        "educationTableRows": [256],
+        "admissionsPortalProgramIds": [10339]
+      },
+      "russia-313-official-d381619cf55bb8a4": {
+        "educationTableRows": [257, 258],
+        "admissionsPortalProgramIds": [10340]
+      },
+      "russia-313-official-f008505c4dfa4546": {
+        "educationTableRows": [259],
+        "admissionsPortalProgramIds": [9936]
+      },
+      "russia-313-official-0d70bfd5bd85d588": {
+        "educationTableRows": [269, 270],
+        "admissionsPortalProgramIds": [10221]
+      },
+      "russia-313-official-98fe5a5e4bb8c6f8": {
+        "educationTableRows": [278],
+        "admissionsPortalProgramIds": [10315]
+      },
+      "russia-313-official-c42aa194c2cc4b84": {
+        "educationTableRows": [279],
+        "admissionsPortalProgramIds": [10344]
+      },
+      "russia-313-official-b4b4f7b39e80ffae": {
+        "educationTableRows": [280],
+        "admissionsPortalProgramIds": [10345]
+      },
+      "russia-313-official-f5dcd54498e58bce": {
+        "educationTableRows": [281],
+        "admissionsPortalProgramIds": [10345]
+      },
+      "russia-313-official-e177692fb0e8ae72": {
+        "educationTableRows": [282],
+        "admissionsPortalProgramIds": [10078]
+      },
+      "russia-313-official-a79635d35b13a465": {
+        "educationTableRows": [283],
+        "admissionsPortalProgramIds": [10036]
+      },
+      "russia-313-official-7bb6f1850e8c2ba4": {
+        "educationTableRows": [284],
+        "admissionsPortalProgramIds": [10320]
+      },
+      "russia-313-official-d86e251c4dd67612": {
+        "educationTableRows": [286],
+        "admissionsPortalProgramIds": [10319]
+      },
+      "russia-313-official-e97545013eae7c57": {
+        "educationTableRows": [774],
+        "admissionsPortalProgramIds": [10800]
+      },
+      "russia-313-official-a5bf7242f620d51c": {
+        "educationTableRows": [775],
+        "admissionsPortalProgramIds": [10815]
+      },
+      "russia-313-official-cecea4fca924db02": {
+        "educationTableRows": [779],
+        "admissionsPortalProgramIds": [10892]
+      },
+      "russia-313-official-925f1330829eb0e8": {
+        "educationTableRows": [780],
+        "admissionsPortalProgramIds": [10818]
+      },
+      "russia-313-official-aa802c7fc7bf06f5": {
+        "educationTableRows": [783],
+        "admissionsPortalProgramIds": [10961]
+      },
+      "russia-313-official-ecf36d88c704b81a": {
+        "educationTableRows": [784],
+        "admissionsPortalProgramIds": [10834]
+      },
+      "russia-313-official-8c9f3099dbe112b8": {
+        "educationTableRows": [790],
+        "admissionsPortalProgramIds": [10904]
+      },
+      "russia-313-official-0500fd0471c3b4c9": {
+        "educationTableRows": [791, 792],
+        "admissionsPortalProgramIds": [10801]
+      },
+      "russia-313-official-604a88aea9beb62d": {
+        "educationTableRows": [793],
+        "admissionsPortalProgramIds": [10906]
+      },
+      "russia-313-official-73707e0e58f37ff1": {
+        "educationTableRows": [794],
+        "admissionsPortalProgramIds": [10910]
+      },
+      "russia-313-official-1d0dc98a45a4644c": {
+        "educationTableRows": [796],
+        "admissionsPortalProgramIds": [10915]
+      },
+      "russia-313-official-fe6eaf3cb734d1fe": {
+        "educationTableRows": [808],
+        "admissionsPortalProgramIds": [10832]
+      },
+      "russia-313-official-2431b292f82d7816": {
+        "educationTableRows": [809, 810],
+        "admissionsPortalProgramIds": [10837]
+      },
+      "russia-313-official-fe6bd8f9411603ea": {
+        "educationTableRows": [811],
+        "admissionsPortalProgramIds": [10839]
+      },
+      "russia-313-official-a151a3c54d0159e7": {
+        "educationTableRows": [812],
+        "admissionsPortalProgramIds": [10843]
+      },
+      "russia-313-official-602e31e3cb275ce6": {
+        "educationTableRows": [823],
+        "admissionsPortalProgramIds": [10909]
+      },
+      "russia-313-official-7d1127fb00fe2bb0": {
+        "educationTableRows": [825],
+        "admissionsPortalProgramIds": [10928]
+      },
+      "russia-313-official-5cf3bd45b7f2fe9d": {
+        "educationTableRows": [826],
+        "admissionsPortalProgramIds": [10848]
+      },
+      "russia-313-official-fde8f84de1f803c4": {
+        "educationTableRows": [827],
+        "admissionsPortalProgramIds": [10929]
+      },
+      "russia-313-official-4ebec3cb8f7ae290": {
+        "educationTableRows": [828],
+        "admissionsPortalProgramIds": [10812]
+      },
+      "russia-313-official-289cd6f64dd17cba": {
+        "educationTableRows": [829],
+        "admissionsPortalProgramIds": [10812]
+      },
+      "russia-313-official-47991c4d7101970d": {
+        "educationTableRows": [830],
+        "admissionsPortalProgramIds": [10814]
+      },
+      "russia-313-official-a53baf841ae9a665": {
+        "educationTableRows": [831],
+        "admissionsPortalProgramIds": [10820]
+      },
+      "russia-313-official-ab10293845b8ab43": {
+        "educationTableRows": [833, 834],
+        "admissionsPortalProgramIds": [10824]
+      },
+      "russia-313-official-e76bfed31412a80f": {
+        "educationTableRows": [835],
+        "admissionsPortalProgramIds": [10824]
+      },
+      "russia-313-official-4dce6e8c29245e2c": {
+        "educationTableRows": [838],
+        "admissionsPortalProgramIds": [10829]
+      },
+      "russia-313-official-39ece1fd812054cd": {
+        "educationTableRows": [848],
+        "admissionsPortalProgramIds": [10881]
+      },
+      "russia-313-official-72a06ca2e02720c2": {
+        "educationTableRows": [849],
+        "admissionsPortalProgramIds": [10852]
+      },
+      "russia-313-official-71eab6c44c362d88": {
+        "educationTableRows": [850],
+        "admissionsPortalProgramIds": [10913]
+      },
+      "russia-313-official-b9e95b78db90683b": {
+        "educationTableRows": [852],
+        "admissionsPortalProgramIds": [10842]
+      },
+      "russia-313-official-d7f1b5746069b15a": {
+        "educationTableRows": [853],
+        "admissionsPortalProgramIds": [10842]
+      },
+      "russia-313-official-506554d3087edae5": {
+        "educationTableRows": [854],
+        "admissionsPortalProgramIds": [10847]
+      },
+      "russia-313-official-a378cb332df08f12": {
+        "educationTableRows": [862],
+        "admissionsPortalProgramIds": [10930]
+      },
+      "russia-313-official-1aa73e695de2db08": {
+        "educationTableRows": [863],
+        "admissionsPortalProgramIds": [10850]
+      },
+      "russia-313-official-0b839c7b718322c6": {
+        "educationTableRows": [864],
+        "admissionsPortalProgramIds": [10850]
+      },
+      "russia-313-official-b5cf3ad8bd2141a5": {
+        "educationTableRows": [867],
+        "admissionsPortalProgramIds": [10864]
+      },
+      "russia-313-official-eeafefd678ac0249": {
+        "educationTableRows": [868, 869],
+        "admissionsPortalProgramIds": [10879]
+      },
+      "russia-313-official-557f96c21e501f93": {
+        "educationTableRows": [870],
+        "admissionsPortalProgramIds": [10879]
+      },
+      "russia-313-official-29eae49d033985e7": {
+        "educationTableRows": [882],
+        "admissionsPortalProgramIds": [10833]
+      },
+      "russia-313-official-b0ed50e1a998dc65": {
+        "educationTableRows": [883],
+        "admissionsPortalProgramIds": [10833]
+      },
+      "russia-313-official-284352ffc46877e0": {
+        "educationTableRows": [884],
+        "admissionsPortalProgramIds": [10836]
+      },
+      "russia-313-official-e9c37e58daf38149": {
+        "educationTableRows": [885],
+        "admissionsPortalProgramIds": [10836]
+      },
+      "russia-313-official-4f406001bdbc92f1": {
+        "educationTableRows": [886],
+        "admissionsPortalProgramIds": [10822]
+      },
+      "russia-313-official-f475a4fca85097dc": {
+        "educationTableRows": [887],
+        "admissionsPortalProgramIds": [10883]
+      },
+      "russia-313-official-a9dbe78a4cc2ac18": {
+        "educationTableRows": [888],
+        "admissionsPortalProgramIds": [10914]
+      },
+      "russia-313-official-7ace9e43e7acbddc": {
+        "educationTableRows": [889],
+        "admissionsPortalProgramIds": [10945]
+      },
+      "russia-313-official-47d34ea51f64e225": {
+        "educationTableRows": [890],
+        "admissionsPortalProgramIds": [10918]
+      },
+      "russia-313-official-21064950d770f895": {
+        "educationTableRows": [891],
+        "admissionsPortalProgramIds": [10917]
+      },
+      "russia-313-official-737d5f95f2085edd": {
+        "educationTableRows": [892],
+        "admissionsPortalProgramIds": [10827]
+      },
+      "russia-313-official-59daf38908f8b540": {
+        "educationTableRows": [901],
+        "admissionsPortalProgramIds": [10885]
+      },
+      "russia-313-official-6cdb66837f2f07d4": {
+        "educationTableRows": [902],
+        "admissionsPortalProgramIds": [10886]
+      },
+      "russia-313-official-54aa2c54fe19b1cd": {
+        "educationTableRows": [904],
+        "admissionsPortalProgramIds": [10894]
+      },
+      "russia-313-official-0ed24d68dadd6a69": {
+        "educationTableRows": [905],
+        "admissionsPortalProgramIds": [10896]
+      },
+      "russia-313-official-f1099eabf2b2d94c": {
+        "educationTableRows": [906],
+        "admissionsPortalProgramIds": [10903]
+      },
+      "russia-313-official-a76c0ba87b46fcab": {
+        "educationTableRows": [907],
+        "admissionsPortalProgramIds": [10882]
+      },
+      "russia-313-official-3f65690175bff539": {
+        "educationTableRows": [908],
+        "admissionsPortalProgramIds": [10809]
+      },
+      "russia-313-official-4b18651ab35f5f59": {
+        "educationTableRows": [909],
+        "admissionsPortalProgramIds": [10809]
+      },
+      "russia-313-official-ae116123ac9bb76c": {
+        "educationTableRows": [911],
+        "admissionsPortalProgramIds": [10911]
+      },
+      "russia-313-official-ce78be84e6c79dad": {
+        "educationTableRows": [912],
+        "admissionsPortalProgramIds": [10803]
+      },
+      "russia-313-official-79d3153d543a6ec1": {
+        "educationTableRows": [913],
+        "admissionsPortalProgramIds": [10803]
+      },
+      "russia-313-official-3143a40343f232e4": {
+        "educationTableRows": [915],
+        "admissionsPortalProgramIds": [10806]
+      },
+      "russia-313-official-c15da705291e835f": {
+        "educationTableRows": [916],
+        "admissionsPortalProgramIds": [10811]
+      },
+      "russia-313-official-c1fb1ecba403b808": {
+        "educationTableRows": [920],
+        "admissionsPortalProgramIds": [10826]
+      },
+      "russia-313-official-f8cf4bb7f2c6b1f3": {
+        "educationTableRows": [921],
+        "admissionsPortalProgramIds": [10816]
+      },
+      "russia-313-official-7c07394b74ce9cfb": {
+        "educationTableRows": [922],
+        "admissionsPortalProgramIds": [10816]
+      },
+      "russia-313-official-1c51bd45bf889331": {
+        "educationTableRows": [923],
+        "admissionsPortalProgramIds": [10838]
+      },
+      "russia-313-official-b175d7c91bfd84d2": {
+        "educationTableRows": [924],
+        "admissionsPortalProgramIds": [10846]
+      },
+      "russia-313-official-0ed36b136e7191ca": {
+        "educationTableRows": [925],
+        "admissionsPortalProgramIds": [10855]
+      },
+      "russia-313-official-9a679a7d11ed8f09": {
+        "educationTableRows": [929],
+        "admissionsPortalProgramIds": [10979]
+      },
+      "russia-313-official-edf913c156929f4f": {
+        "educationTableRows": [930],
+        "admissionsPortalProgramIds": [10798]
+      },
+      "russia-313-official-7e16f5c3038af6de": {
+        "educationTableRows": [931],
+        "admissionsPortalProgramIds": [10798]
+      },
+      "russia-313-official-840a1e866383b828": {
+        "educationTableRows": [932],
+        "admissionsPortalProgramIds": [10901]
+      },
+      "russia-313-official-97afbd369d879f1a": {
+        "educationTableRows": [933],
+        "admissionsPortalProgramIds": [10802]
+      },
+      "russia-313-official-07dbe51e0be5fb2f": {
+        "educationTableRows": [934],
+        "admissionsPortalProgramIds": [10802]
+      },
+      "russia-313-official-dc23a51b1101c5b1": {
+        "educationTableRows": [939],
+        "admissionsPortalProgramIds": [10805]
+      },
+      "russia-313-official-b6b77f2121cd39f3": {
+        "educationTableRows": [940],
+        "admissionsPortalProgramIds": [10808]
+      },
+      "russia-313-official-993ef48696062806": {
+        "educationTableRows": [945],
+        "admissionsPortalProgramIds": [10920]
+      },
+      "russia-313-official-b13f07a90ac7b0b4": {
+        "educationTableRows": [946],
+        "admissionsPortalProgramIds": [10920]
+      },
+      "russia-313-official-5669eafba10b18fd": {
+        "educationTableRows": [949],
+        "admissionsPortalProgramIds": [10922]
+      },
+      "russia-313-official-1b6f10a63fd726db": {
+        "educationTableRows": [950],
+        "admissionsPortalProgramIds": [10924]
+      },
+      "russia-313-official-132353532fd33415": {
+        "educationTableRows": [951],
+        "admissionsPortalProgramIds": [10924]
+      }
+    }
+  },
+  "nsuUnitScope": {
+    "engineeringSchool": "Передовая инженерная школа",
+    "sourceUrl": "https://www.nsu.ru/n/sveden/education/",
+    "sectionAnchor": "#collapse_16926",
+    "note": "Раздел подтверждает реализацию высшего образования у подразделения по магистратуре. Магистерские записи остаются за пределами образовательного перечня этой партии."
+  },
+  "issuesByKind": {
+    "offering_ambiguous_decimal_duration": 19,
+    "offering_conflicting_form_excluded": 1,
+    "offering_level_conflict_excluded": 7,
+    "offering_duration_conflict": 1,
+    "offering_duration_multiple_forms": 2
+  },
+  "conflictingForms": [
+    {
+      "universitySlug": "russia-313",
+      "kind": "offering_conflicting_form_excluded",
+      "offeringId": "russia-313-official-90cf2892d4065faf",
+      "overviewEvidence": {
+        "rowIndex": 162,
+        "section": "Информация о формах обучения, сроках обучения, о сроке действия государственной аккредитации, о языках, на которых осуществляется образование",
+        "literalCells": {
+          "eduCode": "38.03.03",
+          "eduName": "Управление персоналом",
+          "eduProf": "Управление персоналом",
+          "eduLevel": "Высшее образование – бакалавриат",
+          "eduForm": "Очно-заочная",
+          "standard": "СУОС",
+          "learningTerm": "5 лет"
+        },
+        "mainCityEvidence": [
+          {
+            "code": "38.03.03",
+            "profile": "Управление персоналом",
+            "level": "bac",
+            "institute": "Уральский гуманитарный институт",
+            "title": "Управление персоналом",
+            "portalProgramId": "1000006",
+            "form": "Очно-заочная"
+          }
+        ],
+        "mainCitySource": {
+          "sourceUrl": "https://urfu.ru/priemurfu/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:07:25.619172+00:00",
+          "sourceSha256": "b6bc2e9313747d15c34847197c9056f053836ae733f2cc9a61dac2cd97a0590a"
+        }
+      },
+      "programDetail": {
+        "literalEvidence": "Институт: Уральский гуманитарный институт Уровень образования: Бакалавриат Год(ы) набора: 2020-2026 Форма и срок обучения: Очная: 4 года Язык обучения: Русский",
+        "sourceUrl": "https://programs.edu.urfu.ru/ru/10144/",
+        "sourceYear": 2026,
+        "checkedAt": "2026-11-09T15:13:40.393104+00:00",
+        "sourceSha256": "b978bbe897ed58a469752149b13145cb4fa6d7e5746898cfc3a690e885ce3332"
+      }
+    }
+  ],
+  "reproduction": "python -X utf8 scripts/collect-regional-nov09-ural-nsu.py --output tmp/ural-nsu-replay-2026-11-09.json --report tmp/ural-nsu-replay-report-2026-11-09.json"
+}

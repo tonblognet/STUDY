@@ -58,4 +58,56 @@ describe("user state validation", () => {
     expect(result.favoriteIds).toEqual(["hse"]);
     expect(result.comparisonIds).toEqual(["mipt"]);
   });
+
+  it("keeps previously saved unavailable programs in their original lists", () => {
+    const previous = {
+      favoriteIds: ["removed-favorite"],
+      comparisonIds: ["removed-comparison"],
+      scoreSets: [],
+    };
+    const result = normalizeUserState(
+      {
+        favoriteIds: ["removed-favorite", "hse", "unknown", "removed-favorite"],
+        comparisonIds: ["removed-comparison", "mipt", "unknown"],
+        scoreSets: [],
+      },
+      new Set(["hse", "mipt"]),
+      previous,
+    );
+    expect(result.favoriteIds).toEqual(["removed-favorite", "hse"]);
+    expect(result.comparisonIds).toEqual(["removed-comparison", "mipt"]);
+    expect(previous.favoriteIds).toEqual(["removed-favorite"]);
+  });
+
+  it("does not add an unavailable program to a different list", () => {
+    const result = normalizeUserState(
+      {
+        favoriteIds: ["removed-comparison"],
+        comparisonIds: ["removed-favorite"],
+        scoreSets: [],
+      },
+      new Set(),
+      {
+        favoriteIds: ["removed-favorite"],
+        comparisonIds: ["removed-comparison"],
+        scoreSets: [],
+      },
+    );
+    expect(result.favoriteIds).toEqual([]);
+    expect(result.comparisonIds).toEqual([]);
+  });
+
+  it("allows explicit removal of previously saved unavailable programs", () => {
+    const result = normalizeUserState(
+      { favoriteIds: [], comparisonIds: [], scoreSets: [] },
+      new Set(),
+      {
+        favoriteIds: ["removed-favorite"],
+        comparisonIds: ["removed-comparison"],
+        scoreSets: [],
+      },
+    );
+    expect(result.favoriteIds).toEqual([]);
+    expect(result.comparisonIds).toEqual([]);
+  });
 });

@@ -3,6 +3,7 @@ import {
   directoryEvidenceSummary,
   type DirectoryDetails,
 } from "@/lib/university-directory-details";
+import { UniversityFaculties } from "./university-faculties";
 
 const labels = {
   overview: "О вузе",
@@ -46,6 +47,18 @@ export function UniversityVerifiedDetails({
             ))}
           </ul>
         </details>
+      )}
+      {(details.faculties?.length ?? 0) > 0 && (
+        <UniversityFaculties
+          rows={details.faculties!.map(
+            ({ name, url, sourceUrl, checkedAt }) => ({
+              name,
+              url,
+              sourceUrl,
+              checkedAt,
+            }),
+          )}
+        />
       )}
       {details.educationAreas.length > 0 && (
         <details className="university-education-areas">

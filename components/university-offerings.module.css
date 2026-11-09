@@ -1,0 +1,144 @@
+.offerings {
+  padding-block: clamp(1.75rem, 4vw, 3rem);
+  border-block: 1px solid var(--profile-line, var(--line));
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 19rem);
+  align-items: end;
+  gap: 1rem 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.intro h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.75rem, 3.25vw, 2.65rem);
+  font-weight: 750;
+  line-height: 1.07;
+  letter-spacing: -0.047em;
+}
+
+.intro p {
+  max-width: 65ch;
+  color: var(--profile-muted, var(--muted));
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.intro :global(.university-offering-search) {
+  margin-top: 0;
+  color: var(--profile-ink, var(--ink));
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.intro input {
+  min-height: 44px;
+  border-color: var(--profile-line, var(--line));
+  background: #fff;
+  font-weight: 500;
+}
+
+.offerings > [role="status"] {
+  margin-bottom: 0.75rem;
+  color: var(--profile-muted, var(--muted));
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.offerings :global(.university-offering-grid) {
+  display: block;
+  border-top: 1px solid var(--profile-line, var(--line));
+  background: #fff;
+}
+
+.offerings :global(.university-offering-grid) > article {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr) minmax(0, 0.75fr);
+  gap: 0.8rem clamp(1rem, 3vw, 2.25rem);
+  align-items: start;
+  padding: 1.2rem clamp(0.9rem, 2.5vw, 1.65rem);
+  border: 0;
+  border-bottom: 1px solid var(--profile-line, var(--line));
+  border-radius: 0;
+}
+
+.classification {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.55rem;
+  color: var(--profile-muted, var(--muted));
+  font-size: 0.8125rem;
+}
+
+.classification span:first-child {
+  color: var(--profile-accent, var(--blue));
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.offerings .identity h3 {
+  margin: 0.4rem 0 0;
+  font-size: clamp(1.025rem, 1.5vw, 1.2rem);
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.identity p {
+  margin-top: 0.3rem;
+  color: var(--profile-muted, var(--muted));
+  font-size: 0.875rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.4rem 1rem;
+}
+
+.offerings .facts dd {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.source {
+  font-size: 0.875rem;
+}
+
+.source a {
+  color: var(--profile-accent, var(--blue));
+  font-weight: 750;
+}
+
+.source small {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 960px) {
+  .offerings :global(.university-offering-grid) > article {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  }
+
+  .source {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro,
+  .offerings :global(.university-offering-grid) > article {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .offerings :global(.university-offering-grid) > article {
+    padding-block: 1.05rem;
+  }
+
+  .facts {
+    padding-block: 0.55rem;
+    border-block: 1px solid var(--profile-line, var(--line));
+  }
+}

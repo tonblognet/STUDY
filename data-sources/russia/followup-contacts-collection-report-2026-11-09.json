@@ -1,0 +1,713 @@
+{
+  "summary": {
+    "batch": "2026-11-09",
+    "profiles": 4,
+    "newFields": 14,
+    "scope": "Gap-only central admission contacts and published housing conditions for UlSTU, UlSU, VolSU and LSTU. No fees, exams, places, deadlines or admission programs added.",
+    "baselineFieldKeys": {
+      "russia-117": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-305": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-306": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "russia-36": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ]
+    },
+    "runtimeSnapshotSha256": "f9a4988287e155dbbbd14a2e864f9fcf7edcd3304021dbcd07bb4b70b1bc9586"
+  },
+  "baseline": {
+    "runtimeSnapshotSha256": "f9a4988287e155dbbbd14a2e864f9fcf7edcd3304021dbcd07bb4b70b1bc9586",
+    "fields": {
+      "russia-117": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Липецкий государственный технический университет»",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "shortName": {
+          "value": "ФГБОУ ВО “ЛГТУ”",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "regDate": {
+          "value": "01.11.1956",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "address": {
+          "value": "398055, Россия, г. Липецк, ул. Московская, д. 30",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "telephone": {
+          "value": "+7 (4742) 328-000",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        },
+        "email": {
+          "value": "mailbox@lstu.ru",
+          "sourceUrl": "https://www.stu.lipetsk.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:33.002746+00:00",
+          "sourceSha256": "84eb6e14a6e00117b199e20c392238f391998a4d416ded414e3f77de67f0e15b"
+        }
+      },
+      "russia-305": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ульяновский государственный технический университет\"",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "shortName": {
+          "value": "УлГТУ, Ульяновский государственный технический университет",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "regDate": {
+          "value": "18.09.1957",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "address": {
+          "value": "432027, Ульяновская область, г. Ульяновск, улица Северный Венец, дом 32",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "telephone": {
+          "value": "8(8422)43-02-37",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        },
+        "email": {
+          "value": "rector@ulstu.ru",
+          "sourceUrl": "https://ulstu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:29.247359+00:00",
+          "sourceSha256": "ecc696e40da513203407c473e16ab661ea8a3c776b4a009220facb4fbd21426a"
+        }
+      },
+      "russia-306": {
+        "fullName": {
+          "value": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ульяновский государственный университет\"",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "shortName": {
+          "value": "Ульяновский государственный университет, УлГУ, ФГБОУ ВО \"Ульяновский государственный университет\"",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "regDate": {
+          "value": "11.02.1988",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "address": {
+          "value": "432017, Ульяновская область, город Ульяновск, улица Льва Толстого, дом 42",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "telephone": {
+          "value": "8 (8422) 41-29-97",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        },
+        "email": {
+          "value": "contact@ulsu.ru",
+          "sourceUrl": "https://ulsu.ru/ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.081738+00:00",
+          "sourceSha256": "2c4f0337668668b7851dde85059e0a42436b5c2ec8aa34baa1a6a79a98a65bd6"
+        }
+      },
+      "russia-36": {
+        "fullName": {
+          "value": "Федеральное государственное автономное образовательное учреждение высшего образования \"Волгоградский государственный университет\"",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "shortName": {
+          "value": "ВолГУ; ФГАОУ ВО \"Волгоградский государственный университет\"; Волгоградский государственный университет; ФГАОУ ВО ВолГУ",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "regDate": {
+          "value": "1980 г.",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "address": {
+          "value": "400062, Волгоградская область, г. Волгоград, просп. Университетский, д.100",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "telephone": {
+          "value": "+7 (8442) 460-263",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        },
+        "email": {
+          "value": "rector@volsu.ru",
+          "sourceUrl": "https://volsu.ru/sveden/common/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T15:43:30.151970+00:00",
+          "sourceSha256": "7b3b90c8313bd2c6a8571c88b74c71740daa15932abaa4cd362a4639e4fb1859"
+        }
+      }
+    }
+  },
+  "workDirectory": "tmp/russia-research/followup-contacts-2026-11-09",
+  "sources": [
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/abitur/",
+      "url": "https://ulstu.ru/abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.492347+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-305/2f0b087595cd1d41.html",
+      "sourceSha256": "885b0debc00c1fc97616f417fc680767f7d2c531c7706988ece76ee3eaf49050"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/abitur/common/contacts/",
+      "url": "https://ulstu.ru/abitur/common/contacts/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.230139+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-305/da6be8d7cbb59b1d.html",
+      "sourceSha256": "1bb7eb6d8a4dbed570e35b7660be2e483fce449fefdcd6c40c397223e4f983e5"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/for_student/dormitories/",
+      "url": "https://ulstu.ru/for_student/dormitories/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:04.842888+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-305/2a75f8ffd5d01340.html",
+      "sourceSha256": "0da6201f415e7b7a8df1cc3fd47b2e66dbd7e1d7e3b3580f87a777b7c16b079f"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://abiturient.ulsu.ru/",
+      "url": "https://abiturient.ulsu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:04.413957+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/12ae4a207d7c40fd.html",
+      "sourceSha256": "8b7ac50a60323d2a3f157708f5644ed347cc8cc60e568278ab3f4d2bb48da54d"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/",
+      "url": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.194278+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/d1f4a210b4004eb7.html",
+      "sourceSha256": "074cd6dd94eb90987ca6c415c65b203d429fcecb843ca1ec8cef49b9268bd425"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/Abitur/",
+      "url": "https://volsu.ru/Abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:21.738842+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/2115cc2e61e160b1.html",
+      "sourceSha256": "72203a151e7fd2d8421651dddfedebd31b8a2186c4f74391bbf162acd791ce3f"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/Abitur/feedback/",
+      "url": "https://volsu.ru/Abitur/feedback/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:21.726246+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/bc3115d178ee58e1.html",
+      "sourceSha256": "a3d46c48531a195f21e448b29a9d50573cd324628b1351bc41e27c4d8fe168a5"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/struct/generalservices/obshchezhitie/",
+      "url": "https://volsu.ru/struct/generalservices/obshchezhitie/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:04.421214+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/62a6e06360d5f869.html",
+      "sourceSha256": "dc5cad8a2abfd35d229d964ed07e0b84d61f47b3f17fbce495b19872d2da4ac6"
+    },
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/abit/",
+      "url": "https://www.stu.lipetsk.ru/abit/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.814287+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/cdb5ee7ecff7aee9.html",
+      "sourceSha256": "11faadca5582bb4df156ef12da072a5802505e9036e67e279ca1de6a0f46c2d6"
+    },
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/struct/management/rectorat/pro-vos/sub/uvsr/sub/hostel/",
+      "url": "https://www.stu.lipetsk.ru/struct/management/rectorat/pro-vos/sub/uvsr/sub/hostel/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:48.045453+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/6bd7a8f5d5c467c7.html",
+      "sourceSha256": "7ce4d8f1ce395245f4708c7c73f0a55837074db64ed2532c49226c34e81ed607"
+    }
+  ],
+  "attempts": [
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/abit/common/about.html",
+      "url": "https://www.stu.lipetsk.ru/abit/common/about.html",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:08.083574+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/18b3f57e8b417d61.html",
+      "sourceSha256": "66e73aa777532e8975943d0580421bb8e762ba1aa5f1b34fec8abe5b63d63af7"
+    },
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/struct/management/rectorat/pro-vos/sub/uvsr/sub/hostel/",
+      "url": "https://www.stu.lipetsk.ru/struct/management/rectorat/pro-vos/sub/uvsr/sub/hostel/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:48.045453+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/6bd7a8f5d5c467c7.html",
+      "sourceSha256": "7ce4d8f1ce395245f4708c7c73f0a55837074db64ed2532c49226c34e81ed607"
+    },
+    {
+      "universitySlug": "russia-117",
+      "requestedUrl": "https://www.stu.lipetsk.ru/abit/",
+      "url": "https://www.stu.lipetsk.ru/abit/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.814287+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-117/cdb5ee7ecff7aee9.html",
+      "sourceSha256": "11faadca5582bb4df156ef12da072a5802505e9036e67e279ca1de6a0f46c2d6"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/for_student/dormitories/",
+      "url": "https://ulstu.ru/for_student/dormitories/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:04.842888+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-305/2a75f8ffd5d01340.html",
+      "sourceSha256": "0da6201f415e7b7a8df1cc3fd47b2e66dbd7e1d7e3b3580f87a777b7c16b079f"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/abitur/",
+      "url": "https://ulstu.ru/abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.492347+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-305/2f0b087595cd1d41.html",
+      "sourceSha256": "885b0debc00c1fc97616f417fc680767f7d2c531c7706988ece76ee3eaf49050"
+    },
+    {
+      "universitySlug": "russia-305",
+      "requestedUrl": "https://ulstu.ru/abitur/common/contacts/",
+      "url": "https://ulstu.ru/abitur/common/contacts/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.230139+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-305/da6be8d7cbb59b1d.html",
+      "sourceSha256": "1bb7eb6d8a4dbed570e35b7660be2e483fce449fefdcd6c40c397223e4f983e5"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://abiturient.ulsu.ru/",
+      "url": "https://abiturient.ulsu.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:04.413957+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/12ae4a207d7c40fd.html",
+      "sourceSha256": "8b7ac50a60323d2a3f157708f5644ed347cc8cc60e568278ab3f4d2bb48da54d"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://abiturient.ulsu.ru/tiles/documents/533",
+      "url": "https://abiturient.ulsu.ru/tiles/documents/533",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.123541+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/344b8ef550aa7f21.html",
+      "sourceSha256": "f9f05c26b34ccdfb37a1c89f742da86b15bb9a785781e1490be02f0265cc0f37"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://www.ulsu.ru/ru/abitur/",
+      "checkedAt": "2026-11-09T16:15:31.424419+00:00",
+      "error": "HTTPSConnectionPool(host='www.ulsu.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "universitySlug": "russia-306",
+      "requestedUrl": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/",
+      "url": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:22.194278+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "russia-306/d1f4a210b4004eb7.html",
+      "sourceSha256": "074cd6dd94eb90987ca6c415c65b203d429fcecb843ca1ec8cef49b9268bd425"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/Abitur/",
+      "url": "https://volsu.ru/Abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:21.738842+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/2115cc2e61e160b1.html",
+      "sourceSha256": "72203a151e7fd2d8421651dddfedebd31b8a2186c4f74391bbf162acd791ce3f"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/Abitur/hotel/",
+      "url": "https://volsu.ru/Abitur/hotel/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:04.421214+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/3ff2630813981419.html",
+      "sourceSha256": "bbff87687c4f5089cf504fb3c209fb91d73c85e63fe11c1395e630e38570ebe4"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/struct/generalservices/obshchezhitie/",
+      "url": "https://volsu.ru/struct/generalservices/obshchezhitie/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:16:04.421214+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/62a6e06360d5f869.html",
+      "sourceSha256": "dc5cad8a2abfd35d229d964ed07e0b84d61f47b3f17fbce495b19872d2da4ac6"
+    },
+    {
+      "universitySlug": "russia-36",
+      "requestedUrl": "https://volsu.ru/Abitur/feedback/",
+      "url": "https://volsu.ru/Abitur/feedback/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-11-09T16:15:21.726246+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "russia-36/bc3115d178ee58e1.html",
+      "sourceSha256": "a3d46c48531a195f21e448b29a9d50573cd324628b1351bc41e27c4d8fe168a5"
+    }
+  ],
+  "reviews": [
+    {
+      "universitySlug": "russia-305",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://ulstu.ru/abitur/",
+      "xpath": "//head/title",
+      "evidence": "Поступающему",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://ulstu.ru/abitur/",
+      "literalEvidence": "Поступающему | Политех Ульяновск (УлГТУ)",
+      "resolvedXPath": "/html/head/title",
+      "sourceUrl": "https://ulstu.ru/abitur/"
+    },
+    {
+      "universitySlug": "russia-305",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://ulstu.ru/abitur/common/contacts/",
+      "xpath": "//main//p[contains(.,\"Приемная комиссия УлГТУ расположена\")]",
+      "evidence": "Номера телефона: +7 (8422) 43-05-05, +7 (960) 375-64-60",
+      "value": "+7 (8422) 43-05-05; +7 (960) 375-64-60",
+      "context": "admissions-office",
+      "publishedValue": "+7 (8422) 43-05-05; +7 (960) 375-64-60",
+      "literalEvidence": "Приемная комиссия УлГТУ расположена по адресу г. Ульяновск, ул. Северный Венец, 32, 2 учебный корпус Номера телефона: +7 (8422) 43-05-05, +7 (960) 375-64-60 Адрес электронной почты: pk@ulstu.ru Добраться можно на общественном транспорте:",
+      "resolvedXPath": "/html/body/header/div/div[2]/div/div[2]/ul/li/div/ul/li[2]/div/li[2]/div/li[6]/div/li/div/ul/li/div/li/div/li[3]/div/li/div/li[2]/div/ul/li/div/li[3]/div/li[3]/div/li[2]/div/ul/li/div[2]/div/div[2]/ul/li/div/ul/li/div/li[3]/div/li[3]/div/ul/li[2]/div/li/div/li/div/li[5]/main/div[3]/div/div/div/div/p",
+      "sourceUrl": "https://ulstu.ru/abitur/common/contacts/"
+    },
+    {
+      "universitySlug": "russia-305",
+      "field": "admissionsEmail",
+      "requestedUrl": "https://ulstu.ru/abitur/common/contacts/",
+      "xpath": "//main//p[contains(.,\"Приемная комиссия УлГТУ расположена\")]",
+      "evidence": "Адрес электронной почты: pk@ulstu.ru",
+      "value": "pk@ulstu.ru",
+      "context": "admissions-office",
+      "publishedValue": "pk@ulstu.ru",
+      "literalEvidence": "Приемная комиссия УлГТУ расположена по адресу г. Ульяновск, ул. Северный Венец, 32, 2 учебный корпус Номера телефона: +7 (8422) 43-05-05, +7 (960) 375-64-60 Адрес электронной почты: pk@ulstu.ru Добраться можно на общественном транспорте:",
+      "resolvedXPath": "/html/body/header/div/div[2]/div/div[2]/ul/li/div/ul/li[2]/div/li[2]/div/li[6]/div/li/div/ul/li/div/li/div/li[3]/div/li/div/li[2]/div/ul/li/div/li[3]/div/li[3]/div/li[2]/div/ul/li/div[2]/div/div[2]/ul/li/div/ul/li/div/li[3]/div/li[3]/div/ul/li[2]/div/li/div/li/div/li[5]/main/div[3]/div/div/div/div/p",
+      "sourceUrl": "https://ulstu.ru/abitur/common/contacts/"
+    },
+    {
+      "universitySlug": "russia-305",
+      "field": "hostelInfo",
+      "requestedUrl": "https://ulstu.ru/for_student/dormitories/",
+      "xpath": "//main//p[contains(.,\"Лицам, зарегистрированным вне\")]",
+      "evidence": "Лицам, зарегистрированным вне г.Ульяновска и нуждающимся в общежитии, таковое может быть предоставлено.",
+      "value": "Лицам, зарегистрированным вне г.Ульяновска и нуждающимся в общежитии, таковое может быть предоставлено.",
+      "context": "housing-description",
+      "publishedValue": "Лицам, зарегистрированным вне г.Ульяновска и нуждающимся в общежитии, таковое может быть предоставлено. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+      "literalEvidence": "Лицам, зарегистрированным вне г.Ульяновска и нуждающимся в общежитии, таковое может быть предоставлено.",
+      "resolvedXPath": "/html/body/header/div/div[2]/div/div[2]/ul/li/div/ul/li[2]/div/li[2]/div/li[6]/div/li/div/ul/li/div/li/div/li[3]/div/li/div/li[2]/div/ul/li/div/li[3]/div/li[3]/div/li[2]/div/ul/li/div[2]/div/div[2]/ul/li/div/ul/li/div/li[3]/div/li[3]/div/ul/li[2]/div/li/div/li/div/li[5]/main/div[3]/div/span/div/p[2]",
+      "sourceUrl": "https://ulstu.ru/for_student/dormitories/"
+    },
+    {
+      "universitySlug": "russia-306",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://abiturient.ulsu.ru/",
+      "xpath": "//head/title",
+      "evidence": "Абитуриент 2026",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://abiturient.ulsu.ru/",
+      "literalEvidence": "Абитуриент 2026",
+      "resolvedXPath": "/html/head/title",
+      "sourceUrl": "https://abiturient.ulsu.ru/"
+    },
+    {
+      "universitySlug": "russia-306",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/",
+      "xpath": "/html/body/div[2]/main/div[2]/div[2]/div",
+      "evidence": "Телефон: (8422) 41-20-90",
+      "value": "(8422) 41-20-90",
+      "context": "admissions-office",
+      "publishedValue": "(8422) 41-20-90",
+      "literalEvidence": "Контактные данные Адрес: 432017, Российская Федерация, город Ульяновск, улица Льва Толстого, дом 42, каб 10 Телефон: (8422) 41-20-90 E-mail: pk@ulsu.ru Часы приема: Пн 15-00-17:00",
+      "resolvedXPath": "/html/body/div[2]/main/div[2]/div[2]/div",
+      "sourceUrl": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/"
+    },
+    {
+      "universitySlug": "russia-306",
+      "field": "admissionsEmail",
+      "requestedUrl": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/",
+      "xpath": "/html/body/div[2]/main/div[2]/div[2]/div",
+      "evidence": "E-mail: pk@ulsu.ru",
+      "value": "pk@ulsu.ru",
+      "context": "admissions-office",
+      "publishedValue": "pk@ulsu.ru",
+      "literalEvidence": "Контактные данные Адрес: 432017, Российская Федерация, город Ульяновск, улица Льва Толстого, дом 42, каб 10 Телефон: (8422) 41-20-90 E-mail: pk@ulsu.ru Часы приема: Пн 15-00-17:00",
+      "resolvedXPath": "/html/body/div[2]/main/div[2]/div[2]/div",
+      "sourceUrl": "https://ulsu.ru/ru/sveden/struct/0b71dbab-f201-11de-8bdd-001a92e75bb4/"
+    },
+    {
+      "universitySlug": "russia-36",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://volsu.ru/Abitur/",
+      "xpath": "//head/title",
+      "evidence": "Раздел абитуриенту",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://volsu.ru/Abitur/",
+      "literalEvidence": "Раздел абитуриенту",
+      "resolvedXPath": "/html/head/title",
+      "sourceUrl": "https://volsu.ru/Abitur/"
+    },
+    {
+      "universitySlug": "russia-36",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://volsu.ru/Abitur/feedback/",
+      "xpath": "//form/p[2]",
+      "evidence": "Задать вопросы Вы так же можете по телефону справочно-информационной службы Волгоградского государственного университета: (8442) 40-55-47 или по электронному адресу: priem@volsu.ru",
+      "value": "(8442) 40-55-47",
+      "context": "admissions-office",
+      "publishedValue": "(8442) 40-55-47",
+      "literalEvidence": "Задать вопросы Вы так же можете по телефону справочно-информационной службы Волгоградского государственного университета: (8442) 40-55-47 или по электронному адресу: priem@volsu.ru Обращаем Ваше внимание на то, что все вопросы и сообщения модерируются, поэтому они появляются в ленте только после просмотра модератором ресурса.",
+      "resolvedXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/div[1]/div/form/p[2]",
+      "sourceUrl": "https://volsu.ru/Abitur/feedback/"
+    },
+    {
+      "universitySlug": "russia-36",
+      "field": "admissionsEmail",
+      "requestedUrl": "https://volsu.ru/Abitur/feedback/",
+      "xpath": "//form/p[2]",
+      "evidence": "Задать вопросы Вы так же можете по телефону справочно-информационной службы Волгоградского государственного университета: (8442) 40-55-47 или по электронному адресу: priem@volsu.ru",
+      "value": "priem@volsu.ru",
+      "context": "admissions-office",
+      "publishedValue": "priem@volsu.ru",
+      "literalEvidence": "Задать вопросы Вы так же можете по телефону справочно-информационной службы Волгоградского государственного университета: (8442) 40-55-47 или по электронному адресу: priem@volsu.ru Обращаем Ваше внимание на то, что все вопросы и сообщения модерируются, поэтому они появляются в ленте только после просмотра модератором ресурса.",
+      "resolvedXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/div[1]/div/form/p[2]",
+      "sourceUrl": "https://volsu.ru/Abitur/feedback/"
+    },
+    {
+      "universitySlug": "russia-36",
+      "field": "hostelInfo",
+      "requestedUrl": "https://volsu.ru/struct/generalservices/obshchezhitie/",
+      "xpath": "//p[contains(.,\"В общежитии могут проживать как одинокие обучающиеся\")]",
+      "evidence": "В пределах имеющегося жилищного фонда для семейных обучающихся выделяются изолированные жилые помещения в соответствии с локальными нормативными актами и требованиями жилищного законодательства.",
+      "value": "В пределах имеющегося жилищного фонда для семейных обучающихся выделяются изолированные жилые помещения в соответствии с локальными нормативными актами и требованиями жилищного законодательства.",
+      "context": "housing-description",
+      "publishedValue": "В пределах имеющегося жилищного фонда для семейных обучающихся выделяются изолированные жилые помещения в соответствии с локальными нормативными актами и требованиями жилищного законодательства. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+      "literalEvidence": "В общежитии могут проживать как одинокие обучающиеся, так и студенческие семьи ( обучающи е ся, состоящие в браке, и/или имеющи е детей ). В пределах имеющегося жилищного фонда для семейных обучающихся выделяются изолированные жилые помещения в соответствии с локальными нормативными актами и требованиями жилищного законодательства.",
+      "resolvedXPath": "/html/body/header[2]/div[2]/div[3]/div/div[2]/p[17]",
+      "sourceUrl": "https://volsu.ru/struct/generalservices/obshchezhitie/"
+    },
+    {
+      "universitySlug": "russia-117",
+      "field": "admissionsUrl",
+      "requestedUrl": "https://www.stu.lipetsk.ru/abit/",
+      "xpath": "//head/title",
+      "evidence": "Абитуриенту - ЛГТУ",
+      "value": null,
+      "context": "admissions-page",
+      "publishedValue": "https://www.stu.lipetsk.ru/abit/",
+      "literalEvidence": "Абитуриенту - ЛГТУ",
+      "resolvedXPath": "/html/head/title",
+      "sourceUrl": "https://www.stu.lipetsk.ru/abit/"
+    },
+    {
+      "universitySlug": "russia-117",
+      "field": "admissionsPhone",
+      "requestedUrl": "https://www.stu.lipetsk.ru/abit/",
+      "xpath": "/html/body/div[2]/main/section[2]/div/section[4]/div[2]/div[1]/p[3]",
+      "evidence": "Ответственный секретарь: +7 (4742) 328-223",
+      "value": "+7 (4742) 328-223",
+      "context": "admissions-office",
+      "publishedValue": "+7 (4742) 328-223",
+      "literalEvidence": "Ответственный секретарь: +7 (4742) 328-223",
+      "resolvedXPath": "/html/body/div[2]/main/section[2]/div/section[4]/div[2]/div[1]/p[3]",
+      "sourceUrl": "https://www.stu.lipetsk.ru/abit/"
+    },
+    {
+      "universitySlug": "russia-117",
+      "field": "hostelInfo",
+      "requestedUrl": "https://www.stu.lipetsk.ru/struct/management/rectorat/pro-vos/sub/uvsr/sub/hostel/",
+      "xpath": "/html/body/div[2]/main/section[2]/div/div/div/p[1]",
+      "evidence": "ЛГТУ располагает благоустроенным общежитием. Иногородние студенты при наличии соответствующего жилищного фонда обеспечиваются местами в общежитии ЛГТУ.",
+      "value": "ЛГТУ располагает благоустроенным общежитием. Иногородние студенты при наличии соответствующего жилищного фонда обеспечиваются местами в общежитии ЛГТУ.",
+      "context": "housing-description",
+      "publishedValue": "ЛГТУ располагает благоустроенным общежитием. Иногородние студенты при наличии соответствующего жилищного фонда обеспечиваются местами в общежитии ЛГТУ. Это описание опубликованных условий, а не подтверждение наличия свободного места или гарантия заселения.",
+      "literalEvidence": "ЛГТУ располагает благоустроенным общежитием. Иногородние студенты при наличии соответствующего жилищного фонда обеспечиваются местами в общежитии ЛГТУ. В период вступительных экзаменов все нуждающиеся иногородние абитуриенты обеспечиваются местами в общежитии на тех же условиях, что и студенты ЛГТУ.",
+      "resolvedXPath": "/html/body/div[2]/main/section[2]/div/div/div/p[1]",
+      "sourceUrl": "https://www.stu.lipetsk.ru/struct/management/rectorat/pro-vos/sub/uvsr/sub/hostel/"
+    }
+  ],
+  "issues": [
+    {
+      "universitySlug": "russia-117",
+      "reason": "The central admission secretary's phone is kept with its explicit role. Only institute/college/lyceum and Ministry emails appear in the admission page; none is promoted to the central admission email. The central email remains unknown."
+    },
+    {
+      "universitySlug": "russia-305",
+      "reason": "The selected central commission paragraph precedes IATU and faculty contract-contact blocks; those contacts are excluded. Housing explicitly says it may be provided to people registered outside Ulyanovsk; it is not a placement guarantee. Published tariffs and room allocations are excluded."
+    },
+    {
+      "universitySlug": "russia-306",
+      "reason": "The Secretariat of the admission commission supplies its own phone and email, separately from general-office contact@ulsu.ru and Ministry hotlines. Housing conditions have not been reviewed and remain unknown."
+    },
+    {
+      "universitySlug": "russia-36",
+      "reason": "The applicant question-and-answer service supplies the phone and email, distinct from the rector's office and general office. Housing text preserves the existing-housing-stock condition for student families. Seasonal applicant housing tariffs and deadlines are excluded."
+    }
+  ]
+}

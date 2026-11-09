@@ -1,0 +1,592 @@
+{
+  "profiles": [
+    {
+      "universitySlug": "mipt",
+      "fields": {
+        "hostelInfo": {
+          "value": "Общежития № 12, 13 и 14 приспособлены для использования инвалидами с нарушениями опорно-двигательного аппарата. Общежития № 10 и 11 оборудованы пандусом. Наличие свободных мест и предоставление места требуют отдельного подтверждения.",
+          "sourceUrl": "https://mipt.ru/sveden/objects/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:06:01.241702+00:00",
+          "sourceSha256": "640ae896c6fd9cd87aa5ebf5477dc8458f0655a4a980402811e5e28379773371"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "mephi",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7 495 785 55 25",
+          "sourceUrl": "https://admission.mephi.ru/about/contacts",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:01.181529+00:00",
+          "sourceSha256": "ca97a28047630c81210f46e712788d07af3ad43f3ade6decc8ae1a9e1a2825c2"
+        },
+        "admissionsEmail": {
+          "value": "priem@mephi.ru",
+          "sourceUrl": "https://admission.mephi.ru/about/contacts",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:01.181529+00:00",
+          "sourceSha256": "ca97a28047630c81210f46e712788d07af3ad43f3ade6decc8ae1a9e1a2825c2"
+        },
+        "hostelInfo": {
+          "value": "Университет имеет современный комплекс общежитий, в который входят общежития квартирного и коридорного типа. В общежитиях квартирного типа каждая квартира укомплектована необходимой мебелью для учебы и отдыха, холодильником и электроплитой. В квартирах имеется кухня, ванная комната, туалет, лоджия. Наличие свободных мест и предоставление места требуют отдельного подтверждения.",
+          "sourceUrl": "https://admission.mephi.ru/about/dorm",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:47.795090+00:00",
+          "sourceSha256": "f41e57cb718d876c293e65cac01cac32bdb42e7021308654c8022880d640fe29"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "mpei",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7 (495) 362-77-77",
+          "sourceUrl": "https://pk.mpei.ru/contacts.html",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:02.587584+00:00",
+          "sourceSha256": "d83931ea5c42fd164cef097f64ddb220f2862195ab56448b8f66c49d5175d1d3"
+        },
+        "admissionsEmail": {
+          "value": "pk@mpei.ru",
+          "sourceUrl": "https://pk.mpei.ru/contacts.html",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:02.587584+00:00",
+          "sourceSha256": "d83931ea5c42fd164cef097f64ddb220f2862195ab56448b8f66c49d5175d1d3"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "rudn",
+      "fields": {
+        "hostelInfo": {
+          "value": "1-8 блоки туалетная комната, умывальник и кухня находятся на этаже. Душевые кабины, прачечная, гладильные комнаты и камера хранения расположены на цокольном этаже. Наличие свободных мест и предоставление места требуют отдельного подтверждения.",
+          "sourceUrl": "https://www.rudn.ru/life/accomodation",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:48.436406+00:00",
+          "sourceSha256": "ccb8d29cf9c0766931f4270204208e553d24ab886a0994a7120d05a7249c76ac"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "mgppu",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7 (495) 822-32-52",
+          "sourceUrl": "https://mgppu.ru/project/250",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:05.668034+00:00",
+          "sourceSha256": "e71d20a85be27af1393aecb69c277bbf41c759ba422e36f6060127b10b0e4965"
+        },
+        "admissionsEmail": {
+          "value": "priem@mgppu.ru",
+          "sourceUrl": "https://mgppu.ru/project/250",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:05.668034+00:00",
+          "sourceSha256": "e71d20a85be27af1393aecb69c277bbf41c759ba422e36f6060127b10b0e4965"
+        },
+        "hostelInfo": {
+          "value": "ФГБОУ ВО МГППУ не имеет общежития. Наличие свободных мест и предоставление места требуют отдельного подтверждения.",
+          "sourceUrl": "https://mgppu.ru/students/helphostel",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:47.629797+00:00",
+          "sourceSha256": "4d0e01597ff2cf5dd89a9eb2d136db9dc2161fd5070d7a58488995d3c690735f"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "mirea",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://priem.mirea.ru/",
+          "sourceUrl": "https://priem.mirea.ru/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:07.816444+00:00",
+          "sourceSha256": "3c2e6dd7e4f85cc9d2b2eb19c29fa52c64401c0996d05528848d2087f0bbce87"
+        },
+        "admissionsPhone": {
+          "value": "+7 499 322-20-30",
+          "sourceUrl": "https://priem.mirea.ru/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:07.816444+00:00",
+          "sourceSha256": "3c2e6dd7e4f85cc9d2b2eb19c29fa52c64401c0996d05528848d2087f0bbce87"
+        },
+        "admissionsEmail": {
+          "value": "pk@mirea.ru",
+          "sourceUrl": "https://priem.mirea.ru/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:07.816444+00:00",
+          "sourceSha256": "3c2e6dd7e4f85cc9d2b2eb19c29fa52c64401c0996d05528848d2087f0bbce87"
+        },
+        "hostelInfo": {
+          "value": "В зависимости от общежития имеются: комнаты подготовки к учебным занятиям, комнаты для занятий спортом и отдыха, комнаты для самостоятельных занятий, спортивные и тренажёрные залы, постирочные и гладильные комнаты, комнаты для творческих занятий, парковки для велосипедов, площадки для занятий уличными видами спорта, буфеты и столовые. В общежитиях для учёбы студентов установлены компьютеры с доступом к сети Интернет и основным сервисам университета. Наличие свободных мест и предоставление места требуют отдельного подтверждения.",
+          "sourceUrl": "https://www.mirea.ru/about/infrastructure/obshchezhitiya/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:06:01.358429+00:00",
+          "sourceSha256": "a04fd49143d83142845d9eca97c84a041004649cc1f569b7e06ef3807a6b2b09"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "mtuci",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://abitur.mtuci.ru/",
+          "sourceUrl": "https://abitur.mtuci.ru/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:50.123625+00:00",
+          "sourceSha256": "4cbbea2bcf6de8d3073ae3b8d5fbb9a3558eda4dfc0ca4385176ad0626fe80bf"
+        },
+        "admissionsPhone": {
+          "value": "+7 (495) 673-36-25",
+          "sourceUrl": "https://abitur.mtuci.ru/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:04:47.486059+00:00",
+          "sourceSha256": "2141080aa52e7a3d6ecc0cd82f803726818a3bc19eec058c87052b3a8fb3029d"
+        },
+        "admissionsEmail": {
+          "value": "pk@mtuci.ru",
+          "sourceUrl": "https://abitur.mtuci.ru/contacts/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:04:47.486059+00:00",
+          "sourceSha256": "2141080aa52e7a3d6ecc0cd82f803726818a3bc19eec058c87052b3a8fb3029d"
+        },
+        "hostelInfo": {
+          "value": "Общежитие предоставляется только для студентов очной формы обучения. Наличие свободных мест и предоставление места требуют отдельного подтверждения.",
+          "sourceUrl": "https://abitur.mtuci.ru/dormitory/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:04:47.509080+00:00",
+          "sourceSha256": "1eb8d13564235823936779acf5676f5a537f8779780eedcb7e18e2f757f48430"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    },
+    {
+      "universitySlug": "rsuh",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://www.rsuh.ru/abitur/",
+          "sourceUrl": "https://www.rsuh.ru/abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:51.980482+00:00",
+          "sourceSha256": "7feea3d0df2603cfc35a42927ecbfc1773a4024cce3e19bff84c3c0b00676c5a"
+        },
+        "admissionsPhone": {
+          "value": "+7(495) 250-71-71",
+          "sourceUrl": "https://www.rsuh.ru/abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:51.980482+00:00",
+          "sourceSha256": "7feea3d0df2603cfc35a42927ecbfc1773a4024cce3e19bff84c3c0b00676c5a"
+        },
+        "admissionsEmail": {
+          "value": "priem@rggu.ru",
+          "sourceUrl": "https://www.rsuh.ru/abitur/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-10-25T07:03:51.980482+00:00",
+          "sourceSha256": "7feea3d0df2603cfc35a42927ecbfc1773a4024cce3e19bff84c3c0b00676c5a"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    }
+  ],
+  "sources": [
+    {
+      "universitySlug": "mephi",
+      "requestedUrl": "https://admission.mephi.ru/about/contacts",
+      "url": "https://admission.mephi.ru/about/contacts",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:01.181529+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "mephi/460b1e999eb57908.html",
+      "sourceSha256": "ca97a28047630c81210f46e712788d07af3ad43f3ade6decc8ae1a9e1a2825c2"
+    },
+    {
+      "universitySlug": "mephi",
+      "requestedUrl": "https://admission.mephi.ru/about/dorm",
+      "url": "https://admission.mephi.ru/about/dorm",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:47.795090+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "mephi/7ef58835587c8c22.html",
+      "sourceSha256": "f41e57cb718d876c293e65cac01cac32bdb42e7021308654c8022880d640fe29"
+    },
+    {
+      "universitySlug": "mgppu",
+      "requestedUrl": "https://mgppu.ru/project/250",
+      "url": "https://mgppu.ru/project/250",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:05.668034+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mgppu/22ac39c24ed8020d.html",
+      "sourceSha256": "e71d20a85be27af1393aecb69c277bbf41c759ba422e36f6060127b10b0e4965"
+    },
+    {
+      "universitySlug": "mgppu",
+      "requestedUrl": "https://mgppu.ru/students/helphostel",
+      "url": "https://mgppu.ru/students/helphostel",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:47.629797+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mgppu/6235a48c942f87cd.html",
+      "sourceSha256": "4d0e01597ff2cf5dd89a9eb2d136db9dc2161fd5070d7a58488995d3c690735f"
+    },
+    {
+      "universitySlug": "mipt",
+      "requestedUrl": "https://mipt.ru/sveden/objects/",
+      "url": "https://mipt.ru/sveden/objects/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:06:01.241702+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mipt/39cef4ced918a35b.html",
+      "sourceSha256": "640ae896c6fd9cd87aa5ebf5477dc8458f0655a4a980402811e5e28379773371"
+    },
+    {
+      "universitySlug": "mipt",
+      "requestedUrl": "https://pk.mipt.ru/contacts/",
+      "url": "https://pk.mipt.ru/contacts/",
+      "httpStatus": "403",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:04:47.029756+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "error": "HTTP 403"
+    },
+    {
+      "universitySlug": "mipt",
+      "requestedUrl": "https://pk.mipt.ru/",
+      "url": "https://pk.mipt.ru/",
+      "httpStatus": "403",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:02:59.594240+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "error": "HTTP 403"
+    },
+    {
+      "universitySlug": "mipt",
+      "requestedUrl": "https://pk.mipt.ru/bachelor/",
+      "url": "https://pk.mipt.ru/bachelor/",
+      "httpStatus": "403",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:05:10.697343+00:00",
+      "contentType": "text/html",
+      "encoding": "ISO-8859-1",
+      "error": "HTTP 403"
+    },
+    {
+      "universitySlug": "mirea",
+      "requestedUrl": "https://priem.mirea.ru/",
+      "url": "https://priem.mirea.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:07.816444+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "mirea/1c9b6050d10bcf79.html",
+      "sourceSha256": "3c2e6dd7e4f85cc9d2b2eb19c29fa52c64401c0996d05528848d2087f0bbce87"
+    },
+    {
+      "universitySlug": "mirea",
+      "requestedUrl": "https://www.mirea.ru/about/infrastructure/obshchezhitiya/",
+      "url": "https://www.mirea.ru/about/infrastructure/obshchezhitiya/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:06:01.358429+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mirea/b8d81a8a471a1ff6.html",
+      "sourceSha256": "a04fd49143d83142845d9eca97c84a041004649cc1f569b7e06ef3807a6b2b09"
+    },
+    {
+      "universitySlug": "mpei",
+      "requestedUrl": "https://pk.mpei.ru/contacts.html",
+      "url": "https://pk.mpei.ru/contacts.html",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:02.587584+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "mpei/59925ca6cd28fa2f.html",
+      "sourceSha256": "d83931ea5c42fd164cef097f64ddb220f2862195ab56448b8f66c49d5175d1d3"
+    },
+    {
+      "universitySlug": "mtuci",
+      "requestedUrl": "https://abitur.mtuci.ru/",
+      "url": "https://abitur.mtuci.ru/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:50.123625+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mtuci/0687ded1a526732e.html",
+      "sourceSha256": "4cbbea2bcf6de8d3073ae3b8d5fbb9a3558eda4dfc0ca4385176ad0626fe80bf"
+    },
+    {
+      "universitySlug": "mtuci",
+      "requestedUrl": "https://abitur.mtuci.ru/dormitory/",
+      "url": "https://abitur.mtuci.ru/dormitory/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:04:47.509080+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mtuci/8a34f62df9d95a5b.html",
+      "sourceSha256": "1eb8d13564235823936779acf5676f5a537f8779780eedcb7e18e2f757f48430"
+    },
+    {
+      "universitySlug": "mtuci",
+      "requestedUrl": "https://abitur.mtuci.ru/contacts/",
+      "url": "https://abitur.mtuci.ru/contacts/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:04:47.486059+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "mtuci/9477169a4faecf0e.html",
+      "sourceSha256": "2141080aa52e7a3d6ecc0cd82f803726818a3bc19eec058c87052b3a8fb3029d"
+    },
+    {
+      "universitySlug": "rsuh",
+      "requestedUrl": "https://www.rsuh.ru/applicant/",
+      "url": "https://www.rsuh.ru/abitur/",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:51.980482+00:00",
+      "contentType": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "body": "rsuh/894f3f300e069760.html",
+      "sourceSha256": "7feea3d0df2603cfc35a42927ecbfc1773a4024cce3e19bff84c3c0b00676c5a"
+    },
+    {
+      "universitySlug": "rudn",
+      "requestedUrl": "https://www.rudn.ru/life/accomodation",
+      "url": "https://www.rudn.ru/life/accomodation",
+      "httpStatus": "200",
+      "exitCode": 0,
+      "checkedAt": "2026-10-25T07:03:48.436406+00:00",
+      "contentType": "text/html; charset=UTF-8",
+      "encoding": "UTF-8",
+      "body": "rudn/f88d6717d874c25e.html",
+      "sourceSha256": "ccb8d29cf9c0766931f4270204208e553d24ab886a0994a7120d05a7249c76ac"
+    }
+  ],
+  "issues": [
+    {
+      "universitySlug": "mipt",
+      "field": "admissionsUrl",
+      "sourceUrl": "https://pk.mipt.ru/",
+      "reason": "The admissions landing page and two related admissions routes return HTTP 403. No admissions URL or contact is inferred from old search snippets. The official accessible objects page supports only the hostel description."
+    },
+    {
+      "universitySlug": "mephi",
+      "sourceUrl": "https://admission.mephi.ru/about/contacts",
+      "reason": "Only the commission's Moscow call-centre phone and its explicitly labelled email are used. The Intereducation hotline, special-category consultation number, institute contacts and branch contacts are excluded. No address conflict is resolved: hostel addresses are omitted."
+    },
+    {
+      "universitySlug": "mpei",
+      "sourceUrl": "https://pk.mpei.ru/contacts.html",
+      "reason": "University contacts come from the local pk-home-contacts block. Adjacent federal call-centres, including the ministry email, are excluded. Existing admissions URL and hostel description are not replaced."
+    },
+    {
+      "universitySlug": "mgppu",
+      "field": "hostelInfo",
+      "sourceUrl": "https://mgppu.ru/students/helphostel",
+      "reason": "The university explicitly says it has no own hostel and describes assistance with other organisations. Placement statistics for 2022-2023 and 2023-2024 are historical and excluded. This is a current page observation, not a 2026 placement guarantee."
+    },
+    {
+      "universitySlug": "mgppu",
+      "sourceUrl": "https://mgppu.ru/project/250",
+      "reason": "Only the bachelor's/specialist's/master's admissions contact is used; security-post phone and postgraduate admissions contacts are excluded."
+    },
+    {
+      "universitySlug": "mtuci",
+      "field": "hostelInfo",
+      "sourceUrl": "https://abitur.mtuci.ru/dormitory/",
+      "reason": "Only the explicit full-time-study restriction is reproduced. Score-based hostel guarantees, deadlines, admission thresholds, personal housing-department email and commercial housing services are excluded."
+    },
+    {
+      "universitySlug": "rsuh",
+      "sourceUrl": "https://www.rsuh.ru/applicant/",
+      "reason": "The central commission's multichannel number and email are used. College, foreign-student, targeted-admissions and personal staff phones, plus the ministry email in a separate block, are excluded. The existing hostel fact is preserved."
+    },
+    {
+      "universitySlug": "mipt",
+      "sourceUrl": "https://pk.mipt.ru/contacts/",
+      "reason": "HTTP 403"
+    },
+    {
+      "universitySlug": "mipt",
+      "sourceUrl": "https://pk.mipt.ru/",
+      "reason": "HTTP 403"
+    },
+    {
+      "universitySlug": "mipt",
+      "sourceUrl": "https://pk.mipt.ru/bachelor/",
+      "reason": "HTTP 403"
+    }
+  ],
+  "summary": {
+    "batch": "2026-10-25",
+    "profiles": 8,
+    "newFields": 21,
+    "scope": "Gap-only admission contacts and hostel facts; no place-availability guarantee, no admissions programs.",
+    "baseline": "Frozen baseline.json in the evidence directory; existing values and dates are preserved.",
+    "baselineFields": {
+      "mipt": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "mephi": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "mpei": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "hostelInfo",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "rudn": [
+        "address",
+        "admissionsEmail",
+        "admissionsPhone",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "mgppu": [
+        "address",
+        "admissionsUrl",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "mirea": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "mtuci": [
+        "address",
+        "email",
+        "fullName",
+        "regDate",
+        "shortName",
+        "telephone"
+      ],
+      "rsuh": [
+        "address",
+        "email",
+        "fullName",
+        "hostelInfo",
+        "regDate",
+        "shortName",
+        "telephone"
+      ]
+    },
+    "baselineSources": [
+      {
+        "path": "data-sources/moscow/profiles.json",
+        "sha256": "bab745259edbe9aa3fc8918debdb0d914f39a1075f7bb415dd7dc82baaa59b46"
+      },
+      {
+        "path": "data-sources/russia/profiles.json",
+        "sha256": "c3ac03fe4b7b5abe0806e496ec5353a06f0d9cac5f91ec2e3aad62acfc35c2b0"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-09.json",
+        "sha256": "8eda6d2642ab560557f101a238a0c78b82096f71477f448beca56ea2ec31ed9b"
+      },
+      {
+        "path": "data-sources/russia/regional-enrichment-2026-10-09.json",
+        "sha256": "5d7c68d1ce570e48f579f115a4d9aa57af42ec923c44ea12f33e202eb5c8e590"
+      },
+      {
+        "path": "data-sources/russia/regional-enrichment-2026-10-10.json",
+        "sha256": "f08a985610b68d62b772754964fdf026d7d584c8184b9d126d02e8b270fe1148"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-10.json",
+        "sha256": "733190337cef2a84027db7fe1d0418b2aebeaf23fd4d90cbb71c838060c5c71e"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-11.json",
+        "sha256": "dde112b767344afbfd33508a6ec7978ec635fbb1b0be3e4e3b02043b286d4b33"
+      },
+      {
+        "path": "data-sources/russia/regional-enrichment-2026-10-11.json",
+        "sha256": "fc720afe6f79e9691fe17c59e02618f1b77045ab03033faa4b4a17ea4d6ccf26"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-20.json",
+        "sha256": "51023ccd17065bc43453a0d981f9c0165f2129f997490a8f7bd6cf5a1072f07c"
+      },
+      {
+        "path": "data-sources/russia/regional-north-enrichment-2026-10-20.json",
+        "sha256": "b89389a98df1150ac983a2e3b0891d24940e6498b4aa1305fd4fd90d4a787f6f"
+      },
+      {
+        "path": "data-sources/russia/regional-south-enrichment-2026-10-20.json",
+        "sha256": "6b66ede590b91a0afbd3abcd2689b63aa3f0133b1ec0343cea1e160d093e5985"
+      },
+      {
+        "path": "data-sources/russia/moscow-enrichment-2026-10-22.json",
+        "sha256": "bb09d5f04e23e0345c722ddb011c6c75118c444181d8d2cc592561d09743f1ab"
+      },
+      {
+        "path": "data-sources/russia/regional-enrichment-2026-10-22.json",
+        "sha256": "267b538c8ea30af87ad83eb9ad0ce37061be27d7089013defad06bab882d51dc"
+      },
+      {
+        "path": "data-sources/russia/contacts-enrichment-2026-10-22.json",
+        "sha256": "1ef35398c7eddaae1a88446d147e33dc98d74fa79b3660119f740e4085c7a68d"
+      }
+    ]
+  }
+}

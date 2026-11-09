@@ -1,5 +1,8 @@
 import Link from "next/link";
-import { VerifyEmailAction } from "@/components/simple-auth-action";
+import {
+  VerifyEmailAction,
+  ResendVerificationForm,
+} from "@/components/simple-auth-action";
 export const metadata = { title: "Подтверждение email" };
 export default async function VerifyEmailPage({
   searchParams,
@@ -11,7 +14,18 @@ export default async function VerifyEmailPage({
     <div className="auth-page">
       <section>
         <h1>Подтверждение email</h1>
+        {token && (
+          <p>
+            Введите пароль аккаунта. Если вы его не знаете, сначала{" "}
+            <Link className="text-link" href="/forgot-password">
+              задайте новый пароль
+            </Link>
+            , затем снова откройте ссылку из письма о подтверждении.
+          </p>
+        )}
         <VerifyEmailAction token={token} />
+        <h2>Нужна новая ссылка?</h2>
+        <ResendVerificationForm />
         <div className="auth-links">
           <Link href="/login">Перейти ко входу</Link>
         </div>

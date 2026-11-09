@@ -66,9 +66,10 @@ pnpm data:import -- --input=tmp/catalog-candidate.json --actor=editor@example.ru
 
 ## Интеграционные проверки
 
-Создать отдельную PostgreSQL БД, имя которой заканчивается на `_test`, и задать
-`TEST_DATABASE_URL`. Тесты сами применяют миграции к случайной схеме и удаляют
-только её после выполнения. `DATABASE_URL` приложения не используется тестами.
+Подготовить отдельную PostgreSQL БД `_test` в UTF8 и UTC и задать
+`TEST_DATABASE_URL` по [инструкции интеграционных проверок](INTEGRATION_TESTS.md).
+Тесты сами применяют миграции к случайной схеме и удаляют только её после
+выполнения.
 
 ```bash
 pnpm test:catalog:db

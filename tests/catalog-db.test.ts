@@ -446,6 +446,7 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
     { skip: process.env.CATALOG_HTTP_TESTS !== "true" },
     async () => {
       const state = {
+        version: 0,
         favoriteIds: [],
         comparisonIds: [],
         scoreSets: [
@@ -464,6 +465,7 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
       };
       const headers = {
         cookie: userCookie,
+        "x-account-id": "catalog-applicant-test",
         origin: base,
         "content-type": "application/json",
       };
@@ -475,7 +477,10 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
       assert.equal(response.status, 200, await response.clone().text());
       const stored = await (
         await fetch(`${base}/api/user-state`, {
-          headers: { cookie: userCookie },
+          headers: {
+            cookie: userCookie,
+            "x-account-id": "catalog-applicant-test",
+          },
         })
       ).json();
       assert.deepEqual(stored.state.scoreSets, state.scoreSets);

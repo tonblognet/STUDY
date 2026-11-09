@@ -5,7 +5,11 @@ export function requestFingerprint(request: Request): string {
     .get("x-forwarded-for")
     ?.split(",")[0]
     ?.trim();
-  const address = forwarded ?? request.headers.get("x-real-ip") ?? "unknown";
+  // Only enable behind a proxy that replaces client-supplied forwarding headers.
+  const address =
+    process.env.TRUST_PROXY === "true"
+      ? (forwarded ?? request.headers.get("x-real-ip") ?? "unknown")
+      : "unknown";
   const secret = process.env.AUTH_SECRET ?? "development-only";
   return createHash("sha256").update(`${secret}:${address}`).digest("hex");
 }

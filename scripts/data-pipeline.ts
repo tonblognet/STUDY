@@ -17,6 +17,7 @@ import {
   validateAdmissionCampaign,
 } from "../lib/university-admission-campaigns";
 import type { SourcedValue } from "../lib/admissions/types";
+import { getDirectoryDetails } from "../lib/university-directory-details";
 import {
   universityFactProfiles,
   universitySourcedFields,
@@ -344,6 +345,12 @@ async function parseCache() {
 }
 
 async function validate() {
+  const [{ baselineCatalog }, { parseCatalog }] = await Promise.all([
+    import("../lib/catalog/baseline"),
+    import("../lib/catalog/schema"),
+  ]);
+  // Directory fields and faculties must pass the same boundary as a publication.
+  parseCatalog(baselineCatalog());
   let critical = 0;
   for (const adapter of selected) {
     const campaign = getAdmissionCampaign(adapter.slug);
@@ -424,6 +431,17 @@ async function report() {
       university: adapter.name,
       slug: adapter.slug,
       programs: items.length,
+      directoryCoverage: (() => {
+        const details = getDirectoryDetails(adapter.slug);
+        return {
+          sourcedFields: Object.keys(details?.fields ?? {}).length,
+          faculties: details?.faculties?.length ?? 0,
+          educationalListings: details?.offerings.length ?? 0,
+          historicalEducationAreas: details?.educationAreas.length ?? 0,
+          currentLicenseConfirmed:
+            details?.licenseRegistry.value === "verified",
+        };
+      })(),
       supplementaryAdmissionCampaign: (() => {
         const campaign = getAdmissionCampaign(adapter.slug);
         return campaign

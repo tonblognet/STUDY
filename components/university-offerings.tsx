@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { UniversityOffering } from "@/lib/university-directory-details";
+import styles from "./university-offerings.module.css";
 
 export function UniversityOfferings({ rows }: { rows: UniversityOffering[] }) {
   const [query, setQuery] = useState("");
@@ -15,39 +16,45 @@ export function UniversityOfferings({ rows }: { rows: UniversityOffering[] }) {
   );
   return (
     <section
-      className="university-offerings"
+      className={`university-offerings ${styles.offerings}`}
       aria-labelledby="offerings-heading"
     >
-      <h2 id="offerings-heading">Направления из официального перечня</h2>
-      <p>
-        Вуз публикует эти программы в разделе «Образование». Набор на 2026 год,
-        вступительные испытания, места и стоимость требуют отдельной проверки.
-        Эти записи пока не участвуют в подборе по ЕГЭ.
-      </p>
-      <label className="university-offering-search">
-        Поиск по направлениям
-        <input
-          type="search"
-          value={query}
-          placeholder="Код, название или профиль"
-          onChange={(event) => {
-            setQuery(event.target.value);
-            setLimit(12);
-          }}
-        />
-      </label>
+      <div className={styles.intro}>
+        <div>
+          <h2 id="offerings-heading">Направления из официального перечня</h2>
+          <p>
+            Вступительные испытания, места, стоимость и условия набора требуют
+            отдельной проверки. Эти записи пока не участвуют в подборе по ЕГЭ.
+          </p>
+        </div>
+        <label className="university-offering-search">
+          Поиск по направлениям
+          <input
+            type="search"
+            value={query}
+            placeholder="Код, название или профиль"
+            onChange={(event) => {
+              setQuery(event.target.value);
+              setLimit(12);
+            }}
+          />
+        </label>
+      </div>
       <p role="status">
         Найдено направлений и профилей: {filtered.length} из {rows.length}
       </p>
       <div className="university-offering-grid">
         {filtered.slice(0, limit).map((row) => (
           <article key={row.id}>
-            <span className="overline">
-              {row.code} · {row.level}
-            </span>
-            <h3>{row.title}</h3>
-            {row.profile && row.profile !== row.title && <p>{row.profile}</p>}
-            <dl>
+            <div className={styles.identity}>
+              <div className={styles.classification}>
+                <span>{row.code}</span>
+                <span>{row.level}</span>
+              </div>
+              <h3>{row.title}</h3>
+              {row.profile && row.profile !== row.title && <p>{row.profile}</p>}
+            </div>
+            <dl className={styles.facts}>
               <div>
                 <dt>Формы обучения</dt>
                 <dd>{row.forms ?? "Не указаны в проверенной строке"}</dd>
@@ -57,16 +64,21 @@ export function UniversityOfferings({ rows }: { rows: UniversityOffering[] }) {
                 <dd>{row.duration ?? "Требует уточнения"}</dd>
               </div>
             </dl>
-            <a href={row.sourceUrl} target="_blank" rel="noreferrer">
-              Официальный перечень ↗
-            </a>
-            <small>
-              Проверено{" "}
-              {new Date(row.checkedAt).toLocaleDateString("ru-RU", {
-                timeZone: "Europe/Moscow",
-              })}
-              . Год набора не подтверждён.
-            </small>
+            <div className={styles.source}>
+              <a href={row.sourceUrl} target="_blank" rel="noreferrer">
+                Официальный перечень ↗
+              </a>
+              <small>
+                Проверено{" "}
+                {new Date(row.checkedAt).toLocaleDateString("ru-RU", {
+                  timeZone: "Europe/Moscow",
+                })}
+                .{" "}
+                {row.sourceYear === null
+                  ? "Год набора не подтверждён."
+                  : `Перечень за ${row.sourceYear} год.`}
+              </small>
+            </div>
           </article>
         ))}
       </div>

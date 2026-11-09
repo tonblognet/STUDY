@@ -1,2 +1,5 @@
 # Preserve exact official logo bytes and their provenance checksums.
 public/university-logos/moscow/* -text whitespace=-blank-at-eol
+
+# Keep structured catalog artifact checksums stable across Windows and Unix.
+data-sources/russia/*.json text eol=lf

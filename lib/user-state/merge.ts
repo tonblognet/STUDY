@@ -13,13 +13,15 @@ export function mergeUserStates(
   }
 
   return {
-    favoriteIds: [...new Set([...server.favoriteIds, ...local.favoriteIds])],
+    favoriteIds: [
+      ...new Set([...server.favoriteIds, ...local.favoriteIds]),
+    ].slice(0, 200),
     comparisonIds: [
       ...new Set([...server.comparisonIds, ...local.comparisonIds]),
-    ],
-    scoreSets: [...profiles.values()].sort((left, right) =>
-      right.updatedAt.localeCompare(left.updatedAt),
-    ),
+    ].slice(0, 20),
+    scoreSets: [...profiles.values()]
+      .sort((left, right) => right.updatedAt.localeCompare(left.updatedAt))
+      .slice(0, 8),
   };
 }
 
