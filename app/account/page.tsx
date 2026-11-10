@@ -38,6 +38,8 @@ export default async function AccountPage() {
         <a href="#tracker">Трекер</a>
         <a href="#notifications">Уведомления</a>
         <a href="#security">Безопасность</a>
+        <Link href="/account/billing">Оплаты и доступ</Link>
+        <Link href="/support#history">Поддержка</Link>
       </nav>
       <UserStateStatus />
       <section id="profile" className="account-section">

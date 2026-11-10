@@ -27,7 +27,30 @@ enum PaymentStatus {
   PENDING
   SUCCEEDED
   FAILED
+  PARTIALLY_REFUNDED
   REFUNDED
+}
+
+enum PaymentInitStatus {
+  LEGACY
+  NEW
+  IN_FLIGHT
+  READY
+  UNKNOWN
+  REJECTED
+}
+
+enum PaymentOperationKind {
+  INIT
+  REFUND
+  RECONCILE
+}
+
+enum PaymentOperationState {
+  IN_FLIGHT
+  SUCCEEDED
+  UNKNOWN
+  REJECTED
 }
 
 enum EducationLevel {
@@ -196,31 +219,74 @@ model Subscription {
   user                   User               @relation(fields: [userId], references: [id], onDelete: Cascade)
   payments               Payment[]
   product                Product?           @relation(fields: [productId], references: [id], onDelete: SetNull)
+  grant                  PaymentGrant?
 
   @@index([userId, status])
 }
 
 model Payment {
-  id                String        @id @default(cuid())
-  userId            String
-  subscriptionId    String?
-  productId         String
-  providerPaymentId String?       @unique
-  idempotencyKey    String        @unique
-  amount            Int
-  currency          String        @default("RUB")
-  status            PaymentStatus
-  description       String?
-  paidAt            DateTime?
-  refundedAt        DateTime?
-  receiptUrl        String?
-  providerStatus    String?
-  createdAt         DateTime      @default(now())
-  user              User          @relation(fields: [userId], references: [id], onDelete: Restrict)
-  subscription      Subscription? @relation(fields: [subscriptionId], references: [id], onDelete: SetNull)
-  product           Product       @relation(fields: [productId], references: [id], onDelete: Restrict)
+  id                   String             @id @default(cuid())
+  userId               String
+  subscriptionId       String?
+  productId            String
+  providerPaymentId    String?            @unique
+  idempotencyKey       String             @unique
+  amount               Int
+  currency             String             @default("RUB")
+  status               PaymentStatus
+  description          String?
+  paidAt               DateTime?
+  refundedAt           DateTime?
+  receiptUrl           String?
+  providerStatus       String?
+  terminalKey          String?
+  providerEnvironment  String             @default("legacy")
+  checkoutProductCode  String?
+  checkoutProductName  String?
+  checkoutDurationDays Int?
+  checkoutEntitlements Json?
+  initStatus           PaymentInitStatus  @default(LEGACY)
+  paymentUrl           String?
+  needsReview          Boolean            @default(true)
+  version              Int                @default(1)
+  createdAt            DateTime           @default(now())
+  updatedAt            DateTime           @default(now()) @updatedAt
+  user                 User               @relation(fields: [userId], references: [id], onDelete: Restrict)
+  subscription         Subscription?      @relation(fields: [subscriptionId], references: [id], onDelete: SetNull)
+  product              Product            @relation(fields: [productId], references: [id], onDelete: Restrict)
+  operations           PaymentOperation[]
+  grant                PaymentGrant?
 
   @@index([userId, createdAt])
+  @@index([needsReview, createdAt])
+}
+
+model PaymentOperation {
+  id                String                @id @default(cuid())
+  paymentId         String
+  kind              PaymentOperationKind
+  idempotencyKey    String
+  externalRequestId String?               @unique
+  state             PaymentOperationState @default(IN_FLIGHT)
+  leaseUntil        DateTime?
+  resultCode        String?
+  createdAt         DateTime              @default(now())
+  updatedAt         DateTime              @updatedAt
+  payment           Payment               @relation(fields: [paymentId], references: [id], onDelete: Restrict)
+
+  @@unique([paymentId, kind, idempotencyKey])
+  @@index([state, leaseUntil])
+  @@index([paymentId, createdAt])
+}
+
+model PaymentGrant {
+  paymentId       String       @id
+  subscriptionId  String       @unique
+  entitlementKeys Json
+  issuedAt        DateTime     @default(now())
+  revokedAt       DateTime?
+  payment         Payment      @relation(fields: [paymentId], references: [id], onDelete: Restrict)
+  subscription    Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Restrict)
 }
 
 model Product {
@@ -678,21 +744,27 @@ model AdmissionTrackerItem {
 }
 
 model SupportTicket {
-  id         String          @id @default(cuid())
-  userId     String
-  assigneeId String?
-  subject    String
-  category   String
-  status     String          @default("OPEN")
-  priority   String          @default("NORMAL")
-  createdAt  DateTime        @default(now())
-  updatedAt  DateTime        @updatedAt
-  user       User            @relation("TicketAuthor", fields: [userId], references: [id], onDelete: Cascade)
-  assignee   User?           @relation("TicketAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
-  messages   TicketMessage[]
+  id               String          @id @default(cuid())
+  userId           String
+  assigneeId       String?
+  subject          String
+  category         String
+  status           String          @default("OPEN")
+  priority         String          @default("NORMAL")
+  version          Int             @default(1)
+  responseDueAt    DateTime?
+  firstRespondedAt DateTime?
+  closedAt         DateTime?
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+  user             User            @relation("TicketAuthor", fields: [userId], references: [id], onDelete: Cascade)
+  assignee         User?           @relation("TicketAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+  messages         TicketMessage[]
 
   @@index([status, priority, updatedAt])
   @@index([userId, updatedAt])
+  @@index([assigneeId, status, updatedAt])
+  @@index([responseDueAt, status])
 }
 
 model TicketMessage {
@@ -772,29 +844,29 @@ model AuditLog {
 }
 
 model RateLimitBucket {
-  key       String   @id
-  count     Int
-  resetAt   DateTime
+  key     String   @id
+  count   Int
+  resetAt DateTime
 
   @@index([resetAt])
 }
 
 model AccountTrackerItem {
-  id             String   @id @default(cuid())
+  id             String    @id @default(cuid())
   userId         String
   programKey     String
   admissionYear  Int
-  priority       Int      @default(1)
-  stage          String   @default("shortlist")
-  documentsReady Boolean  @default(false)
-  consentReady   Boolean  @default(false)
+  priority       Int       @default(1)
+  stage          String    @default("shortlist")
+  documentsReady Boolean   @default(false)
+  consentReady   Boolean   @default(false)
   deadlineAt     DateTime?
-  notes          String   @default("")
+  notes          String    @default("")
   history        Json
-  version        Int      @default(1)
-  createdAt      DateTime @default(dbgenerated("(CURRENT_TIMESTAMP AT TIME ZONE 'UTC'::text)"))
-  updatedAt      DateTime @updatedAt
-  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  version        Int       @default(1)
+  createdAt      DateTime  @default(dbgenerated("(CURRENT_TIMESTAMP AT TIME ZONE 'UTC'::text)"))
+  updatedAt      DateTime  @updatedAt
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, programKey, admissionYear])
   @@index([userId, deadlineAt])

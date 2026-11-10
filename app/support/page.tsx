@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { SupportTicketForm } from "@/components/support-ticket-form";
+import { SupportInbox } from "@/components/support-inbox";
 import { getSessionUser } from "@/lib/auth/session";
+import styles from "@/components/support.module.css";
 
 export const metadata = { title: "Поддержка" };
 export const dynamic = "force-dynamic";
@@ -35,15 +36,14 @@ export default async function SupportPage() {
           <small>Фильтры и персональный подбор по ЕГЭ →</small>
         </Link>
       </div>
-      <div className="support-layout">
+      <div className={styles.pageContent}>
         <section>
-          <h2>Создать обращение</h2>
           {user ? (
-            <SupportTicketForm />
+            <SupportInbox showCreate />
           ) : (
             <div className="tracker-empty">
               <strong>Войдите, чтобы сохранить историю</strong>
-              <p>Ответы поддержки будут доступны в личном кабинете.</p>
+              <p>Ответы поддержки будут доступны в истории обращений.</p>
               <Link
                 href="/login?returnTo=/support"
                 className="button button-primary"
@@ -54,13 +54,15 @@ export default async function SupportPage() {
           )}
         </section>
         <aside>
-          <h2>Другие каналы</h2>
+          <h2>Связаться с нами</h2>
           {supportEmail ? (
             <a className="support-email" href={`mailto:${supportEmail}`}>
               {supportEmail}
             </a>
           ) : (
-            <p>Публичный email появится после подключения доменной почты.</p>
+            <p>
+              Напишите через форму обращения. Ответ будет доступен в истории.
+            </p>
           )}
           <div className="support-rule">
             <strong>Поддержка не попросит</strong>

@@ -1,0 +1,30 @@
+.list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  min-width: 0;
+}
+.list > button {
+  justify-self: start;
+}
+.card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  background: white;
+}
+.identifier {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.identifier code {
+  font-size: 0.85em;
+}
+@media (max-width: 600px) {
+  .card {
+    padding: 0.8rem;
+  }
+}
