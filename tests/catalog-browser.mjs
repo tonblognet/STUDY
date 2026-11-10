@@ -100,11 +100,9 @@ export default async function checkCatalog(page) {
           await score("Инд. достижения").fill("0");
           await visible(result.getByText(/Запас \/ дефицит:\s*9\./));
         }
-        await tab
-          .locator("#exams")
-          .screenshot({
-            path: `output/playwright/contest-${slug}-${width}.png`,
-          });
+        await tab.locator("#exams").screenshot({
+          path: `output/playwright/contest-${slug}-${width}.png`,
+        });
         await finish(route);
       }
 
