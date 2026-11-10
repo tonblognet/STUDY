@@ -56,12 +56,12 @@ export default async function checkCatalog(page) {
       for (const slug of ["mpei-applied-informatics", "rudn-applied-math"]) {
         const route = `/programs/${slug}`;
         await navigate(route);
-        const exams = tab.locator("#exams");
+        const exams = tab.locator("#exams:visible");
         await visible(exams.getByText("Физика: минимум 41", { exact: true }));
         await visible(
           exams.getByText("Информатика: минимум 46", { exact: true }),
         );
-        const fit = tab.locator("#fit");
+        const fit = tab.locator("#fit:visible");
         const score = (label) => fit.getByLabel(label, { exact: true });
         const result = fit.locator(".fit-result");
         await score("Математика").fill("40");
@@ -82,13 +82,13 @@ export default async function checkCatalog(page) {
           );
           await visible(
             tab
-              .locator("#cost")
+              .locator("#cost:visible")
               .getByText(/285\s000\s₽\/год/)
               .first(),
           );
           confirm(
             (await tab
-              .locator("#quotas .sourced-metric-conflicting_sources")
+              .locator("#quotas:visible .sourced-metric-conflicting_sources")
               .count()) === 2,
             "RUDN quota conflicts were hidden",
           );
@@ -100,7 +100,7 @@ export default async function checkCatalog(page) {
           await score("Инд. достижения").fill("0");
           await visible(result.getByText(/Запас \/ дефицит:\s*9\./));
         }
-        await tab.locator("#exams").screenshot({
+        await exams.screenshot({
           path: `output/playwright/contest-${slug}-${width}.png`,
         });
         await finish(route);
@@ -108,11 +108,13 @@ export default async function checkCatalog(page) {
 
       const university = "/universities/rudn";
       await navigate(university);
-      const faculties = tab.locator("#faculties");
+      const faculties = tab.locator("#faculties:visible");
       await visible(
         faculties.getByRole("heading", { name: "Факультеты и институты · 12" }),
       );
-      const offerings = tab.locator('[aria-labelledby="offerings-heading"]');
+      const offerings = tab.locator(
+        '[aria-labelledby="offerings-heading"]:visible',
+      );
       await visible(
         offerings.getByText("Найдено направлений и профилей: 165 из 165"),
       );
