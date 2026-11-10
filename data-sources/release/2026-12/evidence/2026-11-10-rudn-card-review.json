@@ -1,0 +1,1031 @@
+{
+  "status": "pending_editorial_review",
+  "sources": {
+    "education": {
+      "url": "https://www.rudn.ru/sveden/education/eduaccred/",
+      "httpStatus": 200,
+      "sourceSha256": "32051240c12924ceade1575349384dbca654ba8e43e7d13b8e603ad1b723d7a9",
+      "bytes": 6171240,
+      "snapshotSavedAtUtc": "2026-11-10T08:08:40.006144+00:00"
+    },
+    "common": {
+      "url": "https://www.rudn.ru/sveden/common/",
+      "httpStatus": 200,
+      "sourceSha256": "9cc4482292c78b96626b1452dcf7a42044ccb642952017e071ab352f831ef684",
+      "bytes": 72076,
+      "snapshotSavedAtUtc": "2026-11-10T08:08:41.122053+00:00"
+    },
+    "structure": {
+      "url": "https://www.rudn.ru/sveden/struct/",
+      "httpStatus": 200,
+      "sourceSha256": "bf98fb7262d44b50c3bbd0e337adfc850c29508faa39d3e24521664cf84d5c5d",
+      "bytes": 639085,
+      "snapshotSavedAtUtc": "2026-11-10T08:08:42.014733+00:00"
+    },
+    "admissions": {
+      "url": "https://admission.rudn.ru/contacts/",
+      "httpStatus": 200,
+      "sourceSha256": "3ced31b40e46a31fe8ae85b85b7735ebe2b4191aae95da3a030eddb3c70e894b",
+      "bytes": 250163,
+      "snapshotSavedAtUtc": "2026-11-10T08:08:53.603546+00:00"
+    },
+    "housing": {
+      "url": "https://www.rudn.ru/life/accomodation/informaciya-o-predostavlenii-obshchejitiy",
+      "httpStatus": 200,
+      "sourceSha256": "afab0c5b4b87ed2bc3f9784e5c16541a633cce4f7af969d7c8e66e40841be94a",
+      "bytes": 231892,
+      "snapshotSavedAtUtc": "2026-11-10T08:08:56.179843+00:00"
+    }
+  },
+  "sections": {
+    "general_information": {
+      "source": "common",
+      "baseline": "data-sources/moscow/profiles.json#/profiles/84/fields",
+      "exactTextMatches": {
+        "fullName": true,
+        "shortName": true,
+        "regDate": true,
+        "address": true,
+        "telephone": true,
+        "email": true
+      },
+      "overviewLocator": "//*[@itemprop=\"regDate\"] under the institutional date-of-establishment label",
+      "overviewCandidate": {
+        "value": "Университет дружбы народов основан 5 февраля 1960 года.",
+        "locator": "//*[@itemprop=\"regDate\"]"
+      }
+    },
+    "structure": {
+      "source": "structure",
+      "baseline": "data-sources/russia/moscow-enrichment-2026-10-22.json#/profiles/6/faculties",
+      "count": 12,
+      "rowLocators": [
+        {
+          "rowIndex": 1,
+          "name": "Аграрно-технологический институт",
+          "publishedAddress": "Миклухо-Маклая ул., 8 корп.2, Москва, 117198",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 3,
+          "name": "Инженерная академия",
+          "publishedAddress": "Орджоникидзе ул., 3, Москва, 115419",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 4,
+          "name": "Институт внешнеэкономической безопасности и таможенного дела",
+          "publishedAddress": "Миклухо-Маклая ул., 6, Москва, 117198",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 7,
+          "name": "Институт иностранных языков",
+          "publishedAddress": "Миклухо-Маклая ул., 9, Москва, 117198",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 14,
+          "name": "Институт экологии",
+          "publishedAddress": "Подольское ш., 8 корп.5, Москва, 115093",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 15,
+          "name": "Медицинский институт",
+          "publishedAddress": "Миклухо-Маклая ул., 8, Москва, 117198",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 18,
+          "name": "Факультет гуманитарных и социальных наук",
+          "publishedAddress": "Миклухо-Маклая ул., 10 корп.2, Москва, 117198",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 19,
+          "name": "Факультет искусственного интеллекта",
+          "publishedAddress": "Подольское шоссе ул., 8, Москва, 115093",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 21,
+          "name": "Факультет физико-математических и естественных наук",
+          "publishedAddress": "Орджоникидзе ул., 3, Москва, 115419",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 22,
+          "name": "Филологический факультет",
+          "publishedAddress": "Миклухо-Маклая ул., 10 корп.2, Москва, 117198",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 23,
+          "name": "Экономический факультет",
+          "publishedAddress": "Миклухо-Маклая ул., 6, Москва, 117198",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        },
+        {
+          "rowIndex": 24,
+          "name": "Юридический институт",
+          "publishedAddress": "Миклухо-Маклая ул., 6, Москва, 117198",
+          "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+        }
+      ],
+      "limitation": "Selected units in the Moscow subset. Exhaustiveness and homepages are not established."
+    },
+    "educational_inventory": {
+      "source": "education",
+      "heading": "Программы бакалавриата",
+      "selector": "//*[@id=\"vikon-content\"]/h3[normalize-space(.)=$heading]/following-sibling::*[1]//table",
+      "sourceRowCount": 167,
+      "candidateCount": 165,
+      "distinctCandidateCodes": 55,
+      "forms": {
+        "Заочная": 25,
+        "Очная": 101,
+        "Очно-заочная": 39
+      },
+      "partnerRowsHeldBack": [
+        {
+          "domRowIndexOneBased": 78,
+          "publishedNumber": "25",
+          "code": "38.03.02",
+          "profile": "Управление человеческими ресурсами (совместно с Хэнаньским университетом экономики и права, КНР)",
+          "reason": "Партнёрский профиль требует отдельной сверки кампуса."
+        },
+        {
+          "domRowIndexOneBased": 92,
+          "publishedNumber": "26",
+          "code": "38.03.01",
+          "profile": "Финансы и кредит (совместно с Хэнаньским университетом экономики и права, КНР)",
+          "reason": "Партнёрский профиль требует отдельной сверки кампуса."
+        }
+      ],
+      "otherSections": {
+        "specialistRows": 25,
+        "masterRows": 314,
+        "sharedRowLevelLabel": "Высшее образование — специалитет, магистратура",
+        "scopeKeywordHits": {
+          "specialist": 5,
+          "master": 59
+        },
+        "malformedMasterDurations": 3
+      },
+      "locators": {
+        "rudn-edu-819ffc1c94469b3c": {
+          "domRowIndexOneBased": 1,
+          "publishedNumber": "1",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/logopediya-i-inklyuzivnoe-obrazovanie-44.03.03.html"
+        },
+        "rudn-edu-fa7dd79c0ec5e002": {
+          "domRowIndexOneBased": 2,
+          "publishedNumber": "2",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/arhitekturno-gradostroitelynoe-proektirovanie-07.03.04.html"
+        },
+        "rudn-edu-33416352e8402435": {
+          "domRowIndexOneBased": 3,
+          "publishedNumber": "3",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/promyshlennyy-dizayn-54.03.01.html"
+        },
+        "rudn-edu-6c7fb851723efc64": {
+          "domRowIndexOneBased": 4,
+          "publishedNumber": "4",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/istoriya-i-filosofiya-vostoka-58.03.01.html"
+        },
+        "rudn-edu-2ea2f72a5b01232c": {
+          "domRowIndexOneBased": 5,
+          "publishedNumber": "4",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/vostokovedenie-yazyki-i-kulytury-58.03.01.html"
+        },
+        "rudn-edu-699511855706d000": {
+          "domRowIndexOneBased": 6,
+          "publishedNumber": "4",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekonomika-i-vneshneekonomicheskie-svyazi-stran-vostoka-58.03.01.html"
+        },
+        "rudn-edu-4e38a97060e5a802": {
+          "domRowIndexOneBased": 7,
+          "publishedNumber": "5",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/iskusstva-i-gumanitarnye-nauki-50.03.01.html"
+        },
+        "rudn-edu-8f24bf0397b8caaa": {
+          "domRowIndexOneBased": 8,
+          "publishedNumber": "6",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/religiovedenie-47.03.03.html"
+        },
+        "rudn-edu-68c1e12c8d9f49eb": {
+          "domRowIndexOneBased": 9,
+          "publishedNumber": "7",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/filosofiya-47.03.01.html"
+        },
+        "rudn-edu-bcb0928d1733ba78": {
+          "domRowIndexOneBased": 10,
+          "publishedNumber": "8",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/istoriya-46.03.01.html"
+        },
+        "rudn-edu-fba638bf8894677b": {
+          "domRowIndexOneBased": 11,
+          "publishedNumber": "9",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/kibertehnologii-i-analiz-dannyh-v-gumanitarnoy-sfere-45.03.04.html"
+        },
+        "rudn-edu-9800b418b47ff7bc": {
+          "domRowIndexOneBased": 12,
+          "publishedNumber": "9",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/kibertehnologii-i-analiz-dannyh-v-gumanitarnoy-sfere-45.03.04.html"
+        },
+        "rudn-edu-1cb559c2701a54f2": {
+          "domRowIndexOneBased": 13,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/lingvistika-45.03.02.html"
+        },
+        "rudn-edu-ef5725a89d4cb5af": {
+          "domRowIndexOneBased": 14,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/lingvistika-45.03.02.html"
+        },
+        "rudn-edu-ee0a6c0d0e2b2fcd": {
+          "domRowIndexOneBased": 15,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/lingvistika-45.03.02.html"
+        },
+        "rudn-edu-66481dffb76a78b6": {
+          "domRowIndexOneBased": 16,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/perevod-i-perevodovedenie-45.03.02.html"
+        },
+        "rudn-edu-4bba7e38abf14ba2": {
+          "domRowIndexOneBased": 17,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/perevod-i-perevodovedenie-45.03.02.html"
+        },
+        "rudn-edu-4c46d925abdcb23c": {
+          "domRowIndexOneBased": 18,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/teoriya-i-metodika-prepodavaniya-inostrannyh-yazykov-i-kulytur-45.03.02.html"
+        },
+        "rudn-edu-ce8142ace5ae231f": {
+          "domRowIndexOneBased": 19,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/teoriya-i-metodika-prepodavaniya-inostrannyh-yazykov-i-kulytur-45.03.02.html"
+        },
+        "rudn-edu-5b47ba1c15dd271f": {
+          "domRowIndexOneBased": 20,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/lingvistika-russkiy-yazyk-45.03.02.html"
+        },
+        "rudn-edu-16dbe44ed814b1af": {
+          "domRowIndexOneBased": 21,
+          "publishedNumber": "10",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/lingvistika-inostrannye-yazyki-45.03.02.html"
+        },
+        "rudn-edu-2d77972d29bb0683": {
+          "domRowIndexOneBased": 22,
+          "publishedNumber": "11",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/filologiya-45.03.01.html"
+        },
+        "rudn-edu-16f3846838748224": {
+          "domRowIndexOneBased": 23,
+          "publishedNumber": "11",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/filologiya-45.03.01.html"
+        },
+        "rudn-edu-b4595cbb7214d09e": {
+          "domRowIndexOneBased": 24,
+          "publishedNumber": "11",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/filologiya-45.03.01.html"
+        },
+        "rudn-edu-724a81210f96f089": {
+          "domRowIndexOneBased": 25,
+          "publishedNumber": "11",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/prikladnaya-cifrovaya-filologiya-45.03.01.html"
+        },
+        "rudn-edu-180283d7190f445f": {
+          "domRowIndexOneBased": 26,
+          "publishedNumber": "11",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/prikladnaya-cifrovaya-filologiya-45.03.01.html"
+        },
+        "rudn-edu-6555cee8d4a83533": {
+          "domRowIndexOneBased": 27,
+          "publishedNumber": "11",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/prikladnaya-cifrovaya-filologiya-45.03.01.html"
+        },
+        "rudn-edu-5197fa7a4dfccb28": {
+          "domRowIndexOneBased": 28,
+          "publishedNumber": "12",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/psihologiya-obrazovaniya-44.03.02.html"
+        },
+        "rudn-edu-38bcbdf8777f9e24": {
+          "domRowIndexOneBased": 29,
+          "publishedNumber": "13",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-gostinichnyy-biznes-43.03.03.html"
+        },
+        "rudn-edu-24117bb3fb3d7a39": {
+          "domRowIndexOneBased": 30,
+          "publishedNumber": "13",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-gostinichnyy-biznes-43.03.03.html"
+        },
+        "rudn-edu-e3150c6b81464ddc": {
+          "domRowIndexOneBased": 31,
+          "publishedNumber": "13",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-gostinichnyy-biznes-43.03.03.html"
+        },
+        "rudn-edu-a4eaabaea1381ba1": {
+          "domRowIndexOneBased": 32,
+          "publishedNumber": "13",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-restorannyy-biznes-43.03.03.html"
+        },
+        "rudn-edu-613dd775298356a9": {
+          "domRowIndexOneBased": 33,
+          "publishedNumber": "13",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-restorannyy-biznes-43.03.03.html"
+        },
+        "rudn-edu-afd1915a6ccc317e": {
+          "domRowIndexOneBased": 34,
+          "publishedNumber": "14",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-turizm-43.03.02.html"
+        },
+        "rudn-edu-ff03680f01e96276": {
+          "domRowIndexOneBased": 35,
+          "publishedNumber": "14",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-turizm-43.03.02.html"
+        },
+        "rudn-edu-1bcb194b28d86019": {
+          "domRowIndexOneBased": 36,
+          "publishedNumber": "14",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-turizm-43.03.02.html"
+        },
+        "rudn-edu-2b2e1c972b20b30a": {
+          "domRowIndexOneBased": 37,
+          "publishedNumber": "15",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/televidenie-42.03.04.html"
+        },
+        "rudn-edu-576126ac01745732": {
+          "domRowIndexOneBased": 38,
+          "publishedNumber": "15",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/televidenie-42.03.04.html"
+        },
+        "rudn-edu-333aaa6fad158b7c": {
+          "domRowIndexOneBased": 39,
+          "publishedNumber": "16",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ghurnalistika-42.03.02.html"
+        },
+        "rudn-edu-16dd2636af4b3cf0": {
+          "domRowIndexOneBased": 40,
+          "publishedNumber": "16",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ghurnalistika-42.03.02.html"
+        },
+        "rudn-edu-3e6971bfabed701b": {
+          "domRowIndexOneBased": 41,
+          "publishedNumber": "16",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ghurnalistika-42.03.02.html"
+        },
+        "rudn-edu-361e803973bb106c": {
+          "domRowIndexOneBased": 42,
+          "publishedNumber": "16",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/mulytimediynaya-ghurnalistika---multimedia-journalism-42.03.02.html"
+        },
+        "rudn-edu-e6ab9d17193f7ba6": {
+          "domRowIndexOneBased": 43,
+          "publishedNumber": "17",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/reklama-i-svyazi-s-obschestvennostyyu-42.03.01.html"
+        },
+        "rudn-edu-ddffed49b231bca7": {
+          "domRowIndexOneBased": 44,
+          "publishedNumber": "17",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/reklama-i-svyazi-s-obschestvennostyyu-42.03.01.html"
+        },
+        "rudn-edu-c416c0bc96dbc2b1": {
+          "domRowIndexOneBased": 45,
+          "publishedNumber": "17",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/reklama-i-svyazi-s-obschestvennostyyu-42.03.01.html"
+        },
+        "rudn-edu-89959d45fb3afb62": {
+          "domRowIndexOneBased": 46,
+          "publishedNumber": "17",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/svyazi-s-obschestvennostyyu-42.03.01.html"
+        },
+        "rudn-edu-32e4450d0401c73e": {
+          "domRowIndexOneBased": 47,
+          "publishedNumber": "17",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/reklama-42.03.01.html"
+        },
+        "rudn-edu-a37cd8c463e605b2": {
+          "domRowIndexOneBased": 48,
+          "publishedNumber": "17",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/reklama-42.03.01.html"
+        },
+        "rudn-edu-43411a3891bfb809": {
+          "domRowIndexOneBased": 49,
+          "publishedNumber": "17",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/cifrovye-marketingovye-kommunikacii-42.03.01.html"
+        },
+        "rudn-edu-4b8ec2c518995e7a": {
+          "domRowIndexOneBased": 50,
+          "publishedNumber": "18",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnye-otnosheniya-41.03.05.html"
+        },
+        "rudn-edu-8f710c539ce7de90": {
+          "domRowIndexOneBased": 51,
+          "publishedNumber": "19",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/politologiya-41.03.04.html"
+        },
+        "rudn-edu-797ef7699c570982": {
+          "domRowIndexOneBased": 52,
+          "publishedNumber": "19",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/politologiya-41.03.04.html"
+        },
+        "rudn-edu-50a766107e92648b": {
+          "domRowIndexOneBased": 53,
+          "publishedNumber": "19",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/bakalavr-prava-i-politiki-41.03.04.html"
+        },
+        "rudn-edu-23d007225c590381": {
+          "domRowIndexOneBased": 54,
+          "publishedNumber": "20",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/iberoamerika-41.03.01.html"
+        },
+        "rudn-edu-0891bdc5c6874e75": {
+          "domRowIndexOneBased": 55,
+          "publishedNumber": "20",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/zarubeghnoe-regionovedenie-kitay-arabskiy-vostok-41.03.01.html"
+        },
+        "rudn-edu-d151650dfc699554": {
+          "domRowIndexOneBased": 56,
+          "publishedNumber": "20",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/zarubeghnoe-regionovedenie-evro-aziatskiy-i-sredizemnomorskiy-regiony-41.03.01.html"
+        },
+        "rudn-edu-22aa55bb03905073": {
+          "domRowIndexOneBased": 57,
+          "publishedNumber": "21",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnoe-pravo-40.03.01.html"
+        },
+        "rudn-edu-934d3a963ab228f0": {
+          "domRowIndexOneBased": 58,
+          "publishedNumber": "21",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnoe-pravo-40.03.01.html"
+        },
+        "rudn-edu-6a9c78bb6c88b4b3": {
+          "domRowIndexOneBased": 59,
+          "publishedNumber": "21",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/yurisprudenciya-40.03.01.html"
+        },
+        "rudn-edu-87b22ab1629dcaed": {
+          "domRowIndexOneBased": 60,
+          "publishedNumber": "21",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/yurisprudenciya-40.03.01.html"
+        },
+        "rudn-edu-70ba3727b9941a02": {
+          "domRowIndexOneBased": 61,
+          "publishedNumber": "21",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/bakalavr-prava---bachelor-of-laws-llb-40.03.01.html"
+        },
+        "rudn-edu-d7ef6e6119fb4d5b": {
+          "domRowIndexOneBased": 62,
+          "publishedNumber": "21",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/bakalavr-prava-i-politiki-40.03.01.html"
+        },
+        "rudn-edu-fd874dec8d2ba9b1": {
+          "domRowIndexOneBased": 63,
+          "publishedNumber": "22",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/sociologiya-39.03.01.html"
+        },
+        "rudn-edu-7d315d1d7135b57d": {
+          "domRowIndexOneBased": 64,
+          "publishedNumber": "22",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/sociologiya-39.03.01.html"
+        },
+        "rudn-edu-8302ef83a558af05": {
+          "domRowIndexOneBased": 65,
+          "publishedNumber": "23",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biznes-informatika-38.03.05.html"
+        },
+        "rudn-edu-d1301adb528dc7d3": {
+          "domRowIndexOneBased": 66,
+          "publishedNumber": "23",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/kiberbezopasnosty-v-ekonomike-38.03.05.html"
+        },
+        "rudn-edu-19e8dd8602e9cb5c": {
+          "domRowIndexOneBased": 67,
+          "publishedNumber": "23",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/razrabotka-prikladnyh-resheniy-dlya-biznesa-38.03.05.html"
+        },
+        "rudn-edu-9fd2839271988613": {
+          "domRowIndexOneBased": 68,
+          "publishedNumber": "24",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/gosudarstvennoe-i-municipalynoe-upravlenie-38.03.04.html"
+        },
+        "rudn-edu-5c8d6b96797b2896": {
+          "domRowIndexOneBased": 69,
+          "publishedNumber": "24",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/gosudarstvennoe-i-municipalynoe-upravlenie-38.03.04.html"
+        },
+        "rudn-edu-93cbe6af829e168b": {
+          "domRowIndexOneBased": 70,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-predpriyatiyami-naukoemkih-otrasley-promyshlennosti-38.03.02.html"
+        },
+        "rudn-edu-b806945086f919a6": {
+          "domRowIndexOneBased": 71,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-predpriyatiyami-naukoemkih-otrasley-promyshlennosti-38.03.02.html"
+        },
+        "rudn-edu-9c5d600ccde37bd2": {
+          "domRowIndexOneBased": 72,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnyy-menedghment-38.03.02.html"
+        },
+        "rudn-edu-bae870a5b5228676": {
+          "domRowIndexOneBased": 73,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-chelovecheskimi-resursami-38.03.02.html"
+        },
+        "rudn-edu-6879861aeac76b85": {
+          "domRowIndexOneBased": 74,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/marketing-38.03.02.html"
+        },
+        "rudn-edu-dae63f208770dadb": {
+          "domRowIndexOneBased": 75,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/marketing-38.03.02.html"
+        },
+        "rudn-edu-6f39f889614b1fe2": {
+          "domRowIndexOneBased": 76,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-biznesom-38.03.02.html"
+        },
+        "rudn-edu-d6a949b446447811": {
+          "domRowIndexOneBased": 77,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-biznesom-38.03.02.html"
+        },
+        "rudn-edu-0d46f5825f974fa3": {
+          "domRowIndexOneBased": 79,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/cifrovoy-dizayn-i-veb-razrabotka-38.03.02.html"
+        },
+        "rudn-edu-4c348d8100d9d481": {
+          "domRowIndexOneBased": 80,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-predpriyatiyami-38.03.02.html"
+        },
+        "rudn-edu-d9b9278dc8ecf1da": {
+          "domRowIndexOneBased": 81,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-predpriyatiyami-38.03.02.html"
+        },
+        "rudn-edu-a652735e64081e97": {
+          "domRowIndexOneBased": 82,
+          "publishedNumber": "25",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/intellektualynye-tehnologii-v-logistike-i-cepyah-postavok-38.03.02.html"
+        },
+        "rudn-edu-4e1ec96ddc58b2ba": {
+          "domRowIndexOneBased": 83,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/finansy-i-kredit-38.03.01.html"
+        },
+        "rudn-edu-8c5e59dc46c57e48": {
+          "domRowIndexOneBased": 84,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/finansy-i-kredit-38.03.01.html"
+        },
+        "rudn-edu-15553c4690de0c58": {
+          "domRowIndexOneBased": 85,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekonomika-goroda-38.03.01.html"
+        },
+        "rudn-edu-d4e2473804ac0d24": {
+          "domRowIndexOneBased": 86,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/proektnyy-analiz-i-modelirovanie-v-ekonomike-38.03.01.html"
+        },
+        "rudn-edu-37c96041d1bb08b7": {
+          "domRowIndexOneBased": 87,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/buhgalterskiy-uchet-i-audit-38.03.01.html"
+        },
+        "rudn-edu-4f4c54e19f7c608b": {
+          "domRowIndexOneBased": 88,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnye-ekonomicheskie-otnosheniya-i-vneshneekonomicheskaya-deyatelynosty-38.03.01.html"
+        },
+        "rudn-edu-f3bc4f4d220a1d4a": {
+          "domRowIndexOneBased": 89,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekonomika-predpriyatiya-i-predprinimatelystvo-38.03.01.html"
+        },
+        "rudn-edu-47a5f50216bca776": {
+          "domRowIndexOneBased": 90,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekonomika-predpriyatiya-i-predprinimatelystvo-38.03.01.html"
+        },
+        "rudn-edu-3fc5e4c47404f5eb": {
+          "domRowIndexOneBased": 91,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/strahovanie-38.03.01.html"
+        },
+        "rudn-edu-801773d8f77ef8e5": {
+          "domRowIndexOneBased": 93,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/analitika-dannyh-v-ekonomike-i-biznese-38.03.01.html"
+        },
+        "rudn-edu-ddd60b3ff6100aa5": {
+          "domRowIndexOneBased": 94,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/meghdunarodnye-ekonomicheskie-otnosheniya---international-economic-relations-38.03.01.html"
+        },
+        "rudn-edu-131e7596e8fdc403": {
+          "domRowIndexOneBased": 95,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biznes-konsalting-cifrovoy-uchet-i-audit-38.03.01.html"
+        },
+        "rudn-edu-8fcf6f16b65cbbc4": {
+          "domRowIndexOneBased": 96,
+          "publishedNumber": "26",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/mirovaya-ekonomika-i-meghdunarodnaya-ekonomicheskaya-bezopasnosty-38.03.01.html"
+        },
+        "rudn-edu-9143f4e0c0950cc6": {
+          "domRowIndexOneBased": 97,
+          "publishedNumber": "27",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/psihologiya-37.03.01.html"
+        },
+        "rudn-edu-41d0cc0b7349a0c2": {
+          "domRowIndexOneBased": 98,
+          "publishedNumber": "27",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/psihologiya-37.03.01.html"
+        },
+        "rudn-edu-7837c1612ef3bca4": {
+          "domRowIndexOneBased": 99,
+          "publishedNumber": "28",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/veterinarno-sanitarnaya-ekspertiza-36.03.01.html"
+        },
+        "rudn-edu-3f400d0b1adaca34": {
+          "domRowIndexOneBased": 100,
+          "publishedNumber": "28",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/veterinarno-sanitarnaya-ekspertiza-36.03.01.html"
+        },
+        "rudn-edu-fb80bb2d140c6b47": {
+          "domRowIndexOneBased": 101,
+          "publishedNumber": "28",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/veterinarno-sanitarnaya-ekspertiza-36.03.01.html"
+        },
+        "rudn-edu-860db7a3256824f0": {
+          "domRowIndexOneBased": 102,
+          "publishedNumber": "29",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/landshaftnaya-arhitektura-35.03.10.html"
+        },
+        "rudn-edu-c239987023db1424": {
+          "domRowIndexOneBased": 103,
+          "publishedNumber": "29",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/landshaftnaya-arhitektura-35.03.10.html"
+        },
+        "rudn-edu-8a3bf5de1ee08ad7": {
+          "domRowIndexOneBased": 104,
+          "publishedNumber": "29",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/landshaftnaya-arhitektura-35.03.10.html"
+        },
+        "rudn-edu-d7cc71783b468343": {
+          "domRowIndexOneBased": 105,
+          "publishedNumber": "30",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biotehnologiya-rasteniy-35.03.04.html"
+        },
+        "rudn-edu-389978d3f8d200fa": {
+          "domRowIndexOneBased": 106,
+          "publishedNumber": "30",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biotehnologiya-rasteniy-35.03.04.html"
+        },
+        "rudn-edu-d877b17f5f702c45": {
+          "domRowIndexOneBased": 107,
+          "publishedNumber": "30",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biotehnologiya-rasteniy-35.03.04.html"
+        },
+        "rudn-edu-d23dce501f5787b8": {
+          "domRowIndexOneBased": 108,
+          "publishedNumber": "31",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/sestrinskoe-delo-34.03.01.html"
+        },
+        "rudn-edu-faad1472a63f16a5": {
+          "domRowIndexOneBased": 109,
+          "publishedNumber": "31",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/sestrinskoe-delo-34.03.01.html"
+        },
+        "rudn-edu-ac18866f51b839c8": {
+          "domRowIndexOneBased": 110,
+          "publishedNumber": "32",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/nanotehnologii-i-nanomaterialy-v-priborostroenii-28.03.02.html"
+        },
+        "rudn-edu-18e1d738bec7dc92": {
+          "domRowIndexOneBased": 111,
+          "publishedNumber": "32",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/nanotehnologii-i-nanomaterialy-v-priborostroenii-28.03.02.html"
+        },
+        "rudn-edu-a025aded2c51b461": {
+          "domRowIndexOneBased": 112,
+          "publishedNumber": "33",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-innovaciyami-v-otraslyah-promyshlennosti-27.03.05.html"
+        },
+        "rudn-edu-c216542d6e346bc9": {
+          "domRowIndexOneBased": 113,
+          "publishedNumber": "33",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-innovaciyami-v-otraslyah-promyshlennosti-27.03.05.html"
+        },
+        "rudn-edu-a2fd852ab2a36805": {
+          "domRowIndexOneBased": 114,
+          "publishedNumber": "34",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/data-engineering-programmirovanie-i-kompyyuternoe-modelirovanie-intellektualynyh-sistem-27.03.04.html"
+        },
+        "rudn-edu-8bbfd81ac503e5e6": {
+          "domRowIndexOneBased": 115,
+          "publishedNumber": "34",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-informacionnymi-processami-mashinnoe-obuchenie-i-kiberbezopasnosty-27.03.04.html"
+        },
+        "rudn-edu-b050d8960abcdb9a": {
+          "domRowIndexOneBased": 116,
+          "publishedNumber": "34",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-informacionnymi-processami-mashinnoe-obuchenie-i-kiberbezopasnosty-27.03.04.html"
+        },
+        "rudn-edu-d165920d0fc74398": {
+          "domRowIndexOneBased": 117,
+          "publishedNumber": "34",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/data-engineering-and-space-systems-control---data-engineering-i-upravlenie-kosmicheskimi-sist_op2568.html"
+        },
+        "rudn-edu-68aaea9504ffd6f1": {
+          "domRowIndexOneBased": 118,
+          "publishedNumber": "34",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/data-engineering-intellektualynye-sistemy-i-kiberbezopasnosty-27.03.04.html"
+        },
+        "rudn-edu-424848dd9452b613": {
+          "domRowIndexOneBased": 119,
+          "publishedNumber": "34",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/data-engineering-intellektualynye-sistemy-i-kiberbezopasnosty-27.03.04.html"
+        },
+        "rudn-edu-78cda7f5aa1cbde4": {
+          "domRowIndexOneBased": 120,
+          "publishedNumber": "34",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/data-science-i-kosmicheskie-sistemy---data-science-and-space-systems-27.03.04.html"
+        },
+        "rudn-edu-340cbbf5781bd637": {
+          "domRowIndexOneBased": 121,
+          "publishedNumber": "35",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biznes-standartizaciya-27.03.01.html"
+        },
+        "rudn-edu-c92835b517f6d164": {
+          "domRowIndexOneBased": 122,
+          "publishedNumber": "35",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biznes-standartizaciya-27.03.01.html"
+        },
+        "rudn-edu-389c0bc362a1a93e": {
+          "domRowIndexOneBased": 123,
+          "publishedNumber": "35",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biznes-standartizaciya-27.03.01.html"
+        },
+        "rudn-edu-423025353434fa74": {
+          "domRowIndexOneBased": 124,
+          "publishedNumber": "36",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekspluataciya-transportno-tehnologicheskih-mashin-i-kompleksov-23.03.03.html"
+        },
+        "rudn-edu-44148bea8271f2c0": {
+          "domRowIndexOneBased": 125,
+          "publishedNumber": "36",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekspluataciya-transportno-tehnologicheskih-mashin-i-kompleksov-23.03.03.html"
+        },
+        "rudn-edu-2f77100b8575859e": {
+          "domRowIndexOneBased": 126,
+          "publishedNumber": "36",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekspluataciya-avtomobiley-i-elektromobiley-23.03.03.html"
+        },
+        "rudn-edu-a262a263c5490a35": {
+          "domRowIndexOneBased": 127,
+          "publishedNumber": "36",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekspluataciya-avtomobiley-i-elektromobiley-23.03.03.html"
+        },
+        "rudn-edu-95fbdccddf70b041": {
+          "domRowIndexOneBased": 128,
+          "publishedNumber": "37",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/zemleustroystvo-i-kadastry-21.03.02.html"
+        },
+        "rudn-edu-553f582edede3d90": {
+          "domRowIndexOneBased": 129,
+          "publishedNumber": "37",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/zemleustroystvo-i-kadastry-21.03.02.html"
+        },
+        "rudn-edu-a7ac9171e9976c22": {
+          "domRowIndexOneBased": 130,
+          "publishedNumber": "37",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/zemleustroystvo-i-kadastry-21.03.02.html"
+        },
+        "rudn-edu-3f1123f8e875a021": {
+          "domRowIndexOneBased": 131,
+          "publishedNumber": "38",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/razrabotka-neftyanyh-i-gazovyh-mestoroghdeniy-transportirovka-hranenie-i-pererabotka-nefti-i-_op2122.html"
+        },
+        "rudn-edu-f8fe99951aa95a76": {
+          "domRowIndexOneBased": 132,
+          "publishedNumber": "38",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/razrabotka-neftyanyh-i-gazovyh-mestoroghdeniy-transportirovka-hranenie-i-pererabotka-nefti-i-_op2122.html"
+        },
+        "rudn-edu-5cfd6530b1018a67": {
+          "domRowIndexOneBased": 133,
+          "publishedNumber": "39",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/energo--i-resursosberegayuschie-processy-v-himicheskoy-tehnologii-neftehimii-i-biotehnologii-_op0208.html"
+        },
+        "rudn-edu-9717f5089c57f77b": {
+          "domRowIndexOneBased": 134,
+          "publishedNumber": "39",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/energo--i-resursosberegayuschie-processy-v-himicheskoy-tehnologii-neftehimii-i-biotehnologii-_op0208.html"
+        },
+        "rudn-edu-6dd986a56ef84886": {
+          "domRowIndexOneBased": 135,
+          "publishedNumber": "40",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/sistemnaya-ingheneriya-mashinostroitelynyh-proizvodstv-15.03.05.html"
+        },
+        "rudn-edu-d1a1dce9b3a2179e": {
+          "domRowIndexOneBased": 136,
+          "publishedNumber": "40",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/sistemnaya-ingheneriya-mashinostroitelynyh-proizvodstv-15.03.05.html"
+        },
+        "rudn-edu-63f6c8df6376e191": {
+          "domRowIndexOneBased": 137,
+          "publishedNumber": "41",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/energeticheskoe-mashinostroenie-13.03.03.html"
+        },
+        "rudn-edu-f5bd3a1ae9b87e4e": {
+          "domRowIndexOneBased": 138,
+          "publishedNumber": "41",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/energeticheskoe-mashinostroenie-13.03.03.html"
+        },
+        "rudn-edu-1db3172219986146": {
+          "domRowIndexOneBased": 139,
+          "publishedNumber": "41",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/kombinirovannye-energeticheskie-ustanovki-i-alyternativnaya-energetika-13.03.03.html"
+        },
+        "rudn-edu-5330c19426d83257": {
+          "domRowIndexOneBased": 140,
+          "publishedNumber": "41",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/kombinirovannye-energeticheskie-ustanovki-i-alyternativnaya-energetika-13.03.03.html"
+        },
+        "rudn-edu-00a7af2fb27d5c2f": {
+          "domRowIndexOneBased": 141,
+          "publishedNumber": "42",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/organizaciya-i-tehnologii-zaschity-informacii-po-otrasli-ili-v-sfere-professionalynoy-deyatel_0192765c-3bf2-7152-9308-6390d27a787b.html"
+        },
+        "rudn-edu-e032f10947a4499b": {
+          "domRowIndexOneBased": 142,
+          "publishedNumber": "43",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/prikladnaya-informatika-09.03.03.html"
+        },
+        "rudn-edu-5c194ed9b4d3e833": {
+          "domRowIndexOneBased": 143,
+          "publishedNumber": "43",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/iskusstvennyy-intellekt-razrabotka-i-obuchenie-intellektualynyh-sistem-09.03.03.html"
+        },
+        "rudn-edu-03d6b4469344ac5f": {
+          "domRowIndexOneBased": 144,
+          "publishedNumber": "44",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/stroitelystvo-08.03.01.html"
+        },
+        "rudn-edu-c43022243b89747c": {
+          "domRowIndexOneBased": 145,
+          "publishedNumber": "44",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/stroitelystvo-08.03.01.html"
+        },
+        "rudn-edu-5568f832622bc377": {
+          "domRowIndexOneBased": 146,
+          "publishedNumber": "45",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/dizayn-promyshlennyh-i-socialynyh-obyektov-07.03.03.html"
+        },
+        "rudn-edu-f716bdc9af3abf6b": {
+          "domRowIndexOneBased": 147,
+          "publishedNumber": "45",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/dizayn-promyshlennyh-i-socialynyh-obyektov-07.03.03.html"
+        },
+        "rudn-edu-88ff5843cc4f864e": {
+          "domRowIndexOneBased": 148,
+          "publishedNumber": "46",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/rekonstrukciya-i-restavraciya-arhitekturnogo-naslediya-07.03.02.html"
+        },
+        "rudn-edu-504310a6411e8928": {
+          "domRowIndexOneBased": 149,
+          "publishedNumber": "46",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/rekonstrukciya-i-restavraciya-arhitekturnogo-naslediya-07.03.02.html"
+        },
+        "rudn-edu-70d4c9cea64568eb": {
+          "domRowIndexOneBased": 150,
+          "publishedNumber": "47",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/arhitektura-07.03.01.html"
+        },
+        "rudn-edu-59ca4fcd25dd789c": {
+          "domRowIndexOneBased": 151,
+          "publishedNumber": "47",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/arhitektura-07.03.01.html"
+        },
+        "rudn-edu-ffa96b80f5453dd1": {
+          "domRowIndexOneBased": 152,
+          "publishedNumber": "48",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/biomedicina-06.03.01.html"
+        },
+        "rudn-edu-cfec799064f447e6": {
+          "domRowIndexOneBased": 153,
+          "publishedNumber": "49",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-prirodnymi-resursami-05.03.06.html"
+        },
+        "rudn-edu-c0c6a36ce66e892a": {
+          "domRowIndexOneBased": 154,
+          "publishedNumber": "49",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-prirodnymi-resursami-05.03.06.html"
+        },
+        "rudn-edu-498e53a6190141d8": {
+          "domRowIndexOneBased": 155,
+          "publishedNumber": "49",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/upravlenie-prirodnymi-resursami-05.03.06.html"
+        },
+        "rudn-edu-1424f9c033e5ce61": {
+          "domRowIndexOneBased": 156,
+          "publishedNumber": "49",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekologiya-i-ustoychivoe-razvitie-05.03.06.html"
+        },
+        "rudn-edu-2e107c26ea65d0d0": {
+          "domRowIndexOneBased": 157,
+          "publishedNumber": "49",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekologiya-i-ustoychivoe-razvitie-05.03.06.html"
+        },
+        "rudn-edu-d54ac14f037d801d": {
+          "domRowIndexOneBased": 158,
+          "publishedNumber": "49",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ekologiya-i-ustoychivoe-razvitie-05.03.06.html"
+        },
+        "rudn-edu-defe0089e6d957f4": {
+          "domRowIndexOneBased": 159,
+          "publishedNumber": "50",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/ximiya-04.03.01.html"
+        },
+        "rudn-edu-3a7bd6a06eb357dc": {
+          "domRowIndexOneBased": 160,
+          "publishedNumber": "51",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/fizika-03.03.02.html"
+        },
+        "rudn-edu-241abc823e19a7a6": {
+          "domRowIndexOneBased": 161,
+          "publishedNumber": "52",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/fundamentalynaya-informatika-i-informacionnye-tehnologii-02.03.02.html"
+        },
+        "rudn-edu-7ad970d735ba7564": {
+          "domRowIndexOneBased": 162,
+          "publishedNumber": "52",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/iskusstvennyy-intellekt-razrabotka-i-obuchenie-intellektualynyh-sistem-02.03.02.html"
+        },
+        "rudn-edu-dd64c979b7a49290": {
+          "domRowIndexOneBased": 163,
+          "publishedNumber": "53",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/matematika-i-kompyyuternye-nauki-02.03.01.html"
+        },
+        "rudn-edu-aa135aa3b77437ed": {
+          "domRowIndexOneBased": 164,
+          "publishedNumber": "54",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/matematicheskie-metody-mehaniki-kosmicheskogo-poleta-i-analiza-geoinformacionnyh-dannyh-01.03.02.html"
+        },
+        "rudn-edu-441a7a61f741581d": {
+          "domRowIndexOneBased": 165,
+          "publishedNumber": "54",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/prikladnaya-matematika-i-programmirovanie-01.03.02.html"
+        },
+        "rudn-edu-221ea8dc38132eda": {
+          "domRowIndexOneBased": 166,
+          "publishedNumber": "54",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/prikladnaya-matematika-i-programmirovanie-01.03.02.html"
+        },
+        "rudn-edu-80c92c60c23df1ed": {
+          "domRowIndexOneBased": 167,
+          "publishedNumber": "55",
+          "officialProfileLinkFromRow": "https://www.rudn.ru/sveden/education/programs/matematika-01.03.01.html"
+        }
+      },
+      "limitations": [
+        "Main RUDN official source page. No per-row campus field. Two explicitly collaborative bachelor profiles held for campus review.",
+        "No intake year, admission group, seats, scores, admissions exams or tuition are established by these rows.",
+        "No live accreditation or license assertion derived from the accreditation cell or archived extract links.",
+        "Specialist, master, postgraduate, residency and additional training tables excluded from this bachelor candidate."
+      ],
+      "dataFile": "data-sources/russia/moscow-rudn-enrichment-2026-11-10.json",
+      "dataPointer": "/profiles/0/offerings"
+    },
+    "admissions_contacts": {
+      "source": "admissions",
+      "locator": "h3 «Приёмная комиссия граждан РФ» and its enclosing contact block",
+      "anchors": ["tel:+74957873827", "mailto:priem@rudn.ru"],
+      "scope": "Moscow admissions for Russian citizens. Other contacts and local service hours are separate."
+    },
+    "housing": {
+      "source": "housing",
+      "locator": "Порядок предоставления и выселения → Этапы предоставления → Рассмотрение заявления Комиссией",
+      "scope": "Decisions for students initially admitted without dormitory are conditional on available housing.",
+      "baseline": "data-sources/russia/contacts-enrichment-2026-10-25.json#/profiles/3/fields/hostelInfo",
+      "limitation": "Distinct policy from the previous physical-dormitory description. Availability, individual eligibility and price need separate checks."
+    }
+  },
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "reviewDate": "2026-11-10",
+  "universitySlug": "rudn",
+  "scope": "Головная официальная страница РУДН. Выбранный перечень бакалавриата и пять разделов карточки. Кампус каждой образовательной строки отдельно неизвестен."
+}

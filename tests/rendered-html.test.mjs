@@ -434,6 +434,31 @@ test("persistent user state requires authentication", async () => {
   assert.deepEqual(await response.json(), { error: "authentication_required" });
 });
 
+test("shows sourced alternatives and distinguishes the two Moscow contests", async () => {
+  for (const [slug, source] of [
+    ["mpei-applied-informatics", "https://pk.mpei.ru/docs/rules_bach_2026.pdf"],
+    [
+      "rudn-applied-math",
+      "https://admission.rudn.ru/upload/base64_files/1fa/4bxvpcz0j1zqw392fc0ejk4ey5952iso.pdf",
+    ],
+  ]) {
+    const response = await fetch(`${base}/programs/${slug}`);
+    assert.equal(response.status, 200, slug);
+    const html = await response.text();
+    const exams = html
+      .match(/<section [^>]*id="exams"[^>]*>(.*?)<\/section>/s)?.[1]
+      .replaceAll("<!-- -->", "");
+    assert.ok(exams?.includes(`href="${source}`), slug);
+    assert.match(exams, /Физика: минимум 41/);
+    assert.match(exams, /Информатика: минимум 46/);
+    if (slug === "rudn-applied-math") {
+      assert.match(html, /Прикладная математика и программирование/);
+      assert.match(html, /285\s000\s₽\/год/);
+      assert.match(html, /Источники расходятся/);
+    }
+  }
+});
+
 test("snapshot preview is live but cannot claim deployment readiness", async () => {
   const live = await fetch(`${base}/api/live`);
   assert.equal(live.status, 200);

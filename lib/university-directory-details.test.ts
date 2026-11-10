@@ -562,6 +562,22 @@ describe("official university profile evidence", () => {
     }
   });
 
+  it("adds the selected RUDN bachelor inventory without inferring admissions", () => {
+    const profile = getDirectoryDetails("rudn")!;
+    expect(profile.fields.overview?.value).toContain("5 февраля 1960 года");
+    expect(profile.faculties).toHaveLength(12);
+    expect(profile.offerings).toHaveLength(165);
+    for (const row of profile.offerings) {
+      expect(row.level).toBe("Высшее образование — бакалавриат");
+      expect(row.sourceYear).toBeNull();
+      expect(row.admissionsStatus).toBe("pending_review");
+      expect(row.profile).not.toMatch(/совместно|КНР/);
+      expect(row.sourceUrl).toBe(
+        "https://www.rudn.ru/sveden/education/eduaccred/",
+      );
+    }
+  });
+
   it("fills MISIS card gaps without merging differently scoped education snapshots", () => {
     const profile = getDirectoryDetails("misis")!;
     expect(profile.fields.overview?.sourceUrl).toBe(

@@ -43,6 +43,31 @@ jobs:
           fi
           node --test scripts/restore-drill.test.mjs
           RESTORE_DRILL_PG_BIN=/usr/lib/postgresql/16/bin node --import tsx scripts/restore-drill.mjs
+      - name: Validate catalog candidate and dry-run import
+        run: |
+          pnpm data:validate
+          pnpm data:import -- --dry-run
+      - name: Install pinned browser CLI outside the repository
+        run: npm install --prefix "$RUNNER_TEMP/postupai-browser" --no-audit --no-fund --save-exact @playwright/cli@0.1.23
+      - name: Check catalog interactions on desktop and mobile
+        env:
+          APP_URL: http://127.0.0.1:3100
+          PORT: 3100
+          HOSTNAME: 127.0.0.1
+        run: |
+          mkdir -p output/playwright
+          node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3100 > output/playwright/server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          BROWSER_CLI="$RUNNER_TEMP/postupai-browser/node_modules/@playwright/cli/playwright-cli.js" node scripts/test-catalog-browser.mjs
+      - name: Retain browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-browser-${{ github.run_id }}
+          path: output/playwright
+          if-no-files-found: ignore
+          retention-days: 14
   container:
     needs: quality
     runs-on: ubuntu-latest

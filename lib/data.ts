@@ -788,14 +788,14 @@ programsBase.push(
     admissionsUrl: "https://pk.mipt.ru/",
     trust: {
       dataYear: 2026,
-      status: "verified",
+      status: "pending_review",
       completeness: 42,
       checkedAt: CHECKED,
       checkedBy: "Редакция Поступай",
       nextReviewAt: NEXT,
       sourceName: "Приёмная комиссия МФТИ",
       sourceSection: "01.03.02",
-      note: "Проверены места и квоты; условия и стоимость пока не сопоставлены.",
+      note: "Места относятся к опубликованному плану направления. Уровень БВО, точная конкурсная группа, испытания и стоимость требуют сверки.",
     },
     tags: ["Математика", "ИТ"],
   }),
@@ -952,6 +952,59 @@ programsBase.push(
 );
 
 const mpeiSource = "https://pk.mpei.ru/info/speclist";
+const mpeiOffice = "Приёмная комиссия НИУ МЭИ";
+const mpeiPlanSource = "https://pk.mpei.ru/docs/quotas2026.pdf";
+const mpeiRulesSource = "https://pk.mpei.ru/docs/rules_bach_2026.pdf";
+const mpeiReview = {
+  checkedAt: "2026-11-10T16:01:39.865Z",
+  checkedBy: "Codex",
+  nextReviewAt: undefined,
+};
+const mpeiContest =
+  "09.03.03, ИнЭИ, Москва, очная форма, Прикладная информатика в экономике";
+const mpeiPlanEvidence = {
+  ...mpeiReview,
+  retrievedAt: "2026-11-10T15:54:07.098Z",
+  sourceKind: "pdf" as const,
+  sourceDocumentTitle:
+    "Количество мест, квоты и вступительные испытания НИУ МЭИ",
+  sourcePage: 1,
+  sourceSection: mpeiContest,
+};
+const mpeiCardEvidence = {
+  ...mpeiReview,
+  retrievedAt: "2026-11-10T15:53:32.385Z",
+  sourceKind: "html" as const,
+  sourceSection: mpeiContest,
+};
+const mpeiPlanNumber = (value: number, note?: string) =>
+  sourced(value, 2026, "verified", mpeiPlanSource, mpeiOffice, {
+    ...mpeiPlanEvidence,
+    note,
+  });
+const mpeiBudget = mpeiPlanNumber(
+  30,
+  "Общий объём бюджетных мест по исходному плану приёма 2026 года.",
+);
+const mpeiTuition = sourced(420_000, 2026, "verified", mpeiSource, mpeiOffice, {
+  ...mpeiCardEvidence,
+  note: "Стоимость одного года обучения для очного профиля.",
+});
+const mpeiPass = sourced(
+  261,
+  2025,
+  "verified",
+  "https://pk.mpei.ru/info/statlastyear25.html",
+  mpeiOffice,
+  {
+    ...mpeiReview,
+    retrievedAt: "2026-11-10T15:55:20.465Z",
+    sourceKind: "html",
+    sourceSection:
+      "Очная форма, бюджетные места, Прикладная информатика, 09.03.03",
+    note: "Проходной балл по итогам конкурса 2025 года. Шкала трёх испытаний до учёта достижений — 300 баллов по правилам 2025 года.",
+  },
+);
 programsBase.push(
   program({
     id: "mpei-applied-informatics",
@@ -962,6 +1015,14 @@ programsBase.push(
     level: "Бакалавриат",
     form: "Очная",
     duration: "4 года",
+    durationValue: sourced(
+      "4 года",
+      2026,
+      "verified",
+      mpeiSource,
+      mpeiOffice,
+      mpeiCardEvidence,
+    ),
     faculty: null,
     campus: "Москва",
     language: "Русский",
@@ -971,127 +1032,102 @@ programsBase.push(
         id: "mpei-rus",
         label: "Обязательный предмет",
         subjects: ["Русский язык"],
-        minimum: unknownNumber(
-          2026,
-          mpeiSource,
-          "НИУ МЭИ",
-          "Минимум не извлечён из сводной строки.",
-        ),
+        minimum: mpeiPlanNumber(40),
         required: true,
       },
       {
         id: "mpei-math",
         label: "Обязательный предмет",
         subjects: ["Математика"],
-        minimum: unknownNumber(
-          2026,
-          mpeiSource,
-          "НИУ МЭИ",
-          "Минимум не извлечён из сводной строки.",
-        ),
+        minimum: mpeiPlanNumber(40),
         required: true,
       },
       {
         id: "mpei-alt",
         label: "Один предмет на выбор",
         subjects: ["Физика", "Информатика"],
-        minimum: unknownNumber(
+        minimum: sourced<number>(
+          null,
           2026,
-          mpeiSource,
-          "НИУ МЭИ",
-          "Минимум не извлечён из сводной строки.",
+          "not_applicable",
+          mpeiPlanSource,
+          mpeiOffice,
+          {
+            ...mpeiPlanEvidence,
+            note: "Для физики и информатики действуют отдельные минимумы.",
+          },
         ),
+        subjectMinimums: {
+          Физика: mpeiPlanNumber(41),
+          Информатика: mpeiPlanNumber(46),
+        },
         required: true,
       },
     ],
-    passingScore: 261,
-    passingScoreValue: sourced(
-      261,
-      2025,
-      "verified",
-      mpeiSource,
-      "Приёмная комиссия НИУ МЭИ",
-      { sourceSection: "09.03.03, Прикладная информатика в экономике" },
-    ),
-    passingHistory: [
-      sourced(261, 2025, "verified", mpeiSource, "Приёмная комиссия НИУ МЭИ"),
-    ],
-    placesHistory: [
-      sourced(30, 2026, "verified", mpeiSource, "Приёмная комиссия НИУ МЭИ"),
-    ],
-    tuitionHistory: [
-      sourced(
-        420_000,
-        2026,
-        "verified",
-        mpeiSource,
-        "Приёмная комиссия НИУ МЭИ",
-      ),
-    ],
+    passingScore: mpeiPass.value,
+    passingScoreValue: mpeiPass,
+    passingScoreExamScale: 300,
+    passingHistory: [mpeiPass],
+    placesHistory: [mpeiBudget],
+    tuitionHistory: [mpeiTuition],
     competitionHistory: [],
     minScore: null,
-    budgetPlaces: 30,
-    budgetPlacesValue: sourced(
-      30,
-      2026,
-      "verified",
-      mpeiSource,
-      "Приёмная комиссия НИУ МЭИ",
-    ),
+    budgetPlaces: mpeiBudget.value,
+    budgetPlacesValue: mpeiBudget,
     paidPlaces: 60,
-    paidPlacesValue: sourced(
+    paidPlacesValue: mpeiPlanNumber(
       60,
-      2026,
-      "verified",
-      mpeiSource,
-      "Приёмная комиссия НИУ МЭИ",
+      "Основной договор. Для отдельного конкурса иностранных граждан в плане выделено ещё 5 мест.",
     ),
-    tuition: 420_000,
-    tuitionValue: sourced(
-      420_000,
-      2026,
-      "verified",
-      mpeiSource,
-      "Приёмная комиссия НИУ МЭИ",
-    ),
+    tuition: mpeiTuition.value,
+    tuitionValue: mpeiTuition,
     dvi: null,
-    dviValue: naString(2026, mpeiSource, "Приёмная комиссия НИУ МЭИ"),
-    dviMax: naNumber(2026, mpeiSource, "Приёмная комиссия НИУ МЭИ"),
-    individualAchievementsMax: unknownNumber(
+    dviValue: sourced<string>(
+      null,
       2026,
-      mpeiSource,
-      "Приёмная комиссия НИУ МЭИ",
-      "Не указано в строке программы.",
+      "not_applicable",
+      mpeiPlanSource,
+      mpeiOffice,
+      mpeiPlanEvidence,
+    ),
+    dviMax: sourced<number>(
+      null,
+      2026,
+      "not_applicable",
+      mpeiPlanSource,
+      mpeiOffice,
+      mpeiPlanEvidence,
+    ),
+    individualAchievementsMax: sourced(
+      10,
+      2026,
+      "verified",
+      mpeiRulesSource,
+      mpeiOffice,
+      {
+        ...mpeiReview,
+        retrievedAt: "2026-11-10T15:53:34.503Z",
+        sourceKind: "pdf",
+        sourceDocumentTitle: "Правила приёма НИУ МЭИ на 2026 год",
+        sourcePage: 11,
+        sourceSection: "Пункт 4.1, общие индивидуальные достижения",
+        note: "Лимит общих достижений. Дополнительные баллы целевого конкурса учитываются отдельно.",
+      },
     ),
     quotas: {
-      special: sourced(
-        3,
+      special: mpeiPlanNumber(3, "Особая квота по исходному плану."),
+      separate: mpeiPlanNumber(3, "Отдельная квота по исходному плану."),
+      target: mpeiPlanNumber(1, "Целевая квота по исходному плану."),
+      general: sourced<number>(
+        null,
         2026,
-        "verified",
-        mpeiSource,
-        "Приёмная комиссия НИУ МЭИ",
-      ),
-      separate: sourced(
-        3,
-        2026,
-        "verified",
-        mpeiSource,
-        "Приёмная комиссия НИУ МЭИ",
-      ),
-      target: sourced(
-        1,
-        2026,
-        "verified",
-        mpeiSource,
-        "Приёмная комиссия НИУ МЭИ",
-      ),
-      general: sourced(
-        23,
-        2026,
-        "verified",
-        mpeiSource,
-        "Приёмная комиссия НИУ МЭИ",
-        { note: "Вычислено как 30 - 3 - 3 - 1 по данным той же строки." },
+        "pending_review",
+        mpeiPlanSource,
+        mpeiOffice,
+        {
+          ...mpeiPlanEvidence,
+          note: "Из исходного плана следует 23 места (30 − 3 − 3 − 1). Итог после перераспределения квот требует подтверждения.",
+        },
       ),
     },
     hostel: unknownBoolean(
@@ -1110,13 +1146,15 @@ programsBase.push(
     admissionsUrl: "https://pk.mpei.ru/",
     trust: {
       dataYear: 2026,
-      status: "verified",
-      completeness: 72,
-      checkedAt: CHECKED,
-      checkedBy: "Редакция Поступай",
-      nextReviewAt: NEXT,
-      sourceName: "Приёмная комиссия НИУ МЭИ",
-      sourceSection: "09.03.03, Прикладная информатика в экономике",
+      status: "pending_review",
+      completeness: 92,
+      checkedAt: mpeiReview.checkedAt,
+      checkedBy: mpeiReview.checkedBy,
+      sourceName: mpeiOffice,
+      sourceDocumentTitle: mpeiPlanEvidence.sourceDocumentTitle,
+      sourcePage: mpeiPlanEvidence.sourcePage,
+      sourceSection: mpeiContest,
+      note: "Итоговые места общего конкурса требуют подтверждения.",
     },
     tags: ["ИТ", "Экономика"],
   }),
@@ -1305,14 +1343,14 @@ programsBase.push(
     admissionsUrl: "https://admission.mephi.ru/",
     trust: {
       dataYear: 2026,
-      status: "verified",
+      status: "pending_review",
       completeness: 64,
       checkedAt: CHECKED,
       checkedBy: "Редакция Поступай",
       nextReviewAt: NEXT,
       sourceName: "Приёмная комиссия НИЯУ МИФИ",
       sourceSection: "14.03.02",
-      note: "Испытания, стоимость, общежитие и ВУЦ подтверждены отдельными официальными страницами. Групповые места не распределяются по программе без источника.",
+      note: "Минимумы ЕГЭ, стоимость, общежитие и ВУЦ подтверждены отдельными официальными страницами. Условия ДВИ и разбивка общих мест по программам требуют сверки.",
     },
     tags: ["Физика", "Ядерные технологии"],
   }),
@@ -1622,131 +1660,186 @@ for (const seed of mephiProgramSeeds) {
   );
 }
 
-const rudnSource = "https://admission.rudn.ru/pk/2026/count/kcp_26_1.pdf";
+const rudnReviewedAt = "2026-11-10T16:02:24.878Z";
+const rudnNextReviewAt = "2026-12-10T16:02:24.878Z";
+const rudnSources = {
+  profile: {
+    url: "https://admission.rudn.ru/undergraduate/directions/programs/prikladnaya_matematika_i_programmirovanie_ochnaya102234_6213629/8412497/",
+    sourceKind: "html",
+    retrievedAt: "2026-11-10T15:54:05.937Z",
+    sourceDocumentTitle:
+      "Очная программа «Прикладная математика и программирование»",
+  },
+  rules: {
+    url: "https://admission.rudn.ru/upload/base64_files/1fa/4bxvpcz0j1zqw392fc0ejk4ey5952iso.pdf",
+    sourceKind: "pdf",
+    retrievedAt: "2026-11-10T15:55:25.528Z",
+    sourceDocumentTitle:
+      "Правила приёма РУДН на 2026/27 учебный год в редакции от 15 мая 2026 года",
+  },
+  budget: {
+    url: "https://admission.rudn.ru/upload/base64_files/5ad/y5kycdw3elg7yrxeao4aeuxbteoxa0xj.pdf",
+    sourceKind: "pdf",
+    retrievedAt: "2026-11-10T15:55:24.501Z",
+    sourceDocumentTitle:
+      "Приказ № 207 от 15 апреля 2026 года о распределении бюджетных мест",
+    sourcePage: 5,
+    sourceSection: "Очная форма, ФФМЕН, строка 58, направление 01.03.02",
+  },
+  paid: {
+    url: "https://admission.rudn.ru/upload/base64_files/6c7/5s8i29jddjzlx0mj0k6zpda856g1qcyt.pdf",
+    sourceKind: "pdf",
+    retrievedAt: "2026-11-10T15:55:22.633Z",
+    sourceDocumentTitle:
+      "Приказ № 208 от 15 апреля 2026 года о количестве мест по договорам",
+    sourcePage: 4,
+    sourceSection: "Приложение 1, ФФМЕН, 01.03.02, шифр НП, очная колонка",
+  },
+  price: {
+    url: "https://admission.rudn.ru/upload/base64_files/55d/48e6mnlb4vhj1y3k7p80vgrwgvmw7ut3.docx",
+    sourceKind: "docx",
+    retrievedAt: "2026-11-10T15:56:46.965Z",
+    sourceDocumentTitle:
+      "Стоимость обучения для поступающих в 2026/27 учебном году",
+    sourceSection: "Первая таблица, строка 55, ФФМЕН, 01.03.02, индекс НПб1д4",
+  },
+  history: {
+    url: "https://admission.rudn.ru/undergraduate/scores/",
+    sourceKind: "html",
+    retrievedAt: "2026-11-10T15:58:16.381Z",
+    sourceDocumentTitle: "Проходные баллы прошлых лет",
+    sourceSection: "01.03.02, ФФМЕН, опубликованный результат 2025 года",
+  },
+} as const;
+
+function rudnFact<T>(
+  value: T | null,
+  status: DataStatus,
+  source: keyof typeof rudnSources,
+  details: Partial<SourcedValue<T>> = {},
+): SourcedValue<T> {
+  const { url, ...sourceDetails } = rudnSources[source];
+  return sourced(value, 2026, status, url, "РУДН", {
+    ...sourceDetails,
+    checkedAt: rudnReviewedAt,
+    nextReviewAt: rudnNextReviewAt,
+    ...details,
+  });
+}
+
+const rudnExamEvidence = {
+  sourcePage: 74,
+  sourceSection:
+    "ФФМЕН, 01.03.02, профиль «Прикладная математика и программирование», колонки ЕГЭ для бюджета и договора",
+};
+const rudnBudgetPlaces = rudnFact(49, "verified", "budget", {
+  note: "Общий утверждённый план бюджетных мест на очной форме, включая квоты.",
+});
+const rudnTuition = rudnFact(285_000, "verified", "price", {
+  note: "Опубликованная годовая стоимость для поступающих в 2026/27 учебном году, граждан РФ и стран СНГ.",
+});
+
 programsBase.push(
   program({
     id: "rudn-ami",
     slug: "rudn-applied-math",
     universitySlug: "rudn",
     code: "01.03.02",
-    title: "Прикладная математика и информатика",
+    title:
+      "Прикладная математика и информатика — Прикладная математика и программирование",
     level: "Бакалавриат",
     form: "Очная",
     duration: "4 года",
+    durationValue: rudnFact("4 года", "verified", "profile", {
+      sourceSection: "Срок обучения очной программы ФФМЕН",
+    }),
     faculty: "Факультет физико-математических и естественных наук",
     campus: "Москва",
     language: "Русский",
-    subjects: [],
-    examRequirements: [],
-    passingScore: null,
-    passingScoreValue: unknownNumber(
-      2025,
-      rudnSource,
-      "РУДН",
-      "В приказе о КЦП нет проходного балла.",
-    ),
-    passingHistory: [],
-    placesHistory: [
-      sourced(49, 2026, "verified", rudnSource, "РУДН", {
-        sourceDocumentTitle: "Количество мест для приёма в 2026 году",
-        sourcePage: 2,
-        sourceSection:
-          "Факультет физико-математических и естественных наук, 01.03.02",
-      }),
+    subjects: ["Математика", "Информатика / Физика", "Русский язык"],
+    examRequirements: [
+      {
+        id: "rudn-math",
+        label: "Обязательный предмет",
+        subjects: ["Математика"],
+        minimum: rudnFact(40, "verified", "rules", rudnExamEvidence),
+        required: true,
+      },
+      {
+        id: "rudn-alt",
+        label: "Группа испытаний",
+        subjects: ["Информатика", "Физика"],
+        minimum: rudnFact<number>(null, "not_applicable", "rules", {
+          ...rudnExamEvidence,
+          note: "У предметов по выбору разные пороги.",
+        }),
+        subjectMinimums: {
+          Информатика: rudnFact(46, "verified", "rules", rudnExamEvidence),
+          Физика: rudnFact(41, "verified", "rules", rudnExamEvidence),
+        },
+        required: true,
+      },
+      {
+        id: "rudn-rus",
+        label: "Обязательный предмет",
+        subjects: ["Русский язык"],
+        minimum: rudnFact(40, "verified", "rules", rudnExamEvidence),
+        required: true,
+      },
     ],
-    tuitionHistory: [],
+    passingScore: null,
+    passingScoreValue: rudnFact<number>(null, "pending_review", "history", {
+      year: 2025,
+      note: "Архивный результат за 2025 год относится к многопрофильному конкурсу 01.03.00. Сопоставимый результат для этой конкурсной группы требует подтверждения.",
+    }),
+    passingScoreExamScale: null,
+    passingHistory: [],
+    placesHistory: [rudnBudgetPlaces],
+    tuitionHistory: [rudnTuition],
     competitionHistory: [],
     minScore: null,
-    budgetPlaces: 49,
-    budgetPlacesValue: sourced(49, 2026, "verified", rudnSource, "РУДН", {
-      sourceDocumentTitle: "Количество мест для приёма в 2026 году",
-      sourcePage: 2,
-      sourceSection:
-        "Факультет физико-математических и естественных наук, 01.03.02",
-    }),
-    paidPlaces: null,
-    paidPlacesValue: unknownNumber(
-      2026,
-      rudnSource,
-      "РУДН",
-      "В обработанной таблице КЦП платные места не указаны.",
-    ),
-    tuition: null,
-    tuitionValue: unknownNumber(
-      2026,
-      rudnSource,
-      "РУДН",
-      "В приказе о КЦП нет стоимости.",
-    ),
+    budgetPlaces: rudnBudgetPlaces.value,
+    budgetPlacesValue: rudnBudgetPlaces,
+    paidPlaces: 17,
+    paidPlacesValue: rudnFact(17, "verified", "paid"),
+    tuition: rudnTuition.value,
+    tuitionValue: rudnTuition,
     dvi: null,
-    dviValue: sourced<string>(
-      null,
-      2026,
-      "pending_review",
-      rudnSource,
-      "РУДН",
-      { note: "Испытания проверяются по правилам приёма." },
-    ),
-    dviMax: sourced<number>(null, 2026, "pending_review", rudnSource, "РУДН"),
-    individualAchievementsMax: unknownNumber(
-      2026,
-      rudnSource,
-      "РУДН",
-      "Не указано в плане мест.",
-    ),
+    dviValue: rudnFact<string>(null, "not_applicable", "rules", {
+      ...rudnExamEvidence,
+      note: "Для этой группы дополнительных испытаний сверх опубликованного набора ЕГЭ нет.",
+    }),
+    dviMax: rudnFact<number>(null, "not_applicable", "rules", rudnExamEvidence),
+    individualAchievementsMax: rudnFact(10, "verified", "rules", {
+      sourcePage: 14,
+      sourceSection: "Пункт 48.1.1, общий лимит индивидуальных достижений",
+    }),
     quotas: {
-      special: unknownNumber(
-        2026,
-        rudnSource,
-        "РУДН",
-        "Не выделено в обработанной строке.",
-      ),
-      separate: unknownNumber(
-        2026,
-        rudnSource,
-        "РУДН",
-        "Не выделено в обработанной строке.",
-      ),
-      target: unknownNumber(
-        2026,
-        rudnSource,
-        "РУДН",
-        "Не выделено в обработанной строке.",
-      ),
-      general: unknownNumber(
-        2026,
-        rudnSource,
-        "РУДН",
-        "Не выделено в обработанной строке.",
-      ),
+      special: rudnFact<number>(null, "conflicting_sources", "budget", {
+        note: "Приказ от 15 апреля указывает 5 мест, интерактивный перечень РУДН указывает 4. Датированная итоговая разбивка требует сверки.",
+      }),
+      separate: rudnFact(5, "verified", "budget"),
+      target: rudnFact(1, "verified", "budget"),
+      general: rudnFact<number>(null, "conflicting_sources", "budget", {
+        note: "Приказ от 15 апреля указывает 38 мест общего конкурса. На портале показано 39 бюджетных мест без явной привязки к общему конкурсу.",
+      }),
     },
-    hostel: unknownBoolean(
-      2026,
-      rudnSource,
-      "РУДН",
-      "Требуется отдельный официальный источник.",
-    ),
-    militaryCenter: unknownBoolean(
-      2026,
-      rudnSource,
-      "РУДН",
-      "Требуется отдельный официальный источник.",
-    ),
-    sourceUrl: rudnSource,
-    admissionsUrl: "https://admission.rudn.ru/",
+    hostel: rudnFact<boolean>(null, "pending_review", "profile"),
+    militaryCenter: rudnFact<boolean>(null, "pending_review", "profile"),
+    sourceUrl: rudnSources.profile.url,
+    admissionsUrl: rudnSources.profile.url,
     trust: {
       dataYear: 2026,
-      status: "verified",
-      completeness: 28,
-      checkedAt: CHECKED,
+      status: "pending_review",
+      completeness: 72,
+      checkedAt: rudnReviewedAt,
       checkedBy: "Редакция Поступай",
-      nextReviewAt: NEXT,
+      nextReviewAt: rudnNextReviewAt,
       sourceName: "РУДН",
-      sourceDocumentTitle: "Количество мест для приёма в 2026 году",
-      sourcePage: 2,
+      sourceDocumentTitle: rudnSources.profile.sourceDocumentTitle,
       sourceSection:
-        "Факультет физико-математических и естественных наук, 01.03.02",
-      note: "Опубликовано только подтверждённое число бюджетных мест.",
+        "ФФМЕН, 01.03.02 «Прикладная математика и информатика», очный профиль НПб",
+      note: "Подтверждены испытания, план мест и стоимость. Разбивка общего конкурса и особой квоты и сопоставимый проходной балл требуют сверки.",
     },
     tags: ["Математика", "ИТ"],
   }),
@@ -2277,7 +2370,7 @@ programsBase.push(
       "https://www.rea.ru/ru/org/managements/priem/Pages/default.aspx",
     trust: {
       dataYear: 2026,
-      status: "verified",
+      status: "pending_review",
       completeness: 58,
       checkedAt: CHECKED,
       checkedBy: "Редакция Поступай",
@@ -2285,7 +2378,7 @@ programsBase.push(
       sourceName: "РЭУ им. Г. В. Плеханова",
       sourceSection:
         "40.03.01, Международное право и сравнительное правоведение",
-      note: "Старый проходной балл 2022 года намеренно не используется для оценки 2026.",
+      note: "Точные группы испытаний и минимумы 2026 требуют сверки. Исторический балл 2022 не сопоставим с текущей кампанией.",
     },
     tags: ["Право", "Международное право"],
   }),

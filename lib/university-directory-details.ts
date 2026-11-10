@@ -29,6 +29,7 @@ import moscowOverviewNovember10 from "@/data-sources/russia/moscow-overview-enri
 import moscowHseNovember10 from "@/data-sources/russia/moscow-hse-enrichment-2026-11-10.json";
 import moscowMiptNovember10 from "@/data-sources/russia/moscow-mipt-enrichment-2026-11-10.json";
 import moscowMisisNovember10 from "@/data-sources/russia/moscow-misis-enrichment-2026-11-10.json";
+import moscowRudnNovember10 from "@/data-sources/russia/moscow-rudn-enrichment-2026-11-10.json";
 
 export type DirectoryField = {
   value: string;
@@ -226,6 +227,7 @@ export const directoryDetails = mergeDirectoryEnrichment(
     ...moscowHseNovember10.profiles,
     ...moscowMiptNovember10.profiles,
     ...moscowMisisNovember10.profiles,
+    ...moscowRudnNovember10.profiles,
   ] as DirectoryEnrichment[],
 );
 const bySlug = new Map(
