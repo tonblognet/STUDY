@@ -100,8 +100,12 @@ export default async function checkCatalog(page) {
           await score("Инд. достижения").fill("0");
           await visible(result.getByText(/Запас \/ дефицит:\s*9\./));
         }
-        await exams.screenshot({
+        await tab.evaluate(() =>
+          window.scrollTo({ top: 0, left: 0, behavior: "instant" }),
+        );
+        await tab.screenshot({
           path: `output/playwright/contest-${slug}-${width}.png`,
+          fullPage: true,
         });
         await finish(route);
       }
@@ -147,8 +151,12 @@ export default async function checkCatalog(page) {
           "https://www.rudn.ru/sveden/education/eduaccred/",
         "RUDN listing source changed",
       );
-      await offerings.screenshot({
+      await tab.evaluate(() =>
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" }),
+      );
+      await tab.screenshot({
         path: `output/playwright/directory-rudn-${width}.png`,
+        fullPage: true,
       });
       await finish(university);
       confirm(errors.length === 0, errors.join(", "));
