@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "batchDateMoscow": "2026-11-10",
+  "scope": "misis_moscow_directory_fields_only",
+  "sourceReviewPacket": "data-sources/release/2026-12/evidence/2026-11-10-misis-card-review.json",
+  "profiles": [
+    {
+      "universitySlug": "misis",
+      "fields": {
+        "overview": {
+          "value": "Университет ведёт свою историю от Московской горной академии, основанной в 1918 году.",
+          "sourceUrl": "https://misis.ru/university/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-10T07:54:57.905953+00:00",
+          "sourceSha256": "85977d8468a5c37dd6ac9e273637f121d6f99a41d8dc2609f02db790172b74db"
+        },
+        "hostelInfo": {
+          "value": "Вуз публикует порядок заселения первокурсников базового и специализированного высшего образования и магистратуры. На общежитие могут претендовать студенты, зарегистрированные в других регионах или странах, а также жители дальнего Подмосковья.",
+          "sourceUrl": "https://misis.ru/applicants/accommodation/zaselenievobsh_ezhitiepervokusn/order/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-10T07:54:28.689327+00:00",
+          "sourceSha256": "a41a5f94b5ef178d0b4bbd5bbd49110aa2352c39581a6832ab5f97e099010966"
+        }
+      }
+    }
+  ]
+}

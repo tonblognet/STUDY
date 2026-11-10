@@ -64,11 +64,12 @@ export default async function UniversityPage({
   const admissionsEmail =
     university.admissionsEmail ??
     directoryDetails?.fields.admissionsEmail?.value;
-  const dialNumber = admissionsPhone?.replace(/[ ()-]/g, "");
-  const phoneHref =
-    dialNumber && /^\+?[0-9]{7,15}$/.test(dialNumber)
-      ? `tel:${dialNumber}`
-      : null;
+  const phones = Array.from(
+    new Set(admissionsPhone?.split(";").map((label) => label.trim()) ?? []),
+  ).map((label) => ({ label, dialNumber: label.replace(/[ ()-]/g, "") }));
+  const linkablePhones = phones.every(({ dialNumber }) =>
+    /^\+?[0-9]{7,15}$/.test(dialNumber),
+  );
   const emailHref =
     admissionsEmail &&
     /^[^\s@<>?&#]+@[^\s@<>?&#]+\.[^\s@<>?&#]+$/.test(admissionsEmail)
@@ -509,11 +510,13 @@ export default async function UniversityPage({
                 </p>
               </>
             )}
-            {phoneHref ? (
-              <a href={phoneHref}>{admissionsPhone}</a>
-            ) : (
-              admissionsPhone && <p>{admissionsPhone}</p>
-            )}
+            {linkablePhones
+              ? phones.map(({ label, dialNumber }) => (
+                  <a href={`tel:${dialNumber}`} key={label}>
+                    {label}
+                  </a>
+                ))
+              : admissionsPhone && <p>{admissionsPhone}</p>}
             {emailHref ? (
               <a href={emailHref}>{admissionsEmail}</a>
             ) : (

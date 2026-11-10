@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "scope": "misis_moscow_card_source_review",
+  "universitySlug": "misis",
+  "status": "pending_inventory_reconciliation",
+  "sources": {
+    "common": {
+      "finalUrl": "https://misis.ru/sveden/common/",
+      "kind": "html",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-10T07:54:27.864612+00:00",
+      "bytes": 68136,
+      "sha256": "e25d86495f338c770470edeeecdc8aea137a9524cfe89d1be45c2b8565895ea5"
+    },
+    "about": {
+      "finalUrl": "https://misis.ru/university/",
+      "kind": "html",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-10T07:54:57.905953+00:00",
+      "bytes": 36532,
+      "sha256": "85977d8468a5c37dd6ac9e273637f121d6f99a41d8dc2609f02db790172b74db"
+    },
+    "structure": {
+      "finalUrl": "https://misis.ru/sveden/struct/",
+      "kind": "html",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-10T07:54:28.858025+00:00",
+      "bytes": 1724384,
+      "sha256": "6b601bda20aa1b58779d9c27573026be8fd9c9bab1f6a115e5a80a2c87accb38"
+    },
+    "inventory": {
+      "finalUrl": "https://misis.ru/sveden/education/eduaccred/",
+      "kind": "html",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-10T07:54:28.798716+00:00",
+      "bytes": 2385005,
+      "sha256": "7322f78375d02995a8c22812f7b295f14bcef51e05087756643d2d8983f0f770"
+    },
+    "contacts": {
+      "finalUrl": "https://misis.ru/applicants/contacts/",
+      "kind": "html",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-10T07:54:28.282145+00:00",
+      "bytes": 42971,
+      "sha256": "1c0bf9514db36178e6705e613ed027d7e47ee21708b91789ee2793c8146129ea"
+    },
+    "housing": {
+      "finalUrl": "https://misis.ru/applicants/accommodation/zaselenievobsh_ezhitiepervokusn/order/",
+      "kind": "html",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-10T07:54:28.689327+00:00",
+      "bytes": 32048,
+      "sha256": "a41a5f94b5ef178d0b4bbd5bbd49110aa2352c39581a6832ab5f97e099010966"
+    }
+  },
+  "sections": {
+    "general_information": {
+      "source": "common",
+      "baseline": "data-sources/moscow/profiles.json#/profiles/81/fields",
+      "adapter": "scripts/collect-moscow-enrichment.py:common_fields",
+      "matchingFields": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "address",
+        "telephone",
+        "email"
+      ],
+      "overviewCandidate": {
+        "source": "about",
+        "locator": "Основной текст страницы «Университет», абзац об основании Московской горной академии в 1918 году, строка HTML 68",
+        "runtimeField": "data-sources/russia/moscow-misis-enrichment-2026-11-10.json#/profiles/0/fields/overview"
+      }
+    },
+    "structure": {
+      "source": "structure",
+      "baseline": "data-sources/russia/moscow-enrichment-2026-10-09.json#/profiles/81/faculties",
+      "adapter": "scripts/collect-moscow-enrichment.py:faculties",
+      "matchedBy": ["name", "url"],
+      "matching": 10,
+      "priorOnly": 0,
+      "sourceOnly": 0,
+      "scope": "Выборка из девяти подразделений таблицы «Факультеты/Институты» и одной инженерной школы из таблицы «Кафедры»."
+    },
+    "educational_inventory": {
+      "source": "inventory",
+      "baseline": "data-sources/russia/moscow-enrichment-2026-10-10.json#/profiles/4/offerings",
+      "adapter": "scripts/collect-moscow-targeted-enrichment.py:education_rows,collapse_rows",
+      "tablesZeroBased": [0, 1, 2, 3, 4],
+      "sourceRowsPerTable": [17, 10, 45, 92, 72],
+      "excludedPostgraduateRows": 31,
+      "matchedBy": [
+        "id",
+        "code",
+        "title",
+        "profile",
+        "level",
+        "forms",
+        "duration",
+        "sourceYear",
+        "admissionsStatus"
+      ],
+      "priorRows": 285,
+      "reproducedRows": 236,
+      "matching": 162,
+      "priorOnly": 123,
+      "sourceOnly": 74,
+      "durationConflicts": 0,
+      "admissionYear": null,
+      "status": "pending_inventory_reconciliation",
+      "note": "Разница по идентификаторам отражает изменение опубликованного перечня, включая текстовые наименования. Она сама по себе не устанавливает появление или закрытие программ, год набора и условия конкурса. Прежние записи сохранены с их источниками и датами, результаты новой сверки пока не импортированы."
+    },
+    "admissions_contacts": {
+      "source": "contacts",
+      "baseline": "data-sources/russia/moscow-enrichment-2026-10-10.json#/profiles/4/fields",
+      "locator": "Таблица «Контактная информация», строка «По вопросам поступления», HTML 93–98",
+      "matchingFields": ["admissionsPhone", "admissionsEmail"],
+      "anchors": ["tel:+74996494480", "mailto:vopros@misis.ru"],
+      "note": "Взяты контакты общего приёма в Москве из одной строки таблицы. Контакты отдельных категорий и подразделений не переносились."
+    },
+    "housing": {
+      "source": "housing",
+      "locator": "Блок «Студенты первого курса» на странице «Порядок заселения в общежитие», HTML 67–69",
+      "runtimeField": "data-sources/russia/moscow-misis-enrichment-2026-11-10.json#/profiles/0/fields/hostelInfo",
+      "note": "Страница называет категории по месту регистрации и отсылает к приказу о распределении. Текущая доступность мест, границы дальнего Подмосковья, календарный год заселения и индивидуальное решение отдельно не проверены."
+    }
+  }
+}

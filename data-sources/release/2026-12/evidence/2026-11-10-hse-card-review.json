@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "reviewDate": "2026-11-10",
+  "scope": "Редакционная сверка пяти разделов московской карточки НИУ ВШЭ.",
+  "sourceAcquisition": "SHA-256 и размеры проверены по сохранённым телам официальных HTTP 200. snapshotSavedAtUtc отражает время сохранения снимка. Год приёма указан отдельно там, где его подтверждает источник.",
+  "sources": {
+    "about": {
+      "url": "https://www.hse.ru/info/ustav",
+      "httpStatus": 200,
+      "bytes": 65518,
+      "sourceSha256": "799603c0b5f4b02ec882613379c2da0df104805927b5fe6127ba5ca4851dbaee",
+      "sourceKind": "official_university_page",
+      "snapshotSavedAtUtc": "2026-11-10T01:22:54.747201+00:00"
+    },
+    "admissions-information": {
+      "url": "https://ba.hse.ru/information",
+      "httpStatus": 200,
+      "bytes": 191321,
+      "sourceSha256": "8740a0e852704d24920ccd125a2a012ea312a27a964993e8f8d96e704f712fc5",
+      "sourceKind": "official_university_page",
+      "snapshotSavedAtUtc": "2026-11-10T01:22:53.427768+00:00"
+    },
+    "housing-2026": {
+      "url": "https://www.hse.ru/dormoffice/zaseleniebak2026",
+      "httpStatus": 200,
+      "bytes": 59660,
+      "sourceSha256": "73eaf6432971eda215dd6a9de3a1ebaad07d5900c7e5ca0cefc5474b33274d10",
+      "sourceKind": "official_university_page",
+      "snapshotSavedAtUtc": "2026-11-10T01:22:59.204928+00:00"
+    },
+    "common": {
+      "url": "https://www.hse.ru/sveden/common/",
+      "httpStatus": 200,
+      "bytes": 345839,
+      "sourceSha256": "5ea084992138e452557eab6c3fc47cc8d07673420cee1551e6dae576f2fdf672",
+      "sourceKind": "official_university_page",
+      "snapshotSavedAtUtc": "2026-11-10T01:25:52.757531+00:00"
+    },
+    "listings": {
+      "url": "https://www.hse.ru/sveden/education/58898a2d-b686-41e5-afc2-4fc1b9d20bde/",
+      "httpStatus": 200,
+      "bytes": 2007963,
+      "sourceSha256": "9f1617156083e93b7f415f9ad19f264069a4e356ba2b09f6dc660b18536080b7",
+      "sourceKind": "official_university_page",
+      "snapshotSavedAtUtc": "2026-11-10T01:25:59.438228+00:00"
+    },
+    "structure": {
+      "url": "https://www.hse.ru/sveden/struct/",
+      "httpStatus": 200,
+      "bytes": 304112,
+      "sourceSha256": "5fc7807477b971c99434ef4173f9cb714523806afc01d26a9969a9f81b3ce7d1",
+      "sourceKind": "official_university_page",
+      "snapshotSavedAtUtc": "2026-11-10T01:28:44.952315+00:00"
+    }
+  },
+  "universities": [
+    {
+      "id": "hse",
+      "slug": "hse",
+      "status": "pending_editorial_review",
+      "editorialDecision": "Результаты предметной сверки. Приёмка после проверки отображения фиксируется отдельно в review-cohort.json.",
+      "sections": {
+        "general_information": {
+          "source": "common",
+          "baselineFile": "data-sources/moscow/profiles.json",
+          "baselinePointer": "/profiles/82/fields",
+          "matchedFields": [
+            {
+              "field": "fullName",
+              "locator": "//*[@itemprop=\"fullName\"]"
+            },
+            {
+              "field": "shortName",
+              "locator": "//*[@itemprop=\"shortName\"]"
+            },
+            {
+              "field": "regDate",
+              "locator": "//*[@itemprop=\"regDate\"]"
+            },
+            {
+              "field": "address",
+              "locator": "//*[@itemprop=\"address\"]"
+            },
+            {
+              "field": "telephone",
+              "locator": "//*[@itemprop=\"telephone\"]"
+            },
+            {
+              "field": "email",
+              "locator": "//*[@itemprop=\"email\"]"
+            }
+          ],
+          "overviewSource": "about",
+          "overviewLocator": "Страница «Устав и лицензии», строка таблицы 1992 года с постановлением № 917 от 27 ноября 1992 года о создании Высшей школы экономики.",
+          "overviewBasis": "Высшая школа экономики создана 27 ноября 1992 года постановлением Правительства России № 917.",
+          "openGaps": [
+            "Проверка общих сведений не устанавливает наличие действующей лицензии или аккредитации для конкретной программы."
+          ]
+        },
+        "structure": {
+          "source": "structure",
+          "baselineFile": "data-sources/russia/moscow-enrichment-2026-10-09.json",
+          "baselinePointer": "/profiles/82/faculties",
+          "adapter": "scripts/collect-moscow-enrichment.py#faculties",
+          "locator": "Таблицы раздела «Структура и органы управления образовательной организацией». Строки с name, divisionName или structName в itemprop. Выбор и сверка воспроизводятся действующим адаптером.",
+          "matchedFields": ["name", "url"],
+          "matchedRowCount": 18,
+          "openGaps": [
+            "Совпадение относится к выборке карточки. Полнота перечня и адрес каждого подразделения отдельно не сверялись."
+          ]
+        },
+        "educational_inventory": {
+          "source": "listings",
+          "baselineFile": "data-sources/russia/moscow-enrichment-2026-10-10.json",
+          "baselinePointer": "/profiles/11/offerings",
+          "adapter": "scripts/collect-moscow-targeted-enrichment.py#education_rows,collapse_rows",
+          "locator": "Первая таблица с реализуемыми образовательными программами. Применены действующие ограничения адаптера для московского перечня.",
+          "sourceTableIndexZeroBased": 0,
+          "matchedFields": [
+            "id",
+            "code",
+            "title",
+            "profile",
+            "level",
+            "forms",
+            "duration",
+            "admissionsStatus"
+          ],
+          "matchedRowCount": 233,
+          "admissionYear": null,
+          "openGaps": [
+            "Год конкурсного приёма по перечню не установлен.",
+            "Места, цены, испытания и статус конкретных конкурсов проверяются отдельно."
+          ]
+        },
+        "admissions_contacts": {
+          "source": "admissions-information",
+          "admissionYear": 2026,
+          "scope": "Приёмная комиссия НИУ ВШЭ, Москва.",
+          "locator": "Страница информирования о приёме. Московская строка с email и опубликованный HTML-шаблон секции #contacts с заголовком «Контакты Приемной комиссии».",
+          "publishedContactAnchors": [
+            "mailto:abitur@hse.ru",
+            "tel:+74957713242",
+            "tel:+74959168844"
+          ],
+          "openGaps": [
+            "Контакты других кампусов и актуальные часы работы отдельно не сверялись."
+          ]
+        },
+        "housing": {
+          "source": "housing-2026",
+          "admissionYear": 2026,
+          "scope": "Граждане РФ, первый курс бакалавриата или специалитета набора 2026 года.",
+          "locator": "Первая таблица под заголовком «Порядок заселения в общежитие НИУ ВШЭ студентов 1 курса бакалавриата/специалитета набора 2026 года граждан РФ». Заголовки таблицы перечисляют категории и обязательные условия.",
+          "verifiedObservation": "Вуз публикует категории с гарантированным местом при одновременном соблюдении указанных для категории условий.",
+          "openGaps": [
+            "Фактическое наличие свободных мест и соответствие конкретного абитуриента условиям не установлены.",
+            "На другие кампусы, категории поступающих и годы условия не распространены."
+          ]
+        }
+      }
+    }
+  ]
+}

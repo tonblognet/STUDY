@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "batchDateMoscow": "2026-11-10",
+  "scope": "hse_moscow_directory_fields_only",
+  "profiles": [
+    {
+      "universitySlug": "hse",
+      "fields": {
+        "overview": {
+          "value": "Высшая школа экономики создана 27 ноября 1992 года постановлением Правительства России № 917.",
+          "sourceUrl": "https://www.hse.ru/info/ustav",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-10T01:22:54.747201+00:00",
+          "sourceSha256": "799603c0b5f4b02ec882613379c2da0df104805927b5fe6127ba5ca4851dbaee"
+        },
+        "hostelInfo": {
+          "value": "Для граждан РФ, поступивших в 2026 году на первый курс бакалавриата или специалитета, вуз опубликовал категории и обязательные условия предоставления места в общежитии.",
+          "sourceUrl": "https://www.hse.ru/dormoffice/zaseleniebak2026",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-10T01:22:59.204928+00:00",
+          "sourceSha256": "73eaf6432971eda215dd6a9de3a1ebaad07d5900c7e5ca0cefc5474b33274d10"
+        },
+        "admissionsPhone": {
+          "value": "+7 (495) 771-32-42; +7 (495) 916-88-44",
+          "sourceUrl": "https://ba.hse.ru/information",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-10T01:22:53.427768+00:00",
+          "sourceSha256": "8740a0e852704d24920ccd125a2a012ea312a27a964993e8f8d96e704f712fc5"
+        },
+        "admissionsEmail": {
+          "value": "abitur@hse.ru",
+          "sourceUrl": "https://ba.hse.ru/information",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-10T01:22:53.427768+00:00",
+          "sourceSha256": "8740a0e852704d24920ccd125a2a012ea312a27a964993e8f8d96e704f712fc5"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "reviewDate": "2026-11-10",
+  "runtimeChanged": false,
+  "newlyVerifiedContestPrograms": 0,
+  "scope": "Рабочие доказательства для редакционной сверки. Runtime-данные и trust-статусы не менялись.",
+  "tls": {
+    "rootUrl": "https://gu-st.ru/content/Other/doc/russian_trusted_root_ca.cer",
+    "rootSha256Fingerprint": "D26D2D0231B7C39F92CC738512BA54103519E4405D68B5BD703E9788CA8ECF31",
+    "verification": "Связь HTTPS проверена по полному сертификатному пути и имени хоста с изолированным CAfile из официального источника. Системное доверие не менялось."
+  },
+  "sources": {
+    "group": {
+      "status": 200,
+      "url": "https://priem.mai.ru/base/groups/183984/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 165813,
+      "sha256": "7cb6d7a31b60fc65205308fef38e0635effc3646d9485accde50be5d9d20ce87",
+      "retrievedAt": "2026-11-10T01:24:21+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "program": {
+      "status": 200,
+      "url": "https://priem.mai.ru/base/programs/informatika/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 385143,
+      "sha256": "42c838e36a71ef9ae519f5f4e54ae021b3414e96d603122ef26b12e8e4191a5e",
+      "retrievedAt": "2026-11-10T01:24:22+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "budget": {
+      "status": 200,
+      "url": "https://priem.mai.ru/orders/plan/common/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 170541,
+      "sha256": "2bbd33411a91c29d5b0f189b9f2bcc50e8801012c4a78b82d78142861e18d557",
+      "retrievedAt": "2026-11-10T01:24:21+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "paid": {
+      "status": 200,
+      "url": "https://priem.mai.ru/orders/plan/cost/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 188273,
+      "sha256": "97b86f4e6029ce89c14257908b025bf00a3f321071e6fcaf2ad5947a798461fc",
+      "retrievedAt": "2026-11-10T01:24:21+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "exam": {
+      "status": 200,
+      "url": "https://priem.mai.ru/orders/programs/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 198777,
+      "sha256": "9c53189acdbaa195c6dc20689b1f3944cfb70a7e57a31e0bf628f481d02b07a3",
+      "retrievedAt": "2026-11-10T01:24:22+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "minimum": {
+      "status": 200,
+      "url": "https://priem.mai.ru/orders/min-points/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 162685,
+      "sha256": "f6bad57e92adc90ad4ccd770116fc480cb9ad011ece74413e7362542fcb83279",
+      "retrievedAt": "2026-11-10T01:25:06+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "special": {
+      "status": 200,
+      "url": "https://priem.mai.ru/orders/plan/quota/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 168170,
+      "sha256": "60f50ee0bc26a8a7a0795bc286d5eed7c2b5abd5ebb63bd51f401ad1b985a096",
+      "retrievedAt": "2026-11-10T01:25:06+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "separate": {
+      "status": 200,
+      "url": "https://priem.mai.ru/orders/plan/special-quota/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 168259,
+      "sha256": "7d30f70c451bf715d68491c710f40664afcf97d038568709f68a5acecad8d72b",
+      "retrievedAt": "2026-11-10T01:25:06+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "target": {
+      "status": 200,
+      "url": "https://priem.mai.ru/orders/plan/special-purpose/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 205267,
+      "sha256": "cccc74a14731b471dec8439b809351fe4a41c47606b46664c72e9036911fa28f",
+      "retrievedAt": "2026-11-10T01:25:06+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "main-tuition": {
+      "status": 200,
+      "url": "https://mai.ru/upload/iblock/3f1/hgwb9ivtbzelb540a19vrq70sr16xbg9/1-kurs-2026.06.03_175_ORG_O-stoimosti-obucheniya-v-2026_2027-uchebnom-godu.pdf",
+      "contentType": "application/pdf",
+      "length": 637457,
+      "sha256": "7921d3950bbfabc3312858ad77c750210ecb1c1ae6dfe48156db67b0cb755efa",
+      "retrievedAt": "2026-11-10T01:25:07+00:00",
+      "sourceKind": "official_university_document"
+    },
+    "price": {
+      "status": 200,
+      "url": "https://mai.ru/education/studies/price/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 496132,
+      "sha256": "8088be116faf66c28ce829c446c62aa2e7f7a8bce6b84d13ab7397ee79aa6c7c",
+      "retrievedAt": "2026-11-10T01:25:07+00:00",
+      "sourceKind": "official_university_page"
+    },
+    "score-2026": {
+      "status": 200,
+      "url": "https://priem.mai.ru/base/score/",
+      "contentType": "text/html; charset=UTF-8",
+      "length": 190448,
+      "sha256": "a5dd82a97f1c552f62d1f932bab1b7502fabfdad0e38fbe017592d72678813d5",
+      "retrievedAt": "2026-11-10T01:26:22+00:00",
+      "sourceKind": "official_university_page"
+    }
+  },
+  "program": {
+    "id": "mai-ami",
+    "slug": "mai-applied-math",
+    "campaignYear": 2026,
+    "academicYear": "2026/27",
+    "institution": "Московский авиационный институт (национальный исследовательский университет)",
+    "group": "Прикладная математика и информатика",
+    "code": "01.03.02",
+    "form": "Очная",
+    "campus": "Москва",
+    "targetApplicants": "Поступающие на программу головной организации по документам приёма 2026 года.",
+    "publishedLevel": "Базовое высшее образование",
+    "durationYears": 4,
+    "identity": {
+      "source": "program",
+      "locator": "Раздел «Конкурсная группа», заголовок 01.03.02 и блок таблицы «Основа обучения / Форма обучения / Стоимость обучения 2026 / Срок обучения». Профиль «Информатика», институт №8; конкурс относится к направлению."
+    },
+    "plannedPlaces": {
+      "budgetTotal": {
+        "value": 125,
+        "source": "budget",
+        "locator": "Основная таблица 1, строка 4 вместе с заголовками. Название «Прикладная математика и информатика», 01.03.02, очное БВО (4 года)."
+      },
+      "paid": {
+        "value": 55,
+        "source": "paid",
+        "locator": "Основная таблица 1, строка 3 вместе с заголовками. Совпадающие код и название, очное БВО (4 года)."
+      },
+      "specialQuota": {
+        "value": 13,
+        "source": "special",
+        "locator": "Таблица 1, строка 4, 01.03.02, полное название конкурса и общий бюджет 125."
+      },
+      "separateQuota": {
+        "value": 13,
+        "source": "separate",
+        "locator": "Таблица 1, строка 4, 01.03.02, полное название конкурса и общий бюджет 125."
+      },
+      "detailedTargetRows": {
+        "values": [1, 1, 3, 1, 1, 1],
+        "source": "target",
+        "locator": "Таблица «Детализированная целевая квота по направлениям базового высшего образования в МАИ», строки 2–7, 01.03.02 и шесть указанных заказчиков. Совокупное число целевых мест и число мест общего конкурса отдельно не подтверждены."
+      }
+    },
+    "tuition": {
+      "amount": 545000,
+      "currency": "RUB",
+      "course": 1,
+      "academicYear": "2026/27",
+      "source": "main-tuition",
+      "locator": "Подписанный приказ №175/ОРГ от 03.06.2026, п.1 и приложение №1, PDF стр.2, таблица МАИ, первая строка 01.03.02, очная форма. Значение относится к первому курсу."
+    },
+    "examMinimums": {
+      "source": "program",
+      "locator": "Блок «Как поступить», accordion «Минимальное количество баллов для подачи заявления». Заголовки бюджет и платное, строки 1,2,3 и «3) или». Подтверждение — источник score-2026, таблицы 1 и 2, строки по проф. математике, русскому, информатике и физике.",
+      "requiredSubjects": ["Математика профильного уровня", "Русский язык"],
+      "alternativesChooseOne": ["Информатика", "Физика"],
+      "budget": {
+        "Математика профильного уровня": 46,
+        "Русский язык": 49,
+        "Информатика": 54,
+        "Физика": 44
+      },
+      "paid": {
+        "Математика профильного уровня": 40,
+        "Русский язык": 40,
+        "Информатика": 46,
+        "Физика": 41
+      },
+      "additionalExam": {
+        "required": false,
+        "locator": "FAQ «Кому нужно сдавать дополнительные вступительные испытания для поступления в МАИ?» и accordion «Внутренние экзамены». Отдельные категории могут сдавать внутренние испытания вместо ЕГЭ."
+      }
+    },
+    "publishedPassingScores": [
+      {
+        "year": 2025,
+        "budgetWithDormitory": 275,
+        "budgetWithoutDormitory": 275,
+        "paid": 220,
+        "source": "score-2026",
+        "locator": "Раздел «Проходные баллы 2025 года», таблица 5, строка 2 (01.03.02 БВО)."
+      },
+      {
+        "year": 2026,
+        "budgetWithDormitory": 289,
+        "budgetWithoutDormitory": 289,
+        "paid": 217,
+        "source": "score-2026",
+        "locator": "Раздел «Проходные баллы 2026 года», таблица 4, строка 13 (01.03.02)."
+      }
+    ],
+    "cautions": [
+      "На странице orders/programs/ заголовки 01.03.02 и 01.03.04 противоречат правильной паре код–название, видимой в приказе о стоимости и карточке группы. Эта таблица не использована для минимальных баллов.",
+      "Страница orders/min-points/ в теле отмечена 2025 годом. Для приёма 2026 используются base/score/ и точная карточка.",
+      "Раздельные минимумы бюджета и договора нельзя без изменения модели сводить к одному числу.",
+      "Источник публикует исторические пороги по категориям; шкалу конкурсной суммы для сравнения с пользовательским набором отдельно не сверяли.",
+      "Требуются модель для официального уровня БВО и отдельная проверка итоговых целевых мест/мест общего конкурса, условий заселения и действующей аккредитации."
+    ],
+    "status": "pending_review",
+    "runtimeLimitations": {
+      "educationLevel": "Публикуемый уровень БВО относится к отдельной категории. Текущая строка каталога маркирует программу как бакалавриат.",
+      "examMinimums": "Действующая модель хранит один минимум на предмет. Для этого конкурса требуется разнести бюджетный и договорной пороги.",
+      "trust": "Подтверждение отдельных фактов не закрывает редакционную приёмку программы. Требуются итоговая целевая квота, места общего конкурса и проверка области применимости других полей."
+    },
+    "sourceConflicts": [
+      {
+        "source": "exam",
+        "status": "conflicting_sources",
+        "locator": "Первая таблица, строки 2–3 с учётом заголовка.",
+        "observedPairs": [
+          {
+            "code": "01.03.02",
+            "label": "Прикладная математика"
+          },
+          {
+            "code": "01.03.04",
+            "label": "Прикладная математика и информатика"
+          }
+        ],
+        "resolutionForEvidence": "Название и код сверены по точной карточке конкурса 183984, планам мест и подписанному приказу о стоимости. Общая таблица испытаний исключена из доказательств идентичности и порогов."
+      },
+      {
+        "source": "minimum",
+        "status": "outdated",
+        "locator": "Вводные абзацы о результатах ЕГЭ и внутренних испытаниях МАИ.",
+        "publishedAdmissionYear": 2025,
+        "resolutionForEvidence": "Минимумы 2026 сверены по карточке направления и таблицам 1 и 2 страницы base/score/."
+      }
+    ]
+  }
+}

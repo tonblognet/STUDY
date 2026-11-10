@@ -177,6 +177,56 @@ test("MPEI and MEPhI render source-dated overviews with separate intake evidence
   }
 });
 
+test("renders new HSE, MIPT and MISIS evidence with scoped directory data", async () => {
+  for (const [slug, overviewText, overviewSource, phones] of [
+    [
+      "hse",
+      "Высшая школа экономики создана 27 ноября 1992 года",
+      "https://www.hse.ru/info/ustav",
+      ["+74957713242", "+74959168844"],
+    ],
+    [
+      "mipt",
+      "МФТИ был образован в 1951 году",
+      "https://mipt.ru/sveden/common/",
+      ["+74954084800"],
+    ],
+    [
+      "misis",
+      "Университет ведёт свою историю от Московской горной академии",
+      "https://misis.ru/university/",
+      ["+74996494480"],
+    ],
+  ]) {
+    const response = await fetch(`${base}/universities/${slug}`);
+    assert.equal(response.status, 200);
+    const html = await response.text();
+    const overview = html.match(
+      /<dt>О вузе<\/dt><dd>([^<]+)<\/dd><dd>(.*?)<\/dd>/s,
+    );
+    assert.ok(overview?.[1].startsWith(overviewText), slug);
+    assert.ok(overview[2].includes(`href="${overviewSource}"`), slug);
+    const contacts = html.match(
+      /<article id="contacts">(.*?)<\/article>/s,
+    )?.[1];
+    for (const phone of phones)
+      assert.ok(contacts?.includes(`href="tel:${phone}"`), `${slug} ${phone}`);
+    if (slug === "hse") {
+      assert.ok(contacts.includes('href="mailto:abitur@hse.ru"'));
+      assert.match(html, /заселении|предоставления места в общежитии/);
+    }
+    if (slug === "mipt") {
+      assert.match(html, /Год набора не подтверждён\./);
+      assert.match(html, /Эти записи пока не участвуют в подборе по ЕГЭ/);
+      assert.ok(
+        html.includes(
+          'href="https://mipt.ru/vikon/sveden/education/eduaccred/"',
+        ),
+      );
+    }
+  }
+});
+
 test("reviewed faculty names expose the exact source without claiming admission", async () => {
   const html = await (await fetch(`${base}/universities/mgu`)).text();
   assert.match(html, /id="faculties"/);
