@@ -221,35 +221,52 @@
       "slug": "mpei",
       "name": "Национальный исследовательский университет «МЭИ»",
       "selectionGroup": "existing_admission_program_university",
-      "status": "pending_editorial_review",
-      "reviewer": null,
-      "reviewedAt": null,
-      "decision": null,
+      "status": "accepted_repository_candidate",
+      "reviewer": "Codex",
+      "reviewedAt": "2026-11-10T01:03:30.212Z",
+      "decision": "Редакционно приняты пять разделов репозиторного кандидата с указанными ограничениями. Браузерная проверка сборки KoVQCEmTzJKamYJJqFmAW прошла на 1440×1000 и 390×844. Публикация в БД и приёмка конкурсных программ проверяются отдельно.",
       "sections": {
         "general_information": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/general_information"
+          ],
           "gaps": []
         },
         "structure": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/structure"
+          ],
+          "gaps": [
+            "Проверена выборка учебных подразделений по московским адресам. Полный реестр подразделений сверяется отдельно."
+          ]
         },
         "educational_inventory": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/educational_inventory"
+          ],
+          "gaps": [
+            "Вне действующего адаптера осталось 9 строк. Конкурсные группы, условия приёма и аккредитация проверяются отдельно.",
+            "Год набора в перечне не подтверждён."
+          ]
         },
         "admissions_contacts": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/admissions_contacts"
+          ],
           "gaps": []
         },
         "housing": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/housing"
+          ],
+          "gaps": [
+            "Наличие свободных мест и индивидуальные условия заселения остаются неизвестными."
+          ]
         }
       },
       "baselineCoveragePointer": "/universities/4",
@@ -262,35 +279,52 @@
       "slug": "mephi",
       "name": "Национальный исследовательский ядерный университет «МИФИ»",
       "selectionGroup": "existing_admission_program_university",
-      "status": "pending_editorial_review",
-      "reviewer": null,
-      "reviewedAt": null,
-      "decision": null,
+      "status": "accepted_repository_candidate",
+      "reviewer": "Codex",
+      "reviewedAt": "2026-11-10T01:03:30.212Z",
+      "decision": "Редакционно приняты пять разделов репозиторного кандидата с указанными ограничениями. Браузерная проверка сборки KoVQCEmTzJKamYJJqFmAW прошла на 1440×1000 и 390×844. Публикация в БД и приёмка конкурсных программ проверяются отдельно.",
       "sections": {
         "general_information": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/general_information"
+          ],
           "gaps": []
         },
         "structure": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/structure"
+          ],
+          "gaps": [
+            "Проверена выборка учебных подразделений по московским адресам. Полный реестр подразделений сверяется отдельно."
+          ]
         },
         "educational_inventory": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/educational_inventory"
+          ],
+          "gaps": [
+            "Вне действующего адаптера осталось 6 строк. Конкурсные группы, условия приёма и аккредитация проверяются отдельно.",
+            "Форма и срок обучения остаются неизвестными в строках, где их нет в источнике."
+          ]
         },
         "admissions_contacts": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/admissions_contacts"
+          ],
           "gaps": []
         },
         "housing": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/housing"
+          ],
+          "gaps": [
+            "Наличие свободных мест и индивидуальные условия заселения остаются неизвестными."
+          ]
         }
       },
       "baselineCoveragePointer": "/universities/5",
@@ -4605,5 +4639,5 @@
       "officialWebsite": "https://iotgn.institute/"
     }
   ],
-  "note": "Selection is an operational queue, not editorial acceptance. All 100 cards still require review. Directory listings and program trust statuses remain separate; no runtime facts/statuses are changed."
+  "note": "Selection is the operational queue. Decisions on individual cards apply to the repository candidate. Directory listings, program trust and database publication are tracked separately."
 }

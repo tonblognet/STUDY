@@ -1,0 +1,107 @@
+{
+	admin off
+	persist_config off
+	metrics
+	log {
+		level WARN
+		exclude http.log.access http.log.error
+	}
+	servers {
+		protocols h1 h2
+		strict_sni_host on
+		max_header_size 32KB
+		timeouts {
+			read_header 5s
+			read_body 20s
+			idle 1m
+		}
+	}
+}
+
+http://127.0.0.1:9180 {
+	bind 127.0.0.1
+	handle /metrics {
+		metrics
+	}
+	handle {
+		respond 404
+	}
+}
+
+(app_proxy) {
+	# Caddy is the internet-facing peer. Its default forwarding replaces
+	# incoming X-Forwarded-For, X-Forwarded-Host and X-Forwarded-Proto.
+	header_up -Forwarded
+	header_up -X-Real-IP
+	header_up -X-Forwarded-Port
+	transport http {
+		dial_timeout 3s
+		response_header_timeout 30s
+	}
+}
+
+{$POSTUPAI_DOMAIN} {
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		-Server
+	}
+	request_body {
+		max_size 1MB
+	}
+
+	@probe {
+		path /api/live /api/ready
+		method GET HEAD
+	}
+	@bank {
+		path /api/webhooks/payments
+		method POST
+		expression `{env.POSTUPAI_ACCEPT_BANK_WEBHOOK} == "true"`
+	}
+	@public expression `{env.POSTUPAI_MODE} == "production" && {env.POSTUPAI_PUBLIC_TRAFFIC} == "true"`
+	route {
+		handle /metrics {
+			respond 404
+		}
+		handle @probe {
+			reverse_proxy web:3000 {
+				import app_proxy
+			}
+		}
+		handle @bank {
+			reverse_proxy web:3000 {
+				import app_proxy
+			}
+		}
+		handle @public {
+			reverse_proxy web:3000 {
+				import app_proxy
+				health_uri /api/ready
+				health_status 200
+				health_interval 10s
+				health_timeout 5s
+			}
+		}
+		handle {
+			header {
+				Cache-Control "private, no-store"
+				X-Robots-Tag "noindex, nofollow"
+			}
+			basic_auth {
+				operator {env.POSTUPAI_EDGE_PASSWORD_HASH}
+			}
+			reverse_proxy web:3000 {
+				import app_proxy
+				header_up -Authorization
+				header_down Cache-Control "private, no-store"
+				header_down X-Robots-Tag "noindex, nofollow"
+			}
+		}
+	}
+
+	handle_errors 502 503 504 {
+		header Cache-Control "no-store"
+		respond "Service temporarily unavailable" 503
+	}
+}

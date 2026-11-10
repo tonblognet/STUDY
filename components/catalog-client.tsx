@@ -9,7 +9,10 @@ import { useUserState } from "@/components/user-state-provider";
 import { programViewSchema } from "@/lib/catalog/view-state";
 import { useSavedFilters } from "./use-saved-filters";
 import { useModalFocus } from "./use-modal-focus";
-import type { Program, University } from "@/lib/data";
+import type {
+  ProgramListItem,
+  ProgramListUniversity,
+} from "@/lib/catalog/program-list";
 import { formatPrice } from "@/lib/catalog/format";
 
 type Sort = "quality" | "score" | "price" | "places";
@@ -21,8 +24,8 @@ export function CatalogClient({
   initialQuery = "",
   initialView,
 }: {
-  items: Program[];
-  universities: University[];
+  items: ProgramListItem[];
+  universities: ProgramListUniversity[];
   initialQuery?: string;
   initialView?: string;
 }) {
@@ -205,7 +208,7 @@ export function CatalogClient({
 
   const compared = comparisonIds
     .map((id) => items.find((item) => item.id === id))
-    .filter((item): item is Program => Boolean(item));
+    .filter((item): item is ProgramListItem => Boolean(item));
 
   return (
     <>

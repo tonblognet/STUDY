@@ -58,6 +58,22 @@ export default async function UniversityPage({
   const offerings = directoryDetails?.offerings ?? [];
   const admissionsUrl =
     university.admissionsUrl ?? directoryDetails?.fields.admissionsUrl?.value;
+  const admissionsPhone =
+    university.admissionsPhone ??
+    directoryDetails?.fields.admissionsPhone?.value;
+  const admissionsEmail =
+    university.admissionsEmail ??
+    directoryDetails?.fields.admissionsEmail?.value;
+  const dialNumber = admissionsPhone?.replace(/[ ()-]/g, "");
+  const phoneHref =
+    dialNumber && /^\+?[0-9]{7,15}$/.test(dialNumber)
+      ? `tel:${dialNumber}`
+      : null;
+  const emailHref =
+    admissionsEmail &&
+    /^[^\s@<>?&#]+@[^\s@<>?&#]+\.[^\s@<>?&#]+$/.test(admissionsEmail)
+      ? `mailto:${admissionsEmail}`
+      : null;
   const isMgu = slug === "mgu";
   const factProfile = catalog.universityFacts.find(
     (item) => item.universitySlug === slug,
@@ -493,17 +509,15 @@ export default async function UniversityPage({
                 </p>
               </>
             )}
-            {university.admissionsPhone && (
-              <a
-                href={`tel:${university.admissionsPhone.replace(/[^+\d]/g, "")}`}
-              >
-                {university.admissionsPhone}
-              </a>
+            {phoneHref ? (
+              <a href={phoneHref}>{admissionsPhone}</a>
+            ) : (
+              admissionsPhone && <p>{admissionsPhone}</p>
             )}
-            {university.admissionsEmail && (
-              <a href={`mailto:${university.admissionsEmail}`}>
-                {university.admissionsEmail}
-              </a>
+            {emailHref ? (
+              <a href={emailHref}>{admissionsEmail}</a>
+            ) : (
+              admissionsEmail && <p>{admissionsEmail}</p>
             )}
             <a
               href={

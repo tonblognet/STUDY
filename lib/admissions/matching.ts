@@ -1,7 +1,25 @@
 import type { Program } from "@/lib/data";
 import { MATCH_RULES } from "./constants";
-import { additionalExamKey, getAdditionalExams, isCurrentFact } from "./exams";
-import type { MatchResult, ScoreSet } from "./types";
+import {
+  additionalExamKey,
+  getAdditionalExams,
+  isCurrentFact,
+  type AdditionalExamProgram,
+} from "./exams";
+import type { FactValue, MatchResult, ScoreSet } from "./types";
+
+export type MatchProgramInput = AdditionalExamProgram &
+  Pick<Program, "slug" | "universityShort" | "passingScoreExamScale"> & {
+    trust: Pick<Program["trust"], "dataYear">;
+    examRequirements: {
+      subjects: string[];
+      required: boolean;
+      minimum: FactValue<number>;
+      subjectMinimums?: Record<string, FactValue<number>>;
+    }[];
+    individualAchievementsMax: FactValue<number>;
+    passingScoreValue: FactValue<number>;
+  };
 
 const validScore = (value: unknown): value is number =>
   typeof value === "number" &&
@@ -37,8 +55,8 @@ function bestAssignment(groups: Candidate[][]): Candidate[] | null {
   return visit(0, new Set());
 }
 
-export function matchProgram(
-  program: Program,
+export function matchProgram<T extends MatchProgramInput>(
+  program: T,
   scoreSet: ScoreSet,
 ): MatchResult {
   const year = program.trust.dataYear;
@@ -279,7 +297,10 @@ export function matchProgram(
   };
 }
 
-export function groupMatches(programs: Program[], scoreSet: ScoreSet) {
+export function groupMatches<T extends MatchProgramInput>(
+  programs: T[],
+  scoreSet: ScoreSet,
+) {
   const order = { eligible: 0, unknown: 1, ineligible: 2 };
   return programs
     .map((program) => ({ program, match: matchProgram(program, scoreSet) }))

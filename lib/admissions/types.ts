@@ -27,6 +27,8 @@ export type SourcedValue<T> = {
   note?: string;
 };
 
+export type FactValue<T> = Pick<SourcedValue<T>, "value" | "year" | "status">;
+
 export type ExamRequirement = {
   id: string;
   subjects: string[];

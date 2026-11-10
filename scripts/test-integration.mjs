@@ -5,6 +5,7 @@ for (const args of [
   ["--import", "tsx", "--test", "tests/catalog-db.test.ts"],
   ["--import", "tsx", "--test", "tests/account-db.test.ts"],
   ["--import", "tsx", "--test", "tests/operations-db.test.ts"],
+  ["--import", "tsx", "--test", "tests/deadline-worker-db.test.ts"],
 ]) {
   const result = spawnSync(process.execPath, args, {
     stdio: "inherit",

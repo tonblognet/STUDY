@@ -133,10 +133,13 @@ export function UniversityCatalog({
           {filtered.slice(0, limit).map((u) => (
             <article className={`university-card ${styles.row}`} key={u.id}>
               <div className={styles.institution}>
-                <UniversityLogo university={u} size="row" />
+                <UniversityLogo
+                  university={{ ...u, shortName: u.shortName ?? u.name }}
+                  size="row"
+                />
                 <div>
                   <p className={styles.identity}>
-                    <span>{u.shortName}</span>
+                    <span>{u.shortName ?? u.name}</span>
                     <span>{u.city}</span>
                     {u.directory?.kind === "branch" && <span>Филиал</span>}
                     {u.militaryCenter === true && (

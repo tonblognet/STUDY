@@ -29,7 +29,28 @@ import followupRegionalEducationNovember9 from "@/data-sources/russia/followup-r
 import followupCentralEducationNovember9 from "@/data-sources/russia/followup-central-education-2026-11-09.json";
 import followupContactsNovember9 from "@/data-sources/russia/followup-contacts-2026-11-09.json";
 
+import overviewSourceReview from "@/data-sources/release/2026-12/evidence/2026-11-10-source-review.json";
+
 describe("official university profile evidence", () => {
+  it("preserves the reviewed official overview and its exact snapshot provenance", () => {
+    const sources = overviewSourceReview.sources;
+    expect(overviewSourceReview.universities.map((row) => row.slug)).toEqual([
+      "mpei",
+      "mephi",
+    ]);
+    for (const row of overviewSourceReview.universities) {
+      const candidate = row.sections.general_information.overviewCandidate;
+      const source = sources[candidate.source as keyof typeof sources];
+      expect(getDirectoryDetails(row.slug)?.fields.overview).toEqual({
+        value: candidate.value,
+        sourceUrl: source.finalUrl,
+        sourceYear: Number(source.retrievedAtUtc.slice(0, 4)),
+        checkedAt: candidate.sourceComparedAtUtc,
+        sourceSha256: source.sha256,
+      });
+    }
+  });
+
   it("publishes continuation evidence idempotently while keeping education lists outside admission matching", () => {
     const additions = [
       ...continuationEducationNovember9.profiles,

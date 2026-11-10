@@ -8,10 +8,10 @@ import { EXAM_SUBJECTS, MATCH_LABELS } from "@/lib/admissions/constants";
 import { groupMatches } from "@/lib/admissions/matching";
 import { updateScoreInput } from "@/lib/admissions/score-input";
 import type { ScoreSet } from "@/lib/admissions/types";
-import type { Program } from "@/lib/data";
+import type { ProgramListItem } from "@/lib/catalog/program-list";
 
 type Props = {
-  programs: Program[];
+  programs: ProgramListItem[];
   onApply: (programIds: string[], label: string) => void;
   onClose: () => void;
 };

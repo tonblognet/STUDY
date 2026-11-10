@@ -107,7 +107,8 @@ export function UniversityVerifiedDetails({
                   <a href={field.sourceUrl} target="_blank" rel="noreferrer">
                     Источник ↗
                   </a>{" "}
-                  · проверено {formatDirectoryDate(field.checkedAt)}
+                  · {key === "overview" ? "снимок источника, " : ""}
+                  проверено {formatDirectoryDate(field.checkedAt)}
                 </dd>
               </div>
             ) : null;

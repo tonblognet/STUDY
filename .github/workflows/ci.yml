@@ -1,4 +1,6 @@
 name: CI
+permissions:
+  contents: read
 on:
   push:
   pull_request:
@@ -33,3 +35,63 @@ jobs:
       - run: pnpm build
       - run: pnpm test:integration
       - run: pnpm security:audit
+      - name: Restore isolated PostgreSQL archive and verify invariants
+        run: |
+          if [ ! -x /usr/lib/postgresql/16/bin/pg_dump ]; then
+            sudo apt-get update
+            sudo apt-get install -y postgresql-client-16
+          fi
+          node --test scripts/restore-drill.test.mjs
+          RESTORE_DRILL_PG_BIN=/usr/lib/postgresql/16/bin node --import tsx scripts/restore-drill.mjs
+  container:
+    needs: quality
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postupai_test
+          POSTGRES_PASSWORD: local-test-only
+          POSTGRES_DB: postupai_container_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postupai_test -d postupai_container_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgresql://postupai_test:local-test-only@127.0.0.1:5432/postupai_container_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Build isolated migration, web and worker artifacts
+        run: |
+          mkdir -p tmp output .codex
+          touch tmp/container-context-sentinel output/container-context-sentinel .codex/container-context-sentinel .env.container-context-sentinel
+          docker build --target migrate --tag postupai-migrate:ci .
+          docker build --target runner --tag postupai-web:ci .
+          docker build --target worker --tag postupai-worker:ci .
+          docker run --rm --entrypoint node postupai-migrate:ci -e 'const fs = require("node:fs"); for (const p of ["/app/tmp/container-context-sentinel", "/app/output/container-context-sentinel", "/app/.codex/container-context-sentinel", "/app/.env.container-context-sentinel"]) if (fs.existsSync(p)) throw Error("Forbidden build-context file");'
+          test "$(docker run --rm --entrypoint id postupai-web:ci -u)" -ne 0
+      - name: Apply all migrations to isolated PostgreSQL
+        run: docker run --rm --network host --env DATABASE_URL="$TEST_DATABASE_URL" postupai-migrate:ci
+      - name: Run isolated worker and inspect heartbeat
+        run: |
+          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$TEST_DATABASE_URL" --env CATALOG_STORAGE=database --env DEADLINE_EMAIL_ENABLED=false postupai-worker:ci node --import tsx scripts/deadline-worker.ts --once
+          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$TEST_DATABASE_URL" --env CATALOG_STORAGE=database postupai-worker:ci node --import tsx scripts/deadline-worker.ts --status
+      - name: Start standalone artifact with test configuration
+        run: |
+          docker run --detach --name postupai-container-smoke --network host \
+            --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --tmpfs /tmp --tmpfs /app/.next/cache:uid=1000,gid=1000,mode=0750 \
+            --env PORT=3101 --env HOSTNAME=127.0.0.1 \
+            --env DATABASE_URL="$TEST_DATABASE_URL" --env CATALOG_STORAGE=snapshot \
+            --env APP_URL=http://127.0.0.1:3101 \
+            --env AUTH_SECRET=container-fixture-secret-at-least-32-characters \
+            postupai-web:ci
+          node tests/container-smoke.mjs
+      - name: Container diagnostics on failure
+        if: failure()
+        run: docker logs postupai-container-smoke 2>/dev/null || true
+      - name: Remove isolated web container
+        if: always()
+        run: docker rm --force postupai-container-smoke 2>/dev/null || true

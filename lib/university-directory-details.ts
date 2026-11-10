@@ -25,10 +25,12 @@ import continuationStructureNovember9 from "@/data-sources/russia/continuation-s
 import followupRegionalEducationNovember9 from "@/data-sources/russia/followup-regional-education-2026-11-09.json";
 import followupCentralEducationNovember9 from "@/data-sources/russia/followup-central-education-2026-11-09.json";
 import followupContactsNovember9 from "@/data-sources/russia/followup-contacts-2026-11-09.json";
+import moscowOverviewNovember10 from "@/data-sources/russia/moscow-overview-enrichment-2026-11-10.json";
 
 export type DirectoryField = {
   value: string;
   sourceUrl: string;
+  /** For general overviews this is the calendar year of the source snapshot. */
   sourceYear: number;
   checkedAt: string;
   sourceSha256: string;
@@ -217,6 +219,7 @@ export const directoryDetails = mergeDirectoryEnrichment(
     ...followupRegionalEducationNovember9.profiles,
     ...followupCentralEducationNovember9.profiles,
     ...followupContactsNovember9.profiles,
+    ...moscowOverviewNovember10.profiles,
   ] as DirectoryEnrichment[],
 );
 const bySlug = new Map(
