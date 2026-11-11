@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { Brand } from "@/components/brand";
 
 export function HeaderClient({
@@ -14,16 +14,28 @@ export function HeaderClient({
 }) {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
-  useEffect(() => {
+  const navigation = useRef<HTMLElement>(null);
+  useLayoutEffect(() => {
     if (!open) return;
+    navigation.current
+      ?.querySelector<HTMLAnchorElement>("a[href]")
+      ?.focus({ preventScroll: true });
+    const desktop = window.matchMedia("(min-width: 761px)");
+    function closeOnDesktop(event: MediaQueryListEvent) {
+      if (event.matches) setOpen(false);
+    }
     function onKey(event: KeyboardEvent) {
       if (event.key === "Escape") {
         setOpen(false);
-        menuButton.current?.focus();
+        menuButton.current?.focus({ preventScroll: true });
       }
     }
+    desktop.addEventListener("change", closeOnDesktop);
     document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    return () => {
+      desktop.removeEventListener("change", closeOnDesktop);
+      document.removeEventListener("keydown", onKey);
+    };
   }, [open]);
   const pathname = usePathname();
   const links = [
@@ -40,6 +52,7 @@ export function HeaderClient({
       <div className="nav-wrap">
         <Brand />
         <nav
+          ref={navigation}
           id="main-navigation"
           className={open ? "nav-links open" : "nav-links"}
           aria-label="Главная навигация"

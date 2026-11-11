@@ -33,7 +33,11 @@ export default async function ProgramsPage({
           Сравнивайте условия, фильтруйте по ВУЦ и общежитию или сразу проверьте
           свой набор ЕГЭ по официальным требованиям.
         </p>
-        <div className="catalog-title-facts" aria-label="О каталоге">
+        <div
+          className="catalog-title-facts"
+          role="group"
+          aria-label="О каталоге"
+        >
           <span>
             Программ: <b>{programs.length}</b>
           </span>

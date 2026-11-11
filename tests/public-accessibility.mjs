@@ -30,8 +30,14 @@ export default async function checkAccessibility(page, config) {
     const controls = dialogControls(dialog);
     const first = firstControl ?? controls.first(),
       last = lastControl ?? controls.last();
-    setPhase("dialog_tab_forward");
+    setPhase("dialog_initial_focus");
+    await first.and(tab.locator(":focus")).waitFor({ state: "visible" });
+    setPhase("dialog_last_focus");
     await last.focus();
+    confirm(
+      await last.evaluate((element) => element === document.activeElement),
+    );
+    setPhase("dialog_tab_forward");
     await tab.keyboard.press("Tab");
     confirm(
       await first.evaluate((element) => element === document.activeElement),
@@ -92,12 +98,25 @@ export default async function checkAccessibility(page, config) {
           opener = tab.getByRole("button", {
             name: /^(Открыть|Закрыть) меню$/,
           });
-          await opener.click();
+          await opener.press("Enter");
           navigation = tab.getByRole("navigation", {
             name: "Главная навигация",
           });
           await navigation.waitFor({ state: "visible" });
           confirm((await opener.getAttribute("aria-expanded")) === "true");
+          phase = "navigation_focus";
+          const links = navigation.getByRole("link");
+          confirm(
+            await links
+              .first()
+              .evaluate((element) => element === document.activeElement),
+          );
+          await tab.keyboard.press("Tab");
+          confirm(
+            await links
+              .nth(1)
+              .evaluate((element) => element === document.activeElement),
+          );
         } else if (item.state === "ege-dialog") {
           phase = "ege_dialog";
           opener = tab.getByRole("button", {
