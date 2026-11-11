@@ -87,7 +87,10 @@ jobs:
           --health-cmd "pg_isready -U postupai_test -d postupai_container_test"
           --health-interval 5s --health-timeout 5s --health-retries 10
     env:
-      TEST_DATABASE_URL: postgresql://postupai_test:local-test-only@127.0.0.1:5432/postupai_container_test
+      ROLE_FIXTURE_MIGRATE_URL: postgresql://ci_role_migrate:role-fixture-migrate-only@127.0.0.1:5432/postupai_container_test?schema=postupai_roles
+      ROLE_FIXTURE_WEB_URL: postgresql://ci_role_web:role-fixture-web-only@127.0.0.1:5432/postupai_container_test?schema=postupai_roles
+      ROLE_FIXTURE_WORKER_URL: postgresql://ci_role_worker:role-fixture-worker-only@127.0.0.1:5432/postupai_container_test?schema=postupai_roles
+      ROLE_FIXTURE_OPERATOR_URL: postgresql://ci_role_operator:role-fixture-operator-only@127.0.0.1:5432/postupai_container_test?schema=postupai_roles
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -103,21 +106,34 @@ jobs:
             docker run --rm --entrypoint node "$image" -e 'const fs = require("node:fs"); for (const p of ["/app/tmp/container-context-sentinel", "/app/output/container-context-sentinel", "/app/.codex", "/app/.env.container-context-sentinel", "/app/.claude", "/app/context-fixture/.claude", "/app/context-fixture/.codex"]) if (fs.existsSync(p)) throw Error("Forbidden build-context file");'
             test "$(docker run --rm --entrypoint id "$image" -u)" -ne 0
           done
-      - name: Apply all migrations to isolated PostgreSQL
-        run: docker run --rm --network host --env DATABASE_URL="$TEST_DATABASE_URL" postupai-migrate:ci
+      - name: Apply migrations with a dedicated schema owner
+        env:
+          POSTGRES_SERVICE_ID: ${{ job.services.postgres.id }}
+        run: |
+          db_fixture() {
+            docker exec -i "$POSTGRES_SERVICE_ID" psql -U postupai_test -d postupai_container_test -v ON_ERROR_STOP=1 "$@" < tests/container-db-roles.sql
+          }
+          db_fixture -v prepare_roles=1
+          docker run --rm --network host --env DATABASE_URL="$ROLE_FIXTURE_MIGRATE_URL" postupai-migrate:ci
+          db_fixture -v grant_runtime=1
+      - name: Verify role permissions, bootstrap and a due reminder
+        run: |
+          docker run --rm --network host --env ROLE_FIXTURE_WEB_URL --env ROLE_FIXTURE_WORKER_URL --env ROLE_FIXTURE_OPERATOR_URL --entrypoint node postupai-migrate:ci --import tsx tests/container-db-roles.mjs
       - name: Run isolated worker and inspect heartbeat
         run: |
-          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$TEST_DATABASE_URL" --env DEPLOYMENT_MODE=staging --env CATALOG_STORAGE=database --env DEADLINE_EMAIL_ENABLED=false postupai-worker:ci node --import tsx scripts/deadline-worker.ts --once
-          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$TEST_DATABASE_URL" --env DEPLOYMENT_MODE=staging --env CATALOG_STORAGE=database postupai-worker:ci node --import tsx scripts/deadline-worker.ts --status
+          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$ROLE_FIXTURE_WORKER_URL" --env DEPLOYMENT_MODE=staging --env CATALOG_STORAGE=database --env DEADLINE_EMAIL_ENABLED=false postupai-worker:ci node --import tsx scripts/deadline-worker.ts --once
+          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$ROLE_FIXTURE_WORKER_URL" --env DEPLOYMENT_MODE=staging --env CATALOG_STORAGE=database postupai-worker:ci node --import tsx scripts/deadline-worker.ts --status
       - name: Start standalone artifact with test configuration
         run: |
           docker run --detach --name postupai-container-smoke --network host \
             --read-only --cap-drop ALL --security-opt no-new-privileges \
             --tmpfs /tmp --tmpfs /app/.next/cache:uid=1000,gid=1000,mode=0750 \
             --env PORT=3101 --env HOSTNAME=127.0.0.1 \
-            --env DATABASE_URL="$TEST_DATABASE_URL" --env CATALOG_STORAGE=snapshot \
+            --env DATABASE_URL="$ROLE_FIXTURE_WEB_URL" --env CATALOG_STORAGE=database \
+            --env DEPLOYMENT_MODE=staging \
             --env APP_URL=http://127.0.0.1:3101 \
             --env AUTH_SECRET=container-fixture-secret-at-least-32-characters \
+            --env SMTP_URL=smtp://127.0.0.1:1 --env EMAIL_FROM=fixture@example.invalid \
             postupai-web:ci
           node tests/container-smoke.mjs
       - name: Container diagnostics on failure
