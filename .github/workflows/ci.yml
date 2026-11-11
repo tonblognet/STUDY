@@ -51,6 +51,11 @@ jobs:
         run: node --test scripts/public-accessibility-contract.test.mjs
       - name: Install pinned browser CLI outside the repository
         run: npm install --prefix "$RUNNER_TEMP/postupai-browser" --no-audit --no-fund --save-exact @playwright/cli@0.1.23 axe-core@4.14.0
+      - name: Prepare isolated pricing data for browser checks
+        run: |
+          export DATABASE_URL="${TEST_DATABASE_URL}?schema=public_browser_fixture"
+          pnpm db:migrate
+          pnpm db:seed
       - name: Check catalog, SSR smoke and public accessibility
         env:
           APP_URL: http://127.0.0.1:3100
@@ -58,6 +63,7 @@ jobs:
           HOSTNAME: 127.0.0.1
         run: |
           mkdir -p output/playwright
+          export DATABASE_URL="${TEST_DATABASE_URL}?schema=public_browser_fixture"
           node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3100 > output/playwright/server.log 2>&1 &
           server_pid=$!
           trap 'kill "$server_pid" 2>/dev/null || true' EXIT

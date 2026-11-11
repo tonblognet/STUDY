@@ -22,17 +22,21 @@ export default async function checkAccessibility(page, config) {
   const confirm = (condition) => {
     if (!condition) throw new Error("Accessibility interaction failed");
   };
-  const trap = async (dialog) => {
-    const controls = dialog.locator(
-      'a[href]:visible, button:not([disabled]):visible, input:not([disabled]):visible, select:not([disabled]):visible, textarea:not([disabled]):visible, [tabindex="0"]:visible',
+  const dialogControls = (dialog) =>
+    dialog.locator(
+      'a[href]:not([tabindex="-1"]):visible, button:enabled:not([tabindex="-1"]):visible, input:enabled:not([type="hidden"]):not([tabindex="-1"]):visible, select:enabled:not([tabindex="-1"]):visible, textarea:enabled:not([tabindex="-1"]):visible, [tabindex="0"]:visible',
     );
-    const first = controls.first(),
-      last = controls.last();
+  const trap = async (dialog, firstControl, lastControl, setPhase) => {
+    const controls = dialogControls(dialog);
+    const first = firstControl ?? controls.first(),
+      last = lastControl ?? controls.last();
+    setPhase("dialog_tab_forward");
     await last.focus();
     await tab.keyboard.press("Tab");
     confirm(
       await first.evaluate((element) => element === document.activeElement),
     );
+    setPhase("dialog_tab_reverse");
     await first.focus();
     await tab.keyboard.press("Shift+Tab");
     confirm(
@@ -111,9 +115,21 @@ export default async function checkAccessibility(page, config) {
           dialog = tab.getByRole("dialog", { name: "Фильтры программ" });
         }
         if (dialog) {
-          phase = "dialog_focus_trap";
+          phase = "dialog_visibility";
           await dialog.waitFor({ state: "visible" });
-          await trap(dialog);
+          let first = null,
+            last = null;
+          if (item.state === "filters-dialog") {
+            confirm((await dialog.getAttribute("aria-modal")) === "true");
+            first = dialog.getByRole("button", {
+              name: "Закрыть фильтры",
+              exact: true,
+            });
+            last = dialog.getByRole("button", { name: /^Показать \d+$/ });
+          }
+          await trap(dialog, first, last, (stage) => {
+            phase = stage;
+          });
         }
         phase = "axe_injection";
         await tab.addScriptTag({ path: config.axePath });
@@ -148,6 +164,24 @@ export default async function checkAccessibility(page, config) {
           };
         });
         Object.assign(report, result);
+        if (item.route === "/match" || item.state === "filters-dialog") {
+          phase = "layout_evidence";
+          confirm(
+            await tab.evaluate(
+              () =>
+                document.documentElement.scrollWidth <= window.innerWidth + 1,
+            ),
+          );
+          if (item.route === "/match") {
+            await tab
+              .locator(".match-decision-main:visible")
+              .first()
+              .scrollIntoViewIfNeeded();
+          }
+          await tab.screenshot({
+            path: `output/playwright/accessibility-${item.route === "/match" ? "match" : "mobile-filters"}-${item.width}.png`,
+          });
+        }
         if (opener) {
           phase = "focus_return";
           await tab.keyboard.press("Escape");

@@ -65,7 +65,7 @@ export function CatalogClient({
     ...items.map((item) => Math.ceil((item.passingScore ?? 0) / 5) * 5),
   );
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const filterRef = useRef<HTMLElement>(null);
+  const filterRef = useRef<HTMLDivElement>(null);
   useModalFocus(filterRef, filtersOpen, () => setFiltersOpen(false));
   useEffect(() => {
     if (!filtersOpen) return;
@@ -246,10 +246,10 @@ export function CatalogClient({
         Фильтры{activeCount > 0 && <b>{activeCount}</b>}
       </button>
       <div className="catalog-shell">
-        <aside
+        <div
           ref={filterRef}
           id="program-filters"
-          role={filtersOpen ? "dialog" : undefined}
+          role={filtersOpen ? "dialog" : "complementary"}
           aria-modal={filtersOpen || undefined}
           tabIndex={-1}
           className={filtersOpen ? "filter-rail open" : "filter-rail"}
@@ -427,7 +427,7 @@ export function CatalogClient({
           >
             Показать {filtered.length}
           </button>
-        </aside>
+        </div>
 
         <section
           className="program-results"

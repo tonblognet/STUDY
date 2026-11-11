@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type RefObject } from "react";
+import { useLayoutEffect, useRef, type RefObject } from "react";
 
 /** Trap keyboard focus, support Escape, and return focus to the opener. */
 export function useModalFocus(
@@ -9,10 +9,10 @@ export function useModalFocus(
   onClose: () => void,
 ) {
   const close = useRef(onClose);
-  useEffect(() => {
+  useLayoutEffect(() => {
     close.current = onClose;
   }, [onClose]);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const panel = ref.current;
     if (!open || !panel) return;
     const opener =
@@ -29,8 +29,9 @@ export function useModalFocus(
       ).filter(
         (el) =>
           el.tabIndex >= 0 &&
-          !el.hasAttribute("disabled") &&
-          el.getClientRects().length > 0,
+          !el.matches(":disabled") &&
+          el.getClientRects().length > 0 &&
+          getComputedStyle(el).visibility === "visible",
       );
     (focusable()[0] ?? panel).focus();
     function keydown(event: KeyboardEvent) {

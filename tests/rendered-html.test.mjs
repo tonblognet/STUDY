@@ -248,7 +248,7 @@ test("matching renders separate eligibility, strict filters and program-specific
   assert.match(html, /Аккредитация программы/);
   assert.match(html, /Подтверждённые платные/);
   assert.match(html, /Дополнительные испытания/);
-  assert.match(html, /Добавить в сравнение/);
+  assert.match(html, /aria-label="Сравнить"/);
   const details = await (await fetch(`${base}/programs/hse-economics`)).text();
   assert.match(details, /Требования нужно уточнить/);
   assert.match(details, /Сравнение недоступно/);

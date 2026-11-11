@@ -23,6 +23,7 @@ describe("comparison capacity", () => {
     const buttons = html.match(/<button[^>]*>/g)!;
     expect(buttons[0]).not.toContain("disabled");
     expect(buttons[1]).toContain('disabled=""');
+    expect(buttons[1]).toContain('aria-label="Лимит сравнения: 20 программ"');
     expect(html).toContain("Лимит сравнения: 20");
     expect(html).toContain("Удалите одну, чтобы добавить новую");
   });
@@ -31,7 +32,10 @@ describe("comparison capacity", () => {
     const html = renderToStaticMarkup(<SavedProgramActions id="program-0" />);
     const comparison = html.match(/<button[^>]*>/g)![1];
     expect(comparison).not.toContain("disabled");
-    expect(comparison).toContain('aria-label="Удалить из сравнения"');
+    expect(comparison).toContain(
+      'aria-label="В сравнении. Удалить из сравнения"',
+    );
+    expect(comparison).toContain('aria-pressed="true"');
   });
 
   it("allows adding again after removing a program and labels compact controls", () => {
