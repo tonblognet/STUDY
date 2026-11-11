@@ -139,6 +139,61 @@ it("creates in-app notices while the cabinet is closed, reuses the legacy key an
   assert.equal((await cli("scripts/deadline-worker.ts", "--status")).ok, true);
 });
 
+it("rejects unknown deployment modes and insecure production DB settings before processing jobs", async () => {
+  for (const DEPLOYMENT_MODE of ["", "prod"]) {
+    const result = await cli("scripts/deadline-worker.ts", "--once", {
+      DEPLOYMENT_MODE,
+      DEADLINE_EMAIL_ENABLED: "true",
+      APP_URL: "https://worker-fixture.example.invalid",
+      SMTP_URL: "smtp://private-fixture:private-password@127.0.0.1:1",
+      EMAIL_FROM: "Fixture <fixture@example.invalid>",
+    });
+    assert.equal(result.ok, false);
+    assert.equal(
+      JSON.parse(result.stdout).event,
+      "DEADLINE_WORKER_START_FAILED",
+    );
+    assert.doesNotMatch(
+      result.stdout + result.stderr,
+      /private-|postgresql:|smtp:/,
+    );
+  }
+  const production = await cli("scripts/deadline-worker.ts", "--once", {
+    DEPLOYMENT_MODE: "production",
+  });
+  assert.equal(
+    production.ok,
+    false,
+    "production DB requires strict TLS even without email",
+  );
+  assert.equal(
+    JSON.parse(production.stdout).event,
+    "DEADLINE_WORKER_START_FAILED",
+  );
+});
+
+it("reports future, stale and missing heartbeats as unhealthy and accepts a current cycle", async () => {
+  for (const { finishedAt, recent } of [
+    { finishedAt: new Date(Date.now() + 3600_000), recent: false },
+    { finishedAt: new Date(Date.now() - 3600_000), recent: false },
+    { finishedAt: null, recent: false },
+    { finishedAt: new Date(), recent: true },
+  ]) {
+    await db.workerHeartbeat.deleteMany();
+    if (finishedAt) {
+      await db.workerHeartbeat.create({
+        data: { id: "personal_deadlines", finishedAt, counts: {} },
+      });
+    }
+    const result = await cli("scripts/deadline-worker.ts", "--status");
+    assert.equal(result.ok, recent);
+    const output = JSON.parse(result.stdout);
+    assert.equal(output.event, "DEADLINE_WORKER_HEARTBEAT");
+    assert.equal(output.recent, recent);
+    assert.equal(result.stderr, "");
+  }
+});
+
 it("queues only verified opt-ins and retries an explicit temporary SMTP rejection with the same message id", async () => {
   const optedIn = await owner(true);
   await tracker(optedIn.id);

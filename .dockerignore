@@ -4,6 +4,8 @@ node_modules
 .github
 .codex
 **/.codex*
+.claude
+**/.claude*
 .agents
 .vercel
 .vscode

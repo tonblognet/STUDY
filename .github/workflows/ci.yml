@@ -47,9 +47,11 @@ jobs:
         run: |
           pnpm data:validate
           pnpm data:import -- --dry-run
+      - name: Check accessibility evidence contract
+        run: node --test scripts/public-accessibility-contract.test.mjs
       - name: Install pinned browser CLI outside the repository
-        run: npm install --prefix "$RUNNER_TEMP/postupai-browser" --no-audit --no-fund --save-exact @playwright/cli@0.1.23
-      - name: Check catalog interactions on desktop and mobile
+        run: npm install --prefix "$RUNNER_TEMP/postupai-browser" --no-audit --no-fund --save-exact @playwright/cli@0.1.23 axe-core@4.14.0
+      - name: Check catalog, SSR smoke and public accessibility
         env:
           APP_URL: http://127.0.0.1:3100
           PORT: 3100
@@ -60,6 +62,8 @@ jobs:
           server_pid=$!
           trap 'kill "$server_pid" 2>/dev/null || true' EXIT
           BROWSER_CLI="$RUNNER_TEMP/postupai-browser/node_modules/@playwright/cli/playwright-cli.js" node scripts/test-catalog-browser.mjs
+          node scripts/staging-smoke.mjs --local http://127.0.0.1:3100 --rounds=10 > output/playwright/ssr-smoke.json
+          BROWSER_CLI="$RUNNER_TEMP/postupai-browser/node_modules/@playwright/cli/playwright-cli.js" AXE_CORE_PATH="$RUNNER_TEMP/postupai-browser/node_modules/axe-core/axe.min.js" node scripts/test-public-accessibility.mjs
       - name: Retain browser evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -90,19 +94,21 @@ jobs:
         with: { node-version: 22 }
       - name: Build isolated migration, web and worker artifacts
         run: |
-          mkdir -p tmp output .codex
-          touch tmp/container-context-sentinel output/container-context-sentinel .codex/container-context-sentinel .env.container-context-sentinel
+          mkdir -p tmp output .codex .claude context-fixture/.claude context-fixture/.codex
+          touch tmp/container-context-sentinel output/container-context-sentinel .codex/container-context-sentinel .env.container-context-sentinel .claude/settings.local.json context-fixture/.claude/session.json context-fixture/.codex/session.json
           docker build --target migrate --tag postupai-migrate:ci .
           docker build --target runner --tag postupai-web:ci .
           docker build --target worker --tag postupai-worker:ci .
-          docker run --rm --entrypoint node postupai-migrate:ci -e 'const fs = require("node:fs"); for (const p of ["/app/tmp/container-context-sentinel", "/app/output/container-context-sentinel", "/app/.codex/container-context-sentinel", "/app/.env.container-context-sentinel"]) if (fs.existsSync(p)) throw Error("Forbidden build-context file");'
-          test "$(docker run --rm --entrypoint id postupai-web:ci -u)" -ne 0
+          for image in postupai-migrate:ci postupai-web:ci postupai-worker:ci; do
+            docker run --rm --entrypoint node "$image" -e 'const fs = require("node:fs"); for (const p of ["/app/tmp/container-context-sentinel", "/app/output/container-context-sentinel", "/app/.codex", "/app/.env.container-context-sentinel", "/app/.claude", "/app/context-fixture/.claude", "/app/context-fixture/.codex"]) if (fs.existsSync(p)) throw Error("Forbidden build-context file");'
+            test "$(docker run --rm --entrypoint id "$image" -u)" -ne 0
+          done
       - name: Apply all migrations to isolated PostgreSQL
         run: docker run --rm --network host --env DATABASE_URL="$TEST_DATABASE_URL" postupai-migrate:ci
       - name: Run isolated worker and inspect heartbeat
         run: |
-          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$TEST_DATABASE_URL" --env CATALOG_STORAGE=database --env DEADLINE_EMAIL_ENABLED=false postupai-worker:ci node --import tsx scripts/deadline-worker.ts --once
-          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$TEST_DATABASE_URL" --env CATALOG_STORAGE=database postupai-worker:ci node --import tsx scripts/deadline-worker.ts --status
+          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$TEST_DATABASE_URL" --env DEPLOYMENT_MODE=staging --env CATALOG_STORAGE=database --env DEADLINE_EMAIL_ENABLED=false postupai-worker:ci node --import tsx scripts/deadline-worker.ts --once
+          docker run --rm --read-only --network host --tmpfs /tmp --env DATABASE_URL="$TEST_DATABASE_URL" --env DEPLOYMENT_MODE=staging --env CATALOG_STORAGE=database postupai-worker:ci node --import tsx scripts/deadline-worker.ts --status
       - name: Start standalone artifact with test configuration
         run: |
           docker run --detach --name postupai-container-smoke --network host \
