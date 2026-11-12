@@ -3042,11 +3042,9 @@ button:disabled {
     max-height: 88vh;
     border-radius: 18px 18px 0 0;
     overflow-y: auto;
-    transform: translateY(105%);
-    transition: transform 0.24s ease;
   }
-  .filter-rail.open {
-    transform: translateY(0);
+  .filter-rail:not(.open) {
+    display: none;
   }
   .filter-mobile-head {
     position: sticky;
@@ -4101,12 +4099,6 @@ html {
     height: 44px;
     top: 4px;
     right: 4px;
-  }
-  .filter-rail:not(.open) {
-    visibility: hidden;
-  }
-  .filter-rail.open {
-    visibility: visible;
   }
   .journey-actions > .button {
     flex: 1 1 180px;

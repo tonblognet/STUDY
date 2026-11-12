@@ -7,6 +7,7 @@ export function useModalFocus(
   ref: RefObject<HTMLElement | null>,
   open: boolean,
   onClose: () => void,
+  initialFocus?: RefObject<HTMLElement | null>,
 ) {
   const close = useRef(onClose);
   useLayoutEffect(() => {
@@ -33,12 +34,8 @@ export function useModalFocus(
           el.getClientRects().length > 0 &&
           getComputedStyle(el).visibility === "visible",
       );
-    const focusFirst = () =>
-      (focusable()[0] ?? panel).focus({ preventScroll: true });
-    focusFirst();
-    // A drawer that was hidden can become focusable only after layout settles.
-    const initialFocusFrame = requestAnimationFrame(() => {
-      if (!panel.contains(document.activeElement)) focusFirst();
+    (initialFocus?.current ?? focusable()[0] ?? panel).focus({
+      preventScroll: true,
     });
     function keydown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -75,11 +72,10 @@ export function useModalFocus(
     document.addEventListener("keydown", keydown);
     document.addEventListener("focusin", keepFocus);
     return () => {
-      cancelAnimationFrame(initialFocusFrame);
       document.removeEventListener("keydown", keydown);
       document.removeEventListener("focusin", keepFocus);
       document.body.style.overflow = previousOverflow;
       if (opener?.isConnected) opener.focus();
     };
-  }, [open, ref]);
+  }, [open, ref, initialFocus]);
 }

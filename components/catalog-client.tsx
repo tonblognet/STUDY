@@ -66,7 +66,13 @@ export function CatalogClient({
   );
   const [filtersOpen, setFiltersOpen] = useState(false);
   const filterRef = useRef<HTMLDivElement>(null);
-  useModalFocus(filterRef, filtersOpen, () => setFiltersOpen(false));
+  const filterCloseRef = useRef<HTMLButtonElement>(null);
+  useModalFocus(
+    filterRef,
+    filtersOpen,
+    () => setFiltersOpen(false),
+    filterCloseRef,
+  );
   useEffect(() => {
     if (!filtersOpen) return;
     const desktop = window.matchMedia("(min-width: 761px)");
@@ -258,6 +264,8 @@ export function CatalogClient({
           <div className="filter-mobile-head">
             <strong>Фильтры</strong>
             <button
+              ref={filterCloseRef}
+              type="button"
               onClick={() => setFiltersOpen(false)}
               aria-label="Закрыть фильтры"
             >
