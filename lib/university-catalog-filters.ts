@@ -9,7 +9,6 @@ export type UniversityCatalogEntry = Pick<
   | "id"
   | "slug"
   | "name"
-  | "shortName"
   | "city"
   | "address"
   | "website"
@@ -19,10 +18,12 @@ export type UniversityCatalogEntry = Pick<
   | "description"
   | "militaryCenter"
 > & {
+  // A name equal to `name` is omitted from the list payload.
+  shortName?: string;
   directory?: Pick<
     NonNullable<University["directory"]>,
-    "kind" | "ownership" | "legalName" | "region"
-  >;
+    "kind" | "ownership" | "region"
+  > & { legalName?: string };
   catalogProgramCount: number;
   offeringCount: number;
   facultyCount: number;
@@ -40,7 +41,7 @@ export function filterUniversities(
   return entries.filter(
     (u) =>
       normalize(
-        `${u.name} ${u.shortName} ${u.directory?.legalName ?? ""} ${u.city} ${u.address} ${u.directory?.region ?? ""}`,
+        `${u.name} ${u.shortName ?? u.name} ${u.directory ? (u.directory.legalName ?? u.name) : ""} ${u.city} ${u.address} ${u.directory?.region ?? ""}`,
       ).includes(query) &&
       (view.city === "all" || u.city === view.city) &&
       (view.ownership === "all" || u.directory?.ownership === view.ownership) &&

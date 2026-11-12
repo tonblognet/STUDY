@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "batchDateMoscow": "2026-11-10",
+  "scope": "directory_overviews_only",
+  "sourceYearMeaning": "calendar_year_of_source_snapshot",
+  "sourceReviewPacket": "data-sources/release/2026-12/evidence/2026-11-10-source-review.json",
+  "profiles": [
+    {
+      "universitySlug": "mpei",
+      "fields": {
+        "overview": {
+          "value": "История МЭИ начинается в 1930 году, когда были объединены электротехнические факультеты Московского высшего технического училища и Московского института народного хозяйства имени Плеханова.",
+          "sourceUrl": "https://mpei.ru/sveden/common/Pages/default.aspx",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T23:55:29.520046+00:00",
+          "sourceSha256": "b99984b753643939144f60918f578a5d6c16492a62eeea5f629baad4efc7a275"
+        }
+      },
+      "evidencePointer": "/universities/0/sections/general_information/overviewCandidate"
+    },
+    {
+      "universitySlug": "mephi",
+      "fields": {
+        "overview": {
+          "value": "НИЯУ МИФИ готовит специалистов для атомной отрасли, науки и информационных технологий. В числе направлений университета — ядерные исследования, лазерные и плазменные технологии, биомедицина и медицинская физика.",
+          "sourceUrl": "https://mephi.ru/about",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-09T23:55:29.520046+00:00",
+          "sourceSha256": "4957a5be0c1d04c86ec85638b0c34d854ba33745d1be5bc910af66c1f41e8f0b"
+        }
+      },
+      "evidencePointer": "/universities/1/sections/general_information/overviewCandidate"
+    }
+  ]
+}

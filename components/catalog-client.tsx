@@ -9,7 +9,10 @@ import { useUserState } from "@/components/user-state-provider";
 import { programViewSchema } from "@/lib/catalog/view-state";
 import { useSavedFilters } from "./use-saved-filters";
 import { useModalFocus } from "./use-modal-focus";
-import type { Program, University } from "@/lib/data";
+import type {
+  ProgramListItem,
+  ProgramListUniversity,
+} from "@/lib/catalog/program-list";
 import { formatPrice } from "@/lib/catalog/format";
 
 type Sort = "quality" | "score" | "price" | "places";
@@ -21,8 +24,8 @@ export function CatalogClient({
   initialQuery = "",
   initialView,
 }: {
-  items: Program[];
-  universities: University[];
+  items: ProgramListItem[];
+  universities: ProgramListUniversity[];
   initialQuery?: string;
   initialView?: string;
 }) {
@@ -62,8 +65,14 @@ export function CatalogClient({
     ...items.map((item) => Math.ceil((item.passingScore ?? 0) / 5) * 5),
   );
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const filterRef = useRef<HTMLElement>(null);
-  useModalFocus(filterRef, filtersOpen, () => setFiltersOpen(false));
+  const filterRef = useRef<HTMLDivElement>(null);
+  const filterCloseRef = useRef<HTMLButtonElement>(null);
+  useModalFocus(
+    filterRef,
+    filtersOpen,
+    () => setFiltersOpen(false),
+    filterCloseRef,
+  );
   useEffect(() => {
     if (!filtersOpen) return;
     const desktop = window.matchMedia("(min-width: 761px)");
@@ -205,7 +214,7 @@ export function CatalogClient({
 
   const compared = comparisonIds
     .map((id) => items.find((item) => item.id === id))
-    .filter((item): item is Program => Boolean(item));
+    .filter((item): item is ProgramListItem => Boolean(item));
 
   return (
     <>
@@ -243,10 +252,10 @@ export function CatalogClient({
         Фильтры{activeCount > 0 && <b>{activeCount}</b>}
       </button>
       <div className="catalog-shell">
-        <aside
+        <div
           ref={filterRef}
           id="program-filters"
-          role={filtersOpen ? "dialog" : undefined}
+          role={filtersOpen ? "dialog" : "complementary"}
           aria-modal={filtersOpen || undefined}
           tabIndex={-1}
           className={filtersOpen ? "filter-rail open" : "filter-rail"}
@@ -255,6 +264,8 @@ export function CatalogClient({
           <div className="filter-mobile-head">
             <strong>Фильтры</strong>
             <button
+              ref={filterCloseRef}
+              type="button"
               onClick={() => setFiltersOpen(false)}
               aria-label="Закрыть фильтры"
             >
@@ -424,7 +435,7 @@ export function CatalogClient({
           >
             Показать {filtered.length}
           </button>
-        </aside>
+        </div>
 
         <section
           className="program-results"

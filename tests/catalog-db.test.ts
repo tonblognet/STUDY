@@ -11,6 +11,8 @@ import {
   readPublishedCatalog,
 } from "../lib/catalog/service";
 import { catalogChecksum } from "../lib/catalog/diff";
+import { formatPrice } from "../lib/catalog/format";
+import { requiredMigration } from "../lib/operations/readiness";
 
 const testUrl = process.env.TEST_DATABASE_URL;
 if (!testUrl)
@@ -91,6 +93,11 @@ before(async () => {
           DATABASE_URL: url.toString(),
           CATALOG_STORAGE: "database",
           APP_URL: base,
+          DEPLOYMENT_MODE: "staging",
+          AUTH_SECRET:
+            "catalog-readiness-fixture-secret-at-least-32-characters",
+          SMTP_URL: "smtp://127.0.0.1:1025",
+          EMAIL_FROM: "Readiness fixture <fixture@example.invalid>",
         },
         windowsHide: true,
         stdio: "ignore",
@@ -133,6 +140,11 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
     assert.equal(await db.catalogRevision.count(), 1);
     assert.equal(await db.educationProgram.count(), 0);
     await assert.rejects(readPublishedCatalog(db), /не опубликован/);
+    if (process.env.CATALOG_HTTP_TESTS === "true") {
+      const readiness = await fetch(`${base}/api/ready`);
+      assert.equal(readiness.status, 503);
+      assert.deepEqual(await readiness.json(), { status: "not_ready" });
+    }
   });
   it("publishes once across concurrent confirmations and updates public and relational views", async () => {
     await Promise.all([
@@ -150,6 +162,21 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
     const repeat = await stageCatalog(db, initial, options(published));
     assert.equal(repeat.id, first);
     assert.equal(repeat.unchanged, true);
+    if (process.env.CATALOG_HTTP_TESTS === "true") {
+      const readiness = await fetch(`${base}/api/ready`);
+      assert.equal(readiness.status, 200);
+      assert.deepEqual(await readiness.json(), { status: "ready" });
+      const latest = requiredMigration;
+      const migration = await db.$queryRaw<Array<{ finished_at: Date }>>`
+        SELECT finished_at FROM "_prisma_migrations" WHERE migration_name = ${latest}`;
+      await db.$executeRaw`UPDATE "_prisma_migrations" SET finished_at = NULL WHERE migration_name = ${latest}`;
+      try {
+        assert.equal((await fetch(`${base}/api/ready`)).status, 503);
+        assert.equal((await fetch(`${base}/api/live`)).status, 200);
+      } finally {
+        await db.$executeRaw`UPDATE "_prisma_migrations" SET finished_at = ${migration[0].finished_at} WHERE migration_name = ${latest}`;
+      }
+    }
   });
   it("publishes a source-only change and rejects a competing stale draft", async () => {
     const a = structuredClone(initial),
@@ -374,8 +401,11 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
       const current = await readPublishedCatalog(db),
         program = current.snapshot.programs[0];
       const note = `Официальный источник повторно сопоставлен: ${randomUUID()}`;
+      const tuition = program.tuition === 765_432 ? 765_433 : 765_432;
       const fact = {
         ...program.tuitionValue,
+        value: tuition,
+        status: "verified" as const,
         note,
         sourceKind: "pdf",
         sourceSection: "Строка программы Экономика",
@@ -400,10 +430,20 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
       );
       assert.equal(submitted.status, 202, await submitted.clone().text());
       const draft = (await submitted.json()).revision;
+      const filters = new URLSearchParams({
+        filters: JSON.stringify({
+          query: program.title,
+          university: program.universitySlug,
+        }),
+      });
+      const listUrl = `${base}/programs?${filters}`;
       assert.doesNotMatch(
         await (await fetch(`${base}/programs/${program.slug}`)).text(),
         new RegExp(note),
       );
+      const beforePublish = await fetch(listUrl);
+      assert.equal(beforePublish.status, 200);
+      assert.ok(!(await beforePublish.text()).includes(formatPrice(tuition)));
       const approved = await fetch(`${base}/api/admin/catalog/${draft.id}`, {
         method: "POST",
         headers,
@@ -416,7 +456,6 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
       published = draft.id;
       for (const path of [
         `/programs/${program.slug}`,
-        "/programs",
         "/compare",
         "/match",
         "/api/programs",
@@ -428,6 +467,17 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
           `${path} must read the new published version`,
         );
       }
+      const list = await fetch(listUrl);
+      assert.equal(list.status, 200);
+      const listHtml = await list.text();
+      assert.ok(
+        listHtml.includes(formatPrice(tuition)),
+        "/programs must display the published price",
+      );
+      assert.ok(
+        !listHtml.includes(note),
+        "/programs does not serialize source notes",
+      );
       const repeat = await fetch(`${base}/api/admin/programs/${program.slug}`, {
         method: "PATCH",
         headers,

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "scope": "Сверка существующей конкурсной программы. Без публикации изменений и присвоения статуса.",
+  "sources": {
+    "official-plan": {
+      "url": "https://pk.mpei.ru/docs/quotas2026.pdf",
+      "year": 2026,
+      "sourceKind": "official_university_document",
+      "httpStatus": 200,
+      "snapshotSavedAtUtc": "2026-11-10T15:54:07.098705+00:00",
+      "bytes": 255496,
+      "sourceSha256": "f25220de084c4d55e651cb932f93544ced34d71f8e68261a4570afee2a2b273d"
+    },
+    "admission-rules": {
+      "url": "https://pk.mpei.ru/docs/rules_bach_2026.pdf",
+      "year": 2026,
+      "sourceKind": "official_university_document",
+      "httpStatus": 200,
+      "snapshotSavedAtUtc": "2026-11-10T15:53:34.503190+00:00",
+      "bytes": 1278176,
+      "sourceSha256": "766fc62e192e5e9775a4348236da212f9b6ce0ce66d9d85dc949841b7f45cfd6"
+    },
+    "plain-program-table": {
+      "url": "https://pk.mpei.ru/info/speclist_simple.html",
+      "year": 2026,
+      "sourceKind": "official_university_page",
+      "httpStatus": 200,
+      "snapshotSavedAtUtc": "2026-11-10T15:53:32.553457+00:00",
+      "bytes": 107928,
+      "sourceSha256": "0d919b82a996cb33f92eb7538b5a73c9d2104403af10da96dad364de65e325de"
+    },
+    "program-card": {
+      "url": "https://pk.mpei.ru/info/speclist",
+      "year": 2026,
+      "sourceKind": "official_university_page",
+      "httpStatus": 200,
+      "snapshotSavedAtUtc": "2026-11-10T15:53:32.385349+00:00",
+      "bytes": 513489,
+      "sourceSha256": "1d9602013c41f18686f3dc2aa46fdd27e1ce571d88881c2927c3ac3833ae2e17"
+    },
+    "historical-budget-result": {
+      "url": "https://pk.mpei.ru/info/statlastyear25.html",
+      "year": 2025,
+      "sourceKind": "official_university_page",
+      "httpStatus": 200,
+      "snapshotSavedAtUtc": "2026-11-10T15:55:20.465386+00:00",
+      "bytes": 31946,
+      "sourceSha256": "6da8bda1dfd8e3fac3c6248104a0a9c7fc5bfb1fcb07978b1c66e9b8953124d9"
+    },
+    "historical-rules": {
+      "url": "https://pk.mpei.ru/docs/rules_bach_2025.pdf",
+      "year": 2025,
+      "sourceKind": "official_university_document",
+      "httpStatus": 200,
+      "snapshotSavedAtUtc": "2026-11-10T15:55:21.569046+00:00",
+      "bytes": 1221193,
+      "sourceSha256": "87b33cd5dac9d8a6ae1329fa1cd1164a0c2ee08675f8a18e78bb320918af7856"
+    },
+    "2026-aggregate-result": {
+      "url": "https://pk.mpei.ru/info/statlastyear26.html",
+      "year": 2026,
+      "sourceKind": "official_university_page",
+      "httpStatus": 200,
+      "snapshotSavedAtUtc": "2026-11-10T15:53:32.725879+00:00",
+      "bytes": 60828,
+      "sourceSha256": "d1b9392a6f961871e0f9c457b0a00b3fe4c5139124a7afd90d1aef30d6c3ff4a"
+    }
+  },
+  "program": {
+    "id": "mpei-applied-informatics",
+    "universitySlug": "mpei",
+    "admissionYear": 2026,
+    "campus": "Москва",
+    "form": "Очная",
+    "level": "Бакалавриат",
+    "code": "09.03.03",
+    "contestGroup": "Прикладная информатика",
+    "profile": "Прикладная информатика в экономике",
+    "institutePublishedAbbreviation": "ИнЭИ",
+    "identityEvidence": [
+      {
+        "source": "official-plan",
+        "sourcePage": 1,
+        "locator": "НИУ «МЭИ» (г. Москва), Очная форма обучения, Прикладная информатика | ИнЭИ | 09.03.03 | Прикладная информатика в экономике",
+        "zeroBasedExtractedTableRow": 12
+      },
+      {
+        "source": "plain-program-table",
+        "xpath": "/html/body/div[3]/div/div[3]/table/tbody/tr[16]"
+      },
+      {
+        "source": "program-card",
+        "selector": ".place_m .time1 .list_item.O [id=\"inei-35-09.03.03\"]"
+      }
+    ],
+    "ege": {
+      "source": "official-plan",
+      "sourcePage": 1,
+      "locator": "НИУ «МЭИ» (г. Москва), Очная форма обучения, Прикладная информатика | ИнЭИ | 09.03.03 | Прикладная информатика в экономике",
+      "zeroBasedExtractedTableRow": 12,
+      "secondSource": "admission-rules",
+      "secondSourcePage": 40,
+      "secondSourceLocator": "Приложение 1.1, Москва, очная форма, тот же профиль ИнЭИ. В строке один перечень испытаний для столбцов КЦП и договора.",
+      "fundingScope": "Общий список ЕГЭ для опубликованного конкурса КЦП и основного договора. ВИ СПО отдельны.",
+      "required": [
+        {
+          "subject": "Русский язык",
+          "minimum": 40
+        },
+        {
+          "subject": "Математика",
+          "minimum": 40
+        }
+      ],
+      "oneOf": [
+        {
+          "subject": "Физика",
+          "minimum": 41
+        },
+        {
+          "subject": "Информатика",
+          "minimum": 46
+        }
+      ],
+      "oneOfSharedMinimum": null,
+      "additionalRequiredExamListed": false
+    },
+    "placesPlan": {
+      "source": "official-plan",
+      "sourcePage": 1,
+      "locator": "НИУ «МЭИ» (г. Москва), Очная форма обучения, Прикладная информатика | ИнЭИ | 09.03.03 | Прикладная информатика в экономике",
+      "zeroBasedExtractedTableRow": 12,
+      "budgetTotal": 30,
+      "specialQuota": 3,
+      "separateQuota": 3,
+      "targetQuota": 1,
+      "contractMain": 60,
+      "contractForeignSeparate": 5,
+      "generalPlannedDerived": 23,
+      "generalActuallyAllocated": null,
+      "note": "23 следует из 30 − 3 − 3 − 1 в том же исходном плане. Итог после возможного возврата невостребованных квот не указан в этой строке. Основной договор и отдельные места иностранных граждан сохранены раздельно."
+    },
+    "tuitionAndDuration": {
+      "source": "program-card",
+      "selector": ".place_m .time1 .list_item.O [id=\"inei-35-09.03.03\"]",
+      "tuitionRubPerYear": 420000,
+      "duration": "4 года"
+    },
+    "individualAchievements": {
+      "source": "admission-rules",
+      "sourcePage": 11,
+      "locator": "§4.1, общие индивидуальные достижения бакалавриата/специалитета",
+      "maximumGeneralPoints": 10,
+      "extraTargetOnly": 5
+    },
+    "historicalBudgetResult2025": {
+      "source": "historical-budget-result",
+      "xpath": "/html/body/div[3]/div/table[1]/tbody/tr[9]",
+      "budgetPlacesPublished": 30,
+      "passingScorePublished": 261,
+      "ruleSource": "historical-rules",
+      "rulePages": [9, 39],
+      "ruleLocator": "§3.17 и Приложение 1.1, очный конкурс ИнЭИ 09.03.03. Совпадает структура трёх испытаний, по 100 баллов каждое.",
+      "examScaleBeforeAchievements": 300
+    },
+    "result2026": {
+      "source": "2026-aggregate-result",
+      "locator": "Встроенный массив const PROGRAMS, id=6, Бакалавриат, Очная, Прикладная информатика 09.03.03",
+      "budget": {
+        "placesPublished": 30,
+        "passingScorePublished": 269
+      },
+      "contract": {
+        "placesPublished": 60,
+        "passingScorePublished": 189
+      },
+      "note": "Данные итогов 2026 года не подменяют исторический проходной 2025 года для текущего подбора."
+    },
+    "runtimeIntegrationNotes": [
+      "Сохранить прежний ID и три обязательные группы. Обновить отдельные минимумы русского и математики, для группы выбора заполнить subjectMinimums; общий minimum.value и minScore не выводятся.",
+      "10 баллов общих достижений подтверждены; целевые дополнительные баллы не входят в общий лимит. Отдельного ДВИ в перечне для этого конкурса нет.",
+      "261 остаётся историческим бюджетным ориентиром 2025, максимальная шкала испытаний без достижений 300 следует из правил 2025. Результаты 2026 следует хранить как отдельные годовые значения и отдельно по финансированию.",
+      "Аккредитация, доступность общежития и ВУЦ конкретной программы не входят в эту сверку. Присвоенную ранее метку trust отдельно проверяет редакционная приёмка."
+    ]
+  },
+  "reviewDate": "2026-11-10"
+}

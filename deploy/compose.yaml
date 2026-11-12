@@ -1,0 +1,120 @@
+name: ${POSTUPAI_PROJECT_NAME:?Set a separate Compose project for each environment}
+
+x-process: &process
+  init: true
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  logging:
+    driver: local
+    options:
+      max-size: 10m
+      max-file: "3"
+
+x-runtime: &runtime
+  APP_URL: https://${POSTUPAI_DOMAIN:?Set the canonical DNS hostname}
+  DEPLOYMENT_MODE: ${POSTUPAI_MODE:?Set staging or production}
+  CATALOG_STORAGE: database
+  NODE_ENV: production
+
+services:
+  edge:
+    <<: *process
+    image: ${POSTUPAI_CADDY_IMAGE:?Set an approved Caddy image by digest}
+    restart: unless-stopped
+    cap_add: [NET_BIND_SERVICE]
+    depends_on:
+      web:
+        condition: service_healthy
+    env_file:
+      - path: ${POSTUPAI_ENV_DIR:?Set the protected environment directory}/edge.env
+        format: raw
+    environment:
+      POSTUPAI_DOMAIN: ${POSTUPAI_DOMAIN:?Set the canonical DNS hostname}
+      POSTUPAI_MODE: ${POSTUPAI_MODE:?Set staging or production}
+      POSTUPAI_PUBLIC_TRAFFIC: ${POSTUPAI_PUBLIC_TRAFFIC:-false}
+      POSTUPAI_ACCEPT_BANK_WEBHOOK: ${POSTUPAI_ACCEPT_BANK_WEBHOOK:-false}
+    ports: ["80:80/tcp", "443:443/tcp"]
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - edge_data:/data
+    tmpfs:
+      - /config:rw,noexec,nosuid,nodev,mode=0700
+    networks: [edge]
+
+  web:
+    <<: *process
+    image: ${POSTUPAI_WEB_IMAGE:?Set the web image by digest}
+    restart: unless-stopped
+    user: "1000:1000"
+    env_file:
+      - path: ${POSTUPAI_ENV_DIR:?Set the protected environment directory}/web.env
+        format: raw
+    environment:
+      <<: *runtime
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+      TRUST_PROXY: "true"
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,mode=1777,size=64m
+      - /app/.next/cache:rw,noexec,nosuid,nodev,uid=1000,gid=1000,mode=0750,size=64m
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - >-
+          fetch('http://127.0.0.1:3000/api/live', {signal: AbortSignal.timeout(3000)})
+          .then(r => process.exit(r.status === 200 ? 0 : 1), () => process.exit(1))
+      interval: 10s
+      timeout: 4s
+      retries: 5
+      start_period: 20s
+    networks: [edge]
+
+  migrate:
+    <<: *process
+    image: ${POSTUPAI_MIGRATE_IMAGE:?Set the migration image by digest}
+    profiles: [maintenance]
+    user: "1000:1000"
+    env_file:
+      - path: ${POSTUPAI_ENV_DIR:?Set the protected environment directory}/migrate.env
+        format: raw
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,mode=1777,size=64m
+    networks: [ops]
+
+  operator:
+    <<: *process
+    image: ${POSTUPAI_MIGRATE_IMAGE:?Set the migration image by digest}
+    profiles: [maintenance]
+    user: "1000:1000"
+    command: ["node", "-e", "process.exit(0)"]
+    env_file:
+      - path: ${POSTUPAI_ENV_DIR:?Set the protected environment directory}/operator.env
+        format: raw
+    environment: *runtime
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,mode=1777,size=64m
+    networks: [ops]
+
+  worker:
+    <<: *process
+    image: ${POSTUPAI_WORKER_IMAGE:?Set the worker image by digest}
+    profiles: [reminders]
+    restart: unless-stopped
+    user: "1000:1000"
+    env_file:
+      - path: ${POSTUPAI_ENV_DIR:?Set the protected environment directory}/worker.env
+        format: raw
+    environment: *runtime
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,mode=1777,size=64m
+    networks: [ops]
+
+networks:
+  edge:
+  ops:
+
+volumes:
+  edge_data:

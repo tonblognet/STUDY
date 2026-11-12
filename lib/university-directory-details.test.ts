@@ -28,8 +28,50 @@ import continuationStructureNovember9 from "@/data-sources/russia/continuation-s
 import followupRegionalEducationNovember9 from "@/data-sources/russia/followup-regional-education-2026-11-09.json";
 import followupCentralEducationNovember9 from "@/data-sources/russia/followup-central-education-2026-11-09.json";
 import followupContactsNovember9 from "@/data-sources/russia/followup-contacts-2026-11-09.json";
+import moscowHseNovember10 from "@/data-sources/russia/moscow-hse-enrichment-2026-11-10.json";
+
+import overviewSourceReview from "@/data-sources/release/2026-12/evidence/2026-11-10-source-review.json";
 
 describe("official university profile evidence", () => {
+  it("fills the Moscow HSE card with sourced facts scoped to their published purpose", () => {
+    const profile = getDirectoryDetails("hse")!;
+    expect(profile.fields).toMatchObject(
+      moscowHseNovember10.profiles[0].fields,
+    );
+    expect(profile.fields.overview?.value).toContain("№ 917");
+    expect(profile.fields.hostelInfo?.value).toContain(
+      "поступивших в 2026 году на первый курс",
+    );
+    expect(profile.fields.admissionsPhone?.value).toBe(
+      "+7 (495) 771-32-42; +7 (495) 916-88-44",
+    );
+    expect(profile.fields.admissionsEmail?.value).toBe("abitur@hse.ru");
+    expect(profile.faculties).toHaveLength(18);
+    expect(profile.offerings).toHaveLength(233);
+    expect(profile.offerings.every((row) => row.sourceYear === null)).toBe(
+      true,
+    );
+  });
+
+  it("preserves the reviewed official overview and its exact snapshot provenance", () => {
+    const sources = overviewSourceReview.sources;
+    expect(overviewSourceReview.universities.map((row) => row.slug)).toEqual([
+      "mpei",
+      "mephi",
+    ]);
+    for (const row of overviewSourceReview.universities) {
+      const candidate = row.sections.general_information.overviewCandidate;
+      const source = sources[candidate.source as keyof typeof sources];
+      expect(getDirectoryDetails(row.slug)?.fields.overview).toEqual({
+        value: candidate.value,
+        sourceUrl: source.finalUrl,
+        sourceYear: Number(source.retrievedAtUtc.slice(0, 4)),
+        checkedAt: candidate.sourceComparedAtUtc,
+        sourceSha256: source.sha256,
+      });
+    }
+  });
+
   it("publishes continuation evidence idempotently while keeping education lists outside admission matching", () => {
     const additions = [
       ...continuationEducationNovember9.profiles,
@@ -499,6 +541,53 @@ describe("official university profile evidence", () => {
         expect(area.sourceYear).toBe(2025);
         expect(area.sourceUrl).toContain("monitoring.miccedu.ru/");
       }
+  });
+
+  it("adds MIPT educational rows while keeping their admission year unknown", () => {
+    const profile = getDirectoryDetails("mipt")!;
+    expect(profile.faculties).toHaveLength(8);
+    expect(profile.fields.overview?.value).toContain("1951 году");
+    expect(profile.offerings).toHaveLength(207);
+    expect(
+      new Set(profile.offerings.map((row) => row.sourceSection)).size,
+    ).toBe(5);
+    for (const row of profile.offerings) {
+      expect(row.sourceUrl).toBe(
+        "https://mipt.ru/vikon/sveden/education/eduaccred/",
+      );
+      expect(row.sourceYear).toBeNull();
+      expect(row.admissionsStatus).toBe("pending_review");
+      expect(row.forms).toBe("Очная");
+      expect(row.duration).toMatch(/^(?:2|4|5,5|6)$/);
+    }
+  });
+
+  it("adds the selected RUDN bachelor inventory without inferring admissions", () => {
+    const profile = getDirectoryDetails("rudn")!;
+    expect(profile.fields.overview?.value).toContain("5 февраля 1960 года");
+    expect(profile.faculties).toHaveLength(12);
+    expect(profile.offerings).toHaveLength(165);
+    for (const row of profile.offerings) {
+      expect(row.level).toBe("Высшее образование — бакалавриат");
+      expect(row.sourceYear).toBeNull();
+      expect(row.admissionsStatus).toBe("pending_review");
+      expect(row.profile).not.toMatch(/совместно|КНР/);
+      expect(row.sourceUrl).toBe(
+        "https://www.rudn.ru/sveden/education/eduaccred/",
+      );
+    }
+  });
+
+  it("fills MISIS card gaps without merging differently scoped education snapshots", () => {
+    const profile = getDirectoryDetails("misis")!;
+    expect(profile.fields.overview?.sourceUrl).toBe(
+      "https://misis.ru/university/",
+    );
+    expect(profile.fields.hostelInfo?.sourceUrl).toBe(
+      "https://misis.ru/applicants/accommodation/zaselenievobsh_ezhitiepervokusn/order/",
+    );
+    expect(profile.faculties).toHaveLength(10);
+    expect(profile.offerings).toHaveLength(285);
   });
 
   it("separates admissions contacts, accommodation types and redirected hosting pages", () => {

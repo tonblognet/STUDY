@@ -45,35 +45,53 @@
       "slug": "hse",
       "name": "Национальный исследовательский университет «Высшая школа экономики»",
       "selectionGroup": "existing_admission_program_university",
-      "status": "pending_editorial_review",
-      "reviewer": null,
-      "reviewedAt": null,
-      "decision": null,
+      "status": "accepted_repository_candidate",
+      "reviewer": "Codex",
+      "reviewedAt": "2026-11-10T15:49:49.324Z",
+      "decision": "Редакционно приняты пять разделов репозиторного кандидата с указанными ограничениями. Браузерная проверка сборки j3nLXaiE4bYhDsi6D-25e прошла на 1440×1000 и 390×844. Публикация в БД и конкурсная приёмка отслеживаются отдельно.",
       "sections": {
         "general_information": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-hse-card-review.json#/universities/0/sections/general_information"
+          ],
+          "gaps": [
+            "Совпадение общих сведений не устанавливает текущую лицензию или аккредитацию программы."
+          ]
         },
         "structure": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-hse-card-review.json#/universities/0/sections/structure"
+          ],
+          "gaps": [
+            "Проверена выборка 18 подразделений по имени и URL. Полнота и адрес каждого подразделения отдельно не подтверждены."
+          ]
         },
         "educational_inventory": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-hse-card-review.json#/universities/0/sections/educational_inventory"
+          ],
+          "gaps": [
+            "233 записи совпали с московским перечнем в пределах действующего адаптера. Год приёма и конкурсные условия неизвестны."
+          ]
         },
         "admissions_contacts": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-hse-card-review.json#/universities/0/sections/admissions_contacts"
+          ],
           "gaps": []
         },
         "housing": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-hse-card-review.json#/universities/0/sections/housing"
+          ],
+          "gaps": [
+            "Условия относятся к первому курсу бакалавриата и специалитета набора 2026 года с гражданством РФ. Наличие свободных мест неизвестно."
+          ]
         }
       },
       "baselineCoveragePointer": "/universities/0",
@@ -139,35 +157,53 @@
       "slug": "mipt",
       "name": "Московский физико-технический институт (национальный исследовательский университет)",
       "selectionGroup": "existing_admission_program_university",
-      "status": "pending_editorial_review",
-      "reviewer": null,
-      "reviewedAt": null,
-      "decision": null,
+      "status": "accepted_repository_candidate",
+      "reviewer": "Codex",
+      "reviewedAt": "2026-11-10T15:49:49.324Z",
+      "decision": "Редакционно приняты пять разделов репозиторного кандидата с указанными ограничениями. Браузерная проверка сборки j3nLXaiE4bYhDsi6D-25e прошла на 1440×1000 и 390×844. Публикация в БД и конкурсная приёмка отслеживаются отдельно.",
       "sections": {
         "general_information": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-mipt-card-review.json#/universities/0/sections/general_information"
+          ],
           "gaps": []
         },
         "structure": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-mipt-card-review.json#/universities/0/sections/structure"
+          ],
+          "gaps": [
+            "Проверены восемь выбранных физтех-школ с адресом в Долгопрудном. Полнота структуры и ссылки отдельных подразделений требуют подтверждения."
+          ]
         },
         "educational_inventory": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-mipt-card-review.json#/universities/0/sections/educational_inventory"
+          ],
+          "gaps": [
+            "Проверены пять таблиц высшего образования. Аспирантура и дополнительное образование исключены. Год набора и условия конкурса неизвестны."
+          ]
         },
         "admissions_contacts": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-mipt-card-review.json#/universities/0/sections/admissions_contacts"
+          ],
+          "gaps": [
+            "Email относится к базовому высшему образованию. Другие уровни имеют свои контакты на странице комиссии."
+          ]
         },
         "housing": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-mipt-card-review.json#/universities/0/sections/housing"
+          ],
+          "gaps": [
+            "Подтверждены опубликованные сведения о доступности. Свободные места и условия конкретного заселения остаются неизвестными."
+          ]
         }
       },
       "baselineCoveragePointer": "/universities/2",
@@ -181,34 +217,50 @@
       "name": "Национальный исследовательский технологический университет МИСИС",
       "selectionGroup": "existing_admission_program_university",
       "status": "pending_editorial_review",
-      "reviewer": null,
-      "reviewedAt": null,
-      "decision": null,
+      "reviewer": "Codex",
+      "reviewedAt": "2026-11-10T15:49:49.324Z",
+      "decision": "Подтверждены четыре раздела и их отображение на сборке j3nLXaiE4bYhDsi6D-25e. Приёмка карточки ждёт сверки различий в образовательном перечне.",
       "sections": {
         "general_information": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-misis-card-review.json#/sections/general_information"
+          ],
           "gaps": []
         },
         "structure": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-misis-card-review.json#/sections/structure"
+          ],
+          "gaps": [
+            "Проверено десять выбранных учебных подразделений. Полнота структуры отдельно не подтверждена."
+          ]
         },
         "educational_inventory": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "pending_reconciliation",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-misis-card-review.json#/sections/educational_inventory"
+          ],
+          "gaps": [
+            "В свежем официальном снимке 236 строк, из них 162 точно совпали с исходным перечнем из 285 строк. 123 прежних и 74 текущих позиции требуют сверки перед заменой."
+          ]
         },
         "admissions_contacts": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-misis-card-review.json#/sections/admissions_contacts"
+          ],
           "gaps": []
         },
         "housing": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-misis-card-review.json#/sections/housing"
+          ],
+          "gaps": [
+            "Официальная страница описывает категории первокурсников, которые могут претендовать на общежитие. Наличие свободных мест остаётся неизвестным."
+          ]
         }
       },
       "baselineCoveragePointer": "/universities/3",
@@ -221,35 +273,52 @@
       "slug": "mpei",
       "name": "Национальный исследовательский университет «МЭИ»",
       "selectionGroup": "existing_admission_program_university",
-      "status": "pending_editorial_review",
-      "reviewer": null,
-      "reviewedAt": null,
-      "decision": null,
+      "status": "accepted_repository_candidate",
+      "reviewer": "Codex",
+      "reviewedAt": "2026-11-10T01:03:30.212Z",
+      "decision": "Редакционно приняты пять разделов репозиторного кандидата с указанными ограничениями. Браузерная проверка сборки KoVQCEmTzJKamYJJqFmAW прошла на 1440×1000 и 390×844. Публикация в БД и приёмка конкурсных программ проверяются отдельно.",
       "sections": {
         "general_information": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/general_information"
+          ],
           "gaps": []
         },
         "structure": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/structure"
+          ],
+          "gaps": [
+            "Проверена выборка учебных подразделений по московским адресам. Полный реестр подразделений сверяется отдельно."
+          ]
         },
         "educational_inventory": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/educational_inventory"
+          ],
+          "gaps": [
+            "Вне действующего адаптера осталось 9 строк. Конкурсные группы, условия приёма и аккредитация проверяются отдельно.",
+            "Год набора в перечне не подтверждён."
+          ]
         },
         "admissions_contacts": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/admissions_contacts"
+          ],
           "gaps": []
         },
         "housing": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/0/sections/housing"
+          ],
+          "gaps": [
+            "Наличие свободных мест и индивидуальные условия заселения остаются неизвестными."
+          ]
         }
       },
       "baselineCoveragePointer": "/universities/4",
@@ -262,35 +331,52 @@
       "slug": "mephi",
       "name": "Национальный исследовательский ядерный университет «МИФИ»",
       "selectionGroup": "existing_admission_program_university",
-      "status": "pending_editorial_review",
-      "reviewer": null,
-      "reviewedAt": null,
-      "decision": null,
+      "status": "accepted_repository_candidate",
+      "reviewer": "Codex",
+      "reviewedAt": "2026-11-10T01:03:30.212Z",
+      "decision": "Редакционно приняты пять разделов репозиторного кандидата с указанными ограничениями. Браузерная проверка сборки KoVQCEmTzJKamYJJqFmAW прошла на 1440×1000 и 390×844. Публикация в БД и приёмка конкурсных программ проверяются отдельно.",
       "sections": {
         "general_information": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/general_information"
+          ],
           "gaps": []
         },
         "structure": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/structure"
+          ],
+          "gaps": [
+            "Проверена выборка учебных подразделений по московским адресам. Полный реестр подразделений сверяется отдельно."
+          ]
         },
         "educational_inventory": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/educational_inventory"
+          ],
+          "gaps": [
+            "Вне действующего адаптера осталось 6 строк. Конкурсные группы, условия приёма и аккредитация проверяются отдельно.",
+            "Форма и срок обучения остаются неизвестными в строках, где их нет в источнике."
+          ]
         },
         "admissions_contacts": {
-          "status": "not_reviewed",
-          "evidence": [],
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/admissions_contacts"
+          ],
           "gaps": []
         },
         "housing": {
-          "status": "not_reviewed",
-          "evidence": [],
-          "gaps": []
+          "status": "reviewed",
+          "evidence": [
+            "data-sources/release/2026-12/evidence/2026-11-10-source-review.json#/universities/1/sections/housing"
+          ],
+          "gaps": [
+            "Наличие свободных мест и индивидуальные условия заселения остаются неизвестными."
+          ]
         }
       },
       "baselineCoveragePointer": "/universities/5",
@@ -4605,5 +4691,5 @@
       "officialWebsite": "https://iotgn.institute/"
     }
   ],
-  "note": "Selection is an operational queue, not editorial acceptance. All 100 cards still require review. Directory listings and program trust statuses remain separate; no runtime facts/statuses are changed."
+  "note": "Selection is the operational queue. Decisions on individual cards apply to the repository candidate. Directory listings, program trust and database publication are tracked separately."
 }

@@ -131,6 +131,102 @@ test("nationwide directory filters a city and keeps historical records separate 
   assert.match(profile, /monitoring\.miccedu\.ru/);
 });
 
+test("MPEI and MEPhI render source-dated overviews with separate intake evidence", async () => {
+  for (const [slug, text, url, listingYear] of [
+    [
+      "mpei",
+      "История МЭИ начинается в 1930 году",
+      "https://mpei.ru/sveden/common/Pages/default.aspx",
+      "Год набора не подтверждён.",
+    ],
+    [
+      "mephi",
+      "НИЯУ МИФИ готовит специалистов для атомной отрасли",
+      "https://mephi.ru/about",
+      "Перечень за 2026 год.",
+    ],
+  ]) {
+    const response = await fetch(`${base}/universities/${slug}`);
+    assert.equal(response.status, 200);
+    const html = await response.text();
+    const overview = html.match(
+      /<dt>О вузе<\/dt><dd>([^<]+)<\/dd><dd>(.*?)<\/dd>/s,
+    );
+    assert.ok(overview, `missing overview on ${slug}`);
+    assert.ok(overview[1].startsWith(text));
+    assert.ok(overview[2].includes(`href="${url}"`));
+    assert.match(overview[2], /снимок источника,/);
+    assert.match(overview[2], /проверено.*10\.11\.2026/s);
+    assert.ok(html.includes(listingYear));
+    assert.match(html, /Эти записи пока не участвуют в подборе по ЕГЭ/);
+    assert.match(html, /Условия зависят от программы, категории/);
+    const contacts = html.match(
+      /<article id="contacts">(.*?)<\/article>/s,
+    )?.[1];
+    assert.ok(contacts);
+    const [phone, email] =
+      slug === "mpei"
+        ? ["+74953627777", "pk@mpei.ru"]
+        : ["+74957855525", "priem@mephi.ru"];
+    assert.ok(contacts.includes(`href="tel:${phone}"`));
+    assert.ok(contacts.includes(`href="mailto:${email}"`));
+    if (slug === "mephi") {
+      assert.match(html, /Не указаны в проверенной строке/);
+      assert.match(html, /Срок по источнику<\/dt><dd>Требует уточнения/);
+    }
+  }
+});
+
+test("renders new HSE, MIPT and MISIS evidence with scoped directory data", async () => {
+  for (const [slug, overviewText, overviewSource, phones] of [
+    [
+      "hse",
+      "Высшая школа экономики создана 27 ноября 1992 года",
+      "https://www.hse.ru/info/ustav",
+      ["+74957713242", "+74959168844"],
+    ],
+    [
+      "mipt",
+      "МФТИ был образован в 1951 году",
+      "https://mipt.ru/sveden/common/",
+      ["+74954084800"],
+    ],
+    [
+      "misis",
+      "Университет ведёт свою историю от Московской горной академии",
+      "https://misis.ru/university/",
+      ["+74996494480"],
+    ],
+  ]) {
+    const response = await fetch(`${base}/universities/${slug}`);
+    assert.equal(response.status, 200);
+    const html = await response.text();
+    const overview = html.match(
+      /<dt>О вузе<\/dt><dd>([^<]+)<\/dd><dd>(.*?)<\/dd>/s,
+    );
+    assert.ok(overview?.[1].startsWith(overviewText), slug);
+    assert.ok(overview[2].includes(`href="${overviewSource}"`), slug);
+    const contacts = html.match(
+      /<article id="contacts">(.*?)<\/article>/s,
+    )?.[1];
+    for (const phone of phones)
+      assert.ok(contacts?.includes(`href="tel:${phone}"`), `${slug} ${phone}`);
+    if (slug === "hse") {
+      assert.ok(contacts.includes('href="mailto:abitur@hse.ru"'));
+      assert.match(html, /заселении|предоставления места в общежитии/);
+    }
+    if (slug === "mipt") {
+      assert.match(html, /Год набора не подтверждён\./);
+      assert.match(html, /Эти записи пока не участвуют в подборе по ЕГЭ/);
+      assert.ok(
+        html.includes(
+          'href="https://mipt.ru/vikon/sveden/education/eduaccred/"',
+        ),
+      );
+    }
+  }
+});
+
 test("reviewed faculty names expose the exact source without claiming admission", async () => {
   const html = await (await fetch(`${base}/universities/mgu`)).text();
   assert.match(html, /id="faculties"/);
@@ -152,7 +248,7 @@ test("matching renders separate eligibility, strict filters and program-specific
   assert.match(html, /Аккредитация программы/);
   assert.match(html, /Подтверждённые платные/);
   assert.match(html, /Дополнительные испытания/);
-  assert.match(html, /Добавить в сравнение/);
+  assert.match(html, /aria-label="Сравнить"/);
   const details = await (await fetch(`${base}/programs/hse-economics`)).text();
   assert.match(details, /Требования нужно уточнить/);
   assert.match(details, /Сравнение недоступно/);
@@ -178,6 +274,10 @@ test("server-renders the filterable program catalog", async () => {
   const response = await fetch(`${base}/programs`);
   assert.equal(response.status, 200);
   const html = await response.text();
+  assert.ok(
+    Buffer.byteLength(html) < 2 * 1024 * 1024,
+    "program catalog exceeds SSR smoke limit",
+  );
   assert.match(html, /Программы московских вузов/);
   assert.match(html, /Название программы, направление или вуз/);
   assert.match(html, /Бюджетные места/);
@@ -206,6 +306,10 @@ test("university directory exposes search, ownership and university-only profile
   const catalog = await fetch(`${base}/universities`);
   assert.equal(catalog.status, 200);
   const html = await catalog.text();
+  assert.ok(
+    Buffer.byteLength(html) < 2 * 1024 * 1024,
+    "university directory exceeds SSR smoke limit",
+  );
   assert.match(html, /Найти вуз/);
   assert.match(html, /Негосударственные/);
   assert.match(html, /Сведения в карточке/);
@@ -300,7 +404,7 @@ test("privacy describes guest storage, server accounts and current delivery limi
   assert.match(html, /cookie с токеном сессии/);
   assert.match(html, /в базе хранится только хеш этого токена/);
   assert.match(html, /передаются почтовому провайдеру/);
-  assert.match(html, /Email-рассылка дедлайнов не подключена/);
+  assert.match(html, /её можно отдельно включить для подтверждённого адреса/);
   assert.match(
     html,
     /Самостоятельное удаление аккаунта и выгрузка всех его данных пока/,
@@ -328,4 +432,39 @@ test("persistent user state requires authentication", async () => {
   const response = await fetch(`${base}/api/user-state`);
   assert.equal(response.status, 401);
   assert.deepEqual(await response.json(), { error: "authentication_required" });
+});
+
+test("shows sourced alternatives and distinguishes the two Moscow contests", async () => {
+  for (const [slug, source] of [
+    ["mpei-applied-informatics", "https://pk.mpei.ru/docs/rules_bach_2026.pdf"],
+    [
+      "rudn-applied-math",
+      "https://admission.rudn.ru/upload/base64_files/1fa/4bxvpcz0j1zqw392fc0ejk4ey5952iso.pdf",
+    ],
+  ]) {
+    const response = await fetch(`${base}/programs/${slug}`);
+    assert.equal(response.status, 200, slug);
+    const html = await response.text();
+    const exams = html
+      .match(/<section [^>]*id="exams"[^>]*>(.*?)<\/section>/s)?.[1]
+      .replaceAll("<!-- -->", "");
+    assert.ok(exams?.includes(`href="${source}`), slug);
+    assert.match(exams, /Физика: минимум 41/);
+    assert.match(exams, /Информатика: минимум 46/);
+    if (slug === "rudn-applied-math") {
+      assert.match(html, /Прикладная математика и программирование/);
+      assert.match(html, /285\s000\s₽\/год/);
+      assert.match(html, /Источники расходятся/);
+    }
+  }
+});
+
+test("snapshot preview is live but cannot claim deployment readiness", async () => {
+  const live = await fetch(`${base}/api/live`);
+  assert.equal(live.status, 200);
+  assert.deepEqual(await live.json(), { status: "alive" });
+  assert.match(live.headers.get("cache-control"), /no-store/);
+  const ready = await fetch(`${base}/api/ready`);
+  assert.equal(ready.status, 503);
+  assert.deepEqual(await ready.json(), { status: "not_ready" });
 });

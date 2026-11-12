@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CatalogClient } from "@/components/catalog-client";
+import { programListItem } from "@/lib/catalog/program-list";
 import { getCatalog } from "@/lib/catalog/server";
 import {
   initialView,
@@ -20,6 +21,9 @@ export default async function ProgramsPage({
 }) {
   const params = await searchParams;
   const { programs, universities } = await getCatalog();
+  const universitySlugs = new Set(
+    programs.map((program) => program.universitySlug),
+  );
   return (
     <div className="catalog-page container">
       <div className="catalog-title">
@@ -29,7 +33,11 @@ export default async function ProgramsPage({
           Сравнивайте условия, фильтруйте по ВУЦ и общежитию или сразу проверьте
           свой набор ЕГЭ по официальным требованиям.
         </p>
-        <div className="catalog-title-facts" aria-label="О каталоге">
+        <div
+          className="catalog-title-facts"
+          role="group"
+          aria-label="О каталоге"
+        >
           <span>
             Программ: <b>{programs.length}</b>
           </span>
@@ -37,16 +45,22 @@ export default async function ProgramsPage({
             <b>2026</b> год данных
           </span>
           <span>
-            <b>
-              {new Set(programs.map((program) => program.universitySlug)).size}
-            </b>{" "}
-            вузов первой очереди
+            <b>{universitySlugs.size}</b> вузов первой очереди
           </span>
         </div>
       </div>
       <CatalogClient
-        universities={universities}
-        items={programs}
+        universities={universities
+          .filter((university) => universitySlugs.has(university.slug))
+          .map(({ id, slug, shortName, color, logoUrl, logoBackground }) => ({
+            id,
+            slug,
+            shortName,
+            color,
+            logoUrl,
+            logoBackground,
+          }))}
+        items={programs.map(programListItem)}
         initialView={initialView(programViewSchema, params)}
       />
     </div>

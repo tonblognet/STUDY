@@ -58,6 +58,23 @@ export default async function UniversityPage({
   const offerings = directoryDetails?.offerings ?? [];
   const admissionsUrl =
     university.admissionsUrl ?? directoryDetails?.fields.admissionsUrl?.value;
+  const admissionsPhone =
+    university.admissionsPhone ??
+    directoryDetails?.fields.admissionsPhone?.value;
+  const admissionsEmail =
+    university.admissionsEmail ??
+    directoryDetails?.fields.admissionsEmail?.value;
+  const phones = Array.from(
+    new Set(admissionsPhone?.split(";").map((label) => label.trim()) ?? []),
+  ).map((label) => ({ label, dialNumber: label.replace(/[ ()-]/g, "") }));
+  const linkablePhones = phones.every(({ dialNumber }) =>
+    /^\+?[0-9]{7,15}$/.test(dialNumber),
+  );
+  const emailHref =
+    admissionsEmail &&
+    /^[^\s@<>?&#]+@[^\s@<>?&#]+\.[^\s@<>?&#]+$/.test(admissionsEmail)
+      ? `mailto:${admissionsEmail}`
+      : null;
   const isMgu = slug === "mgu";
   const factProfile = catalog.universityFacts.find(
     (item) => item.universitySlug === slug,
@@ -493,17 +510,17 @@ export default async function UniversityPage({
                 </p>
               </>
             )}
-            {university.admissionsPhone && (
-              <a
-                href={`tel:${university.admissionsPhone.replace(/[^+\d]/g, "")}`}
-              >
-                {university.admissionsPhone}
-              </a>
-            )}
-            {university.admissionsEmail && (
-              <a href={`mailto:${university.admissionsEmail}`}>
-                {university.admissionsEmail}
-              </a>
+            {linkablePhones
+              ? phones.map(({ label, dialNumber }) => (
+                  <a href={`tel:${dialNumber}`} key={label}>
+                    {label}
+                  </a>
+                ))
+              : admissionsPhone && <p>{admissionsPhone}</p>}
+            {emailHref ? (
+              <a href={emailHref}>{admissionsEmail}</a>
+            ) : (
+              admissionsEmail && <p>{admissionsEmail}</p>
             )}
             <a
               href={
