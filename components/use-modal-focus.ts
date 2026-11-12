@@ -33,7 +33,13 @@ export function useModalFocus(
           el.getClientRects().length > 0 &&
           getComputedStyle(el).visibility === "visible",
       );
-    (focusable()[0] ?? panel).focus();
+    const focusFirst = () =>
+      (focusable()[0] ?? panel).focus({ preventScroll: true });
+    focusFirst();
+    // A drawer that was hidden can become focusable only after layout settles.
+    const initialFocusFrame = requestAnimationFrame(() => {
+      if (!panel.contains(document.activeElement)) focusFirst();
+    });
     function keydown(event: KeyboardEvent) {
       if (event.key === "Escape") {
         event.preventDefault();
@@ -43,6 +49,11 @@ export function useModalFocus(
       const elements = focusable();
       const first = elements[0] ?? panel!;
       const last = elements.at(-1) ?? panel!;
+      if (!panel!.contains(document.activeElement)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+        return;
+      }
       if (
         event.shiftKey &&
         (document.activeElement === first || document.activeElement === panel)
@@ -64,6 +75,7 @@ export function useModalFocus(
     document.addEventListener("keydown", keydown);
     document.addEventListener("focusin", keepFocus);
     return () => {
+      cancelAnimationFrame(initialFocusFrame);
       document.removeEventListener("keydown", keydown);
       document.removeEventListener("focusin", keepFocus);
       document.body.style.overflow = previousOverflow;
