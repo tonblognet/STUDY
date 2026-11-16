@@ -41,12 +41,14 @@ try {
   const match = result.match(/### Result\r?\n\s*(\[.*?\])(?=\s*###|\s*$)/s);
   assert.ok(match, "Playwright must return a structured result");
   const reports = JSON.parse(match[1]);
-  assert.equal(reports.length, 6);
+  assert.equal(reports.length, 10);
   for (const width of [1440, 390]) {
     for (const route of [
       "/programs/mpei-applied-informatics",
       "/programs/rudn-applied-math",
       "/universities/rudn",
+      "/universities/hse",
+      "/programs/hse-math",
     ]) {
       assert.ok(
         reports.some(

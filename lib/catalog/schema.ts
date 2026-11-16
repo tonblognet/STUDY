@@ -155,6 +155,7 @@ const program = z
         .strict(),
     ),
     passingHistory: z.array(numberFact),
+    paidPassingHistory: z.array(numberFact).optional(),
     placesHistory: z.array(placesFact),
     tuitionHistory: z.array(numberFact),
     competitionHistory: z.array(numberFact),
@@ -597,7 +598,21 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     ])
       if (fact.year !== row.trust.dataYear)
         errors.push(`Смешаны кампании: ${row.slug}`);
-    for (const fact of [row.passingScoreValue, ...row.passingHistory])
+    unique(
+      (row.paidPassingHistory ?? []).map((fact) => String(fact.year)),
+      `Годы проходного балла на платное обучение: ${row.slug}`,
+    );
+    if (
+      row.paidPassingHistory?.some(
+        (fact) => fact.value !== null && fact.status !== "verified",
+      )
+    )
+      errors.push(`Неподтверждённый платный проходной балл: ${row.slug}`);
+    for (const fact of [
+      row.passingScoreValue,
+      ...row.passingHistory,
+      ...(row.paidPassingHistory ?? []),
+    ])
       if (fact.value !== null && fact.value > 510)
         errors.push(`Недопустимый итоговый балл: ${row.slug}`);
   }

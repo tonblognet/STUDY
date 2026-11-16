@@ -58,6 +58,30 @@ describe("ключевые интерфейсы", () => {
     expect(html).toContain("Сообщить об ошибке");
   });
 
+  it("показывает бюджет и платное зачисление отдельно с годом и источником", () => {
+    const base = programs.find((program) => program.slug === "hse-economics")!;
+    const budget = { ...base.passingScoreValue, year: 2025, value: 282 };
+    const paid = {
+      ...budget,
+      value: 250,
+      sourceUrl: "https://ba.hse.ru/result2025",
+    };
+    const html = renderWithState(
+      <ProgramDecisionPage
+        program={{
+          ...base,
+          passingHistory: [budget],
+          paidPassingHistory: [paid],
+        }}
+      />,
+    );
+    expect(html).toMatch(/Проходной балл на бюджет[\s\S]*?2025 · 282/);
+    expect(html).toMatch(
+      /Проходной балл на платное обучение[\s\S]*?2025 · 250[\s\S]*?href="https:\/\/ba\.hse\.ru\/result2025"/,
+    );
+    expect(html).toContain("Что сдавать?");
+  });
+
   it("интерактивные поля имеют подписи, а таблица — заголовки", () => {
     const html = renderWithState(
       <CatalogClient universities={universities} items={programs} />,

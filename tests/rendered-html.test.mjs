@@ -95,7 +95,7 @@ test("shared filters are applied before hydration and invalid URLs recover", asy
     assert.match(html, /value="no-such-/);
   }
   const invalid = await (await fetch(`${base}/programs?filters=null`)).text();
-  assert.match(invalid, /Найдено <!-- -->185/);
+  assert.match(invalid, /Найдено <!-- -->190/);
 });
 
 test("university profiles render admissions links and distinct commission contacts", async () => {

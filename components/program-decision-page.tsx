@@ -37,6 +37,8 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
   };
   const match = matchProgram(program, profile);
   const completeness = calculateCompleteness(program);
+  const paidHistory = program.paidPassingHistory;
+  const archiveDescription = "Итоги зачисления прошлых кампаний.";
   const distinctSubjects = [
     ...new Set(
       program.examRequirements.flatMap((requirement) => requirement.subjects),
@@ -157,10 +159,23 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
               <MatchExplanation match={match} />
             </div>
             <HistoryChart
-              title="Проходной балл общего конкурса"
+              title={
+                paidHistory
+                  ? "Проходной балл на бюджет"
+                  : "Проходной балл общего конкурса"
+              }
               points={program.passingHistory}
-              comparable={program.universitySlug !== "mgu"}
+              comparable={!paidHistory && program.universitySlug !== "mgu"}
+              archiveDescription={paidHistory ? archiveDescription : undefined}
             />
+            {paidHistory && (
+              <HistoryChart
+                title="Проходной балл на платное обучение"
+                points={paidHistory}
+                comparable={false}
+                archiveDescription={archiveDescription}
+              />
+            )}
           </section>
 
           {program.admissionsContact && (

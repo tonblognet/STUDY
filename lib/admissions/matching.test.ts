@@ -18,6 +18,17 @@ const profile = (
 });
 
 describe("детерминированный подбор", () => {
+  it("checks HSE alternatives without treating the paid archive as a current minimum", () => {
+    const math = programs.find((program) => program.slug === "hse-math")!;
+    expect(math.paidPassingHistory?.[0].value).toBe(250);
+    const scores = { Математика: 75, "Русский язык": 65, Физика: 69 };
+    expect(matchProgram(math, profile(scores)).eligibility).toBe("ineligible");
+    const result = matchProgram(math, profile({ ...scores, Информатика: 70 }));
+    expect(result.eligibility).toBe("eligible");
+    expect(result.consideredScore).toBe(210);
+    expect(result.passingScore).toBe(282);
+    expect(result.margin).toBeNull();
+  });
   it("выбирает лучший допустимый альтернативный предмет", () => {
     const result = matchProgram(
       hse,

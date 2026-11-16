@@ -141,6 +141,45 @@ describe("catalog publication boundaries", () => {
     program.additionalExams[0].minimum.sourceUrl = "https://evil.example/exams";
     expect(() => parseCatalog(snapshot)).toThrow(/Неофициальный/);
   });
+  it("preserves separate paid results and validates their years, sources and scores", () => {
+    const snapshot = scopedCatalog("hse");
+    const row = snapshot.programs.find(
+      (program) => program.slug === "hse-economics",
+    )!;
+    const paid = {
+      ...row.passingScoreValue,
+      value: 220,
+      year: 2025,
+      status: "verified" as const,
+      sourceUrl: "https://ba.hse.ru/result2025",
+    };
+    row.paidPassingHistory = [paid];
+    const parsed = parseCatalog(snapshot).programs.find(
+      (program) => program.id === row.id,
+    )!;
+    expect(parsed.paidPassingHistory).toEqual([paid]);
+    expect(parsed.passingScoreValue).toEqual(row.passingScoreValue);
+    expect(parsed.examRequirements).toEqual(row.examRequirements);
+
+    row.paidPassingHistory = [paid, { ...paid }];
+    expect(() => parseCatalog(snapshot)).toThrow(/Дубли.*платное обучение/);
+    row.paidPassingHistory = [
+      { ...paid, sourceUrl: "https://evil.example/paid" },
+    ];
+    expect(() => parseCatalog(snapshot)).toThrow(/Неофициальный источник/);
+    row.paidPassingHistory = [{ ...paid, value: 511 }];
+    expect(() => parseCatalog(snapshot)).toThrow(/Недопустимый итоговый балл/);
+    row.paidPassingHistory = [{ ...paid, status: "pending_review" }];
+    expect(() => parseCatalog(snapshot)).toThrow(
+      /Неподтверждённый платный проходной/,
+    );
+    row.paidPassingHistory[0].value = null;
+    expect(() => parseCatalog(snapshot)).not.toThrow();
+    delete row.paidPassingHistory;
+    expect(
+      parseCatalog(snapshot).programs.find((program) => program.id === row.id),
+    ).not.toHaveProperty("paidPassingHistory");
+  });
   it("rejects malformed import envelopes instead of silently importing the baseline", () => {
     for (const input of [
       null,
@@ -155,11 +194,11 @@ describe("catalog publication boundaries", () => {
     expect(
       parseImportEnvelope({ snapshot: repositoryCatalog, baseRevisionId: null })
         .snapshot.programs,
-    ).toHaveLength(185);
+    ).toHaveLength(190);
   });
   it("accepts every existing program, source profile and separate creative campaign", () => {
     const snapshot = parseCatalog(repositoryCatalog);
-    expect(snapshot.programs).toHaveLength(185);
+    expect(snapshot.programs).toHaveLength(190);
     expect(snapshot.universities).toHaveLength(universities.length);
     expect(snapshot.admissionCampaigns[0].groups).toHaveLength(5);
     expect(

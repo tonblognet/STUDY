@@ -159,6 +159,104 @@ export default async function checkCatalog(page) {
         fullPage: true,
       });
       await finish(university);
+
+      const hse = "/universities/hse";
+      await navigate(hse);
+      const hsePrograms = tab.locator("#programs:visible");
+      confirm(
+        (await hsePrograms.getByRole("link", { name: /^Открыть / }).count()) ===
+          6,
+        "Expected six HSE contest links",
+      );
+      await visible(
+        hsePrograms.getByText("Проходные 2025: бюджет 282, платно 250", {
+          exact: true,
+        }),
+      );
+      await visible(
+        hsePrograms.getByText("Проходные 2026: бюджет 297, платно 221", {
+          exact: true,
+        }),
+      );
+      const hseMath = hsePrograms.getByRole("link", {
+        name: "Открыть Математика",
+        exact: true,
+      });
+      await visible(hseMath);
+      confirm(
+        (await hseMath.getAttribute("href")) === "/programs/hse-math",
+        "HSE contest link missing",
+      );
+      await tab.screenshot({
+        path: `output/playwright/directory-hse-${width}.png`,
+        fullPage: true,
+      });
+      await finish(hse);
+
+      const math = "/programs/hse-math";
+      await hseMath.click();
+      await tab.waitForURL(`${origin}${math}`);
+      const fit = tab.locator("#fit:visible");
+      const budget = fit.locator("figure").filter({
+        has: tab.getByRole("heading", {
+          name: "Проходной балл на бюджет",
+          exact: true,
+        }),
+      });
+      const paid = fit.locator("figure").filter({
+        has: tab.getByRole("heading", {
+          name: "Проходной балл на платное обучение",
+          exact: true,
+        }),
+      });
+      await visible(budget.getByText("2025 · 282", { exact: true }));
+      await visible(paid.getByText("2025 · 250", { exact: true }));
+      for (const figure of [budget, paid]) {
+        const source = figure.getByRole("link", {
+          name: "Официальный источник ↗",
+        });
+        confirm(
+          (await source.getAttribute("href")) ===
+            "https://ba.hse.ru/result2025",
+          "HSE results source missing",
+        );
+      }
+      await visible(
+        tab
+          .locator("#cost:visible .sourced-metric")
+          .getByText(/560\s000\s₽\/год/),
+      );
+      await fit
+        .getByRole("spinbutton", { name: "Математика", exact: true })
+        .fill("75");
+      await fit
+        .getByRole("spinbutton", { name: "Русский язык", exact: true })
+        .fill("65");
+      const physics = fit.getByRole("spinbutton", {
+        name: "Физика",
+        exact: true,
+      });
+      await physics.fill("69");
+      await visible(
+        fit
+          .locator(".fit-result")
+          .getByText("Физика: 69, минимум 70", { exact: true }),
+      );
+      await physics.fill("70");
+      await visible(
+        fit.locator(".fit-result").getByText(/Учитываемая сумма:\s*210\b/),
+      );
+      await visible(
+        fit.locator(".fit-result").getByText(/Запас \/ дефицит:\s*—\./),
+      );
+      await tab.evaluate(() =>
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" }),
+      );
+      await tab.screenshot({
+        path: `output/playwright/contest-hse-math-${width}.png`,
+        fullPage: true,
+      });
+      await finish(math);
       confirm(errors.length === 0, errors.join(", "));
     } finally {
       await context.close();
