@@ -154,6 +154,6 @@ describe("regional university directory", () => {
         }),
       ).toThrow();
     }
-    expect(programs).toHaveLength(190);
+    expect(programs).toHaveLength(305);
   });
 });

@@ -45,12 +45,14 @@ reporting or import when an adapter is missing, duplicated or no longer linked
 to a catalog university. Each program source URL is checked against the
 registered official domains of its own university.
 
-The repository quality snapshot is regenerated with `pnpm data:report`. It describes
-the file-based import candidate, not subsequent PostgreSQL editor changes. Current
-coverage: 162 organizations, 185 programs in 20 universities, 419 separate education
-list entries, and a separate five-group MGAH creative admission campaign. Unknown
-facts and two documented MSU source conflicts remain visible. See
-[Moscow coverage](docs/MOSCOW_UNIVERSITY_COVERAGE.md) and [MSU coverage](docs/MGU_DATA_COVERAGE.md).
+The repository quality snapshot is regenerated with pnpm data:report. The
+November file candidate contains 1,225 organizations and 305 admission programmes.
+HSE contributes 121 exact 2026 groups across four campuses and a separate
+complete 340-row BA/MA catalogue. PostgreSQL publication and editorial acceptance
+are tracked separately. Unknown facts and source conflicts remain visible.
+[HSE coverage](docs/HSE_CATALOG_COVERAGE.md),
+[Moscow coverage](docs/MOSCOW_UNIVERSITY_COVERAGE.md),
+[MSU coverage](docs/MGU_DATA_COVERAGE.md).
 
 ## University and campus facts
 

@@ -194,11 +194,11 @@ describe("catalog publication boundaries", () => {
     expect(
       parseImportEnvelope({ snapshot: repositoryCatalog, baseRevisionId: null })
         .snapshot.programs,
-    ).toHaveLength(190);
+    ).toHaveLength(305);
   });
   it("accepts every existing program, source profile and separate creative campaign", () => {
     const snapshot = parseCatalog(repositoryCatalog);
-    expect(snapshot.programs).toHaveLength(190);
+    expect(snapshot.programs).toHaveLength(305);
     expect(snapshot.universities).toHaveLength(universities.length);
     expect(snapshot.admissionCampaigns[0].groups).toHaveLength(5);
     expect(

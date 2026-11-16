@@ -122,6 +122,7 @@ const program = z
     form: z.enum(["Очная", "Очно-заочная", "Заочная"]),
     duration: text,
     durationValue: stringFact.optional(),
+    admissionConditions: z.array(stringFact).optional(),
     admissionsContact: z
       .object({
         address: stringFact,
@@ -131,6 +132,7 @@ const program = z
       })
       .optional(),
     faculty: z.string().nullable(),
+    facultyValue: stringFact.optional(),
     campus: z.string().nullable(),
     language: text,
     subjects: z.array(text),
@@ -358,6 +360,8 @@ const details = z
           forms: z.string().nullable(),
           duration: z.string().nullable(),
           admissionsStatus: text,
+          programUrl: url.optional(),
+          campus: text.optional(),
           sourceUrl: url,
           sourceYear: z.number().int().nullable(),
           checkedAt: date,
@@ -574,6 +578,9 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     );
     for (const faculty of row.faculties ?? [])
       if (faculty.url) official(row.universitySlug, faculty.url, true);
+    for (const offering of row.offerings)
+      if (offering.programUrl)
+        official(row.universitySlug, offering.programUrl, true);
     if (
       row.fields.admissionsUrl &&
       !url.safeParse(row.fields.admissionsUrl.value).success
@@ -604,7 +611,9 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     );
     if (
       row.paidPassingHistory?.some(
-        (fact) => fact.value !== null && fact.status !== "verified",
+        (fact) =>
+          fact.value !== null &&
+          !["verified", "conflicting_sources"].includes(fact.status),
       )
     )
       errors.push(`Неподтверждённый платный проходной балл: ${row.slug}`);

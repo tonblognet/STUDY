@@ -27,6 +27,7 @@ import followupCentralEducationNovember9 from "@/data-sources/russia/followup-ce
 import followupContactsNovember9 from "@/data-sources/russia/followup-contacts-2026-11-09.json";
 import moscowOverviewNovember10 from "@/data-sources/russia/moscow-overview-enrichment-2026-11-10.json";
 import moscowHseNovember10 from "@/data-sources/russia/moscow-hse-enrichment-2026-11-10.json";
+import hseFullEducationNovember16 from "@/data-sources/russia/hse-full-education-2026-11-16.json";
 import moscowMiptNovember10 from "@/data-sources/russia/moscow-mipt-enrichment-2026-11-10.json";
 import moscowMisisNovember10 from "@/data-sources/russia/moscow-misis-enrichment-2026-11-10.json";
 import moscowRudnNovember10 from "@/data-sources/russia/moscow-rudn-enrichment-2026-11-10.json";
@@ -54,6 +55,8 @@ export type UniversityOffering = {
   checkedAt: string;
   sourceSha256: string;
   sourceSection?: string;
+  programUrl?: string;
+  campus?: string;
 };
 
 export type DirectoryDetails = {
@@ -225,6 +228,7 @@ export const directoryDetails = mergeDirectoryEnrichment(
     ...followupContactsNovember9.profiles,
     ...moscowOverviewNovember10.profiles,
     ...moscowHseNovember10.profiles,
+    ...hseFullEducationNovember16.profiles,
     ...moscowMiptNovember10.profiles,
     ...moscowMisisNovember10.profiles,
     ...moscowRudnNovember10.profiles,

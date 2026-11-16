@@ -46,8 +46,8 @@ describe("official university profile evidence", () => {
       "+7 (495) 771-32-42; +7 (495) 916-88-44",
     );
     expect(profile.fields.admissionsEmail?.value).toBe("abitur@hse.ru");
-    expect(profile.faculties).toHaveLength(18);
-    expect(profile.offerings).toHaveLength(233);
+    expect(profile.faculties).toHaveLength(46);
+    expect(profile.offerings).toHaveLength(573);
     expect(profile.offerings.every((row) => row.sourceYear === null)).toBe(
       true,
     );

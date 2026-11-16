@@ -163,26 +163,37 @@ export default async function checkCatalog(page) {
       const hse = "/universities/hse";
       await navigate(hse);
       const hsePrograms = tab.locator("#programs:visible");
-      confirm(
-        (await hsePrograms.getByRole("link", { name: /^Открыть / }).count()) ===
-          6,
-        "Expected six HSE contest links",
-      );
+      const hseQuery = hsePrograms.getByRole("searchbox", {
+        name: "Найти программу ВШЭ",
+      });
+      const hseCampus = hsePrograms.getByLabel("Кампус ВШЭ", { exact: true });
+      const hseLevel = hsePrograms.getByLabel("Уровень образования ВШЭ", {
+        exact: true,
+      });
+      await hseCampus.selectOption("Пермь");
+      await hseLevel.selectOption("Магистратура");
+      await hseQuery.fill("ИТ-юрист");
+      const master = hsePrograms.locator("article").filter({
+        has: tab.getByRole("heading", { name: "ИТ-юрист", exact: true }),
+      });
+      await visible(master.getByText(/480\s000\s₽\/год/));
+      await hseQuery.fill("unpublished-program-query");
       await visible(
-        hsePrograms.getByText("Проходные 2025: бюджет 282, платно 250", {
-          exact: true,
-        }),
+        hsePrograms.getByText(
+          "Программы не найдены. Измените запрос или фильтры.",
+        ),
       );
-      await visible(
-        hsePrograms.getByText("Проходные 2026: бюджет 297, платно 221", {
-          exact: true,
-        }),
-      );
+      await hseQuery.fill("Математика");
+      await hseCampus.selectOption("Москва");
+      await hseLevel.selectOption("Бакалавриат");
       const hseMath = hsePrograms.getByRole("link", {
         name: "Открыть Математика",
         exact: true,
       });
       await visible(hseMath);
+      const mathCard = hsePrograms.locator("article").filter({ has: hseMath });
+      await visible(mathCard.getByRole("link", { name: "282", exact: true }));
+      await visible(mathCard.getByRole("link", { name: "250", exact: true }));
       confirm(
         (await hseMath.getAttribute("href")) === "/programs/hse-math",
         "HSE contest link missing",

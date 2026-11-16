@@ -1,0 +1,210 @@
+.explorer {
+  padding-block: clamp(2rem, 4vw, 3.5rem);
+  border-top: 1px solid var(--profile-line, var(--line));
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.heading h2 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.75rem, 3.25vw, 2.65rem);
+  font-weight: 750;
+  letter-spacing: -0.047em;
+  line-height: 1.1;
+}
+
+.heading p,
+.identity > p,
+.note {
+  color: var(--profile-muted, var(--muted));
+  line-height: 1.6;
+}
+
+.heading > a {
+  flex-shrink: 0;
+  color: var(--profile-accent, var(--blue));
+  font-weight: 700;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.controls label {
+  min-width: 0;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.controls input,
+.controls select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.7rem;
+  border: 1px solid var(--profile-line, var(--line));
+  border-radius: 5px;
+  background: white;
+  color: var(--profile-ink, var(--ink));
+  font: inherit;
+  font-weight: 500;
+}
+
+.explorer :is(input, select, a, button):focus-visible {
+  outline: 3px solid var(--profile-accent, var(--blue));
+  outline-offset: 3px;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-block: 1rem;
+  font-size: 0.8125rem;
+  color: var(--profile-muted, var(--muted));
+}
+
+.results button {
+  min-height: 44px;
+  padding: 0.5rem;
+  border: 0;
+  background: transparent;
+  color: var(--profile-accent, var(--blue));
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: clamp(1.1rem, 2vw, 1.65rem);
+  border: 1px solid var(--profile-line, var(--line));
+  background: white;
+  overflow-wrap: anywhere;
+}
+
+.identity {
+  margin-bottom: 1rem;
+}
+
+.identity h3 {
+  margin: 0.5rem 0;
+  color: var(--profile-ink, var(--ink));
+  font-size: clamp(1.125rem, 1.75vw, 1.4rem);
+  line-height: 1.3;
+}
+
+.identity p,
+.note,
+.unknown {
+  font-size: 0.8125rem;
+}
+
+.identity .classification {
+  color: var(--profile-accent, var(--blue));
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.metrics {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.3rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--profile-line, var(--line));
+}
+
+.metrics > div {
+  min-width: 0;
+}
+
+.metrics dt {
+  margin-bottom: 0.35rem;
+  color: var(--profile-muted, var(--muted));
+  font-size: 0.75rem;
+}
+
+.metrics dd {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 750;
+}
+
+.metrics a {
+  color: var(--profile-ink, var(--ink));
+  text-decoration: underline;
+  text-decoration-color: var(--profile-line, var(--line));
+  text-underline-offset: 3px;
+}
+
+.metrics small {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--profile-muted, var(--muted));
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+
+.unknown {
+  color: var(--profile-muted, var(--muted));
+  font-weight: 500;
+}
+
+.action {
+  margin-top: auto;
+  padding-block: 0.6rem;
+  color: var(--profile-accent, var(--blue));
+  font-size: 0.875rem;
+  font-weight: 750;
+}
+
+.source {
+  padding-block: 0.45rem;
+  color: var(--profile-muted, var(--muted));
+  font-size: 0.75rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.empty {
+  padding: 2rem 1rem;
+  border: 1px solid var(--profile-line, var(--line));
+  color: var(--profile-muted, var(--muted));
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .controls,
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -5,7 +5,10 @@ import { UniversityLogo } from "@/components/university-logo";
 import { DATA_STATUS_LABELS } from "@/lib/admissions/constants";
 import { getCatalog } from "@/lib/catalog/server";
 import { formatPrice } from "@/lib/catalog/format";
-import type { Program } from "@/lib/data";
+import { HseProgramExplorer } from "@/components/hse-program-explorer";
+import { HseScoreArchive } from "@/components/hse-score-archive";
+import { HseCampusAdmissions } from "@/components/hse-campus-admissions";
+import { hseMasterTuition } from "@/lib/hse-admissions";
 import {
   MguMap,
   MguPrograms,
@@ -23,29 +26,6 @@ import { UniversityVerifiedDetails } from "@/components/university-verified-deta
 import { UniversityOfferings } from "@/components/university-offerings";
 import { UniversityAdmissionCampaign } from "@/components/university-admission-campaign";
 import styles from "./university-profile.module.css";
-
-function latestPassingSummary(program: Program) {
-  const pair = (program.paidPassingHistory ?? [])
-    .filter((point) => point.status === "verified" && point.value !== null)
-    .sort((left, right) => right.year - left.year)
-    .map((paid) => ({
-      paid,
-      budget: program.passingHistory.find(
-        (point) =>
-          point.year === paid.year &&
-          point.status === "verified" &&
-          point.value !== null,
-      ),
-    }))
-    .find(({ budget }) => budget);
-  if (!pair?.budget) return null;
-  return (
-    <small>
-      Проходные {pair.paid.year}: бюджет {pair.budget.value}, платно{" "}
-      {pair.paid.value}
-    </small>
-  );
-}
 
 export async function generateMetadata({
   params,
@@ -389,6 +369,16 @@ export default async function UniversityPage({
               Посмотреть информацию у вуза ↗
             </a>
           </section>
+        ) : slug === "hse" ? (
+          <>
+            <HseProgramExplorer
+              programs={related}
+              offerings={offerings}
+              masterTuition={hseMasterTuition}
+            />
+            <HseScoreArchive />
+            <HseCampusAdmissions />
+          </>
         ) : (
           <section id="programs" className="university-program-section">
             <div className="university-section-head">
@@ -418,7 +408,6 @@ export default async function UniversityPage({
                     <small>
                       {program.code} · {program.form}
                     </small>
-                    {latestPassingSummary(program)}
                   </div>
                   <span>{program.level}</span>
                   <span>{program.budgetPlaces ?? "—"}</span>
@@ -438,9 +427,10 @@ export default async function UniversityPage({
           </section>
         )}
 
-        {!isMgu && related.length > 0 && offerings.length > 0 && (
-          <UniversityOfferings rows={offerings} />
-        )}
+        {!isMgu &&
+          slug !== "hse" &&
+          related.length > 0 &&
+          offerings.length > 0 && <UniversityOfferings rows={offerings} />}
         {!isMgu && related.length > 0 && campaign && (
           <UniversityAdmissionCampaign campaign={campaign} />
         )}

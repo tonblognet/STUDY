@@ -212,6 +212,21 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
                 </p>
               </div>
             )}
+            {program.additionalExams?.map((exam) => (
+              <article key={exam.id}>
+                <h3>{exam.title.value}</h3>
+                <div className="metric-grid">
+                  <SourcedMetric
+                    label="Минимум испытания"
+                    field={exam.minimum}
+                  />
+                  <SourcedMetric
+                    label="Максимум испытания"
+                    field={exam.maximum}
+                  />
+                </div>
+              </article>
+            ))}
             <div className="metric-grid three">
               <SourcedMetric label="ДВИ" field={program.dviValue} />
               <SourcedMetric label="Максимум ДВИ" field={program.dviMax} />
@@ -224,6 +239,18 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
                 format={(value) => `до ${value} баллов`}
               />
             </div>
+            {Boolean(program.admissionConditions?.length) && (
+              <details>
+                <summary>Другие основания поступления</summary>
+                {program.admissionConditions?.map((condition, index) => (
+                  <SourcedMetric
+                    key={index}
+                    label="Условие приёма"
+                    field={condition}
+                  />
+                ))}
+              </details>
+            )}
           </section>
 
           <section className="decision-section" id="cost">

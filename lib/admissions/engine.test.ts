@@ -84,8 +84,17 @@ describe("layer 02 admission engine boundaries", () => {
   );
   it("does not invent an achievements cap", () => {
     expect(
-      matchProgram(hse, { ...profile, individualAchievements: 5 })
-        .consideredScore,
+      matchProgram(
+        {
+          ...hse,
+          individualAchievementsMax: {
+            ...hse.individualAchievementsMax,
+            value: null,
+            status: "pending_review",
+          },
+        },
+        { ...profile, individualAchievements: 5 },
+      ).consideredScore,
     ).toBeNull();
     const result = matchProgram(
       { ...hse, individualAchievementsMax: fact(3) },
