@@ -35,6 +35,21 @@ function scopedCatalog(...slugs: string[]): CatalogSnapshot {
 }
 
 describe("catalog publication boundaries", () => {
+  it("preserves reviewed partner course links without accepting arbitrary destinations", () => {
+    const snapshot = scopedCatalog("hse");
+    const details = snapshot.directoryDetails[0];
+    const partner = details.offerings.find((row) =>
+      row.programUrl?.startsWith("https://openedu.ru/"),
+    )!;
+    expect(partner).toBeDefined();
+    delete details.admissionResources;
+    details.offerings = [partner];
+    expect(
+      parseCatalog(snapshot).directoryDetails[0].offerings[0].programUrl,
+    ).toBe(partner.programUrl);
+    partner.programUrl = "https://evil.example/course";
+    expect(() => parseCatalog(snapshot)).toThrow(/Неофициальный источник/);
+  });
   it("rejects a prepared import if a publication advances its base before the lock", async () => {
     const before = scopedCatalog("hse");
     const incoming = structuredClone(before);

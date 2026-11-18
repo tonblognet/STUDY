@@ -34,8 +34,22 @@
 
 .controls {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.filterNote {
+  max-width: 80ch;
+  margin: 1rem 0;
+  color: var(--profile-muted, var(--muted));
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.identity .conditionStatus {
+  color: var(--profile-accent, var(--blue));
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .controls label {

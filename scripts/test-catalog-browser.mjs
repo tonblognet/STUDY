@@ -3,6 +3,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import checkCatalog from "../tests/catalog-browser.mjs";
+import checkEducationPathways from "../tests/education-pathways-browser.mjs";
 
 const cli = process.env.BROWSER_CLI;
 assert.ok(
@@ -41,7 +42,19 @@ try {
   const match = result.match(/### Result\r?\n\s*(\[.*?\])(?=\s*###|\s*$)/s);
   assert.ok(match, "Playwright must return a structured result");
   const reports = JSON.parse(match[1]);
-  assert.equal(reports.length, 10);
+  const pathwayFile = resolve("tmp/pathway-browser-code.js");
+  writeFileSync(pathwayFile, `(${checkEducationPathways.toString()})\n`);
+  const pathwayResult = call(["run-code", `--filename=${pathwayFile}`]);
+  writeFileSync("output/playwright/pathway-browser.log", pathwayResult);
+  const pathwayMatch = pathwayResult.match(
+    /### Result\r?\n\s*(\[.*?\])(?=\s*###|\s*$)/s,
+  );
+  assert.ok(
+    pathwayMatch,
+    "Education pathway checks must return structured results",
+  );
+  reports.push(...JSON.parse(pathwayMatch[1]));
+  assert.equal(reports.length, 18);
   for (const width of [1440, 390]) {
     for (const route of [
       "/programs/mpei-applied-informatics",
@@ -49,6 +62,10 @@ try {
       "/universities/rudn",
       "/universities/hse",
       "/programs/hse-math",
+      "/programs?track=master",
+      "/programs?track=aspirantura",
+      "/programs?track=doctorate",
+      "/programs?track=college",
     ]) {
       assert.ok(
         reports.some(

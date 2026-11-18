@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import evidence from "@/data-sources/release/2026-12/evidence/2026-11-16-hse-results-all.json";
 import styles from "./hse-score-archive.module.css";
 
 type ArchiveStatus =
@@ -26,6 +25,7 @@ export type HseScoreArchiveRecord = {
   codes?: string[];
   campus: string;
   year: number;
+  level?: "Бакалавриат и специалитет" | "Магистратура";
   programUrls: string[];
   budget: ArchiveScore;
   paid: ArchiveScore;
@@ -35,7 +35,7 @@ export type HseScoreArchiveRecord = {
   pageOneBased?: number;
 };
 
-type ArchiveData = {
+export type ArchiveData = {
   records: HseScoreArchiveRecord[];
   sources: Record<string, { url: string }>;
   knownConflicts: {
@@ -48,7 +48,6 @@ type ArchiveData = {
   }[];
 };
 
-const archive = evidence as ArchiveData;
 const PAGE_SIZE = 12;
 const STATUS_LABELS: Record<ArchiveStatus, string> = {
   verified: "Опубликовано",
@@ -97,24 +96,32 @@ function FundingScore({
 }
 
 export function HseScoreArchive({
+  data: archive,
   rows = archive.records,
 }: {
+  data: ArchiveData;
   rows?: readonly HseScoreArchiveRecord[];
 }) {
   const [query, setQuery] = useState("");
   const [campus, setCampus] = useState("all");
   const [year, setYear] = useState("all");
+  const [level, setLevel] = useState("all");
   const [limit, setLimit] = useState(PAGE_SIZE);
   const campuses = [...new Set(rows.map((row) => row.campus))].sort((a, b) =>
     a.localeCompare(b, "ru"),
   );
   const years = [...new Set(rows.map((row) => row.year))].sort((a, b) => b - a);
+  const levels = [
+    ...new Set(rows.map((row) => row.level ?? "Бакалавриат и специалитет")),
+  ];
   const term = normalize(query);
   const filtered = rows
     .filter(
       (row) =>
         (campus === "all" || row.campus === campus) &&
         (year === "all" || row.year.toString() === year) &&
+        (level === "all" ||
+          (row.level ?? "Бакалавриат и специалитет") === level) &&
         normalize(
           `${row.title} ${row.code ?? ""} ${(row.codes ?? []).join(" ")}`,
         ).includes(term),
@@ -132,9 +139,9 @@ export function HseScoreArchive({
       <div className={styles.intro}>
         <h2 id="hse-score-heading">Архив проходных баллов ВШЭ</h2>
         <p>
-          Опубликованные итоги приёма 2025 и 2026 годов по четырём кампусам.
-          Бюджетный и платный результаты показаны с годом и областью конкурса.
-          Шкала баллов указана там, где её раскрывает источник.
+          Доступные официальные итоги приёма по годам. Выберите кампус и год,
+          чтобы увидеть бюджетный и платный результаты с областью конкурса.
+          Шкала баллов сохранена по источнику каждого года.
         </p>
       </div>
       <div className={styles.filters}>
@@ -156,6 +163,7 @@ export function HseScoreArchive({
           Кампус
           <select
             id="hse-score-campus"
+            aria-label="Кампус архива ВШЭ"
             value={campus}
             onChange={(event) => {
               setCampus(event.target.value);
@@ -174,6 +182,7 @@ export function HseScoreArchive({
           Год приёма
           <select
             id="hse-score-year"
+            aria-label="Год приёма в архиве ВШЭ"
             value={year}
             onChange={(event) => {
               setYear(event.target.value);
@@ -188,6 +197,23 @@ export function HseScoreArchive({
             ))}
           </select>
         </label>
+        <label htmlFor="hse-score-level">
+          Уровень образования
+          <select
+            id="hse-score-level"
+            aria-label="Уровень образования в архиве ВШЭ"
+            value={level}
+            onChange={(event) => {
+              setLevel(event.target.value);
+              setLimit(PAGE_SIZE);
+            }}
+          >
+            <option value="all">Все уровни</option>
+            {levels.map((item) => (
+              <option key={item}>{item}</option>
+            ))}
+          </select>
+        </label>
       </div>
       <p className={styles.count} role="status" aria-live="polite">
         Найдено конкурсов {filtered.length} из {rows.length}
@@ -198,6 +224,7 @@ export function HseScoreArchive({
           const conflicts = archive.knownConflicts.filter(
             (conflict) =>
               row.campus === "Москва" &&
+              row.level !== "Магистратура" &&
               row.year === conflict.year &&
               row.title.startsWith(conflict.title) &&
               (codes.includes(conflict.code) ||
@@ -209,11 +236,18 @@ export function HseScoreArchive({
                 <p className={styles.meta}>
                   <span>{row.campus}</span>
                   <span>{row.year}</span>
+                  <span>{row.level ?? "Бакалавриат и специалитет"}</span>
                 </p>
                 <h3>{row.title}</h3>
-                <p className={styles.codes}>
-                  {codes.filter(Boolean).join(" / ")}
-                </p>
+                {codes.some(Boolean) ? (
+                  <p className={styles.codes}>
+                    {codes.filter(Boolean).join(" / ")}
+                  </p>
+                ) : (
+                  <p className={styles.note}>
+                    Код не указан в историческом источнике.
+                  </p>
+                )}
                 {row.scopeNoteRu && (
                   <p className={styles.scope}>{row.scopeNoteRu}</p>
                 )}

@@ -278,10 +278,36 @@ test("server-renders the filterable program catalog", async () => {
     Buffer.byteLength(html) < 2 * 1024 * 1024,
     "program catalog exceeds SSR smoke limit",
   );
-  assert.match(html, /Программы московских вузов/);
+  assert.match(html, /Бакалавриат и специалитет/);
+  assert.match(html, /Уровень образования/);
   assert.match(html, /Название программы, направление или вуз/);
   assert.match(html, /Бюджетные места/);
 });
+
+for (const [track, title, evidence] of [
+  ["master", "Магистратура", "ma.hse.ru"],
+  ["aspirantura", "Аспирантура", "aspirantura.hse.ru"],
+  ["doctorate", "Докторантура", "Докторские диссертации"],
+  ["college", "Колледжи · СПО", "Экономика и бухгалтерский учет"],
+]) {
+  test(`server-renders the ${track} pathway and its own admission context`, async () => {
+    const response = await fetch(`${base}/programs?track=${track}`);
+    assert.equal(response.status, 200);
+    const html = await response.text();
+    assert.ok(html.includes(title));
+    assert.ok(html.includes(evidence));
+    assert.match(html, /Уровень образования/);
+    assert.match(html, /Наличие условий/);
+    assert.doesNotMatch(html, /Введите баллы ЕГЭ/);
+    if (track === "doctorate") {
+      assert.match(
+        html,
+        /Подтверждённые программы этого уровня ещё не добавлены/,
+      );
+      assert.doesNotMatch(html, /Doctor in\/of/);
+    }
+  });
+}
 
 test("MGU page exposes sourced contest groups, archive and opt-in map", async () => {
   const response = await fetch(`${base}/universities/mgu`);

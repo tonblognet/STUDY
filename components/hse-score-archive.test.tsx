@@ -4,15 +4,17 @@ import evidence from "@/data-sources/release/2026-12/evidence/2026-11-16-hse-res
 import {
   HseScoreArchive,
   type HseScoreArchiveRecord,
+  type ArchiveData,
 } from "./hse-score-archive";
 
 const records = evidence.records as HseScoreArchiveRecord[];
+const archive = evidence as ArchiveData;
 
 describe("HSE official score archive", () => {
   it("offers all campuses and years while limiting the initial page to 12 results", () => {
-    const html = renderToStaticMarkup(<HseScoreArchive />);
+    const html = renderToStaticMarkup(<HseScoreArchive data={archive} />);
     expect(html.match(/<article /g)).toHaveLength(12);
-    expect(html).toContain("Найдено конкурсов 140 из 140");
+    expect(html).toContain("Найдено конкурсов 2400 из 2400");
     expect(html).toContain("Показать ещё 12 конкурсов");
     expect(html).toContain('id="hse-score-query"');
     expect(html).toContain('id="hse-score-campus"');
@@ -27,6 +29,7 @@ describe("HSE official score archive", () => {
     }
     expect(html).toContain('<option value="2025">');
     expect(html).toContain('<option value="2026">');
+    expect(html).toContain('<option value="2012">');
   });
 
   it("preserves a shared historical result with both codes and its official source", () => {
@@ -34,7 +37,9 @@ describe("HSE official score archive", () => {
       (row) =>
         row.campus === "Пермь" && row.year === 2025 && row.codes?.length === 2,
     )!;
-    const html = renderToStaticMarkup(<HseScoreArchive rows={[shared]} />);
+    const html = renderToStaticMarkup(
+      <HseScoreArchive data={archive} rows={[shared]} />,
+    );
     expect(html.match(/<article /g)).toHaveLength(1);
     expect(html).toContain("38.03.01 / 38.03.02");
     expect(html).toContain("Результат относится к общей группе");
@@ -56,7 +61,7 @@ describe("HSE official score archive", () => {
       (row) => row.paid.status === "pending_review",
     )!;
     const html = renderToStaticMarkup(
-      <HseScoreArchive rows={[pmi, pending]} />,
+      <HseScoreArchive data={archive} rows={[pmi, pending]} />,
     );
     expect(html).toContain("Без числового проходного");
     expect(html).toContain("были заняты поступившими в приоритетном порядке");
@@ -76,7 +81,9 @@ describe("HSE official score archive", () => {
         row.year === 2025 &&
         row.title.startsWith("Дизайн и разработка информационных продуктов"),
     )!;
-    const html = renderToStaticMarkup(<HseScoreArchive rows={[drip]} />);
+    const html = renderToStaticMarkup(
+      <HseScoreArchive data={archive} rows={[drip]} />,
+    );
     expect(html).toContain("Расхождение официальных источников");
     expect(html).toContain("240 баллов");
     expect(html).toContain("комиссии — 241");
@@ -88,7 +95,7 @@ describe("HSE official score archive", () => {
     const serialized = JSON.stringify(evidence);
     expect(serialized).not.toMatch(/localFile|visualEvidence|[A-Z]:[\\/]/);
     for (const row of records) {
-      expect(row.programUrls.length).toBeGreaterThan(0);
+      expect(evidence.sources).toHaveProperty(row.source);
       for (const url of row.programUrls) {
         expect(new URL(url).hostname).toMatch(/(^|\.)hse\.ru$/);
       }
@@ -97,5 +104,41 @@ describe("HSE official score archive", () => {
       expect(new URL(source.url).hostname).toMatch(/(^|\.)hse\.ru$/);
     }
     expect(new Set(records.map((row) => row.id)).size).toBe(records.length);
+  });
+
+  it("uses final 2013 results and preserves year-specific historical score scales", () => {
+    const legacy2013 = records.filter(
+      (row) =>
+        row.campus === "Москва" &&
+        row.year === 2013 &&
+        row.level !== "Магистратура",
+    );
+    expect(legacy2013).toHaveLength(31);
+    expect(
+      legacy2013.every(
+        (row) => row.source === "moscow-2013-report" && row.budget.maximum,
+      ),
+    ).toBe(true);
+    expect(evidence.excludedSources[0].source.url).toBe(
+      "https://ba.hse.ru/greenwave2013",
+    );
+    expect(evidence.excludedSources[0].reasonRu).toContain("первой волны");
+    const maths = records.filter(
+      (row) =>
+        row.campus === "Москва" &&
+        row.level !== "Магистратура" &&
+        row.title === "Математика" &&
+        [2015, 2016].includes(row.year),
+    );
+    expect(maths.map((row) => [row.year, row.budget.maximum])).toEqual([
+      [2015, 320],
+      [2016, 310],
+    ]);
+    const html = renderToStaticMarkup(
+      <HseScoreArchive data={archive} rows={maths} />,
+    );
+    expect(html).toContain("из 320");
+    expect(html).toContain("из 310");
+    expect(html).toContain("В сумму по итоговому отчёту входят индивидуальные");
   });
 });

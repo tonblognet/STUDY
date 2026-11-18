@@ -228,10 +228,17 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
               </article>
             ))}
             <div className="metric-grid three">
-              <SourcedMetric label="ДВИ" field={program.dviValue} />
-              <SourcedMetric label="Максимум ДВИ" field={program.dviMax} />
-              {program.dviMinimum && (
-                <SourcedMetric label="Минимум ДВИ" field={program.dviMinimum} />
+              {!program.additionalExams?.length && (
+                <>
+                  <SourcedMetric label="ДВИ" field={program.dviValue} />
+                  <SourcedMetric label="Максимум ДВИ" field={program.dviMax} />
+                  {program.dviMinimum && (
+                    <SourcedMetric
+                      label="Минимум ДВИ"
+                      field={program.dviMinimum}
+                    />
+                  )}
+                </>
               )}
               <SourcedMetric
                 label="Индивидуальные достижения"

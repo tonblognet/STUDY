@@ -6,13 +6,15 @@ import { validateAdmissionCampaign } from "@/lib/university-admission-campaigns"
 import type { CatalogSnapshot } from "./types";
 import { CatalogError } from "./types";
 import { directoryDetails as repositoryDirectoryDetails } from "@/lib/university-directory-details";
+import { createHseAdmissionResourcesSchema } from "./hse-admission-resources-schema";
 
 // Preserve exact, previously reviewed directory evidence (including official
 // registry documents and university redirects); it is not an arbitrary host allowlist.
 function knownDirectoryUrls(value: unknown): string[] {
   if (!value || typeof value !== "object") return [];
   return Object.entries(value).flatMap(([key, child]) =>
-    ["sourceUrl", "url", "pageUrl"].includes(key) && typeof child === "string"
+    ["sourceUrl", "url", "pageUrl", "programUrl"].includes(key) &&
+    typeof child === "string"
       ? [child]
       : knownDirectoryUrls(child),
   );
@@ -89,6 +91,11 @@ const numberFact = sourcedSchema(z.number().nonnegative());
 const placesFact = sourcedSchema(z.number().int().nonnegative());
 const stringFact = sourcedSchema(z.string());
 const booleanFact = sourcedSchema(z.boolean());
+const hseAdmissionResources = createHseAdmissionResourcesSchema({
+  numberFact,
+  placesFact,
+  stringFact,
+});
 const assetUrl = z.union([
   url,
   z.string().regex(/^\/university-logos\/[a-zA-Z0-9/_\-.]+$/),
@@ -305,6 +312,7 @@ const details = z
           .strict(),
       )
       .optional(),
+    admissionResources: hseAdmissionResources.optional(),
     educationAreas: z.array(
       z
         .object({
@@ -362,6 +370,26 @@ const details = z
           admissionsStatus: text,
           programUrl: url.optional(),
           campus: text.optional(),
+          admissionDetails: z
+            .object({
+              priorEducation: stringFact.optional(),
+              schoolBase: z.union([z.literal(9), z.literal(11)]).optional(),
+              annualTuition: numberFact.optional(),
+              budgetPlaces: placesFact.optional(),
+              paidPlaces: placesFact.optional(),
+              exams: stringFact.optional(),
+              note: text.optional(),
+            })
+            .strict()
+            .optional(),
+          publishedPrice: z
+            .object({
+              amount: z.number().nonnegative(),
+              currency: z.string().refine((value) => value.trim().length > 0),
+              period: z.string().nullable(),
+            })
+            .strict()
+            .optional(),
           sourceUrl: url,
           sourceYear: z.number().int().nullable(),
           checkedAt: date,
@@ -569,6 +597,8 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
   for (const row of snapshot.universityFacts)
     errors.push(...validateUniversityFactProfile(row).errors);
   for (const row of snapshot.directoryDetails) {
+    if (row.admissionResources && row.universitySlug !== "hse")
+      errors.push("Ресурсы приёма ВШЭ относятся только к профилю hse");
     visitSources(row, row.universitySlug, true);
     unique(
       (row.faculties ?? []).map((faculty) =>

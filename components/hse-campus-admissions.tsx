@@ -1,4 +1,4 @@
-import evidence from "@/data-sources/release/2026-12/evidence/2026-11-16-hse-campus-services.json";
+import type evidenceType from "@/data-sources/release/2026-12/evidence/2026-11-16-hse-campus-services.json";
 import styles from "./hse-campus-admissions.module.css";
 
 const labels: Record<string, string> = {
@@ -17,13 +17,17 @@ const labels: Record<string, string> = {
   contract_conclusion_deadline: "Завершение заключения договоров",
   contract_enrollment_deadline: "Завершение платного зачисления",
 };
-const sources: Record<string, { url: string }> = evidence.sources;
 const dateFormat = new Intl.DateTimeFormat("ru-RU", {
   dateStyle: "long",
   timeZone: "Europe/Moscow",
 });
 
-export function HseCampusAdmissions() {
+export function HseCampusAdmissions({
+  data: evidence,
+}: {
+  data: typeof evidenceType;
+}) {
+  const sources: Record<string, { url: string }> = evidence.sources;
   return (
     <section className={styles.section} aria-labelledby="hse-campus-heading">
       <h2 id="hse-campus-heading">Сроки и условия в кампусах</h2>
@@ -73,7 +77,13 @@ export function HseCampusAdmissions() {
               <article>
                 <h3>Общежития</h3>
                 <p>{housing.contactUnit}</p>
+                {"address" in housing && housing.address && (
+                  <p>{housing.address}</p>
+                )}
                 <p>{housing.phoneRaw}</p>
+                {"email" in housing && housing.email && (
+                  <a href={`mailto:${housing.email}`}>{housing.email}</a>
+                )}
                 <a
                   href={sources[housing.contactSourceKey].url}
                   target="_blank"
@@ -97,6 +107,11 @@ export function HseCampusAdmissions() {
                 <h3>Военная подготовка</h3>
                 <p>{military.address}</p>
                 <p>{military.phoneRaw}</p>
+                {military.emails.map((email) => (
+                  <a key={email} href={`mailto:${email}`}>
+                    {email}
+                  </a>
+                ))}
                 <a
                   href={sources[military.sourceKey].url}
                   target="_blank"

@@ -93,7 +93,15 @@ export default async function checkAccessibility(page, config) {
               .evaluate((element) => element === document.activeElement),
           );
         }
-        if (item.state === "navigation-open") {
+        if (item.state === "hse-campus-open") {
+          phase = "hse_campus";
+          const summary = tab.locator("summary").filter({ hasText: /^Пермь$/ });
+          await summary.click();
+          await summary
+            .locator("..")
+            .getByRole("heading", { name: "Приёмная кампания 2026" })
+            .waitFor({ state: "visible" });
+        } else if (item.state === "navigation-open") {
           phase = "navigation_menu";
           opener = tab.getByRole("button", {
             name: /^(Открыть|Закрыть) меню$/,

@@ -43,14 +43,20 @@ export default async function checkCatalog(page) {
         `${route} did not respond with HTTP 200`,
       );
     };
-    const finish = async (route) => {
+    const finish = async (route, checks) => {
       confirm(
         await tab.evaluate(
           () => document.documentElement.scrollWidth <= window.innerWidth + 1,
         ),
         `${route} overflows`,
       );
-      reports.push({ route, width, height, passed: true });
+      reports.push({
+        route,
+        width,
+        height,
+        passed: true,
+        ...(checks ? { checks } : {}),
+      });
     };
     try {
       for (const slug of ["mpei-applied-informatics", "rudn-applied-math"]) {
@@ -170,6 +176,50 @@ export default async function checkCatalog(page) {
       const hseLevel = hsePrograms.getByLabel("Уровень образования ВШЭ", {
         exact: true,
       });
+      const hseFaculty = hsePrograms.getByLabel("Подразделение ВШЭ", {
+        exact: true,
+      });
+      const hseForm = hsePrograms.getByLabel("Форма обучения ВШЭ", {
+        exact: true,
+      });
+      const hseFunding = hsePrograms.getByLabel("Оплата обучения ВШЭ", {
+        exact: true,
+      });
+      const hseMaxTuition = hsePrograms.getByRole("spinbutton", {
+        name: "Стоимость года до, ₽",
+        exact: true,
+      });
+      const hseYear = hsePrograms.getByLabel("Год набора ВШЭ", {
+        exact: true,
+      });
+      const hseConditions = hsePrograms.getByLabel("Известные условия ВШЭ", {
+        exact: true,
+      });
+      const hseChecks = [];
+      const hseEmpty = hsePrograms.getByText(
+        "Программы не найдены. Измените запрос или фильтры.",
+        { exact: true },
+      );
+      const noHseRows = async () => {
+        await visible(hseEmpty);
+        confirm(
+          (await hsePrograms.locator("article").count()) === 0,
+          "HSE empty result retained a program card",
+        );
+      };
+      const resetHse = async () => {
+        await hsePrograms
+          .getByRole("button", { name: "Сбросить фильтры", exact: true })
+          .click();
+        await tab.waitForFunction(
+          () =>
+            [
+              ...document.querySelectorAll("#programs input, #programs select"),
+            ].every((control) => control.value === ""),
+          undefined,
+          { timeout: 8000 },
+        );
+      };
       await hseCampus.selectOption("Пермь");
       await hseLevel.selectOption("Магистратура");
       await hseQuery.fill("ИТ-юрист");
@@ -177,21 +227,180 @@ export default async function checkCatalog(page) {
         has: tab.getByRole("heading", { name: "ИТ-юрист", exact: true }),
       });
       await visible(master.getByText(/480\s000\s₽\/год/));
-      await hseQuery.fill("unpublished-program-query");
-      await visible(
-        hsePrograms.getByText(
-          "Программы не найдены. Измените запрос или фильтры.",
-        ),
+      await hseFaculty.selectOption("Магистерская школа");
+      await hseForm.selectOption("Очная");
+      await hseFunding.selectOption("paid");
+      await hseYear.selectOption("2026");
+      await hseConditions.selectOption("known");
+      await hseMaxTuition.fill("480000");
+      await visible(master.getByText(/480\s000\s₽\/год/));
+      await visible(master.getByText("Магистерская школа", { exact: true }));
+      await visible(master.getByRole("link", { name: "100", exact: true }));
+      confirm(
+        (await hsePrograms.locator("article").count()) === 1,
+        "HSE combined master filters did not isolate the Perm admission record",
       );
+      await hseMaxTuition.fill("479999");
+      await noHseRows();
+      await hseMaxTuition.fill("480000");
+      await visible(master);
+      await hseFunding.selectOption("budget");
+      await noHseRows();
+      await hseFunding.selectOption("paid");
+      await visible(master);
+      hseChecks.push("master-faculty-form-funding-annual-cost-year-known");
+      await resetHse();
+      await hseQuery.fill("unpublished-program-query");
+      await noHseRows();
+      await resetHse();
+
+      // The official BA snapshot names both the legal in-person form and online delivery.
+      await hseQuery.fill("Компьютерные науки и анализ данных");
+      await hseCampus.selectOption("Москва");
+      await hseLevel.selectOption("Бакалавриат");
+      await hseFaculty.selectOption("Факультет компьютерных наук");
+      await hseForm.selectOption("Онлайн");
+      await hseFunding.selectOption("budget");
+      await hseYear.selectOption("2026");
+      await hseMaxTuition.fill("640000");
+      await hseConditions.selectOption("known");
+      const onlineBachelor = hsePrograms.locator("article").filter({
+        has: tab.getByRole("link", {
+          name: "Условия поступления и проверка баллов — Компьютерные науки и анализ данных",
+          exact: true,
+        }),
+      });
+      await visible(onlineBachelor.getByText(/640\s000\s₽\/год/));
+      await hseForm.selectOption("Очная");
+      await visible(onlineBachelor);
+      await hseForm.selectOption("Очно-заочная");
+      await noHseRows();
+      hseChecks.push("online-and-in-person-modes-remain-distinct");
+      await resetHse();
+
+      // This exact specialty has three campuses in the official graduate-school table.
+      await hseLevel.selectOption("Аспирантура");
+      await hseFaculty.selectOption("Аспирантская школа по математике");
+      await hseConditions.selectOption("needs-review");
+      await hseQuery.fill("Вещественный, комплексный и функциональный анализ");
+      const graduateSchool = hsePrograms.locator("article").filter({
+        has: tab.getByRole("heading", {
+          name: "Вещественный, комплексный и функциональный анализ",
+          exact: true,
+        }),
+      });
+      for (const campus of ["Москва", "Нижний Новгород", "Санкт-Петербург"]) {
+        await hseCampus.selectOption(campus);
+        await visible(graduateSchool);
+        confirm(
+          (await hsePrograms.locator("article").count()) === 1,
+          `HSE graduate specialty lost its ${campus} membership`,
+        );
+      }
+      confirm(
+        (await graduateSchool
+          .getByRole("link", { name: "Официальный перечень ↗", exact: true })
+          .getAttribute("href")) === "https://aspirantura.hse.ru/spec",
+        "HSE graduate specialty source changed",
+      );
+      await hseCampus.selectOption("Пермь");
+      await noHseRows();
+      await hseCampus.selectOption("Москва");
+      await hseConditions.selectOption("needs-review");
+      await visible(graduateSchool);
+      await visible(
+        graduateSchool.getByText("Год набора в общем каталоге не указан.", {
+          exact: true,
+        }),
+      );
+      await hseConditions.selectOption("known");
+      await noHseRows();
+      await hseConditions.selectOption("needs-review");
+      await hseYear.selectOption("2026");
+      await noHseRows();
+      await hseYear.selectOption("");
+      await visible(graduateSchool);
+      await hseForm.selectOption("Очная");
+      await noHseRows();
+      hseChecks.push(
+        "graduate-school-explicit-faculty-multi-campus-unknown-conditions",
+      );
+      await resetHse();
+
+      // DPO subject areas do not establish a faculty or current admission conditions.
+      await hseQuery.fill("Менеджмент игровых проектов");
+      await hseLevel.selectOption("Профессиональная переподготовка");
+      await hseConditions.selectOption("needs-review");
+      const dpo = hsePrograms.locator("article").filter({
+        has: tab.getByRole("heading", {
+          name: "Менеджмент игровых проектов",
+          exact: true,
+        }),
+      });
+      await visible(dpo);
+      await hseFaculty.selectOption("Магистерская школа");
+      await noHseRows();
+      await hseFaculty.selectOption("");
+      await hseYear.selectOption("2026");
+      await noHseRows();
+      hseChecks.push("dpo-subject-area-does-not-invent-faculty-or-campaign");
+      await resetHse();
+
+      // The source publishes 7,200 RUB for this online specialization without a billing period.
+      await hseQuery.fill("Алгоритмы и структуры данных");
+      await hseLevel.selectOption("Специализация");
+      await hseForm.selectOption("Онлайн");
+      await hseConditions.selectOption("needs-review");
+      const course = hsePrograms.locator("article").filter({
+        has: tab.getByRole("heading", {
+          name: "Алгоритмы и структуры данных",
+          exact: true,
+        }),
+      });
+      const coursePrice = course.getByRole("link", {
+        name: /7\s200 RUB · период оплаты не указан/,
+      });
+      await visible(coursePrice);
+      confirm(
+        (await coursePrice.getAttribute("href")) ===
+          "https://www.hse.ru/n/education/online/page/9",
+        "HSE published course price lost its catalogue source",
+      );
+      confirm(
+        (await course.getByText("Стоимость года", { exact: true }).count()) ===
+          0,
+        "HSE course price was presented as annual tuition",
+      );
+      await hseMaxTuition.fill("1000000");
+      await noHseRows();
+      await hseMaxTuition.fill("");
+      await visible(course);
+      await hseFunding.selectOption("paid");
+      await noHseRows();
+      await hseFunding.selectOption("");
+      await hseConditions.selectOption("known");
+      await noHseRows();
+      await hseConditions.selectOption("needs-review");
+      await visible(coursePrice);
+      hseChecks.push(
+        "published-course-price-is-neither-annual-tuition-nor-paid-places",
+      );
+      await resetHse();
+
       await hseQuery.fill("Математика");
       await hseCampus.selectOption("Москва");
       await hseLevel.selectOption("Бакалавриат");
       const hseMath = hsePrograms.getByRole("link", {
-        name: "Открыть Математика",
+        name: "Условия поступления и проверка баллов — Математика",
         exact: true,
       });
       await visible(hseMath);
-      const mathCard = hsePrograms.locator("article").filter({ has: hseMath });
+      const mathCard = hsePrograms.locator("article").filter({
+        has: tab.getByRole("link", {
+          name: "Условия поступления и проверка баллов — Математика",
+          exact: true,
+        }),
+      });
       await visible(mathCard.getByRole("link", { name: "282", exact: true }));
       await visible(mathCard.getByRole("link", { name: "250", exact: true }));
       confirm(
@@ -202,7 +411,7 @@ export default async function checkCatalog(page) {
         path: `output/playwright/directory-hse-${width}.png`,
         fullPage: true,
       });
-      await finish(hse);
+      await finish(hse, hseChecks);
 
       const math = "/programs/hse-math";
       await hseMath.click();

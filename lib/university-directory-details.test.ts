@@ -46,11 +46,14 @@ describe("official university profile evidence", () => {
       "+7 (495) 771-32-42; +7 (495) 916-88-44",
     );
     expect(profile.fields.admissionsEmail?.value).toBe("abitur@hse.ru");
-    expect(profile.faculties).toHaveLength(46);
-    expect(profile.offerings).toHaveLength(573);
-    expect(profile.offerings.every((row) => row.sourceYear === null)).toBe(
-      true,
-    );
+    expect(profile.faculties).toHaveLength(69);
+    expect(profile.offerings).toHaveLength(1463);
+    expect(
+      profile.offerings.filter((row) => row.sourceYear === null),
+    ).toHaveLength(1412);
+    expect(
+      profile.offerings.filter((row) => row.sourceYear === 2026),
+    ).toHaveLength(51);
   });
 
   it("preserves the reviewed official overview and its exact snapshot provenance", () => {
@@ -470,8 +473,9 @@ describe("official university profile evidence", () => {
         profile.offerings.length,
       );
       for (const row of profile.offerings) {
-        expect(row.code).toMatch(/^\d{2}\.(03|04|05|06|07|08|09)\.\d{2}$/);
-        expect(row.admissionsStatus).toBe("pending_review");
+        expect(row.code.trim().length).toBeGreaterThan(0);
+        if (row.sourceYear === null)
+          expect(row.admissionsStatus).toBe("pending_review");
         expect(ids.has(row.id)).toBe(false);
         expect(row.sourceUrl).toMatch(/^https?:\/\//);
         expect(row.sourceSha256).toMatch(/^[a-f0-9]{64}$/);

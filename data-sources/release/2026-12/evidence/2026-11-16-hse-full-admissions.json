@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "year": 2026,
-  "checkedAt": "2026-11-16T15:36:01+00:00",
+  "checkedAt": "2026-11-18T00:05:19+00:00",
   "scope": "Все 121 конкурсное предложение бакалавриата и специалитета из четырёх официальных планов мест ВШЭ 2026; источники и неизвестные значения сохранены.",
   "sources": {
     "source-613c96504041e12d": {
@@ -612,6 +612,14 @@
       "retrievedAt": "2026-11-16T14:44:53.388866+00:00",
       "sha256": "a74a6038201c16679b9f67ac1bd8af7f97d6940f5cf5ab623c4e7fd79579896d",
       "bytes": 121218
+    },
+    "source-55b1cc53d6612318": {
+      "url": "https://spb.hse.ru/ba/statistics2026",
+      "kind": "html",
+      "retrievedAt": "2026-11-18T00:01:43.663859+00:00",
+      "sha256": "43c3b7195dbbe5ee64b27c4d292f8bb6cff874b8cf45d117e4f3c2ff4a10a4bb",
+      "bytes": 122551,
+      "captureKind": "raw_response_bytes"
     },
     "source-ab6abb30e7a8ab98": {
       "url": "https://www.hse.ru/pubs/share/direct/1134848020.docx",
@@ -7802,6 +7810,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[2]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 290,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[1], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 243,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[1], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[1], budget; table[2], tr[1], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -7875,6 +7900,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[3]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 289,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[2], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 244,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[2], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[2], budget; table[2], tr[2], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -7948,6 +7990,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[4]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 265,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[3], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 216,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[3], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[3], budget; table[2], tr[3], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8077,6 +8136,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[5]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 280,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[4], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 218,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[4], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[4], budget; table[2], tr[4], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8150,6 +8226,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[6]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 286,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[5], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 250,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[5], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[5], budget; table[2], tr[5], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8206,7 +8299,25 @@
       "tuitionSource": "source-ab6abb30e7a8ab98",
       "tuitionLocator": "{\"format\": \"DOCX\", \"xmlPart\": \"word/document.xml\", \"tableOneBased\": 1, \"trIndexZeroBased\": 16, \"printedRowNumber\": 8, \"exactCells\": [\"8\", \"Международная программа по бизнесу и экономике\", \"630\"]}",
       "tuitionNote": "Приказ от 16.02.2026 № 6.18-01/160226-13, приложение 4.",
-      "history": []
+      "history": [
+        {
+          "year": 2026,
+          "budget": {
+            "value": 295,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[6], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 215,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[6], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[6], budget; table[2], tr[6], paid (zero-based DOM indices)"
+        }
+      ]
     },
     {
       "campus": "spb",
@@ -8278,6 +8389,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[8]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 302,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[8], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 197,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[8], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[8], budget; table[2], tr[8], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8334,7 +8462,25 @@
       "tuitionSource": "source-ab6abb30e7a8ab98",
       "tuitionLocator": "{\"format\": \"DOCX\", \"xmlPart\": \"word/document.xml\", \"tableOneBased\": 1, \"trIndexZeroBased\": 19, \"printedRowNumber\": 10, \"exactCells\": [\"10\", \"Международная программа по бизнесу и экономике\", \"630\"]}",
       "tuitionNote": "Приказ от 16.02.2026 № 6.18-01/160226-13, приложение 4.",
-      "history": []
+      "history": [
+        {
+          "year": 2026,
+          "budget": {
+            "value": null,
+            "status": "not_applicable",
+            "note": "*В 2026 году все бюджетные места данных программ были заняты поступившими на приоритетном этапе (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников).",
+            "locator": "table[1], tr[7], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 239,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[7], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[7], budget; table[2], tr[7], paid (zero-based DOM indices)"
+        }
+      ]
     },
     {
       "campus": "spb",
@@ -8406,6 +8552,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[9]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 285,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[9], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 219,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[9], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[9], budget; table[2], tr[9], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8479,6 +8642,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[10]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 275,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[10], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 205,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[10], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[10], budget; table[2], tr[10], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8552,6 +8732,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[11]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 294,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[11], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 220,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[11], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[11], budget; table[2], tr[11], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8625,6 +8822,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[12]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 275,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[12], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 190,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[12], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[12], budget; table[2], tr[12], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8703,6 +8917,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[13]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 294,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[13], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 188,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[13], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[13], budget; table[2], tr[13], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8776,6 +9007,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[14]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": null,
+            "status": "not_applicable",
+            "note": "*В 2026 году все бюджетные места данных программ были заняты поступившими на приоритетном этапе (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников).",
+            "locator": "table[1], tr[14], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 200,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[14], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[14], budget; table[2], tr[14], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8849,6 +9097,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[15]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 286,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[15], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 194,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[15], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[15], budget; table[2], tr[15], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8922,6 +9187,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[16]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 287,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[16], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 190,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[16], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[16], budget; table[2], tr[16], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -8995,6 +9277,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[17]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 298,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[17], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 197,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[17], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[17], budget; table[2], tr[17], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -9068,6 +9367,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[18]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 287,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[18], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 207,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[18], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[18], budget; table[2], tr[18], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -9141,6 +9457,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[19]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 267,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[19], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 192,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[19], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[19], budget; table[2], tr[19], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -9215,6 +9548,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[20]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 291,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[20], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 210,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[20], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[20], budget; table[2], tr[20], paid (zero-based DOM indices)"
         }
       ]
     },
@@ -9288,6 +9638,23 @@
           },
           "source": "source-57c50b0c88f08b80",
           "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div[1]/div/div/div/div[3]/div/div/div/table/tbody/tr[21]"
+        },
+        {
+          "year": 2026,
+          "budget": {
+            "value": 283,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[1], tr[21], td[1] (zero-based DOM indices)"
+          },
+          "paid": {
+            "value": 187,
+            "status": "verified",
+            "note": "С учётом индивидуальных достижений. Максимум в этой таблице не указан.",
+            "locator": "table[2], tr[21], td[1] (zero-based DOM indices)"
+          },
+          "source": "source-55b1cc53d6612318",
+          "locator": "table[1], tr[21], budget; table[2], tr[21], paid (zero-based DOM indices)"
         }
       ]
     },

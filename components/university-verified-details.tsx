@@ -50,6 +50,11 @@ export function UniversityVerifiedDetails({
       )}
       {(details.faculties?.length ?? 0) > 0 && (
         <UniversityFaculties
+          title={
+            details.universitySlug === "hse"
+              ? "Учебные подразделения и аспирантские школы"
+              : undefined
+          }
           rows={details.faculties!.map(
             ({ name, url, sourceUrl, checkedAt }) => ({
               name,

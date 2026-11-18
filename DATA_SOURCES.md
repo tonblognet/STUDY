@@ -50,6 +50,11 @@ November file candidate contains 1,225 organizations and 305 admission programme
 HSE contributes 121 exact 2026 groups across four campuses and a separate
 complete 340-row BA/MA catalogue. PostgreSQL publication and editorial acceptance
 are tracked separately. Unknown facts and source conflicts remain visible.
+The November 18 extension includes 839 further HSE education listings and
+51 campus-specific postgraduate admission programmes (113 scientific-specialty
+lines), plus 11 MPEK/REU college entry routes. Current educational inventories
+are kept separate from year-specific admissions. All supplemental resources,
+including HSE's 2,400-record score archive, are versioned in the same publication.
 [HSE coverage](docs/HSE_CATALOG_COVERAGE.md),
 [Moscow coverage](docs/MOSCOW_UNIVERSITY_COVERAGE.md),
 [MSU coverage](docs/MGU_DATA_COVERAGE.md).

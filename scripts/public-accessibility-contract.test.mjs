@@ -17,7 +17,7 @@ const complete = () =>
   }));
 test("audit covers public pages and rendered dialogs at both viewport widths", () => {
   const reports = complete();
-  assert.equal(reports.length, 42);
+  assert.equal(reports.length, 58);
   validateAccessibilityReports(reports);
   reports[0].incomplete.push({ id: "manual-review-required" });
   validateAccessibilityReports(reports);

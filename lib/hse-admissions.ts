@@ -85,6 +85,10 @@ export const hseProgramInputs: ProgramInput[] = snapshot.programs.map((row) => {
     ),
   }));
   const hasAdditional = additionalExams.length > 0;
+  const examLocator = [
+    ...row.exams.map((exam) => exam.locator),
+    ...row.additionalExams.map((exam) => exam.locator),
+  ].join("; ");
   const dviTitle = hasAdditional
     ? additionalExams.map((exam) => exam.title.value).join(", ")
     : null;
@@ -101,7 +105,7 @@ export const hseProgramInputs: ProgramInput[] = snapshot.programs.map((row) => {
       fact(
         "Отдельный маршрут для поступающих на базе профессионального или высшего образования. Требования к предыдущему образованию указаны в официальной таблице испытаний.",
         row.examsSource,
-        row.placesLocator,
+        examLocator,
       ),
     );
   }
@@ -157,7 +161,7 @@ export const hseProgramInputs: ProgramInput[] = snapshot.programs.map((row) => {
     dviValue: fact(
       dviTitle,
       row.examsSource,
-      row.placesLocator,
+      examLocator,
       hasAdditional ? {} : notApplicable,
     ),
     dviMax: fact<number>(

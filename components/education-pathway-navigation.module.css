@@ -1,0 +1,54 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block: 1.5rem 2rem;
+}
+.navigation a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--ink);
+  background: white;
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+.navigation a[aria-current="page"] {
+  color: white;
+  border-color: var(--blue);
+  background: var(--blue);
+}
+.navigation a:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+.context {
+  margin-block: 1.5rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  background: white;
+  overflow-wrap: anywhere;
+}
+.context h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+.context p,
+.context li {
+  max-width: 90ch;
+  margin-block: 0.65rem;
+  line-height: 1.65;
+}
+.context ul {
+  padding-inline-start: 1.3rem;
+}
+.context a {
+  display: inline-block;
+  padding-block: 0.4rem;
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

@@ -8,7 +8,7 @@ import { formatPrice } from "@/lib/catalog/format";
 import { HseProgramExplorer } from "@/components/hse-program-explorer";
 import { HseScoreArchive } from "@/components/hse-score-archive";
 import { HseCampusAdmissions } from "@/components/hse-campus-admissions";
-import { hseMasterTuition } from "@/lib/hse-admissions";
+import { hseExplorerData, hseScoreArchiveData } from "@/lib/hse-explorer-data";
 import {
   MguMap,
   MguPrograms,
@@ -60,6 +60,7 @@ export default async function UniversityPage({
     (item) => item.universitySlug === slug,
   );
   const offerings = directoryDetails?.offerings ?? [];
+  const hseResources = directoryDetails?.admissionResources;
   const admissionsUrl =
     university.admissionsUrl ?? directoryDetails?.fields.admissionsUrl?.value;
   const admissionsPhone =
@@ -369,15 +370,17 @@ export default async function UniversityPage({
               Посмотреть информацию у вуза ↗
             </a>
           </section>
-        ) : slug === "hse" ? (
+        ) : slug === "hse" && hseResources ? (
           <>
             <HseProgramExplorer
-              programs={related}
-              offerings={offerings}
-              masterTuition={hseMasterTuition}
+              {...hseExplorerData(
+                related,
+                offerings,
+                hseResources.masterTuition,
+              )}
             />
-            <HseScoreArchive />
-            <HseCampusAdmissions />
+            <HseScoreArchive data={hseScoreArchiveData(hseResources.archive)} />
+            <HseCampusAdmissions data={hseResources.services} />
           </>
         ) : (
           <section id="programs" className="university-program-section">
@@ -428,7 +431,7 @@ export default async function UniversityPage({
         )}
 
         {!isMgu &&
-          slug !== "hse" &&
+          (slug !== "hse" || !hseResources) &&
           related.length > 0 &&
           offerings.length > 0 && <UniversityOfferings rows={offerings} />}
         {!isMgu && related.length > 0 && campaign && (
