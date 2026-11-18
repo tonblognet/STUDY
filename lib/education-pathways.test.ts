@@ -157,6 +157,10 @@ describe("education pathways from the selected catalog publication", () => {
     const hsePostgraduate = educationPathwayRows(catalog, "aspirantura").filter(
       (row) => row.universitySlug === "hse",
     );
+    expect(hsePostgraduate.slice(0, 51).every((row) => row.admission)).toBe(
+      true,
+    );
+    expect(hsePostgraduate.slice(51).every((row) => !row.admission)).toBe(true);
     expect(hsePostgraduate.filter((row) => !row.admission)).toHaveLength(89);
   });
 });

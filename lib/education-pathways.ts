@@ -2,6 +2,7 @@ import type { CatalogSnapshot } from "@/lib/catalog/types";
 import {
   hseExplorerData,
   hseExplorerRows,
+  hseHasKnownConditions,
   type HseExplorerRow,
 } from "@/lib/hse-explorer-data";
 
@@ -150,8 +151,8 @@ export function educationPathwayRows(
   return result.sort((left, right) => {
     // Program-specific, sourced admission conditions are useful first.
     const known =
-      Number(Boolean(right.masterTuition)) -
-      Number(Boolean(left.masterTuition));
+      Number(hseHasKnownConditions(right)) -
+      Number(hseHasKnownConditions(left));
     return (
       known ||
       left.universityName.localeCompare(right.universityName, "ru") ||
