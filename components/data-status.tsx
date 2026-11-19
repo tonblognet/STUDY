@@ -76,10 +76,7 @@ export function CompletenessBadge({
   missing?: string[];
 }) {
   return (
-    <div
-      className="completeness"
-      aria-label={`Полнота карточки ${percent} процентов`}
-    >
+    <div className="completeness" role="group" aria-label="Полнота карточки">
       <span>
         <b>{percent}%</b> полноты
       </span>

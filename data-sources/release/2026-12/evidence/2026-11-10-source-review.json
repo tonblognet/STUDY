@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "compiledAtUtc": "2026-11-10T00:27:45.450291+00:00",
+  "scope": "source_evidence_pending_editorial_acceptance",
+  "acceptedUniversityCards": 0,
+  "newlyVerifiedContestPrograms": 0,
+  "sourceAcquisition": "SHA-256 and byte count of the HTTP 200 response body. UTC retrieval time is distinct from publication date.",
+  "sources": {
+    "mpei-structure": {
+      "requestedUrl": "https://mpei.ru/sveden/struct/Pages/default.aspx",
+      "finalUrl": "https://mpei.ru/sveden/struct/Pages/default.aspx",
+      "retrievedAtUtc": "2026-11-10T00:24:52.533112+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "12f3010f918313f5dbd2ca6f3b280d2c71d16ed3089e85826d8e0bd1744fccdc",
+      "bytes": 721796,
+      "publicationDate": null
+    },
+    "mpei-inventory": {
+      "requestedUrl": "https://www.mpei.ru/sveden/education/Pages/default.aspx?short=/sveden/education/eduaccred",
+      "finalUrl": "https://www.mpei.ru/sveden/education/Pages/default.aspx?short=/sveden/education/eduaccred",
+      "retrievedAtUtc": "2026-11-10T00:24:52.953914+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "05f891f697cdfede88e6403e6346a95d469e4bc392d3a23b86bba87874404ce9",
+      "bytes": 3899237,
+      "publicationDate": null,
+      "admissionYear": null
+    },
+    "mpei-contacts": {
+      "requestedUrl": "https://pk.mpei.ru/contacts.html",
+      "finalUrl": "https://pk.mpei.ru/contacts.html",
+      "retrievedAtUtc": "2026-11-10T00:24:52.318189+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "b607371a4985dce4657d3c06a48816d08da64e1047e5e1ec3f1aa8a6c35f880c",
+      "bytes": 39497,
+      "publicationDate": null
+    },
+    "mpei-housing": {
+      "requestedUrl": "https://mpei.ru/sveden/grants/Pages/default.aspx",
+      "finalUrl": "https://mpei.ru/sveden/grants/Pages/default.aspx",
+      "retrievedAtUtc": "2026-11-10T00:24:52.342618+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "7e76541cc72e3375901678281398a46a433fb3be28975538aa18a0a1ca8ae987",
+      "bytes": 140532,
+      "publicationDate": null
+    },
+    "mephi-structure": {
+      "requestedUrl": "https://mephi.ru/node/18496",
+      "finalUrl": "https://mephi.ru/node/18496",
+      "retrievedAtUtc": "2026-11-10T00:24:52.880996+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "0a5fb5403f05227f2d22a8a61e10b6cf9849cb7da17e62975c6fdf23fbf6eea6",
+      "bytes": 395520,
+      "publicationDate": null
+    },
+    "mephi-inventory": {
+      "requestedUrl": "https://admission.mephi.ru/admission/baccalaureate-and-specialty/education/programs",
+      "finalUrl": "https://admission.mephi.ru/admission/baccalaureate-and-specialty/education/programs",
+      "retrievedAtUtc": "2026-11-10T00:24:52.710967+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "ba48f781ec93118b24a9f9e064685255affbd9d48831f77f1134131390023c0b",
+      "bytes": 183961,
+      "publicationDate": null,
+      "admissionYear": 2026
+    },
+    "mephi-contacts": {
+      "requestedUrl": "https://admission.mephi.ru/about/contacts",
+      "finalUrl": "https://admission.mephi.ru/about/contacts",
+      "retrievedAtUtc": "2026-11-10T00:24:52.788309+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "accd93da2d46f93c226834295582246b34bac212d4deb9e7bedea5825a1609b8",
+      "bytes": 214044,
+      "publicationDate": null
+    },
+    "mephi-housing": {
+      "requestedUrl": "https://admission.mephi.ru/about/dorm",
+      "finalUrl": "https://admission.mephi.ru/about/dorm",
+      "retrievedAtUtc": "2026-11-10T00:24:52.973189+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "0bcc08e399abaeccee493412208d9dc91c3c42f3252639491c05c5cf9a086370",
+      "bytes": 141569,
+      "publicationDate": null
+    },
+    "mpei-common": {
+      "requestedUrl": "https://mpei.ru/sveden/common/Pages/default.aspx",
+      "finalUrl": "https://mpei.ru/sveden/common/Pages/default.aspx",
+      "retrievedAtUtc": "2026-11-09T22:05:09.882890+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "b99984b753643939144f60918f578a5d6c16492a62eeea5f629baad4efc7a275",
+      "bytes": 2356951,
+      "publicationDate": null
+    },
+    "mephi-overview": {
+      "requestedUrl": "https://mephi.ru/about",
+      "finalUrl": "https://mephi.ru/about",
+      "retrievedAtUtc": "2026-11-09T22:05:11.292894+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "4957a5be0c1d04c86ec85638b0c34d854ba33745d1be5bc910af66c1f41e8f0b",
+      "bytes": 288342,
+      "publicationDate": null
+    },
+    "mephi-common": {
+      "requestedUrl": "https://mephi.ru/sveden/common",
+      "finalUrl": "https://mephi.ru/sveden/common",
+      "retrievedAtUtc": "2026-11-10T00:24:53.373742+00:00",
+      "kind": "html",
+      "contentType": "text/html; charset=utf-8",
+      "httpStatus": 200,
+      "sha256": "3aaae9c9c7995d077af75cd179fd9bb279dfbb32c01cf12b053fa298ba5a483a",
+      "bytes": 298442,
+      "publicationDate": null
+    },
+    "msu-kcp_bak": {
+      "requestedUrl": "https://cpk.msu.ru/files/2026/kcp_bak.pdf",
+      "finalUrl": "https://cpk.msu.ru/files/2026/kcp_bak.pdf",
+      "retrievedAtUtc": "2026-11-09T23:50:34.309937+00:00",
+      "kind": "pdf",
+      "contentType": "application/pdf",
+      "httpStatus": 200,
+      "sha256": "cef7631a567d86863ef442e8c9ee5a27a086c1808fd5545d78d36abd62901090",
+      "bytes": 609464,
+      "publicationDate": null,
+      "admissionYear": 2026
+    },
+    "msu-minimum": {
+      "requestedUrl": "https://cpk.msu.ru/files/2026/minimum.pdf",
+      "finalUrl": "https://cpk.msu.ru/files/2026/minimum.pdf",
+      "retrievedAtUtc": "2026-11-09T23:50:34.309937+00:00",
+      "kind": "pdf",
+      "contentType": "application/pdf",
+      "httpStatus": 200,
+      "sha256": "7470e8d7c98297b2b9ae9e1af7f5488a0fec4bb5dc38f9cc35da056541312c45",
+      "bytes": 75705,
+      "publicationDate": null,
+      "admissionYear": 2026
+    },
+    "msu-rules": {
+      "requestedUrl": "https://cpk.msu.ru/files/2026/rules.pdf",
+      "finalUrl": "https://cpk.msu.ru/files/2026/rules.pdf",
+      "retrievedAtUtc": "2026-11-09T23:50:34.309937+00:00",
+      "kind": "pdf",
+      "contentType": "application/pdf",
+      "httpStatus": 200,
+      "sha256": "65fe8d515816549f3f70e831aa654400d2343c91cf21f4d85fabb5aa8eeda422",
+      "bytes": 485095,
+      "publicationDate": null,
+      "admissionYear": 2026
+    }
+  },
+  "universities": [
+    {
+      "id": "mpei",
+      "slug": "mpei",
+      "editorialDecision": null,
+      "status": "pending_editorial_review",
+      "sections": {
+        "general_information": {
+          "source": "mpei-common",
+          "baselineFile": "data-sources/moscow/profiles.json",
+          "matchedFields": [
+            {
+              "field": "fullName",
+              "locator": "//*[@itemprop='fullName']",
+              "htmlLine": 944,
+              "baselinePointer": "/profiles/125/fields/fullName"
+            },
+            {
+              "field": "shortName",
+              "locator": "//*[@itemprop='shortName']",
+              "htmlLine": 946,
+              "baselinePointer": "/profiles/125/fields/shortName"
+            },
+            {
+              "field": "regDate",
+              "locator": "//*[@itemprop='regDate']",
+              "htmlLine": 953,
+              "baselinePointer": "/profiles/125/fields/regDate"
+            },
+            {
+              "field": "address",
+              "locator": "//*[@itemprop='address']",
+              "htmlLine": 957,
+              "baselinePointer": "/profiles/125/fields/address"
+            },
+            {
+              "field": "telephone",
+              "locator": "//*[@itemprop='telephone']",
+              "htmlLine": 1294,
+              "baselinePointer": "/profiles/125/fields/telephone"
+            },
+            {
+              "field": "email",
+              "locator": "//*[@itemprop='email']",
+              "htmlLine": 970,
+              "baselinePointer": "/profiles/125/fields/email"
+            }
+          ],
+          "overviewCandidate": {
+            "value": "История МЭИ начинается в 1930 году, когда были объединены электротехнические факультеты Московского высшего технического училища и Московского института народного хозяйства имени Плеханова.",
+            "source": "mpei-common",
+            "sourceLocators": [
+              {
+                "section": "Краткая информация об образовательной организации",
+                "xpath": "//h4[normalize-space(.)='Краткая информация об образовательной организации:']/following-sibling::div[contains(concat(' ',normalize-space(@class),' '),' vikon-text-block ')]/p[1]",
+                "rawHtmlHeadingLine": 1218,
+                "rawHtmlTextLine": 1221,
+                "selectedTextSha256": "f2a53f4fd3c0a9d5f6026bb7d0c08aa27b6540c4ab4145eb534f8491d248b380",
+                "selectedTextCharacters": 524
+              }
+            ],
+            "sourceComparedAtUtc": "2026-11-09T23:55:29.520046+00:00",
+            "admissionYear": null,
+            "status": "source_compared_pending_integration"
+          }
+        },
+        "structure": {
+          "source": "mpei-structure",
+          "baselineFile": "data-sources/russia/moscow-enrichment-2026-10-22.json",
+          "baselinePointer": "/profiles/7/faculties",
+          "tableIndexZeroBased": 3,
+          "matchedRowCount": 10,
+          "matchedRows": [
+            {
+              "name": "Институт энергомашиностроения и механики",
+              "rowIndexZeroBased": 1,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт гидроэнергетики и возобновляемых источников энергии",
+              "rowIndexZeroBased": 2,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт тепловой и атомной энергетики",
+              "rowIndexZeroBased": 3,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт энергоэффективности и водородных технологий",
+              "rowIndexZeroBased": 4,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт электротехники и электрификации",
+              "rowIndexZeroBased": 5,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт электроэнергетики",
+              "rowIndexZeroBased": 6,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт информационных и вычислительных технологий",
+              "rowIndexZeroBased": 7,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт радиотехники и электроники им. В.А. Котельникова",
+              "rowIndexZeroBased": 8,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Инженерно-экономический институт",
+              "rowIndexZeroBased": 10,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Гуманитарно-прикладной институт",
+              "rowIndexZeroBased": 11,
+              "moscowAddressChecked": true
+            }
+          ],
+          "scope": "Выбранные учебные подразделения с московским адресом."
+        },
+        "educational_inventory": {
+          "source": "mpei-inventory",
+          "baselineFile": "data-sources/russia/moscow-priority-enrichment-2026-11-09.json",
+          "baselinePointer": "/profiles/1/offerings",
+          "matchedRowCount": 172,
+          "excludedRowCount": 9,
+          "comparedFields": [
+            "id",
+            "code",
+            "title",
+            "profile",
+            "level",
+            "forms",
+            "duration",
+            "admissionsStatus",
+            "sourceYear",
+            "sourceSection"
+          ],
+          "sourceSections": ["Программы бакалавриата"],
+          "admissionYear": null,
+          "scope": "Позиции перечня. Конкурсные группы, условия приёма и аккредитация проверяются отдельно."
+        },
+        "admissions_contacts": {
+          "landingLink": {
+            "value": "https://mpei.ru/Admission/Pages/default.aspx",
+            "source": "mpei-common",
+            "baselineFile": "data-sources/moscow/profiles.json",
+            "locator": "//a[@href='/Admission/Pages/default.aspx']",
+            "htmlLine": 791,
+            "baselinePointer": "/profiles/125/fields/admissionsUrl"
+          },
+          "source": "mpei-contacts",
+          "baselineFile": "data-sources/russia/contacts-enrichment-2026-10-25.json",
+          "matchedPhone": {
+            "value": "+7 (495) 362-77-77",
+            "locator": "//b/a[@href='tel:+74953627777']",
+            "htmlLine": 851,
+            "baselinePointer": "/profiles/2/fields/admissionsPhone"
+          },
+          "matchedEmail": {
+            "value": "pk@mpei.ru",
+            "locator": "//b/a[@href='mailto:pk@mpei.ru']",
+            "htmlLine": 856,
+            "baselinePointer": "/profiles/2/fields/admissionsEmail"
+          }
+        },
+        "housing": {
+          "source": "mpei-housing",
+          "baselineFile": "data-sources/moscow/profiles.json",
+          "locator": "//*[@itemprop='hostelInfo']",
+          "htmlLine": 1047,
+          "baselinePointer": "/profiles/125/fields/hostelInfo",
+          "checkedScope": {
+            "listedDormitoryCount": 7
+          },
+          "openGaps": [
+            "Свободные места и индивидуальные условия заселения требуют отдельной сверки."
+          ]
+        }
+      }
+    },
+    {
+      "id": "mephi",
+      "slug": "mephi",
+      "editorialDecision": null,
+      "status": "pending_editorial_review",
+      "sections": {
+        "general_information": {
+          "source": "mephi-common",
+          "baselineFile": "data-sources/moscow/profiles.json",
+          "matchedFields": [
+            {
+              "field": "fullName",
+              "locator": "//*[@itemprop='fullName']",
+              "htmlLine": 947,
+              "baselinePointer": "/profiles/83/fields/fullName"
+            },
+            {
+              "field": "shortName",
+              "locator": "//*[@itemprop='shortName']",
+              "htmlLine": 955,
+              "baselinePointer": "/profiles/83/fields/shortName"
+            },
+            {
+              "field": "regDate",
+              "locator": "//*[@itemprop='regDate']",
+              "htmlLine": 965,
+              "baselinePointer": "/profiles/83/fields/regDate"
+            },
+            {
+              "field": "address",
+              "locator": "//*[@itemprop='address']",
+              "htmlLine": 971,
+              "baselinePointer": "/profiles/83/fields/address"
+            },
+            {
+              "field": "telephone",
+              "locator": "//*[@itemprop='telephone']",
+              "htmlLine": 986,
+              "baselinePointer": "/profiles/83/fields/telephone"
+            },
+            {
+              "field": "email",
+              "locator": "//*[@itemprop='email']",
+              "htmlLine": 994,
+              "baselinePointer": "/profiles/83/fields/email"
+            }
+          ],
+          "overviewCandidate": {
+            "value": "НИЯУ МИФИ готовит специалистов для атомной отрасли, науки и информационных технологий. В числе направлений университета — ядерные исследования, лазерные и плазменные технологии, биомедицина и медицинская физика.",
+            "source": "mephi-overview",
+            "sourceLocators": [
+              {
+                "section": "О НИЯУ МИФИ, основной текст, второй абзац",
+                "xpath": "(//*[@id='node-10798']//*[contains(concat(' ',normalize-space(@class),' '),' field-name-body ')]//p)[2]",
+                "css": "#node-10798 .field-name-body .field-item > p:nth-of-type(2)",
+                "rawHtmlTextLine": 897,
+                "selectedTextSha256": "f9e143fcd6de5cab320606ff1fcb04d69dc143909aacf9d010d3bbe69a6161c2",
+                "selectedTextCharacters": 131
+              },
+              {
+                "section": "О НИЯУ МИФИ, первый список направлений, пункты 1, 2, 4, 5",
+                "xpath": "(//*[@id='node-10798']//*[contains(concat(' ',normalize-space(@class),' '),' field-name-body ')]//ul)[1]/li",
+                "css": "#node-10798 .field-name-body .field-item > ul:first-of-type > li",
+                "rawHtmlTextLines": [901, 902, 903, 904, 905],
+                "selectedItemNumbersSupportingDraft": [1, 2, 4, 5],
+                "selectedTextSha256": "e21fdd8d8a10b62c59c2d44ea88a87163419d846190490e1cef0c50b08b5291a",
+                "selectedTextCharacters": 175
+              }
+            ],
+            "sourceComparedAtUtc": "2026-11-09T23:55:29.520046+00:00",
+            "admissionYear": null,
+            "status": "source_compared_pending_integration"
+          }
+        },
+        "structure": {
+          "source": "mephi-structure",
+          "baselineFile": "data-sources/russia/moscow-enrichment-2026-10-22.json",
+          "baselinePointer": "/profiles/5/faculties",
+          "tableIndexZeroBased": 0,
+          "matchedRowCount": 12,
+          "matchedRows": [
+            {
+              "name": "Институт ядерной физики и технологий (ИЯФиТ)",
+              "rowIndexZeroBased": 2,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт лазерных и плазменных технологий (ЛаПлаз)",
+              "rowIndexZeroBased": 3,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Инженерно-физический институт биомедицины (ИФИБ)",
+              "rowIndexZeroBased": 4,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт нанотехнологий в электронике, спинтронике и фотонике (ИНТЭЛ)",
+              "rowIndexZeroBased": 5,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт интеллектуальных кибернетических систем (ИИКС)",
+              "rowIndexZeroBased": 6,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт физико-технических интеллектуальных систем (ИФТИС)",
+              "rowIndexZeroBased": 7,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт финансовых технологий и экономической безопасности",
+              "rowIndexZeroBased": 8,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт общей профессиональной подготовки",
+              "rowIndexZeroBased": 9,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт фундаментальных проблем социо-гуманитарных наук",
+              "rowIndexZeroBased": 10,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Институт международных отношений",
+              "rowIndexZeroBased": 11,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Факультет бизнес-информатики и управления комплексными системами",
+              "rowIndexZeroBased": 12,
+              "moscowAddressChecked": true
+            },
+            {
+              "name": "Факультет очно-заочного (вечернего) обучения",
+              "rowIndexZeroBased": 13,
+              "moscowAddressChecked": true
+            }
+          ],
+          "scope": "Выбранные учебные подразделения с московским адресом."
+        },
+        "educational_inventory": {
+          "source": "mephi-inventory",
+          "baselineFile": "data-sources/russia/moscow-priority-enrichment-2026-11-09.json",
+          "baselinePointer": "/profiles/2/offerings",
+          "matchedRowCount": 77,
+          "excludedRowCount": 6,
+          "comparedFields": [
+            "id",
+            "code",
+            "title",
+            "profile",
+            "level",
+            "forms",
+            "duration",
+            "admissionsStatus",
+            "sourceYear",
+            "sourceSection"
+          ],
+          "sourceSections": [
+            "Бакалавриат, перечень приёма 2026",
+            "Специалитет, перечень приёма 2026"
+          ],
+          "admissionYear": 2026,
+          "scope": "Позиции перечня. Конкурсные группы, условия приёма и аккредитация проверяются отдельно."
+        },
+        "admissions_contacts": {
+          "landingLink": {
+            "value": "https://admission.mephi.ru/",
+            "source": "mephi-common",
+            "baselineFile": "data-sources/moscow/profiles.json",
+            "locator": "//a[@href='https://admission.mephi.ru/']",
+            "htmlLine": 126,
+            "baselinePointer": "/profiles/83/fields/admissionsUrl"
+          },
+          "source": "mephi-contacts",
+          "baselineFile": "data-sources/russia/contacts-enrichment-2026-10-25.json",
+          "matchedPhone": {
+            "value": "+7 495 785 55 25",
+            "locator": "//p[starts-with(normalize-space(), '+7 495 785 55 25 ')]",
+            "htmlLine": 437,
+            "baselinePointer": "/profiles/1/fields/admissionsPhone"
+          },
+          "matchedEmail": {
+            "value": "priem@mephi.ru",
+            "locator": "//p[normalize-space()='priem@mephi.ru']",
+            "htmlLine": 465,
+            "baselinePointer": "/profiles/1/fields/admissionsEmail"
+          }
+        },
+        "housing": {
+          "source": "mephi-housing",
+          "baselineFile": "data-sources/russia/contacts-enrichment-2026-10-25.json",
+          "baselinePointer": "/profiles/1/fields/hostelInfo",
+          "locator": "//*[@id='node-89']//h5",
+          "htmlLines": [498, 500],
+          "checkedScope": {
+            "dormitoryTypes": ["квартирный", "коридорный"],
+            "apartmentAmenities": true
+          },
+          "openGaps": [
+            "Свободные места и индивидуальные условия заселения требуют отдельной сверки."
+          ]
+        }
+      }
+    }
+  ],
+  "programs": [
+    {
+      "id": "msu-01-03-02-4",
+      "code": "01.03.02",
+      "admissionYear": 2026,
+      "faculty": "Факультет вычислительной математики и кибернетики",
+      "form": "Очная",
+      "identityReview": "matches_official_faculty_code_and_fulltime_row",
+      "places": {
+        "budgetTotal": 312,
+        "paidTotal": 120,
+        "specialQuota": 32,
+        "separateQuota": 32,
+        "detailedTargetQuotaRows": [1, 1, 1, 5],
+        "targetQuotaTotal": null,
+        "generalCompetitionPlaces": null,
+        "source": "msu-kcp_bak",
+        "sourcePage": 2
+      },
+      "examPrioritiesAsPrinted": [
+        {
+          "priority": 1,
+          "subject": "Математика",
+          "kind": "ДВИ",
+          "form": "письменно"
+        },
+        {
+          "priority": 2,
+          "subject": "Математика",
+          "kind": "ЕГЭ"
+        },
+        {
+          "priority": 3,
+          "subject": "Физика",
+          "kind": "ЕГЭ"
+        },
+        {
+          "priority": 4,
+          "subject": "Информатика",
+          "kind": "ЕГЭ"
+        },
+        {
+          "priority": 5,
+          "subject": "Русский язык",
+          "kind": "ЕГЭ"
+        }
+      ],
+      "examCombinationNote": "The rendered row contains four separate EGE entries. No alternative slash/or grouping is printed for these two rows.",
+      "egeMinimums": {
+        "Математика": 60,
+        "Физика": 55,
+        "Информатика": 65,
+        "Русский язык": 60
+      },
+      "minimumLocator": {
+        "source": "msu-minimum",
+        "sourcePage": 2,
+        "section": "1.5"
+      },
+      "singleExamMaximum": {
+        "value": 100,
+        "source": "msu-rules",
+        "sourcePage": 8,
+        "section": "11"
+      },
+      "openGaps": [
+        "Full target quota is not established by summing detailed rows; footnote *** excludes a target-quota category.",
+        "General-competition places remain unknown; no subtraction used.",
+        "DVI minimum needs the exact referenced federal minimum source; no number copied from generic memory.",
+        "Tuition, historical passing-score identity/scale, housing, military-center and remaining program acceptance criteria were not reviewed in this packet."
+      ],
+      "trustStatus": "pending_review",
+      "examLocator": {
+        "source": "msu-kcp_bak",
+        "sourcePage": 2,
+        "rowCode": "01.03.02"
+      },
+      "sourceReviewedAtUtc": "2026-11-09T23:52:58.693031+00:00",
+      "universitySlug": "mgu"
+    },
+    {
+      "id": "msu-02-03-02-5",
+      "code": "02.03.02",
+      "admissionYear": 2026,
+      "faculty": "Факультет вычислительной математики и кибернетики",
+      "form": "Очная",
+      "identityReview": "matches_official_faculty_code_and_fulltime_row",
+      "places": {
+        "budgetTotal": 19,
+        "paidTotal": 3,
+        "specialQuota": 2,
+        "separateQuota": 2,
+        "detailedTargetQuotaRows": [1, 1],
+        "targetQuotaTotal": null,
+        "generalCompetitionPlaces": null,
+        "source": "msu-kcp_bak",
+        "sourcePage": 2
+      },
+      "examPrioritiesAsPrinted": [
+        {
+          "priority": 1,
+          "subject": "Математика",
+          "kind": "ДВИ",
+          "form": "письменно"
+        },
+        {
+          "priority": 2,
+          "subject": "Математика",
+          "kind": "ЕГЭ"
+        },
+        {
+          "priority": 3,
+          "subject": "Физика",
+          "kind": "ЕГЭ"
+        },
+        {
+          "priority": 4,
+          "subject": "Информатика",
+          "kind": "ЕГЭ"
+        },
+        {
+          "priority": 5,
+          "subject": "Русский язык",
+          "kind": "ЕГЭ"
+        }
+      ],
+      "examCombinationNote": "The rendered row contains four separate EGE entries. No alternative slash/or grouping is printed for these two rows.",
+      "egeMinimums": {
+        "Математика": 60,
+        "Физика": 55,
+        "Информатика": 65,
+        "Русский язык": 60
+      },
+      "minimumLocator": {
+        "source": "msu-minimum",
+        "sourcePage": 2,
+        "section": "1.5"
+      },
+      "singleExamMaximum": {
+        "value": 100,
+        "source": "msu-rules",
+        "sourcePage": 8,
+        "section": "11"
+      },
+      "openGaps": [
+        "Full target quota is not established by summing detailed rows; footnote *** excludes a target-quota category.",
+        "General-competition places remain unknown; no subtraction used.",
+        "DVI minimum needs the exact referenced federal minimum source; no number copied from generic memory.",
+        "Tuition, historical passing-score identity/scale, housing, military-center and remaining program acceptance criteria were not reviewed in this packet."
+      ],
+      "trustStatus": "pending_review",
+      "examLocator": {
+        "source": "msu-kcp_bak",
+        "sourcePage": 2,
+        "rowCode": "02.03.02"
+      },
+      "sourceReviewedAtUtc": "2026-11-09T23:52:58.693031+00:00",
+      "universitySlug": "mgu"
+    }
+  ]
+}

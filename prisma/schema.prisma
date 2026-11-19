@@ -125,6 +125,7 @@ model User {
   trackerItems           AdmissionTrackerItem[]
   accountTrackerItems    AccountTrackerItem[]
   notificationPreference NotificationPreference?
+  deadlineEmailJobs      DeadlineEmailJob[]
   supportTickets         SupportTicket[]         @relation("TicketAuthor")
   assignedTickets        SupportTicket[]         @relation("TicketAssignee")
   ticketMessages         TicketMessage[]
@@ -687,18 +688,51 @@ model Notification {
 }
 
 model NotificationPreference {
-  id                  String  @id @default(cuid())
-  userId              String  @unique
-  emailEnabled        Boolean @default(true)
-  inAppEnabled        Boolean @default(true)
-  deadlines           Boolean @default(true)
-  competitionPosition Boolean @default(true)
-  programChanges      Boolean @default(true)
-  payments            Boolean @default(true)
-  subscriptions       Boolean @default(true)
-  security            Boolean @default(true)
-  productNews         Boolean @default(false)
-  user                User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id                   String  @id @default(cuid())
+  userId               String  @unique
+  emailEnabled         Boolean @default(true)
+  inAppEnabled         Boolean @default(true)
+  deadlines            Boolean @default(true)
+  competitionPosition  Boolean @default(true)
+  programChanges       Boolean @default(true)
+  payments             Boolean @default(true)
+  subscriptions        Boolean @default(true)
+  security             Boolean @default(true)
+  productNews          Boolean @default(false)
+  deadlineEmailEnabled Boolean @default(false)
+  user                 User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+enum DeadlineEmailState {
+  PENDING
+  SENDING
+  SENT
+  FAILED
+  UNKNOWN
+  CANCELLED
+}
+
+model DeadlineEmailJob {
+  id            String             @id
+  userId        String
+  trackerItemId String
+  deadlineAt    DateTime
+  availableAt   DateTime
+  state         DeadlineEmailState @default(PENDING)
+  attempts      Int                @default(0)
+  leaseUntil    DateTime?
+  resultCode    String?
+  user          User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([state, availableAt])
+  @@index([state, leaseUntil])
+  @@index([userId])
+}
+
+model WorkerHeartbeat {
+  id         String   @id
+  finishedAt DateTime
+  counts     Json
 }
 
 model ApplicantProfile {
@@ -741,6 +775,7 @@ model AdmissionTrackerItem {
 
   @@unique([userId, programId, admissionYear])
   @@index([userId, deadlineAt])
+  @@index([deadlineAt])
 }
 
 model SupportTicket {

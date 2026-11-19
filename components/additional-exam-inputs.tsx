@@ -3,14 +3,22 @@
 import Link from "next/link";
 import type { Program } from "@/lib/data";
 import type { ScoreSet } from "@/lib/admissions/types";
-import { additionalExamKey, getAdditionalExams } from "@/lib/admissions/exams";
+import {
+  additionalExamKey,
+  getAdditionalExams,
+  type AdditionalExamProgram,
+} from "@/lib/admissions/exams";
 
 export function AdditionalExamInputs({
   programs,
   profile,
   onChange,
 }: {
-  programs: Program[];
+  programs: (AdditionalExamProgram &
+    Pick<
+      Program,
+      "slug" | "universityShort" | "title" | "faculty" | "code" | "form"
+    >)[];
   profile: ScoreSet;
   onChange: (profile: ScoreSet) => void;
 }) {

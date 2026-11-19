@@ -6,13 +6,15 @@ import { validateAdmissionCampaign } from "@/lib/university-admission-campaigns"
 import type { CatalogSnapshot } from "./types";
 import { CatalogError } from "./types";
 import { directoryDetails as repositoryDirectoryDetails } from "@/lib/university-directory-details";
+import { createHseAdmissionResourcesSchema } from "./hse-admission-resources-schema";
 
 // Preserve exact, previously reviewed directory evidence (including official
 // registry documents and university redirects); it is not an arbitrary host allowlist.
 function knownDirectoryUrls(value: unknown): string[] {
   if (!value || typeof value !== "object") return [];
   return Object.entries(value).flatMap(([key, child]) =>
-    ["sourceUrl", "url", "pageUrl"].includes(key) && typeof child === "string"
+    ["sourceUrl", "url", "pageUrl", "programUrl"].includes(key) &&
+    typeof child === "string"
       ? [child]
       : knownDirectoryUrls(child),
   );
@@ -89,6 +91,11 @@ const numberFact = sourcedSchema(z.number().nonnegative());
 const placesFact = sourcedSchema(z.number().int().nonnegative());
 const stringFact = sourcedSchema(z.string());
 const booleanFact = sourcedSchema(z.boolean());
+const hseAdmissionResources = createHseAdmissionResourcesSchema({
+  numberFact,
+  placesFact,
+  stringFact,
+});
 const assetUrl = z.union([
   url,
   z.string().regex(/^\/university-logos\/[a-zA-Z0-9/_\-.]+$/),
@@ -122,6 +129,7 @@ const program = z
     form: z.enum(["Очная", "Очно-заочная", "Заочная"]),
     duration: text,
     durationValue: stringFact.optional(),
+    admissionConditions: z.array(stringFact).optional(),
     admissionsContact: z
       .object({
         address: stringFact,
@@ -131,6 +139,7 @@ const program = z
       })
       .optional(),
     faculty: z.string().nullable(),
+    facultyValue: stringFact.optional(),
     campus: z.string().nullable(),
     language: text,
     subjects: z.array(text),
@@ -155,6 +164,7 @@ const program = z
         .strict(),
     ),
     passingHistory: z.array(numberFact),
+    paidPassingHistory: z.array(numberFact).optional(),
     placesHistory: z.array(placesFact),
     tuitionHistory: z.array(numberFact),
     competitionHistory: z.array(numberFact),
@@ -302,6 +312,7 @@ const details = z
           .strict(),
       )
       .optional(),
+    admissionResources: hseAdmissionResources.optional(),
     educationAreas: z.array(
       z
         .object({
@@ -357,6 +368,28 @@ const details = z
           forms: z.string().nullable(),
           duration: z.string().nullable(),
           admissionsStatus: text,
+          programUrl: url.optional(),
+          campus: text.optional(),
+          admissionDetails: z
+            .object({
+              priorEducation: stringFact.optional(),
+              schoolBase: z.union([z.literal(9), z.literal(11)]).optional(),
+              annualTuition: numberFact.optional(),
+              budgetPlaces: placesFact.optional(),
+              paidPlaces: placesFact.optional(),
+              exams: stringFact.optional(),
+              note: text.optional(),
+            })
+            .strict()
+            .optional(),
+          publishedPrice: z
+            .object({
+              amount: z.number().nonnegative(),
+              currency: z.string().refine((value) => value.trim().length > 0),
+              period: z.string().nullable(),
+            })
+            .strict()
+            .optional(),
           sourceUrl: url,
           sourceYear: z.number().int().nullable(),
           checkedAt: date,
@@ -564,6 +597,8 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
   for (const row of snapshot.universityFacts)
     errors.push(...validateUniversityFactProfile(row).errors);
   for (const row of snapshot.directoryDetails) {
+    if (row.admissionResources && row.universitySlug !== "hse")
+      errors.push("Ресурсы приёма ВШЭ относятся только к профилю hse");
     visitSources(row, row.universitySlug, true);
     unique(
       (row.faculties ?? []).map((faculty) =>
@@ -573,6 +608,9 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     );
     for (const faculty of row.faculties ?? [])
       if (faculty.url) official(row.universitySlug, faculty.url, true);
+    for (const offering of row.offerings)
+      if (offering.programUrl)
+        official(row.universitySlug, offering.programUrl, true);
     if (
       row.fields.admissionsUrl &&
       !url.safeParse(row.fields.admissionsUrl.value).success
@@ -597,7 +635,23 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     ])
       if (fact.year !== row.trust.dataYear)
         errors.push(`Смешаны кампании: ${row.slug}`);
-    for (const fact of [row.passingScoreValue, ...row.passingHistory])
+    unique(
+      (row.paidPassingHistory ?? []).map((fact) => String(fact.year)),
+      `Годы проходного балла на платное обучение: ${row.slug}`,
+    );
+    if (
+      row.paidPassingHistory?.some(
+        (fact) =>
+          fact.value !== null &&
+          !["verified", "conflicting_sources"].includes(fact.status),
+      )
+    )
+      errors.push(`Неподтверждённый платный проходной балл: ${row.slug}`);
+    for (const fact of [
+      row.passingScoreValue,
+      ...row.passingHistory,
+      ...(row.paidPassingHistory ?? []),
+    ])
       if (fact.value !== null && fact.value > 510)
         errors.push(`Недопустимый итоговый балл: ${row.slug}`);
   }

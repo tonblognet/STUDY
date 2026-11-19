@@ -5,6 +5,10 @@ import { UniversityLogo } from "@/components/university-logo";
 import { DATA_STATUS_LABELS } from "@/lib/admissions/constants";
 import { getCatalog } from "@/lib/catalog/server";
 import { formatPrice } from "@/lib/catalog/format";
+import { HseProgramExplorer } from "@/components/hse-program-explorer";
+import { HseScoreArchive } from "@/components/hse-score-archive";
+import { HseCampusAdmissions } from "@/components/hse-campus-admissions";
+import { hseExplorerData, hseScoreArchiveData } from "@/lib/hse-explorer-data";
 import {
   MguMap,
   MguPrograms,
@@ -56,8 +60,26 @@ export default async function UniversityPage({
     (item) => item.universitySlug === slug,
   );
   const offerings = directoryDetails?.offerings ?? [];
+  const hseResources = directoryDetails?.admissionResources;
   const admissionsUrl =
     university.admissionsUrl ?? directoryDetails?.fields.admissionsUrl?.value;
+  const admissionsPhone =
+    university.admissionsPhone ??
+    directoryDetails?.fields.admissionsPhone?.value;
+  const admissionsEmail =
+    university.admissionsEmail ??
+    directoryDetails?.fields.admissionsEmail?.value;
+  const phones = Array.from(
+    new Set(admissionsPhone?.split(";").map((label) => label.trim()) ?? []),
+  ).map((label) => ({ label, dialNumber: label.replace(/[ ()-]/g, "") }));
+  const linkablePhones = phones.every(({ dialNumber }) =>
+    /^\+?[0-9]{7,15}$/.test(dialNumber),
+  );
+  const emailHref =
+    admissionsEmail &&
+    /^[^\s@<>?&#]+@[^\s@<>?&#]+\.[^\s@<>?&#]+$/.test(admissionsEmail)
+      ? `mailto:${admissionsEmail}`
+      : null;
   const isMgu = slug === "mgu";
   const factProfile = catalog.universityFacts.find(
     (item) => item.universitySlug === slug,
@@ -348,6 +370,18 @@ export default async function UniversityPage({
               Посмотреть информацию у вуза ↗
             </a>
           </section>
+        ) : slug === "hse" && hseResources ? (
+          <>
+            <HseProgramExplorer
+              {...hseExplorerData(
+                related,
+                offerings,
+                hseResources.masterTuition,
+              )}
+            />
+            <HseScoreArchive data={hseScoreArchiveData(hseResources.archive)} />
+            <HseCampusAdmissions data={hseResources.services} />
+          </>
         ) : (
           <section id="programs" className="university-program-section">
             <div className="university-section-head">
@@ -396,9 +430,10 @@ export default async function UniversityPage({
           </section>
         )}
 
-        {!isMgu && related.length > 0 && offerings.length > 0 && (
-          <UniversityOfferings rows={offerings} />
-        )}
+        {!isMgu &&
+          (slug !== "hse" || !hseResources) &&
+          related.length > 0 &&
+          offerings.length > 0 && <UniversityOfferings rows={offerings} />}
         {!isMgu && related.length > 0 && campaign && (
           <UniversityAdmissionCampaign campaign={campaign} />
         )}
@@ -493,17 +528,17 @@ export default async function UniversityPage({
                 </p>
               </>
             )}
-            {university.admissionsPhone && (
-              <a
-                href={`tel:${university.admissionsPhone.replace(/[^+\d]/g, "")}`}
-              >
-                {university.admissionsPhone}
-              </a>
-            )}
-            {university.admissionsEmail && (
-              <a href={`mailto:${university.admissionsEmail}`}>
-                {university.admissionsEmail}
-              </a>
+            {linkablePhones
+              ? phones.map(({ label, dialNumber }) => (
+                  <a href={`tel:${dialNumber}`} key={label}>
+                    {label}
+                  </a>
+                ))
+              : admissionsPhone && <p>{admissionsPhone}</p>}
+            {emailHref ? (
+              <a href={emailHref}>{admissionsEmail}</a>
+            ) : (
+              admissionsEmail && <p>{admissionsEmail}</p>
             )}
             <a
               href={

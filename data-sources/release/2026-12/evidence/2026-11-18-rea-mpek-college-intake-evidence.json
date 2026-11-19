@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "batchDateMoscow": "2026-11-18",
+  "reviewedAtUtc": "2026-11-18T00:49:44.467925+00:00",
+  "universitySlug": "rea",
+  "collegeName": "Московский промышленно-экономический колледж",
+  "admissionYear": 2026,
+  "academicYear": "2026/27",
+  "sources": {
+    "rea-college-structure": {
+      "url": "https://www.rea.ru/structure/kolledji-i-tehnikum/moskovskiy-promyishlenno-ekonomicheskiy-kolledj",
+      "finalUrl": "https://www.rea.ru/structure/kolledji-i-tehnikum/moskovskiy-promyishlenno-ekonomicheskiy-kolledj",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:46:11.110047+00:00",
+      "sha256": "93e615819655b78d4844c32abe4355d485044bc682bc0917ac268c8fa6f58bbb",
+      "bytes": 252601,
+      "kind": "html",
+      "captureKind": "raw_response_bytes"
+    },
+    "rea-plan-2026": {
+      "url": "https://www.rea.ru/mnt/sveden/document/priemDocLink/02_spo_plan_MPEK.pdf",
+      "finalUrl": "https://www.rea.ru/mnt/sveden/document/priemDocLink/02_spo_plan_MPEK.pdf",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:46:10.544272+00:00",
+      "sha256": "695596d077075d2cceb61533e180ed97e08338200e28ddc340b63800ce16cbb1",
+      "bytes": 74775,
+      "kind": "pdf",
+      "captureKind": "raw_response_bytes"
+    },
+    "college-plan-2026": {
+      "url": "https://www.mpek-rea.ru/files/abiturientu/kcp.pdf",
+      "finalUrl": "https://www.mpek-rea.ru/files/abiturientu/kcp.pdf",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:46:10.560195+00:00",
+      "sha256": "695596d077075d2cceb61533e180ed97e08338200e28ddc340b63800ce16cbb1",
+      "bytes": 74775,
+      "kind": "pdf",
+      "captureKind": "raw_response_bytes"
+    },
+    "college-specialties": {
+      "url": "https://www.mpek-rea.ru/abiturientu/spetsialnosti",
+      "finalUrl": "https://www.mpek-rea.ru/abiturientu/spetsialnosti",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:46:10.722637+00:00",
+      "sha256": "450fb333d2d7391ba2c7e66c7351ea76426ce5af7b2b2ca9c69b3ec4381320ef",
+      "bytes": 23768,
+      "kind": "html",
+      "captureKind": "raw_response_bytes"
+    },
+    "college-admissions": {
+      "url": "https://www.mpek-rea.ru/abiturientu/informatsiya-dlya-postupayushchikh",
+      "finalUrl": "https://www.mpek-rea.ru/abiturientu/informatsiya-dlya-postupayushchikh",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:46:10.796599+00:00",
+      "sha256": "ad7e03ee363d0648a6bcdcd70578fdad3777eafbe98724cb3ee80cdaaf9a3e38",
+      "bytes": 54261,
+      "kind": "html",
+      "captureKind": "raw_response_bytes"
+    },
+    "college-price-order": {
+      "url": "https://www.mpek-rea.ru/files/abiturientu/prikaz-o-stoimosti-obucheniya.pdf",
+      "finalUrl": "https://www.mpek-rea.ru/files/abiturientu/prikaz-o-stoimosti-obucheniya.pdf",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:46:10.862005+00:00",
+      "sha256": "0a581a4c522d4a81691ecd440e935772f5b57b25e57c192231af836f102f0c8d",
+      "bytes": 11231144,
+      "kind": "pdf",
+      "captureKind": "raw_response_bytes"
+    },
+    "college-rules-2026": {
+      "url": "https://www.mpek-rea.ru/component/easyfolderlistingpro/?view=download&format=raw&data=eNpNT-1qwkAQfBXZ_2JiwY_Nw8jarPHgYo67ixWK4Jv0FUJBEFroK2zfyE3OoL_uZnZmd4Ywz_Ez4AJh19iSPRQB3-aKjOUwo62JrTd8iO3MeToaS1OnuKZep1ZoA_vkDAOFkI2jquUQn1uXCJvNwPVolawHqrmHGUL_LBJrSigMZsnk2TqK-xfVKsUbvXMVydf_RTr5lpv8SDeRP4U3ucqvdEMjBD7Fx8-Vu0cePjnjOYzHct1PMdL7vtbGUGwHdq0Oz0fDH6mHZqyaprJ6-3wHcmBv7w,,",
+      "finalUrl": "https://www.mpek-rea.ru/component/easyfolderlistingpro/?view=download&format=raw&data=eNpNT-1qwkAQfBXZ_2JiwY_Nw8jarPHgYo67ixWK4Jv0FUJBEFroK2zfyE3OoL_uZnZmd4Ywz_Ez4AJh19iSPRQB3-aKjOUwo62JrTd8iO3MeToaS1OnuKZep1ZoA_vkDAOFkI2jquUQn1uXCJvNwPVolawHqrmHGUL_LBJrSigMZsnk2TqK-xfVKsUbvXMVydf_RTr5lpv8SDeRP4U3ucqvdEMjBD7Fx8-Vu0cePjnjOYzHct1PMdL7vtbGUGwHdq0Oz0fDH6mHZqyaprJ6-3wHcmBv7w,,",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:47:16.428027+00:00",
+      "sha256": "2c719f572a5c63f72068488fd067f30316d8f68cc87257fdc062ddfea00bb412",
+      "bytes": 194015,
+      "kind": "pdf",
+      "captureKind": "raw_response_bytes"
+    },
+    "college-programs-2026": {
+      "url": "https://www.mpek-rea.ru/component/easyfolderlistingpro/?view=download&format=raw&data=eNpNUF1Kw0AQvkrY99JEocbJYcq2maYLSbPsbmpBClwiiA_2Dr1CVaJCa73C7I2cZBv0aef7W74ZCUkC9xYmIBZ1maMRmYXrK0aqRDuWM-Uao3DlmrE2cq1KOdKMK9n5OCoaiyYkbU-BiAepaNC6v19vQEynPdehNERXssIOxiC6ZxJYlYtMQRxCBkst3fKfKw31hmx6C4L2_oG-6Ehn-qCWvnluoyQaRbSnlqXWP3e030XseGXiQJ88vdHBP7Jw9DsWX_xTRD8snum9t5zo1N8DBG7cZdL54rINbrQyaIeqCbeTzsn5suJ7iWzWs9xNG1xcK7wLV-ANi7ouSm6-_QWS5Znu",
+      "finalUrl": "https://www.mpek-rea.ru/component/easyfolderlistingpro/?view=download&format=raw&data=eNpNUF1Kw0AQvkrY99JEocbJYcq2maYLSbPsbmpBClwiiA_2Dr1CVaJCa73C7I2cZBv0aef7W74ZCUkC9xYmIBZ1maMRmYXrK0aqRDuWM-Uao3DlmrE2cq1KOdKMK9n5OCoaiyYkbU-BiAepaNC6v19vQEynPdehNERXssIOxiC6ZxJYlYtMQRxCBkst3fKfKw31hmx6C4L2_oG-6Ehn-qCWvnluoyQaRbSnlqXWP3e030XseGXiQJ88vdHBP7Jw9DsWX_xTRD8snum9t5zo1N8DBG7cZdL54rINbrQyaIeqCbeTzsn5suJ7iWzWs9xNG1xcK7wLV-ANi7ouSm6-_QWS5Znu",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:47:16.428582+00:00",
+      "sha256": "ecc51afddfba2198d70dd7eeb3a9e4bc9811b3700f595f051c9ec2f41a89ab6d",
+      "bytes": 165792,
+      "kind": "pdf",
+      "captureKind": "raw_response_bytes"
+    },
+    "college-certificate-priority-2026": {
+      "url": "https://www.mpek-rea.ru/component/easyfolderlistingpro/?view=download&format=raw&data=eNpNUN1OwjAUfpWm94RNBbF7GFJcXBlNNljaDkmMicKFF5L4CL4CYiYaYL7C6Rt52m7Ri7bnfD9cJz0fZ3HM7jUbMjpd5KlQNNHs8gI7mQvd5xNpKiXF3FT9UvGlzHmvxL7gTodWWmmhglN7iNGoo7JKaPM39ZrR8dhjrhsF65wXwrURo-4ZBlSmNJEsCiYl8pKb2T_VKHyv88aDK0bhzT7CFxyhgU-o4Yx1TQakR1qicbddQ43njN2TXdstsRv77KEdQb6Gg93A0W4dgKeBPXFS2GPpZ9pXBOAdtTs4ON7raudxU-GbwA-SDXx4yQlO9sVcJ8qoWJm2KtNpm4dYlVIJ3S0b437cGH47KzBxmkw8eoMOJZZS3IUcMaNsschy3P3hF4vYx18,",
+      "finalUrl": "https://www.mpek-rea.ru/component/easyfolderlistingpro/?view=download&format=raw&data=eNpNUN1OwjAUfpWm94RNBbF7GFJcXBlNNljaDkmMicKFF5L4CL4CYiYaYL7C6Rt52m7Ri7bnfD9cJz0fZ3HM7jUbMjpd5KlQNNHs8gI7mQvd5xNpKiXF3FT9UvGlzHmvxL7gTodWWmmhglN7iNGoo7JKaPM39ZrR8dhjrhsF65wXwrURo-4ZBlSmNJEsCiYl8pKb2T_VKHyv88aDK0bhzT7CFxyhgU-o4Yx1TQakR1qicbddQ43njN2TXdstsRv77KEdQb6Gg93A0W4dgKeBPXFS2GPpZ9pXBOAdtTs4ON7raudxU-GbwA-SDXx4yQlO9sVcJ8qoWJm2KtNpm4dYlVIJ3S0b437cGH47KzBxmkw8eoMOJZZS3IUcMaNsschy3P3hF4vYx18,",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-18T00:47:16.325624+00:00",
+      "sha256": "2f5e01168e849df4ba4b6edc08aebcd99e23ee544e9cc2205fb97e5eb4b47750",
+      "bytes": 137157,
+      "kind": "pdf",
+      "captureKind": "raw_response_bytes"
+    }
+  },
+  "officialDomainRelationship": {
+    "source": "rea-college-structure",
+    "locator": "Ссылка «Официальный сайт колледжа»",
+    "officialCollegeUrl": "https://mpek-rea.ru/"
+  },
+  "specialties": [
+    {
+      "code": "38.02.01",
+      "title": "Экономика и бухгалтерский учет (по отраслям)",
+      "source": "rea-plan-2026",
+      "pageOneBased": 1,
+      "tableRowOneBased": 4,
+      "budgetTotal": 35,
+      "budgetFullTimeBase9": 35,
+      "paidTotal": 130,
+      "paidFullTimeBase9": 85,
+      "paidFullTimeBase11": 25,
+      "paidPartTimeBase11": 20,
+      "routes": [
+        {
+          "offeringId": "rea-mpek-2026-38-02-01-full-9",
+          "form": "очная",
+          "schoolBase": 9,
+          "duration": "2 года 10 месяцев",
+          "budgetPlaces": 35,
+          "paidPlaces": 85,
+          "annualTuitionRub": 220000
+        },
+        {
+          "offeringId": "rea-mpek-2026-38-02-01-full-11",
+          "form": "очная",
+          "schoolBase": 11,
+          "duration": "1 год 10 месяцев",
+          "budgetPlaces": null,
+          "paidPlaces": 25,
+          "annualTuitionRub": 220000
+        },
+        {
+          "offeringId": "rea-mpek-2026-38-02-01-part-11",
+          "form": "заочная",
+          "schoolBase": 11,
+          "duration": "2 года 10 месяцев",
+          "budgetPlaces": null,
+          "paidPlaces": 20,
+          "annualTuitionRub": 150000
+        }
+      ]
+    },
+    {
+      "code": "38.02.07",
+      "title": "Банковское дело",
+      "source": "rea-plan-2026",
+      "pageOneBased": 1,
+      "tableRowOneBased": 5,
+      "budgetTotal": 10,
+      "budgetFullTimeBase9": 10,
+      "paidTotal": 85,
+      "paidFullTimeBase9": 75,
+      "paidFullTimeBase11": 10,
+      "paidPartTimeBase11": 0,
+      "routes": [
+        {
+          "offeringId": "rea-mpek-2026-38-02-07-full-9",
+          "form": "очная",
+          "schoolBase": 9,
+          "duration": "2 года 10 месяцев",
+          "budgetPlaces": 10,
+          "paidPlaces": 75,
+          "annualTuitionRub": 220000
+        },
+        {
+          "offeringId": "rea-mpek-2026-38-02-07-full-11",
+          "form": "очная",
+          "schoolBase": 11,
+          "duration": "1 год 10 месяцев",
+          "budgetPlaces": null,
+          "paidPlaces": 10,
+          "annualTuitionRub": 220000
+        }
+      ]
+    },
+    {
+      "code": "38.02.06",
+      "title": "Финансы",
+      "source": "rea-plan-2026",
+      "pageOneBased": 1,
+      "tableRowOneBased": 6,
+      "budgetTotal": 40,
+      "budgetFullTimeBase9": 40,
+      "paidTotal": 60,
+      "paidFullTimeBase9": 50,
+      "paidFullTimeBase11": 10,
+      "paidPartTimeBase11": 0,
+      "routes": [
+        {
+          "offeringId": "rea-mpek-2026-38-02-06-full-9",
+          "form": "очная",
+          "schoolBase": 9,
+          "duration": "2 года 10 месяцев",
+          "budgetPlaces": 40,
+          "paidPlaces": 50,
+          "annualTuitionRub": 220000
+        },
+        {
+          "offeringId": "rea-mpek-2026-38-02-06-full-11",
+          "form": "очная",
+          "schoolBase": 11,
+          "duration": "1 год 10 месяцев",
+          "budgetPlaces": null,
+          "paidPlaces": 10,
+          "annualTuitionRub": 220000
+        }
+      ]
+    },
+    {
+      "code": "40.02.04",
+      "title": "Юриспруденция",
+      "source": "rea-plan-2026",
+      "pageOneBased": 1,
+      "tableRowOneBased": 7,
+      "budgetTotal": 35,
+      "budgetFullTimeBase9": 35,
+      "paidTotal": 95,
+      "paidFullTimeBase9": 65,
+      "paidFullTimeBase11": 10,
+      "paidPartTimeBase11": 20,
+      "routes": [
+        {
+          "offeringId": "rea-mpek-2026-40-02-04-full-9",
+          "form": "очная",
+          "schoolBase": 9,
+          "duration": "2 года 10 месяцев",
+          "budgetPlaces": 35,
+          "paidPlaces": 65,
+          "annualTuitionRub": 220000
+        },
+        {
+          "offeringId": "rea-mpek-2026-40-02-04-full-11",
+          "form": "очная",
+          "schoolBase": 11,
+          "duration": "1 год 10 месяцев",
+          "budgetPlaces": null,
+          "paidPlaces": 10,
+          "annualTuitionRub": 220000
+        },
+        {
+          "offeringId": "rea-mpek-2026-40-02-04-part-11",
+          "form": "заочная",
+          "schoolBase": 11,
+          "duration": "2 года 10 месяцев",
+          "budgetPlaces": null,
+          "paidPlaces": 20,
+          "annualTuitionRub": 150000
+        }
+      ]
+    },
+    {
+      "code": "54.02.01",
+      "title": "Дизайн (по отраслям)",
+      "source": "rea-plan-2026",
+      "pageOneBased": 1,
+      "tableRowOneBased": 8,
+      "budgetTotal": 10,
+      "budgetFullTimeBase9": 10,
+      "paidTotal": 40,
+      "paidFullTimeBase9": 40,
+      "paidFullTimeBase11": 0,
+      "paidPartTimeBase11": 0,
+      "routes": [
+        {
+          "offeringId": "rea-mpek-2026-54-02-01-full-9",
+          "form": "очная",
+          "schoolBase": 9,
+          "duration": "3 года 10 месяцев",
+          "budgetPlaces": 10,
+          "paidPlaces": 40,
+          "annualTuitionRub": 660000
+        }
+      ]
+    }
+  ],
+  "certificateAssessment": {
+    "source": "college-rules-2026",
+    "pageOneBased": 14,
+    "section": "пункт 46",
+    "methodRu": "Сумма всех оценок документа об образовании, делённая на количество предметов; математическое округление до 4 десятичных знаков.",
+    "publishedPassingAverage": null,
+    "passingAverageStatus": "not_published",
+    "tieBreakSource": "college-certificate-priority-2026",
+    "tieBreakPageOneBased": 1
+  },
+  "admissionDocument": {
+    "source": "college-admissions",
+    "locator": "Блок «Уважаемые абитуриенты»; перечень документов",
+    "noteRu": "На странице колледжа для зачисления запрошен оригинал аттестата. Правила пункта 43 также предусматривают согласие через портал госуслуг и электронный дубликат; исключение сохранено без ложного абсолютного требования бумажного оригинала."
+  },
+  "publicationCaveat": {
+    "source": "rea-plan-2026",
+    "pageOneBased": 1,
+    "noteRu": "Опубликованный план приёма 2026/27 содержит незаполненные номер протокола, дату утверждения и строку подписи. Значения подтверждены как опубликованные плановые места, а не как подписанный распорядительный документ; актуальность набора следует уточнять в приёмной комиссии."
+  },
+  "discountAnnouncement": {
+    "source": "college-specialties",
+    "locator": "Примечание после таблицы специальностей",
+    "code": "54.02.01",
+    "annualPriceAsOrderRub": 660000,
+    "proposedAnnualPriceRub": 330000,
+    "status": "pending_review",
+    "noteRu": "Скидка 50% только анонсирована, положение ожидает утверждения; в подтверждённые тарифы не включена."
+  },
+  "verification": {
+    "planPageVisuallyChecked": 1,
+    "tuitionPageVisuallyChecked": 10,
+    "rawSourceHashesChecked": 9,
+    "specialties": 5,
+    "routes": 11,
+    "budgetPlacesWithoutDoubleCounting": 130,
+    "paidPlacesWithoutDoubleCounting": 410,
+    "paidBreakdown": {
+      "fullTimeBase9": 315,
+      "fullTimeBase11": 55,
+      "partTimeBase11": 40
+    }
+  },
+  "limitations": [
+    "Пакет охватывает один колледж и все пять строк выбранного официального плана, а не все колледжи РЭУ.",
+    "План опубликован с незаполненными реквизитами утверждения; это явно отражено у каждого маршрута.",
+    "Проходной средний балл аттестата и результаты прошлых лет в этих источниках не установлены.",
+    "Числа нулевых внебюджетных категорий сохранены в исходных пяти строках; маршруты с нулём мест не создаются.",
+    "Отсутствующие бюджетные колонки базы 11 классов не превращены в проверенный ноль."
+  ]
+}

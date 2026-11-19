@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-16T14:34:15+00:00",
+  "scope": "Москва, очный бакалавриат, условия 2026; опубликованные проходные 2025 и 2026 отдельно по источнику финансирования.",
+  "tuitionOrder": {
+    "date": "2026-02-16",
+    "number": "6.18-01/160226-13",
+    "paragraphIndicesZeroBased": {
+      "number": 0,
+      "date": 1,
+      "operativeApproval": 25
+    },
+    "approvalScope": "Appendices 1–4, entrants to bachelor and specialist paid places in2026"
+  },
+  "sources": {
+    "catalog": {
+      "url": "https://www.hse.ru/mirror/pubs/share/1162982432.pdf",
+      "kind": "pdf",
+      "retrievedAt": "2026-11-10T17:14:34.167263+00:00",
+      "bytes": 968341,
+      "sha256": "c67a0218143aafca03374a99722100614bf631ddb6f95ed7d2e0b66eaab87c6e"
+    },
+    "places": {
+      "url": "https://ba.hse.ru/kolmest",
+      "kind": "html",
+      "retrievedAt": "2026-11-10T17:14:33.254894+00:00",
+      "bytes": 229199,
+      "sha256": "080da1bd368fefdda822f0d6e84f0f7482067bd645c714f71dea0181345cde72"
+    },
+    "moscowExams": {
+      "url": "https://ba.hse.ru/mirror/pubs/share/1120607478",
+      "kind": "pdf",
+      "retrievedAt": "2026-11-10T17:17:52.290846+00:00",
+      "bytes": 413663,
+      "sha256": "70da5e57577457bdaa41ec509f980af77d61381103fb46c30a359bb57b35b14b"
+    },
+    "moscowAchievements": {
+      "url": "https://ba.hse.ru/mirror/pubs/share/1134464667",
+      "kind": "pdf",
+      "retrievedAt": "2026-11-10T17:17:52.527799+00:00",
+      "bytes": 480412,
+      "sha256": "4e40c5cea4dd35f70b06d775618c73e513d975f56fa59a14722f87d54a3b2cbf"
+    },
+    "rules": {
+      "url": "https://ba.hse.ru/mirror/pubs/share/1170720303",
+      "kind": "pdf",
+      "retrievedAt": "2026-11-10T17:17:53.270389+00:00",
+      "bytes": 360743,
+      "sha256": "e1dece7e32167ee3598a4c2a714a021e938b06a740ef771037de3f11557a04ec"
+    },
+    "mathPassport": {
+      "url": "https://www.hse.ru/ba/math/admission/",
+      "kind": "html",
+      "retrievedAt": "2026-11-10T17:17:16.847982+00:00",
+      "bytes": 59327,
+      "sha256": "aede68756bb03ca9cea081da8dd9689d1b203c960de89da43d35ed79b84f6db3"
+    },
+    "applied-mathPassport": {
+      "url": "https://www.hse.ru/ba/am/admission/",
+      "kind": "html",
+      "retrievedAt": "2026-11-10T17:17:16.926118+00:00",
+      "bytes": 62946,
+      "sha256": "32801293842ccf8ccde25867f699ce3a63fbab4dcaaa8f145ea1bee8dcb88f89"
+    },
+    "physicsPassport": {
+      "url": "https://www.hse.ru/ba/physics/admission/",
+      "kind": "html",
+      "retrievedAt": "2026-11-10T17:17:17.096687+00:00",
+      "bytes": 63928,
+      "sha256": "36b7d3858ae26dc9b6e1477107a541c71f5308d406432a7b95b361068d9072fe"
+    },
+    "chemistryPassport": {
+      "url": "https://www.hse.ru/ba/chem/admission/",
+      "kind": "html",
+      "retrievedAt": "2026-11-10T17:17:17.096687+00:00",
+      "bytes": 70726,
+      "sha256": "c8fbb5f08faa137a9370395354c196e660f46ccd7dbb6d943c652d9768ebf15b"
+    },
+    "software-engineeringPassport": {
+      "url": "https://www.hse.ru/ba/se/admission/",
+      "kind": "html",
+      "retrievedAt": "2026-11-10T17:17:17.046474+00:00",
+      "bytes": 84843,
+      "sha256": "2856e25df6a5d98ac1775500552ade10ad5567b3bd2776921ce966c602db4eb3"
+    },
+    "hub": {
+      "url": "https://www.hse.ru/sveden/paid_edu",
+      "kind": "html",
+      "retrievedAt": "2026-11-10T17:42:36.797769+00:00",
+      "bytes": 54259,
+      "sha256": "9792bf0111798dc4c84501bc435d3e4c06acffde85f50a396a004ef3b2b393d1"
+    },
+    "order": {
+      "url": "https://www.hse.ru/pubs/share/direct/1134846798.docx",
+      "kind": "docx",
+      "retrievedAt": "2026-11-10T17:42:36.937618+00:00",
+      "bytes": 19972,
+      "sha256": "4387b817ef37b06bfff94082f4395e1a6ab9ce1aed9fba7d190c8dcea0480b1c"
+    },
+    "moscowAppendix": {
+      "url": "https://www.hse.ru/pubs/share/direct/1134847242.docx",
+      "kind": "docx",
+      "retrievedAt": "2026-11-10T17:42:37.312827+00:00",
+      "bytes": 28931,
+      "sha256": "e78ef6043d03a249f9c334c3a83443cfe180fa84b839a5fffe4027fb8261d887"
+    },
+    "history": {
+      "url": "https://ba.hse.ru/result2025",
+      "kind": "html",
+      "retrievedAt": "2026-11-10T17:42:48.621372+00:00",
+      "bytes": 177248,
+      "sha256": "883433cda98c81b5d00f7f541a0fae84b0eb01152144427c83c181e1f575ba14"
+    },
+    "softwareEngineeringResults2026": {
+      "url": "https://cs.hse.ru/abitur/ba",
+      "kind": "html",
+      "retrievedAt": "2026-11-16T14:25:57.6681801Z",
+      "bytes": 115382,
+      "sha256": "69ddaf19967f0d6a95864a8dee10e7901ca29c3e514f111ba0d7c0ce6c5be9dd"
+    }
+  },
+  "programs": [
+    {
+      "slug": "hse-math",
+      "title": "Математика",
+      "code": "01.03.01",
+      "faculty": "Факультет математики",
+      "durationYears": 4,
+      "languageAsPublished": "Обучение ведется на русском и частично на английском языке",
+      "passport": "mathPassport",
+      "examPages": [2],
+      "examLocator": "Приложение 1, очная форма, строка программы 1, 01.03.01 Математика",
+      "exams": [
+        {
+          "subjects": ["Математика"],
+          "minimum": 75,
+          "page": 2
+        },
+        {
+          "subjects": ["Физика", "Информатика"],
+          "minimum": 70,
+          "page": 2
+        },
+        {
+          "subjects": ["Русский язык"],
+          "minimum": 65,
+          "page": 2
+        }
+      ],
+      "placesRow": 3,
+      "budget": 60,
+      "paid": 25,
+      "foreignSeparate": null,
+      "special": 6,
+      "separate": 6,
+      "target": null,
+      "targetFootnotes": [],
+      "tuition": 560000,
+      "tuitionRow": 1,
+      "tuitionLocator": "word/document.xml: (//w:tbl)[1]/w:tr[13]",
+      "historyRow": 3,
+      "historyPage": 4,
+      "budget2025": 282,
+      "paid2025": 250
+    },
+    {
+      "slug": "hse-applied-math",
+      "title": "Прикладная математика",
+      "code": "01.03.04",
+      "faculty": "Московский институт электроники и математики им. А.Н. Тихонова",
+      "durationYears": 4,
+      "languageAsPublished": "Обучение ведется на русском и частично на английском языке",
+      "passport": "applied-mathPassport",
+      "examPages": [3, 4],
+      "examLocator": "Приложение 1, очная форма, строка программы 6, 01.03.04 Прикладная математика",
+      "exams": [
+        {
+          "subjects": ["Физика", "Информатика"],
+          "minimum": 65,
+          "page": 3
+        },
+        {
+          "subjects": ["Математика"],
+          "minimum": 65,
+          "page": 4
+        },
+        {
+          "subjects": ["Русский язык"],
+          "minimum": 60,
+          "page": 4
+        }
+      ],
+      "placesRow": 10,
+      "budget": 80,
+      "paid": 70,
+      "foreignSeparate": 5,
+      "special": 8,
+      "separate": 8,
+      "target": 2,
+      "targetFootnotes": ["2"],
+      "tuition": 700000,
+      "tuitionRow": 6,
+      "tuitionLocator": "word/document.xml: (//w:tbl)[1]/w:tr[20]",
+      "historyRow": 10,
+      "historyPage": 4,
+      "budget2025": 294,
+      "paid2025": 210
+    },
+    {
+      "slug": "hse-physics",
+      "title": "Физика",
+      "code": "03.03.02",
+      "faculty": "Факультет физики",
+      "durationYears": 4,
+      "languageAsPublished": "Обучение ведется на русском и частично на английском языке",
+      "passport": "physicsPassport",
+      "examPages": [4],
+      "examLocator": "Приложение 1, очная форма, строка программы 7, 03.03.02 Физика",
+      "exams": [
+        {
+          "subjects": ["Физика"],
+          "minimum": 70,
+          "page": 4
+        },
+        {
+          "subjects": ["Математика"],
+          "minimum": 70,
+          "page": 4
+        },
+        {
+          "subjects": ["Русский язык"],
+          "minimum": 60,
+          "page": 4
+        }
+      ],
+      "placesRow": 12,
+      "budget": 40,
+      "paid": 30,
+      "foreignSeparate": 1,
+      "special": 4,
+      "separate": 4,
+      "target": null,
+      "targetFootnotes": [],
+      "tuition": 610000,
+      "tuitionRow": 7,
+      "tuitionLocator": "word/document.xml: (//w:tbl)[1]/w:tr[22]",
+      "historyRow": 13,
+      "historyPage": 4,
+      "budget2025": 243,
+      "paid2025": 209
+    },
+    {
+      "slug": "hse-chemistry",
+      "title": "Химия",
+      "code": "04.03.01",
+      "faculty": "Факультет химии",
+      "durationYears": 4,
+      "languageAsPublished": "Обучение ведется на русском и частично на английском языке",
+      "passport": "chemistryPassport",
+      "examPages": [4],
+      "examLocator": "Приложение 1, очная форма, строка программы 8, 04.03.01 Химия",
+      "exams": [
+        {
+          "subjects": ["Химия"],
+          "minimum": 70,
+          "page": 4
+        },
+        {
+          "subjects": ["Математика", "Физика"],
+          "minimum": 70,
+          "page": 4
+        },
+        {
+          "subjects": ["Русский язык"],
+          "minimum": 60,
+          "page": 4
+        }
+      ],
+      "placesRow": 14,
+      "budget": 35,
+      "paid": 10,
+      "foreignSeparate": 1,
+      "special": 4,
+      "separate": 4,
+      "target": null,
+      "targetFootnotes": [],
+      "tuition": 660000,
+      "tuitionRow": 8,
+      "tuitionLocator": "word/document.xml: (//w:tbl)[1]/w:tr[24]",
+      "historyRow": 16,
+      "historyPage": 4,
+      "budget2025": 276,
+      "paid2025": 258
+    },
+    {
+      "slug": "hse-software-engineering",
+      "title": "Программная инженерия",
+      "code": "09.03.04",
+      "faculty": "Факультет компьютерных наук",
+      "durationYears": 4,
+      "languageAsPublished": "Обучение ведется на русском и частично на английском языке",
+      "passport": "software-engineeringPassport",
+      "examPages": [6],
+      "examLocator": "Приложение 1, очная форма, строка программы 15, 09.03.04 Программная инженерия",
+      "exams": [
+        {
+          "subjects": ["Математика"],
+          "minimum": 70,
+          "page": 6
+        },
+        {
+          "subjects": ["Информатика"],
+          "minimum": 70,
+          "page": 6
+        },
+        {
+          "subjects": ["Русский язык"],
+          "minimum": 60,
+          "page": 6
+        }
+      ],
+      "placesRow": 27,
+      "budget": 160,
+      "paid": 125,
+      "foreignSeparate": 5,
+      "special": 16,
+      "separate": 16,
+      "target": 10,
+      "targetFootnotes": ["4"],
+      "tuition": 980000,
+      "tuitionRow": 15,
+      "tuitionLocator": "word/document.xml: (//w:tbl)[1]/w:tr[37]",
+      "historyRow": 33,
+      "historyPage": 5,
+      "budget2025": 299,
+      "paid2025": 260
+    }
+  ],
+  "existingEconomics2025": {
+    "title": "Экономика",
+    "programUrl": "https://www.hse.ru/ba/economics/",
+    "year": 2025,
+    "campus": "Москва",
+    "tableIndexZeroBased": 0,
+    "rowIndexZeroBased": 49,
+    "budget": 291,
+    "paid": 223
+  },
+  "softwareEngineering2026": {
+    "identity": {
+      "title": "Программная инженерия",
+      "campus": "Москва",
+      "code": "09.03.04",
+      "form": "Очная",
+      "year": 2026
+    },
+    "source": {
+      "url": "https://cs.hse.ru/abitur/ba",
+      "retrievedAtUtc": "2026-11-16T14:25:57.6681801Z",
+      "bytes": 115382,
+      "sha256": "69ddaf19967f0d6a95864a8dee10e7901ca29c3e514f111ba0d7c0ce6c5be9dd"
+    },
+    "tabLocator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/div/span[2]",
+    "values": {
+      "budget": {
+        "value": 297,
+        "totalMaximum": 310,
+        "heading": "Проходные баллы",
+        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[2]/div[1]/ul/li[1]"
+      },
+      "greenWave": {
+        "value": 300,
+        "totalMaximum": 310,
+        "heading": "Баллы «Зеленой волны»",
+        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[2]/div[2]/ul/li[1]"
+      },
+      "paid": {
+        "value": 221,
+        "totalMaximum": 310,
+        "heading": "Проходные баллы на коммерцию",
+        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[2]/div[4]/ul/li[1]"
+      }
+    },
+    "budgetCrossCheck": {
+      "url": "https://www.hse.ru/ba/se/tracks",
+      "retrievedAtUtc": "2026-11-16T14:25:59.5641778Z",
+      "bytes": 64262,
+      "sha256": "d39638ef8d94ba9e9bd0cba7497e360f7b472cd9269a3c7c89e52487094b05da",
+      "locator": "/html/body/div[1]/div[6]/div/div[2]/div/div/div[1]/div/div/div/p[6]"
+    },
+    "identityPassport": "https://www.hse.ru/ba/se/admission/",
+    "limitation": "Опубликованные проходные факультета. Зелёная волна и критерий заключения договора имеют отдельные разделы. Не присваивать им статус фактического проходного."
+  },
+  "limitations": [
+    "План бюджетных мест включает квоты. Число мест общего конкурса требует отдельного источника.",
+    "Платные места отдельного конкурса иностранцев не входят в значение основного договора.",
+    "Прочерк целевой квоты остаётся неизвестным.",
+    "Опубликованные проходные показываются с годом и источником. Шкала, пригодная для автоматического сравнения текущих баллов с итогами 2025, не подтверждена для новых карточек.",
+    "Вместимость общежития и доступность ВУЦ для конкретного конкурса проверяются отдельно."
+  ]
+}

@@ -126,6 +126,13 @@ function sourcedFields(
       (item) =>
         ["passing_score_general", item] as [string, SourcedValue<unknown>],
     ),
+    ...(program.paidPassingHistory ?? []).map(
+      (item) => ["passing_score_paid", item] as [string, SourcedValue<unknown>],
+    ),
+    ...(program.admissionConditions ?? []).map(
+      (item) =>
+        ["admission_condition", item] as [string, SourcedValue<unknown>],
+    ),
     ...program.placesHistory.map(
       (item) => ["budget_places", item] as [string, SourcedValue<unknown>],
     ),

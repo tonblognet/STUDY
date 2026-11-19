@@ -1,0 +1,722 @@
+{
+  "reviewedAtUtc": "2026-11-16T15:01:11.216176+00:00",
+  "sources": {
+    "spb-dorms": {
+      "key": "spb-dorms",
+      "url": "https://spb.hse.ru/dormitory/",
+      "finalUrl": "https://spb.hse.ru/dormitory/",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:56:06.456021+00:00",
+      "bytes": 150603,
+      "sha256": "97c4ec6c28a215b0765075c0c4ea72daa10643c4896a67e68a0725e1970126a7"
+    },
+    "nnov-dorms": {
+      "key": "nnov-dorms",
+      "url": "https://nnov.hse.ru/dormitory/",
+      "finalUrl": "https://nnov.hse.ru/dormitory/",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:56:06.411464+00:00",
+      "bytes": 74607,
+      "sha256": "d19be18cf9127f20e01d9050e11750b89b210b9c4e612fedf56a269c3ef75e23"
+    },
+    "perm-dorms": {
+      "key": "perm-dorms",
+      "url": "https://perm.hse.ru/dormitory/",
+      "finalUrl": "https://perm.hse.ru/dormitory/",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:56:06.402040+00:00",
+      "bytes": 110162,
+      "sha256": "1867891b2927944fad20dca5cd41035c6c4726702b7f84ad36b4fb7077f462f3"
+    },
+    "hse-military-admission": {
+      "key": "hse-military-admission",
+      "url": "https://www.hse.ru/org/hse/ouk/mil/abiturient",
+      "finalUrl": "https://www.hse.ru/org/hse/ouk/mil/abiturient",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:56:07.681589+00:00",
+      "bytes": 75524,
+      "sha256": "5492e00b1baa733afc0a21e54074f4ee2a8740101e12140b2e79e96085f857fc"
+    },
+    "moscow-dormoffice": {
+      "key": "moscow-dormoffice",
+      "url": "https://www.hse.ru/dormoffice/",
+      "finalUrl": "https://www.hse.ru/dormoffice/",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:58:09.500301+00:00",
+      "bytes": 71864,
+      "sha256": "b7475ae08e980d3576d06cc851ee71dfb53777fd93403db530684ccbf7472fa3"
+    },
+    "nnov-military": {
+      "key": "nnov-military",
+      "url": "https://nnov.hse.ru/milit/",
+      "finalUrl": "https://nnov.hse.ru/milit/",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:58:07.667890+00:00",
+      "bytes": 84978,
+      "sha256": "764e027d93ff47ade9cd0be37ea98f0800c6c252cb587e4d933337f36d90eda5"
+    },
+    "spb-military": {
+      "key": "spb-military",
+      "url": "https://spb.hse.ru/milspb/abiturient",
+      "finalUrl": "https://spb.hse.ru/milspb/abiturient",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:58:24.340871+00:00",
+      "bytes": 53605,
+      "sha256": "e7882ed3a35a8cd3669cc5ad79e296de403f62374b6c830ba41e52c60728f148"
+    },
+    "perm-military": {
+      "key": "perm-military",
+      "url": "https://perm.hse.ru/martial/",
+      "finalUrl": "https://perm.hse.ru/martial/",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:58:07.667890+00:00",
+      "bytes": 86693,
+      "sha256": "4a3e6145af6cef928a30918a2b715594e94af4508dd2fa4c657a87e61fe8a15b"
+    },
+    "spb-contract-dates": {
+      "key": "spb-contract-dates",
+      "url": "https://spb.hse.ru/ba/pay",
+      "finalUrl": "https://spb.hse.ru/ba/pay",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:59:29.663436+00:00",
+      "bytes": 134043,
+      "sha256": "1bc0db57ee531fe0f5c3f146ed580e6fd8fdccc3468ff7cc438dae84dfe70758"
+    },
+    "spb-enrollment-dates": {
+      "key": "spb-enrollment-dates",
+      "url": "https://spb.hse.ru/ba/tracks_exams",
+      "finalUrl": "https://spb.hse.ru/ba/tracks_exams",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:59:30.966215+00:00",
+      "bytes": 125254,
+      "sha256": "e2981ecc771436cd8186f00fac36c2d3eb3aa3b0d16b76c8f15b538b9c444321"
+    },
+    "moscow-deadlines": {
+      "key": "moscow-deadlines",
+      "url": "https://ba.hse.ru/information",
+      "finalUrl": "https://ba.hse.ru/information",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:55:14.492364+00:00",
+      "bytes": 191315,
+      "sha256": "27457fbc0e3a9428e42091131386b049e00ab6c1b03df5025e3fa5478f5e2937"
+    },
+    "spb-deadlines": {
+      "key": "spb-deadlines",
+      "url": "https://spb.hse.ru/ba/information",
+      "finalUrl": "https://spb.hse.ru/ba/information",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:55:13.473936+00:00",
+      "bytes": 123867,
+      "sha256": "b773b8c5da685c7186f7a3b51ea164c3b068e403d8a8c396f42ba3c534d30ac9"
+    },
+    "nnov-deadlines": {
+      "key": "nnov-deadlines",
+      "url": "https://nnov.hse.ru/bacnn/information",
+      "finalUrl": "https://nnov.hse.ru/bacnn/information",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:55:12.641409+00:00",
+      "bytes": 112001,
+      "sha256": "b52cde0cade88d52d007adb763d7a105f96a6bf03e82d85b5596e4a3d870cd77"
+    },
+    "perm-deadlines": {
+      "key": "perm-deadlines",
+      "url": "https://perm.hse.ru/bacalavr/sroki_priema",
+      "finalUrl": "https://perm.hse.ru/bacalavr/sroki_priema",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:55:13.444391+00:00",
+      "bytes": 93061,
+      "sha256": "5cbf91eda7d9a4816c04685875afed00e3fa15d6c50561aee6e6cdb259e23fb6"
+    },
+    "moscow-dorms": {
+      "key": "moscow-dorms",
+      "url": "https://www.hse.ru/dormitory/",
+      "finalUrl": "https://www.hse.ru/dormitory/",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:55:13.414845+00:00",
+      "bytes": 144225,
+      "sha256": "d8648d28f3212bb84c342cdae8ba83d755ae22e24b420d597efb54020db670dd"
+    },
+    "hse-military": {
+      "key": "hse-military",
+      "url": "https://www.hse.ru/org/hse/ouk/mil/",
+      "finalUrl": "https://www.hse.ru/org/hse/ouk/mil/",
+      "httpStatus": 200,
+      "retrievedAtUtc": "2026-11-16T14:55:14.027152+00:00",
+      "bytes": 124479,
+      "sha256": "f22da965dbccfa3b40bdbdbd97bcc5ef91aa96b67d1d6e824a1770bb11a682b6"
+    }
+  },
+  "campusAdmissionDeadlines": [
+    {
+      "campus": "moscow",
+      "campusName": "Москва",
+      "admissionYear": 2026,
+      "deadlines": [
+        {
+          "event": "applications_open",
+          "date": "2026-06-20",
+          "time": null,
+          "timeZone": null,
+          "scope": "Бакалавриат и специалитет",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_submission_ege_or_bvi",
+          "date": "2026-07-25",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "ЕГЭ, а также БВИ в формулировке соответствующей страницы. Программы с внутренними/творческими испытаниями имеют отдельный срок.",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_submission_internal_or_creative",
+          "date": "2026-07-14",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Поступающие с внутренними или творческими испытаниями, при наличии бюджетного конкурса на программу.",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_submission_ege",
+          "date": "2026-08-12",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "ЕГЭ. Центральная, нижегородская и пермская страницы также указывают БВИ.",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_submission_internal_or_creative",
+          "date": "2026-08-03",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Внутренние или творческие испытания.",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_ranked_lists",
+          "date": "2026-07-27",
+          "time": null,
+          "timeZone": null,
+          "scope": "Основная приёмная кампания",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_priority_consent",
+          "date": "2026-08-01",
+          "time": "12:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "БВИ, особая, целевая и отдельная квоты.",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_general_consent",
+          "date": "2026-08-05",
+          "time": "12:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Основной этап",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_priority_enrollment_order",
+          "date": "2026-08-03",
+          "time": null,
+          "timeZone": null,
+          "scope": "Приоритетный этап",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_general_enrollment_order",
+          "date": "2026-08-07",
+          "time": null,
+          "timeZone": null,
+          "scope": "Основной этап",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_conclusion_deadline",
+          "date": "2026-08-17",
+          "time": null,
+          "timeZone": null,
+          "scope": "Общий срок. Возможные продления требуют отдельного опубликованного решения.",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_enrollment_deadline",
+          "date": "2026-08-20",
+          "time": null,
+          "timeZone": null,
+          "scope": "Не позднее указанной даты.",
+          "sourceKey": "moscow-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        }
+      ]
+    },
+    {
+      "campus": "spb",
+      "campusName": "Санкт-Петербург",
+      "admissionYear": 2026,
+      "deadlines": [
+        {
+          "event": "applications_open",
+          "date": "2026-06-20",
+          "time": null,
+          "timeZone": null,
+          "scope": "Бакалавриат",
+          "sourceKey": "spb-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_submission_ege_or_bvi",
+          "date": "2026-07-25",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "ЕГЭ, а также БВИ в формулировке соответствующей страницы. Программы с внутренними/творческими испытаниями имеют отдельный срок.",
+          "sourceKey": "spb-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_submission_internal_or_creative",
+          "date": "2026-07-14",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Поступающие с внутренними или творческими испытаниями, при наличии бюджетного конкурса на программу.",
+          "sourceKey": "spb-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_submission_ege",
+          "date": "2026-08-12",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "ЕГЭ. Центральная, нижегородская и пермская страницы также указывают БВИ.",
+          "sourceKey": "spb-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_submission_internal_or_creative",
+          "date": "2026-08-03",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Внутренние или творческие испытания.",
+          "sourceKey": "spb-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_ranked_lists",
+          "date": "2026-07-27",
+          "time": null,
+          "timeZone": null,
+          "scope": "Основная приёмная кампания",
+          "sourceKey": "spb-enrollment-dates",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_priority_consent",
+          "date": "2026-08-01",
+          "time": "12:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "БВИ, особая, целевая и отдельная квоты.",
+          "sourceKey": "spb-enrollment-dates",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_general_consent",
+          "date": "2026-08-05",
+          "time": "12:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Основной этап",
+          "sourceKey": "spb-enrollment-dates",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_priority_enrollment_order",
+          "date": "2026-08-03",
+          "time": null,
+          "timeZone": null,
+          "scope": "Приоритетный этап",
+          "sourceKey": "spb-enrollment-dates",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_general_enrollment_order",
+          "date": "2026-08-07",
+          "time": null,
+          "timeZone": null,
+          "scope": "Основной этап",
+          "sourceKey": "spb-enrollment-dates",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_conclusion_deadline",
+          "date": "2026-08-17",
+          "time": null,
+          "timeZone": null,
+          "scope": "Общий срок. Возможные продления требуют отдельного опубликованного решения.",
+          "sourceKey": "spb-contract-dates",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_enrollment_deadline",
+          "date": "2026-08-20",
+          "time": null,
+          "timeZone": null,
+          "scope": "Не позднее указанной даты.",
+          "sourceKey": "spb-contract-dates",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        }
+      ]
+    },
+    {
+      "campus": "nnov",
+      "campusName": "Нижний Новгород",
+      "admissionYear": 2026,
+      "deadlines": [
+        {
+          "event": "applications_open",
+          "date": "2026-06-20",
+          "time": null,
+          "timeZone": null,
+          "scope": "Бакалавриат",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_submission_ege_or_bvi",
+          "date": "2026-07-25",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "ЕГЭ, а также БВИ в формулировке соответствующей страницы. Программы с внутренними/творческими испытаниями имеют отдельный срок.",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_submission_internal_or_creative",
+          "date": "2026-07-14",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Поступающие с внутренними или творческими испытаниями, при наличии бюджетного конкурса на программу.",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_submission_ege",
+          "date": "2026-08-12",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "ЕГЭ. Центральная, нижегородская и пермская страницы также указывают БВИ.",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_submission_internal_or_creative",
+          "date": "2026-08-03",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Внутренние или творческие испытания.",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_ranked_lists",
+          "date": "2026-07-27",
+          "time": null,
+          "timeZone": null,
+          "scope": "Основная приёмная кампания",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_priority_consent",
+          "date": "2026-08-01",
+          "time": "12:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "БВИ, особая, целевая и отдельная квоты.",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_general_consent",
+          "date": "2026-08-05",
+          "time": "12:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Основной этап",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_priority_enrollment_order",
+          "date": "2026-08-03",
+          "time": null,
+          "timeZone": null,
+          "scope": "Приоритетный этап",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_general_enrollment_order",
+          "date": "2026-08-07",
+          "time": null,
+          "timeZone": null,
+          "scope": "Основной этап",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_conclusion_deadline",
+          "date": "2026-08-17",
+          "time": null,
+          "timeZone": null,
+          "scope": "Общий срок. Возможные продления требуют отдельного опубликованного решения.",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_enrollment_deadline",
+          "date": "2026-08-20",
+          "time": null,
+          "timeZone": null,
+          "scope": "Не позднее указанной даты.",
+          "sourceKey": "nnov-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        }
+      ]
+    },
+    {
+      "campus": "perm",
+      "campusName": "Пермь",
+      "admissionYear": 2026,
+      "deadlines": [
+        {
+          "event": "applications_open",
+          "date": "2026-06-20",
+          "time": null,
+          "timeZone": null,
+          "scope": "Бакалавриат",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_submission_ege_or_bvi",
+          "date": "2026-07-25",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "ЕГЭ, а также БВИ в формулировке соответствующей страницы. Программы с внутренними/творческими испытаниями имеют отдельный срок.",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_submission_internal_or_creative",
+          "date": "2026-07-14",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Поступающие с внутренними или творческими испытаниями, при наличии бюджетного конкурса на программу.",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_submission_ege",
+          "date": "2026-08-12",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "ЕГЭ. Центральная, нижегородская и пермская страницы также указывают БВИ.",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_submission_internal_or_creative",
+          "date": "2026-08-03",
+          "time": "17:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Внутренние или творческие испытания.",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_ranked_lists",
+          "date": "2026-07-27",
+          "time": null,
+          "timeZone": null,
+          "scope": "Основная приёмная кампания",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_priority_consent",
+          "date": "2026-08-01",
+          "time": "12:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "БВИ, особая, целевая и отдельная квоты.",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_general_consent",
+          "date": "2026-08-05",
+          "time": "12:00",
+          "timeZone": "Europe/Moscow",
+          "scope": "Основной этап",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_priority_enrollment_order",
+          "date": "2026-08-03",
+          "time": null,
+          "timeZone": null,
+          "scope": "Приоритетный этап",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "budget_general_enrollment_order",
+          "date": "2026-08-07",
+          "time": null,
+          "timeZone": null,
+          "scope": "Основной этап",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_conclusion_deadline",
+          "date": "2026-08-17",
+          "time": null,
+          "timeZone": null,
+          "scope": "Общий срок. Возможные продления требуют отдельного опубликованного решения.",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        },
+        {
+          "event": "contract_enrollment_deadline",
+          "date": "2026-08-20",
+          "time": null,
+          "timeZone": null,
+          "scope": "Не позднее указанной даты.",
+          "sourceKey": "perm-deadlines",
+          "locator": "Сроки проведения приема / Зачисление / Платное обучение"
+        }
+      ]
+    }
+  ],
+  "housing": [
+    {
+      "campus": "moscow",
+      "available": true,
+      "sourceKey": "moscow-dorms",
+      "contactSourceKey": "moscow-dormoffice",
+      "contactUnit": "Дирекция по управлению общежитиями, гостиницами, учебно-оздоровительными комплексами; Управление по обеспечению деятельности общежитий",
+      "phoneRaw": "+7 (495) 772-95-90 *13119",
+      "contactUrl": "https://www.hse.ru/dormoffice/",
+      "allocationRulesUrl": "https://www.hse.ru/dormoffice/predostavleniemest",
+      "priceUrl": null,
+      "sourceLocator": "Контакты / Наши общежития",
+      "allocationGuarantee": null,
+      "notes": "Подтверждено наличие общежитий. Распределение мест зависит от условий соответствующего кампуса. Тарифы и квоты для набора 2026 здесь не извлекались."
+    },
+    {
+      "campus": "spb",
+      "available": true,
+      "sourceKey": "spb-dorms",
+      "contactSourceKey": "spb-dorms",
+      "contactUnit": "Отдел организации проживания",
+      "address": "Санкт-Петербург, наб. канала Грибоедова, 123, лит. А, каб. 217",
+      "phoneRaw": "8 (812) 644 59 11 (доб. 61740; 61736; 61755)",
+      "email": "oop-spb@hse.ru",
+      "allocationRulesUrl": "https://spb.hse.ru/dormitory/enrollee",
+      "priceUrl": "https://spb.hse.ru/dormitory/price/",
+      "sourceLocator": "Контакты / Наши общежития",
+      "allocationGuarantee": null,
+      "notes": "Подтверждено наличие общежитий. Распределение мест зависит от условий соответствующего кампуса. Тарифы и квоты для набора 2026 здесь не извлекались."
+    },
+    {
+      "campus": "nnov",
+      "available": true,
+      "sourceKey": "nnov-dorms",
+      "contactSourceKey": "nnov-dorms",
+      "contactUnit": "Общежитие кампуса НИУ ВШЭ в Нижнем Новгороде; менеджер",
+      "address": "г. Нижний Новгород, ул. Большая Печерская, д. 25/12, каб. 217 А",
+      "phoneRaw": "278-09-61",
+      "email": "elmelnikova@hse.ru",
+      "allocationRulesUrl": "https://nnov.hse.ru/dormitory/order",
+      "priceUrl": "https://nnov.hse.ru/dormitory/price",
+      "sourceLocator": "Контакты / Наши общежития",
+      "allocationGuarantee": null,
+      "notes": "Подтверждено наличие общежитий. Распределение мест зависит от условий соответствующего кампуса. Тарифы и квоты для набора 2026 здесь не извлекались."
+    },
+    {
+      "campus": "perm",
+      "available": true,
+      "sourceKey": "perm-dorms",
+      "contactSourceKey": "perm-dorms",
+      "contactUnit": "Заведующий общежитием",
+      "phoneRaw": "+7 (342) 254-37-03 *6203",
+      "email": "AVZolin@hse.ru",
+      "allocationRulesUrl": "https://perm.hse.ru/dormitory/order",
+      "priceUrl": "https://perm.hse.ru/dormitory/price",
+      "sourceLocator": "Контакты / Наши общежития",
+      "allocationGuarantee": null,
+      "notes": "Подтверждено наличие общежитий. Распределение мест зависит от условий соответствующего кампуса. Тарифы и квоты для набора 2026 здесь не извлекались."
+    }
+  ],
+  "militaryTraining": [
+    {
+      "campus": "moscow",
+      "militaryTrainingPresent": true,
+      "sourceKey": "hse-military",
+      "sourceLocator": "Контакты / О военном учебном центре",
+      "address": "127299, г. Москва, ул. Космонавта Волкова, 18",
+      "phoneRaw": "8 (495) 621-15-24",
+      "emails": ["vkorgutov@hse.ru", "szhugina@hse.ru"],
+      "admissionUrl": "https://www.hse.ru/org/hse/ouk/mil/abiturient",
+      "notes": "Наличие военной подготовки и контакты подтверждены. Зачисление в ВУЦ проводится по отдельным условиям и конкурсному отбору. Страницы условий набора могут уже относиться к 2027 году."
+    },
+    {
+      "campus": "spb",
+      "militaryTrainingPresent": true,
+      "sourceKey": "spb-military",
+      "sourceLocator": "Контакты / Поступающим",
+      "address": "Санкт-Петербург, ул. Седова, д. 55, к. 2, каб. 117",
+      "phoneRaw": "644-59-10 доб. 61309, 61308",
+      "emails": ["vglinin@hse.ru", "aabbasova@hse.ru"],
+      "admissionUrl": "https://spb.hse.ru/milspb/abiturient",
+      "notes": "Наличие военной подготовки и контакты подтверждены. Зачисление в ВУЦ проводится по отдельным условиям и конкурсному отбору. Страницы условий набора могут уже относиться к 2027 году."
+    },
+    {
+      "campus": "nnov",
+      "militaryTrainingPresent": true,
+      "sourceKey": "nnov-military",
+      "sourceLocator": "Контакты / О военном учебном центре",
+      "address": "Нижний Новгород, Сормовское шоссе, 30, ауд. 208, 210",
+      "phoneRaw": "8 (831) 224-14-49",
+      "emails": [],
+      "admissionUrl": null,
+      "notes": "Наличие военной подготовки и контакты подтверждены. Зачисление в ВУЦ проводится по отдельным условиям и конкурсному отбору. Страницы условий набора могут уже относиться к 2027 году."
+    },
+    {
+      "campus": "perm",
+      "militaryTrainingPresent": true,
+      "sourceKey": "perm-military",
+      "sourceLocator": "Контакты / Общие сведения",
+      "address": "г. Пермь, бульвар Гагарина, 41",
+      "phoneRaw": "+7 (342) 254-56-13",
+      "emails": [],
+      "admissionUrl": "https://perm.hse.ru/martial/abiturient",
+      "notes": "Наличие военной подготовки и контакты подтверждены. Зачисление в ВУЦ проводится по отдельным условиям и конкурсному отбору. Страницы условий набора могут уже относиться к 2027 году."
+    }
+  ],
+  "notes": [
+    "Сроки относятся к приёму 2026; контакты проверены на текущую дату. На страницах общежитий присутствуют объявления для разных наборов, включая 2027, поэтому квоты и стоимость проживания за 2026 не подставлялись.",
+    "Телефоны сохранены как опубликованы. В центральной и нижегородской информации время подачи описано как местное; для Москвы и Нижнего Новгорода это московское время. Пермский источник прямо указывает московское время.",
+    "Конкретные условия приёма и даты дополнений нужно сохранять вместе с программой, основанием поступления и видом финансирования."
+  ]
+}

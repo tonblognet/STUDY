@@ -33,7 +33,9 @@ export function universityCatalogEntries(
       id: university.id,
       slug: university.slug,
       name: university.name,
-      shortName: university.shortName,
+      ...(university.shortName !== university.name
+        ? { shortName: university.shortName }
+        : {}),
       city: university.city,
       address: university.address,
       website: university.website,
@@ -47,7 +49,9 @@ export function universityCatalogEntries(
             directory: {
               kind: university.directory.kind,
               ownership: university.directory.ownership,
-              legalName: university.directory.legalName,
+              ...(university.directory.legalName !== university.name
+                ? { legalName: university.directory.legalName }
+                : {}),
               region: university.directory.region,
             },
           }

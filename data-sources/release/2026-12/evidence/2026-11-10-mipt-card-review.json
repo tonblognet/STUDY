@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "reviewDate": "2026-11-10",
+  "scope": "Редакционная сверка карточки МФТИ и пяти таблиц образовательного перечня.",
+  "sourceAcquisition": "SHA-256 и checkedAt относятся к сохранённым телам официальных HTTP 200.",
+  "sources": {
+    "common": {
+      "url": "https://mipt.ru/sveden/common/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-10T07:54:29.226445+00:00",
+      "bytes": 342077,
+      "sourceSha256": "e3ffbdf72e9b7be55fc7d1ccd53017c89cfc8c7ef15bdcb074ecd8c0698c75ac",
+      "sourceKind": "official_university_page"
+    },
+    "structure": {
+      "url": "https://mipt.ru/sveden/struct/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-10T07:54:29.796607+00:00",
+      "bytes": 887507,
+      "sourceSha256": "2d1fa76d98b2375bf2e654df5478940e004be1aebe6a85dc5a8c7b07d421aea4",
+      "sourceKind": "official_university_page"
+    },
+    "inventory": {
+      "url": "https://mipt.ru/vikon/sveden/education/eduaccred/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-10T07:54:29.831453+00:00",
+      "bytes": 3678014,
+      "sourceSha256": "e92436c7514e023740edb6098ada4f9acdc4a1a8087fa3b3cefe2eedc7274a1c",
+      "sourceKind": "official_university_page"
+    },
+    "contacts": {
+      "url": "https://pk.mipt.ru/schools/contacts/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-10T07:54:30.672722+00:00",
+      "bytes": 41160,
+      "sourceSha256": "e0a8688383f2b028aa77c1faef71d75afd07698ed64b5bb883ab4d67df4ba0ec",
+      "sourceKind": "official_university_page"
+    },
+    "housing": {
+      "url": "https://mipt.ru/sveden/objects/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-10T07:57:23.718394+00:00",
+      "bytes": 4584143,
+      "sourceSha256": "640ae896c6fd9cd87aa5ebf5477dc8458f0655a4a980402811e5e28379773371",
+      "sourceKind": "official_university_page"
+    }
+  },
+  "universities": [
+    {
+      "id": "mipt",
+      "slug": "mipt",
+      "status": "pending_editorial_review",
+      "sections": {
+        "general_information": {
+          "source": "common",
+          "baselineFile": "data-sources/russia/moscow-enrichment-2026-10-22.json",
+          "baselinePointer": "/profiles/4/fields",
+          "matchedFields": [
+            {
+              "field": "fullName",
+              "locator": "//*[@itemprop=\"fullName\"]"
+            },
+            {
+              "field": "shortName",
+              "locator": "//*[@itemprop=\"shortName\"]"
+            },
+            {
+              "field": "regDate",
+              "locator": "//*[@itemprop=\"regDate\"]"
+            },
+            {
+              "field": "address",
+              "locator": "//*[@itemprop=\"address\"]"
+            },
+            {
+              "field": "telephone",
+              "locator": "//*[@itemprop=\"telephone\"]"
+            },
+            {
+              "field": "email",
+              "locator": "//*[@itemprop=\"email\"]"
+            }
+          ],
+          "emailScope": "Адрес справочной из поля email, не адрес ректора.",
+          "overviewCandidate": {
+            "value": "МФТИ был образован в 1951 году на базе физико-технического факультета МГУ. Институт готовит специалистов в области науки и техники.",
+            "locator": "Дата создания, абзац о создании на базе факультета МГУ и краткая информация об организации."
+          }
+        },
+        "structure": {
+          "source": "structure",
+          "baselineFile": "data-sources/russia/moscow-enrichment-2026-10-22.json",
+          "baselinePointer": "/profiles/4/faculties",
+          "adapter": "scripts/collect-moscow-reviewed-enrichment.py#structural_units",
+          "matchedRowCount": 8,
+          "rows": [
+            {
+              "rowIndex": 1,
+              "name": "Высшая школа программной инженерии МФТИ (ВШПИ)",
+              "publishedAddress": "141701 Московская обл., г. Долгопрудный, Научный пер., д. 4, корпус 1",
+              "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+            },
+            {
+              "rowIndex": 2,
+              "name": "Высшая школа современной математики (ВШМ)",
+              "publishedAddress": "141701, Московская обл., г. Долгопрудный, ул. Первомайская, д. 7, ауд. 323",
+              "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+            },
+            {
+              "rowIndex": 10,
+              "name": "Физтех-школа аэрокосмических технологий (ФАКТ)",
+              "publishedAddress": "141701, Московская область, г. Долгопрудный, Институтский переулок, д. 9, стр. 2",
+              "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+            },
+            {
+              "rowIndex": 12,
+              "name": "Физтех-школа биологической и медицинской физики (ФБМФ)",
+              "publishedAddress": "141701, Московская область, г. Долгопрудный, Институтский пер., д. 9, стр. 7",
+              "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+            },
+            {
+              "rowIndex": 13,
+              "name": "Физтех-школа прикладной математики и информатики (ФПМИ)",
+              "publishedAddress": "141701, Московская область, г. Долгопрудный, Институтский переулок, д. 9, стр. 2",
+              "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+            },
+            {
+              "rowIndex": 15,
+              "name": "Физтех-школа радиотехники и компьютерных технологий (ФРКТ)",
+              "publishedAddress": "141701, Московская область, г. Долгопрудный, Институтский переулок, д. 7",
+              "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+            },
+            {
+              "rowIndex": 16,
+              "name": "Физтех-школа физики и исследований им. Ландау (ЛФИ)",
+              "publishedAddress": "141701, Московская область, г. Долгопрудный, Институтский переулок, д. 7",
+              "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+            },
+            {
+              "rowIndex": 17,
+              "name": "Физтех-школа электроники, фотоники и молекулярной физики (ФЭФМ)",
+              "publishedAddress": "141701, Московская область, г. Долгопрудный, Институтский переулок, д. 7",
+              "scope": "Higher-education teaching unit at the named main-city address; additional/preparatory/research-only selections excluded"
+            }
+          ],
+          "openGaps": [
+            "Проверены восемь выбранных физтех-школ с адресом в Долгопрудном. Полнота структуры и ссылки отдельных подразделений отдельно не подтверждены."
+          ]
+        },
+        "educational_inventory": {
+          "source": "inventory",
+          "dataFile": "data-sources/russia/moscow-mipt-enrichment-2026-11-10.json",
+          "dataPointer": "/profiles/0/offerings",
+          "adapter": "scripts/collect-moscow-targeted-enrichment.py#education_rows,collapse_rows; REVIEWED_EDUCATION_TABLES[mipt]=(0,1,2,3,4)",
+          "rowLocator": "Таблицы с указанными заголовками, tr[itemprop=eduAccred], поля eduCode, eduName, eduProf, eduLevel, eduForm, learningTerm. Все 207 строк независимо сопоставлены по этим полям.",
+          "tables": [
+            {
+              "tableIndexZeroBased": 0,
+              "heading": "Программы бакалавриата",
+              "sourceRows": 50,
+              "selected": true
+            },
+            {
+              "tableIndexZeroBased": 1,
+              "heading": "Программы специалитета",
+              "sourceRows": 1,
+              "selected": true
+            },
+            {
+              "tableIndexZeroBased": 2,
+              "heading": "Программы базового высшего образования",
+              "sourceRows": 35,
+              "selected": true
+            },
+            {
+              "tableIndexZeroBased": 3,
+              "heading": "Программы магистратуры",
+              "sourceRows": 61,
+              "selected": true
+            },
+            {
+              "tableIndexZeroBased": 4,
+              "heading": "Программы специализированного высшего образования - магистратуры",
+              "sourceRows": 60,
+              "selected": true
+            },
+            {
+              "tableIndexZeroBased": 5,
+              "heading": "Программы подготовки научных и научно-педагогических кадров в аспирантуре ФГТ",
+              "sourceRows": 80,
+              "selected": false
+            },
+            {
+              "tableIndexZeroBased": 6,
+              "heading": "Программы профессионального образования - аспирантуры",
+              "sourceRows": 34,
+              "selected": false
+            },
+            {
+              "tableIndexZeroBased": 7,
+              "heading": "Дополнительные общеобразовательные программы",
+              "sourceRows": 79,
+              "selected": false
+            },
+            {
+              "tableIndexZeroBased": 8,
+              "heading": "Программы повышения квалификации",
+              "sourceRows": 66,
+              "selected": false
+            },
+            {
+              "tableIndexZeroBased": 9,
+              "heading": "Программы профессиональной переподготовки",
+              "sourceRows": 51,
+              "selected": false
+            }
+          ],
+          "matchedRowCount": 207,
+          "admissionYear": null,
+          "openGaps": [
+            "Перечень реализуемых программ не устанавливает год приёма, текущий набор или условия конкурса. Числовые строки срока сохранены в том виде, в каком опубликованы.",
+            "Аспирантура, дополнительное образование и аккредитация не входят в эту сверку."
+          ]
+        },
+        "admissions_contacts": {
+          "source": "contacts",
+          "locator": "Общий телефон комиссии, почта для базового высшего образования.",
+          "telephoneAnchor": "//a[@href=\"tel:+74954084800\"]",
+          "emailAnchor": "//a[@href=\"mailto:pk.bachelor@mipt.ru\"]"
+        },
+        "housing": {
+          "source": "housing",
+          "locator": "Раздел о доступности объектов. Абзацы о доступности общежитий № 12–14 и пандусах в № 10–11.",
+          "openGaps": [
+            "Свободные места и индивидуальные условия заселения требуют подтверждения."
+          ]
+        }
+      }
+    }
+  ]
+}

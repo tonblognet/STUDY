@@ -37,6 +37,8 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
   };
   const match = matchProgram(program, profile);
   const completeness = calculateCompleteness(program);
+  const paidHistory = program.paidPassingHistory;
+  const archiveDescription = "Итоги зачисления прошлых кампаний.";
   const distinctSubjects = [
     ...new Set(
       program.examRequirements.flatMap((requirement) => requirement.subjects),
@@ -157,10 +159,23 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
               <MatchExplanation match={match} />
             </div>
             <HistoryChart
-              title="Проходной балл общего конкурса"
+              title={
+                paidHistory
+                  ? "Проходной балл на бюджет"
+                  : "Проходной балл общего конкурса"
+              }
               points={program.passingHistory}
-              comparable={program.universitySlug !== "mgu"}
+              comparable={!paidHistory && program.universitySlug !== "mgu"}
+              archiveDescription={paidHistory ? archiveDescription : undefined}
             />
+            {paidHistory && (
+              <HistoryChart
+                title="Проходной балл на платное обучение"
+                points={paidHistory}
+                comparable={false}
+                archiveDescription={archiveDescription}
+              />
+            )}
           </section>
 
           {program.admissionsContact && (
@@ -197,11 +212,33 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
                 </p>
               </div>
             )}
+            {program.additionalExams?.map((exam) => (
+              <article key={exam.id}>
+                <h3>{exam.title.value}</h3>
+                <div className="metric-grid">
+                  <SourcedMetric
+                    label="Минимум испытания"
+                    field={exam.minimum}
+                  />
+                  <SourcedMetric
+                    label="Максимум испытания"
+                    field={exam.maximum}
+                  />
+                </div>
+              </article>
+            ))}
             <div className="metric-grid three">
-              <SourcedMetric label="ДВИ" field={program.dviValue} />
-              <SourcedMetric label="Максимум ДВИ" field={program.dviMax} />
-              {program.dviMinimum && (
-                <SourcedMetric label="Минимум ДВИ" field={program.dviMinimum} />
+              {!program.additionalExams?.length && (
+                <>
+                  <SourcedMetric label="ДВИ" field={program.dviValue} />
+                  <SourcedMetric label="Максимум ДВИ" field={program.dviMax} />
+                  {program.dviMinimum && (
+                    <SourcedMetric
+                      label="Минимум ДВИ"
+                      field={program.dviMinimum}
+                    />
+                  )}
+                </>
               )}
               <SourcedMetric
                 label="Индивидуальные достижения"
@@ -209,6 +246,18 @@ export function ProgramDecisionPage({ program }: { program: Program }) {
                 format={(value) => `до ${value} баллов`}
               />
             </div>
+            {Boolean(program.admissionConditions?.length) && (
+              <details>
+                <summary>Другие основания поступления</summary>
+                {program.admissionConditions?.map((condition, index) => (
+                  <SourcedMetric
+                    key={index}
+                    label="Условие приёма"
+                    field={condition}
+                  />
+                ))}
+              </details>
+            )}
           </section>
 
           <section className="decision-section" id="cost">

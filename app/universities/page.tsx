@@ -44,6 +44,7 @@ export default async function UniversitiesPage({
           </div>
           <div
             className={`university-catalog-summary ${styles.metrics}`}
+            role="group"
             aria-label="Сводка каталога"
           >
             <span>

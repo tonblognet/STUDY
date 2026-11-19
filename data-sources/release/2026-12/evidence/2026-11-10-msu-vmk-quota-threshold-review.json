@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "reviewedAtUtc": "2026-11-10T08:02:34Z",
+  "scope": "partial_admission_source_review",
+  "universitySlug": "mgu",
+  "faculty": "Факультет вычислительной математики и кибернетики",
+  "admissionYear": 2026,
+  "runtimeChanged": false,
+  "newlyVerifiedContestPrograms": 0,
+  "sources": {
+    "federal-target-803-r": {
+      "url": "https://fgosvo.ru/uploadfiles//npo/Rasp_gov_803_10042026.pdf",
+      "kind": "pdf",
+      "officialPublicationUrl": "https://publication.pravo.gov.ru/document/0001202604200026",
+      "document": "Распоряжение Правительства Российской Федерации от 10.04.2026 № 803-р",
+      "retrievedAtUtc": "2026-11-10T07:59:16.316474Z",
+      "httpStatus": 200,
+      "sha256": "bd78bca0d75e71208f2be18753857801fe1f6f9a827fbbcea297316bafebf14a",
+      "bytes": 35012165,
+      "locators": [
+        {
+          "pdfPage": 1637,
+          "printedPage": 1636,
+          "section": "Блок МГУ имени М.В. Ломоносова, строки 01.03.02 и 02.03.02, очная форма"
+        },
+        {
+          "pdfPage": 2849,
+          "printedPage": 2848,
+          "section": "Сноска * в конце приложения о заказчиках из ч. 1 ст. 81 или их подведомственных организациях"
+        }
+      ]
+    },
+    "msu-cpk-plan": {
+      "url": "https://cpk.msu.ru/files/2026/kcp_bak.pdf",
+      "kind": "pdf",
+      "retrievedAtUtc": "2026-11-10T07:55:46.817675Z",
+      "httpStatus": 200,
+      "sha256": "cef7631a567d86863ef442e8c9ee5a27a086c1808fd5545d78d36abd62901090",
+      "bytes": 609464,
+      "pdfPage": 2,
+      "section": "Строки ВМК 01.03.02 и 02.03.02, сноска *** о квоте по п. 17 Правил, утверждённых постановлением Правительства № 555"
+    },
+    "msu-vmk-places": {
+      "url": "https://pk.cs.msu.ru/bak_educational_programs",
+      "kind": "html",
+      "retrievedAtUtc": "2026-11-10T08:02:11.538110Z",
+      "httpStatus": 200,
+      "sha256": "b606777962ad12ffd9b20ac2a824851cb7679082add62fc801a867d16736f718",
+      "bytes": 94685,
+      "section": "Таблица для поступающих на основные образовательные программы, две очные строки и детализированные подстроки"
+    },
+    "msu-cpk-minimum-2026": {
+      "url": "https://cpk.msu.ru/files/2026/minimum.pdf",
+      "kind": "pdf",
+      "retrievedAtUtc": "2026-11-10T07:55:45.552279Z",
+      "httpStatus": 200,
+      "sha256": "7470e8d7c98297b2b9ae9e1af7f5488a0fec4bb5dc38f9cc35da056541312c45",
+      "bytes": 75705,
+      "locators": [
+        {
+          "pdfPage": 1,
+          "section": "П. 1.2. Общий минимум ДВИ установлен на уровне порога органа надзора для поступления"
+        },
+        {
+          "pdfPage": 2,
+          "section": "П. 1.5. Четыре предметных минимума ЕГЭ для обоих направлений ВМК"
+        }
+      ]
+    },
+    "federal-minimum-876-original": {
+      "url": "https://minjust.consultant.ru/files/43515",
+      "kind": "pdf",
+      "document": "Приказ Рособрнадзора от 26.06.2019 № 876, Минюст № 55347",
+      "retrievedAtUtc": "2026-11-10T07:55:52.419080Z",
+      "httpStatus": 200,
+      "sha256": "f4e610dc24ec9ecdd4a750eafe4b4c2e627313ac5a9feba19f3dface52dd02b8",
+      "bytes": 148469,
+      "pdfPage": 2,
+      "section": "П. 1.3. Минимум ЕГЭ для поступления по математике профильного уровня"
+    },
+    "federal-minimum-876-consolidated": {
+      "url": "https://www.ranepa.ru/upload/doc/pk/npa/2025/Prikaz_876.pdf",
+      "kind": "pdf",
+      "document": "Приказ Рособрнадзора № 876 в редакции от 22.04.2024, копия в разделе нормативных документов РАНХиГС",
+      "retrievedAtUtc": "2026-11-10T07:59:24.408264Z",
+      "httpStatus": 200,
+      "sha256": "162c255496e134fee4e5ba58146eec13cedddd8aaeaf6cc89a31da915b19bcef",
+      "bytes": 118605,
+      "section": "П. 1.3. Профильная математика, 27 баллов"
+    },
+    "msu-vmk-history": {
+      "url": "https://pk.cs.msu.ru/bak_past_passing_score",
+      "kind": "html",
+      "retrievedAtUtc": "2026-11-10T07:56:19.995891Z",
+      "httpStatus": 200,
+      "sha256": "f85e93f602d83ab96a4b3daea59219a384163716d92ba2d1598be6d57a7c7cbd",
+      "bytes": 87079,
+      "section": "Строки бакалавриата ВМК за 2025 год, бюджетный итоговый и платный конкурсы"
+    }
+  },
+  "sharedDviMinimum": {
+    "subject": "Математика",
+    "value": 27,
+    "maximum": 100,
+    "scope": "Письменное ДВИ для двух очных конкурсных групп ВМК МГУ",
+    "evidenceSources": [
+      "msu-cpk-plan",
+      "msu-cpk-minimum-2026",
+      "federal-minimum-876-original",
+      "federal-minimum-876-consolidated"
+    ],
+    "maximumEvidence": "2026-11-10-source-review.json#/programs/0/singleExamMaximum",
+    "runtimeStatusBeforeReview": "verified",
+    "note": "Число уже используется для обеих групп. П. 1.5 ЦПК применяется к ЕГЭ ВМК. Порог ДВИ следует из общего п. 1.2 ЦПК и п. 1.3 приказа № 876."
+  },
+  "programs": [
+    {
+      "id": "msu-01-03-02-4",
+      "slug": "mgu-01-03-02-4",
+      "code": "01.03.02",
+      "title": "Прикладная математика и информатика",
+      "form": "Очная",
+      "federalAprilAllocation": {
+        "source": "federal-target-803-r",
+        "scope": "МГУ в целом, код и очная форма. Факультет в таблице не указан.",
+        "publicRows": [
+          { "customer": "Геофизика-Космос", "places": 1 },
+          {
+            "customer": "Электронные вычислительно-информационные системы",
+            "places": 1
+          },
+          {
+            "customer": "Институт проблем управления им. В.А. Трапезникова РАН",
+            "places": 5
+          },
+          { "customer": null, "referenceMark": "*", "places": 1 }
+        ],
+        "publicSubtotal": 8
+      },
+      "facultyPublishedDetailedRows": {
+        "sources": ["msu-cpk-plan", "msu-vmk-places"],
+        "places": [1, 1, 1, 5],
+        "publicSubtotal": 8,
+        "note": "В федеральном приложении одна строка отмечена *, а в таблице ВМК есть именованная строка ООО «Центр безопасности информации». Совпадение подытогов не устанавливает соответствие этих строк."
+      },
+      "mainPlacesAsPublished": {
+        "value": 269,
+        "asOfLocal": "2026-08-11T18:00:00+03:00",
+        "locator": "https://cpk.msu.ru/rating/dep_02#146259",
+        "evidence": "2026-11-10-admissions-followup.json#/programs/1/generalPlacesAsPublished",
+        "scope": "Основные места в итоговом снимке ЦПК с учётом перераспределения"
+      },
+      "historical2025": {
+        "source": "msu-vmk-history",
+        "budget": 423,
+        "paid": 294
+      },
+      "totalTargetForFaculty": null,
+      "initialMainCompetitionPlaces": null,
+      "trustStatus": "pending_review"
+    },
+    {
+      "id": "msu-02-03-02-5",
+      "slug": "mgu-02-03-02-5",
+      "code": "02.03.02",
+      "title": "Фундаментальная информатика и информационные технологии",
+      "form": "Очная",
+      "federalAprilAllocation": {
+        "source": "federal-target-803-r",
+        "scope": "МГУ в целом, код и очная форма. Факультет в таблице не указан.",
+        "publicRows": [
+          { "customer": "Геофизика-Космос", "places": 1 },
+          { "customer": "НАМИ", "places": 1 }
+        ],
+        "publicSubtotal": 2
+      },
+      "facultyPublishedDetailedRows": {
+        "sources": ["msu-cpk-plan", "msu-vmk-places"],
+        "places": [1, 1],
+        "publicSubtotal": 2,
+        "note": "Две опубликованные строки совпадают с федеральным приложением по заказчикам и местам."
+      },
+      "mainPlacesAsPublished": {
+        "value": 16,
+        "asOfLocal": "2026-08-11T18:00:00+03:00",
+        "locator": "https://cpk.msu.ru/rating/dep_02#138443",
+        "evidence": "2026-11-10-admissions-followup.json#/programs/2/generalPlacesAsPublished",
+        "scope": "Основные места в итоговом снимке ЦПК с учётом перераспределения"
+      },
+      "historical2025": {
+        "source": "msu-vmk-history",
+        "budget": 437,
+        "paid": 373
+      },
+      "totalTargetForFaculty": null,
+      "initialMainCompetitionPlaces": null,
+      "trustStatus": "pending_review"
+    }
+  ],
+  "openGaps": [
+    "Полный действовавший размер целевой квоты по каждой группе ВМК после решений вуза отдельно не опубликован в изученных документах. Сноска ЦПК исключает из таблицы квоту, предусмотренную п. 17 Правил № 555.",
+    "Первоначальные места общего конкурса не подтверждены отдельной таблицей. Итоговый показатель 11 августа привязан к дате и к перераспределению.",
+    "Для результата ФИИТ за 2024 год нужен доступ к исходной таблице центрального архива и сверка её конкурсной категории с факультетской таблицей. Статус исторического показателя по этому пакету не менялся."
+  ]
+}

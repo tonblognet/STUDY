@@ -20,6 +20,20 @@ export function SavedProgramActions({
   const favorite = favoriteIds.includes(id);
   const compared = comparisonIds.includes(id);
   const comparisonFull = !compared && comparisonIds.length >= 20;
+  const favoriteText = favorite ? "В избранном" : "Избранное";
+  const favoriteAction = favorite
+    ? "Удалить из избранного"
+    : "Добавить в избранное";
+  const comparisonText = compared
+    ? "В сравнении"
+    : comparisonFull
+      ? "Лимит сравнения: 20"
+      : "Сравнить";
+  const comparisonAction = compared
+    ? "Удалить из сравнения"
+    : comparisonFull
+      ? "Сравнение заполнено: максимум 20 программ"
+      : "Добавить в сравнение";
   return (
     <span className="saved-actions">
       <button
@@ -32,10 +46,12 @@ export function SavedProgramActions({
         className={favorite ? "active" : ""}
         onClick={() => toggleFavorite(id)}
         aria-pressed={favorite}
-        aria-label={favorite ? "Удалить из избранного" : "Добавить в избранное"}
+        aria-label={
+          compact ? favoriteAction : `${favoriteText}. ${favoriteAction}`
+        }
       >
         {favorite ? "♥" : "♡"}
-        {!compact && <span>{favorite ? "В избранном" : "Избранное"}</span>}
+        {!compact && <span>{favoriteText}</span>}
       </button>
       <button
         type="button"
@@ -49,11 +65,13 @@ export function SavedProgramActions({
         onClick={() => toggleComparison(id)}
         aria-pressed={compared}
         aria-label={
-          compared
-            ? "Удалить из сравнения"
-            : comparisonFull
-              ? "Сравнение заполнено: максимум 20 программ"
-              : "Добавить в сравнение"
+          compact
+            ? comparisonAction
+            : compared
+              ? `${comparisonText}. ${comparisonAction}`
+              : comparisonFull
+                ? `${comparisonText} программ`
+                : comparisonText
         }
         title={
           comparisonFull
@@ -61,16 +79,7 @@ export function SavedProgramActions({
             : undefined
         }
       >
-        ⇄
-        {!compact && (
-          <span>
-            {compared
-              ? "В сравнении"
-              : comparisonFull
-                ? "Лимит сравнения: 20"
-                : "Сравнить"}
-          </span>
-        )}
+        ⇄{!compact && <span>{comparisonText}</span>}
       </button>
     </span>
   );

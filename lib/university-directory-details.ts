@@ -25,10 +25,27 @@ import continuationStructureNovember9 from "@/data-sources/russia/continuation-s
 import followupRegionalEducationNovember9 from "@/data-sources/russia/followup-regional-education-2026-11-09.json";
 import followupCentralEducationNovember9 from "@/data-sources/russia/followup-central-education-2026-11-09.json";
 import followupContactsNovember9 from "@/data-sources/russia/followup-contacts-2026-11-09.json";
+import moscowOverviewNovember10 from "@/data-sources/russia/moscow-overview-enrichment-2026-11-10.json";
+import moscowHseNovember10 from "@/data-sources/russia/moscow-hse-enrichment-2026-11-10.json";
+import hseFullEducationNovember16 from "@/data-sources/russia/hse-full-education-2026-11-16.json";
+import hseAdditionalEducationNovember18 from "@/data-sources/russia/hse-additional-education-2026-11-18.json";
+import moscowMiptNovember10 from "@/data-sources/russia/moscow-mipt-enrichment-2026-11-10.json";
+import moscowMisisNovember10 from "@/data-sources/russia/moscow-misis-enrichment-2026-11-10.json";
+import moscowRudnNovember10 from "@/data-sources/russia/moscow-rudn-enrichment-2026-11-10.json";
+import allHseArchive from "@/data-sources/release/2026-12/evidence/2026-11-16-hse-results-all.json";
+import hseCampusServices from "@/data-sources/release/2026-12/evidence/2026-11-16-hse-campus-services.json";
+import educationPathways from "@/data-sources/release/2026-12/evidence/2026-11-18-education-pathways.json";
+import reaCollegeNovember18 from "@/data-sources/russia/rea-mpek-college-enrichment-2026-11-18.json";
+import { hsePostgraduateOfferings } from "@/lib/hse-postgraduate-admissions";
+import { hseMasterTuition } from "@/lib/hse-admissions";
+import type { HseAdmissionResources } from "@/lib/hse-admission-resources";
+import type { SourcedValue } from "@/lib/admissions/types";
+import type { AdvancedEducationTrack } from "@/lib/education-pathways";
 
 export type DirectoryField = {
   value: string;
   sourceUrl: string;
+  /** For general overviews this is the calendar year of the source snapshot. */
   sourceYear: number;
   checkedAt: string;
   sourceSha256: string;
@@ -48,10 +65,28 @@ export type UniversityOffering = {
   checkedAt: string;
   sourceSha256: string;
   sourceSection?: string;
+  programUrl?: string;
+  campus?: string;
+  admissionDetails?: {
+    priorEducation?: SourcedValue<string>;
+    schoolBase?: 9 | 11;
+    annualTuition?: SourcedValue<number>;
+    budgetPlaces?: SourcedValue<number>;
+    paidPlaces?: SourcedValue<number>;
+    exams?: SourcedValue<string>;
+    note?: string;
+  };
+  /** Exact published amount and billing period; not an inferred annual tuition. */
+  publishedPrice?: {
+    amount: number;
+    currency: string;
+    period: string | null;
+  };
 };
 
 export type DirectoryDetails = {
   universitySlug: string;
+  admissionResources?: HseAdmissionResources;
   faculties?: DirectoryFaculty[];
   educationAreas: Array<{
     code: string;
@@ -132,9 +167,16 @@ function offeringIdentity(row: UniversityOffering): string {
       row.duration,
       row.admissionsStatus,
       row.sourceSection ?? null,
+      row.campus ?? null,
+      row.publishedPrice?.currency ?? null,
+      row.publishedPrice?.period ?? null,
     ]
       .map(normalizeDirectoryText)
-      .concat(String(row.sourceYear), row.sourceUrl),
+      .concat(
+        String(row.sourceYear),
+        row.sourceUrl,
+        String(row.publishedPrice?.amount ?? ""),
+      ),
   );
 }
 
@@ -217,7 +259,40 @@ export const directoryDetails = mergeDirectoryEnrichment(
     ...followupRegionalEducationNovember9.profiles,
     ...followupCentralEducationNovember9.profiles,
     ...followupContactsNovember9.profiles,
+    ...moscowOverviewNovember10.profiles,
+    ...moscowHseNovember10.profiles,
+    ...hseFullEducationNovember16.profiles,
+    ...hseAdditionalEducationNovember18.profiles,
+    { universitySlug: "hse", offerings: hsePostgraduateOfferings },
+    ...reaCollegeNovember18.profiles,
+    ...moscowMiptNovember10.profiles,
+    ...moscowMisisNovember10.profiles,
+    ...moscowRudnNovember10.profiles,
   ] as DirectoryEnrichment[],
+).map((profile) =>
+  profile.universitySlug === "hse"
+    ? {
+        ...profile,
+        admissionResources: {
+          masterTuition: structuredClone(hseMasterTuition),
+          archive: structuredClone(
+            allHseArchive,
+          ) as HseAdmissionResources["archive"],
+          services: structuredClone(hseCampusServices),
+          pathways: educationPathways.contexts.map((context) => ({
+            key: context.key as AdvancedEducationTrack,
+            title: `ВШЭ · ${context.title}`,
+            priorEducation: context.priorEducation,
+            admissionBasis: context.admissionBasis,
+            dates: context.dates
+              .filter((date) => date.year !== null)
+              .map((date) => ({ label: date.label, year: date.year! })),
+            notes: context.notes.filter((note) => !note.includes("HTTP 403")),
+            sources: structuredClone(context.sources),
+          })),
+        },
+      }
+    : profile,
 );
 const bySlug = new Map(
   directoryDetails.map((profile) => [profile.universitySlug, profile]),

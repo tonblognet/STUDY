@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "reviewedAtUtc": "2026-11-10T00:48:49.785068+00:00",
+  "scope": "partial_admission_source_review",
+  "runtimeChanged": false,
+  "newlyVerifiedContestPrograms": 0,
+  "sources": {
+    "ranepa-profile": {
+      "url": "https://www.ranepa.ru/bakalavriat/napravleniya-i-programmy/010248/",
+      "kind": "html",
+      "finalUrl": "https://www.ranepa.ru/bakalavriat/napravleniya-i-programmy/010248/",
+      "retrievedAtUtc": "2026-11-10T00:37:51.976770+00:00",
+      "httpStatus": 200,
+      "sha256": "9b0abdbb64ba17e621560a0924b854e270030c690bf77ec183d83c3125616055",
+      "bytes": 410477,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    "ranepa-central-history": {
+      "url": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/",
+      "kind": "html",
+      "finalUrl": "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/",
+      "retrievedAtUtc": "2026-11-10T00:37:51.850268+00:00",
+      "httpStatus": 200,
+      "sha256": "80cbf5322cf3705a5f01d4de775548452c31459c4584a50e65526973f28518bb",
+      "bytes": 400478,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    "ranepa-2026-exams": {
+      "url": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "kind": "pdf",
+      "finalUrl": "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
+      "retrievedAtUtc": "2026-11-10T00:37:51.949414+00:00",
+      "httpStatus": 200,
+      "sha256": "38e6cbc9024df650d55eba036650782a59a6766159ce5d66983b04ce44af2ae3",
+      "bytes": 941844,
+      "contentType": "application/pdf"
+    },
+    "ranepa-2026-minimum": {
+      "url": "https://www.ranepa.ru/upload/doc/pk/2026/min_ball_2026.pdf",
+      "kind": "pdf",
+      "finalUrl": "https://www.ranepa.ru/upload/doc/pk/2026/min_ball_2026.pdf",
+      "retrievedAtUtc": "2026-11-10T00:37:51.910884+00:00",
+      "httpStatus": 200,
+      "sha256": "c38e253ee9b73e1dc1af715b43989593270b0c84f61c2d38a46c61c935d070f6",
+      "bytes": 121315,
+      "contentType": "application/pdf"
+    },
+    "ranepa-2026-budget-plan": {
+      "url": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%91%D0%AE%D0%94%D0%96%D0%95%D0%A2_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1%20%D1%81%20%D0%BA%D0%B2%D0%BE%D1%82%D0%B0%D0%BC%D0%B8.pdf",
+      "kind": "pdf",
+      "finalUrl": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%91%D0%AE%D0%94%D0%96%D0%95%D0%A2_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1%20%D1%81%20%D0%BA%D0%B2%D0%BE%D1%82%D0%B0%D0%BC%D0%B8.pdf",
+      "retrievedAtUtc": "2026-11-10T00:37:51.988464+00:00",
+      "httpStatus": 200,
+      "sha256": "034aaa872c7f9f2479774d0782c88aee1c7fea38dea280c765d73028560d968e",
+      "bytes": 200865,
+      "contentType": "application/pdf"
+    },
+    "ranepa-2026-paid-plan": {
+      "url": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%9F%D0%9B%D0%90%D0%A2%D0%9D%D0%AB%D0%95_%D0%9C%D0%95%D0%A1%D0%A2%D0%90_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1.pdf",
+      "kind": "pdf",
+      "finalUrl": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%9F%D0%9B%D0%90%D0%A2%D0%9D%D0%AB%D0%95_%D0%9C%D0%95%D0%A1%D0%A2%D0%90_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1.pdf",
+      "retrievedAtUtc": "2026-11-10T00:40:32.984124+00:00",
+      "httpStatus": 200,
+      "sha256": "6f3dae38c7ef73591e573d40c7c96c025b57b072650f3fcc0f1b1ffa302c0b05",
+      "bytes": 203574,
+      "contentType": "application/pdf"
+    },
+    "msu-faculty-history": {
+      "url": "https://pk.cs.msu.ru/bak_past_passing_score",
+      "kind": "html",
+      "finalUrl": "https://pk.cs.msu.ru/bak_past_passing_score",
+      "retrievedAtUtc": "2026-11-10T00:37:51.419454+00:00",
+      "httpStatus": 200,
+      "sha256": "f85e93f602d83ab96a4b3daea59219a384163716d92ba2d1598be6d57a7c7cbd",
+      "bytes": 87079,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    "msu-2026-competition-passports": {
+      "url": "https://cpk.msu.ru/rating/dep_02",
+      "httpStatus": 200,
+      "kind": "html",
+      "retrievedAtUtc": "2026-11-10T00:41:25.803467+00:00",
+      "sha256": "c76e2a13d2f5daa4ab4f6481c4a5d42d21707061987d32fe1f4dad12f9e3183a",
+      "bytes": 6590221
+    }
+  },
+  "programs": [
+    {
+      "id": "ranepa-digital",
+      "officialProfileId": "010248",
+      "admissionYear": 2026,
+      "code": "09.03.03",
+      "title": "Цифровые технологии и разработка информационных систем",
+      "form": "Очная",
+      "campus": "Москва",
+      "status": "pending_review",
+      "examRequirement": {
+        "source": "ranepa-2026-exams",
+        "page": 1,
+        "scope": "Поступающие на базе среднего общего образования",
+        "mandatory": ["Математика (профильная)", "Русский язык"],
+        "oneOf": ["Информатика", "Физика"]
+      },
+      "minimumByFunding": {
+        "source": "ranepa-2026-minimum",
+        "page": 1,
+        "section": "Очная форма, основные строки по КЦП и платным местам",
+        "budget": {
+          "mathematics": 60,
+          "russian": 70,
+          "physics": 60,
+          "computerScience": 60
+        },
+        "paid": {
+          "mathematics": 40,
+          "russian": 40,
+          "physics": 41,
+          "computerScience": 46
+        }
+      },
+      "budgetPlaces": {
+        "source": "ranepa-2026-budget-plan",
+        "page": 1,
+        "scope": "С учётом перераспределения мест целевой квоты",
+        "total": 23,
+        "general": 17,
+        "separate": 3,
+        "special": 3,
+        "target": 0
+      },
+      "paidPlaces": {
+        "source": "ranepa-2026-paid-plan",
+        "page": 1,
+        "fullTime": 67
+      },
+      "tuition": {
+        "source": "ranepa-profile",
+        "locator": "Стоимость 2026 / 2027",
+        "amountRUB": 475000,
+        "period": "год",
+        "academicYear": "2026/2027"
+      },
+      "historicalBudget": {
+        "source": "ranepa-central-history",
+        "locator": "Прикладная информатика · точный профиль · очная · бюджет",
+        "scores": {
+          "2023": 270,
+          "2024": 268,
+          "2025": 261
+        }
+      },
+      "integrationNote": "Действующая модель одного набора порогов на программу требует разделения условий бюджета и договора перед использованием в подборе."
+    },
+    {
+      "id": "msu-01-03-02-4",
+      "code": "01.03.02",
+      "admissionYear": 2026,
+      "status": "pending_review",
+      "generalPlacesAsPublished": {
+        "value": 269,
+        "source": "msu-2026-competition-passports",
+        "locator": "https://cpk.msu.ru/rating/dep_02#146259",
+        "listAsOfLocal": "2026-08-11T18:00:00",
+        "scope": "Основные места в рамках КЦП в итоговом снимке списка"
+      },
+      "historical2025": {
+        "budgetSecondWave": 423,
+        "paid": 294,
+        "source": "msu-faculty-history",
+        "locator": "Таблица «Проходные баллы прошлых лет», очная программа, строки 2025",
+        "scoreScaleConfirmed": false
+      },
+      "openGaps": [
+        "Итоговая целевая квота 2026",
+        "Точный первичный источник минимума ДВИ",
+        "Сопоставление шкалы и состава суммы 2025",
+        "Опубликованный официальный проходной 2026"
+      ],
+      "integrationNote": "Опубликованный паспорт списка является датированным результатом кампании. Минимум среди строк списка не присваивается историческому проходному баллу."
+    },
+    {
+      "id": "msu-02-03-02-5",
+      "code": "02.03.02",
+      "admissionYear": 2026,
+      "status": "pending_review",
+      "generalPlacesAsPublished": {
+        "value": 16,
+        "source": "msu-2026-competition-passports",
+        "locator": "https://cpk.msu.ru/rating/dep_02#138443",
+        "listAsOfLocal": "2026-08-11T18:00:00",
+        "scope": "Основные места в рамках КЦП в итоговом снимке списка"
+      },
+      "historical2025": {
+        "budgetSecondWave": 437,
+        "paid": 373,
+        "source": "msu-faculty-history",
+        "locator": "Таблица «Проходные баллы прошлых лет», очная программа, строки 2025",
+        "scoreScaleConfirmed": false
+      },
+      "openGaps": [
+        "Итоговая целевая квота 2026",
+        "Точный первичный источник минимума ДВИ",
+        "Сопоставление шкалы и состава суммы 2025",
+        "Опубликованный официальный проходной 2026"
+      ],
+      "integrationNote": "Опубликованный паспорт списка является датированным результатом кампании. Минимум среди строк списка не присваивается историческому проходному баллу."
+    }
+  ],
+  "deferred": [
+    {
+      "id": "mai-ami",
+      "status": "pending_review",
+      "reason": "Прямой доступ к страницам комиссии не прошёл проверку сертификата. Не использовались неподтверждённые сниппеты и сведения для иностранных поступающих."
+    }
+  ]
+}

@@ -56,6 +56,42 @@ describe("public university list projection", () => {
     expect(filtered.every((row) => row.facultyCount > 0)).toBe(true);
   });
 
+  it("omits repeated names while preserving the exact search fields", () => {
+    const source = catalog.universities.find((row) => row.directory)!;
+    const name = "Вуз Ёлка";
+    const repeated = {
+      ...source,
+      name,
+      shortName: name,
+      city: "Казань",
+      directory: { ...source.directory!, legalName: name },
+    };
+    const compact = universityCatalogEntries({
+      ...catalog,
+      universities: [
+        repeated,
+        { ...repeated, id: "no-directory", directory: undefined },
+        {
+          ...repeated,
+          id: "distinct-names",
+          shortName: "ВЭ",
+          directory: { ...repeated.directory, legalName: "Учреждение Ёлка" },
+        },
+      ],
+    });
+    expect(compact[0]).not.toHaveProperty("shortName");
+    expect(compact[0].directory).not.toHaveProperty("legalName");
+    expect(compact[1]).not.toHaveProperty("directory");
+    expect(compact[2].shortName).toBe("ВЭ");
+    expect(compact[2].directory?.legalName).toBe("Учреждение Ёлка");
+    expect(
+      filterUniversities(
+        compact,
+        universityViewSchema.parse({ query: "елка вуз елка вуз елка казань" }),
+      ).map((row) => row.id),
+    ).toEqual([repeated.id]);
+  });
+
   it("excludes full provenance and facts from browser list props while preserving server evidence", () => {
     for (const row of entries) {
       expect(row).not.toHaveProperty("foundedYear");

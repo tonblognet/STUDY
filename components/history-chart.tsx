@@ -7,12 +7,14 @@ export function HistoryChart({
   unit = "",
   warning = true,
   comparable = true,
+  archiveDescription,
 }: {
   title: string;
   points: HistoricalPoint[];
   unit?: string;
   warning?: boolean;
   comparable?: boolean;
+  archiveDescription?: string;
 }) {
   const sorted = [...points].sort((a, b) => a.year - b.year);
   const values = sorted
@@ -41,7 +43,8 @@ export function HistoryChart({
         <p>
           {comparable
             ? description
-            : "Шкалы и состав испытаний менялись: прямое сравнение и тренд не рассчитываются."}
+            : (archiveDescription ??
+              "Шкалы и состав испытаний менялись: прямое сравнение и тренд не рассчитываются.")}
         </p>
       </figcaption>
       {sorted.length === 0 ? (

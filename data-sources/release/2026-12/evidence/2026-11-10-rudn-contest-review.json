@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "reviewedBy": "Codex",
+  "reviewDate": "2026-11-10",
+  "status": "evidence_only",
+  "scope": "Приём 2026/27, граждане РФ, головной РУДН (Москва), очный бакалавриат ФФМЕН 01.03.02. Цена относится к заявленной категории РФ/СНГ. Исторические сведения отдельно.",
+  "sources": {
+    "rules": {
+      "url": "https://admission.rudn.ru/pk/2026/adm_rules/bs/pp_bsm_2004_2.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 2455805,
+      "sha256": "7c955722a3d3a8d6381595fd68be010104b493384fe5980d288352abcc24d5f9",
+      "snapshotSavedAtUtc": "2026-11-10T15:54:04.017808+00:00"
+    },
+    "budget": {
+      "url": "https://admission.rudn.ru/pk/2026/count/kcp_26_1.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 450226,
+      "sha256": "53f748c246ce223009fd80fd7249ae05ee8b8037d7e25c8a37ce0ebce8e1eb7d",
+      "snapshotSavedAtUtc": "2026-11-10T15:54:04.716114+00:00"
+    },
+    "program": {
+      "url": "https://admission.rudn.ru/undergraduate/directions/programs/prikladnaya_matematika_i_programmirovanie_ochnaya102234_6213629/8412497/",
+      "kind": "html",
+      "httpStatus": 200,
+      "bytes": 155270,
+      "sha256": "5c10b625846c025ae0b4b3b50db4bfae32826d1bca9bba7856994a34f62cca8b",
+      "snapshotSavedAtUtc": "2026-11-10T15:54:05.937799+00:00"
+    },
+    "hub": {
+      "url": "https://admission.rudn.ru/undergraduate/",
+      "kind": "html",
+      "httpStatus": 200,
+      "bytes": 149396,
+      "sha256": "c4169a163bf1936793d0c15e1392c5f94c19eeab30ebb48cdfef9d564789657d",
+      "snapshotSavedAtUtc": "2026-11-10T15:54:08.590917+00:00"
+    },
+    "paid": {
+      "url": "https://admission.rudn.ru/upload/base64_files/6c7/5s8i29jddjzlx0mj0k6zpda856g1qcyt.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 557405,
+      "sha256": "510c20c05594e090a7e065e61ef0340721cb6b091f40d9f748f0b361cade60c1",
+      "snapshotSavedAtUtc": "2026-11-10T15:55:22.633656+00:00"
+    },
+    "price": {
+      "url": "https://admission.rudn.ru/upload/base64_files/616/2fbu2phi5xwmfblgj6pyxej1ozbts7j8.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 984178,
+      "sha256": "60e735acc4c4235f410e247f49f1ea0aaa67420d4bd4ad97c3783ec349737c66",
+      "snapshotSavedAtUtc": "2026-11-10T15:55:24.244220+00:00"
+    },
+    "kcpOrder": {
+      "url": "https://admission.rudn.ru/upload/base64_files/5ad/y5kycdw3elg7yrxeao4aeuxbteoxa0xj.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 243828,
+      "sha256": "a8525e995e47c86a38beac7c6946eeaa14354a9119812daa3aac333cdec52b4d",
+      "snapshotSavedAtUtc": "2026-11-10T15:55:24.501410+00:00"
+    },
+    "target": {
+      "url": "https://admission.rudn.ru/upload/base64_files/8f4/idnj6hyyluzr09twm272435d2f09qrcq.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 225107,
+      "sha256": "caa4fb636e5ba63de68ed80167f46b82293aabb6c0bf218918cd00b59881d933",
+      "snapshotSavedAtUtc": "2026-11-10T15:55:24.533617+00:00"
+    },
+    "currentRules": {
+      "url": "https://admission.rudn.ru/upload/base64_files/1fa/4bxvpcz0j1zqw392fc0ejk4ey5952iso.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 1713412,
+      "sha256": "5fd3029162af9e3d69d11747e9ad7bf6f3a7a68836bff4ee9d08bc3d1d51f4f5",
+      "snapshotSavedAtUtc": "2026-11-10T15:55:25.528300+00:00"
+    },
+    "directions": {
+      "url": "https://admission.rudn.ru/undergraduate/directions/",
+      "kind": "html",
+      "httpStatus": 200,
+      "bytes": 7721941,
+      "sha256": "6ca608fdfbe409be592477e35b1998f8e3598fd416f754543e58e8808f1d6a0c",
+      "snapshotSavedAtUtc": "2026-11-10T15:55:26.973971+00:00"
+    },
+    "priceUpdate": {
+      "url": "https://admission.rudn.ru/upload/base64_files/55d/48e6mnlb4vhj1y3k7p80vgrwgvmw7ut3.docx",
+      "kind": "docx",
+      "httpStatus": 200,
+      "bytes": 161389,
+      "sha256": "65ae3186cc23daa713c5c58bb5ab6be22aa1a2963a8e0eb9848d603295a3471d",
+      "snapshotSavedAtUtc": "2026-11-10T15:56:46.965172+00:00"
+    },
+    "history": {
+      "url": "https://admission.rudn.ru/undergraduate/scores/",
+      "kind": "html",
+      "httpStatus": 200,
+      "bytes": 251399,
+      "sha256": "dae09aafaac2159805e886ed4c73984b49f4dfe384a868287909672cf671d4fc",
+      "snapshotSavedAtUtc": "2026-11-10T15:58:16.381946+00:00"
+    },
+    "budgetHistory": {
+      "url": "https://admission.rudn.ru/upload/Prokhodnye_balli_na_byudzhet_RUDN_2022_2026.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 4822449,
+      "sha256": "b4772ff550155aec287ab792c18a719a129d27a30a928d4678999f70de8dc2b7",
+      "snapshotSavedAtUtc": "2026-11-10T15:59:48.515615+00:00"
+    },
+    "rules2025": {
+      "url": "https://admission.rudn.ru/pk/2025/admission_rules/PP_%D0%92SM_FINAL.pdf",
+      "kind": "pdf",
+      "httpStatus": 200,
+      "bytes": 1093654,
+      "sha256": "e9e7a33c36eb4133c4cc7147ab598128157250ecc653275ab4742e85bf36f8e1",
+      "snapshotSavedAtUtc": "2026-11-10T16:04:29.173759+00:00"
+    }
+  },
+  "program": {
+    "id": "rudn-ami",
+    "slug": "rudn-applied-math",
+    "universitySlug": "rudn",
+    "campus": "Москва",
+    "faculty": "Факультет физико-математических и естественных наук",
+    "code": "01.03.02",
+    "direction": "Прикладная математика и информатика",
+    "profile": "Прикладная математика и программирование",
+    "level": "Бакалавриат",
+    "form": "Очная",
+    "language": "Русский",
+    "durationYears": 4,
+    "programCatalogId": "8412497",
+    "paidPlanIndex": "НП",
+    "tuitionIndex": "НПб1д4",
+    "identitySource": "program",
+    "identityLocator": "Заголовок профиля, код НПб и поля «подразделение», «форма обучения», «срок обучения», «язык обучения». Код направления и профиль также в правилах, PDF p74.",
+    "examRequirements": {
+      "year": 2026,
+      "funding": ["budget", "paid"],
+      "educationBasis": "СОО/ВО/СПО с ЕГЭ",
+      "source": "rules",
+      "sourcePage": 74,
+      "sourceLocator": "Приложение с испытаниями, ФФМЕН, строка 01.03.02, профиль «Прикладная математика и программирование», левая группа колонок ЕГЭ; отдельно сверена очная HTML-карточка программы.",
+      "groups": [
+        {
+          "priority": 1,
+          "subjects": {
+            "Математика": 40
+          }
+        },
+        {
+          "priority": 2,
+          "subjects": {
+            "Информатика": 46,
+            "Физика": 41
+          },
+          "choose": 1
+        },
+        {
+          "priority": 3,
+          "subjects": {
+            "Русский язык": 40
+          }
+        }
+      ],
+      "additionalExam": "not_applicable",
+      "additionalExamNote": "Перечень для этой конкурсной группы состоит из трёх испытаний. ВИ для отдельных категорий и профиспытания СПО относятся к своим основаниям, это не дополнительный экзамен поверх ЕГЭ."
+    },
+    "individualAchievements": {
+      "generalMax": 10,
+      "source": "rules",
+      "sourcePage": 14,
+      "locator": "Раздел об учёте индивидуальных достижений; отдельные баллы целевой квоты не включены."
+    },
+    "budgetPlan": {
+      "year": 2026,
+      "approvedTotal": 49,
+      "initialOrder": {
+        "number": "18",
+        "date": "2026-01-20",
+        "source": "budget",
+        "sourcePage": 2,
+        "locator": "Очная, ФФМЕН, строка 50.2, всего."
+      },
+      "aprilOrder": {
+        "number": "207",
+        "date": "2026-04-15",
+        "source": "kcpOrder",
+        "sourcePage": 5,
+        "locator": "Очная, ФФМЕН, строка 58, колонки всего/общий конкурс/отдельная/особая/целевая.",
+        "general": 38,
+        "separate": 5,
+        "special": 5,
+        "target": 1
+      },
+      "portalSnapshot": {
+        "source": "directions",
+        "locator": "Программный блок со ссылкой /undergraduate/directions/programs/prikladnaya_matematika_i_programmirovanie_ochnaya102234_6213629/8412497/; «бюджетные места», особая/отдельная/целевая/совмещённая квоты.",
+        "displayedBudgetPlaces": 39,
+        "special": 4,
+        "separate": 5,
+        "target": 1,
+        "combinedSeparateTarget": 2
+      },
+      "stableQuotaFacts": {
+        "separate": 5,
+        "target": 1
+      },
+      "targetConfirmation": {
+        "source": "target",
+        "sourcePage": 1,
+        "locator": "Распоряжение 803-р, строка ФФМЕН 01.03.02, столбец «Очная», значение 1."
+      },
+      "uncertainty": "39 на портале помечено «бюджетные места», его возможная интерпретация как общего конкурса требует подтверждения. Между приказом и порталом различаются общий конкурс и особая квота; совмещённая квота может пересекаться с ними и отдельно не суммируется."
+    },
+    "paidPlan": {
+      "year": 2026,
+      "fullTime": 17,
+      "partTime": 51,
+      "totalForms": 68,
+      "source": "paid",
+      "sourcePage": 4,
+      "orderNumber": "208",
+      "orderDate": "2026-04-15",
+      "locator": "Приложение 1. Заголовки форм на PDF p2. ФФМЕН 01.03.02, шифр НП, очная колонка. Очная карточка направления подтверждает 17."
+    },
+    "tuition": {
+      "year": 2026,
+      "currentAnnualRub": 285000,
+      "scope": "Поступающие в 2026/27, очная форма, граждане РФ и стран СНГ, без НДС. Отдельные скидки и платежи вне этой ставки.",
+      "source": "priceUpdate",
+      "sourceLocator": "Официальный файл из «Нормативных документов», первая таблица, строка 55, ФФМЕН 01.03.02, индекс НПб1д4, срок 4 года; карточка профиля показывает 285 000 ₽ рядом с зачёркнутой 360 000 ₽.",
+      "priorAnnualRub": 360000,
+      "priorSource": "price",
+      "priorSourcePage": 3,
+      "priorOrderNumber": "435-р",
+      "priorOrderDate": "2026-03-17",
+      "note": "DOCX опубликован как отдельный документ о стоимости. Номер и дата подписанного изменения в DOCX не обозначены. Текущая очная карточка и официальный DOCX совпадают."
+    },
+    "publishedHistory": {
+      "source": "history",
+      "locator": "Проходные баллы прошлых лет, карточка 01.03.02 Факультета физико-математических и естественных наук, не Инженерной академии.",
+      "asPublished": {
+        "2023": 220,
+        "2024": 240,
+        "2025": 226,
+        "2026": 259
+      },
+      "budgetLink": "https://admission.rudn.ru/upload/Prokhodnye_balli_na_byudzhet_RUDN_2022_2026.pdf",
+      "comparablePassingScore": null,
+      "rules2025Url": "https://admission.rudn.ru/pk/2025/admission_rules/PP_%D0%92SM_FINAL.pdf",
+      "rules2025Locator": "В разделе ФФМЕН строка 01.03.00 «Математика и механика (многопрофильный конкурс)», очные направления 01.03.01 и 01.03.02, профиль «Прикладная математика и программирование».",
+      "note": "Для 2025 опубликованный 226 связан с многопрофильным конкурсом 01.03.00. В архиве строка направления имеет тот же балл, что и 01.03.01. Не подставлять его в порог точного конкурса 2026 и не выставлять шкалу сравнения без отдельной привязки. 259 — опубликованный результат 2026.",
+      "rules2025Source": "rules2025",
+      "rules2025Page": 61
+    },
+    "safeRuntimeScope": [
+      "Сохранить id и slug, уточнить профиль с сохранением кода и направления.",
+      "Добавить три группы испытаний с отдельными порогами 46/41 в группе выбора.",
+      "Добавить опубликованный план очных контрактных мест 17 и цену 285000 в указанной категории.",
+      "ДВИ для этой группы не применяется, максимум общих индивидуальных достижений 10.",
+      "49 — официально утверждённый план бюджета, 5 отдельной и 1 целевой совпадают в двух источниках.",
+      "Особая квота и общий конкурс требуют разрешения расхождения. История по годам сохраняется отдельно от вычисляемого порога."
+    ],
+    "openGaps": [
+      "Не подтверждена датированная финальная разбивка общего конкурса и особой квоты для точного набора.",
+      "Показатель совмещённой квоты не имеет подтверждённого соответствия имеющейся модели.",
+      "Место в общежитии и ВУЦ для точной программы отдельно не подтверждены.",
+      "Нет основания для полной конкурсной приёмки или сопоставимого порога 2025 без разрешения перечисленных пробелов."
+    ],
+    "runtimeRulesEvidence": {
+      "source": "currentRules",
+      "editionDate": "2026-05-15",
+      "examPage": 74,
+      "achievementsPage": 14,
+      "corroboratingSource": "rules"
+    }
+  }
+}

@@ -37,7 +37,9 @@ export function UniversityLogo({
       }
     >
       {(!loaded || failed || !university.logoUrl) && (
-        <b aria-label={university.shortName}>{fallback}</b>
+        <b role="img" aria-label={university.shortName}>
+          {fallback}
+        </b>
       )}
       {!failed && university.logoUrl && (
         // Official university assets have different aspect ratios, so a native
@@ -49,6 +51,7 @@ export function UniversityLogo({
           src={university.logoUrl}
           loading={size === "hero" ? "eager" : "lazy"}
           alt={`Логотип ${university.shortName}`}
+          aria-hidden={!loaded}
           onError={() => setFailed(true)}
           onLoad={() => setLoaded(true)}
         />
