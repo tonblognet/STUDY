@@ -93,6 +93,85 @@ export default async function checkAccessibility(page, config) {
               .evaluate((element) => element === document.activeElement),
           );
         }
+        if (item.route === "/" && item.state !== "navigation-open") {
+          const paths = [
+            {
+              key: "college",
+              label: "Колледж",
+              headline: "Профессия начинается здесь",
+            },
+            {
+              key: "undergraduate",
+              label: "Бакалавриат и специалитет",
+              headline: "Найдите своё направление",
+            },
+            {
+              key: "master",
+              label: "Магистратура",
+              headline: "Глубже в профессию",
+            },
+            {
+              key: "aspirantura",
+              label: "Аспирантура",
+              headline: "Начните своё исследование",
+            },
+            {
+              key: "doctorate",
+              label: "Докторантура",
+              headline: "Шаг к докторской диссертации",
+            },
+          ];
+          const key =
+            item.state === "page"
+              ? "master"
+              : item.state.replace("home-level-", "");
+          const index = paths.findIndex((path) => path.key === key);
+          confirm(index >= 0);
+          const selected = paths[index];
+          const choices = tab.locator("#education-levels fieldset");
+          const panel = tab.locator("#home-level-panel");
+          phase = "home_level_selection";
+          if (item.state !== "page")
+            await choices.getByText(selected.label, { exact: true }).click();
+          await panel
+            .getByRole("heading", {
+              level: 3,
+              name: selected.headline,
+              exact: true,
+            })
+            .waitFor({ state: "visible" });
+          const radio = choices.getByRole("radio", {
+            name: selected.label,
+            exact: true,
+          });
+          confirm(await radio.isChecked());
+          confirm((await panel.getAttribute("aria-live")) === "polite");
+          phase = "home_level_keyboard";
+          await radio.focus();
+          await tab.keyboard.press("ArrowRight");
+          const next = paths[(index + 1) % paths.length];
+          await panel
+            .getByRole("heading", {
+              level: 3,
+              name: next.headline,
+              exact: true,
+            })
+            .waitFor({ state: "visible" });
+          confirm(
+            await choices
+              .getByRole("radio", { name: next.label, exact: true })
+              .evaluate((element) => element === document.activeElement),
+          );
+          await tab.keyboard.press("ArrowLeft");
+          await panel
+            .getByRole("heading", {
+              level: 3,
+              name: selected.headline,
+              exact: true,
+            })
+            .waitFor({ state: "visible" });
+          confirm(await radio.isChecked());
+        }
         if (item.state === "hse-campus-open") {
           phase = "hse_campus";
           const summary = tab.locator("summary").filter({ hasText: /^Пермь$/ });
@@ -191,7 +270,11 @@ export default async function checkAccessibility(page, config) {
           };
         });
         Object.assign(report, result);
-        if (item.route === "/match" || item.state === "filters-dialog") {
+        if (
+          item.route === "/" ||
+          item.route === "/match" ||
+          item.state === "filters-dialog"
+        ) {
           phase = "layout_evidence";
           confirm(
             await tab.evaluate(
@@ -205,9 +288,10 @@ export default async function checkAccessibility(page, config) {
               .first()
               .scrollIntoViewIfNeeded();
           }
-          await tab.screenshot({
-            path: `output/playwright/accessibility-${item.route === "/match" ? "match" : "mobile-filters"}-${item.width}.png`,
-          });
+          if (item.route !== "/")
+            await tab.screenshot({
+              path: `output/playwright/accessibility-${item.route === "/match" ? "match" : "mobile-filters"}-${item.width}.png`,
+            });
         }
         if (opener) {
           phase = "focus_return";

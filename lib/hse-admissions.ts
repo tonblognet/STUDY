@@ -222,6 +222,52 @@ export type HseMasterTuition = {
   duration: string | null;
 };
 
+type MasterField = "budget" | "paid" | "exams";
+type MasterFieldEvidence = {
+  sourceId: string;
+  sourceYear: number;
+  status: DataStatus;
+  note?: string | null;
+  sourceLocator: {
+    heading?: string;
+    exactText?: string;
+    publishedTitle?: string;
+    examText?: string;
+    table?: number;
+    row?: number;
+  };
+};
+
+function masterFact<T>(
+  row: (typeof snapshot.masterTuition)[number],
+  field: MasterField,
+  value: T | null,
+  fallbackSection: string,
+): SourcedValue<T> {
+  const evidence = (
+    row as {
+      fieldEvidence?: Partial<Record<MasterField, MasterFieldEvidence>>;
+    }
+  ).fieldEvidence?.[field];
+  const section = evidence
+    ? [
+        evidence.sourceLocator.heading ?? evidence.sourceLocator.publishedTitle,
+        row.code,
+        evidence.sourceLocator.exactText ?? evidence.sourceLocator.examText,
+        evidence.sourceLocator.table === undefined
+          ? undefined
+          : `таблица ${evidence.sourceLocator.table}, строка ${evidence.sourceLocator.row}`,
+      ]
+        .filter(Boolean)
+        .join("; ")
+    : fallbackSection;
+  return fact(value, evidence?.sourceId ?? row.admissionSource, section, {
+    year: evidence?.sourceYear,
+    status: evidence?.status,
+    note: evidence?.note ?? undefined,
+  });
+}
+
 export const hseMasterTuition: HseMasterTuition[] = snapshot.masterTuition.map(
   (row) => ({
     title: row.title,
@@ -231,19 +277,22 @@ export const hseMasterTuition: HseMasterTuition[] = snapshot.masterTuition.map(
     tuition: fact(row.tuition, row.source, row.locator, { note: row.note }),
     sourceUrl: sources[row.source].url,
     programUrl: row.programUrl,
-    budgetPlaces: fact(
+    budgetPlaces: masterFact(
+      row,
+      "budget",
       row.budget,
-      row.admissionSource,
       "Паспорт программы, количество мест в 2026 году",
     ),
-    paidPlaces: fact(
+    paidPlaces: masterFact(
+      row,
+      "paid",
       row.paid,
-      row.admissionSource,
       "Паспорт программы, количество мест в 2026 году",
     ),
-    exams: fact(
+    exams: masterFact(
+      row,
+      "exams",
       row.exams,
-      row.admissionSource,
       "Паспорт программы, вступительные испытания в 2026 году",
     ),
     faculty: row.faculty,

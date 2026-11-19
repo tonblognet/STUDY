@@ -83,8 +83,8 @@ export function HeaderClient({
           >
             {signedIn ? "Кабинет" : "Войти"}
           </Link>
-          <Link href="/match" className="button button-primary nav-cta">
-            Подобрать программу
+          <Link href="/programs" className="button button-primary nav-cta">
+            Выбрать программу
           </Link>
           <button
             ref={menuButton}

@@ -34,6 +34,13 @@ export function accessibilityCases(width) {
   assert.ok([1440, 390].includes(width), "Unsupported audit viewport");
   return publicRoutes.flatMap((route) => {
     const states = ["page"];
+    if (route === "/")
+      states.push(
+        "home-level-college",
+        "home-level-undergraduate",
+        "home-level-aspirantura",
+        "home-level-doctorate",
+      );
     if (route === "/universities/hse") states.push("hse-campus-open");
     if (route === "/programs") states.push("ege-dialog");
     if (width === 390 && route === "/programs") states.push("filters-dialog");

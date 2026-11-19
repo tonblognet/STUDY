@@ -6,6 +6,26 @@ import { parseCatalog } from "@/lib/catalog/schema";
 import { educationPathwayRows } from "./education-pathways";
 import { filterHseExplorerRows } from "./hse-explorer-data";
 
+function collegeCatalog() {
+  const catalog = baselineCatalog();
+  catalog.programs = catalog.programs.filter(
+    (row) => row.universitySlug === "rea",
+  );
+  catalog.universities = catalog.universities.filter(
+    (row) => row.slug === "rea",
+  );
+  catalog.universityFacts = catalog.universityFacts.filter(
+    (row) => row.universitySlug === "rea",
+  );
+  catalog.directoryDetails = catalog.directoryDetails.filter(
+    (row) => row.universitySlug === "rea",
+  );
+  catalog.admissionCampaigns = catalog.admissionCampaigns.filter(
+    (row) => row.universitySlug === "rea",
+  );
+  return catalog;
+}
+
 describe("college admissions with separate school-entry routes", () => {
   it("preserves all eleven published routes and counts plan places once", () => {
     const rows = enrichment.profiles[0].offerings;
@@ -33,7 +53,7 @@ describe("college admissions with separate school-entry routes", () => {
   });
 
   it("shows actual programme names and separates the two entry bases without invented budget", () => {
-    const rows = educationPathwayRows(baselineCatalog(), "college");
+    const rows = educationPathwayRows(collegeCatalog(), "college");
     expect(rows).toHaveLength(11);
     expect(rows.some((row) => row.title.includes("Дизайн"))).toBe(true);
     const design = rows.find(
@@ -61,7 +81,7 @@ describe("college admissions with separate school-entry routes", () => {
   });
 
   it("validates imported facts, grade bases and reviewed college links in the same publication", () => {
-    const catalog = baselineCatalog();
+    const catalog = collegeCatalog();
     expect(() => parseCatalog(catalog)).not.toThrow();
     const college = catalog.directoryDetails
       .find((row) => row.universitySlug === "rea")!

@@ -877,6 +877,74 @@
       "localRawCapture": "tmp/education-pathways/hse-levels.html",
       "rawCaptureTracked": false,
       "pageCount": null
+    },
+    {
+      "id": "asp-places-spb",
+      "title": "Кампусный план бюджетного приёма в аспирантуру Санкт-Петербурга, 2026",
+      "url": "https://spb.hse.ru/postgrad/controlnumbers2026",
+      "sourceType": "official_university_page",
+      "reviewedExtract": {
+        "year": 2026,
+        "campus": "Санкт-Петербург",
+        "programTitle": "Гражданское право и процесс",
+        "budgetPlaces": 3
+      },
+      "sourceLocator": "Раздел «Количество мест в аспирантуре в 2026 году»; таблица распределения КЦП; строка «Гражданское право и процесс», колонка контрольных цифр приёма.",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T18:30:59.246Z",
+      "checkedAt": "2026-11-18T18:30:59.246Z",
+      "sha256": "9ec46a11a8a3395d9d00aa52441f45856931079a35320aedd5ecf7e513f82bc1",
+      "bytes": 140,
+      "sha256Scope": "utf8_json_of_reviewedExtract",
+      "captureKind": "reviewed_official_extract",
+      "rawCaptureTracked": false,
+      "transportNote": "Direct local HTTP retrieval timed out. Official page/document was reviewed through web browsing; the hash covers only the stored reviewedExtract JSON in field order (UTF-8), not original HTTP response bytes. Failed local retrieval receipts are retained in ignored tmp/nov18-asp-campus-completions."
+    },
+    {
+      "id": "asp-places-perm",
+      "title": "Кампусный план бюджетного приёма в аспирантуру Перми, 2026",
+      "url": "https://perm.hse.ru/asp/ControlNumbers",
+      "sourceType": "official_university_page",
+      "reviewedExtract": {
+        "year": 2026,
+        "campus": "Пермь",
+        "scientificGroup": "5.2 Экономика",
+        "programTitle": "Прикладная экономика",
+        "budgetPlaces": 3
+      },
+      "sourceLocator": "Заголовок приёма 2026; таблица 1, строка «5.2 Экономика / Прикладная экономика», колонка бюджетных контрольных цифр.",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T18:30:59.246Z",
+      "checkedAt": "2026-11-18T18:30:59.246Z",
+      "sha256": "d13d17210e773c7861274c49c130500442dce3286c65506530cf101fd4d6a5e9",
+      "bytes": 152,
+      "sha256Scope": "utf8_json_of_reviewedExtract",
+      "captureKind": "reviewed_official_extract",
+      "rawCaptureTracked": false,
+      "transportNote": "Direct local HTTP retrieval timed out. Official page/document was reviewed through web browsing; the hash covers only the stored reviewedExtract JSON in field order (UTF-8), not original HTTP response bytes. Failed local retrieval receipts are retained in ignored tmp/nov18-asp-campus-completions."
+    },
+    {
+      "id": "asp-mathmod-portfolio-2026",
+      "title": "Портфолио математического моделирования АШ по техническим наукам, Москва, 2026",
+      "url": "https://aspirantura.hse.ru/mirror/pubs/share/1121279686",
+      "sourceType": "official_university_document",
+      "reviewedExtract": {
+        "year": 2026,
+        "campus": "Москва",
+        "programTitle": "Математическое моделирование, численные методы и комплексы программ",
+        "scientificSpecialty": "1.2.2",
+        "school": "Аспирантская школа по техническим наукам"
+      },
+      "sourceLocator": "PDF, титульная страница 1: основная образовательная программа, научная специальность 1.2.2, АШ по техническим наукам, Москва 2026.",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T18:30:59.246Z",
+      "checkedAt": "2026-11-18T18:30:59.246Z",
+      "sha256": "e6e9092348b4c4ac26849fcca7d28fbc7077c58e1a26b8540b73e2de5db87b22",
+      "bytes": 300,
+      "sha256Scope": "utf8_json_of_reviewedExtract",
+      "captureKind": "reviewed_official_extract",
+      "rawCaptureTracked": false,
+      "transportNote": "Direct local HTTP retrieval timed out. Official page/document was reviewed through web browsing; the hash covers only the stored reviewedExtract JSON in field order (UTF-8), not original HTTP response bytes. Failed local retrieval receipts are retained in ignored tmp/nov18-asp-campus-completions."
     }
   ],
   "aspAdmission2026": {
@@ -4745,7 +4813,39 @@
         }
       ]
     },
-    "linkageLimitation": "An exact code + programme-title match supports the listed campus admission scope only. It does not verify every campus string in the current general catalogue or assign a programme's budget seats to each scientific specialty."
+    "linkageLimitation": "An exact code + programme-title match supports the listed campus admission scope only. It does not verify every campus string in the current general catalogue or assign a programme's budget seats to each scientific specialty.",
+    "reviewedBudgetMatches": [
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Гражданское право и процесс",
+        "budgetPlaces": 3,
+        "sourceId": "asp-places-spb",
+        "sourceLocator": "Раздел «Количество мест в аспирантуре в 2026 году»; таблица распределения КЦП; строка «Гражданское право и процесс», колонка контрольных цифр приёма.",
+        "identitySourceIds": ["asp-admission-spb"],
+        "note": "Кампусный план использует точное название программы из перечня приёма. Число относится к программе Санкт-Петербурга; центральная строка «Юриспруденция» не использована как неподтверждённый алиас."
+      },
+      {
+        "campus": "Пермь",
+        "programTitle": "Прикладная экономика",
+        "budgetPlaces": 3,
+        "sourceId": "asp-places-perm",
+        "sourceLocator": "Заголовок приёма 2026; таблица 1, строка «5.2 Экономика / Прикладная экономика», колонка бюджетных контрольных цифр.",
+        "identitySourceIds": ["asp-admission-perm"],
+        "note": "Кампусный план явно связывает группу 5.2 Экономика, программу «Прикладная экономика» и три бюджетных места. Места не назначаются автоматически другим экономическим программам."
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Математическое моделирование, численные методы и комплексы программ",
+        "budgetPlaces": 2,
+        "sourceId": "asp-places",
+        "sourceLocator": "Таблица КЦП 2026, строка «Математическое моделирование, численные методы и комплексы программ (АШ по техническим наукам)», колонка «Москва».",
+        "identitySourceIds": [
+          "asp-admission-moscow",
+          "asp-mathmod-portfolio-2026"
+        ],
+        "note": "Титульная страница программы портфолио 2026 подтверждает точное название, специальность 1.2.2, Москву и АШ по техническим наукам. Уточнение школы разрешает соответствие строке бюджетного плана. Это отдельная программа; места конкурса «Компьютерные науки» не переносятся."
+      }
+    ]
   },
   "sourceVersionIssues": [
     {
@@ -4796,7 +4896,14 @@
       "ma-english-pdf page 1"
     ],
     "rawHashesChecked": true,
-    "runtimeOrSchemaModified": false
+    "runtimeOrSchemaModified": false,
+    "budgetMatchReview": {
+      "checkedAt": "2026-11-18T18:30:59.246Z",
+      "rawResponsesAvailable": false,
+      "method": "Official web source review; raw local retrieval failed. Extract-only hashes are explicitly distinguished from original response hashes.",
+      "resolvedProgrammeBudgets": 3,
+      "remainingBlankCampusBudgets": 2
+    }
   },
   "limitations": [
     "Campaign dates and scores are 2026 facts, not promises for 2027.",

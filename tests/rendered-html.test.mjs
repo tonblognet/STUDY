@@ -60,6 +60,7 @@ after(() => {
 
 test("public journeys have one main landmark and a keyboard skip link", async () => {
   for (const route of [
+    "/",
     "/programs",
     "/universities",
     "/universities/mgu",
@@ -255,18 +256,48 @@ test("matching renders separate eligibility, strict filters and program-specific
   assert.match(details, /шкала проходного балла/);
 });
 
-test("server-renders the new admissions landing", async () => {
+test("server-renders all five education paths and a source-backed home example", async () => {
   const response = await fetch(base);
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Поступление начинается с ясного выбора/);
-  assert.match(html, /Спокойно сравните всё важное/);
+  assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
+  assert.match(html, /<h1\b[^>]*id="home-title"[^>]*>.*?Дальше —.*?больше\./s);
+  assert.match(html, /href="#education-levels"[^>]*>Выбрать свой путь/);
+  assert.match(html, /href="\/universities"[^>]*>Каталог вузов/);
   assert.match(html, /официальные источники/i);
-  assert.match(html, /справочник вузов России/);
-  assert.match(html, /role="group"/);
-  assert.match(html, /aria-pressed="true"/);
-  assert.match(html, /aria-label="Бюджетные места по программам"/);
-  assert.match(html, /href="\/match"[^>]*>Подобрать варианты/);
+  const rail = html.match(
+    /<nav\b[^>]*aria-label="Уровни образования на главной"[^>]*>(.*?)<\/nav>/s,
+  )?.[1];
+  assert.ok(rail, "homepage must expose its five real destination links");
+  for (const [label, href] of [
+    ["Колледж", "/programs?track=college"],
+    ["Бакалавриат и специалитет", "/programs"],
+    ["Магистратура", "/programs?track=master"],
+    ["Аспирантура", "/programs?track=aspirantura"],
+    ["Докторантура", "/programs?track=doctorate"],
+  ]) {
+    assert.ok(rail.includes(`href="${href}"`), label);
+    assert.ok(rail.includes(label), label);
+  }
+  assert.equal((rail.match(/<a\b/g) ?? []).length, 5);
+  assert.match(html, /<legend[^>]*>Выберите уровень образования<\/legend>/);
+  assert.equal((html.match(/name="home-education-level"/g) ?? []).length, 5);
+  assert.match(
+    html,
+    /<input\b(?=[^>]*name="home-education-level")(?=[^>]*value="master")(?=[^>]*checked="")[^>]*>/,
+  );
+  assert.match(html, /id="home-level-panel"[^>]*aria-live="polite"/);
+  assert.match(html, /Глубже в профессию/);
+  assert.match(html, /480\s+000/);
+  assert.match(html, /Год сведений/);
+  assert.match(html, /Статус стоимости/);
+  assert.match(
+    html,
+    /href="https:\/\/www\.hse\.ru\/pubs\/share\/direct\/1134850538\.docx"[^>]*>Открыть официальный источник/,
+  );
+  const header = html.match(/<header\b[^>]*>(.*?)<\/header>/s)?.[1];
+  assert.match(header ?? "", /href="\/programs"[^>]*>Выбрать программу/);
+  assert.match(html, /Если значение пока не подтверждено/);
   assert.doesNotMatch(html, /codex-preview/);
 });
 

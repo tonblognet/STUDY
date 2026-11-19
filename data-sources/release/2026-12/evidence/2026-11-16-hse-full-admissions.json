@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "year": 2026,
-  "checkedAt": "2026-11-18T00:05:19+00:00",
+  "checkedAt": "2026-11-18T18:35:31+00:00",
   "scope": "Все 121 конкурсное предложение бакалавриата и специалитета из четырёх официальных планов мест ВШЭ 2026; источники и неизвестные значения сохранены.",
   "sources": {
     "source-613c96504041e12d": {
@@ -2363,6 +2363,63 @@
       "retrievedAt": "2026-11-16T15:23:51+00:00",
       "sha256": "02370c4969b80d6b53b5e06cc2a6d0f2448d2e2ddf4e7fb19ea9422a558dd606",
       "bytes": 57579
+    },
+    "source-ed4b26b3382d7510": {
+      "url": "https://www.hse.ru/ma/cpm/admission/",
+      "finalUrl": "https://www.hse.ru/ma/cpm/admission/",
+      "httpStatus": 200,
+      "retrievedAt": "2026-11-16T15:24:13+00:00",
+      "bytes": 61444,
+      "sha256": "dd340bd39c1746dd61f3b2e568ec605950e66701a978b08736cd16b006fcae6f",
+      "kind": "html",
+      "captureKind": "http_response",
+      "sha256Scope": "response_bytes",
+      "sourceYear": 2026
+    },
+    "source-3817aa71d68d8c02": {
+      "url": "https://www.hse.ru/ma/datasci/admission/",
+      "finalUrl": "https://www.hse.ru/ma/datasci/admission/",
+      "httpStatus": 200,
+      "retrievedAt": "2026-11-16T15:24:18+00:00",
+      "bytes": 60154,
+      "sha256": "b9182500e4c90c1a9f374e2523626ed80cf2005c2bf0748bec450e05fda43c30",
+      "kind": "html",
+      "captureKind": "http_response",
+      "sha256Scope": "response_bytes",
+      "sourceYear": 2026
+    },
+    "source-757be201f9979913": {
+      "url": "https://ma.hse.ru/entrance",
+      "kind": "html",
+      "retrievedAt": "2026-11-18T00:36:41.269842+00:00",
+      "sha256": "185ec7f49eec528ccdfb7c6f3e0f30d80965f3e978094559fc6f31a1cd79629f",
+      "bytes": 237648,
+      "captureKind": "http_response",
+      "sha256Scope": "response_bytes",
+      "sourceYear": 2026,
+      "yearEvidence": "Навигация «Прием — 2026», Москва, очное обучение, таблица 1: строки 5 и 17 со ссылками cpm/datasci."
+    },
+    "source-fd0643ccc1e7afbf": {
+      "url": "https://design.hse.ru/ma",
+      "finalUrl": "https://design.hse.ru/ma",
+      "kind": "html",
+      "retrievedAt": "2026-11-18T18:24:41+00:00",
+      "sha256": "1a4fc4499ae59e63f6997a7d4b28693c52cc9d19073f5bac6cff4e8a816610b3",
+      "bytes": 381757,
+      "captureKind": "http_response",
+      "sha256Scope": "response_bytes",
+      "sourceYear": 2026
+    },
+    "source-a5e0217da7cf7799": {
+      "url": "https://design.hse.ru/ma/program/environment",
+      "finalUrl": "https://design.hse.ru/ma/program/environment",
+      "kind": "html",
+      "retrievedAt": "2026-11-18T18:26:05+00:00",
+      "sha256": "bfee99dc8e26a2fdbc92988454014bc61d1ecb9eaa9f1b4fefefe6da6c531f33",
+      "bytes": 68651,
+      "captureKind": "http_response",
+      "sha256Scope": "response_bytes",
+      "sourceYear": 2026
     }
   },
   "rulesSource": "source-613c96504041e12d",
@@ -12161,13 +12218,124 @@
       "source": "source-9faf173c40c65bd6",
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 1, \"borderRowOnPageOneBased\": 6, \"bboxPoints\": [85.1, 384.406, 575.16, 418.15], \"printedRowNumber\": 2, \"exactCells\": [\"2\", \"Совместная магистратура НИУ ВШЭ и Центра педагогического мастерства\", \"560\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
-      "programUrl": null,
-      "admissionSource": "source-9faf173c40c65bd6",
-      "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": null
+      "programUrl": "https://www.hse.ru/ma/cpm/",
+      "admissionSource": "source-ed4b26b3382d7510",
+      "budget": 18,
+      "paid": 5,
+      "exams": "Математика (письменно)",
+      "faculty": "Факультет математики",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "budget": {
+          "value": 18,
+          "status": "verified",
+          "sourceId": "source-ed4b26b3382d7510",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[6]/div[2]/p[1]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "18 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Совместная магистратура НИУ ВШЭ и Центра педагогического мастерства",
+            "code": "01.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "paid": {
+          "value": 5,
+          "status": "verified",
+          "sourceId": "source-ed4b26b3382d7510",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[6]/div[2]/p[2]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "5 платных мест"
+          },
+          "scope": {
+            "programme": "Совместная магистратура НИУ ВШЭ и Центра педагогического мастерства",
+            "code": "01.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "exams": {
+          "value": "Математика (письменно)",
+          "status": "verified",
+          "sourceId": "source-ed4b26b3382d7510",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[4]/div[2]",
+            "heading": "Вступительные испытания в 2026 году",
+            "exactText": "Математика (письменно)"
+          },
+          "scope": {
+            "programme": "Совместная магистратура НИУ ВШЭ и Центра педагогического мастерства",
+            "code": "01.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "faculty": {
+          "value": "Факультет математики",
+          "status": "verified",
+          "sourceId": "source-ed4b26b3382d7510",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[2]/div[2]",
+            "heading": "Программу ведет",
+            "exactText": "Кампус в МосквеФакультет математики"
+          },
+          "scope": {
+            "programme": "Совместная магистратура НИУ ВШЭ и Центра педагогического мастерства",
+            "code": "01.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "duration": {
+          "value": "2 года",
+          "status": "verified",
+          "sourceId": "source-ed4b26b3382d7510",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[5]/div[2]",
+            "heading": "Продолжительность и форма обучения",
+            "exactText": "2 года Очная"
+          },
+          "scope": {
+            "programme": "Совместная магистратура НИУ ВШЭ и Центра педагогического мастерства",
+            "code": "01.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        }
+      },
+      "identitySourceIds": [
+        "source-ed4b26b3382d7510",
+        "source-757be201f9979913"
+      ]
     },
     {
       "title": "Системный анализ и математические технологии",
@@ -12263,13 +12431,124 @@
       "source": "source-9faf173c40c65bd6",
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 1, \"borderRowOnPageOneBased\": 14, \"bboxPoints\": [85.1, 590.14, 575.16, 606.94], \"printedRowNumber\": 8, \"exactCells\": [\"8\", \"Науки о данных\", \"570\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
-      "programUrl": null,
-      "admissionSource": "source-9faf173c40c65bd6",
-      "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": null
+      "programUrl": "https://www.hse.ru/ma/datasci/",
+      "admissionSource": "source-3817aa71d68d8c02",
+      "budget": 36,
+      "paid": 15,
+      "exams": "Высшая математика (письменно)",
+      "faculty": "Факультет компьютерных наук",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "budget": {
+          "value": 36,
+          "status": "verified",
+          "sourceId": "source-3817aa71d68d8c02",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[7]/div[2]/p[1]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "36 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Науки о данных",
+            "code": "01.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "paid": {
+          "value": 15,
+          "status": "verified",
+          "sourceId": "source-3817aa71d68d8c02",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[7]/div[2]/p[3]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "15 платных мест"
+          },
+          "scope": {
+            "programme": "Науки о данных",
+            "code": "01.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "exams": {
+          "value": "Высшая математика (письменно)",
+          "status": "verified",
+          "sourceId": "source-3817aa71d68d8c02",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[5]/div[2]",
+            "heading": "Вступительные испытания в 2026 году",
+            "exactText": "Высшая математика (письменно)"
+          },
+          "scope": {
+            "programme": "Науки о данных",
+            "code": "01.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "faculty": {
+          "value": "Факультет компьютерных наук",
+          "status": "verified",
+          "sourceId": "source-3817aa71d68d8c02",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[2]/div[2]",
+            "heading": "Программу ведет",
+            "exactText": "Кампус в МосквеФакультет компьютерных наук"
+          },
+          "scope": {
+            "programme": "Науки о данных",
+            "code": "01.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "duration": {
+          "value": "2 года",
+          "status": "verified",
+          "sourceId": "source-3817aa71d68d8c02",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div/div/div[6]/div[2]",
+            "heading": "Продолжительность и форма обучения",
+            "exactText": "2 года Очная"
+          },
+          "scope": {
+            "programme": "Науки о данных",
+            "code": "01.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        }
+      },
+      "identitySourceIds": [
+        "source-3817aa71d68d8c02",
+        "source-757be201f9979913"
+      ]
     },
     {
       "title": "Математика машинного обучения",
@@ -12281,12 +12560,41 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 1, \"borderRowOnPageOneBased\": 15, \"bboxPoints\": [85.1, 607.42, 575.16, 624.22], \"printedRowNumber\": 9, \"exactCells\": [\"9\", \"Математика машинного обучения\", \"570\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "https://www.hse.ru/ma/sltheory/",
-      "admissionSource": "source-9faf173c40c65bd6",
+      "admissionSource": "source-757be201f9979913",
       "budget": null,
       "paid": null,
-      "exams": null,
+      "exams": "Конкурсный отбор (портфолио)",
       "faculty": null,
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[15]",
+            "table": 1,
+            "row": 15,
+            "direction": "Направление подготовки 01.04.02 Прикладная математика и информатика",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Математика машинного обучения / Math of Machine Learning (реализуется на английском языке)",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания",
+            "programmeUrls": ["https://www.hse.ru/ma/sltheory"]
+          },
+          "scope": {
+            "programme": "Математика машинного обучения",
+            "code": "01.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Факультет и места из недоступного паспорта не восстановлены по предположению. Год источника подтверждён навигацией приёма 2026."
+        }
+      },
+      "identitySourceIds": ["source-757be201f9979913"]
     },
     {
       "title": "Прикладные нейросетевые технологии",
@@ -12689,12 +12997,41 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 2, \"borderRowOnPageOneBased\": 25, \"bboxPoints\": [85.1, 611.98, 575.16, 628.78], \"printedRowNumber\": 33, \"exactCells\": [\"33\", \"Системное программирование\", \"610\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "https://www.hse.ru/ma/sp/",
-      "admissionSource": "source-9faf173c40c65bd6",
+      "admissionSource": "source-757be201f9979913",
       "budget": null,
       "paid": null,
-      "exams": null,
+      "exams": "Собеседование",
       "faculty": null,
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "exams": {
+          "value": "Собеседование",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[47]",
+            "table": 1,
+            "row": 47,
+            "direction": "Направление подготовки 09.04.04 Программная инженерия",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Системное программирование",
+            "examText": "1. Собеседование. Программа экзамена",
+            "programmeUrls": ["https://www.hse.ru/ma/sp/"]
+          },
+          "scope": {
+            "programme": "Системное программирование",
+            "code": "09.04.04",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Факультет и места из недоступного паспорта не восстановлены по предположению. Год источника подтверждён навигацией приёма 2026."
+        }
+      },
+      "identitySourceIds": ["source-757be201f9979913"]
     },
     {
       "title": "Инженерия данных",
@@ -12910,12 +13247,41 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 3, \"borderRowOnPageOneBased\": 16, \"bboxPoints\": [85.1, 472.99, 575.16, 489.79], \"printedRowNumber\": 46, \"exactCells\": [\"46\", \"Обучение и оценивание как наука\", \"570\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "https://www.hse.ru/ma/sola/",
-      "admissionSource": "source-9faf173c40c65bd6",
+      "admissionSource": "source-757be201f9979913",
       "budget": null,
       "paid": null,
-      "exams": null,
+      "exams": "Конкурсный отбор (портфолио)",
       "faculty": null,
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[66]",
+            "table": 1,
+            "row": 66,
+            "direction": "Направление подготовки 37.04.01 Психология",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Обучение и оценивание как наука / Science of Learning and Assessment (реализуется на русском или английском языках)",
+            "examText": "1. Конкурсный отбор (портфолио); Состав портфолио и критерии оценивания",
+            "programmeUrls": ["https://www.hse.ru/ma/sola/"]
+          },
+          "scope": {
+            "programme": "Обучение и оценивание как наука",
+            "code": "37.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Факультет и места из недоступного паспорта не восстановлены по предположению. Год источника подтверждён навигацией приёма 2026."
+        }
+      },
+      "identitySourceIds": ["source-757be201f9979913"]
     },
     {
       "title": "Когнитивные науки и технологии: от нейрона к познанию",
@@ -13269,10 +13635,33 @@
       "programUrl": "https://www.hse.ru/ma/insport/",
       "admissionSource": "source-7998b000c88ce040",
       "budget": null,
-      "paid": null,
+      "paid": 40,
       "exams": "38.04.02 МенеджментКонкурсный отбор (портфолио)40.04.01 ЮриспруденцияКонкурсный отбор (портфолио)",
       "faculty": "Высшая школа юриспруденции и администрирования",
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "paid": {
+          "value": 40,
+          "status": "verified",
+          "sourceId": "source-7998b000c88ce040",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[2]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "40 платных мест"
+          },
+          "scope": {
+            "programme": "Международный спортивный менеджмент, маркетинг и право",
+            "code": "38.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        }
+      }
     },
     {
       "title": "Управление b2c-бизнесом: технологии и инновации",
@@ -13881,10 +14270,33 @@
       "programUrl": "https://www.hse.ru/ma/insport/",
       "admissionSource": "source-7998b000c88ce040",
       "budget": null,
-      "paid": null,
+      "paid": 20,
       "exams": "38.04.02 МенеджментКонкурсный отбор (портфолио)40.04.01 ЮриспруденцияКонкурсный отбор (портфолио)",
       "faculty": "Высшая школа юриспруденции и администрирования",
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "paid": {
+          "value": 20,
+          "status": "verified",
+          "sourceId": "source-7998b000c88ce040",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[5]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "20 платных мест"
+          },
+          "scope": {
+            "programme": "Международный спортивный менеджмент, маркетинг и право",
+            "code": "40.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        }
+      }
     },
     {
       "title": "Государственно-конфессиональные отношения. Правовое регулирование деятельности религиозных объединений",
@@ -14236,12 +14648,184 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 7, \"borderRowOnPageOneBased\": 3, \"bboxPoints\": [85.1, 113.66, 575.16, 147.26], \"printedRowNumber\": 124, \"exactCells\": [\"124\", \"Современные технологии преподавания дизайна и искусства\", \"560\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "http://design.hse.ru/pages/184",
-      "admissionSource": "source-b1ffbf628db8aebe",
-      "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": "2 года"
+      "admissionSource": "source-fd0643ccc1e7afbf",
+      "budget": 25,
+      "paid": 25,
+      "exams": "Конкурсный отбор (портфолио)",
+      "faculty": "Факультет креативных индустрий",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "faculty": {
+          "value": "Факультет креативных индустрий",
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "edu",
+            "scopePaths": [
+              "/html/body/div[81]",
+              "/html/body/div[82]",
+              "/html/body/div[83]",
+              "/html/body/div[84]",
+              "/html/body/div[85]",
+              "/html/body/div[86]",
+              "/html/body/div[87]"
+            ],
+            "yearAnchorXPath": "/html/body/div[83]/div/div/div/div[1]/div/div[6]",
+            "yearAnchorExactText": "560 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[158]",
+              "table": 1,
+              "row": 158,
+              "direction": "Направление подготовки 44.04.01 Педагогическое образование",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Современные технологии преподавания дизайна и искусства",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": [
+                "https://design.hse.ru/ma/educational-technologies/design-art"
+              ]
+            },
+            "xpath": "/html/body/div[83]/div/div/div/div[2]/div/ul[1]/li[2]",
+            "exactText": "Программу ведет: Факультет креативных индустрий"
+          },
+          "scope": {
+            "programme": "Современные технологии преподавания дизайна и искусства",
+            "code": "44.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[158]",
+            "table": 1,
+            "row": 158,
+            "direction": "Направление подготовки 44.04.01 Педагогическое образование",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Современные технологии преподавания дизайна и искусства",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+            "programmeUrls": [
+              "https://design.hse.ru/ma/educational-technologies/design-art"
+            ]
+          },
+          "scope": {
+            "programme": "Современные технологии преподавания дизайна и искусства",
+            "code": "44.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Для программ искусства и преподавания дизайн-страницы 2026 дополнительно описывают собеседование в рамках отбора; здесь сохранено официальное наименование испытания из центрального перечня."
+        },
+        "budget": {
+          "value": 25,
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "edu",
+            "scopePaths": [
+              "/html/body/div[81]",
+              "/html/body/div[82]",
+              "/html/body/div[83]",
+              "/html/body/div[84]",
+              "/html/body/div[85]",
+              "/html/body/div[86]",
+              "/html/body/div[87]"
+            ],
+            "yearAnchorXPath": "/html/body/div[83]/div/div/div/div[1]/div/div[6]",
+            "yearAnchorExactText": "560 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[158]",
+              "table": 1,
+              "row": 158,
+              "direction": "Направление подготовки 44.04.01 Педагогическое образование",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Современные технологии преподавания дизайна и искусства",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": [
+                "https://design.hse.ru/ma/educational-technologies/design-art"
+              ]
+            },
+            "xpath": "/html/body/div[83]/div/div/div/div[1]/div/div[3]",
+            "exactText": "25 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Современные технологии преподавания дизайна и искусства",
+            "code": "44.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        },
+        "paid": {
+          "value": 25,
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "edu",
+            "scopePaths": [
+              "/html/body/div[81]",
+              "/html/body/div[82]",
+              "/html/body/div[83]",
+              "/html/body/div[84]",
+              "/html/body/div[85]",
+              "/html/body/div[86]",
+              "/html/body/div[87]"
+            ],
+            "yearAnchorXPath": "/html/body/div[83]/div/div/div/div[1]/div/div[6]",
+            "yearAnchorExactText": "560 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[158]",
+              "table": 1,
+              "row": 158,
+              "direction": "Направление подготовки 44.04.01 Педагогическое образование",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Современные технологии преподавания дизайна и искусства",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": [
+                "https://design.hse.ru/ma/educational-technologies/design-art"
+              ]
+            },
+            "xpath": "/html/body/div[83]/div/div/div/div[1]/div/div[4]",
+            "exactText": "25 коммерческих мест"
+          },
+          "scope": {
+            "programme": "Современные технологии преподавания дизайна и искусства",
+            "code": "44.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        }
+      },
+      "identitySourceIds": [
+        "source-757be201f9979913",
+        "source-fd0643ccc1e7afbf"
+      ]
     },
     {
       "title": "Педагогический дизайн: теория и практика обучения",
@@ -14406,12 +14990,41 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 7, \"borderRowOnPageOneBased\": 17, \"bboxPoints\": [85.1, 456.67, 575.16, 473.47], \"printedRowNumber\": 134, \"exactCells\": [\"134\", \"Исторические исследования\", \"590\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "https://www.hse.ru/ma/socialhist/",
-      "admissionSource": "source-9faf173c40c65bd6",
+      "admissionSource": "source-757be201f9979913",
       "budget": null,
       "paid": null,
-      "exams": null,
+      "exams": "Конкурсный отбор (портфолио)",
       "faculty": null,
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[172]",
+            "table": 1,
+            "row": 172,
+            "direction": "Направление подготовки 46.04.01 История",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Исторические исследования",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания",
+            "programmeUrls": ["https://www.hse.ru/ma/socialhist/"]
+          },
+          "scope": {
+            "programme": "Исторические исследования",
+            "code": "46.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Факультет и места из недоступного паспорта не восстановлены по предположению. Год источника подтверждён навигацией приёма 2026."
+        }
+      },
+      "identitySourceIds": ["source-757be201f9979913"]
     },
     {
       "title": "Археологические исследования",
@@ -14457,12 +15070,138 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 7, \"borderRowOnPageOneBased\": 22, \"bboxPoints\": [85.1, 559.996, 575.16, 576.82], \"printedRowNumber\": 137, \"exactCells\": [\"137\", \"Практики современного искусства\", \"580\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "http://art.hse.ru/ma",
-      "admissionSource": "source-108c034e843a066d",
+      "admissionSource": "source-fd0643ccc1e7afbf",
       "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": "2 года"
+      "paid": 50,
+      "exams": "Конкурсный отбор (портфолио)",
+      "faculty": "Факультет креативных индустрий",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "faculty": {
+          "value": "Факультет креативных индустрий",
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "art",
+            "scopePaths": [
+              "/html/body/div[52]",
+              "/html/body/div[53]",
+              "/html/body/div[54]",
+              "/html/body/div[55]",
+              "/html/body/div[56]",
+              "/html/body/div[57]",
+              "/html/body/div[58]",
+              "/html/body/div[59]",
+              "/html/body/div[60]",
+              "/html/body/div[61]"
+            ],
+            "yearAnchorXPath": "/html/body/div[54]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "580 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[176]",
+              "table": 1,
+              "row": 176,
+              "direction": "Направление подготовки 50.04.02 Изящные искусства",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Практики современного искусства",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma/program/art"]
+            },
+            "xpath": "/html/body/div[54]/div/div/div/div[2]/div/ul[1]/li[2]",
+            "exactText": "Программу ведет: Факультет креативных индустрий"
+          },
+          "scope": {
+            "programme": "Практики современного искусства",
+            "code": "50.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[176]",
+            "table": 1,
+            "row": 176,
+            "direction": "Направление подготовки 50.04.02 Изящные искусства",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Практики современного искусства",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+            "programmeUrls": ["https://design.hse.ru/ma/program/art"]
+          },
+          "scope": {
+            "programme": "Практики современного искусства",
+            "code": "50.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Для программ искусства и преподавания дизайн-страницы 2026 дополнительно описывают собеседование в рамках отбора; здесь сохранено официальное наименование испытания из центрального перечня."
+        },
+        "paid": {
+          "value": 50,
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "art",
+            "scopePaths": [
+              "/html/body/div[52]",
+              "/html/body/div[53]",
+              "/html/body/div[54]",
+              "/html/body/div[55]",
+              "/html/body/div[56]",
+              "/html/body/div[57]",
+              "/html/body/div[58]",
+              "/html/body/div[59]",
+              "/html/body/div[60]",
+              "/html/body/div[61]"
+            ],
+            "yearAnchorXPath": "/html/body/div[54]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "580 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[176]",
+              "table": 1,
+              "row": 176,
+              "direction": "Направление подготовки 50.04.02 Изящные искусства",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Практики современного искусства",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma/program/art"]
+            },
+            "xpath": "/html/body/div[54]/div/div/div/div[1]/div/div[3]",
+            "exactText": "50 коммерческих мест"
+          },
+          "scope": {
+            "programme": "Практики современного искусства",
+            "code": "50.04.02",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        }
+      },
+      "identitySourceIds": [
+        "source-757be201f9979913",
+        "source-fd0643ccc1e7afbf"
+      ]
     },
     {
       "title": "История художественной культуры и рынок искусства",
@@ -14525,12 +15264,203 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 8, \"borderRowOnPageOneBased\": 2, \"bboxPoints\": [85.1, 79.58, 575.16, 96.38], \"printedRowNumber\": 141, \"exactCells\": [\"141\", \"Дизайн\", \"790\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "http://design.hse.ru/mag-design",
-      "admissionSource": "source-6d91b927a39a2923",
-      "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": "2 года"
+      "admissionSource": "source-fd0643ccc1e7afbf",
+      "budget": 30,
+      "paid": 200,
+      "exams": "Конкурсный отбор (портфолио)",
+      "faculty": "Факультет креативных индустрий",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "faculty": {
+          "value": "Факультет креативных индустрий",
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "design",
+            "scopePaths": [
+              "/html/body/div[24]",
+              "/html/body/div[25]",
+              "/html/body/div[26]",
+              "/html/body/div[27]",
+              "/html/body/div[28]",
+              "/html/body/div[29]",
+              "/html/body/div[30]",
+              "/html/body/div[31]",
+              "/html/body/div[32]",
+              "/html/body/div[33]",
+              "/html/body/div[34]",
+              "/html/body/div[35]",
+              "/html/body/div[36]",
+              "/html/body/div[37]",
+              "/html/body/div[38]",
+              "/html/body/div[39]"
+            ],
+            "yearAnchorXPath": "/html/body/div[27]/div/div/div/div[1]/div/div[6]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[183]",
+              "table": 1,
+              "row": 183,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Дизайн",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma/program/design"]
+            },
+            "xpath": "/html/body/div[27]/div/div/div/div[2]/div/ul[1]/li[2]",
+            "exactText": "Программу ведет: Факультет креативных индустрий"
+          },
+          "scope": {
+            "programme": "Дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[183]",
+            "table": 1,
+            "row": 183,
+            "direction": "Направление подготовки 54.04.01 Дизайн",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Дизайн",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+            "programmeUrls": ["https://design.hse.ru/ma/program/design"]
+          },
+          "scope": {
+            "programme": "Дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "budget": {
+          "value": 30,
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "design",
+            "scopePaths": [
+              "/html/body/div[24]",
+              "/html/body/div[25]",
+              "/html/body/div[26]",
+              "/html/body/div[27]",
+              "/html/body/div[28]",
+              "/html/body/div[29]",
+              "/html/body/div[30]",
+              "/html/body/div[31]",
+              "/html/body/div[32]",
+              "/html/body/div[33]",
+              "/html/body/div[34]",
+              "/html/body/div[35]",
+              "/html/body/div[36]",
+              "/html/body/div[37]",
+              "/html/body/div[38]",
+              "/html/body/div[39]"
+            ],
+            "yearAnchorXPath": "/html/body/div[27]/div/div/div/div[1]/div/div[6]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[183]",
+              "table": 1,
+              "row": 183,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Дизайн",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma/program/design"]
+            },
+            "xpath": "/html/body/div[27]/div/div/div/div[1]/div/div[3]",
+            "exactText": "30 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        },
+        "paid": {
+          "value": 200,
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "design",
+            "scopePaths": [
+              "/html/body/div[24]",
+              "/html/body/div[25]",
+              "/html/body/div[26]",
+              "/html/body/div[27]",
+              "/html/body/div[28]",
+              "/html/body/div[29]",
+              "/html/body/div[30]",
+              "/html/body/div[31]",
+              "/html/body/div[32]",
+              "/html/body/div[33]",
+              "/html/body/div[34]",
+              "/html/body/div[35]",
+              "/html/body/div[36]",
+              "/html/body/div[37]",
+              "/html/body/div[38]",
+              "/html/body/div[39]"
+            ],
+            "yearAnchorXPath": "/html/body/div[27]/div/div/div/div[1]/div/div[6]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[183]",
+              "table": 1,
+              "row": 183,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Дизайн",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma/program/design"]
+            },
+            "xpath": "/html/body/div[27]/div/div/div/div[1]/div/div[4]",
+            "exactText": "200 коммерческих мест"
+          },
+          "scope": {
+            "programme": "Дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        }
+      },
+      "identitySourceIds": [
+        "source-757be201f9979913",
+        "source-fd0643ccc1e7afbf"
+      ]
     },
     {
       "title": "Дизайн среды",
@@ -14542,12 +15472,116 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 8, \"borderRowOnPageOneBased\": 3, \"bboxPoints\": [85.1, 96.86, 575.16, 113.66], \"printedRowNumber\": 142, \"exactCells\": [\"142\", \"Дизайн среды\", \"790\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "https://design.hse.ru/ma#env",
-      "admissionSource": "source-e0199ee31c6555b7",
+      "admissionSource": "source-a5e0217da7cf7799",
       "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": "2 года"
+      "paid": 40,
+      "exams": "Конкурсный отбор (портфолио)",
+      "faculty": "Факультет креативных индустрий",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "faculty": {
+          "value": "Факультет креативных индустрий",
+          "status": "verified",
+          "sourceId": "source-a5e0217da7cf7799",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "direct_programme_page",
+            "scopePaths": ["/html"],
+            "yearAnchorXPath": "/html/body/div[10]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[184]",
+              "table": 1,
+              "row": 184,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Дизайн среды",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma#env"]
+            },
+            "xpath": "/html/body/div[10]/div/div/div/div[2]/div/ul[1]/li[2]",
+            "exactText": "Программу ведет: Факультет креативных индустрий"
+          },
+          "scope": {
+            "programme": "Дизайн среды",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[184]",
+            "table": 1,
+            "row": 184,
+            "direction": "Направление подготовки 54.04.01 Дизайн",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Дизайн среды",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+            "programmeUrls": ["https://design.hse.ru/ma#env"]
+          },
+          "scope": {
+            "programme": "Дизайн среды",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "paid": {
+          "value": 40,
+          "status": "verified",
+          "sourceId": "source-a5e0217da7cf7799",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "direct_programme_page",
+            "scopePaths": ["/html"],
+            "yearAnchorXPath": "/html/body/div[10]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[184]",
+              "table": 1,
+              "row": 184,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Дизайн среды",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma#env"]
+            },
+            "xpath": "/html/body/div[10]/div/div/div/div[1]/div/div[3]",
+            "exactText": "40 коммерческих мест"
+          },
+          "scope": {
+            "programme": "Дизайн среды",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        }
+      },
+      "identitySourceIds": [
+        "source-757be201f9979913",
+        "source-a5e0217da7cf7799"
+      ]
     },
     {
       "title": "Коммуникационный и цифровой дизайн",
@@ -14559,12 +15593,140 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 8, \"borderRowOnPageOneBased\": 4, \"bboxPoints\": [85.1, 114.14, 575.16, 130.94], \"printedRowNumber\": 143, \"exactCells\": [\"143\", \"Коммуникационный и цифровой дизайн\", \"790\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "http://design.hse.ru/mag-comm",
-      "admissionSource": "source-e479fe4d9a601d95",
+      "admissionSource": "source-fd0643ccc1e7afbf",
       "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": "2 года"
+      "paid": 120,
+      "exams": "Конкурсный отбор (портфолио)",
+      "faculty": "Факультет креативных индустрий",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "faculty": {
+          "value": "Факультет креативных индустрий",
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "digital",
+            "scopePaths": [
+              "/html/body/div[14]",
+              "/html/body/div[15]",
+              "/html/body/div[16]",
+              "/html/body/div[17]",
+              "/html/body/div[18]",
+              "/html/body/div[19]",
+              "/html/body/div[20]",
+              "/html/body/div[21]",
+              "/html/body/div[22]"
+            ],
+            "yearAnchorXPath": "/html/body/div[16]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[186]",
+              "table": 1,
+              "row": 186,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Коммуникационный и цифровой дизайн",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания",
+              "programmeUrls": [
+                "https://design.hse.ru/ma/program/digital-design"
+              ]
+            },
+            "xpath": "/html/body/div[16]/div/div/div/div[2]/div/ul[1]/li[2]",
+            "exactText": "Программу ведет: Факультет креативных индустрий"
+          },
+          "scope": {
+            "programme": "Коммуникационный и цифровой дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[186]",
+            "table": 1,
+            "row": 186,
+            "direction": "Направление подготовки 54.04.01 Дизайн",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Коммуникационный и цифровой дизайн",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания",
+            "programmeUrls": ["https://design.hse.ru/ma/program/digital-design"]
+          },
+          "scope": {
+            "programme": "Коммуникационный и цифровой дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "paid": {
+          "value": 120,
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "digital",
+            "scopePaths": [
+              "/html/body/div[14]",
+              "/html/body/div[15]",
+              "/html/body/div[16]",
+              "/html/body/div[17]",
+              "/html/body/div[18]",
+              "/html/body/div[19]",
+              "/html/body/div[20]",
+              "/html/body/div[21]",
+              "/html/body/div[22]"
+            ],
+            "yearAnchorXPath": "/html/body/div[16]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[186]",
+              "table": 1,
+              "row": 186,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Коммуникационный и цифровой дизайн",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания",
+              "programmeUrls": [
+                "https://design.hse.ru/ma/program/digital-design"
+              ]
+            },
+            "xpath": "/html/body/div[16]/div/div/div/div[1]/div/div[3]",
+            "exactText": "120 коммерческих мест"
+          },
+          "scope": {
+            "programme": "Коммуникационный и цифровой дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        }
+      },
+      "identitySourceIds": [
+        "source-757be201f9979913",
+        "source-fd0643ccc1e7afbf"
+      ]
     },
     {
       "title": "Мода",
@@ -14576,12 +15738,138 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 8, \"borderRowOnPageOneBased\": 5, \"bboxPoints\": [85.1, 131.42, 575.16, 148.22], \"printedRowNumber\": 144, \"exactCells\": [\"144\", \"Мода\", \"790\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "http://design.hse.ru/mag-fashion",
-      "admissionSource": "source-518b68eb5769577f",
+      "admissionSource": "source-fd0643ccc1e7afbf",
       "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": "2 года"
+      "paid": 50,
+      "exams": "Конкурсный отбор (портфолио)",
+      "faculty": "Факультет креативных индустрий",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "faculty": {
+          "value": "Факультет креативных индустрий",
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "fashion",
+            "scopePaths": [
+              "/html/body/div[41]",
+              "/html/body/div[42]",
+              "/html/body/div[43]",
+              "/html/body/div[44]",
+              "/html/body/div[45]",
+              "/html/body/div[46]",
+              "/html/body/div[47]",
+              "/html/body/div[48]",
+              "/html/body/div[49]",
+              "/html/body/div[50]"
+            ],
+            "yearAnchorXPath": "/html/body/div[43]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[187]",
+              "table": 1,
+              "row": 187,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Мода",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma/program/fashion"]
+            },
+            "xpath": "/html/body/div[43]/div/div/div/div[2]/div/ul[1]/li[2]",
+            "exactText": "Программу ведет: Факультет креативных индустрий"
+          },
+          "scope": {
+            "programme": "Мода",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[187]",
+            "table": 1,
+            "row": 187,
+            "direction": "Направление подготовки 54.04.01 Дизайн",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Мода",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+            "programmeUrls": ["https://design.hse.ru/ma/program/fashion"]
+          },
+          "scope": {
+            "programme": "Мода",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "paid": {
+          "value": 50,
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "fashion",
+            "scopePaths": [
+              "/html/body/div[41]",
+              "/html/body/div[42]",
+              "/html/body/div[43]",
+              "/html/body/div[44]",
+              "/html/body/div[45]",
+              "/html/body/div[46]",
+              "/html/body/div[47]",
+              "/html/body/div[48]",
+              "/html/body/div[49]",
+              "/html/body/div[50]"
+            ],
+            "yearAnchorXPath": "/html/body/div[43]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "790 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[187]",
+              "table": 1,
+              "row": 187,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Мода",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания Инструкция по подаче портфолио",
+              "programmeUrls": ["https://design.hse.ru/ma/program/fashion"]
+            },
+            "xpath": "/html/body/div[43]/div/div/div/div[1]/div/div[3]",
+            "exactText": "50 коммерческих мест"
+          },
+          "scope": {
+            "programme": "Мода",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        }
+      },
+      "identitySourceIds": [
+        "source-757be201f9979913",
+        "source-fd0643ccc1e7afbf"
+      ]
     },
     {
       "title": "Интерактивный дизайн",
@@ -14593,12 +15881,150 @@
       "locator": "{\"format\": \"PDF\", \"pageOneBased\": 8, \"borderRowOnPageOneBased\": 6, \"bboxPoints\": [85.1, 148.7, 575.16, 165.62], \"printedRowNumber\": 145, \"exactCells\": [\"145\", \"Интерактивный дизайн\", \"600\"]}",
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 1.",
       "programUrl": "https://design.hse.ru/ma#interactive-design",
-      "admissionSource": "source-e0199ee31c6555b7",
+      "admissionSource": "source-fd0643ccc1e7afbf",
       "budget": null,
-      "paid": null,
-      "exams": null,
-      "faculty": null,
-      "duration": "2 года"
+      "paid": 120,
+      "exams": "Конкурсный отбор (портфолио)",
+      "faculty": "Факультет креативных индустрий",
+      "duration": "2 года",
+      "fieldEvidence": {
+        "faculty": {
+          "value": "Факультет креативных индустрий",
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "online",
+            "scopePaths": [
+              "/html/body/div[97]",
+              "/html/body/div[98]",
+              "/html/body/div[99]",
+              "/html/body/div[100]",
+              "/html/body/div[101]",
+              "/html/body/div[102]",
+              "/html/body/div[103]",
+              "/html/body/div[104]",
+              "/html/body/div[105]",
+              "/html/body/div[106]",
+              "/html/body/div[107]",
+              "/html/body/div[108]",
+              "/html/body/div[109]"
+            ],
+            "yearAnchorXPath": "/html/body/div[100]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "600 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[185]",
+              "table": 1,
+              "row": 185,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Интерактивный дизайн (онлайн)",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания",
+              "programmeUrls": [
+                "https://design.hse.ru/ma/program/interactive-design"
+              ]
+            },
+            "xpath": "/html/body/div[100]/div/div/div/div[2]/div/ul[1]/li[2]",
+            "exactText": "Программу ведет: Факультет креативных индустрий"
+          },
+          "scope": {
+            "programme": "Интерактивный дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "exams": {
+          "value": "Конкурсный отбор (портфолио)",
+          "status": "verified",
+          "sourceId": "source-757be201f9979913",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_table",
+            "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[185]",
+            "table": 1,
+            "row": 185,
+            "direction": "Направление подготовки 54.04.01 Дизайн",
+            "formHeading": "Очное обучение",
+            "publishedTitle": "Интерактивный дизайн (онлайн)",
+            "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания",
+            "programmeUrls": [
+              "https://design.hse.ru/ma/program/interactive-design"
+            ]
+          },
+          "scope": {
+            "programme": "Интерактивный дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": null
+        },
+        "paid": {
+          "value": 120,
+          "status": "verified",
+          "sourceId": "source-fd0643ccc1e7afbf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:35:31+00:00",
+          "sourceLocator": {
+            "type": "html_programme_scope",
+            "sectionId": "online",
+            "scopePaths": [
+              "/html/body/div[97]",
+              "/html/body/div[98]",
+              "/html/body/div[99]",
+              "/html/body/div[100]",
+              "/html/body/div[101]",
+              "/html/body/div[102]",
+              "/html/body/div[103]",
+              "/html/body/div[104]",
+              "/html/body/div[105]",
+              "/html/body/div[106]",
+              "/html/body/div[107]",
+              "/html/body/div[108]",
+              "/html/body/div[109]"
+            ],
+            "yearAnchorXPath": "/html/body/div[100]/div/div/div/div[1]/div/div[5]",
+            "yearAnchorExactText": "600 000 руб. (в 2026 г.)",
+            "programmeIdentitySourceId": "source-757be201f9979913",
+            "programmeIdentityLocator": {
+              "type": "html_table",
+              "xpath": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/table/tbody/tr[185]",
+              "table": 1,
+              "row": 185,
+              "direction": "Направление подготовки 54.04.01 Дизайн",
+              "formHeading": "Очное обучение",
+              "publishedTitle": "Интерактивный дизайн (онлайн)",
+              "examText": "1. Конкурсный отбор (портфолио). Состав портфолио и критерии оценивания",
+              "programmeUrls": [
+                "https://design.hse.ru/ma/program/interactive-design"
+              ]
+            },
+            "xpath": "/html/body/div[100]/div/div/div/div[1]/div/div[3]",
+            "exactText": "120 коммерческих мест"
+          },
+          "scope": {
+            "programme": "Интерактивный дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Число находится в программе с явно указанным тарифом 2026 года; иностранные места в соседней строке не включены. Пустое значение другого вида финансирования не заменяется нулём."
+        }
+      },
+      "identitySourceIds": [
+        "source-757be201f9979913",
+        "source-fd0643ccc1e7afbf"
+      ]
     },
     {
       "title": "Современное востоковедение",
@@ -14798,11 +16224,55 @@
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 4.",
       "programUrl": "https://spb.hse.ru/ma/data-analytics/",
       "admissionSource": "source-b08a8c63b5ec8077",
-      "budget": null,
-      "paid": null,
+      "budget": 20,
+      "paid": 10,
       "exams": "38.04.02 МенеджментКонкурсный отбор (портфолио)38.04.01 ЭкономикаКонкурсный отбор (портфолио)",
       "faculty": "Санкт-Петербургская школа экономики и менеджмента",
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "budget": {
+          "value": 20,
+          "status": "verified",
+          "sourceId": "source-b08a8c63b5ec8077",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[7]/div/div[2]/div/div/div/div/div/div[6]/div[2]/p[6]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "20 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Аналитика данных для бизнеса и экономики",
+            "code": "38.04.01",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "paid": {
+          "value": 10,
+          "status": "verified",
+          "sourceId": "source-b08a8c63b5ec8077",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[7]/div/div[2]/div/div/div/div/div/div[6]/div[2]/p[7]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "10 платных мест"
+          },
+          "scope": {
+            "programme": "Аналитика данных для бизнеса и экономики",
+            "code": "38.04.01",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        }
+      }
     },
     {
       "title": "Менеджмент в индустрии впечатлений",
@@ -14883,11 +16353,55 @@
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 4.",
       "programUrl": "https://spb.hse.ru/ma/data-analytics/",
       "admissionSource": "source-b08a8c63b5ec8077",
-      "budget": null,
-      "paid": null,
+      "budget": 20,
+      "paid": 10,
       "exams": "38.04.02 МенеджментКонкурсный отбор (портфолио)38.04.01 ЭкономикаКонкурсный отбор (портфолио)",
       "faculty": "Санкт-Петербургская школа экономики и менеджмента",
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "budget": {
+          "value": 20,
+          "status": "verified",
+          "sourceId": "source-b08a8c63b5ec8077",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[7]/div/div[2]/div/div/div/div/div/div[6]/div[2]/p[2]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "20 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Аналитика данных для бизнеса и экономики",
+            "code": "38.04.02",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "paid": {
+          "value": 10,
+          "status": "verified",
+          "sourceId": "source-b08a8c63b5ec8077",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[7]/div/div[2]/div/div/div/div/div/div[6]/div[2]/p[3]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "10 платных мест"
+          },
+          "scope": {
+            "programme": "Аналитика данных для бизнеса и экономики",
+            "code": "38.04.02",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        }
+      }
     },
     {
       "title": "Городское развитие и управление",
@@ -14968,11 +16482,55 @@
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 4.",
       "programUrl": "https://spb.hse.ru/ma/daps/",
       "admissionSource": "source-b9032f346c877bc5",
-      "budget": null,
-      "paid": null,
+      "budget": 10,
+      "paid": 10,
       "exams": "41.04.04 ПолитологияКонкурсный отбор (портфолио)39.04.01 СоциологияКонкурсный отбор (портфолио)",
       "faculty": "Санкт-Петербургская школа социальных наук",
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "budget": {
+          "value": 10,
+          "status": "verified",
+          "sourceId": "source-b9032f346c877bc5",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[6]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "10 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Анализ данных для государства и общества",
+            "code": "39.04.01",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "paid": {
+          "value": 10,
+          "status": "verified",
+          "sourceId": "source-b9032f346c877bc5",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[7]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "10 платных мест"
+          },
+          "scope": {
+            "programme": "Анализ данных для государства и общества",
+            "code": "39.04.01",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        }
+      }
     },
     {
       "title": "Гражданское и коммерческое право",
@@ -15036,11 +16594,55 @@
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 4.",
       "programUrl": "https://spb.hse.ru/ma/daps/",
       "admissionSource": "source-b9032f346c877bc5",
-      "budget": null,
-      "paid": null,
+      "budget": 10,
+      "paid": 10,
       "exams": "41.04.04 ПолитологияКонкурсный отбор (портфолио)39.04.01 СоциологияКонкурсный отбор (портфолио)",
       "faculty": "Санкт-Петербургская школа социальных наук",
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "budget": {
+          "value": 10,
+          "status": "verified",
+          "sourceId": "source-b9032f346c877bc5",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[2]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "10 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Анализ данных для государства и общества",
+            "code": "41.04.04",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "paid": {
+          "value": 10,
+          "status": "verified",
+          "sourceId": "source-b9032f346c877bc5",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[3]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "10 платных мест"
+          },
+          "scope": {
+            "programme": "Анализ данных для государства и общества",
+            "code": "41.04.04",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        }
+      }
     },
     {
       "title": "Политика и глобальное управление в Евразии",
@@ -15053,11 +16655,55 @@
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 4.",
       "programUrl": "https://spb.hse.ru/ma/pm/",
       "admissionSource": "source-88f328a813496dae",
-      "budget": null,
-      "paid": null,
+      "budget": 5,
+      "paid": 5,
       "exams": "41.04.04 ПолитологияКонкурсный отбор (портфолио)41.04.05 Международные отношенияКонкурсный отбор (портфолио)",
       "faculty": "Санкт-Петербургская школа социальных наук",
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "budget": {
+          "value": 5,
+          "status": "verified",
+          "sourceId": "source-88f328a813496dae",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[2]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "5 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Политика и глобальное управление в Евразии",
+            "code": "41.04.04",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "paid": {
+          "value": 5,
+          "status": "verified",
+          "sourceId": "source-88f328a813496dae",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[3]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "5 платных мест"
+          },
+          "scope": {
+            "programme": "Политика и глобальное управление в Евразии",
+            "code": "41.04.04",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        }
+      }
     },
     {
       "title": "Политика и глобальное управление в Евразии",
@@ -15070,11 +16716,55 @@
       "note": "Приказ от 26.02.2026 № 6.18-01/260226-1, приложение 4.",
       "programUrl": "https://spb.hse.ru/ma/pm/",
       "admissionSource": "source-88f328a813496dae",
-      "budget": null,
-      "paid": null,
+      "budget": 5,
+      "paid": 5,
       "exams": "41.04.04 ПолитологияКонкурсный отбор (портфолио)41.04.05 Международные отношенияКонкурсный отбор (портфолио)",
       "faculty": "Санкт-Петербургская школа социальных наук",
-      "duration": "2 года"
+      "duration": "2 года",
+      "fieldEvidence": {
+        "budget": {
+          "value": 5,
+          "status": "verified",
+          "sourceId": "source-88f328a813496dae",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[6]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "5 бюджетных мест"
+          },
+          "scope": {
+            "programme": "Политика и глобальное управление в Евразии",
+            "code": "41.04.05",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        },
+        "paid": {
+          "value": 5,
+          "status": "verified",
+          "sourceId": "source-88f328a813496dae",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-18T18:31:46+00:00",
+          "sourceLocator": {
+            "type": "html_xpath",
+            "xpath": "/html/body/div[1]/div[6]/div/div[2]/div/div/div/div[1]/div/div[6]/div[2]/p[7]",
+            "heading": "Количество мест в 2026 году",
+            "exactText": "5 платных мест"
+          },
+          "scope": {
+            "programme": "Политика и глобальное управление в Евразии",
+            "code": "41.04.05",
+            "campus": "Санкт-Петербург",
+            "form": "Очная",
+            "year": 2026
+          },
+          "note": "Опубликовано для указанного направления. Иностранные места и стипендии не прибавлены; значения других h4-разделов не перенесены."
+        }
+      }
     },
     {
       "title": "Медиапроизводство и медиааналитика",
@@ -15604,5 +17294,153 @@
       "duration": "2 года"
     }
   ],
-  "unmatchedTuition": []
+  "unmatchedTuition": [],
+  "masterCompletions20261118": {
+    "batches": [
+      {
+        "sourcePacket": "tmp/nov18-hse-ma-gaps/verified-patch-batch-1.json",
+        "checkedAt": "2026-11-18T18:31:46+00:00",
+        "baseSha256": "8866d90ffeb6cc37eb74376a598f6211cf7eb8d605621a52b9c8915a50816764",
+        "programmeRows": 10,
+        "rowIdentities": [
+          {
+            "title": "Совместная магистратура НИУ ВШЭ и Центра педагогического мастерства",
+            "code": "01.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Науки о данных",
+            "code": "01.04.02",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Международный спортивный менеджмент, маркетинг и право",
+            "code": "38.04.02",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Международный спортивный менеджмент, маркетинг и право",
+            "code": "40.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Аналитика данных для бизнеса и экономики",
+            "code": "38.04.01",
+            "campus": "Санкт-Петербург",
+            "form": "Очная"
+          },
+          {
+            "title": "Аналитика данных для бизнеса и экономики",
+            "code": "38.04.02",
+            "campus": "Санкт-Петербург",
+            "form": "Очная"
+          },
+          {
+            "title": "Анализ данных для государства и общества",
+            "code": "39.04.01",
+            "campus": "Санкт-Петербург",
+            "form": "Очная"
+          },
+          {
+            "title": "Анализ данных для государства и общества",
+            "code": "41.04.04",
+            "campus": "Санкт-Петербург",
+            "form": "Очная"
+          },
+          {
+            "title": "Политика и глобальное управление в Евразии",
+            "code": "41.04.04",
+            "campus": "Санкт-Петербург",
+            "form": "Очная"
+          },
+          {
+            "title": "Политика и глобальное управление в Евразии",
+            "code": "41.04.05",
+            "campus": "Санкт-Петербург",
+            "form": "Очная"
+          }
+        ],
+        "note": "Only reviewed exact programme/code/campus/form/year facts are merged; raw captures remain ignored and field-specific source locators are retained."
+      },
+      {
+        "sourcePacket": "tmp/nov18-hse-ma-gaps/verified-patch-batch-2.json",
+        "checkedAt": "2026-11-18T18:35:31+00:00",
+        "baseSha256": "8866d90ffeb6cc37eb74376a598f6211cf7eb8d605621a52b9c8915a50816764",
+        "programmeRows": 11,
+        "rowIdentities": [
+          {
+            "title": "Математика машинного обучения",
+            "code": "01.04.02",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Системное программирование",
+            "code": "09.04.04",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Обучение и оценивание как наука",
+            "code": "37.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Исторические исследования",
+            "code": "46.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Современные технологии преподавания дизайна и искусства",
+            "code": "44.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Практики современного искусства",
+            "code": "50.04.02",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Дизайн среды",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Коммуникационный и цифровой дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Мода",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          },
+          {
+            "title": "Интерактивный дизайн",
+            "code": "54.04.01",
+            "campus": "Москва",
+            "form": "Очная"
+          }
+        ],
+        "note": "Only reviewed exact programme/code/campus/form/year facts are merged; raw captures remain ignored and field-specific source locators are retained."
+      }
+    ]
+  }
 }

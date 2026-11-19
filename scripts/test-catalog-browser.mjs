@@ -4,6 +4,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import checkCatalog from "../tests/catalog-browser.mjs";
 import checkEducationPathways from "../tests/education-pathways-browser.mjs";
+import checkHome from "../tests/home-browser.mjs";
 
 const cli = process.env.BROWSER_CLI;
 assert.ok(
@@ -54,9 +55,19 @@ try {
     "Education pathway checks must return structured results",
   );
   reports.push(...JSON.parse(pathwayMatch[1]));
-  assert.equal(reports.length, 18);
+  const homeFile = resolve("tmp/home-browser-code.js");
+  writeFileSync(homeFile, `(${checkHome.toString()})\n`);
+  const homeResult = call(["run-code", `--filename=${homeFile}`]);
+  writeFileSync("output/playwright/home-browser.log", homeResult);
+  const homeMatch = homeResult.match(
+    /### Result\r?\n\s*(\[.*?\])(?=\s*###|\s*$)/s,
+  );
+  assert.ok(homeMatch, "Home checks must return structured results");
+  reports.push(...JSON.parse(homeMatch[1]));
+  assert.equal(reports.length, 20);
   for (const width of [1440, 390]) {
     for (const route of [
+      "/",
       "/programs/mpei-applied-informatics",
       "/programs/rudn-applied-math",
       "/universities/rudn",

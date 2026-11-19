@@ -44,7 +44,7 @@ describe("HSE 2026 postgraduate admission programmes", () => {
     }
   });
 
-  it("keeps all five unmatched or blank campus budgets unknown without aliases", () => {
+  it("keeps the two blank campus budgets unknown after reviewed programme matches", () => {
     const missing = offerings.filter(
       (offering) => offering.admissionDetails?.budgetPlaces?.value === null,
     );
@@ -52,11 +52,8 @@ describe("HSE 2026 postgraduate admission programmes", () => {
       missing.map((offering) => `${offering.campus}: ${offering.title}`).sort(),
     ).toEqual(
       [
-        "Москва: Математическое моделирование, численные методы и комплексы программ",
         "Нижний Новгород: Лингвистика и литературоведение",
         "Нижний Новгород: Юриспруденция",
-        "Санкт-Петербург: Гражданское право и процесс",
-        "Пермь: Прикладная экономика",
       ].sort(),
     );
     expect(
@@ -64,13 +61,45 @@ describe("HSE 2026 postgraduate admission programmes", () => {
         (offering) =>
           offering.admissionDetails?.budgetPlaces?.status === "verified",
       ),
-    ).toHaveLength(46);
+    ).toHaveLength(49);
     expect(
       missing.every(
         (offering) =>
           offering.admissionDetails?.budgetPlaces?.status === "pending_review",
       ),
     ).toBe(true);
+  });
+
+  it("uses direct campus sources and an explicit school crosswalk for resolved budgets", () => {
+    for (const match of evidence.aspAdmission2026.reviewedBudgetMatches) {
+      const offering = offerings.find(
+        (entry) =>
+          entry.campus === match.campus && entry.title === match.programTitle,
+      )!;
+      const places = offering.admissionDetails!.budgetPlaces!;
+      expect(places.value).toBe(match.budgetPlaces);
+      expect(places.status).toBe("verified");
+      expect(places.sourceUrl).toBe(
+        evidence.sources.find((source) => source.id === match.sourceId)!.url,
+      );
+      expect(places.sourceSection).toBe(match.sourceLocator);
+      expect(places.note).toContain(match.note);
+      expect(places.note).toContain("не назначаются каждой специальности");
+      for (const sourceId of match.identitySourceIds) {
+        expect(evidence.sources.some((source) => source.id === sourceId)).toBe(
+          true,
+        );
+      }
+    }
+    const moscow = offerings.find(
+      (entry) =>
+        entry.campus === "Москва" &&
+        entry.title.startsWith("Математическое моделирование,"),
+    )!;
+    expect(moscow.admissionDetails!.budgetPlaces!.note).toContain(
+      "АШ по техническим наукам",
+    );
+    expect(moscow.admissionDetails!.budgetPlaces!.value).toBe(2);
   });
 
   it("uses campus programme places while preserving the 386-place university scope", () => {
@@ -87,7 +116,7 @@ describe("HSE 2026 postgraduate admission programmes", () => {
           sum + (offering.admissionDetails?.budgetPlaces?.value ?? 0),
         0,
       ),
-    ).toBe(378);
+    ).toBe(386);
     const computerScience = offerings.find(
       (entry) =>
         entry.campus === "Москва" && entry.title === "Компьютерные науки",
@@ -121,7 +150,7 @@ describe("HSE 2026 postgraduate admission programmes", () => {
       ]) {
         expect(field?.sourceKind).toMatch(/^(?:docx|html)$/);
         expect(field?.sourceUrl).toMatch(
-          /^https:\/\/(?:www\.|aspirantura\.)hse\.ru\//,
+          /^https:\/\/(?:www\.|aspirantura\.|spb\.|perm\.)hse\.ru\//,
         );
         expect(field?.sourceName).toBe("НИУ ВШЭ");
         expect(field?.sourceDocumentTitle).toBeTruthy();

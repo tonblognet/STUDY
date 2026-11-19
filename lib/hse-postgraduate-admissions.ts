@@ -92,8 +92,16 @@ export const hsePostgraduateOfferings: UniversityOffering[] = Array.from(
     const campus = first.campus as Campus;
     const source = sourceFor(first.sourceId);
     const budget = budgetFor(first.programTitle);
-    const places = budget?.campusBudgetPlaces[campus] ?? null;
-    const note = budgetNote(budget, campus);
+    const reviewedBudget = snapshot.aspAdmission2026.reviewedBudgetMatches.find(
+      (row) => row.campus === campus && row.programTitle === first.programTitle,
+    );
+    const places =
+      reviewedBudget?.budgetPlaces ??
+      budget?.campusBudgetPlaces[campus] ??
+      null;
+    const note = reviewedBudget
+      ? `${reviewedBudget.note} Места общие для перечисленных научных специальностей программы; они не назначаются каждой специальности.`
+      : budgetNote(budget, campus);
     const section = specialties
       .map(
         (row) =>
@@ -133,10 +141,11 @@ export const hsePostgraduateOfferings: UniversityOffering[] = Array.from(
         ),
         budgetPlaces: fact<number>(
           places,
-          "asp-places",
-          budget
-            ? `Таблица ${budget.sourceLocator.table}, tbody строка ${budget.sourceLocator.tbodyRow}, колонка «${campus}»; ${budget.programTitleAsPublished}`
-            : `Таблица 1, колонка «${campus}»; точное название «${first.programTitle}» не сопоставлено`,
+          reviewedBudget?.sourceId ?? "asp-places",
+          reviewedBudget?.sourceLocator ??
+            (budget
+              ? `Таблица ${budget.sourceLocator.table}, tbody строка ${budget.sourceLocator.tbodyRow}, колонка «${campus}»; ${budget.programTitleAsPublished}`
+              : `Таблица 1, колонка «${campus}»; точное название «${first.programTitle}» не сопоставлено`),
           places === null ? "pending_review" : "verified",
           note,
         ),

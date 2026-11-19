@@ -17,10 +17,27 @@ const complete = () =>
   }));
 test("audit covers public pages and rendered dialogs at both viewport widths", () => {
   const reports = complete();
-  assert.equal(reports.length, 58);
+  assert.equal(reports.length, 66);
   validateAccessibilityReports(reports);
   reports[0].incomplete.push({ id: "manual-review-required" });
   validateAccessibilityReports(reports);
+});
+test("home audit covers all five native level selections and keeps mobile navigation", () => {
+  for (const width of [1440, 390]) {
+    const states = accessibilityCases(width)
+      .filter((item) => item.route === "/")
+      .map((item) => item.state);
+    for (const state of [
+      "page",
+      "home-level-college",
+      "home-level-undergraduate",
+      "home-level-aspirantura",
+      "home-level-doctorate",
+    ])
+      assert.ok(states.includes(state), `${state} at ${width}`);
+    assert.equal(states.includes("navigation-open"), width === 390);
+    assert.equal(states.length, width === 390 ? 6 : 5);
+  }
 });
 test("partial, duplicated, unexpected and failed browser evidence cannot pass", () => {
   for (const mutate of [

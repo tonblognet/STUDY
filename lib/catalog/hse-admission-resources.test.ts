@@ -235,69 +235,113 @@ describe("versioned HSE admission resources", () => {
     expect(() => parseCatalog(candidate)).toThrow(/источник|HTTP|URL|url/i);
   });
 
-  it("rejects dangling sources, missing campus services and unsupported numeric states", () => {
-    const dangling = scopedCatalog("hse");
-    dangling.directoryDetails[0].admissionResources!.archive.records[0].source =
-      "missing-source";
-    expect(() => parseCatalog(dangling)).toThrow(/Источник не найден/);
-    const danglingMetadata = scopedCatalog("hse");
-    Object.assign(
-      danglingMetadata.directoryDetails[0].admissionResources!.archive
-        .records[0],
-      {
-        supportingSources: [{ source: "missing-source", locator: "стр. 1" }],
+  it.each<{
+    name: string;
+    slugs?: string[];
+    mutate: (candidate: ReturnType<typeof scopedCatalog>) => void;
+    expected?: RegExp;
+  }>([
+    {
+      name: "a dangling archive source",
+      mutate: (candidate) => {
+        candidate.directoryDetails[0].admissionResources!.archive.records[0].source =
+          "missing-source";
       },
-    );
-    expect(() => parseCatalog(danglingMetadata)).toThrow(/Источник не найден/);
-    const invalidMetadata = scopedCatalog("hse");
-    Object.assign(
-      invalidMetadata.directoryDetails[0].admissionResources!.archive,
-      {
-        historicalArchive: { summary: { records: Infinity } },
+      expected: /Источник не найден/,
+    },
+    {
+      name: "a dangling supporting source",
+      mutate: (candidate) => {
+        Object.assign(
+          candidate.directoryDetails[0].admissionResources!.archive.records[0],
+          {
+            supportingSources: [
+              { source: "missing-source", locator: "стр. 1" },
+            ],
+          },
+        );
       },
-    );
-    expect(() => parseCatalog(invalidMetadata)).toThrow(/конечным/);
-    const missingHousing = scopedCatalog("hse");
-    missingHousing.directoryDetails[0].admissionResources!.services.housing =
-      [];
-    expect(() => parseCatalog(missingHousing)).toThrow(
-      /Нет сведений для кампуса/,
-    );
-    const missingCampus = scopedCatalog("hse");
-    const services =
-      missingCampus.directoryDetails[0].admissionResources!.services;
-    services.campusAdmissionDeadlines =
-      services.campusAdmissionDeadlines.slice(1);
-    services.housing = services.housing.slice(1);
-    services.militaryTraining = services.militaryTraining.slice(1);
-    expect(() => parseCatalog(missingCampus)).toThrow(
-      /Нет сведений для кампуса/,
-    );
-    const price = scopedCatalog("hse");
-    price.directoryDetails[0].admissionResources!.masterTuition[0].tuition.value =
-      -1;
-    expect(() => parseCatalog(price)).toThrow();
-    const fractionalPlaces = scopedCatalog("hse");
-    fractionalPlaces.directoryDetails[0].admissionResources!.masterTuition[0].budgetPlaces.value = 1.5;
-    expect(() => parseCatalog(fractionalPlaces)).toThrow();
-    const score = scopedCatalog("hse");
-    score.directoryDetails[0].admissionResources!.archive.records[0].budget = {
-      value: 300,
-      status: "unknown",
-      noteRu: "Число требует проверки",
-    };
-    expect(() => parseCatalog(score)).toThrow(/должен быть null/);
-    const campus = scopedCatalog("hse");
-    campus.directoryDetails[0].admissionResources!.services.campusAdmissionDeadlines[0].campusName =
-      "Неизвестный кампус";
-    expect(() => parseCatalog(campus)).toThrow();
-    const otherUniversity = scopedCatalog("hse", "sfi");
-    otherUniversity.directoryDetails.find(
-      (row) => row.universitySlug === "sfi",
-    )!.admissionResources = otherUniversity.directoryDetails.find(
-      (row) => row.universitySlug === "hse",
-    )!.admissionResources;
-    expect(() => parseCatalog(otherUniversity)).toThrow(/только к профилю hse/);
+      expected: /Источник не найден/,
+    },
+    {
+      name: "non-finite archival metadata",
+      mutate: (candidate) => {
+        Object.assign(
+          candidate.directoryDetails[0].admissionResources!.archive,
+          {
+            historicalArchive: { summary: { records: Infinity } },
+          },
+        );
+      },
+      expected: /конечным/,
+    },
+    {
+      name: "missing housing services",
+      mutate: (candidate) => {
+        candidate.directoryDetails[0].admissionResources!.services.housing = [];
+      },
+      expected: /Нет сведений для кампуса/,
+    },
+    {
+      name: "a campus missing from every service collection",
+      mutate: (candidate) => {
+        const services =
+          candidate.directoryDetails[0].admissionResources!.services;
+        services.campusAdmissionDeadlines =
+          services.campusAdmissionDeadlines.slice(1);
+        services.housing = services.housing.slice(1);
+        services.militaryTraining = services.militaryTraining.slice(1);
+      },
+      expected: /Нет сведений для кампуса/,
+    },
+    {
+      name: "a negative tuition price",
+      mutate: (candidate) => {
+        candidate.directoryDetails[0].admissionResources!.masterTuition[0].tuition.value =
+          -1;
+      },
+    },
+    {
+      name: "fractional admission places",
+      mutate: (candidate) => {
+        candidate.directoryDetails[0].admissionResources!.masterTuition[0].budgetPlaces.value = 1.5;
+      },
+    },
+    {
+      name: "an unknown score carrying a public number",
+      mutate: (candidate) => {
+        candidate.directoryDetails[0].admissionResources!.archive.records[0].budget =
+          {
+            value: 300,
+            status: "unknown",
+            noteRu: "Число требует проверки",
+          };
+      },
+      expected: /должен быть null/,
+    },
+    {
+      name: "an unsupported campus name",
+      mutate: (candidate) => {
+        candidate.directoryDetails[0].admissionResources!.services.campusAdmissionDeadlines[0].campusName =
+          "Неизвестный кампус";
+      },
+    },
+    {
+      name: "HSE resources attached to another university",
+      slugs: ["hse", "sfi"],
+      mutate: (candidate) => {
+        candidate.directoryDetails.find(
+          (row) => row.universitySlug === "sfi",
+        )!.admissionResources = candidate.directoryDetails.find(
+          (row) => row.universitySlug === "hse",
+        )!.admissionResources;
+      },
+      expected: /только к профилю hse/,
+    },
+  ])("rejects $name", ({ slugs = ["hse"], mutate, expected }) => {
+    const candidate = scopedCatalog(...slugs);
+    mutate(candidate);
+    expect(() => parseCatalog(candidate)).toThrow(expected);
   });
 
   it("carries an optional exact published price without assuming an annual period", () => {
