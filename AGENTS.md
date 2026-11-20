@@ -8,6 +8,12 @@
 - Keep product decisions, acceptance criteria, and handoff evidence in the repository. Chat history is not a source of truth.
 - Never copy personal Codex state, credentials, sessions, caches, or `.env` files into the repository.
 
+## Catalog filling (наполнение каталога)
+
+- When the owner asks for «наполнение», «заполни вузы», «продолжай наполнение» or similar, follow `docs/CATALOG_FILL_RUNBOOK.md` without asking what is meant.
+- Catalog filling is a data-only track, not a numbered layer: it runs now, in parallel with layer 07, and the one-layer-at-a-time rule does not apply to it.
+- Work university by university from `docs/catalog-fill/QUEUE.md`, log each one in `docs/catalog-fill/LOG.md`, commit per university, and continue to the next one without asking for confirmation.
+
 ## Delivery contract
 
 - Before implementation, restate the current layer scope and inspect the affected code and tests.
