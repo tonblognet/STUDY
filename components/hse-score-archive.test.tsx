@@ -14,7 +14,7 @@ describe("HSE official score archive", () => {
   it("offers all campuses and years while limiting the initial page to 12 results", () => {
     const html = renderToStaticMarkup(<HseScoreArchive data={archive} />);
     expect(html.match(/<article /g)).toHaveLength(12);
-    expect(html).toContain("Найдено конкурсов 2671 из 2671");
+    expect(html).toContain("Найдено конкурсов 2736 из 2736");
     expect(html).toContain("Показать ещё 12 конкурсов");
     expect(html).toContain('id="hse-score-query"');
     expect(html).toContain('id="hse-score-campus"');

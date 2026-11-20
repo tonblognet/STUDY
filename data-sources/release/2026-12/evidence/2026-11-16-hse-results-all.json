@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAtUtc": "2026-11-18T00:41:27.121014+00:00",
+  "reviewedAtUtc": "2026-11-19T15:26:48.516257+00:00",
   "scope": "Архив опубликованных результатов приёма ВШЭ 2000–2026: бакалавриат, специалитет и отдельно обозначенная магистратура; кампус, год, конкурсная группа, финансирование и официальный источник сохранены.",
   "sources": {
     "spb-results2025": {
@@ -1700,6 +1700,18 @@
       "sha256": "3e8bad71282dc69d1f90978b1a095b7d52e7c7cb114d1bcc2d7aab597babb458",
       "kind": "pdf",
       "captureKind": "raw_response_bytes"
+    },
+    "moscow-ba-results-2026-reviewed-2026-11-19": {
+      "url": "https://ba.hse.ru/result2026",
+      "kind": "html",
+      "retrievedAt": "2026-11-19T15:26:48.516257+00:00",
+      "checkedAt": "2026-11-19T15:26:48.516257+00:00",
+      "sha256": "5c74e66ed962f8c7d4ba7cfed98cdb8a98e4d1fb0e2d3c8fbbc1ba4f67a3694e",
+      "bytes": 16132,
+      "captureKind": "official_web_text_extraction",
+      "sha256Scope": "normalized_utf8_extracted_lines_444_680",
+      "transportNote": "Official page reviewed through web. Local HTTP retrieval timed out; SHA covers only the normalized extracted text, not original HTTP response bytes.",
+      "extractLocator": "Official web extraction lines444–680; programme links213/221/224 resolve ib/epa/ir."
     }
   },
   "records": [
@@ -6110,197 +6122,6 @@
       ],
       "competitionScope": "Published2025 budget result",
       "id": "hse-history-607aecaa155fdb04",
-      "scopeNoteRu": ""
-    },
-    {
-      "title": "Прикладная математика и информатика",
-      "code": "01.03.02",
-      "campus": "Москва",
-      "year": 2026,
-      "programUrls": ["https://www.hse.ru/ba/ami/admission/"],
-      "budget": {
-        "value": null,
-        "status": "not_applicable",
-        "reason": "All budget places filled through priority admissions including quotas and Olympiads, so no numeric general-competition pass result.",
-        "officialText": "С 2023 по 2026 гг. все бюджетные места на программе «Прикладная математика и информатика» были заняты поступившими в приоритетном порядке (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников).",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[1]/div[1]/p",
-        "rejectedDiagramValue": 310,
-        "noteRu": "С 2023 по 2026 гг. все бюджетные места на программе «Прикладная математика и информатика» были заняты поступившими в приоритетном порядке (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников)."
-      },
-      "paid": {
-        "value": 259,
-        "maximum": 310,
-        "status": "verified",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[1]/div[4]/ul/li[1]",
-        "contextHeading": "Проходные баллы на коммерцию",
-        "noteRu": ""
-      },
-      "source": "facultyResults2026",
-      "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
-      "id": "hse-history-15ac31ef6441f2e4",
-      "scopeNoteRu": ""
-    },
-    {
-      "title": "Экономика и анализ данных",
-      "code": "38.03.01",
-      "campus": "Москва",
-      "year": 2026,
-      "programUrls": ["https://www.hse.ru/ba/eda/admission/"],
-      "budget": {
-        "value": 302,
-        "maximum": 310,
-        "status": "verified",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[3]/div[1]/ul/li[1]",
-        "noteRu": ""
-      },
-      "paid": {
-        "value": 250,
-        "maximum": 310,
-        "status": "verified",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[3]/div[4]/ul/li[1]",
-        "contextHeading": "Проходные баллы на коммерцию",
-        "noteRu": ""
-      },
-      "source": "facultyResults2026",
-      "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
-      "id": "hse-history-8b9219c50655a4ba",
-      "scopeNoteRu": ""
-    },
-    {
-      "title": "Проектирование интеллектуальных робототехнических систем",
-      "code": "09.03.04",
-      "campus": "Москва",
-      "year": 2026,
-      "programUrls": ["https://www.hse.ru/ba/dirs/admission/"],
-      "budget": {
-        "value": null,
-        "status": "not_applicable",
-        "reason": "All budget places filled through priority admissions including quotas and Olympiads, so no numeric general-competition pass result.",
-        "officialText": "В 2026 году все бюджетные места на программе «Проектирование интеллектуальных робототехнических систем» были заняты поступившими в приоритетном порядке (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников).",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[4]/div[1]/p",
-        "rejectedDiagramValue": 310,
-        "noteRu": "В 2026 году все бюджетные места на программе «Проектирование интеллектуальных робототехнических систем» были заняты поступившими в приоритетном порядке (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников)."
-      },
-      "paid": {
-        "value": 211,
-        "maximum": 310,
-        "status": "verified",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[4]/div[4]/ul/li",
-        "contextHeading": "Проходные баллы на коммерцию",
-        "noteRu": ""
-      },
-      "source": "facultyResults2026",
-      "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
-      "id": "hse-history-93d637541c82bccd",
-      "scopeNoteRu": ""
-    },
-    {
-      "title": "Дизайн и разработка информационных продуктов",
-      "code": "09.03.04",
-      "campus": "Москва",
-      "year": 2026,
-      "programUrls": ["https://www.hse.ru/ba/drip/admission/"],
-      "budget": {
-        "value": null,
-        "status": "not_applicable",
-        "reason": "Official 2026 intake places table has no budget intake for this competition.",
-        "noteRu": "В официальном плане приёма на этот конкурс бюджетные места отсутствуют."
-      },
-      "paid": {
-        "value": 212,
-        "maximum": 310,
-        "status": "verified",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[5]/div[5]/ul/li[1]",
-        "contextHeading": "Дизайн и разработка информационных продуктов",
-        "noteRu": ""
-      },
-      "source": "facultyResults2026",
-      "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
-      "id": "hse-history-ece4e2530139de8b",
-      "scopeNoteRu": ""
-    },
-    {
-      "title": "Компьютерные науки и анализ данных",
-      "code": "01.03.02",
-      "campus": "Москва",
-      "year": 2026,
-      "programUrls": ["https://www.hse.ru/ba/compds/admission/"],
-      "budget": {
-        "value": null,
-        "status": "unknown",
-        "reason": "2026 budget intake exists, faculty source gives no confirmed budget actual result.",
-        "noteRu": "В плане приёма есть бюджетные места. Подтверждённый проходной на них в этой сводке отсутствует."
-      },
-      "paid": {
-        "value": 206,
-        "maximum": 310,
-        "status": "verified",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[5]/div[6]/ul/li[1]",
-        "contextHeading": "Компьютерные науки и анализ данных",
-        "noteRu": ""
-      },
-      "source": "facultyResults2026",
-      "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
-      "id": "hse-history-ce93e056b8295f67",
-      "scopeNoteRu": ""
-    },
-    {
-      "title": "Прикладной анализ данных",
-      "code": "01.03.02",
-      "campus": "Москва",
-      "year": 2026,
-      "programUrls": ["https://www.hse.ru/ba/data/admission/"],
-      "budget": {
-        "value": null,
-        "status": "not_applicable",
-        "reason": "Official 2026 intake places table has no budget intake for this competition.",
-        "noteRu": "В официальном плане приёма на этот конкурс бюджетные места отсутствуют."
-      },
-      "paid": {
-        "value": 207,
-        "maximum": 310,
-        "status": "verified",
-        "source": "facultyResults2026",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[5]/div[7]/ul/li[1]",
-        "contextHeading": "Прикладной анализ данных",
-        "noteRu": ""
-      },
-      "source": "facultyResults2026",
-      "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
-      "id": "hse-history-4c24dbfc4fa90f68",
-      "scopeNoteRu": ""
-    },
-    {
-      "title": "Программная инженерия",
-      "code": "09.03.04",
-      "campus": "Москва",
-      "year": 2026,
-      "programUrls": ["https://www.hse.ru/ba/se/"],
-      "budget": {
-        "value": 297,
-        "maximum": 310,
-        "status": "verified",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[2]/div[1]/ul/li[1]",
-        "noteRu": ""
-      },
-      "paid": {
-        "value": 221,
-        "maximum": 310,
-        "status": "verified",
-        "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[2]/div[4]/ul/li[1]",
-        "noteRu": ""
-      },
-      "source": "facultyResults2026",
-      "competitionScope": "Faculty actual results. Budget independently corroborated by official program tracks page.",
-      "id": "hse-history-8fadca2e35da37bd",
       "scopeNoteRu": ""
     },
     {
@@ -91437,6 +91258,1925 @@
       "scopeNoteRu": "Историческая магистерская конкурсная группа сохранена по названию, кампусу и году источника. Связь с современной программой не назначена. В одном заголовке столбца шаблонно написано «программы бакалавриата»; документ посвящён магистратуре, коды 38.04/40.04 и названия программ сохранены буквально. Финансирование прямо названо бюджетным в заголовке страницы.",
       "pageOneBased": 4,
       "entranceExamAsSource": "письменный экзамен по гражданскому праву"
+    },
+    {
+      "id": "hse-moscow-ba-2026-3f7b70541af44ce6b7ea",
+      "title": "Математика",
+      "titleAsPublished": "Математика",
+      "code": "01.03.01",
+      "codes": ["01.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/math/"],
+      "budget": {
+        "value": 297,
+        "status": "verified",
+        "raw": "297",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 269,
+        "status": "verified",
+        "raw": "269",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 01.03.01; строка «Математика»; extracted line L464.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-91f17f4a25881a89d589",
+      "title": "Совместный бакалавриат НИУ ВШЭ и Центра педагогического мастерства",
+      "titleAsPublished": "Совместный бакалавриат НИУ ВШЭ и Центра педагогического мастерства",
+      "code": "01.03.01",
+      "codes": ["01.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/cpm/"],
+      "budget": {
+        "value": 291,
+        "status": "verified",
+        "raw": "291",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 232,
+        "status": "verified",
+        "raw": "232",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 01.03.01; строка «Совместный бакалавриат НИУ ВШЭ и Центра педагогического мастерства»; extracted line L465.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-647bdf3e16e639189852",
+      "title": "Прикладная математика и информатика",
+      "titleAsPublished": "Прикладная математика и информатика",
+      "code": "01.03.02",
+      "codes": ["01.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ami/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-*",
+        "noteRu": "Все бюджетные места были заняты поступившими в приоритетном порядке: квоты и олимпиады. Числового проходного общего конкурса нет; прочерк со звёздочкой не равен нулю."
+      },
+      "paid": {
+        "value": 259,
+        "status": "verified",
+        "raw": "259",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 01.03.02; строка «Прикладная математика и информатика»; extracted line L468.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "supportingSources": [
+        {
+          "source": "facultyResults2026",
+          "locator": "Прикладная математика и информатика"
+        }
+      ]
+    },
+    {
+      "id": "hse-moscow-ba-2026-3fd662da6c691535dfe1",
+      "title": "Прикладной анализ данных",
+      "titleAsPublished": "Прикладной анализ данных (полностью платная программа)",
+      "code": "01.03.02",
+      "codes": ["01.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/data/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 207,
+        "status": "verified",
+        "raw": "207",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 01.03.02; строка «Прикладной анализ данных (полностью платная программа)»; extracted line L469.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "supportingSources": [
+        {
+          "source": "facultyResults2026",
+          "locator": "Прикладной анализ данных"
+        }
+      ]
+    },
+    {
+      "id": "hse-moscow-ba-2026-6474db8f412da648f360",
+      "title": "Компьютерные науки и анализ данных",
+      "titleAsPublished": "Компьютерные науки и анализ данных",
+      "code": "01.03.02",
+      "codes": ["01.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/compds/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-*",
+        "noteRu": "Все бюджетные места были заняты поступившими в приоритетном порядке: квоты и олимпиады. Числового проходного общего конкурса нет; прочерк со звёздочкой не равен нулю."
+      },
+      "paid": {
+        "value": 206,
+        "status": "verified",
+        "raw": "206",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 01.03.02; строка «Компьютерные науки и анализ данных»; extracted line L470.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "supportingSources": [
+        {
+          "source": "facultyResults2026",
+          "locator": "Компьютерные науки и анализ данных"
+        }
+      ]
+    },
+    {
+      "id": "hse-moscow-ba-2026-736f80cbb1fc8b2fe9fe",
+      "title": "Прикладная математика",
+      "titleAsPublished": "Прикладная математика",
+      "code": "01.03.04",
+      "codes": ["01.03.04"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/am/"],
+      "budget": {
+        "value": 310,
+        "status": "verified",
+        "raw": "310",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 225,
+        "status": "verified",
+        "raw": "225",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 01.03.04; строка «Прикладная математика»; extracted line L474.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-15e68aa61016098f3e06",
+      "title": "Физика",
+      "titleAsPublished": "Физика",
+      "code": "03.03.02",
+      "codes": ["03.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/physics/"],
+      "budget": {
+        "value": 274,
+        "status": "verified",
+        "raw": "274",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 224,
+        "status": "verified",
+        "raw": "224",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 03.03.02; строка «Физика»; extracted line L479.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-5f84d3200324bf350aea",
+      "title": "Химия",
+      "titleAsPublished": "Химия",
+      "code": "04.03.01",
+      "codes": ["04.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/chem/"],
+      "budget": {
+        "value": 285,
+        "status": "verified",
+        "raw": "285",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 212,
+        "status": "verified",
+        "raw": "212",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 04.03.01; строка «Химия»; extracted line L485.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-faa7afad7e0becdadbf0",
+      "title": "Химия новых материалов",
+      "titleAsPublished": "Химия новых материалов",
+      "code": "04.03.02",
+      "codes": ["04.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/materials/"],
+      "budget": {
+        "value": 278,
+        "status": "verified",
+        "raw": "278",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 218,
+        "status": "verified",
+        "raw": "218",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 04.03.02; строка «Химия новых материалов»; extracted line L489.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-6dc2f6da55408e119c45",
+      "title": "География глобальных изменений и геоинформационные технологии",
+      "titleAsPublished": "География глобальных изменений и геоинформационные технологии",
+      "code": "05.03.02",
+      "codes": ["05.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/geography"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-*",
+        "noteRu": "Все бюджетные места были заняты поступившими в приоритетном порядке: квоты и олимпиады. Числового проходного общего конкурса нет; прочерк со звёздочкой не равен нулю."
+      },
+      "paid": {
+        "value": 189,
+        "status": "verified",
+        "raw": "189",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 05.03.02; строка «География глобальных изменений и геоинформационные технологии»; extracted line L495.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-956400daa626f4a78458",
+      "title": "Клеточная и молекулярная биотехнология",
+      "titleAsPublished": "Клеточная и молекулярная биотехнология",
+      "code": "06.03.01",
+      "codes": ["06.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/cmb/"],
+      "budget": {
+        "value": 288,
+        "status": "verified",
+        "raw": "288",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 249,
+        "status": "verified",
+        "raw": "249",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 06.03.01; строка «Клеточная и молекулярная биотехнология»; extracted line L500.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-e1938d7ac52bc1a179c2",
+      "title": "Когнитивная нейробиология",
+      "titleAsPublished": "Когнитивная нейробиология",
+      "code": "06.03.01",
+      "codes": ["06.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/neuroscience/"],
+      "budget": {
+        "value": 285,
+        "status": "verified",
+        "raw": "285",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 248,
+        "status": "verified",
+        "raw": "248",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 06.03.01; строка «Когнитивная нейробиология»; extracted line L501.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-28216602519fd45abe16",
+      "title": "Девелопмент и городское планирование",
+      "titleAsPublished": "Девелопмент и городское планирование",
+      "code": "07.03.04",
+      "codes": ["07.03.04"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/up/"],
+      "budget": {
+        "value": 284,
+        "status": "verified",
+        "raw": "284",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 212,
+        "status": "verified",
+        "raw": "212",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 07.03.04; строка «Девелопмент и городское планирование»; extracted line L507.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-650ef2c24a83db4448e8",
+      "title": "Информатика и вычислительная техника",
+      "titleAsPublished": "Информатика и вычислительная техника",
+      "code": "09.03.01",
+      "codes": ["09.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/isct/"],
+      "budget": {
+        "value": 292,
+        "status": "verified",
+        "raw": "292",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 206,
+        "status": "verified",
+        "raw": "206",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 09.03.01; строка «Информатика и вычислительная техника»; extracted line L512.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-b03befbf7b514fdf9aff",
+      "title": "Программная инженерия",
+      "titleAsPublished": "Программная инженерия",
+      "code": "09.03.04",
+      "codes": ["09.03.04"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/se/"],
+      "budget": {
+        "value": 297,
+        "status": "verified",
+        "raw": "297",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 221,
+        "status": "verified",
+        "raw": "221",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 09.03.04; строка «Программная инженерия»; extracted line L515.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "supportingSources": [
+        {
+          "source": "facultyResults2026",
+          "locator": "Программная инженерия"
+        }
+      ]
+    },
+    {
+      "id": "hse-moscow-ba-2026-d6f67a3c0107a1808f60",
+      "title": "Проектирование интеллектуальных робототехнических систем",
+      "titleAsPublished": "Проектирование интеллектуальных робототехнических систем",
+      "code": "09.03.04",
+      "codes": ["09.03.04"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/dirs/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-*",
+        "noteRu": "Все бюджетные места были заняты поступившими в приоритетном порядке: квоты и олимпиады. Числового проходного общего конкурса нет; прочерк со звёздочкой не равен нулю."
+      },
+      "paid": {
+        "value": 211,
+        "status": "verified",
+        "raw": "211",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 09.03.04; строка «Проектирование интеллектуальных робототехнических систем»; extracted line L516.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "supportingSources": [
+        {
+          "source": "facultyResults2026",
+          "locator": "Проектирование интеллектуальных робототехнических систем"
+        }
+      ]
+    },
+    {
+      "id": "hse-moscow-ba-2026-e7e256b0c5bfc0b9179b",
+      "title": "Дизайн и разработка информационных продуктов",
+      "titleAsPublished": "Дизайн и разработка информационных продуктов (полностью платная программа)",
+      "code": "09.03.04",
+      "codes": ["09.03.04"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/drip/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 212,
+        "status": "verified",
+        "raw": "212",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 09.03.04; строка «Дизайн и разработка информационных продуктов (полностью платная программа)»; extracted line L517.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "supportingSources": [
+        {
+          "source": "facultyResults2026",
+          "locator": "Дизайн и разработка информационных продуктов"
+        }
+      ]
+    },
+    {
+      "id": "hse-moscow-ba-2026-0c02cc6bbbbfeb12bd12",
+      "title": "Разработка игр и цифровых продуктов",
+      "titleAsPublished": "Разработка игр и цифровых продуктов (полностью платная программа)",
+      "code": "09.03.04",
+      "codes": ["09.03.04"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://digital.hse.ru/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 207,
+        "status": "verified",
+        "raw": "207",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 09.03.04; строка «Разработка игр и цифровых продуктов (полностью платная программа)»; extracted line L518.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-c174324e717dcece2813",
+      "title": "Информационная безопасность",
+      "titleAsPublished": "Информационная безопасность",
+      "code": "10.03.01",
+      "codes": ["10.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/is/"],
+      "budget": {
+        "value": 298,
+        "status": "verified",
+        "raw": "298",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 212,
+        "status": "verified",
+        "raw": "212",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 10.03.01; строка «Информационная безопасность»; extracted line L523.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-f4070246aa65044595ac",
+      "title": "Компьютерная безопасность",
+      "titleAsPublished": "Компьютерная безопасность",
+      "code": "10.05.01",
+      "codes": ["10.05.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/cosec/"],
+      "budget": {
+        "value": 287,
+        "status": "verified",
+        "raw": "287",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 218,
+        "status": "verified",
+        "raw": "218",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 10.05.01; строка «Компьютерная безопасность»; extracted line L527.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-6902c3cb4447c156431c",
+      "title": "Цифровые технологии и телекоммуникации",
+      "titleAsPublished": "Цифровые технологии и телекоммуникации",
+      "code": "11.03.02",
+      "codes": ["11.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/it/"],
+      "budget": {
+        "value": 273,
+        "status": "verified",
+        "raw": "273",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 198,
+        "status": "verified",
+        "raw": "198",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 11.03.02; строка «Цифровые технологии и телекоммуникации»; extracted line L533.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-d222bd831533f283ec04",
+      "title": "Управление технологическими инновациями",
+      "titleAsPublished": "Управление технологическими инновациями",
+      "code": "27.03.05",
+      "codes": ["27.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/tim/"],
+      "budget": {
+        "value": 299,
+        "status": "verified",
+        "raw": "299",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 206,
+        "status": "verified",
+        "raw": "206",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 27.03.05; строка «Управление технологическими инновациями»; extracted line L538.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-e2d06a44c38554cf9eb5",
+      "title": "Психология",
+      "titleAsPublished": "Психология",
+      "code": "37.03.01",
+      "codes": ["37.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/psy/"],
+      "budget": {
+        "value": 265,
+        "status": "verified",
+        "raw": "265",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 215,
+        "status": "verified",
+        "raw": "215",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 37.03.01; строка «Психология»; extracted line L544.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-d1b55d4e7a7cd2e3446f",
+      "title": "Экономика",
+      "titleAsPublished": "Экономика",
+      "code": "38.03.01",
+      "codes": ["38.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/economics/"],
+      "budget": {
+        "value": 309,
+        "status": "verified",
+        "raw": "309",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 236,
+        "status": "verified",
+        "raw": "236",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.01; строка «Экономика»; extracted line L549.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-0b40f71986b3a76dde39",
+      "title": "Совместная программа по экономике НИУ ВШЭ и РЭШ",
+      "titleAsPublished": "Совместная программа по экономике НИУ ВШЭ и РЭШ",
+      "code": "38.03.01",
+      "codes": ["38.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/nes"],
+      "budget": {
+        "value": 310,
+        "status": "verified",
+        "raw": "310",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 271,
+        "status": "verified",
+        "raw": "271",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.01; строка «Совместная программа по экономике НИУ ВШЭ и РЭШ»; extracted line L550.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-e0e084146713cf2a3345",
+      "title": "Экономика и анализ данных",
+      "titleAsPublished": "Экономика и анализ данных",
+      "code": "38.03.01",
+      "codes": ["38.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/eda"],
+      "budget": {
+        "value": 302,
+        "status": "verified",
+        "raw": "302",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 250,
+        "status": "verified",
+        "raw": "250",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.01; строка «Экономика и анализ данных»; extracted line L551.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "supportingSources": [
+        {
+          "source": "facultyResults2026",
+          "locator": "Экономика и анализ данных"
+        }
+      ]
+    },
+    {
+      "id": "hse-moscow-ba-2026-0a317fb0768bff370815",
+      "title": "Экономика и статистика",
+      "titleAsPublished": "Экономика и статистика",
+      "code": "38.03.01",
+      "codes": ["38.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/stat/"],
+      "budget": {
+        "value": 295,
+        "status": "verified",
+        "raw": "295",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 219,
+        "status": "verified",
+        "raw": "219",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.01; строка «Экономика и статистика»; extracted line L552.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-93c5af9ee0b167ce863a",
+      "title": "Мировая экономика",
+      "titleAsPublished": "Мировая экономика",
+      "code": "38.03.01",
+      "codes": ["38.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/we/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-*",
+        "noteRu": "Все бюджетные места были заняты поступившими в приоритетном порядке: квоты и олимпиады. Числового проходного общего конкурса нет; прочерк со звёздочкой не равен нулю."
+      },
+      "paid": {
+        "value": 297,
+        "status": "verified",
+        "raw": "297",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.01; строка «Мировая экономика»; extracted line L553.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-fb9b1896616ca4792b4c",
+      "title": "Международная программа по экономике и финансам",
+      "titleAsPublished": "Международная программа по экономике и финансам (полностью платная программа)",
+      "code": "38.03.01",
+      "codes": ["38.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/icef/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 249,
+        "status": "verified",
+        "raw": "249",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.01; строка «Международная программа по экономике и финансам (полностью платная программа)»; extracted line L554.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-21c352e87ae4d8b5ba79",
+      "title": "Экономический анализ",
+      "titleAsPublished": "Экономический анализ",
+      "code": "38.03.01",
+      "codes": ["38.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ea/"],
+      "budget": {
+        "value": 291,
+        "status": "verified",
+        "raw": "291",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 187,
+        "status": "verified",
+        "raw": "187",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.01; строка «Экономический анализ»; extracted line L555.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-ea88cac74c280c506215",
+      "title": "Управление бизнесом",
+      "titleAsPublished": "Управление бизнесом",
+      "code": "38.03.02",
+      "codes": ["38.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/bba/"],
+      "budget": {
+        "value": 288,
+        "status": "verified",
+        "raw": "288",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 224,
+        "status": "verified",
+        "raw": "224",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.02; строка «Управление бизнесом»; extracted line L558.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-c56656ea8a45d365f50f",
+      "title": "Маркетинг и рыночная аналитика",
+      "titleAsPublished": "Маркетинг и рыночная аналитика",
+      "code": "38.03.02",
+      "codes": ["38.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/marketing/"],
+      "budget": {
+        "value": 291,
+        "status": "verified",
+        "raw": "291",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 212,
+        "status": "verified",
+        "raw": "212",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.02; строка «Маркетинг и рыночная аналитика»; extracted line L559.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-c450107f1c2b0be8dcdd",
+      "title": "Международный бизнес (реализуется на английском языке)",
+      "titleAsPublished": "Международный бизнес (полностью платная программа)",
+      "code": "38.03.02",
+      "codes": ["38.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ib"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 228,
+        "status": "verified",
+        "raw": "228",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.02; строка «Международный бизнес (полностью платная программа)»; extracted line L560.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "identityNoteRu": "Сокращённое/русское название сводки сопоставлено с полным названием по точному коду и прямой ссылке ib/epa/ir на ту же программу."
+    },
+    {
+      "id": "hse-moscow-ba-2026-cbe36add87af691bba2b",
+      "title": "Государственное и муниципальное управление",
+      "titleAsPublished": "Государственное и муниципальное управление",
+      "code": "38.03.04",
+      "codes": ["38.03.04"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/gmu/"],
+      "budget": {
+        "value": 274,
+        "status": "verified",
+        "raw": "274",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 206,
+        "status": "verified",
+        "raw": "206",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.04; строка «Государственное и муниципальное управление»; extracted line L564.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-bdebc58cc5f12af231ac",
+      "title": "Бизнес-информатика",
+      "titleAsPublished": "Бизнес-информатика",
+      "code": "38.03.05",
+      "codes": ["38.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/bi/"],
+      "budget": {
+        "value": 296,
+        "status": "verified",
+        "raw": "296",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 216,
+        "status": "verified",
+        "raw": "216",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.05; строка «Бизнес-информатика»; extracted line L567.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-348016e5f3a0b01754d4",
+      "title": "Технологии анализа данных в бизнесе",
+      "titleAsPublished": "Технологии анализа данных в бизнесе",
+      "code": "38.03.05",
+      "codes": ["38.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/dat/"],
+      "budget": {
+        "value": 293,
+        "status": "verified",
+        "raw": "293",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 226,
+        "status": "verified",
+        "raw": "226",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.05; строка «Технологии анализа данных в бизнесе»; extracted line L568.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-917fb464602bfe033470",
+      "title": "Управление цифровым продуктом",
+      "titleAsPublished": "Управление цифровым продуктом (полностью платная программа)",
+      "code": "38.03.05",
+      "codes": ["38.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/digital/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 213,
+        "status": "verified",
+        "raw": "213",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 38.03.05; строка «Управление цифровым продуктом (полностью платная программа)»; extracted line L569.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-c2baef114e3244a09dfa",
+      "title": "Социология",
+      "titleAsPublished": "Социология",
+      "code": "39.03.01",
+      "codes": ["39.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/soc/"],
+      "budget": {
+        "value": 262,
+        "status": "verified",
+        "raw": "262",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 209,
+        "status": "verified",
+        "raw": "209",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 39.03.01; строка «Социология»; extracted line L575.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-c6a351b7d6e2b7a6f792",
+      "title": "Юриспруденция",
+      "titleAsPublished": "Юриспруденция",
+      "code": "40.03.01",
+      "codes": ["40.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/law/"],
+      "budget": {
+        "value": 275,
+        "status": "verified",
+        "raw": "275",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 219,
+        "status": "verified",
+        "raw": "219",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 40.03.01; строка «Юриспруденция»; extracted line L580.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-c229909ff186c3b48170",
+      "title": "Юриспруденция: цифровой юрист",
+      "titleAsPublished": "Юриспруденция: цифровой юрист",
+      "code": "40.03.01",
+      "codes": ["40.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/dlawyer/"],
+      "budget": {
+        "value": 278,
+        "status": "verified",
+        "raw": "278",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 204,
+        "status": "verified",
+        "raw": "204",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 40.03.01; строка «Юриспруденция: цифровой юрист»; extracted line L581.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-e89a6331755733b1f1c9",
+      "title": "Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии»/KHU-HSE Double Degree Program Economics and Politics in Asia",
+      "titleAsPublished": "Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии» (полностью платная программа)",
+      "code": "41.03.01",
+      "codes": ["41.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/epa/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 239,
+        "status": "verified",
+        "raw": "239",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 41.03.01; строка «Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии» (полностью платная программа)»; extracted line L587.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "identityNoteRu": "Сокращённое/русское название сводки сопоставлено с полным названием по точному коду и прямой ссылке ib/epa/ir на ту же программу."
+    },
+    {
+      "id": "hse-moscow-ba-2026-e25a8d7027f746a36b6b",
+      "title": "Политология",
+      "titleAsPublished": "Политология",
+      "code": "41.03.04",
+      "codes": ["41.03.04"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/political/"],
+      "budget": {
+        "value": 300,
+        "status": "verified",
+        "raw": "300",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 190,
+        "status": "verified",
+        "raw": "190",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 41.03.04; строка «Политология»; extracted line L590.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-2efc5f0ee80568a80a08",
+      "title": "Международные отношения",
+      "titleAsPublished": "Международные отношения",
+      "code": "41.03.05",
+      "codes": ["41.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ia/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-*",
+        "noteRu": "Все бюджетные места были заняты поступившими в приоритетном порядке: квоты и олимпиады. Числового проходного общего конкурса нет; прочерк со звёздочкой не равен нулю."
+      },
+      "paid": {
+        "value": 275,
+        "status": "verified",
+        "raw": "275",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 41.03.05; строка «Международные отношения»; extracted line L594.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-7bc2fc0267cfde3e77f0",
+      "title": "Международная программа «Международные отношения и глобальные исследования»/ International Program «International Relations and Global Studies»",
+      "titleAsPublished": "Международная программа «Международные отношения и глобальные исследования» (полностью платная программа)",
+      "code": "41.03.05",
+      "codes": ["41.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ir"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 213,
+        "status": "verified",
+        "raw": "213",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 41.03.05; строка «Международная программа «Международные отношения и глобальные исследования» (полностью платная программа)»; extracted line L595.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "identityNoteRu": "Сокращённое/русское название сводки сопоставлено с полным названием по точному коду и прямой ссылке ib/epa/ir на ту же программу."
+    },
+    {
+      "id": "hse-moscow-ba-2026-cfe8968393cdafe1c72d",
+      "title": "Международная программа «Международные отношения и глобальные исследования»/ International Program «International Relations and Global Studies»",
+      "titleAsPublished": "Международная программа «Международные отношения и глобальные исследования» (полностью платная программа)",
+      "code": "41.03.06",
+      "codes": ["41.03.06"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ir"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 204,
+        "status": "verified",
+        "raw": "204",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 41.03.06; строка «Международная программа «Международные отношения и глобальные исследования» (полностью платная программа)»; extracted line L598.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "identityNoteRu": "Сокращённое/русское название сводки сопоставлено с полным названием по точному коду и прямой ссылке ib/epa/ir на ту же программу."
+    },
+    {
+      "id": "hse-moscow-ba-2026-91a294a3f6c3bb457ea9",
+      "title": "Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии»/KHU-HSE Double Degree Program Economics and Politics in Asia",
+      "titleAsPublished": "Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии» (полностью платная программа)",
+      "code": "41.03.06",
+      "codes": ["41.03.06"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/epa/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 205,
+        "status": "verified",
+        "raw": "205",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 41.03.06; строка «Программа двух дипломов НИУ ВШЭ и Университета Кёнхи «Экономика и политика в Азии» (полностью платная программа)»; extracted line L599.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата.",
+      "identityNoteRu": "Сокращённое/русское название сводки сопоставлено с полным названием по точному коду и прямой ссылке ib/epa/ir на ту же программу."
+    },
+    {
+      "id": "hse-moscow-ba-2026-3f3d7d61e0a455fec562",
+      "title": "Реклама и связи с общественностью",
+      "titleAsPublished": "Реклама и связи с общественностью",
+      "code": "42.03.01",
+      "codes": ["42.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ad/"],
+      "budget": {
+        "value": 293,
+        "status": "verified",
+        "raw": "293",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 189,
+        "status": "verified",
+        "raw": "189",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.01; строка «Реклама и связи с общественностью»; extracted line L604.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-f756020d27fd99d26a37",
+      "title": "Стратегия и продюсирование в коммуникациях",
+      "titleAsPublished": "Стратегия и продюсирование в коммуникациях",
+      "code": "42.03.01",
+      "codes": ["42.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/producer/"],
+      "budget": {
+        "value": 301,
+        "status": "verified",
+        "raw": "301",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 191,
+        "status": "verified",
+        "raw": "191",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.01; строка «Стратегия и продюсирование в коммуникациях»; extracted line L605.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-091bea224dcd315bc686",
+      "title": "Глобальные цифровые коммуникации",
+      "titleAsPublished": "Глобальные цифровые коммуникации",
+      "code": "42.03.01",
+      "codes": ["42.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/digitalcomm/"],
+      "budget": {
+        "value": 293,
+        "status": "verified",
+        "raw": "293",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 182,
+        "status": "verified",
+        "raw": "182",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.01; строка «Глобальные цифровые коммуникации»; extracted line L606.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-35dff3214f0ccd3bc6e7",
+      "title": "Журналистика",
+      "titleAsPublished": "Журналистика",
+      "code": "42.03.02",
+      "codes": ["42.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/journ/"],
+      "budget": {
+        "value": 286,
+        "status": "verified",
+        "raw": "286",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 187,
+        "status": "verified",
+        "raw": "187",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.02; строка «Журналистика»; extracted line L610.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-2c62328e2e55b118df88",
+      "title": "Медиакоммуникации",
+      "titleAsPublished": "Медиакоммуникации",
+      "code": "42.03.05",
+      "codes": ["42.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/media/"],
+      "budget": {
+        "value": 296,
+        "status": "verified",
+        "raw": "296",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 207,
+        "status": "verified",
+        "raw": "207",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.05; строка «Медиакоммуникации»; extracted line L613.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-789ff5f1572779276f04",
+      "title": "Реклама и связи с общественностью",
+      "titleAsPublished": "Реклама и связи с общественностью",
+      "code": "42.03.05",
+      "codes": ["42.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ad/"],
+      "budget": {
+        "value": 289,
+        "status": "verified",
+        "raw": "289",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 216,
+        "status": "verified",
+        "raw": "216",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.05; строка «Реклама и связи с общественностью»; extracted line L614.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-e4da9e97ac55aa0a91f7",
+      "title": "Глобальные цифровые коммуникации",
+      "titleAsPublished": "Глобальные цифровые коммуникации",
+      "code": "42.03.05",
+      "codes": ["42.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/digitalcomm/"],
+      "budget": {
+        "value": 290,
+        "status": "verified",
+        "raw": "290",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 193,
+        "status": "verified",
+        "raw": "193",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.05; строка «Глобальные цифровые коммуникации»; extracted line L615.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-be676056ccdd94220077",
+      "title": "Кинопроизводство",
+      "titleAsPublished": "Кинопроизводство (полностью платная программа)",
+      "code": "42.03.05",
+      "codes": ["42.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/film/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 283,
+        "status": "verified",
+        "raw": "283",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.05; строка «Кинопроизводство (полностью платная программа)»; extracted line L616.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-148ab8cf78c39be98bec",
+      "title": "Управление в креативных индустриях",
+      "titleAsPublished": "Управление в креативных индустриях (полностью платная программа)",
+      "code": "42.03.05",
+      "codes": ["42.03.05"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://creative.hse.ru/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 193,
+        "status": "verified",
+        "raw": "193",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 42.03.05; строка «Управление в креативных индустриях (полностью платная программа)»; extracted line L617.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-866646157eef7533b3a1",
+      "title": "Современная филология",
+      "titleAsPublished": "Современная филология",
+      "code": "45.03.01",
+      "codes": ["45.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/philology/"],
+      "budget": {
+        "value": 300,
+        "status": "verified",
+        "raw": "300",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 209,
+        "status": "verified",
+        "raw": "209",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 45.03.01; строка «Современная филология»; extracted line L622.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-75a2686e60bed44f9fad",
+      "title": "Классическая филология",
+      "titleAsPublished": "Классическая филология",
+      "code": "45.03.01",
+      "codes": ["45.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/antiq/"],
+      "budget": {
+        "value": 278,
+        "status": "verified",
+        "raw": "278",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": null,
+        "status": "unknown",
+        "raw": "-",
+        "noteRu": "В официальной итоговой сводке этой категории нет числового проходного."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 45.03.01; строка «Классическая филология»; extracted line L623.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-739060248cc06a9e16e2",
+      "title": "Иностранные языки и межкультурная коммуникация",
+      "titleAsPublished": "Иностранные языки и межкультурная коммуникация",
+      "code": "45.03.02",
+      "codes": ["45.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/lang/"],
+      "budget": {
+        "value": 294,
+        "status": "verified",
+        "raw": "294",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 202,
+        "status": "verified",
+        "raw": "202",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 45.03.02; строка «Иностранные языки и межкультурная коммуникация»; extracted line L627.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-3ecae7f054bb701571db",
+      "title": "Фундаментальная и компьютерная лингвистика",
+      "titleAsPublished": "Фундаментальная и компьютерная лингвистика",
+      "code": "45.03.03",
+      "codes": ["45.03.03"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/ling/"],
+      "budget": {
+        "value": 286,
+        "status": "verified",
+        "raw": "286",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 210,
+        "status": "verified",
+        "raw": "210",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 45.03.03; строка «Фундаментальная и компьютерная лингвистика»; extracted line L631.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-f1c7251aecad1d001087",
+      "title": "История",
+      "titleAsPublished": "История",
+      "code": "46.03.01",
+      "codes": ["46.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/hist/"],
+      "budget": {
+        "value": 274,
+        "status": "verified",
+        "raw": "274",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 205,
+        "status": "verified",
+        "raw": "205",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 46.03.01; строка «История»; extracted line L636.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-abb806a658f2ceffdbfc",
+      "title": "Практическая философия",
+      "titleAsPublished": "Практическая философия",
+      "code": "47.03.01",
+      "codes": ["47.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/phil/"],
+      "budget": {
+        "value": 268,
+        "status": "verified",
+        "raw": "268",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 190,
+        "status": "verified",
+        "raw": "190",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 47.03.01; строка «Практическая философия»; extracted line L642.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-f91b70aa580de51028e7",
+      "title": "Современное искусство",
+      "titleAsPublished": "Современное искусство (полностью платная программа)",
+      "code": "50.03.02",
+      "codes": ["50.03.02"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["http://art.hse.ru/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 195,
+        "status": "verified",
+        "raw": "195",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 50.03.02; строка «Современное искусство (полностью платная программа)»; extracted line L648.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-6258ba07532e4658b575",
+      "title": "История искусств",
+      "titleAsPublished": "История искусств",
+      "code": "50.03.03",
+      "codes": ["50.03.03"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/histart/"],
+      "budget": {
+        "value": 273,
+        "status": "verified",
+        "raw": "273",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 223,
+        "status": "verified",
+        "raw": "223",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 50.03.03; строка «История искусств»; extracted line L651.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-1c1ffc6ccd4be152b9e4",
+      "title": "Культурология",
+      "titleAsPublished": "Культурология",
+      "code": "51.03.01",
+      "codes": ["51.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/cultural/"],
+      "budget": {
+        "value": 284,
+        "status": "verified",
+        "raw": "284",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 186,
+        "status": "verified",
+        "raw": "186",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 51.03.01; строка «Культурология»; extracted line L657.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-787c4ce34a980d5f4035",
+      "title": "Актёр",
+      "titleAsPublished": "Актёр (полностью платная программа)",
+      "code": "52.05.01",
+      "codes": ["52.05.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/actor/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 299,
+        "status": "verified",
+        "raw": "299",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 52.05.01; строка «Актёр (полностью платная программа)»; extracted line L663.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-75a87c0eded6ffbb9330",
+      "title": "Дизайн",
+      "titleAsPublished": "Дизайн",
+      "code": "54.03.01",
+      "codes": ["54.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://design.hse.ru/ba/program/design"],
+      "budget": {
+        "value": 294,
+        "status": "verified",
+        "raw": "294",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 200,
+        "status": "verified",
+        "raw": "200",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 54.03.01; строка «Дизайн»; extracted line L668.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-ecbc835bc3ebd891d8df",
+      "title": "Мода",
+      "titleAsPublished": "Мода (полностью платная программа)",
+      "code": "54.03.01",
+      "codes": ["54.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["http://design.hse.ru/bak-fashion"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 208,
+        "status": "verified",
+        "raw": "208",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 54.03.01; строка «Мода (полностью платная программа)»; extracted line L669.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-ebc020a1634ad26def5a",
+      "title": "Разработка игр и цифровых продуктов",
+      "titleAsPublished": "Разработка игр и цифровых продуктов (полностью платная программа)",
+      "code": "54.03.01",
+      "codes": ["54.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://digital.hse.ru/"],
+      "budget": {
+        "value": null,
+        "status": "not_applicable",
+        "raw": "-",
+        "noteRu": "В итоговой сводке программа прямо обозначена полностью платной."
+      },
+      "paid": {
+        "value": 196,
+        "status": "verified",
+        "raw": "196",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 54.03.01; строка «Разработка игр и цифровых продуктов (полностью платная программа)»; extracted line L670.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-caa04b9dfb9e7f2d99b3",
+      "title": "Востоковедение",
+      "titleAsPublished": "Востоковедение",
+      "code": "58.03.01",
+      "codes": ["58.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/oriental/"],
+      "budget": {
+        "value": 290,
+        "status": "verified",
+        "raw": "290",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 201,
+        "status": "verified",
+        "raw": "201",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 58.03.01; строка «Востоковедение»; extracted line L675.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-87af477c43519984a187",
+      "title": "Арабский мир и Христианский Восток",
+      "titleAsPublished": "Арабский мир и Христианский Восток",
+      "code": "58.03.01",
+      "codes": ["58.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/arabic/"],
+      "budget": {
+        "value": 276,
+        "status": "verified",
+        "raw": "276",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": null,
+        "status": "unknown",
+        "raw": "-",
+        "noteRu": "В официальной итоговой сводке этой категории нет числового проходного."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 58.03.01; строка «Арабский мир и Христианский Восток»; extracted line L676.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-4fa5b0f2a445bab05e22",
+      "title": "Иран и Центральная Азия",
+      "titleAsPublished": "Иран и Центральная Азия",
+      "code": "58.03.01",
+      "codes": ["58.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/iran/"],
+      "budget": {
+        "value": 258,
+        "status": "verified",
+        "raw": "258",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 217,
+        "status": "verified",
+        "raw": "217",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 58.03.01; строка «Иран и Центральная Азия»; extracted line L677.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
+    },
+    {
+      "id": "hse-moscow-ba-2026-987151475e31693a16ea",
+      "title": "Китай: язык, культура, общество",
+      "titleAsPublished": "Китай: язык, культура, общество",
+      "code": "58.03.01",
+      "codes": ["58.03.01"],
+      "campus": "Москва",
+      "year": 2026,
+      "competitionScopeKey": "central-final-results-2026",
+      "programUrls": ["https://www.hse.ru/ba/chinese/"],
+      "budget": {
+        "value": 275,
+        "status": "verified",
+        "raw": "275",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "paid": {
+        "value": 191,
+        "status": "verified",
+        "raw": "191",
+        "noteRu": "Фактический проходной по официальной итоговой сводке 2026. Максимум шкалы в этой таблице не указан."
+      },
+      "source": "moscow-ba-results-2026-reviewed-2026-11-19",
+      "locator": "Таблица результатов приёма2026; код 58.03.01; строка «Китай: язык, культура, общество»; extracted line L678.",
+      "scopeNoteRu": "Центральная итоговая сводка: бюджет и платное обучение 2026 разделены. Гарантии «Зелёной волны» и прогнозы не используются вместо фактического результата."
     }
   ],
   "knownConflicts": [
@@ -93665,6 +95405,242 @@
       "Perm 2021 history result 62.90 is explicitly university-funded, not federal budget.",
       "Blank source cells remain unknown; absent tables are source reviews, not invented numerical rows.",
       "No rows or metadata in the tracked 2400-record archive were changed by this packet."
+    ]
+  },
+  "moscowResults2026Extension": {
+    "checkedAt": "2026-11-19T15:26:48.516257+00:00",
+    "baseRecords": 2671,
+    "baseRecordsSha256": "66fbc8e95eda39bd97641059287997d302df436b2faf181ba4771c873b8cc76c",
+    "centralRows": 72,
+    "numericBudget": 50,
+    "numericPaid": 70,
+    "preferredOverEarlierFacultyRows": 7,
+    "limitations": [
+      "No numerical general-competition cutoff inferred from priority-admission dash.",
+      "Moscow part-time law business-regulation programme is absent from the central results table; no cutoff fabricated.",
+      "Numeric values agree with seven previous faculty results; central source adds complete category context and is preferred for display while original rows remain in evidence."
+    ],
+    "unpublishedProgrammeSlugs": ["hse-moscow-doplaw-400301"],
+    "earlierFacultySnapshots": [
+      {
+        "originalIndex": 133,
+        "preferredRecordId": "hse-moscow-ba-2026-647bdf3e16e639189852",
+        "record": {
+          "title": "Прикладная математика и информатика",
+          "code": "01.03.02",
+          "campus": "Москва",
+          "year": 2026,
+          "programUrls": ["https://www.hse.ru/ba/ami/admission/"],
+          "budget": {
+            "value": null,
+            "status": "not_applicable",
+            "reason": "All budget places filled through priority admissions including quotas and Olympiads, so no numeric general-competition pass result.",
+            "officialText": "С 2023 по 2026 гг. все бюджетные места на программе «Прикладная математика и информатика» были заняты поступившими в приоритетном порядке (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников).",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[1]/div[1]/p",
+            "rejectedDiagramValue": 310,
+            "noteRu": "С 2023 по 2026 гг. все бюджетные места на программе «Прикладная математика и информатика» были заняты поступившими в приоритетном порядке (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников)."
+          },
+          "paid": {
+            "value": 259,
+            "maximum": 310,
+            "status": "verified",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[1]/div[4]/ul/li[1]",
+            "contextHeading": "Проходные баллы на коммерцию",
+            "noteRu": ""
+          },
+          "source": "facultyResults2026",
+          "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
+          "id": "hse-history-15ac31ef6441f2e4",
+          "scopeNoteRu": ""
+        }
+      },
+      {
+        "originalIndex": 134,
+        "preferredRecordId": "hse-moscow-ba-2026-e0e084146713cf2a3345",
+        "record": {
+          "title": "Экономика и анализ данных",
+          "code": "38.03.01",
+          "campus": "Москва",
+          "year": 2026,
+          "programUrls": ["https://www.hse.ru/ba/eda/admission/"],
+          "budget": {
+            "value": 302,
+            "maximum": 310,
+            "status": "verified",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[3]/div[1]/ul/li[1]",
+            "noteRu": ""
+          },
+          "paid": {
+            "value": 250,
+            "maximum": 310,
+            "status": "verified",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[3]/div[4]/ul/li[1]",
+            "contextHeading": "Проходные баллы на коммерцию",
+            "noteRu": ""
+          },
+          "source": "facultyResults2026",
+          "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
+          "id": "hse-history-8b9219c50655a4ba",
+          "scopeNoteRu": ""
+        }
+      },
+      {
+        "originalIndex": 135,
+        "preferredRecordId": "hse-moscow-ba-2026-d6f67a3c0107a1808f60",
+        "record": {
+          "title": "Проектирование интеллектуальных робототехнических систем",
+          "code": "09.03.04",
+          "campus": "Москва",
+          "year": 2026,
+          "programUrls": ["https://www.hse.ru/ba/dirs/admission/"],
+          "budget": {
+            "value": null,
+            "status": "not_applicable",
+            "reason": "All budget places filled through priority admissions including quotas and Olympiads, so no numeric general-competition pass result.",
+            "officialText": "В 2026 году все бюджетные места на программе «Проектирование интеллектуальных робототехнических систем» были заняты поступившими в приоритетном порядке (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников).",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[4]/div[1]/p",
+            "rejectedDiagramValue": 310,
+            "noteRu": "В 2026 году все бюджетные места на программе «Проектирование интеллектуальных робототехнических систем» были заняты поступившими в приоритетном порядке (особая, целевая, отдельная квоты, поступающими по олимпиадам школьников)."
+          },
+          "paid": {
+            "value": 211,
+            "maximum": 310,
+            "status": "verified",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[4]/div[4]/ul/li",
+            "contextHeading": "Проходные баллы на коммерцию",
+            "noteRu": ""
+          },
+          "source": "facultyResults2026",
+          "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
+          "id": "hse-history-93d637541c82bccd",
+          "scopeNoteRu": ""
+        }
+      },
+      {
+        "originalIndex": 136,
+        "preferredRecordId": "hse-moscow-ba-2026-e7e256b0c5bfc0b9179b",
+        "record": {
+          "title": "Дизайн и разработка информационных продуктов",
+          "code": "09.03.04",
+          "campus": "Москва",
+          "year": 2026,
+          "programUrls": ["https://www.hse.ru/ba/drip/admission/"],
+          "budget": {
+            "value": null,
+            "status": "not_applicable",
+            "reason": "Official 2026 intake places table has no budget intake for this competition.",
+            "noteRu": "В официальном плане приёма на этот конкурс бюджетные места отсутствуют."
+          },
+          "paid": {
+            "value": 212,
+            "maximum": 310,
+            "status": "verified",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[5]/div[5]/ul/li[1]",
+            "contextHeading": "Дизайн и разработка информационных продуктов",
+            "noteRu": ""
+          },
+          "source": "facultyResults2026",
+          "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
+          "id": "hse-history-ece4e2530139de8b",
+          "scopeNoteRu": ""
+        }
+      },
+      {
+        "originalIndex": 137,
+        "preferredRecordId": "hse-moscow-ba-2026-6474db8f412da648f360",
+        "record": {
+          "title": "Компьютерные науки и анализ данных",
+          "code": "01.03.02",
+          "campus": "Москва",
+          "year": 2026,
+          "programUrls": ["https://www.hse.ru/ba/compds/admission/"],
+          "budget": {
+            "value": null,
+            "status": "unknown",
+            "reason": "2026 budget intake exists, faculty source gives no confirmed budget actual result.",
+            "noteRu": "В плане приёма есть бюджетные места. Подтверждённый проходной на них в этой сводке отсутствует."
+          },
+          "paid": {
+            "value": 206,
+            "maximum": 310,
+            "status": "verified",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[5]/div[6]/ul/li[1]",
+            "contextHeading": "Компьютерные науки и анализ данных",
+            "noteRu": ""
+          },
+          "source": "facultyResults2026",
+          "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
+          "id": "hse-history-ce93e056b8295f67",
+          "scopeNoteRu": ""
+        }
+      },
+      {
+        "originalIndex": 138,
+        "preferredRecordId": "hse-moscow-ba-2026-3fd662da6c691535dfe1",
+        "record": {
+          "title": "Прикладной анализ данных",
+          "code": "01.03.02",
+          "campus": "Москва",
+          "year": 2026,
+          "programUrls": ["https://www.hse.ru/ba/data/admission/"],
+          "budget": {
+            "value": null,
+            "status": "not_applicable",
+            "reason": "Official 2026 intake places table has no budget intake for this competition.",
+            "noteRu": "В официальном плане приёма на этот конкурс бюджетные места отсутствуют."
+          },
+          "paid": {
+            "value": 207,
+            "maximum": 310,
+            "status": "verified",
+            "source": "facultyResults2026",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[5]/div[7]/ul/li[1]",
+            "contextHeading": "Прикладной анализ данных",
+            "noteRu": ""
+          },
+          "source": "facultyResults2026",
+          "competitionScope": "Faculty program result, exact code from official2026 passport and inventory.",
+          "id": "hse-history-4c24dbfc4fa90f68",
+          "scopeNoteRu": ""
+        }
+      },
+      {
+        "originalIndex": 139,
+        "preferredRecordId": "hse-moscow-ba-2026-b03befbf7b514fdf9aff",
+        "record": {
+          "title": "Программная инженерия",
+          "code": "09.03.04",
+          "campus": "Москва",
+          "year": 2026,
+          "programUrls": ["https://www.hse.ru/ba/se/"],
+          "budget": {
+            "value": 297,
+            "maximum": 310,
+            "status": "verified",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[2]/div[1]/ul/li[1]",
+            "noteRu": ""
+          },
+          "paid": {
+            "value": 221,
+            "maximum": 310,
+            "status": "verified",
+            "locator": "/html/body/div[1]/div[3]/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div/section[2]/div[4]/ul/li[1]",
+            "noteRu": ""
+          },
+          "source": "facultyResults2026",
+          "competitionScope": "Faculty actual results. Budget independently corroborated by official program tracks page.",
+          "id": "hse-history-8fadca2e35da37bd",
+          "scopeNoteRu": ""
+        }
+      }
     ]
   }
 }

@@ -47,13 +47,31 @@ describe("official university profile evidence", () => {
     );
     expect(profile.fields.admissionsEmail?.value).toBe("abitur@hse.ru");
     expect(profile.faculties).toHaveLength(69);
-    expect(profile.offerings).toHaveLength(1463);
+    expect(profile.offerings).toHaveLength(1490);
     expect(
       profile.offerings.filter((row) => row.sourceYear === null),
-    ).toHaveLength(1412);
+    ).toHaveLength(1439);
     expect(
       profile.offerings.filter((row) => row.sourceYear === 2026),
     ).toHaveLength(51);
+  });
+
+  it("keeps the HSE lyceum cohorts as sourced education listings", () => {
+    const offerings = getDirectoryDetails("hse")!.offerings.filter((row) =>
+      row.sourceSection?.includes("Лицей; /html/"),
+    );
+    expect(offerings).toHaveLength(27);
+    expect(offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          title: "Востоковедение 11 класс (набор 2023 года)",
+          level: "Среднее общее образование",
+          admissionsStatus: "pending_review",
+          sourceYear: null,
+          sourceSha256: expect.stringMatching(/^[0-9a-f]{64}$/),
+        }),
+      ]),
+    );
   });
 
   it("preserves the reviewed official overview and its exact snapshot provenance", () => {

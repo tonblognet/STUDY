@@ -29,6 +29,13 @@ const serialized = readFileSync(
 );
 const archive = JSON.parse(serialized) as {
   records: ArchiveRow[];
+  moscowResults2026Extension: {
+    earlierFacultySnapshots: {
+      originalIndex: number;
+      preferredRecordId: string;
+      record: ArchiveRow;
+    }[];
+  };
   sources: Record<
     string,
     { url: string; bytes?: number; sha256?: string; captureKind?: string }
@@ -69,6 +76,14 @@ const archive = JSON.parse(serialized) as {
 };
 const digest = (value: unknown) =>
   createHash("sha256").update(JSON.stringify(value)).digest("hex");
+const centralSource = "moscow-ba-results-2026-reviewed-2026-11-19";
+const earlierArchive = archive.records.filter(
+  (row) => row.source !== centralSource,
+);
+for (const snapshot of archive.moscowResults2026Extension
+  .earlierFacultySnapshots) {
+  earlierArchive.splice(snapshot.originalIndex, 0, snapshot.record);
+}
 const find = (campus: string, year: number, title: string) =>
   archive.records.filter(
     (row) => row.campus === campus && row.year === year && row.title === title,
@@ -76,7 +91,7 @@ const find = (campus: string, year: number, title: string) =>
 
 describe("HSE reviewed archival evidence", () => {
   it("preserves the 652 previously reviewed records, sources and conflicts", () => {
-    expect(digest(archive.records.slice(0, 652))).toBe(
+    expect(digest(earlierArchive.slice(0, 652))).toBe(
       "c70aa215631e8693c8647b4fdb47ce55338fbab2c6c44fbc8c20b4c4a89a7f08",
     );
     expect(
@@ -88,7 +103,7 @@ describe("HSE reviewed archival evidence", () => {
   });
 
   it("keeps campus, year, degree and competition scopes unique", () => {
-    expect(archive.records).toHaveLength(2671);
+    expect(archive.records).toHaveLength(2736);
     expect(archive.archiveExtensions20261118.packets.baCore.records).toBe(311);
     expect(
       archive.archiveExtensions20261118.packets.spbBachelorHistory.records,
@@ -96,8 +111,8 @@ describe("HSE reviewed archival evidence", () => {
     expect(
       archive.records.filter((row) => row.level === "Магистратура"),
     ).toHaveLength(1486);
-    expect(archive.records.filter((row) => !row.level)).toHaveLength(1185);
-    expect(new Set(archive.records.map((row) => row.id)).size).toBe(2671);
+    expect(archive.records.filter((row) => !row.level)).toHaveLength(1250);
+    expect(new Set(archive.records.map((row) => row.id)).size).toBe(2736);
     const identities = archive.records.map((row) =>
       JSON.stringify([
         row.campus,
@@ -108,7 +123,7 @@ describe("HSE reviewed archival evidence", () => {
         row.code,
       ]),
     );
-    expect(new Set(identities).size).toBe(2671);
+    expect(new Set(identities).size).toBe(2736);
   });
 
   it("retains unspecified funding as a published number without assigning budget", () => {
@@ -215,13 +230,13 @@ describe("HSE reviewed archival evidence", () => {
   it("preserves all 2400 records preceding the masters document extension", () => {
     const expected =
       "161a7cc85024903e40a481c3dd1ab3d60af18c50f4e8182de1d23c11faa8990a";
-    expect(digest(archive.records.slice(0, 2400))).toBe(expected);
+    expect(digest(earlierArchive.slice(0, 2400))).toBe(expected);
     expect(archive.documentExtension20261118.baseRecordsPreserved).toBe(2400);
     expect(archive.documentExtension20261118.baseRecordsSha256).toBe(expected);
   });
 
   it("keeps the new masters results in their published funding categories", () => {
-    const rows = archive.records.slice(2400);
+    const rows = earlierArchive.slice(2400);
     expect(rows).toHaveLength(271);
     expect(rows.every((row) => row.id.startsWith("hse-ma-doc-"))).toBe(true);
     expect(rows.every((row) => row.level === "Магистратура")).toBe(true);
@@ -241,6 +256,50 @@ describe("HSE reviewed archival evidence", () => {
       expect(row.budget).toMatchObject({ value: null, status: "unknown" });
       expect(row.paid).toMatchObject({ value: null, status: "unknown" });
     }
+  });
+
+  it("adds the central Moscow 2026 outcomes while retaining all earlier evidence", () => {
+    expect(digest(earlierArchive)).toBe(
+      "66fbc8e95eda39bd97641059287997d302df436b2faf181ba4771c873b8cc76c",
+    );
+    const rows = archive.records.filter((row) => row.source === centralSource);
+    expect(rows).toHaveLength(72);
+    expect(
+      rows.every(
+        (row) => row.campus === "Москва" && row.year === 2026 && !row.level,
+      ),
+    ).toBe(true);
+    expect(rows.filter((row) => row.budget.value !== null)).toHaveLength(50);
+    expect(rows.filter((row) => row.paid.value !== null)).toHaveLength(70);
+    const { earlierFacultySnapshots } = archive.moscowResults2026Extension;
+    expect(earlierFacultySnapshots).toHaveLength(7);
+    for (const { preferredRecordId, record } of earlierFacultySnapshots) {
+      expect(archive.records.some((entry) => entry.id === record.id)).toBe(
+        false,
+      );
+      const preferred = rows.find((entry) => entry.id === preferredRecordId)!;
+      expect(preferred).toMatchObject({
+        campus: record.campus,
+        year: record.year,
+        code: record.code,
+        title: record.title,
+      });
+      for (const funding of ["budget", "paid"] as const)
+        if (record[funding].value !== null)
+          expect(preferred[funding].value).toBe(record[funding].value);
+    }
+    const priority = rows.find(
+      (row) => row.title === "Прикладная математика и информатика",
+    )!;
+    expect(priority.budget).toMatchObject({
+      value: null,
+      status: "not_applicable",
+      raw: "-*",
+    });
+    expect(priority.paid.value).toBe(259);
+    const source = archive.sources[rows[0].source];
+    expect(source.captureKind).toBe("official_web_text_extraction");
+    expect(source.url).toBe("https://ba.hse.ru/result2026");
   });
 
   it("retains the five visually checked Perm 2025 budget results on the stated 100-point scale", () => {
