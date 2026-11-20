@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T00:55:43.006Z",
+  "generatedAt": "2026-11-20T01:13:14.560Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
@@ -9,8 +9,8 @@
     "sourcedFields": 1466,
     "universitiesWithFaculties": 94,
     "faculties": 1005,
-    "universitiesWithEducationalListings": 99,
-    "educationalListings": 11491,
+    "universitiesWithEducationalListings": 110,
+    "educationalListings": 13973,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
@@ -2461,27 +2461,6 @@
       "officialWebsite": "https://www.mf.rmat.ru/"
     },
     {
-      "slug": "gubkin",
-      "name": "Российский государственный университет нефти и газа имени И. М. Губкина",
-      "city": "Москва",
-      "missing": [
-        "fullName",
-        "shortName",
-        "regDate",
-        "address",
-        "telephone",
-        "email",
-        "admissionsUrl",
-        "admissionsPhone",
-        "admissionsEmail",
-        "hostelInfo",
-        "overview",
-        "faculties",
-        "educationalListings"
-      ],
-      "officialWebsite": "https://www.gubkin.ru"
-    },
-    {
       "slug": "univerproc",
       "name": "Университет прокуратуры Российской Федерации",
       "city": "Москва",
@@ -2564,6 +2543,26 @@
       "officialWebsite": "https://bmstu.ru"
     },
     {
+      "slug": "gubkin",
+      "name": "Российский государственный университет нефти и газа имени И. М. Губкина",
+      "city": "Москва",
+      "missing": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "address",
+        "telephone",
+        "email",
+        "admissionsUrl",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties"
+      ],
+      "officialWebsite": "https://www.gubkin.ru"
+    },
+    {
       "slug": "itpi",
       "name": "Институт традиционного прикладного искусства — Московский филиал РУТХП",
       "city": "Москва",
@@ -2641,7 +2640,7 @@
       "officialWebsite": "https://mipt.ru",
       "sourcedFields": 11,
       "faculties": 8,
-      "educationalListings": 207,
+      "educationalListings": 209,
       "historicalEducationAreas": 14,
       "admissionPrograms": 1,
       "verifiedAdmissionPrograms": 0,
@@ -2660,7 +2659,7 @@
       "officialWebsite": "https://misis.ru",
       "sourcedFields": 11,
       "faculties": 10,
-      "educationalListings": 285,
+      "educationalListings": 303,
       "historicalEducationAreas": 16,
       "admissionPrograms": 1,
       "verifiedAdmissionPrograms": 1,
@@ -2679,7 +2678,7 @@
       "officialWebsite": "https://mpei.ru",
       "sourcedFields": 11,
       "faculties": 10,
-      "educationalListings": 172,
+      "educationalListings": 367,
       "historicalEducationAreas": 14,
       "admissionPrograms": 1,
       "verifiedAdmissionPrograms": 0,
@@ -2736,7 +2735,7 @@
       "officialWebsite": "https://www.ranepa.ru",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 243,
+      "educationalListings": 574,
       "historicalEducationAreas": 14,
       "admissionPrograms": 1,
       "verifiedAdmissionPrograms": 0,
@@ -2783,7 +2782,7 @@
       "officialWebsite": "https://www.rea.ru",
       "sourcedFields": 9,
       "faculties": 0,
-      "educationalListings": 11,
+      "educationalListings": 277,
       "historicalEducationAreas": 17,
       "admissionPrograms": 1,
       "verifiedAdmissionPrograms": 0,
@@ -2871,7 +2870,7 @@
       "officialWebsite": "https://rsmu.ru",
       "sourcedFields": 9,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 202,
       "historicalEducationAreas": 7,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
@@ -2879,8 +2878,7 @@
       "missing": [
         "admissionsEmail",
         "overview",
-        "faculties",
-        "educationalListings"
+        "faculties"
       ]
     },
     {
@@ -2895,7 +2893,7 @@
       "officialWebsite": "https://www.sechenov.ru",
       "sourcedFields": 9,
       "faculties": 9,
-      "educationalListings": 38,
+      "educationalListings": 219,
       "historicalEducationAreas": 17,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
@@ -2917,7 +2915,7 @@
       "officialWebsite": "https://www.gubkin.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 209,
       "historicalEducationAreas": 14,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
@@ -2934,8 +2932,7 @@
         "admissionsEmail",
         "hostelInfo",
         "overview",
-        "faculties",
-        "educationalListings"
+        "faculties"
       ]
     },
     {
@@ -2972,7 +2969,7 @@
       "officialWebsite": "https://www.muctr.ru",
       "sourcedFields": 8,
       "faculties": 11,
-      "educationalListings": 124,
+      "educationalListings": 433,
       "historicalEducationAreas": 14,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
@@ -2995,7 +2992,7 @@
       "officialWebsite": "https://www.rsuh.ru",
       "sourcedFields": 10,
       "faculties": 31,
-      "educationalListings": 386,
+      "educationalListings": 562,
       "historicalEducationAreas": 19,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
@@ -3016,7 +3013,7 @@
       "officialWebsite": "https://www.fa.ru",
       "sourcedFields": 9,
       "faculties": 8,
-      "educationalListings": 195,
+      "educationalListings": 448,
       "historicalEducationAreas": 16,
       "admissionPrograms": 10,
       "verifiedAdmissionPrograms": 0,
@@ -3038,7 +3035,7 @@
       "officialWebsite": "https://mospolytech.ru",
       "sourcedFields": 9,
       "faculties": 12,
-      "educationalListings": 233,
+      "educationalListings": 284,
       "historicalEducationAreas": 19,
       "admissionPrograms": 10,
       "verifiedAdmissionPrograms": 0,
@@ -3263,7 +3260,7 @@
       "officialWebsite": "https://gitr.ru",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 26,
       "historicalEducationAreas": 5,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -3273,7 +3270,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4587,7 +4583,7 @@
       "officialWebsite": "http://www.atiso.ru",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 87,
       "historicalEducationAreas": 7,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4597,7 +4593,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5032,7 +5027,7 @@
       "officialWebsite": "https://academy-andriaka.ru",
       "sourcedFields": 6,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 2,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5044,7 +5039,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5060,7 +5054,7 @@
       "officialWebsite": "http://www.axu.ru",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 9,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5070,7 +5064,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5086,7 +5079,7 @@
       "officialWebsite": "http://www.vavt.ru",
       "sourcedFields": 9,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 60,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5095,7 +5088,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5111,7 +5103,7 @@
       "officialWebsite": "https://shepkinskoe.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 2,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5121,7 +5113,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5389,7 +5380,7 @@
       "officialWebsite": "http://www.glazunov-academy.ru",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 15,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5400,7 +5391,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -6158,7 +6148,7 @@
       "officialWebsite": "https://amp1996.ru/",
       "sourcedFields": 9,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 60,
       "historicalEducationAreas": 6,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -6167,7 +6157,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -6542,7 +6531,7 @@
       "officialWebsite": "https://academygps.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 28,
       "historicalEducationAreas": 0,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -6552,7 +6541,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },

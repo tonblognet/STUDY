@@ -313,13 +313,15 @@ describe("official university profile evidence", () => {
     expect(distinctIzhgtuProfile.profile).toBe("Технология машиностроения");
     expect(distinctIzhgtuProfile.duration).toBe("4 года");
     expect(
-      getDirectoryDetails("rsuh")!.offerings.filter(
-        (row) =>
-          row.code === "38.05.01" &&
-          row.profile ===
-            "Экономическая безопасность хозяйствующего субъекта" &&
-          row.forms?.toLocaleLowerCase("ru") === "очная",
-      ),
+      moscowOctober22.profiles
+        .find((row) => row.universitySlug === "rsuh")!
+        .offerings.filter(
+          (row) =>
+            row.code === "38.05.01" &&
+            row.profile ===
+              "Экономическая безопасность хозяйствующего субъекта" &&
+            row.forms?.toLocaleLowerCase("ru") === "очная",
+        ),
     ).toHaveLength(0);
     expect(moscowOctober22.collectionIssues).toContainEqual(
       expect.objectContaining({
@@ -328,6 +330,26 @@ describe("official university profile evidence", () => {
         code: "38.05.01",
       }),
     );
+  });
+
+  it("adds RSUH full-time economic security after the official inventory resolved the degree conflict", () => {
+    const rows = getDirectoryDetails("rsuh")!.offerings.filter(
+      (row) =>
+        row.code === "38.05.01" &&
+        row.profile === "Экономическая безопасность хозяйствующего субъекта",
+    );
+    expect(
+      rows.map((row) => row.forms?.toLocaleLowerCase("ru")).sort(),
+    ).toEqual(["заочная", "очная"]);
+    expect(
+      rows.find((row) => row.forms?.toLocaleLowerCase("ru") === "очная"),
+    ).toMatchObject({
+      level: "Высшее образование - специалитет",
+      duration: "5 лет",
+      sourceUrl: "https://www.rsuh.ru/sveden/education/",
+      sourceYear: null,
+      admissionsStatus: "pending_review",
+    });
   });
   it("retains every reviewed October 20 gap fact with its own evidence and unknown intake", () => {
     const additions: Array<Required<DirectoryEnrichment>> = [
@@ -583,19 +605,28 @@ describe("official university profile evidence", () => {
     const profile = getDirectoryDetails("mipt")!;
     expect(profile.faculties).toHaveLength(8);
     expect(profile.fields.overview?.value).toContain("1951 году");
-    expect(profile.offerings).toHaveLength(207);
+    const originalOfferings = profile.offerings.filter(
+      (row) =>
+        row.sourceUrl === "https://mipt.ru/vikon/sveden/education/eduaccred/",
+    );
+    expect(originalOfferings).toHaveLength(207);
     expect(
-      new Set(profile.offerings.map((row) => row.sourceSection)).size,
+      new Set(originalOfferings.map((row) => row.sourceSection)).size,
     ).toBe(5);
-    for (const row of profile.offerings) {
-      expect(row.sourceUrl).toBe(
-        "https://mipt.ru/vikon/sveden/education/eduaccred/",
-      );
+    for (const row of originalOfferings) {
       expect(row.sourceYear).toBeNull();
       expect(row.admissionsStatus).toBe("pending_review");
       expect(row.forms).toBe("Очная");
       expect(row.duration).toMatch(/^(?:2|4|5,5|6)$/);
     }
+    const added = profile.offerings.filter(
+      (row) => row.sourceUrl === "https://mipt.ru/sveden/education/eduaccred",
+    );
+    expect(added).toHaveLength(2);
+    expect(added.every((row) => row.forms === "Очная")).toBe(true);
+    expect(
+      profile.offerings.some((row) => row.forms === "Не реализуется"),
+    ).toBe(false);
   });
 
   it("adds the selected RUDN bachelor inventory without inferring admissions", () => {
@@ -623,7 +654,7 @@ describe("official university profile evidence", () => {
       "https://misis.ru/applicants/accommodation/zaselenievobsh_ezhitiepervokusn/order/",
     );
     expect(profile.faculties).toHaveLength(10);
-    expect(profile.offerings).toHaveLength(285);
+    expect(profile.offerings).toHaveLength(303);
   });
 
   it("separates admissions contacts, accommodation types and redirected hosting pages", () => {
