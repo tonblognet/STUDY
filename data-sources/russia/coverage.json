@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T01:15:51.233Z",
+  "generatedAt": "2026-11-20T01:18:15.910Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
@@ -9,8 +9,8 @@
     "sourcedFields": 1466,
     "universitiesWithFaculties": 94,
     "faculties": 1005,
-    "universitiesWithEducationalListings": 119,
-    "educationalListings": 14588,
+    "universitiesWithEducationalListings": 134,
+    "educationalListings": 15598,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
@@ -3474,7 +3474,7 @@
       "officialWebsite": "https://masi.ru/",
       "sourcedFields": 7,
       "faculties": 3,
-      "educationalListings": 154,
+      "educationalListings": 249,
       "historicalEducationAreas": 14,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -3524,7 +3524,7 @@
       "officialWebsite": "https://misaoinst.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 22,
+      "educationalListings": 66,
       "historicalEducationAreas": 4,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -3549,7 +3549,7 @@
       "officialWebsite": "https://mi.university/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 144,
       "historicalEducationAreas": 10,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -3559,7 +3559,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4076,7 +4075,7 @@
       "officialWebsite": "https://mgusit.mossport.ru/",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 11,
+      "educationalListings": 12,
       "historicalEducationAreas": 6,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4153,7 +4152,7 @@
       "officialWebsite": "https://miepvuz.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 3,
       "historicalEducationAreas": 2,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4163,7 +4162,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4179,7 +4177,7 @@
       "officialWebsite": "https://mspi.moscow",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 22,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4190,7 +4188,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4263,7 +4260,7 @@
       "officialWebsite": "https://muppi.ru",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 70,
       "historicalEducationAreas": 4,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4274,7 +4271,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4290,7 +4286,7 @@
       "officialWebsite": "http://www.inpsycho.ru",
       "sourcedFields": 11,
       "faculties": 6,
-      "educationalListings": 93,
+      "educationalListings": 149,
       "historicalEducationAreas": 5,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4311,7 +4307,7 @@
       "officialWebsite": "https://www.noumei.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 106,
       "historicalEducationAreas": 4,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4321,7 +4317,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4337,7 +4332,7 @@
       "officialWebsite": "https://miiimel.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 8,
       "historicalEducationAreas": 2,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4347,7 +4342,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4390,7 +4384,7 @@
       "officialWebsite": "http://www.miepl.ru",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 14,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4401,7 +4395,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4553,7 +4546,7 @@
       "officialWebsite": "https://mitu.msk.ru",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 8,
+      "educationalListings": 9,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4680,7 +4673,7 @@
       "officialWebsite": "https://www.psycho.msk.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 10,
+      "educationalListings": 12,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4739,7 +4732,7 @@
       "officialWebsite": "https://www.miu-edu.ru/",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 114,
       "historicalEducationAreas": 8,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4750,7 +4743,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5192,7 +5184,7 @@
       "officialWebsite": "https://mosconsv.ru/",
       "sourcedFields": 7,
       "faculties": 6,
-      "educationalListings": 0,
+      "educationalListings": 35,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5202,7 +5194,6 @@
         "admissionsEmail",
         "hostelInfo",
         "overview",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5324,7 +5315,7 @@
       "officialWebsite": "https://www.mpgu.su/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 49,
+      "educationalListings": 68,
       "historicalEducationAreas": 20,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5825,7 +5816,7 @@
       "officialWebsite": "http://www.mstuca.ru",
       "sourcedFields": 7,
       "faculties": 4,
-      "educationalListings": 32,
+      "educationalListings": 53,
       "historicalEducationAreas": 6,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5850,7 +5841,7 @@
       "officialWebsite": "http://www.miigaik.ru",
       "sourcedFields": 9,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 50,
       "historicalEducationAreas": 9,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5859,7 +5850,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5875,7 +5865,7 @@
       "officialWebsite": "http://mgutm.ru",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 5,
       "historicalEducationAreas": 21,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5886,7 +5876,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5951,7 +5940,7 @@
       "officialWebsite": "http://www.mgri.ru",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 125,
       "historicalEducationAreas": 9,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5961,7 +5950,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -6253,7 +6241,7 @@
       "officialWebsite": "http://www.miu.su",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 8,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -6263,7 +6251,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -6279,7 +6266,7 @@
       "officialWebsite": "http://www.mosap.ru",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 58,
       "historicalEducationAreas": 7,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -6289,7 +6276,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -6361,7 +6347,7 @@
       "officialWebsite": "https://mmu.reaviz.ru",
       "sourcedFields": 5,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 9,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -6374,7 +6360,6 @@
         "email",
         "hostelInfo",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
