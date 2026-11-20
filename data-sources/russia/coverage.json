@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T01:18:15.910Z",
+  "generatedAt": "2026-11-20T01:20:53.763Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
@@ -9,8 +9,8 @@
     "sourcedFields": 1466,
     "universitiesWithFaculties": 94,
     "faculties": 1005,
-    "universitiesWithEducationalListings": 134,
-    "educationalListings": 15598,
+    "universitiesWithEducationalListings": 143,
+    "educationalListings": 17993,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
@@ -2227,28 +2227,6 @@
       "officialWebsite": "https://mvoku.mil.ru/"
     },
     {
-      "slug": "miet",
-      "name": "Национальный исследовательский университет \"Московский институт электронной техники",
-      "city": "Зеленоград",
-      "missing": [
-        "fullName",
-        "shortName",
-        "regDate",
-        "address",
-        "telephone",
-        "email",
-        "admissionsUrl",
-        "admissionsPhone",
-        "admissionsEmail",
-        "hostelInfo",
-        "overview",
-        "faculties",
-        "educationalListings",
-        "admissionPrograms"
-      ],
-      "officialWebsite": "http://www.miet.ru"
-    },
-    {
       "slug": "rgsu",
       "name": "Российский государственный социальный университет",
       "city": "Москва",
@@ -2269,28 +2247,6 @@
         "admissionPrograms"
       ],
       "officialWebsite": "https://rgsu.net"
-    },
-    {
-      "slug": "rosunimed",
-      "name": "Российский университет медицины\" Министерства здравоохранения Российской Федерации",
-      "city": "Москва",
-      "missing": [
-        "fullName",
-        "shortName",
-        "regDate",
-        "address",
-        "telephone",
-        "email",
-        "admissionsUrl",
-        "admissionsPhone",
-        "admissionsEmail",
-        "hostelInfo",
-        "overview",
-        "faculties",
-        "educationalListings",
-        "admissionPrograms"
-      ],
-      "officialWebsite": "https://www.rosunimed.ru"
     },
     {
       "slug": "au-mvd",
@@ -2459,6 +2415,48 @@
         "admissionPrograms"
       ],
       "officialWebsite": "https://www.mf.rmat.ru/"
+    },
+    {
+      "slug": "miet",
+      "name": "Национальный исследовательский университет \"Московский институт электронной техники",
+      "city": "Зеленоград",
+      "missing": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "address",
+        "telephone",
+        "email",
+        "admissionsUrl",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "http://www.miet.ru"
+    },
+    {
+      "slug": "rosunimed",
+      "name": "Российский университет медицины\" Министерства здравоохранения Российской Федерации",
+      "city": "Москва",
+      "missing": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "address",
+        "telephone",
+        "email",
+        "admissionsUrl",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.rosunimed.ru"
     },
     {
       "slug": "univerproc",
@@ -2765,10 +2763,7 @@
       "admissionPrograms": 85,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "email",
-        "overview"
-      ]
+      "missing": ["email", "overview"]
     },
     {
       "slug": "rea",
@@ -2787,11 +2782,7 @@
       "admissionPrograms": 1,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsEmail",
-        "overview",
-        "faculties"
-      ]
+      "missing": ["admissionsEmail", "overview", "faculties"]
     },
     {
       "slug": "bmstu",
@@ -2875,11 +2866,7 @@
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsEmail",
-        "overview",
-        "faculties"
-      ]
+      "missing": ["admissionsEmail", "overview", "faculties"]
     },
     {
       "slug": "sechenov",
@@ -2898,10 +2885,7 @@
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsPhone",
-        "overview"
-      ]
+      "missing": ["admissionsPhone", "overview"]
     },
     {
       "slug": "gubkin",
@@ -2952,10 +2936,7 @@
       "admissionPrograms": 4,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsPhone",
-        "overview"
-      ]
+      "missing": ["admissionsPhone", "overview"]
     },
     {
       "slug": "muctr",
@@ -2974,11 +2955,7 @@
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsPhone",
-        "admissionsEmail",
-        "overview"
-      ]
+      "missing": ["admissionsPhone", "admissionsEmail", "overview"]
     },
     {
       "slug": "rsuh",
@@ -2997,9 +2974,7 @@
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview"
-      ]
+      "missing": ["overview"]
     },
     {
       "slug": "fa",
@@ -3018,10 +2993,7 @@
       "admissionPrograms": 10,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview"
-      ]
+      "missing": ["hostelInfo", "overview"]
     },
     {
       "slug": "mospolytech",
@@ -3040,10 +3012,7 @@
       "admissionPrograms": 10,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview"
-      ]
+      "missing": ["hostelInfo", "overview"]
     },
     {
       "slug": "sfi",
@@ -3574,7 +3543,7 @@
       "officialWebsite": "https://nibmoscow.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 21,
       "historicalEducationAreas": 2,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -3584,7 +3553,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -3625,7 +3593,7 @@
       "officialWebsite": "https://ouep.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 12,
+      "educationalListings": 59,
       "historicalEducationAreas": 5,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -3707,10 +3675,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "umc",
@@ -3892,7 +3857,7 @@
       "officialWebsite": "https://rosnou.ru/",
       "sourcedFields": 7,
       "faculties": 6,
-      "educationalListings": 51,
+      "educationalListings": 331,
       "historicalEducationAreas": 13,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -3917,7 +3882,7 @@
       "officialWebsite": "https://raa.ru/",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 18,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -3928,7 +3893,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -3995,16 +3959,12 @@
       "officialWebsite": "https://www.mfua.ru/",
       "sourcedFields": 9,
       "faculties": 22,
-      "educationalListings": 131,
+      "educationalListings": 258,
       "historicalEducationAreas": 6,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsEmail",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["admissionsEmail", "overview", "admissionPrograms"]
     },
     {
       "slug": "mguu",
@@ -4057,11 +4017,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "mgusit",
@@ -4291,9 +4247,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionPrograms"
-      ]
+      "missing": ["admissionPrograms"]
     },
     {
       "slug": "moscow-1973",
@@ -4463,7 +4417,7 @@
       "officialWebsite": "https://www.mpsu.ru/",
       "sourcedFields": 7,
       "faculties": 8,
-      "educationalListings": 86,
+      "educationalListings": 132,
       "historicalEducationAreas": 4,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4488,17 +4442,12 @@
       "officialWebsite": "https://mti.moscow/",
       "sourcedFields": 10,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 74,
       "historicalEducationAreas": 9,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "faculties",
-        "educationalListings",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "faculties", "admissionPrograms"]
     },
     {
       "slug": "shaninka",
@@ -4621,7 +4570,7 @@
       "officialWebsite": "https://lawacademy.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 19,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4631,7 +4580,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4758,15 +4706,12 @@
       "officialWebsite": "http://www.mtuci.ru",
       "sourcedFields": 10,
       "faculties": 5,
-      "educationalListings": 93,
+      "educationalListings": 397,
       "historicalEducationAreas": 9,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "sretenskaya",
@@ -4831,7 +4776,7 @@
       "officialWebsite": "https://doctorantura.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 10,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4841,7 +4786,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4883,7 +4827,7 @@
       "officialWebsite": "http://www.mhpidesign.ru",
       "sourcedFields": 8,
       "faculties": 1,
-      "educationalListings": 1,
+      "educationalListings": 21,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4932,7 +4876,7 @@
       "officialWebsite": "http://www.miet.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 90,
       "historicalEducationAreas": 15,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -4950,7 +4894,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -4971,11 +4914,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "miit",
@@ -5120,10 +5059,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "guu",
@@ -5142,10 +5078,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "litinstitut",
@@ -5298,10 +5231,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "mpgu",
@@ -5340,16 +5270,12 @@
       "officialWebsite": "http://www.mgsu.ru",
       "sourcedFields": 9,
       "faculties": 9,
-      "educationalListings": 119,
+      "educationalListings": 462,
       "historicalEducationAreas": 9,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "glazunov",
@@ -5389,7 +5315,7 @@
       "officialWebsite": "https://rgiis.ru/",
       "sourcedFields": 8,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 10,
       "historicalEducationAreas": 4,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5399,7 +5325,6 @@
         "admissionsEmail",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5442,7 +5367,7 @@
       "officialWebsite": "http://www.timacad.ru",
       "sourcedFields": 7,
       "faculties": 7,
-      "educationalListings": 239,
+      "educationalListings": 304,
       "historicalEducationAreas": 17,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5472,11 +5397,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "rosunimed",
@@ -5490,7 +5411,7 @@
       "officialWebsite": "https://www.rosunimed.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 27,
       "historicalEducationAreas": 6,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -5508,7 +5429,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -5529,10 +5449,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "shchukin",
@@ -5601,11 +5518,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "rpa",
@@ -5658,10 +5571,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "pushkin",
@@ -5680,10 +5590,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "ippolitovka",
@@ -5722,15 +5629,12 @@
       "officialWebsite": "http://www.mirea.ru",
       "sourcedFields": 10,
       "faculties": 7,
-      "educationalListings": 197,
+      "educationalListings": 849,
       "historicalEducationAreas": 24,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "mgavm",
@@ -5749,11 +5653,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "balletacademy",
@@ -5799,10 +5699,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "mstuca",
@@ -5846,12 +5743,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "faculties",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "faculties", "admissionPrograms"]
     },
     {
       "slug": "mgutm",
@@ -5891,17 +5783,12 @@
       "officialWebsite": "http://www.gnesin-academy.ru",
       "sourcedFields": 8,
       "faculties": 9,
-      "educationalListings": 70,
+      "educationalListings": 181,
       "historicalEducationAreas": 2,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "regDate",
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["regDate", "hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "rosbiotech",
@@ -5999,7 +5886,7 @@
       "officialWebsite": "https://rgup.ru/",
       "sourcedFields": 7,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 95,
       "historicalEducationAreas": 2,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -6010,7 +5897,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -6105,15 +5991,12 @@
       "officialWebsite": "https://rgust.ru/",
       "sourcedFields": 10,
       "faculties": 8,
-      "educationalListings": 52,
+      "educationalListings": 78,
       "historicalEducationAreas": 11,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "moscow-110186",
@@ -6132,12 +6015,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "faculties",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "faculties", "admissionPrograms"]
     },
     {
       "slug": "moscow-110229",
@@ -6218,16 +6096,12 @@
       "officialWebsite": "http://pstgu.ru",
       "sourcedFields": 9,
       "faculties": 6,
-      "educationalListings": 49,
+      "educationalListings": 59,
       "historicalEducationAreas": 11,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "miu",
@@ -6329,11 +6203,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "mmu-reaviz",
@@ -10183,10 +10053,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-10006747",
@@ -11046,11 +10913,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "educationalListings",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "educationalListings", "admissionPrograms"]
     },
     {
       "slug": "russia-111233",
@@ -14621,9 +14484,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionPrograms"
-      ]
+      "missing": ["admissionPrograms"]
     },
     {
       "slug": "russia-110421",
@@ -15720,10 +15581,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-1991",
@@ -15844,11 +15702,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "russia-1757",
@@ -17094,10 +16948,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-12012800",
@@ -20725,11 +20576,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsEmail",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["admissionsEmail", "overview", "admissionPrograms"]
     },
     {
       "slug": "russia-12012733",
@@ -24692,10 +24539,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-10000487",
@@ -24816,10 +24660,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-270",
@@ -24872,10 +24713,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-1719",
@@ -25506,11 +25344,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsEmail",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["admissionsEmail", "overview", "admissionPrograms"]
     },
     {
       "slug": "russia-1576",
@@ -32767,11 +32601,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "educationalListings",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "educationalListings", "admissionPrograms"]
     },
     {
       "slug": "russia-10006657",
@@ -36418,10 +36248,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-1854",
@@ -36508,10 +36335,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-293",
@@ -37814,10 +37638,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-306",
@@ -37836,11 +37657,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "russia-1760",
@@ -38870,10 +38687,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["overview", "admissionPrograms"]
     },
     {
       "slug": "russia-1704",
@@ -41362,11 +41176,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "russia-342",
@@ -41385,11 +41195,7 @@
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "hostelInfo",
-        "overview",
-        "admissionPrograms"
-      ]
+      "missing": ["hostelInfo", "overview", "admissionPrograms"]
     },
     {
       "slug": "russia-12012922",
