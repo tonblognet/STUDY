@@ -36,6 +36,7 @@ Usage:
   python -X utf8 scripts/sveden_extract.py --all --workers 8
   python -X utf8 scripts/sveden_extract.py --queue 50 --offline   rebuild from cache
   python -X utf8 scripts/sveden_extract.py hse --apply       merge accepted reviews
+  python -X utf8 scripts/sveden_extract.py hse --offline --apply --reuse-reviews
 """
 
 import argparse
@@ -887,30 +888,68 @@ def existing_offerings(slugs, root=ROOT):
     return result
 
 
-def apply_reviews(slugs, cache, output, existing=None):
+def load_cached_review(slug, path):
+    """Validate an offline-rebuilt review against the response metadata and bytes."""
+    try:
+        if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+            raise ValueError("invalid university slug")
+        review = json.loads(path.read_text(encoding="utf-8"))
+        hashes = {}
+        for source in review["sources"]:
+            body = source["bodyPath"]
+            if not re.fullmatch(r"[0-9a-f]{16}\.body", body) or {"extractText", "textPath"} & source.keys():
+                raise ValueError("expected a local extractor response body")
+            metadata = json.loads((path.parent / body).with_suffix(".meta.json").read_text(encoding="utf-8"))
+            if metadata.get("error") or any(metadata.get(key) != source.get(key) for key in ("url", "bodyPath", "encoding", "checkedAt")):
+                raise ValueError("cached response metadata does not match review: " + body)
+            hashes[source["id"]] = metadata["sourceSha256"]
+        profile, sources = IMPORTER.build_profile(slug, review, path.parent)
+        for source in sources:
+            if source["sourceSha256"] != hashes[source["id"].split(":", 1)[1]]:
+                raise ValueError("cached response SHA-256 mismatch: " + source["url"])
+    except (AttributeError, KeyError, OSError, TypeError, ValueError) as error:
+        raise ValueError(f"Cannot reuse cached review for {slug}: {error}") from error
+    return review, profile, sources
+
+
+def write_daily(output, daily):
+    output.parent.mkdir(parents=True, exist_ok=True)
+    temporary = output.with_suffix(output.suffix + ".tmp")
+    temporary.write_text(json.dumps(daily, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(output)
+
+
+def apply_reviews(slugs, cache, output, existing=None, *, reuse_reviews=False):
     daily = json.loads(output.read_text(encoding="utf-8")) if output.exists() else None
     already_applied = {profile["universitySlug"] for profile in daily["profiles"]} if daily else set()
-    ready = [slug for slug in dict.fromkeys(slugs) if slug not in already_applied and (cache / slug / "review.json").exists()]
+    ready = [slug for slug in dict.fromkeys(slugs) if slug not in already_applied and (reuse_reviews or (cache / slug / "review.json").exists())]
+    rebuilt = {slug: load_cached_review(slug, cache / slug / "review.json") for slug in ready} if reuse_reviews else {}
     if existing is None:
         existing = existing_offerings(ready) if ready else {}
     applied = []
     for slug in ready:
         path = cache / slug / "review.json"
-        review = json.loads(path.read_text(encoding="utf-8"))
+        if reuse_reviews:
+            review, profile, sources = rebuilt[slug]
+            data = profile
+        else:
+            review = json.loads(path.read_text(encoding="utf-8"))
+            data = review["profile"]
         known = {program_key(*row) for row in existing.get(slug, [])}
-        offerings = review["profile"]["offerings"]
+        offerings = data["offerings"]
         fresh = [row for row in offerings if program_key(row["code"], row["title"], row["profile"], row["forms"]) not in known]
         if len(fresh) < len(offerings):
-            review["profile"]["offerings"] = fresh
+            data["offerings"] = fresh
             review["issues"].append({"kind": "offerings_already_in_catalog", "count": len(offerings) - len(fresh),
                                      "note": "Строки, которые карточка уже показывает (то же направление, профиль и форма), не добавлены повторно."})
-        profile, sources = IMPORTER.build_profile(slug, review, path.parent)
+        if not reuse_reviews:
+            profile, sources = IMPORTER.build_profile(slug, review, path.parent)
         daily = IMPORTER.merge_daily(daily, slug, review, profile, sources)
-        output.parent.mkdir(parents=True, exist_ok=True)
-        temporary = output.with_suffix(output.suffix + ".tmp")
-        temporary.write_text(json.dumps(daily, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        temporary.replace(output)
+        if not reuse_reviews:
+            write_daily(output, daily)
         applied.append(slug)
+    if reuse_reviews and applied:
+        write_daily(output, daily)
     return applied
 
 
@@ -928,8 +967,20 @@ def main():
     parser.add_argument("--no-proxy", action="store_true", help="bypass HTTP(S)_PROXY for university sites")
     parser.add_argument("--cache-dir", type=Path, default=CACHE)
     parser.add_argument("--apply", action="store_true", help="merge accepted reviews via fill_university.py")
+    parser.add_argument("--reuse-reviews", action="store_true", help="verify and apply already rebuilt offline reviews without extracting pages again")
     parser.add_argument("--output", type=Path, help="daily file for --apply")
     args = parser.parse_args()
+
+    if args.reuse_reviews:
+        if not (args.offline and args.apply and args.slugs) or args.all or args.queue is not None or args.refresh:
+            parser.error("--reuse-reviews requires explicit slugs with --offline --apply")
+        output = args.output or ROOT / f"data-sources/russia/fill-{IMPORTER.moscow_batch_date()}.json"
+        try:
+            applied = apply_reviews(args.slugs, args.cache_dir, output, reuse_reviews=True)
+        except (OSError, RuntimeError, ValueError) as error:
+            parser.exit(1, f"{error}\n")
+        print("applied:", ", ".join(applied) or "nothing", "→", output)
+        return
 
     slugs = list(args.slugs)
     if args.queue or args.all:

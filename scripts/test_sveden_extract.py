@@ -190,6 +190,29 @@ class SvedenReaderTests(unittest.TestCase):
         self.assertEqual(reader.apply_reviews([SLUG], self.cache, output, existing=known), [])
         self.assertEqual(output.read_bytes(), original)
 
+    def test_reuse_verified_reviews_matches_regular_apply(self):
+        output = self.cache / "fill-test.json"
+        reused = self.cache / "fill-reused.json"
+        known = {SLUG: [["40.03.01", "Юриспруденция", "Гражданское право", "очная"]]}
+        reader.apply_reviews([SLUG], self.cache, output, existing=known)
+        self.assertEqual(reader.apply_reviews([SLUG], self.cache, reused, existing=known, reuse_reviews=True), [SLUG])
+        self.assertEqual(reused.read_bytes(), output.read_bytes())
+        self.assertEqual(reader.apply_reviews([SLUG], self.cache, reused, existing=known, reuse_reviews=True), [])
+
+    def test_reuse_fails_entire_batch_if_review_is_missing(self):
+        output = self.cache / "fill-test.json"
+        with self.assertRaisesRegex(ValueError, "Cannot reuse cached review for missing"):
+            reader.apply_reviews([SLUG, "missing"], self.cache, output, existing={}, reuse_reviews=True)
+        self.assertFalse(output.exists())
+
+    def test_reuse_rejects_body_tampering_even_when_literals_survive(self):
+        output = self.cache / "fill-test.json"
+        body = self.cache / SLUG / self.review["sources"][0]["bodyPath"]
+        body.write_bytes(body.read_bytes() + b"<!-- changed body -->")
+        with self.assertRaisesRegex(ValueError, "cached response SHA-256 mismatch"):
+            reader.apply_reviews([SLUG], self.cache, output, existing={}, reuse_reviews=True)
+        self.assertFalse(output.exists())
+
     def test_undated_facts_survive_as_evidence_even_without_offerings(self):
         common_url = SITE + "/sveden/common/"
         struct_url = SITE + "/sveden/struct/"
