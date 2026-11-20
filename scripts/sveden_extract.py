@@ -67,6 +67,7 @@ MOSCOW = timezone(timedelta(hours=3))
 FIELD_PROPS = ("fullName", "shortName", "regDate", "address", "telephone", "email")
 EDU_PROPS = ("eduCode", "eduName", "eduProf", "eduLevel", "eduForm", "learningTerm", "eduNorm", "eduSrok")
 DURATION_PROPS = ("learningTerm", "eduNorm", "eduSrok")
+STUDY_FORMS = {"очная", "заочная", "очно-заочная"}
 # Rows that repeat program codes but describe students, admission results or jobs.
 STATS_ROW_PROPS = {"eduChislen", "eduPriem", "eduPerevod", "graduateJob", "eduPr", "eduPrac", "eduNir"}
 STATS_HEADER = re.compile(r"численност|трудоустройств|результат\w* при[её]ма|перевод\w*.{0,20}восстановлен|вакантн", re.I)
@@ -99,6 +100,12 @@ def node_text(node):
 
 def usable(value):
     return bool(value) and clean(value).casefold() not in EMPTY_VALUES and "�" not in value and "​" not in value
+
+
+def explicitly_not_delivered(forms):
+    return clean(forms or "").casefold().removesuffix(".") in {
+        "не реализуется", "не реализуются", "не осуществляется", "не осуществляются",
+    }
 
 
 def load_importer():
@@ -550,7 +557,11 @@ def education_rows(doc, page_url, issues):
 def deduplicate(rows, issues):
     """Same program identity with different literal levels is excluded entirely."""
     groups = {}
+    non_delivery = []
     for row, locator in rows:
+        if explicitly_not_delivered(row["forms"]):
+            non_delivery.append((row, locator))
+            continue
         key = tuple(clean(row.get(k) or "").casefold().replace("ё", "е") for k in ("code", "title", "profile", "forms"))
         groups.setdefault(key, []).append((row, locator))
     kept = []
@@ -564,7 +575,7 @@ def deduplicate(rows, issues):
         if len(durations) > 1:
             row["duration"] = None
         kept.append((row, locator))
-    return drop_subsumed(kept, issues)
+    return drop_subsumed(kept, issues) + non_delivery
 
 
 def drop_subsumed(rows, issues):
@@ -729,6 +740,15 @@ def collect(slug, university, fetcher, max_pages=25):
     return (review if review["sources"] else None), report
 
 
+def source_evidence(source):
+    return {"sourceUrl": source["url"], **{key: source[key] for key in ("sourceYear", "checkedAt", "sourceSha256")}}
+
+
+def non_delivery_issue(row):
+    keys = ("code", "title", "profile", "level", "forms", "sourceSection", "sourceUrl", "sourceYear", "checkedAt", "sourceSha256")
+    return {"kind": "offering_not_delivered", **{key: row[key] for key in keys}}
+
+
 def assemble(slug, base, sources, fields, facs, offerings, issues):
     """Keep only literals the importer will find, then let the importer confirm."""
     def present(source, *values):
@@ -738,13 +758,8 @@ def assemble(slug, base, sources, fields, facs, offerings, issues):
     evidence_sources = set()
 
     def retain_undated(source_id, **fact):
-        source = sources[source_id]
         evidence_sources.add(source_id)
-        issues.append({
-            "kind": "directory_fact_without_source_year", **fact,
-            "sourceUrl": source["url"], "sourceYear": None,
-            "checkedAt": source["checkedAt"], "sourceSha256": source["sourceSha256"],
-        })
+        issues.append({"kind": "directory_fact_without_source_year", **fact, **source_evidence(sources[source_id])})
 
     profile = {"fields": {}, "faculties": [], "offerings": []}
     for key, row in fields.items():
@@ -764,10 +779,14 @@ def assemble(slug, base, sources, fields, facs, offerings, issues):
         else:
             profile["faculties"].append({k: row[k] for k in ("name", "url", "source", "sourceSection")})
     for row, locator in offerings:
-        if present(row["source"], row["code"], row["title"], row["level"], row["profile"], row["forms"], row["duration"]):
-            profile["offerings"].append(row)
-        else:
+        source = row["source"]
+        if not present(source, row["code"], row["title"], row["level"], row["profile"], row["forms"], row["duration"]):
             issues.append({"kind": "literal_not_visible_excluded", **locator})
+        elif explicitly_not_delivered(row["forms"]):
+            evidence_sources.add(source)
+            issues.append({**non_delivery_issue({**row, **source_evidence(sources[source])}), "xpath": locator["xpath"]})
+        else:
+            profile["offerings"].append(row)
     used = {row["source"] for row in list(profile["fields"].values()) + profile["faculties"] + profile["offerings"]}
     used.update(evidence_sources)
     review = {
@@ -788,7 +807,7 @@ def assemble(slug, base, sources, fields, facs, offerings, issues):
 
 # Kept one by one in the catalog file; every other exclusion is only counted
 # there and stays row by row in tmp/sveden/<slug>/extract-report.json.
-EDITOR_ISSUES = {"hostel_microdata", "field_additional_values", "directory_fact_without_source_year", "importer_literal_rejected"}
+EDITOR_ISSUES = {"hostel_microdata", "field_additional_values", "directory_fact_without_source_year", "importer_literal_rejected", "offering_not_delivered"}
 
 
 def compact_issues(issues):
@@ -863,6 +882,13 @@ def program_key(code, title, profile, forms):
     return (code, norm(title), norm(profile), norm(forms))
 
 
+def covered_aggregate_form(key, known):
+    if ";" not in key[-1]:
+        return False
+    forms = {clean(form) for form in key[-1].split(";")}
+    return len(forms) > 1 and forms <= STUDY_FORMS and all((*key[:-1], form) in known for form in forms)
+
+
 def existing_offerings(slugs, root=ROOT):
     """Listings the catalog already shows, read through the real TS loader."""
     script = root / "tmp/sveden-existing.ts"
@@ -932,16 +958,34 @@ def apply_reviews(slugs, cache, output, existing=None, *, reuse_reviews=False):
         if reuse_reviews:
             review, profile, sources = rebuilt[slug]
             data = profile
+            delivered = []
+            for row in data["offerings"]:
+                if explicitly_not_delivered(row["forms"]):
+                    review["issues"].append(non_delivery_issue(row))
+                else:
+                    delivered.append(row)
+            data["offerings"] = delivered
         else:
             review = json.loads(path.read_text(encoding="utf-8"))
             data = review["profile"]
         known = {program_key(*row) for row in existing.get(slug, [])}
         offerings = data["offerings"]
-        fresh = [row for row in offerings if program_key(row["code"], row["title"], row["profile"], row["forms"]) not in known]
+        programs = [(row, program_key(row["code"], row["title"], row["profile"], row["forms"])) for row in offerings]
+        separate_forms = known | {key for _, key in programs if key[-1] in STUDY_FORMS}
+        fresh = []
+        aggregate_count = 0
+        for row, key in programs:
+            if key in known:
+                continue
+            if covered_aggregate_form(key, separate_forms):
+                aggregate_count += 1
+                continue
+            fresh.append(row)
         if len(fresh) < len(offerings):
             data["offerings"] = fresh
             review["issues"].append({"kind": "offerings_already_in_catalog", "count": len(offerings) - len(fresh),
-                                     "note": "Строки, которые карточка уже показывает (то же направление, профиль и форма), не добавлены повторно."})
+                                     "aggregateCount": aggregate_count,
+                                     "note": "Повторные строки пропущены, включая объединённые формы, уже представленные отдельно у того же направления и профиля."})
         if not reuse_reviews:
             profile, sources = IMPORTER.build_profile(slug, review, path.parent)
         daily = IMPORTER.merge_daily(daily, slug, review, profile, sources)

@@ -65,6 +65,9 @@ EDUOP = f"""<html><head><meta charset="utf-8"></head><body><h1>Реализуе�
 <tr itemprop="eduOp"><td itemprop="eduCode">21.05.04</td><td itemprop="eduName">Горное дело</td><td itemprop="eduLevel">Высшее образование — специалитет, магистратура</td><td itemprop="eduProf">Подземная разработка</td><td itemprop="eduForm">очная</td><td itemprop="learningTerm">5,5 лет</td></tr>
 </table></body></html>"""
 
+NON_DELIVERY_ROW = """<tr itemprop="eduOp"><td itemprop="eduCode">40.03.01</td><td itemprop="eduName">Юриспруденция</td><td itemprop="eduLevel">высшее образование — бакалавриат</td><td itemprop="eduProf">Гражданское право</td><td itemprop="eduForm">Не реализуется</td></tr>"""
+EDUOP_WITH_NON_DELIVERY = EDUOP.replace("</table>", NON_DELIVERY_ROW + "</table>", 1)
+
 OBJECTS = f"""<html><head><meta charset="utf-8"></head><body><h1>Материально-техническое обеспечение</h1>{FILLER}
 <table><tr itemprop="hostelInfo"><td>Общежития</td><td itemprop="hostelNum">3</td><td itemprop="hostelLs">1200</td></tr></table></body></html>"""
 
@@ -213,6 +216,57 @@ class SvedenReaderTests(unittest.TestCase):
             reader.apply_reviews([SLUG], self.cache, output, existing={}, reuse_reviews=True)
         self.assertFalse(output.exists())
 
+    def test_non_delivery_is_evidence_and_a_real_form_survives(self):
+        url = SITE + "/sveden/education/eduop/"
+        seed_cache(self.cache, {url: (EDUOP_WITH_NON_DELIVERY, "utf-8")})
+        reader.run_one(SLUG, {SLUG: UNIVERSITY}, self.fetcher, max_pages=10)
+        review_path = self.cache / SLUG / "review.json"
+        review = json.loads(review_path.read_text(encoding="utf-8"))
+        forms = [row["forms"] for row in review["profile"]["offerings"] if row["profile"] == "Гражданское право"]
+        self.assertEqual(forms, ["очная"])
+        note = next(i for i in review["issues"] if i["kind"] == "offering_not_delivered")
+        self.assertEqual((note["forms"], note["sourceUrl"], note["checkedAt"]), ("Не реализуется", url, CHECKED_AT))
+        self.assertEqual(note["sourceSha256"], hashlib.sha256(EDUOP_WITH_NON_DELIVERY.encode("utf-8")).hexdigest())
+        self.assertIsNone(note["sourceYear"])
+        self.assertTrue(note["xpath"].startswith("/html/body"))
+
+    def test_reuse_validates_and_prunes_older_non_delivery_rows(self):
+        url = SITE + "/sveden/education/eduop/"
+        seed_cache(self.cache, {url: (EDUOP_WITH_NON_DELIVERY, "utf-8")})
+        reader.run_one(SLUG, {SLUG: UNIVERSITY}, self.fetcher, max_pages=10)
+        review_path = self.cache / SLUG / "review.json"
+        review = json.loads(review_path.read_text(encoding="utf-8"))
+        review["issues"] = [i for i in review["issues"] if i["kind"] != "offering_not_delivered"]
+        existing = next(row for row in review["profile"]["offerings"] if row["profile"] == "Гражданское право")
+        review["profile"]["offerings"].append({**existing, "forms": "Не реализуется", "duration": None})
+        review_path.write_text(json.dumps(review, ensure_ascii=False), encoding="utf-8")
+        output = self.cache / "fill-test.json"
+        reader.apply_reviews([SLUG], self.cache, output, existing={}, reuse_reviews=True)
+        daily = json.loads(output.read_text(encoding="utf-8"))
+        self.assertEqual(len(daily["profiles"][0]["offerings"]), 5)
+        note = next(i for i in daily["issues"] if i["kind"] == "offering_not_delivered")
+        self.assertEqual(note["sourceUrl"], url)
+        self.assertEqual(note["sourceSha256"], hashlib.sha256(EDUOP_WITH_NON_DELIVERY.encode("utf-8")).hexdigest())
+
+    def test_combined_forms_require_all_exact_program_forms_before_skipping(self):
+        url = SITE + "/sveden/education/eduop/"
+        aggregate = NON_DELIVERY_ROW.replace("Не реализуется", "очная; заочная")
+        page = EDUOP.replace("</table>", aggregate + "</table>", 1)
+        seed_cache(self.cache, {url: (page, "utf-8")})
+        reader.run_one(SLUG, {SLUG: UNIVERSITY}, self.fetcher, max_pages=10)
+        partial = self.cache / "fill-partial.json"
+        reader.apply_reviews([SLUG], self.cache, partial, existing={}, reuse_reviews=True)
+        first_pass = json.loads(partial.read_text(encoding="utf-8"))
+        self.assertIn("очная; заочная", {row["forms"] for row in first_pass["profiles"][0]["offerings"]})
+
+        complete = self.cache / "fill-complete.json"
+        known = {SLUG: [["40.03.01", "Юриспруденция", "Гражданское право", "Заочная"]]}
+        reader.apply_reviews([SLUG], self.cache, complete, existing=known, reuse_reviews=True)
+        second_pass = json.loads(complete.read_text(encoding="utf-8"))
+        civil_law = [row["forms"] for row in second_pass["profiles"][0]["offerings"] if row["profile"] == "Гражданское право"]
+        self.assertEqual(civil_law, ["очная"])
+        self.assertEqual(next(i for i in second_pass["issues"] if i["kind"] == "offerings_already_in_catalog")["aggregateCount"], 1)
+
     def test_undated_facts_survive_as_evidence_even_without_offerings(self):
         common_url = SITE + "/sveden/common/"
         struct_url = SITE + "/sveden/struct/"
@@ -302,6 +356,11 @@ class FakeNetworkTests(unittest.TestCase):
 
 
 class HelperTests(unittest.TestCase):
+    def test_non_delivery_marker_must_be_the_entire_form(self):
+        self.assertTrue(reader.explicitly_not_delivered("  НЕ РЕАЛИЗУЕТСЯ.  "))
+        self.assertFalse(reader.explicitly_not_delivered("очная; заочная не реализуется"))
+        self.assertFalse(reader.explicitly_not_delivered(None))
+
     def test_long_official_labels_and_standard_paths_are_followed(self):
         page = lxml_html.fromstring("""<html><body>
           <a href="/sveden/education/eduop">Информация о реализуемых образовательных программах с указанием учебных предметов, практики, методических материалов</a>
