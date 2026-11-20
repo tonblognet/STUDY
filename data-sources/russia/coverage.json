@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-20T00:53:03.315Z",
+  "generatedAt": "2026-11-20T00:55:43.006Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
     "universitiesWithFields": 192,
-    "sourcedFields": 1460,
+    "sourcedFields": 1466,
     "universitiesWithFaculties": 94,
     "faculties": 1005,
-    "universitiesWithEducationalListings": 98,
-    "educationalListings": 11325,
+    "universitiesWithEducationalListings": 99,
+    "educationalListings": 11491,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
@@ -2759,23 +2759,16 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1725",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://www.msu.ru",
-      "sourcedFields": 3,
+      "sourcedFields": 9,
       "faculties": 41,
-      "educationalListings": 0,
+      "educationalListings": 166,
       "historicalEducationAreas": 26,
       "admissionPrograms": 85,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
       "missing": [
-        "fullName",
-        "shortName",
-        "regDate",
-        "address",
-        "telephone",
         "email",
-        "hostelInfo",
-        "overview",
-        "educationalListings"
+        "overview"
       ]
     },
     {

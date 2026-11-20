@@ -74,6 +74,20 @@ describe("official university profile evidence", () => {
     );
   });
 
+  it("loads the undated MSU education inventory separately from admissions", () => {
+    const profile = getDirectoryDetails("mgu")!;
+    expect(profile.fields.regDate?.value).toBe("25 января 1755 года");
+    expect(profile.offerings).toHaveLength(166);
+    expect(
+      profile.offerings.every(
+        (row) =>
+          row.sourceYear === null &&
+          row.admissionsStatus === "pending_review" &&
+          row.sourceUrl === "https://msu.ru/sveden/education/sd.pdf",
+      ),
+    ).toBe(true);
+  });
+
   it("preserves the reviewed official overview and its exact snapshot provenance", () => {
     const sources = overviewSourceReview.sources;
     expect(overviewSourceReview.universities.map((row) => row.slug)).toEqual([
