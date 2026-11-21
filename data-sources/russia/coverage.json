@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-21T17:15:07.290Z",
+  "generatedAt": "2026-11-21T17:30:16.485Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
     "universitiesWithFields": 194,
-    "sourcedFields": 1502,
+    "sourcedFields": 1505,
     "universitiesWithFaculties": 98,
     "faculties": 1063,
     "universitiesWithEducationalListings": 176,
@@ -2899,14 +2899,14 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=223",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://www.muctr.ru",
-      "sourcedFields": 8,
+      "sourcedFields": 11,
       "faculties": 11,
       "educationalListings": 433,
       "historicalEducationAreas": 14,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": ["admissionsPhone", "admissionsEmail", "overview"]
+      "missing": []
     },
     {
       "slug": "rsuh",

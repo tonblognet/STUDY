@@ -813,6 +813,23 @@ describe("official university profile evidence", () => {
     expect(offerings).toHaveLength(209);
   });
 
+  it("uses official admissions contacts and the dated MUCTR self-study", () => {
+    const { fields } = getDirectoryDetails("muctr")!;
+    expect(fields.admissionsPhone).toMatchObject({
+      value: "+7-499-978-85-20",
+      sourceYear: 2026,
+    });
+    expect(fields.admissionsEmail?.value).toBe("priem@muctr.ru");
+    expect(fields.overview).toMatchObject({
+      value: expect.stringContaining("в 1992 году"),
+      sourceYear: 2024,
+      sourceUrl: "https://www.muctr.ru/upload/sveden/files/002390.pdf",
+    });
+    expect(fields.admissionsUrl?.value).toBe(
+      "https://www.muctr.ru/abitur/bachelor/pk/contact/",
+    );
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(

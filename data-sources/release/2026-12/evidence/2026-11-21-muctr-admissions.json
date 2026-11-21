@@ -1,0 +1,4533 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "muctr",
+  "reviewedAtUtc": "2026-11-21T17:25:31Z",
+  "scope": "Приём на бакалавриат и специалитет головного кампуса РХТУ в Москве. Кампания 2026 года и опубликованный архив.",
+  "sources": {
+    "bachelor": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/main_info/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:14:09Z",
+      "sourceSha256": "eba56707d76e3fbd054ce0abfd7602d7764053accaee06089d72e43bf43c888e",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "contacts": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/pk/contact/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "28187790949eab25dfc65515e1c682fbfac236c142cfbf6678c02958dd273690",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "history": {
+      "sourceUrl": "https://ideco.muctr.ru/university/about/history/info/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "bffb3acd437484b6ca3f787be996d089622da63f0d6264e6ea93fea0013763ca",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "self-report": {
+      "sourceUrl": "https://www.muctr.ru/upload/sveden/files/002390.pdf",
+      "sourceYear": 2024,
+      "checkedAt": "2026-11-21T17:20:53Z",
+      "sourceSha256": "b93552e411c391b0d0df48c3ba97eb7977925084d02abcb8556c651570fb98c1",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "hostel": {
+      "sourceUrl": "https://ideco.muctr.ru/university/departments/studg/for/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:19:28Z",
+      "sourceSha256": "d3d3b78b33169e54ba5a15107c982e651061caba5703a28be82f86e1057fdf9b",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "programs": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/np/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T17:19:28Z",
+      "sourceSha256": "b8b607550cf5e504d8c1c7a32d61a258e6f60036a1372f96e4161b0fb4fad21b",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "rules-2026": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/7c5/wznrcf1h1s8jg95fg15kkov1ulzshzts.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "1b6b0a3826f571ec089053b984c44558c0b11005208c5d5bcf6fc25006954219",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "places": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/number-seats/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:14:09Z",
+      "sourceSha256": "0b60fbfff57566f753e6786b393c2def611b9ae7229417b4b5d692f143d30fe7",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "exams": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/entrance_tests/tests/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "5a70bac1701ed043944b989dd52783de1ad0d7d5f1d916a541daf8cf598f5bd3",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "deadlines": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/deadlines/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:19:12Z",
+      "sourceSha256": "ce3ba70ff22c5ada0fc3433e91b7f923e80e5ac8d9c1bfcaace574f8b556bc5b",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "achievements": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/id/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:19:28Z",
+      "sourceSha256": "22d64f0c1b80eeb712522c9684e8957a4aa30bb8b125cad1f43b90ed5e246457",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "special": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/special_right/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T17:19:28Z",
+      "sourceSha256": "95caf8fadf3749d8499d314979bd855124aa9020a5e1417c6cd5c1b32d099de1",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "olympiads": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/olimpiady/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T17:19:28Z",
+      "sourceSha256": "2f2ec44c450d301841de90b465af92b96c90754c3f71ea631d0654110383df28",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "fees": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/platnoe-obrazovanie/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "744887cb49cf44c659d0bc699e7d6418c15bd335154e67419eabd3a004ddb040",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "fee-order": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/820/d6oie1l8oswl5krfucqtkhgqefy7srl9.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:19:29Z",
+      "sourceSha256": "18420a2a91b81cf4981f8dce66fc080c328413593f3b6d876edb9c64c2bdb27c",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "enrolled": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/pk/lits/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:14:09Z",
+      "sourceSha256": "cd3f2f8f8e23edc0c1b6661283580010ea6d5c20aa0c4ed66ef6f47f4b536fae",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-bac": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/df8/q5697ilc106lpmmfzp3gpq6kzqnu4sc6.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "76018dd7d2527281af1db6f9b96bd3fd2804fbf18865800b1d1200db5c60e20d",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-spec": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/114/5nghcutgzhqs9sf622k30s14qws21pnn.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:15:01Z",
+      "sourceSha256": "1b73bbf2c102274a1115645bdddfd1bbab0ba49d19b1f6f4ca0a4abe94cbbc3f",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "withdrawal-1450": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/dc2/hbpbs5z6hp9k8y92dghor4bb1vy21ja0.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:19:29Z",
+      "sourceSha256": "e92a0e52fa19da2355488546110580b61b73beee353f760306034e859e1e6aaa",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "withdrawal-1451": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/ce0/kfgcdgsxlf7410oxc7w9d9nz8a0zjqmv.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:19:29Z",
+      "sourceSha256": "9c379d0526d55f13e4873a4862cbfccecb1b9ff4e551732eb37e775deb4e7e67",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "extra": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/d66/i1qx7iirnzuicuillz0a1i5vgg9kuh1b.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:19:29Z",
+      "sourceSha256": "27c2e59298b65ec938ae49b0bcd000452dc364bd0607cc53e549309f0f8c166f",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-bac": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/3eb/znodv5l91zjfhtxen3dxjpdpm1mo8m95.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "b4f092ca9cea20ab282dfe88f7a08e485de77643bacbd62b26943bf8569907b5",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-spec": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/45a/jtikyd9etlpieizbrtus34cwb8pej8pq.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "acfb76568e9a7d48dc3eed3bfe479eaa17360e8d995768dc2cc43a96ad9c4459",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "results": {
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/competition/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T17:15:02Z",
+      "sourceSha256": "cb905bba6a7645487c8772769cffae486b878ca0ee0c8a4ce6b84715969f8d53",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "historical-2024": {
+      "sourceUrl": "https://ideco.muctr.ru/upload/iblock/7f3/2az1rcmj3hq01z2se5fzov8rwni6aewk.pdf",
+      "sourceYear": 2024,
+      "checkedAt": "2026-11-21T17:19:29Z",
+      "sourceSha256": "6533019f77695549da002f8fa291fda58fd39472c54ce9f6af15192949e4a20f",
+      "sourceSha256Basis": "response-bytes"
+    }
+  },
+  "campaign2027": {
+    "status": "not_published",
+    "publicationDeadline": "2027-01-20",
+    "source": "bachelor"
+  },
+  "contacts": {
+    "source": "contacts",
+    "generalPhones": ["+7-499-978-85-20", "+7-499-978-59-60"],
+    "email": "priem@muctr.ru",
+    "contractPhone": "+7-499-978-95-15",
+    "contractEmail": "student@muctr.ru"
+  },
+  "housing": {
+    "source": "hostel",
+    "academicYear": "2026/2027",
+    "dormitories": 3,
+    "publishedPlacesAvailableForMoveIn": 725,
+    "placesAvailableForFirstYearStudents": null,
+    "queueUrl": "https://settlement.muctr.ru/"
+  },
+  "campaign2026": {
+    "rules": "rules-2026",
+    "places": {
+      "source": "places",
+      "paidFootnotes": {
+        "**": "04.03.01, контракт только на Факультете естественных наук.",
+        "***": "04.05.01, контракт на Факультете химико-фармацевтических технологий и биомедицинских препаратов и Факультете естественных наук."
+      },
+      "directions": [
+        {
+          "code": "04.03.01",
+          "title": "Химия",
+          "form": "Очная",
+          "budgetPlaces": 60,
+          "specialQuota": 6,
+          "separateQuota": 6,
+          "targetQuota": null,
+          "generalPlaces": 48,
+          "paidPlaces": 20,
+          "paidFootnote": "**"
+        },
+        {
+          "code": "04.05.01",
+          "title": "Фундаментальная и прикладная химия",
+          "form": "Очная",
+          "budgetPlaces": 113,
+          "specialQuota": 12,
+          "separateQuota": 12,
+          "targetQuota": 5,
+          "generalPlaces": 84,
+          "paidPlaces": 30,
+          "paidFootnote": "***"
+        },
+        {
+          "code": "05.03.06",
+          "title": "Экология и природопользование",
+          "form": "Очная",
+          "budgetPlaces": 50,
+          "specialQuota": 5,
+          "separateQuota": 5,
+          "targetQuota": 1,
+          "generalPlaces": 39,
+          "paidPlaces": 25
+        },
+        {
+          "code": "09.03.01",
+          "title": "Информатика и вычислительная техника",
+          "form": "Очная",
+          "budgetPlaces": 25,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null,
+          "generalPlaces": 19,
+          "paidPlaces": 15
+        },
+        {
+          "code": "09.03.02",
+          "title": "Информационные системы и технологии",
+          "form": "Очная",
+          "budgetPlaces": 50,
+          "specialQuota": 5,
+          "separateQuota": 5,
+          "targetQuota": null,
+          "generalPlaces": 40,
+          "paidPlaces": 30
+        },
+        {
+          "code": "09.03.04",
+          "title": "Программная инженерия",
+          "form": "Очная",
+          "budgetPlaces": 25,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null,
+          "generalPlaces": 19,
+          "paidPlaces": 15
+        },
+        {
+          "code": "15.03.02",
+          "title": "Технологические машины и оборудование",
+          "form": "Очная",
+          "budgetPlaces": 10,
+          "specialQuota": 1,
+          "separateQuota": 1,
+          "targetQuota": null,
+          "generalPlaces": 8,
+          "paidPlaces": 50
+        },
+        {
+          "code": "15.03.04",
+          "title": "Автоматизация технологических процессов и производств",
+          "form": "Очная",
+          "budgetPlaces": null,
+          "specialQuota": null,
+          "separateQuota": null,
+          "targetQuota": null,
+          "generalPlaces": null,
+          "paidPlaces": 30
+        },
+        {
+          "code": "15.05.01",
+          "title": "Проектирование технологических машин и комплексов",
+          "form": "Очная",
+          "budgetPlaces": 5,
+          "specialQuota": 1,
+          "separateQuota": 1,
+          "targetQuota": 2,
+          "generalPlaces": 1,
+          "paidPlaces": 25
+        },
+        {
+          "code": "18.03.01",
+          "title": "Химическая технология",
+          "form": "Очная",
+          "budgetPlaces": 510,
+          "specialQuota": 51,
+          "separateQuota": 51,
+          "targetQuota": 46,
+          "generalPlaces": 362,
+          "paidPlaces": 165
+        },
+        {
+          "code": "18.03.02",
+          "title": "Энерго- и ресурсосберегающие процессы в химической технологии, нефтехимии и биотехнологии",
+          "form": "Очная",
+          "budgetPlaces": 100,
+          "specialQuota": 10,
+          "separateQuota": 10,
+          "targetQuota": 1,
+          "generalPlaces": 79,
+          "paidPlaces": 25
+        },
+        {
+          "code": "18.05.01",
+          "title": "Химическая технология энергонасыщенных материалов и изделий",
+          "form": "Очная",
+          "budgetPlaces": 95,
+          "specialQuota": 10,
+          "separateQuota": 10,
+          "targetQuota": 29,
+          "generalPlaces": 46,
+          "paidPlaces": 20
+        },
+        {
+          "code": "18.05.02",
+          "title": "Химическая технология материалов современной энергетики",
+          "form": "Очная",
+          "budgetPlaces": 120,
+          "specialQuota": 12,
+          "separateQuota": 12,
+          "targetQuota": 7,
+          "generalPlaces": 89,
+          "paidPlaces": 30
+        },
+        {
+          "code": "19.03.01",
+          "title": "Биотехнология",
+          "form": "Очная",
+          "budgetPlaces": 70,
+          "specialQuota": 7,
+          "separateQuota": 7,
+          "targetQuota": 6,
+          "generalPlaces": 50,
+          "paidPlaces": 20
+        },
+        {
+          "code": "20.03.01",
+          "title": "Техносферная безопасность",
+          "form": "Очная",
+          "budgetPlaces": 40,
+          "specialQuota": 4,
+          "separateQuota": 4,
+          "targetQuota": null,
+          "generalPlaces": 32,
+          "paidPlaces": 10
+        },
+        {
+          "code": "22.03.01",
+          "title": "Материаловедение и технологии материалов",
+          "form": "Очная",
+          "budgetPlaces": 60,
+          "specialQuota": 6,
+          "separateQuota": 6,
+          "targetQuota": 6,
+          "generalPlaces": 42,
+          "paidPlaces": 45
+        },
+        {
+          "code": "27.03.01",
+          "title": "Стандартизация и метрология",
+          "form": "Очная",
+          "budgetPlaces": null,
+          "specialQuota": null,
+          "separateQuota": null,
+          "targetQuota": null,
+          "generalPlaces": null,
+          "paidPlaces": 20
+        },
+        {
+          "code": "27.03.05",
+          "title": "Инноватика",
+          "form": "Очная",
+          "budgetPlaces": 26,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null,
+          "generalPlaces": 20,
+          "paidPlaces": 5
+        },
+        {
+          "code": "28.03.02",
+          "title": "Наноинженерия",
+          "form": "Очная",
+          "budgetPlaces": 60,
+          "specialQuota": 6,
+          "separateQuota": 6,
+          "targetQuota": 1,
+          "generalPlaces": 47,
+          "paidPlaces": 10
+        },
+        {
+          "code": "28.03.03",
+          "title": "Наноматериалы",
+          "form": "Очная",
+          "budgetPlaces": 30,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null,
+          "generalPlaces": 24,
+          "paidPlaces": 10
+        },
+        {
+          "code": "29.03.04",
+          "title": "Технология художественной обработки материалов",
+          "form": "Очная",
+          "budgetPlaces": 25,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null,
+          "generalPlaces": 19,
+          "paidPlaces": 10
+        },
+        {
+          "code": "38.03.01",
+          "title": "Экономика",
+          "form": "Очная",
+          "budgetPlaces": null,
+          "specialQuota": null,
+          "separateQuota": null,
+          "targetQuota": null,
+          "generalPlaces": null,
+          "paidPlaces": 25
+        },
+        {
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "form": "Очная",
+          "budgetPlaces": null,
+          "specialQuota": null,
+          "separateQuota": null,
+          "targetQuota": null,
+          "generalPlaces": null,
+          "paidPlaces": 12
+        },
+        {
+          "code": "18.03.01",
+          "title": "Химическая технология",
+          "form": "Заочная",
+          "budgetPlaces": null,
+          "specialQuota": null,
+          "separateQuota": null,
+          "targetQuota": null,
+          "generalPlaces": null,
+          "paidPlaces": 100
+        }
+      ]
+    },
+    "exams": {
+      "source": "exams",
+      "sections": [
+        {
+          "sourceSection": "Перечень вступительных испытаний (бюджетная основа)",
+          "directions": [
+            {
+              "code": "04.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "04.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "60",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Биология / Физика",
+                  "minScores": "50 / 50 / 50",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "55",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "05.03.06",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Биология",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / География / Информатика / Химия",
+                  "minScores": "40 / 40 / 46 / 40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Информатика / Физика",
+                  "minScores": "40 / 46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "19.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Биология / Математика*",
+                  "minScores": "40 / 40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "20.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "22.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.05",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "28.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "28.03.03",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "29.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / История / Обществознание",
+                  "minScores": "46 / 40 / 45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / История / Обществознание",
+                  "minScores": "46 / 40 / 45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sourceSection": "Перечень вступительных испытаний (контрактная основа)",
+          "directions": [
+            {
+              "code": "04.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "04.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "60",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Биология / Физика",
+                  "minScores": "50 / 50 / 50",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "55",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "05.03.06",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Биология",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / География / Информатика / Химия",
+                  "minScores": "40 / 40 / 46 / 40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Информатика / Физика",
+                  "minScores": "40 / 46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "19.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Биология / Математика*",
+                  "minScores": "40 / 40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "20.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "22.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.05",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "28.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "28.03.03",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "29.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / История / Обществознание",
+                  "minScores": "46 / 40 / 45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / История / Обществознание",
+                  "minScores": "46 / 40 / 45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sourceSection": "Перечень испытаний для лиц со средним профессиональным образованием (бюджет)",
+          "directions": [
+            {
+              "code": "04.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "45",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "04.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "60",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Биология / Физика",
+                  "minScores": "50 / 50 / 50",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "55",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "05.03.06",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Биология",
+                  "minScores": "39",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / География / Информатика / Химия",
+                  "minScores": "40 / 40 / 46 / 40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "09.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информационные технологии *",
+                  "minScores": "46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информационные технологии *",
+                  "minScores": "46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информационные технологии *",
+                  "minScores": "46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Материаловедение *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Материаловедение *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Материаловедение *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химическая технология *",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химическая технология *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химическая технология *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химическая технология *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "19.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Биохимия *",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "20.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Безопасность жизнедеятельности *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "22.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Материаловедение и технологии материалов *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "27.03.05",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "28.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "28.03.03",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "29.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "38.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Экономика организации",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Экономика организации",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sourceSection": "Перечень испытаний для лиц со средним профессиональным образованием (контракт)",
+          "directions": [
+            {
+              "code": "04.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "04.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "60",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Биология / Физика",
+                  "minScores": "50 / 50 / 50",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "55",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "05.03.06",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Биология",
+                  "minScores": "39",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / География / Информатика / Химия",
+                  "minScores": "40 / 40 / 46 / 40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "09.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информационные технологии *",
+                  "minScores": "46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информационные технологии *",
+                  "minScores": "46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информационные технологии *",
+                  "minScores": "46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Материаловедение *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Материаловедение *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Материаловедение *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химическая технология *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химическая технология *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химическая технология *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химическая технология *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "19.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Биохимия *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "20.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Безопасность жизнедеятельности *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "22.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Материаловедение и технологии материалов *",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "27.03.05",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "28.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "28.03.03",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "29.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                }
+              ]
+            },
+            {
+              "code": "38.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Экономика организации",
+                  "minScores": "45",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Алгебра и начала математического анализа *",
+                  "minScores": "40",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Экономика организации",
+                  "minScores": "45",
+                  "universityExamForm": "ЕГЭ"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sourceSection": "Перечень испытаний для иностранных граждан (бюджет)",
+          "directions": [
+            {
+              "code": "04.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "04.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "60",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Биология / Физика",
+                  "minScores": "50 / 50 / 50",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "55",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "05.03.06",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Биология",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / География / Информатика / Химия",
+                  "minScores": "40 / 40 / 46 / 40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Информатика / Физика",
+                  "minScores": "40 / 46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "19.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Биология / Математика*",
+                  "minScores": "40 / 40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "20.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "22.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.05",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "28.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "28.03.03",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "29.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / История / Обществознание",
+                  "minScores": "46 / 40 / 45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / История / Обществознание",
+                  "minScores": "46 / 40 / 45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sourceSection": "Перечень испытаний для иностранных граждан (контракт)",
+          "directions": [
+            {
+              "code": "04.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "04.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "60",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Биология / Физика",
+                  "minScores": "50 / 50 / 50",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "55",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "05.03.06",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Биология",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / География / Информатика / Химия",
+                  "minScores": "40 / 40 / 46 / 40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "09.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / Физика",
+                  "minScores": "46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "15.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "18.05.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Математика* / Информатика / Физика",
+                  "minScores": "40 / 46 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "19.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Химия",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Биология / Математика*",
+                  "minScores": "40 / 40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "20.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "22.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "27.03.05",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика / Информатика",
+                  "minScores": "40 / 41 / 46",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "28.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "28.03.03",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "29.03.04",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Химия / Физика",
+                  "minScores": "40 / 41",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.01",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / История / Обществознание",
+                  "minScores": "46 / 40 / 45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            },
+            {
+              "code": "38.03.02",
+              "priorities": [
+                {
+                  "priority": 1,
+                  "subjects": "Математика*",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 2,
+                  "subjects": "Информатика / История / Обществознание",
+                  "minScores": "46 / 40 / 45",
+                  "universityExamForm": "Тестирование"
+                },
+                {
+                  "priority": 3,
+                  "subjects": "Русский язык",
+                  "minScores": "40",
+                  "universityExamForm": "Тестирование"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "deadlines": {
+      "source": "deadlines",
+      "opens": "2026-06-20",
+      "budgetEnrollment": {
+        "priority": "2026-08-03",
+        "general": "2026-08-07",
+        "additional": "2026-08-11"
+      },
+      "paidEnrollment": "2026-08-29"
+    },
+    "individualAchievements": "achievements",
+    "specialRights": "special",
+    "admissionWithoutExams": "olympiads",
+    "feesForNewStudents": {
+      "source": "fee-order",
+      "orderNumber": "110 ОД",
+      "orderDate": "2026-06-01",
+      "academicYear": "2026/2027",
+      "appendix": 1,
+      "directions": [
+        {
+          "item": "1.1",
+          "code": "04.05.01",
+          "form": "очная",
+          "label": "Фундаментальная и прикладная химия − Медицинская химия; − Теоретическая и экспериментальная химия",
+          "amountRub": 376600,
+          "pdfPage": 4
+        },
+        {
+          "item": "1.2",
+          "code": "15.05.01",
+          "form": "очная",
+          "label": "Проектирование технологических машин и комплексов",
+          "amountRub": 376600,
+          "pdfPage": 4
+        },
+        {
+          "item": "1.3",
+          "code": "18.05.01",
+          "form": "очная",
+          "label": "Химическая технология энергонасыщенных материалов и изделий",
+          "amountRub": 376600,
+          "pdfPage": 4
+        },
+        {
+          "item": "1.4",
+          "code": "18.05.02",
+          "form": "очная",
+          "label": "Химическая технология материалов современной энергетики",
+          "amountRub": 376600,
+          "pdfPage": 4
+        },
+        {
+          "item": "2.1",
+          "code": "04.03.01",
+          "form": "очная",
+          "label": "Химия − Теоретическая и экспериментальная химия",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.2",
+          "code": "05.03.06",
+          "form": "очная",
+          "label": "Экология и природопользование",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.3",
+          "code": "09.03.01",
+          "form": "очная",
+          "label": "Информатика и вычислительная техника",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.4",
+          "code": "09.03.02",
+          "form": "очная",
+          "label": "Информационные системы и технологии",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.5",
+          "code": "09.03.04",
+          "form": "очная",
+          "label": "Программная инженерия",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.6",
+          "code": "15.03.02",
+          "form": "очная",
+          "label": "Технологические машины и оборудование",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.7",
+          "code": "15.03.04",
+          "form": "очная",
+          "label": "Автоматизация технологических процессов и производств",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.8",
+          "code": "18.03.01",
+          "form": "очная",
+          "label": "Химическая технология",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.9",
+          "code": "18.03.02",
+          "form": "очная",
+          "label": "Энерго- и ресурсосберегающие процессы в химической технологии, нефтехимии и биотехнологии",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.10",
+          "code": "19.03.01",
+          "form": "очная",
+          "label": "Биотехнология",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.11",
+          "code": "20.03.01",
+          "form": "очная",
+          "label": "Техносферная безопасность",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.12",
+          "code": "22.03.01",
+          "form": "очная",
+          "label": "Материаловедение и технологии материалов",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.13",
+          "code": "27.03.01",
+          "form": "очная",
+          "label": "Стандартизация и метрология",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.14",
+          "code": "27.03.05",
+          "form": "очная",
+          "label": "Инноватика",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.15",
+          "code": "28.03.02",
+          "form": "очная",
+          "label": "Наноинженерия",
+          "amountRub": 425000,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.16",
+          "code": "28.03.03",
+          "form": "очная",
+          "label": "Наноматериалы",
+          "amountRub": 425000,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.17",
+          "code": "29.03.04",
+          "form": "очная",
+          "label": "Технология художественной обработки материалов",
+          "amountRub": 376600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.18",
+          "code": "38.03.01",
+          "form": "очная",
+          "label": "Экономика",
+          "amountRub": 340600,
+          "pdfPage": 5
+        },
+        {
+          "item": "2.19",
+          "code": "38.03.02",
+          "form": "очная",
+          "label": "Менеджмент",
+          "amountRub": 340600,
+          "pdfPage": 5
+        },
+        {
+          "item": "3.1",
+          "code": "18.03.01",
+          "form": "заочная",
+          "label": "Химическая технология − Технология переработки пластмасс; − Технология химико-фармацевтических и косметических средств",
+          "amountRub": 220000,
+          "pdfPage": 6
+        }
+      ]
+    },
+    "enrollment": {
+      "index": "enrolled",
+      "method": "Минимум опубликованной итоговой суммы среди строк конкретного приказа и кода направления. Строки сверены по сквозной нумерации внутри направления и сумме компонент. Это срезы приказов; отмены, БВИ, квоты и другие этапы не объединены.",
+      "laterWithdrawals": ["withdrawal-1450", "withdrawal-1451"],
+      "orders": [
+        {
+          "source": "budget-bac",
+          "orderNumber": "1445 СТ",
+          "orderDate": "2026-08-07",
+          "funding": "budget",
+          "stage": "Основной этап, общий конкурс",
+          "form": "Очная",
+          "campus": "Москва",
+          "directions": [
+            {
+              "code": "04.03.01",
+              "listedEnrolled": 46,
+              "minTotalScoreInOrder": 274,
+              "pdfPagesWithMinimum": [2]
+            },
+            {
+              "code": "05.03.06",
+              "listedEnrolled": 42,
+              "minTotalScoreInOrder": 236,
+              "pdfPagesWithMinimum": [3]
+            },
+            {
+              "code": "09.03.01",
+              "listedEnrolled": 22,
+              "minTotalScoreInOrder": 237,
+              "pdfPagesWithMinimum": [4]
+            },
+            {
+              "code": "09.03.02",
+              "listedEnrolled": 47,
+              "minTotalScoreInOrder": 233,
+              "pdfPagesWithMinimum": [5]
+            },
+            {
+              "code": "09.03.04",
+              "listedEnrolled": 21,
+              "minTotalScoreInOrder": 237,
+              "pdfPagesWithMinimum": [5]
+            },
+            {
+              "code": "15.03.02",
+              "listedEnrolled": 10,
+              "minTotalScoreInOrder": 227,
+              "pdfPagesWithMinimum": [6]
+            },
+            {
+              "code": "18.03.01",
+              "listedEnrolled": 419,
+              "minTotalScoreInOrder": 250,
+              "pdfPagesWithMinimum": [20, 21]
+            },
+            {
+              "code": "18.03.02",
+              "listedEnrolled": 99,
+              "minTotalScoreInOrder": 233,
+              "pdfPagesWithMinimum": [24]
+            },
+            {
+              "code": "19.03.01",
+              "listedEnrolled": 50,
+              "minTotalScoreInOrder": 275,
+              "pdfPagesWithMinimum": [25]
+            },
+            {
+              "code": "20.03.01",
+              "listedEnrolled": 36,
+              "minTotalScoreInOrder": 216,
+              "pdfPagesWithMinimum": [26]
+            },
+            {
+              "code": "22.03.01",
+              "listedEnrolled": 51,
+              "minTotalScoreInOrder": 229,
+              "pdfPagesWithMinimum": [27]
+            },
+            {
+              "code": "27.03.05",
+              "listedEnrolled": 22,
+              "minTotalScoreInOrder": 237,
+              "pdfPagesWithMinimum": [27]
+            },
+            {
+              "code": "28.03.02",
+              "listedEnrolled": 53,
+              "minTotalScoreInOrder": 244,
+              "pdfPagesWithMinimum": [28]
+            },
+            {
+              "code": "28.03.03",
+              "listedEnrolled": 28,
+              "minTotalScoreInOrder": 245,
+              "pdfPagesWithMinimum": [29]
+            },
+            {
+              "code": "29.03.04",
+              "listedEnrolled": 21,
+              "minTotalScoreInOrder": 226,
+              "pdfPagesWithMinimum": [30]
+            }
+          ]
+        },
+        {
+          "source": "budget-spec",
+          "orderNumber": "1446 СТ",
+          "orderDate": "2026-08-07",
+          "funding": "budget",
+          "stage": "Основной этап, общий конкурс",
+          "form": "Очная",
+          "campus": "Москва",
+          "directions": [
+            {
+              "code": "04.05.01",
+              "listedEnrolled": 68,
+              "minTotalScoreInOrder": 284,
+              "pdfPagesWithMinimum": [2]
+            },
+            {
+              "code": "15.05.01",
+              "listedEnrolled": 2,
+              "minTotalScoreInOrder": 220,
+              "pdfPagesWithMinimum": [3]
+            },
+            {
+              "code": "18.05.01",
+              "listedEnrolled": 62,
+              "minTotalScoreInOrder": 237,
+              "pdfPagesWithMinimum": [4]
+            },
+            {
+              "code": "18.05.02",
+              "listedEnrolled": 111,
+              "minTotalScoreInOrder": 226,
+              "pdfPagesWithMinimum": [6]
+            }
+          ]
+        },
+        {
+          "source": "extra",
+          "orderNumber": "1459 СТ",
+          "orderDate": "2026-08-11",
+          "funding": "budget",
+          "stage": "Дополнительный этап",
+          "form": "Очная",
+          "campus": "Москва",
+          "directions": [
+            {
+              "code": "05.03.06",
+              "listedEnrolled": 1,
+              "minTotalScoreInOrder": 252,
+              "pdfPagesWithMinimum": [1]
+            },
+            {
+              "code": "18.05.01",
+              "listedEnrolled": 1,
+              "minTotalScoreInOrder": 255,
+              "pdfPagesWithMinimum": [1]
+            },
+            {
+              "code": "18.05.02",
+              "listedEnrolled": 1,
+              "minTotalScoreInOrder": 245,
+              "pdfPagesWithMinimum": [2]
+            }
+          ]
+        },
+        {
+          "source": "paid-bac",
+          "orderNumber": "1565 СТ",
+          "orderDate": "2026-08-29",
+          "funding": "paid",
+          "stage": "Очный контракт, граждане РФ",
+          "form": "Очная",
+          "campus": "Москва",
+          "directions": [
+            {
+              "code": "04.03.01",
+              "listedEnrolled": 20,
+              "minTotalScoreInOrder": 165,
+              "pdfPagesWithMinimum": [2]
+            },
+            {
+              "code": "05.03.06",
+              "listedEnrolled": 25,
+              "minTotalScoreInOrder": 184,
+              "pdfPagesWithMinimum": [2]
+            },
+            {
+              "code": "09.03.01",
+              "listedEnrolled": 3,
+              "minTotalScoreInOrder": 211,
+              "pdfPagesWithMinimum": [2]
+            },
+            {
+              "code": "09.03.02",
+              "listedEnrolled": 11,
+              "minTotalScoreInOrder": 132,
+              "pdfPagesWithMinimum": [3]
+            },
+            {
+              "code": "09.03.04",
+              "listedEnrolled": 6,
+              "minTotalScoreInOrder": 158,
+              "pdfPagesWithMinimum": [3]
+            },
+            {
+              "code": "15.03.02",
+              "listedEnrolled": 12,
+              "minTotalScoreInOrder": 137,
+              "pdfPagesWithMinimum": [3]
+            },
+            {
+              "code": "15.03.04",
+              "listedEnrolled": 3,
+              "minTotalScoreInOrder": 154,
+              "pdfPagesWithMinimum": [4]
+            },
+            {
+              "code": "18.03.01",
+              "listedEnrolled": 99,
+              "minTotalScoreInOrder": 185,
+              "pdfPagesWithMinimum": [6]
+            },
+            {
+              "code": "18.03.02",
+              "listedEnrolled": 23,
+              "minTotalScoreInOrder": 140,
+              "pdfPagesWithMinimum": [8]
+            },
+            {
+              "code": "19.03.01",
+              "listedEnrolled": 20,
+              "minTotalScoreInOrder": 221,
+              "pdfPagesWithMinimum": [8]
+            },
+            {
+              "code": "20.03.01",
+              "listedEnrolled": 5,
+              "minTotalScoreInOrder": 174,
+              "pdfPagesWithMinimum": [9]
+            },
+            {
+              "code": "22.03.01",
+              "listedEnrolled": 10,
+              "minTotalScoreInOrder": 137,
+              "pdfPagesWithMinimum": [9]
+            },
+            {
+              "code": "27.03.01",
+              "listedEnrolled": 1,
+              "minTotalScoreInOrder": 200,
+              "pdfPagesWithMinimum": [10]
+            },
+            {
+              "code": "27.03.05",
+              "listedEnrolled": 5,
+              "minTotalScoreInOrder": 145,
+              "pdfPagesWithMinimum": [10]
+            },
+            {
+              "code": "28.03.02",
+              "listedEnrolled": 10,
+              "minTotalScoreInOrder": 178,
+              "pdfPagesWithMinimum": [10]
+            },
+            {
+              "code": "28.03.03",
+              "listedEnrolled": 1,
+              "minTotalScoreInOrder": 194,
+              "pdfPagesWithMinimum": [10]
+            },
+            {
+              "code": "29.03.04",
+              "listedEnrolled": 9,
+              "minTotalScoreInOrder": 151,
+              "pdfPagesWithMinimum": [11]
+            },
+            {
+              "code": "38.03.01",
+              "listedEnrolled": 25,
+              "minTotalScoreInOrder": 137,
+              "pdfPagesWithMinimum": [11]
+            },
+            {
+              "code": "38.03.02",
+              "listedEnrolled": 12,
+              "minTotalScoreInOrder": 133,
+              "pdfPagesWithMinimum": [12]
+            }
+          ]
+        },
+        {
+          "source": "paid-spec",
+          "orderNumber": "1567 СТ",
+          "orderDate": "2026-08-29",
+          "funding": "paid",
+          "stage": "Очный контракт, граждане РФ",
+          "form": "Очная",
+          "campus": "Москва",
+          "directions": [
+            {
+              "code": "04.05.01",
+              "listedEnrolled": 30,
+              "minTotalScoreInOrder": 217,
+              "pdfPagesWithMinimum": [2]
+            },
+            {
+              "code": "15.05.01",
+              "listedEnrolled": 1,
+              "minTotalScoreInOrder": 200,
+              "pdfPagesWithMinimum": [2]
+            },
+            {
+              "code": "18.05.01",
+              "listedEnrolled": 11,
+              "minTotalScoreInOrder": 166,
+              "pdfPagesWithMinimum": [2]
+            },
+            {
+              "code": "18.05.02",
+              "listedEnrolled": 23,
+              "minTotalScoreInOrder": 140,
+              "pdfPagesWithMinimum": [3]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "archivedMinimumScores": {
+    "source": "results",
+    "year": null,
+    "stage": null,
+    "note": "В HTML-таблице год и этап не подписаны. По 15.03.02 архив пишет «нет бюджетного набора», тогда как в приказе основного этапа 2026 есть 10 строк. Факультетское распределение и минимум конкурсного отбора указаны раздельно.",
+    "rows": [
+      {
+        "code": "04.03.01",
+        "title": "Химия",
+        "publishedMinimum": "274",
+        "facultyDistribution": [
+          {
+            "faculty": "ФЕН",
+            "minimum": 275
+          },
+          {
+            "faculty": "ИПУР",
+            "minimum": 274
+          }
+        ]
+      },
+      {
+        "code": "04.05.01",
+        "title": "Фундаментальная и прикладная химия",
+        "publishedMinimum": "284",
+        "facultyDistribution": [
+          {
+            "faculty": "ВХК РАН",
+            "minimum": 295
+          },
+          {
+            "faculty": "ФЕН",
+            "minimum": 284
+          },
+          {
+            "faculty": "ХФТ",
+            "minimum": 284
+          }
+        ]
+      },
+      {
+        "code": "05.03.06",
+        "title": "Экология и природопользование",
+        "publishedMinimum": "238",
+        "facultyDistribution": [
+          {
+            "faculty": "ИПУР",
+            "minimum": 238
+          }
+        ]
+      },
+      {
+        "code": "09.03.01",
+        "title": "Информатика и вычислительная техника",
+        "publishedMinimum": "237",
+        "facultyDistribution": [
+          {
+            "faculty": "ЦиТХИн",
+            "minimum": 237
+          }
+        ]
+      },
+      {
+        "code": "09.03.02",
+        "title": "Информационные системы и технологии",
+        "publishedMinimum": "233",
+        "facultyDistribution": [
+          {
+            "faculty": "ЦиТХИн",
+            "minimum": 233
+          }
+        ]
+      },
+      {
+        "code": "09.03.04",
+        "title": "Программная инженерия",
+        "publishedMinimum": "237",
+        "facultyDistribution": [
+          {
+            "faculty": "НПМ и ПИШ ХИМ",
+            "minimum": 237
+          }
+        ]
+      },
+      {
+        "code": "15.03.02",
+        "title": "Технологические машины и оборудование",
+        "publishedMinimum": "нет бюджетного набора",
+        "facultyDistribution": []
+      },
+      {
+        "code": "15.03.04",
+        "title": "Автоматизация технологических процессов и производств",
+        "publishedMinimum": "нет бюджетного набора",
+        "facultyDistribution": []
+      },
+      {
+        "code": "15.05.01",
+        "title": "Проектирование технологических машин и комплексов",
+        "publishedMinimum": "220",
+        "facultyDistribution": [
+          {
+            "faculty": "НПМ и ПИШ ХИМ",
+            "minimum": 220
+          }
+        ]
+      },
+      {
+        "code": "18.03.01",
+        "title": "Химическая технология",
+        "publishedMinimum": "250",
+        "facultyDistribution": [
+          {
+            "faculty": "ХФТ",
+            "minimum": 272
+          },
+          {
+            "faculty": "ИПУР",
+            "minimum": 264
+          },
+          {
+            "faculty": "ЦиТХИн",
+            "minimum": 260
+          },
+          {
+            "faculty": "НПМ и ПИШ ХИМ",
+            "minimum": 256
+          },
+          {
+            "faculty": "БПЭ",
+            "minimum": 255
+          },
+          {
+            "faculty": "ТНВиВМ",
+            "minimum": 220
+          }
+        ]
+      },
+      {
+        "code": "18.03.02",
+        "title": "Энерго- и ресурсосберегающие процессы в химической технологии, нефтехимии и биотехнологии",
+        "publishedMinimum": "233",
+        "facultyDistribution": [
+          {
+            "faculty": "ЦиТХИн",
+            "minimum": 234
+          },
+          {
+            "faculty": "БПЭ",
+            "minimum": 233
+          }
+        ]
+      },
+      {
+        "code": "18.05.01",
+        "title": "Химическая технология энергонасыщенных материалов и изделий",
+        "publishedMinimum": "237",
+        "facultyDistribution": [
+          {
+            "faculty": "ИХТ",
+            "minimum": 237
+          }
+        ]
+      },
+      {
+        "code": "18.05.02",
+        "title": "Химическая технология материалов современной энергетики",
+        "publishedMinimum": "226",
+        "facultyDistribution": [
+          {
+            "faculty": "ИМСЭН-ИФХ",
+            "minimum": 226
+          }
+        ]
+      },
+      {
+        "code": "19.03.01",
+        "title": "Биотехнология",
+        "publishedMinimum": "275",
+        "facultyDistribution": [
+          {
+            "faculty": "БПЭ",
+            "minimum": 275
+          }
+        ]
+      },
+      {
+        "code": "20.03.01",
+        "title": "Техносферная безопасность",
+        "publishedMinimum": "216",
+        "facultyDistribution": [
+          {
+            "faculty": "ИХТ",
+            "minimum": 216
+          }
+        ]
+      },
+      {
+        "code": "22.03.01",
+        "title": "Материаловедение и технологии материалов",
+        "publishedMinimum": "229",
+        "facultyDistribution": [
+          {
+            "faculty": "ИМСЭН-ИФХ",
+            "minimum": 238
+          },
+          {
+            "faculty": "ЦиТХИн",
+            "minimum": 230
+          },
+          {
+            "faculty": "ТНВиВМ",
+            "minimum": 229
+          }
+        ]
+      },
+      {
+        "code": "27.03.01",
+        "title": "Стандартизация и метрология",
+        "publishedMinimum": "нет бюджетного набора",
+        "facultyDistribution": []
+      },
+      {
+        "code": "27.03.05",
+        "title": "Инноватика",
+        "publishedMinimum": "237",
+        "facultyDistribution": [
+          {
+            "faculty": "ЦиТХИн",
+            "minimum": 237
+          }
+        ]
+      },
+      {
+        "code": "28.03.02",
+        "title": "Наноинженерия",
+        "publishedMinimum": "244",
+        "facultyDistribution": [
+          {
+            "faculty": "ЦиТХИн",
+            "minimum": 244
+          }
+        ]
+      },
+      {
+        "code": "28.03.03",
+        "title": "Наноматериалы",
+        "publishedMinimum": "246",
+        "facultyDistribution": [
+          {
+            "faculty": "ИМСЭН-ИФХ",
+            "minimum": 246
+          }
+        ]
+      },
+      {
+        "code": "29.03.04",
+        "title": "Технология художественной обработки материалов",
+        "publishedMinimum": "226",
+        "facultyDistribution": [
+          {
+            "faculty": "ТНВиВМ",
+            "minimum": 226
+          }
+        ]
+      },
+      {
+        "code": "38.03.01",
+        "title": "Экономика",
+        "publishedMinimum": "нет бюджетного набора",
+        "facultyDistribution": []
+      }
+    ],
+    "archive2024Pdf": "historical-2024"
+  },
+  "issues": [
+    {
+      "type": "stale_admissions_url",
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/main_info/",
+      "note": "Старый резервный адрес https://www.muctr.ru/entrant/ отвечает 404. Адрес в справочнике https://www.muctr.ru/abitur/bachelor/pk/contact/ ответил 200."
+    },
+    {
+      "type": "existing_hostel_field",
+      "sourceUrl": "https://ideco.muctr.ru/university/departments/studg/for/",
+      "note": "В справочнике три общежития без условий. Сайт студгородка указал 725 мест к заселению на 2026/2027 учебный год и электронную очередь. Отдельное число для первокурсников не опубликовано."
+    },
+    {
+      "type": "enrollment_preamble_year",
+      "sourceUrl": "https://ideco.muctr.ru/abitur/bachelor/pk/lits/",
+      "note": "Приказы № 1445 СТ и № 1446 СТ датированы 07.08.2026 и зачисляют с 01.09.2026. В преамбулах указана дата протокола 07.08.2027. Год зачисления подтверждается заголовками приказов, их распорядительной частью и индексом."
+    }
+  ],
+  "modelGaps": [
+    "Отдельная история проходных на договор.",
+    "Несколько результатов одного года по разным этапам, приказы об отмене и отдельный порог при распределении по факультетам.",
+    "Места и цены по направлению и форме с ограничениями по профилям или факультетам."
+  ]
+}
