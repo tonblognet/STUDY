@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T14:29:45.672Z",
+  "generatedAt": "2026-11-21T14:36:13.443Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
@@ -9,8 +9,8 @@
     "sourcedFields": 1466,
     "universitiesWithFaculties": 94,
     "faculties": 1005,
-    "universitiesWithEducationalListings": 156,
-    "educationalListings": 19574,
+    "universitiesWithEducationalListings": 174,
+    "educationalListings": 21821,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
@@ -30160,7 +30160,7 @@
       "officialWebsite": "http://www.bhi.spb.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 13,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30178,7 +30178,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30227,7 +30226,7 @@
       "officialWebsite": "http://www.vhutein.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 17,
       "historicalEducationAreas": 4,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30245,7 +30244,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30328,7 +30326,7 @@
       "officialWebsite": "https://eusp.org",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 12,
       "historicalEducationAreas": 8,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30346,7 +30344,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30396,7 +30393,7 @@
       "officialWebsite": "https://www.ibispb.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 47,
       "historicalEducationAreas": 4,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30414,7 +30411,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30488,7 +30484,7 @@
       "officialWebsite": "http://www.noironline.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 47,
       "historicalEducationAreas": 5,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30506,7 +30502,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30656,7 +30651,7 @@
       "officialWebsite": "http://www.rgisi.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 41,
       "historicalEducationAreas": 2,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30674,7 +30669,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30690,7 +30684,7 @@
       "officialWebsite": "https://herzen.spb.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 345,
       "historicalEducationAreas": 22,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30708,7 +30702,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30758,7 +30751,7 @@
       "officialWebsite": "http://www.rhga.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 75,
       "historicalEducationAreas": 7,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30776,7 +30769,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30792,7 +30784,7 @@
       "officialWebsite": "http://www.artsacademy.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 31,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30810,7 +30802,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30894,7 +30885,7 @@
       "officialWebsite": "http://www.jurac.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 5,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30912,7 +30903,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30928,7 +30918,7 @@
       "officialWebsite": "http://www.gup.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 90,
       "historicalEducationAreas": 12,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30946,7 +30936,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30962,7 +30951,7 @@
       "officialWebsite": "http://spmi.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 205,
       "historicalEducationAreas": 16,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -30980,7 +30969,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -30996,7 +30984,7 @@
       "officialWebsite": "https://www.spbgasu.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 93,
       "historicalEducationAreas": 14,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -31014,7 +31002,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -31132,7 +31119,7 @@
       "officialWebsite": "https://www.smtu.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 50,
       "historicalEducationAreas": 14,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -31150,7 +31137,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -31166,7 +31152,7 @@
       "officialWebsite": "http://www.gpmu.org",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 609,
       "historicalEducationAreas": 7,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -31184,7 +31170,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -31234,7 +31219,7 @@
       "officialWebsite": "http://www.spbu.ru",
       "sourcedFields": 7,
       "faculties": 25,
-      "educationalListings": 254,
+      "educationalListings": 687,
       "historicalEducationAreas": 32,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -31599,7 +31584,7 @@
       "officialWebsite": "http://www.spig.spb.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 3,
       "historicalEducationAreas": 1,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -31617,7 +31602,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -31633,7 +31617,7 @@
       "officialWebsite": "https://spbiem.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 104,
       "historicalEducationAreas": 4,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -31651,7 +31635,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
@@ -31837,7 +31820,7 @@
       "officialWebsite": "http://www.psysocwork.ru",
       "sourcedFields": 0,
       "faculties": 0,
-      "educationalListings": 0,
+      "educationalListings": 27,
       "historicalEducationAreas": 3,
       "admissionPrograms": 0,
       "verifiedAdmissionPrograms": 0,
@@ -31855,7 +31838,6 @@
         "hostelInfo",
         "overview",
         "faculties",
-        "educationalListings",
         "admissionPrograms"
       ]
     },
