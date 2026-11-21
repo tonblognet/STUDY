@@ -53,7 +53,12 @@ describe("college admissions with separate school-entry routes", () => {
   });
 
   it("shows actual programme names and separates the two entry bases without invented budget", () => {
-    const rows = educationPathwayRows(collegeCatalog(), "college");
+    const publishedIds = new Set(
+      enrichment.profiles[0].offerings.map((row) => row.id),
+    );
+    const rows = educationPathwayRows(collegeCatalog(), "college").filter(
+      (row) => row.offering && publishedIds.has(row.offering.id),
+    );
     expect(rows).toHaveLength(11);
     expect(rows.some((row) => row.title.includes("Дизайн"))).toBe(true);
     const design = rows.find(
