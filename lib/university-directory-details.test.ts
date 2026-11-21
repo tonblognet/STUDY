@@ -793,6 +793,15 @@ describe("official university profile evidence", () => {
     expect(offerings).toHaveLength(202);
   });
 
+  it("uses the dated university document for the RSUH overview", () => {
+    const { fields } = getDirectoryDetails("rsuh")!;
+    expect(fields.overview).toMatchObject({
+      value: expect.stringContaining("основан в 1991 году"),
+      sourceYear: 2024,
+      sourceUrl: expect.stringContaining("rsuh.ru/upload/main/science/2026/"),
+    });
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
