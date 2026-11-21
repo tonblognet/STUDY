@@ -523,21 +523,22 @@ describe("official university profile evidence", () => {
   });
   it("keeps education lists separate from admission contests and matching", () => {
     const ids = new Set(programs.map((p) => p.id));
+    const universitySlugs = new Set(universities.map((row) => row.slug));
     for (const profile of directoryDetails) {
-      expect(universities.some((u) => u.slug === profile.universitySlug)).toBe(
-        true,
-      );
+      expect(universitySlugs.has(profile.universitySlug)).toBe(true);
       expect(new Set(profile.offerings.map((row) => row.id)).size).toBe(
         profile.offerings.length,
       );
-      for (const row of profile.offerings) {
-        expect(row.code.trim().length).toBeGreaterThan(0);
-        if (row.sourceYear === null)
-          expect(row.admissionsStatus).toBe("pending_review");
-        expect(ids.has(row.id)).toBe(false);
-        expect(row.sourceUrl).toMatch(/^https?:\/\//);
-        expect(row.sourceSha256).toMatch(/^[a-f0-9]{64}$/);
-      }
+      const invalidOfferings = profile.offerings.filter(
+        (row) =>
+          !row.code.trim() ||
+          (row.sourceYear === null &&
+            row.admissionsStatus !== "pending_review") ||
+          ids.has(row.id) ||
+          !/^https?:\/\//.test(row.sourceUrl) ||
+          !/^[a-f0-9]{64}$/.test(row.sourceSha256 ?? ""),
+      );
+      expect(invalidOfferings, profile.universitySlug).toEqual([]);
     }
     // Employment statistics are not evidence of a current program offering.
     // The older fetch had only statistics for these two universities. New
@@ -704,6 +705,14 @@ describe("official university profile evidence", () => {
           row.admissionsStatus === "pending_review" && row.sourceYear === null,
       ),
     ).toBe(true);
+  });
+
+  it("uses the Polytechnic housing conditions and self-evaluation report", () => {
+    const { fields } = getDirectoryDetails("mospolytech")!;
+    expect(fields.overview?.value).toContain("создан в 2016 году");
+    expect(fields.overview?.sourceYear).toBe(2025);
+    expect(fields.hostelInfo?.value).toContain("при наличии свободного");
+    expect(fields.hostelInfo?.sourceYear).toBe(2026);
   });
 
   it("preserves the independent review date of a military center", () => {

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-21T14:40:53.251Z",
+  "generatedAt": "2026-11-21T14:51:47.810Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
     "universitiesWithFields": 192,
-    "sourcedFields": 1466,
+    "sourcedFields": 1468,
     "universitiesWithFaculties": 94,
     "faculties": 1005,
     "universitiesWithEducationalListings": 174,
@@ -3003,14 +3003,14 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=120111",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://mospolytech.ru",
-      "sourcedFields": 9,
+      "sourcedFields": 11,
       "faculties": 12,
       "educationalListings": 284,
       "historicalEducationAreas": 19,
       "admissionPrograms": 10,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": ["hostelInfo", "overview"]
+      "missing": []
     },
     {
       "slug": "sfi",
