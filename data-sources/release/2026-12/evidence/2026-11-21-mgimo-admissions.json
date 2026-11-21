@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "mgimo",
+  "reviewedAtUtc": "2026-11-21T15:24:28.861Z",
+  "scope": "Головная карточка, проспект Вернадского. Доказательства кампании, образовательного перечня и проверки результатов.",
+  "sources": {
+    "rules-2026": {
+      "sourceUrl": "https://mgimo.ru/sveden/files/005275.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "be8bbb86e82a4147ab5dc8c71c32f043d0d7058dc25ee21108332886b925912b",
+      "sourceSha256Basis": "extract-only"
+    },
+    "admissions-2026": {
+      "sourceUrl": "https://abiturient.mgimo.ru/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "c1f40d011c24c5a91513e6949b29536514fecdb2d7a167b0a25c1b723eaf87b7",
+      "sourceSha256Basis": "extract-only"
+    },
+    "history-2024": {
+      "sourceUrl": "https://career.mgimo.ru/page/adaptive/id39900/blog/13001447/",
+      "sourceYear": 2024,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "c95e4359bdd9c3063f388287e84d76bc32d6954bbd74c497dbc2307e8fb50a5c",
+      "sourceSha256Basis": "extract-only"
+    },
+    "political-science-curriculum": {
+      "sourceUrl": "https://mgimo.ru/sveden-old/education/5.5-obsh-kharakteristik-sign.pdf",
+      "sourceYear": 2022,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "5117fd6de98bef604b69e9789345ebb9f738a63795ea0b17540c2b46e261f900",
+      "sourceSha256Basis": "extract-only"
+    },
+    "philosophy-curriculum": {
+      "sourceUrl": "https://mgimo.ru/sveden/files/001025.pdf",
+      "sourceYear": 2022,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "d512545a21dbefbc511a3ac585470f2329cccc81a66c770f17e25fccc47595b3",
+      "sourceSha256Basis": "extract-only"
+    },
+    "economics-curriculum": {
+      "sourceUrl": "https://mgimo.ru/sveden/files/001505.pdf",
+      "sourceYear": 2023,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "692271d90336b4ae79be895751148bb17e79406b6b3358ad489373d8cead5cee",
+      "sourceSha256Basis": "extract-only"
+    },
+    "sveden-common": {
+      "sourceUrl": "https://mgimo.ru/sveden/common/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "31542e613dd3fb376e4a50be5d9d390f2d9d3acf50db3a9b43601658f169b432",
+      "sourceSha256Basis": "extract-only"
+    },
+    "sveden-structure": {
+      "sourceUrl": "https://mgimo.ru/sveden/struct/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "23959a5066ce6545c15bb10531ad78ebf298e06f29735f474c0f8a081426ee66",
+      "sourceSha256Basis": "extract-only"
+    },
+    "places-index-2026": {
+      "sourceUrl": "https://abiturient.mgimo.ru/bakalavriat/priem",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "54a36bdc2db2644bd45e03755d0dd2369aedfb619282c1de515ddf7e76af6202",
+      "sourceSha256Basis": "extract-only"
+    },
+    "fees-2026": {
+      "sourceUrl": "https://mgimo.ru/payedu/bachelor/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "b859cd2191542848eabb4f2cba33af1f3048a2e36068b7d3c91dea34b3d373ff",
+      "sourceSha256Basis": "extract-only"
+    },
+    "ranking-2026": {
+      "sourceUrl": "https://abiturient.mgimo.ru/bakalavriat/accept2026/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "643f1043637239c6e1d666d45144992a4fa2af6d85b87ae28fde75830f5777f7",
+      "sourceSha256Basis": "extract-only"
+    },
+    "competition-2026": {
+      "sourceUrl": "https://abiturient.mgimo.ru/bakalavriat/konkyrs2026",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "b43bdfe5d90d66995c87d0e3c58ae3047ec9dedffa1012b1746487e03cfb4ce0",
+      "sourceSha256Basis": "extract-only"
+    },
+    "dates-2026": {
+      "sourceUrl": "https://abiturient.mgimo.ru/bakalavriat/adm-dates/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "1ec5c1e64ec122eaacca8d08b0202d9bd688a9e52f2c4a331462eee63f11e8c8",
+      "sourceSha256Basis": "extract-only"
+    },
+    "phd-section": {
+      "sourceUrl": "https://mgimo.ru/phd/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "8ca8bceb04cd759514282caf8e34aea0fa764252f609d4b7c784ca20d03f772c",
+      "sourceSha256Basis": "extract-only"
+    }
+  },
+  "campaigns": {
+    "2026": {
+      "academicYear": "2026/2027",
+      "documents": {
+        "rules": {
+          "source": "rules-2026",
+          "section": "Разделы 1–4"
+        },
+        "examCombinationsAndDvi": {
+          "source": "rules-2026",
+          "section": "Раздел 2.2 и приложение 1, с. 83–89"
+        },
+        "subjectMinimums": {
+          "source": "rules-2026",
+          "section": "Раздел 2.2, с. 15–16"
+        },
+        "seatsIndex": {
+          "source": "places-index-2026",
+          "unavailableDocumentUrl": "https://abiturient.mgimo.ru/upload/ckeditor/files/bac-priem-2026.pdf"
+        },
+        "deadlines": {
+          "source": "rules-2026",
+          "section": "Разделы 2.1 и 2.4",
+          "supplement": "dates-2026"
+        },
+        "tuition": {
+          "source": "fees-2026",
+          "section": "Граждане РФ, набор 2026/2027"
+        },
+        "quotasAndAdmissionsWithoutExams": {
+          "source": "rules-2026",
+          "section": "Раздел 2 и приложение 3"
+        },
+        "achievements": {
+          "source": "rules-2026",
+          "section": "Приложения 4 и 5"
+        },
+        "rankings": {
+          "source": "ranking-2026"
+        }
+      }
+    },
+    "2027": {
+      "academicYear": "2027/2028",
+      "status": "not_found",
+      "checkedAtUtc": "2026-11-21T15:24:28.861Z",
+      "checkedSources": ["admissions-2026", "rules-2026"]
+    }
+  },
+  "admissionsContacts": {
+    "source": "admissions-2026",
+    "url": "https://abiturient.mgimo.ru/",
+    "phone": "+7 495 439-70-96",
+    "email": "priem@id.mgimo.ru"
+  },
+  "results2026": {
+    "budget": {
+      "value": null,
+      "status": "not_verified",
+      "checkedSources": ["ranking-2026", "competition-2026"]
+    },
+    "paid": {
+      "value": null,
+      "status": "not_verified",
+      "checkedSources": ["ranking-2026", "competition-2026"]
+    },
+    "ordersLocation": "https://abiturient.mgimo.ru/bakalavriat/orders2026/",
+    "summaryLocation": "https://mgimo.ru/about/news/main/admissions-campaign-2026/",
+    "note": "Итоговая числовая выборка по зачисленным не прочитана. Оперативная таблица от 26 июля содержит заявления, места и конкурс. Эти сведения не подменяют проходной балл."
+  },
+  "observedPublicationLimits": [
+    "Прямые запросы к /sveden/ и документам МГИМО вернули страницы проверки доступа с HTTP 200. Официальные извлечения проверены вручную.",
+    "План мест и прейскурант обнаружены как ссылки. Числа по отдельному конкурсу без читаемой таблицы оставлены неизвестными.",
+    "Опубликованные программы аспирантуры датированы 2022–2023 годами и описывают образовательные программы. Условия набора 2026 по этим специальностям не перенесены.",
+    "Программы с другим явно обозначенным местом реализации или отдельным базовым вузом сохранены в исключённых строках. Название Спортивный менеджмент для разных партнёров совпадает, в перечне одна строка."
+  ],
+  "archiveModelLimits": [
+    {
+      "code": "38.04.02",
+      "program": "Спортивный менеджмент",
+      "partners": [
+        "Российский международный олимпийский университет",
+        "Академия спорта Азербайджана"
+      ],
+      "source": "rules-2026",
+      "section": "Раздел 3, с. 30–31"
+    },
+    {
+      "code": "58.04.01",
+      "program": "Социально-политические процессы на Востоке и в Африке",
+      "accredited": false,
+      "source": "rules-2026",
+      "section": "Раздел 3, с. 32, примечание 16"
+    }
+  ],
+  "combinedCompetitions": [
+    {
+      "competition": "ФУП-МО",
+      "code": "41.03.05",
+      "profiles": ["Мировая политика", "Международная безопасность"]
+    },
+    {
+      "competition": "ФУП-Полит",
+      "code": "41.03.04",
+      "profiles": [
+        "Технологии публичной политики",
+        "Политические системы стран мира",
+        "Политическая аналитика"
+      ]
+    },
+    {
+      "competition": "ФУП-ГМУ",
+      "code": "38.03.04",
+      "profiles": [
+        "Цифровое государственное управление",
+        "Государственное обеспечение национальной безопасности",
+        "Государственное управление большими данными"
+      ]
+    },
+    {
+      "competition": "ИМТУР-ТД",
+      "code": "38.03.06",
+      "profiles": ["Международная торговля и логистика", "Цифровая торговля"]
+    },
+    {
+      "competition": "ИМТУР-Эколог",
+      "code": "05.03.06",
+      "profiles": [
+        "Глобальная экологическая политика",
+        "Климатическая и экологическая безопасность"
+      ]
+    }
+  ],
+  "excludedListings": [
+    {
+      "code": "41.04.05",
+      "title": "Международные отношения",
+      "profile": "Мировой порядок: конфликты и сотрудничество",
+      "page": 28,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "41.04.05",
+      "title": "Международные отношения",
+      "profile": "Культурная дипломатия в международных отношениях",
+      "page": 28,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "41.04.05",
+      "title": "Международные отношения",
+      "profile": "Дипломатическая и консульская служба Российской Федерации",
+      "page": 28,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "41.04.05",
+      "title": "Международные отношения",
+      "profile": "Внешняя политика и национальная безопасность России",
+      "page": 28,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.01",
+      "title": "Экономика",
+      "profile": "Международная экономическая и финансовая безопасность",
+      "page": 29,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.01",
+      "title": "Экономика",
+      "profile": "Организация и регулирование внешнеэкономической деятельности",
+      "page": 29,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.01",
+      "title": "Экономика",
+      "profile": "Экономика и управление инновациями",
+      "page": 29,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.01",
+      "title": "Экономика",
+      "profile": "Цифровые финансы",
+      "page": 29,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.01",
+      "title": "Экономика",
+      "profile": "Финансовая экономика и финансовые технологии",
+      "page": 29,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.05",
+      "title": "Бизнес-информатика",
+      "profile": "Искусственный интеллект",
+      "page": 30,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.05",
+      "title": "Бизнес-информатика",
+      "profile": "Системный анализ в международном бизнесе",
+      "page": 30,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.02",
+      "title": "Менеджмент",
+      "profile": "Торговля и логистика в Тихоокеанской Азии",
+      "page": 30,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.02",
+      "title": "Менеджмент",
+      "profile": "Спортивный менеджмент",
+      "page": 30,
+      "reason": "то же название у программы с другим партнёром"
+    },
+    {
+      "code": "38.04.02",
+      "title": "Менеджмент",
+      "profile": "Событийный менеджмент и туризм",
+      "page": 30,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.02",
+      "title": "Менеджмент",
+      "profile": "Международные товарно-сырьевые и энергетические рынки",
+      "page": 30,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.02",
+      "title": "Менеджмент",
+      "profile": "Кросс-культурный менеджмент",
+      "page": 30,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.04",
+      "title": "Государственное и муниципальное управление",
+      "profile": "Глобальная безопасность и цифровые технологии",
+      "page": 30,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "38.04.04",
+      "title": "Государственное и муниципальное управление",
+      "profile": "Управление городской инфраструктурой и развитием территорий",
+      "page": 31,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "40.04.01",
+      "title": "Юриспруденция",
+      "profile": "Международное экономическое и коммерческое право",
+      "page": 31,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "40.04.01",
+      "title": "Юриспруденция",
+      "profile": "Правовое сопровождение бизнеса",
+      "page": 31,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "40.04.01",
+      "title": "Юриспруденция",
+      "profile": "Международное частное, торговое и финансовое право",
+      "page": 31,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "44.04.01",
+      "title": "Педагогическое образование",
+      "profile": "Современная педагогика и образовательный дизайн",
+      "page": 31,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "37.04.01",
+      "title": "Психология",
+      "profile": "Психология управления и социальных коммуникаций",
+      "page": 31,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "45.04.02",
+      "title": "Лингвистика",
+      "profile": "Перевод и современные технологии в лингвистике",
+      "page": 31,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    },
+    {
+      "code": "27.04.03",
+      "title": "Системный анализ и управление",
+      "profile": "Многосторонние институты и управление глобальным технологическим развитием",
+      "page": 32,
+      "reason": "отдельная площадка, партнёрский набор или адрес требует сверки"
+    }
+  ],
+  "issues": [
+    {
+      "kind": "directory_fact_without_source_year",
+      "field": "telephone",
+      "value": "+7 (495) 229-40-49",
+      "source": "sveden-common",
+      "sourceUrl": "https://mgimo.ru/sveden/common/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "31542e613dd3fb376e4a50be5d9d390f2d9d3acf50db3a9b43601658f169b432",
+      "sourceSha256Basis": "extract-only"
+    },
+    {
+      "kind": "directory_fact_without_source_year",
+      "field": "email",
+      "value": "portal@inno.mgimo.ru",
+      "source": "sveden-common",
+      "sourceUrl": "https://mgimo.ru/sveden/common/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "31542e613dd3fb376e4a50be5d9d390f2d9d3acf50db3a9b43601658f169b432",
+      "sourceSha256Basis": "extract-only"
+    },
+    {
+      "kind": "program_accreditation_model_limit",
+      "code": "58.04.01",
+      "program": "Социально-политические процессы на Востоке и в Африке",
+      "source": "rules-2026",
+      "sourceSection": "С. 32, примечание 16",
+      "note": "Правила 2026 указывают отсутствие государственной аккредитации у этой программы. Перечень не хранит аккредитацию отдельной программы.",
+      "sourceUrl": "https://mgimo.ru/sveden/files/005275.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T15:24:28.861Z",
+      "sourceSha256": "be8bbb86e82a4147ab5dc8c71c32f043d0d7058dc25ee21108332886b925912b",
+      "sourceSha256Basis": "extract-only"
+    }
+  ]
+}

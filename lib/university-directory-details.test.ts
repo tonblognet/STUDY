@@ -725,6 +725,30 @@ describe("official university profile evidence", () => {
     });
   });
 
+  it("retains the reviewed MGIMO listings with their original source years", () => {
+    const profile = getDirectoryDetails("mgimo")!;
+    expect(profile.fields.admissionsEmail?.value).toBe("priem@id.mgimo.ru");
+    expect(profile.fields.telephone).toBeUndefined();
+    expect(profile.faculties).toHaveLength(12);
+    expect(profile.offerings).toHaveLength(93);
+    expect(profile.offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "41.03.05",
+          profile: "Большие данные и моделирование международных отношений",
+          sourceYear: 2026,
+          admissionsStatus: "pending_review",
+        }),
+        expect.objectContaining({
+          code: "5.2.5",
+          title: "Мировая экономика",
+          sourceYear: 2023,
+          admissionsStatus: "pending_review",
+        }),
+      ]),
+    );
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
