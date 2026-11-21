@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-21T15:48:45.064Z",
+  "generatedAt": "2026-11-21T16:39:23.019Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
     "universitiesWithFields": 193,
-    "sourcedFields": 1489,
-    "universitiesWithFaculties": 96,
-    "faculties": 1034,
+    "sourcedFields": 1491,
+    "universitiesWithFaculties": 97,
+    "faculties": 1050,
     "universitiesWithEducationalListings": 176,
     "educationalListings": 22357,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
-    "universitiesWithoutFaculties": 1129,
+    "universitiesWithoutFaculties": 1128,
     "universitiesWithoutAdmissionPrograms": 1205
   },
   "cities": [
@@ -957,7 +957,7 @@
     {
       "city": "Москва",
       "universities": 160,
-      "universitiesWithFaculties": 48,
+      "universitiesWithFaculties": 49,
       "admissionPrograms": 304
     },
     {
@@ -2826,14 +2826,14 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1595",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://rsmu.ru",
-      "sourcedFields": 9,
-      "faculties": 0,
+      "sourcedFields": 11,
+      "faculties": 16,
       "educationalListings": 202,
       "historicalEducationAreas": 7,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": ["admissionsEmail", "overview", "faculties"]
+      "missing": []
     },
     {
       "slug": "sechenov",

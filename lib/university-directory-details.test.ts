@@ -775,6 +775,24 @@ describe("official university profile evidence", () => {
     );
   });
 
+  it("adds the Pirogov admissions contact and academic institutes to the published list", () => {
+    const { fields, faculties, offerings } = getDirectoryDetails("pirogov")!;
+    expect(fields.admissionsEmail).toMatchObject({
+      value: "prk@rsmu.ru",
+      sourceUrl: "https://rsmu.ru/abitur/admission-office",
+      sourceYear: 2026,
+    });
+    expect(faculties).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          name: "Институт материнства и детства",
+          sourceUrl: "https://rsmu.ru/sveden/struct/",
+        }),
+      ]),
+    );
+    expect(offerings).toHaveLength(202);
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
