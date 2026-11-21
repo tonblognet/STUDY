@@ -675,6 +675,20 @@ describe("official university profile evidence", () => {
         expect(new URL(field.sourceUrl).hostname).not.toBe("timeweb.com");
   });
 
+  it("loads the November 21 official inventory without inferring admissions", () => {
+    const profile = getDirectoryDetails("moscow-110271")!;
+    expect(profile.offerings).toContainEqual(
+      expect.objectContaining({
+        code: "38.03.01",
+        title: "Экономика",
+        admissionsStatus: "pending_review",
+        sourceYear: null,
+        sourceUrl: "https://ineup.ru/sveden/education/eduaccred/",
+        sourceSha256: expect.stringMatching(/^[a-f0-9]{64}$/),
+      }),
+    );
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
