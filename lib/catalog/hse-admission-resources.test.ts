@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
 import type { HseAdmissionResources } from "@/lib/hse-admission-resources";
-import { mergeDirectoryEnrichment } from "@/lib/university-directory-details";
+import {
+  directoryDetails,
+  mergeDirectoryEnrichment,
+} from "@/lib/university-directory-details";
 import { mergeUniversity } from "@/scripts/catalog";
 import { baselineCatalog } from "./baseline";
 import { catalogChecksum, catalogDiff } from "./diff";
@@ -66,9 +69,8 @@ describe("versioned HSE admission resources", () => {
     resources.masterTuition[0].tuition.value = 1;
     expect(catalogChecksum(oldRevision)).toBe(oldChecksum);
     expect(
-      baselineCatalog().directoryDetails.find(
-        (row) => row.universitySlug === "hse",
-      )!.admissionResources!.masterTuition[0].tuition.value,
+      directoryDetails.find((row) => row.universitySlug === "hse")!
+        .admissionResources!.masterTuition[0].tuition.value,
     ).not.toBe(1);
   });
 
