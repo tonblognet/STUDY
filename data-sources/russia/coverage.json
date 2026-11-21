@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-21T15:27:54.164Z",
+  "generatedAt": "2026-11-21T15:48:45.064Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
     "universitiesWithFields": 193,
-    "sourcedFields": 1479,
-    "universitiesWithFaculties": 95,
-    "faculties": 1017,
-    "universitiesWithEducationalListings": 175,
-    "educationalListings": 22160,
+    "sourcedFields": 1489,
+    "universitiesWithFaculties": 96,
+    "faculties": 1034,
+    "universitiesWithEducationalListings": 176,
+    "educationalListings": 22357,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
-    "universitiesWithoutFaculties": 1130,
+    "universitiesWithoutFaculties": 1129,
     "universitiesWithoutAdmissionPrograms": 1205
   },
   "cities": [
@@ -957,7 +957,7 @@
     {
       "city": "Москва",
       "universities": 160,
-      "universitiesWithFaculties": 47,
+      "universitiesWithFaculties": 48,
       "admissionPrograms": 304
     },
     {
@@ -2498,26 +2498,6 @@
       "officialWebsite": "https://svr.gov.ru/pressburo/vopros6.htm"
     },
     {
-      "slug": "bmstu",
-      "name": "Московский государственный технический университет имени Н. Э. Баумана",
-      "city": "Москва",
-      "missing": [
-        "fullName",
-        "shortName",
-        "regDate",
-        "address",
-        "telephone",
-        "email",
-        "admissionsPhone",
-        "admissionsEmail",
-        "hostelInfo",
-        "overview",
-        "faculties",
-        "educationalListings"
-      ],
-      "officialWebsite": "https://bmstu.ru"
-    },
-    {
       "slug": "gubkin",
       "name": "Российский государственный университет нефти и газа имени И. М. Губкина",
       "city": "Москва",
@@ -2574,6 +2554,24 @@
         "admissionPrograms"
       ],
       "officialWebsite": "http://www.uuait.ru"
+    },
+    {
+      "slug": "pa-fsb",
+      "name": "Пограничная академия Федеральной службы безопасности Российской Федерации",
+      "city": "Москва",
+      "missing": [
+        "fullName",
+        "shortName",
+        "regDate",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "overview",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://www.fsb.ru/fsb/supplement/employ/doc4.htm"
     }
   ],
   "universities": [
@@ -2790,27 +2788,14 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=147",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://bmstu.ru",
-      "sourcedFields": 1,
-      "faculties": 0,
-      "educationalListings": 0,
+      "sourcedFields": 11,
+      "faculties": 17,
+      "educationalListings": 197,
       "historicalEducationAreas": 24,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "fullName",
-        "shortName",
-        "regDate",
-        "address",
-        "telephone",
-        "email",
-        "admissionsPhone",
-        "admissionsEmail",
-        "hostelInfo",
-        "overview",
-        "faculties",
-        "educationalListings"
-      ]
+      "missing": []
     },
     {
       "slug": "mgimo",

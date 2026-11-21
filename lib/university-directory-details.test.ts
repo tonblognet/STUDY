@@ -749,6 +749,32 @@ describe("official university profile evidence", () => {
     );
   });
 
+  it("shows reviewed Bauman listings at their original source years", () => {
+    const { fields, offerings } = getDirectoryDetails("bmstu")!;
+    expect(fields.admissionsEmail?.value).toBe("abiturient@bmstu.ru");
+    expect(fields.email).toMatchObject({
+      value: "bauman@bmstu.ru",
+      sourceYear: 2025,
+    });
+    expect(fields.hostelInfo?.value).toContain("на конкурсной основе");
+    expect(offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "09.02.11",
+          title: "Разработка и управление программным обеспечением",
+          sourceYear: 2025,
+          admissionsStatus: "pending_review",
+        }),
+        expect.objectContaining({
+          code: "12.03.04",
+          profile: "Биомедицинская инженерия 4.0",
+          sourceYear: 2026,
+          admissionsStatus: "pending_review",
+        }),
+      ]),
+    );
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
