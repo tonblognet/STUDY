@@ -802,6 +802,17 @@ describe("official university profile evidence", () => {
     });
   });
 
+  it("adds dated Gubkin profile facts without duplicating the offline listings", () => {
+    const { fields, faculties, offerings } = getDirectoryDetails("gubkin")!;
+    expect(fields.admissionsEmail).toMatchObject({
+      value: "priem@gubkin.ru",
+      sourceYear: 2026,
+    });
+    expect(fields.admissionsUrl?.value).toBe("https://priem.gubkin.ru/");
+    expect(faculties).toHaveLength(13);
+    expect(offerings).toHaveLength(209);
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(

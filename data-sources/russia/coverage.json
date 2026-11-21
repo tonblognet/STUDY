@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-21T16:47:03.819Z",
+  "generatedAt": "2026-11-21T17:15:07.290Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
-    "universitiesWithFields": 193,
-    "sourcedFields": 1492,
-    "universitiesWithFaculties": 97,
-    "faculties": 1050,
+    "universitiesWithFields": 194,
+    "sourcedFields": 1502,
+    "universitiesWithFaculties": 98,
+    "faculties": 1063,
     "universitiesWithEducationalListings": 176,
     "educationalListings": 22357,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
-    "universitiesWithoutFaculties": 1128,
+    "universitiesWithoutFaculties": 1127,
     "universitiesWithoutAdmissionPrograms": 1205
   },
   "cities": [
@@ -957,7 +957,7 @@
     {
       "city": "Москва",
       "universities": 160,
-      "universitiesWithFaculties": 49,
+      "universitiesWithFaculties": 50,
       "admissionPrograms": 304
     },
     {
@@ -2498,26 +2498,6 @@
       "officialWebsite": "https://svr.gov.ru/pressburo/vopros6.htm"
     },
     {
-      "slug": "gubkin",
-      "name": "Российский государственный университет нефти и газа имени И. М. Губкина",
-      "city": "Москва",
-      "missing": [
-        "fullName",
-        "shortName",
-        "regDate",
-        "address",
-        "telephone",
-        "email",
-        "admissionsUrl",
-        "admissionsPhone",
-        "admissionsEmail",
-        "hostelInfo",
-        "overview",
-        "faculties"
-      ],
-      "officialWebsite": "https://www.gubkin.ru"
-    },
-    {
       "slug": "itpi",
       "name": "Институт традиционного прикладного искусства — Московский филиал РУТХП",
       "city": "Москва",
@@ -2572,6 +2552,23 @@
         "admissionPrograms"
       ],
       "officialWebsite": "https://www.fsb.ru/fsb/supplement/employ/doc4.htm"
+    },
+    {
+      "slug": "mpi-fsb",
+      "name": "Московский пограничный институт Федеральной службы безопасности Российской Федерации",
+      "city": "Москва",
+      "missing": [
+        "shortName",
+        "regDate",
+        "admissionsUrl",
+        "admissionsPhone",
+        "admissionsEmail",
+        "hostelInfo",
+        "faculties",
+        "educationalListings",
+        "admissionPrograms"
+      ],
+      "officialWebsite": "https://mpi.fsb.ru/"
     }
   ],
   "universities": [
@@ -2864,27 +2861,14 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=219",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://www.gubkin.ru",
-      "sourcedFields": 0,
-      "faculties": 0,
+      "sourcedFields": 10,
+      "faculties": 13,
       "educationalListings": 209,
       "historicalEducationAreas": 14,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "fullName",
-        "shortName",
-        "regDate",
-        "address",
-        "telephone",
-        "email",
-        "admissionsUrl",
-        "admissionsPhone",
-        "admissionsEmail",
-        "hostelInfo",
-        "overview",
-        "faculties"
-      ]
+      "missing": ["hostelInfo"]
     },
     {
       "slug": "msal",
