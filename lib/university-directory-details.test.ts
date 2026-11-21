@@ -192,7 +192,11 @@ describe("official university profile evidence", () => {
     ).not.toMatch(/Тарский филиал/iu);
     expect(getDirectoryDetails("russia-199")!.faculties).toHaveLength(11);
     expect(getDirectoryDetails("mipt")!.fields.admissionsPhone).toBeDefined();
-    expect(getDirectoryDetails("mephi")!.offerings).toHaveLength(77);
+    expect(
+      getDirectoryDetails("mephi")!.offerings.filter((row) =>
+        row.checkedAt.startsWith("2026-11-09T"),
+      ),
+    ).toHaveLength(77);
   });
 
   it("retains October 25 evidence without turning cohort labels or ambiguous source values into admissions facts", () => {
@@ -687,6 +691,19 @@ describe("official university profile evidence", () => {
         sourceSha256: expect.stringMatching(/^[a-f0-9]{64}$/),
       }),
     );
+  });
+
+  it("keeps the reviewed MEPhI educational inventory separate from admissions", () => {
+    const added = getDirectoryDetails("mephi")!.offerings.filter((row) =>
+      row.sourceUrl.startsWith("https://eis2.mephi.ru/programs"),
+    );
+    expect(added).toHaveLength(246);
+    expect(
+      added.every(
+        (row) =>
+          row.admissionsStatus === "pending_review" && row.sourceYear === null,
+      ),
+    ).toBe(true);
   });
 
   it("preserves the independent review date of a military center", () => {

@@ -7,6 +7,7 @@ import type {
   SourcedValue,
 } from "@/lib/admissions/types";
 import { calculateCompleteness } from "@/lib/admissions/completeness";
+import mephiAdmissionEvidence from "@/data-sources/release/2026-12/evidence/2026-11-21-mephi-admissions.json";
 import { hseProgramInputs } from "@/lib/hse-admissions";
 import {
   getMguExamRequirements,
@@ -1006,6 +1007,11 @@ const mephiExamsSource =
 const mephiHostelSource =
   "https://admission.mephi.ru/admission/baccalaureate-and-specialty/documents";
 const mephiMilitarySource = "https://admission.mephi.ru/about/military";
+const mephiBudgetResults = new Map(
+  mephiAdmissionEvidence.results2026Budget
+    .filter((result) => result.codes.length === 1)
+    .map((result) => [result.codes[0], result]),
+);
 programsBase.push(
   program({
     id: "mephi-nuclear",
@@ -1364,6 +1370,27 @@ function mephiExamRequirements(seed: MephiProgramSeed): ExamRequirement[] {
 }
 
 for (const seed of mephiProgramSeeds) {
+  const budgetResult = mephiBudgetResults.get(seed.code);
+  const resultSource = mephiAdmissionEvidence.sources["results-2026"];
+  const budgetScore = budgetResult?.value ?? null;
+  const passingScoreValue = sourced(
+    budgetScore,
+    resultSource.sourceYear,
+    budgetScore === null ? "not_published" : "verified",
+    resultSource.sourceUrl,
+    "Официальный сайт НИЯУ МИФИ",
+    {
+      checkedAt: resultSource.checkedAt,
+      retrievedAt: resultSource.checkedAt,
+      nextReviewAt: undefined,
+      sourceKind: "html",
+      sourceSection: budgetResult?.sourceSection,
+      note:
+        budgetResult?.note ??
+        budgetResult?.stage ??
+        "В итогах бюджетного приёма 2026 года отдельный проходной по этому направлению не указан.",
+    },
+  );
   const budgetPlacesValue =
     seed.budgetPlaces === null
       ? sourced<number>(
@@ -1427,14 +1454,11 @@ for (const seed of mephiProgramSeeds) {
         "Русский язык",
       ],
       examRequirements: mephiExamRequirements(seed),
-      passingScore: null,
-      passingScoreValue: unknownNumber(
-        2026,
-        mephiPlacesSource,
-        "Приёмная комиссия НИЯУ МИФИ",
-        "Итоговый проходной балл 2026 будет известен после завершения зачисления.",
-      ),
-      passingHistory: [],
+      passingScore: passingScoreValue.value,
+      passingScoreValue,
+      passingScoreExamScale: passingScoreValue.value === null ? null : 300,
+      passingHistory:
+        passingScoreValue.value === null ? [] : [passingScoreValue],
       placesHistory: seed.budgetPlaces === null ? [] : [budgetPlacesValue],
       tuitionHistory: [],
       competitionHistory: [],

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T14:36:13.443Z",
+  "generatedAt": "2026-11-21T14:40:53.251Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
@@ -10,7 +10,7 @@
     "universitiesWithFaculties": 94,
     "faculties": 1005,
     "universitiesWithEducationalListings": 174,
-    "educationalListings": 21821,
+    "educationalListings": 22067,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
@@ -2693,7 +2693,7 @@
       "officialWebsite": "https://mephi.ru",
       "sourcedFields": 11,
       "faculties": 12,
-      "educationalListings": 77,
+      "educationalListings": 323,
       "historicalEducationAreas": 18,
       "admissionPrograms": 12,
       "verifiedAdmissionPrograms": 11,
