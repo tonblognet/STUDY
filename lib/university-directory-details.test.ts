@@ -715,6 +715,16 @@ describe("official university profile evidence", () => {
     expect(fields.hostelInfo?.sourceYear).toBe(2026);
   });
 
+  it("dates the Financial University housing places to the 2026 intake", () => {
+    const { fields } = getDirectoryDetails("fa")!;
+    expect(fields.overview?.sourceYear).toBe(2025);
+    expect(fields.hostelInfo).toMatchObject({
+      value: expect.stringContaining("1043 места"),
+      sourceUrl: "https://www.fa.ru/university/dormitories/",
+      sourceYear: 2026,
+    });
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
