@@ -38,6 +38,7 @@ import educationPathways from "@/data-sources/release/2026-12/evidence/2026-11-1
 import reaCollegeNovember18 from "@/data-sources/russia/rea-mpek-college-enrichment-2026-11-18.json";
 import catalogFillNovember20 from "@/data-sources/russia/fill-2026-11-20.json";
 import catalogFillNovember21 from "@/data-sources/russia/fill-2026-11-21.json";
+import catalogFillNovember22 from "@/data-sources/russia/fill-2026-11-22.json";
 import { hsePostgraduateOfferings } from "@/lib/hse-postgraduate-admissions";
 import { hseMasterTuition } from "@/lib/hse-admissions";
 import type { HseAdmissionResources } from "@/lib/hse-admission-resources";
@@ -272,6 +273,7 @@ export const directoryDetails = mergeDirectoryEnrichment(
     ...moscowRudnNovember10.profiles,
     ...catalogFillNovember20.profiles,
     ...catalogFillNovember21.profiles,
+    ...catalogFillNovember22.profiles,
   ] as DirectoryEnrichment[],
 ).map((profile) =>
   profile.universitySlug === "hse"

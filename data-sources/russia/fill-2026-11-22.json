@@ -1,0 +1,79 @@
+{
+  "sourceYear": null,
+  "profiles": [
+    {
+      "universitySlug": "sechenov",
+      "fields": {
+        "admissionsPhone": {
+          "value": "+7 (495) 622-98-20",
+          "sourceUrl": "https://priem.sechenov.ru/undergraduate/pravila-priema/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T18:37:17Z",
+          "sourceSha256": "8508cabdc576c2de9406dc6132a921f805b0815fb552dc2562ac76c7f38b7494"
+        },
+        "overview": {
+          "value": "Сеченовский университет ведёт историю с 1758 года от медицинского факультета Императорского Московского университета. В 2010 году Московская медицинская академия имени И. М. Сеченова получила статус университета.",
+          "sourceUrl": "https://www.sechenov.ru/pressroom/news/s-dnem-rozhdeniya-universitet/",
+          "sourceYear": 2021,
+          "checkedAt": "2026-11-22T18:45:20Z",
+          "sourceSha256": "9bfd5dfbee34bc1a01de9db5bd0adb0a5ba1085c5258694eb0080e82f3b85d66"
+        }
+      },
+      "faculties": [],
+      "offerings": []
+    }
+  ],
+  "sources": [
+    {
+      "universitySlug": "sechenov",
+      "id": "sechenov:rules",
+      "url": "https://priem.sechenov.ru/undergraduate/pravila-priema/",
+      "checkedAt": "2026-11-22T18:37:17Z",
+      "sourceYear": 2026,
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 18541,
+      "sourceSha256": "8508cabdc576c2de9406dc6132a921f805b0815fb552dc2562ac76c7f38b7494"
+    },
+    {
+      "universitySlug": "sechenov",
+      "id": "sechenov:history",
+      "url": "https://www.sechenov.ru/pressroom/news/s-dnem-rozhdeniya-universitet/",
+      "checkedAt": "2026-11-22T18:45:20Z",
+      "sourceYear": 2021,
+      "sourceSha256Basis": "extract-only",
+      "extractText": "24 августа 2021\nправопреемник медицинского факультета Императорского Московского университета (ИМУ), ведет свою историю с 1758 года.\nВ 2010 году ММА имени И.М. Сеченова присвоен статус университета",
+      "sourceSha256": "9bfd5dfbee34bc1a01de9db5bd0adb0a5ba1085c5258694eb0080e82f3b85d66"
+    }
+  ],
+  "issues": [
+    {
+      "kind": "historical_admissions_no_stage",
+      "sourceUrl": "https://priem.sechenov.ru/undergraduate/prokhodnye-bally-za-2025-god/",
+      "note": "Архив 2025 показывает минимум отдельно по КЦП, договору и квотам. Этап зачисления не подписан.",
+      "universitySlug": "sechenov"
+    },
+    {
+      "kind": "official_site_access",
+      "sourceUrl": "https://www.sechenov.ru/upload/iblock/c3d/b4ubx1qudx09i7fbtmeg6gkg855n10ct/Pravila-priema_2026_2027_BS-s-izmeneniyami-_1_-_2_3.pdf",
+      "note": "Главный сайт вернул HTTP 403 при прямой загрузке сводных правил с изменениями. Текст редакции сверялся в веб-извлечении. Приложения и правила в первоначальной редакции доступны с портала приёмной комиссии.",
+      "universitySlug": "sechenov"
+    },
+    {
+      "kind": "distinct_groups_with_same_code",
+      "sourceUrl": "https://priem.sechenov.ru/undergraduate/",
+      "note": "Лечебное дело и Моделирование здоровья имеют общий код 31.05.01, отдельные карточки и разную цену. Филиалы учитываются отдельно. Приказы без профиля не сопоставлялись по одному коду.",
+      "universitySlug": "sechenov"
+    },
+    {
+      "kind": "possible_quota_mismatch",
+      "sourceUrl": "https://priem.sechenov.ru/undergraduate/",
+      "note": "Сумма опубликованных квот выше показателя КЦП по 12.05.01 (2 и 1), 32.05.01 (51 и 47) и 31.05.02 (111 и 39). Числа сохранены как опубликованы. Остаток общего конкурса по этим строкам не рассчитывался.",
+      "universitySlug": "sechenov"
+    }
+  ],
+  "scopes": {
+    "sechenov": "Сеченовский университет, головная площадка в Москве. Телефон приёмной комиссии и краткий обзор."
+  },
+  "scope": "Сеченовский университет, головная площадка в Москве. Телефон приёмной комиссии и краткий обзор.",
+  "checkedAt": "2026-11-22T18:45:20Z"
+}

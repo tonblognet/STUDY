@@ -830,6 +830,20 @@ describe("official university profile evidence", () => {
     );
   });
 
+  it("adds sourced Sechenov admissions contacts and history to the existing directory", () => {
+    const { fields, offerings } = getDirectoryDetails("sechenov")!;
+    expect(fields.admissionsPhone).toMatchObject({
+      value: "+7 (495) 622-98-20",
+      sourceYear: 2026,
+      sourceUrl: "https://priem.sechenov.ru/undergraduate/pravila-priema/",
+    });
+    expect(fields.overview).toMatchObject({
+      value: expect.stringContaining("с 1758 года"),
+      sourceYear: 2021,
+    });
+    expect(offerings).toHaveLength(219);
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(

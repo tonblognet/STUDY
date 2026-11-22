@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-21T17:30:16.485Z",
+  "generatedAt": "2026-11-22T18:51:26.462Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
     "universitiesWithFields": 194,
-    "sourcedFields": 1505,
+    "sourcedFields": 1507,
     "universitiesWithFaculties": 98,
     "faculties": 1063,
     "universitiesWithEducationalListings": 176,
@@ -2842,14 +2842,14 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1792",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://www.sechenov.ru",
-      "sourcedFields": 9,
+      "sourcedFields": 11,
       "faculties": 9,
       "educationalListings": 219,
       "historicalEducationAreas": 17,
       "admissionPrograms": 8,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": ["admissionsPhone", "overview"]
+      "missing": []
     },
     {
       "slug": "gubkin",
