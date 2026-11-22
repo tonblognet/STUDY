@@ -1589,11 +1589,12 @@ const rudnSources = {
     sourceSection: "Первая таблица, строка 55, ФФМЕН, 01.03.02, индекс НПб1д4",
   },
   history: {
-    url: "https://admission.rudn.ru/undergraduate/scores/",
-    sourceKind: "html",
-    retrievedAt: "2026-11-10T15:58:16.381Z",
-    sourceDocumentTitle: "Проходные баллы прошлых лет",
-    sourceSection: "01.03.02, ФФМЕН, опубликованный результат 2025 года",
+    url: "https://admission.rudn.ru/upload/Prokhodnye_balli_na_byudzhet_RUDN_2022_2026.pdf",
+    sourceKind: "pdf",
+    retrievedAt: "2026-11-22T21:39:27Z",
+    sourceDocumentTitle: "Проходные баллы на бюджет за 2022–2026 годы",
+    sourcePage: 1,
+    sourceSection: "01.03.02, ФФМиЕН, очная форма, 2026 год",
   },
 } as const;
 
@@ -1674,8 +1675,8 @@ programsBase.push(
     ],
     passingScore: null,
     passingScoreValue: rudnFact<number>(null, "pending_review", "history", {
-      year: 2025,
-      note: "Архивный результат за 2025 год относится к многопрофильному конкурсу 01.03.00. Сопоставимый результат для этой конкурсной группы требует подтверждения.",
+      checkedAt: "2026-11-22T21:39:27Z",
+      note: "Архив приводит итог 2026 года по направлению 01.03.02 ФФМиЕН. Отдельный этап зачисления и привязка к профилю не указаны.",
     }),
     passingScoreExamScale: null,
     passingHistory: [],

@@ -634,20 +634,37 @@ describe("official university profile evidence", () => {
     ).toBe(false);
   });
 
-  it("adds the selected RUDN bachelor inventory without inferring admissions", () => {
+  it("loads the RUDN inventory across published levels without inferring admissions", () => {
     const profile = getDirectoryDetails("rudn")!;
     expect(profile.fields.overview?.value).toContain("5 февраля 1960 года");
-    expect(profile.faculties).toHaveLength(12);
-    expect(profile.offerings).toHaveLength(165);
+    expect(profile.faculties).toHaveLength(17);
+    expect(profile.offerings).toHaveLength(992);
+    expect(profile.offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "01.04.02",
+          profile: "Теория вероятностей и математическая статистика",
+          level: "Высшее образование — специалитет, магистратура",
+          forms: "Очная",
+          duration: "2 года",
+        }),
+        expect.objectContaining({ code: "31.05.01", profile: "Лечебное дело" }),
+        expect.objectContaining({ code: "1.1.1", duration: "4 года" }),
+        expect.objectContaining({ code: "31.08.01", duration: "2 года" }),
+      ]),
+    );
     for (const row of profile.offerings) {
-      expect(row.level).toBe("Высшее образование — бакалавриат");
       expect(row.sourceYear).toBeNull();
       expect(row.admissionsStatus).toBe("pending_review");
-      expect(row.profile).not.toMatch(/совместно|КНР/);
       expect(row.sourceUrl).toBe(
         "https://www.rudn.ru/sveden/education/eduaccred/",
       );
     }
+    expect(programs.find((entry) => entry.id === "rudn-ami")).toMatchObject({
+      passingScore: null,
+      passingScoreValue: { year: 2026, status: "pending_review" },
+      passingHistory: [],
+    });
   });
 
   it("fills MISIS card gaps without merging differently scoped education snapshots", () => {
