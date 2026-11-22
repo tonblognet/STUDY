@@ -1,0 +1,2204 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "misis",
+  "reviewedAtUtc": "2026-11-22T20:54:38Z",
+  "scope": "Москва, головной вуз. Базовое высшее образование и специалитет. Правила 2026/27 и архив проходных.",
+  "sources": {
+    "contacts": {
+      "sourceUrl": "https://misis.ru/applicants/",
+      "checkedAt": "2026-11-22T20:37:24Z",
+      "sourceYear": null,
+      "sourceSha256": "35cb6c8d774feb1a3421737ebe73b6d3b7dd08403baa807df309ab90ee8bdaa6",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Приёмная комиссия головного университета"
+    },
+    "landing": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/",
+      "checkedAt": "2026-11-22T20:37:22Z",
+      "sourceYear": null,
+      "sourceSha256": "e405804ce4d0372aa7f4633be5800b210de7ef1c60ef4427ec5641ac223b9e36",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "rules": {
+      "sourceUrl": "https://misis.ru/files/-/b896946f5903e48b7d131802db33894f/_u041F_u0440_u0430_u0432_u0438_u043B_u0430_20_u043F_u0440_u0438_u0435_u043C_u0430_20_u0431_u0430_u043A_20_u0418_u0422_u041E_u0413.pdf",
+      "checkedAt": "2026-11-22T20:37:26Z",
+      "sourceYear": 2026,
+      "sourceSha256": "2092eb500c36ede6e21bdb0b9f26c21063e3b1bf2f90fc9cdfa177287b93c8d9",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Правила 2026/27, приложение 2 «Контрольные цифры приема», головное отделение"
+    },
+    "regulations": {
+      "sourceUrl": "https://misis.ru/applicants/npa/regulations/",
+      "checkedAt": "2026-11-22T20:37:24Z",
+      "sourceYear": 2026,
+      "sourceSha256": "74184875e4fcd7ad399a2675d07f970b07b9dce8274b67ffd1c236c9a7c2a58b",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-plan": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/budgetary-places/",
+      "checkedAt": "2026-11-22T20:39:01Z",
+      "sourceYear": null,
+      "sourceSha256": "18343b4608904a13081622d2b45cee957a977111f6dc7837af25b240a4b5fdbb",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "БВО, очная форма, 17 строк. КЦП сверены с приложением 2"
+    },
+    "paid-plan": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/extrabudgetary-places/",
+      "checkedAt": "2026-11-22T20:39:01Z",
+      "sourceYear": null,
+      "sourceSha256": "cdcda71af71b38dfbca403fb2bfaafa37f8c3c00752e2512d996bdd8794175e6",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "БВО, очная форма, 18 строк. Год в таблице отсутствует"
+    },
+    "archive": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/list/prohodnyebally/",
+      "checkedAt": "2026-11-22T20:37:22Z",
+      "sourceYear": null,
+      "sourceSha256": "b2400b6ed4517862fa7757208ff462a5cda8a475ed4fa66fa51d14bcde36ed9c",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Две отдельные таблицы, годы в заголовках колонок"
+    },
+    "exams": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/list/perechen_vstupitel_nyhispytanii/",
+      "checkedAt": "2026-11-22T20:37:25Z",
+      "sourceYear": null,
+      "sourceSha256": "070c0084500dbf6854394554ef6f5fd58ea411190f428f5a8ec51ade0ea90850",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Три таблицы, по базе поступления и способу сдачи"
+    },
+    "exams-rules": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/list/program/",
+      "checkedAt": "2026-11-22T20:37:25Z",
+      "sourceYear": null,
+      "sourceSha256": "bb5844aebf374fbefb626d9c653c18b05633360e707cf210572f235e0f248601",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "deadlines": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/deadlines/",
+      "checkedAt": "2026-11-22T20:37:23Z",
+      "sourceYear": null,
+      "sourceSha256": "0ba77412afdbc29618c035df7afd2b6dc649c015f405e07b154499ed5dc11d4c",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Основной приём, очная форма"
+    },
+    "payment": {
+      "sourceUrl": "https://misis.ru/students/sto-services/studserv/payment/p2/",
+      "checkedAt": "2026-11-22T20:39:01Z",
+      "sourceYear": 2026,
+      "sourceSha256": "bd709c7b74023d80801c5b7dbd01cb1bb8a94a0cf1991820df5241fafeb19e2e",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Договоры и скидки 2026/27"
+    },
+    "achievements": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/personal-achievements/",
+      "checkedAt": "2026-11-22T20:37:26Z",
+      "sourceYear": null,
+      "sourceSha256": "ba1503d2e01b3f6546c23f026afe6c9c0892172c75aebb8f5b8b67a094cc4948",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "rights": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/special/",
+      "checkedAt": "2026-11-22T20:37:27Z",
+      "sourceYear": null,
+      "sourceSha256": "6064adc734d658dd5754b7c3cd91ce1172bccd9fd8a49d77775be4fb2ab85b30",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "olympiads": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/olympiad/",
+      "checkedAt": "2026-11-22T20:37:26Z",
+      "sourceYear": null,
+      "sourceSha256": "cf656f6aadea4e222f4848e56844cbad3fc0808b15d09c0dbdc4808bc1a26c46",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "separate-quota": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/spetsial_nayakvota/",
+      "checkedAt": "2026-11-22T20:37:26Z",
+      "sourceYear": null,
+      "sourceSha256": "e89fb06b085bbd3b0d8e781210129c3f008e825e29e9d411b04d192ffa7042fa",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "enrollment": {
+      "sourceUrl": "https://misis.ru/applicants/admission/progress/baccalaureate-and-specialties/chance-estimation/",
+      "checkedAt": "2026-11-22T20:37:24Z",
+      "sourceYear": null,
+      "sourceSha256": "35c270cce1c6c611cfc1967be1533337dd295c9a47a2d67d280905c9641a6139",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "enrollment-rules": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/poryadokzachisleniya/",
+      "checkedAt": "2026-11-22T20:37:25Z",
+      "sourceYear": null,
+      "sourceSha256": "2348f07820ee2a854102a8791225afaa70b69eed67fb5c0b35e9307d2d03f4ee",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "analysis": {
+      "sourceUrl": "https://misis.ru/applicants/admission/baccalaureate-and-specialty/faculties/analysis/",
+      "checkedAt": "2026-11-22T20:50:33Z",
+      "sourceYear": 2026,
+      "sourceSha256": "20974501274d44e1316e1d3c12af6b336d377a65d189f04fd6d6223a87479447",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "27.03.03, Москва, очная. Приём начинается в 2026 году"
+    },
+    "price-order": {
+      "sourceUrl": "https://misis.ru/files/-/360c93b2b90f44c30fe80682def446c0/prikaz-_u2116255o.v.-ot-29.05.2026-1-kurs.pdf",
+      "checkedAt": "2026-11-22T20:54:38Z",
+      "sourceYear": 2026,
+      "sourceSha256": "de35054c6fb30113387a87ef9bf8f7c1093f83d75fc77d6ce70bcde82ca9d548",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Приказ от 29.05.2026 № 255о.в., приложение 1, страница 3. Ручная сверка скана"
+    }
+  },
+  "places": {
+    "budget": {
+      "kcpYear": 2026,
+      "kcpSource": "rules",
+      "quotaYear": null,
+      "quotaSource": "budget-plan",
+      "rows": [
+        {
+          "code": "01.03.04",
+          "title": "Прикладная математика",
+          "institute": "Институт компьютерных наук",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 60,
+          "specialQuota": 6,
+          "separateQuota": 6,
+          "targetQuota": null
+        },
+        {
+          "code": "03.03.02",
+          "title": "Физика",
+          "institute": "Институт физики и квантовой инженерии",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 30,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null
+        },
+        {
+          "code": "09.00.00",
+          "title": "Информатика и вычислительная техника",
+          "institute": "Институт компьютерных наук",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 155,
+          "specialQuota": 16,
+          "separateQuota": 16,
+          "targetQuota": 6
+        },
+        {
+          "code": "11.03.04",
+          "title": "Электроника и наноэлектроника",
+          "institute": "Институт новых материалов",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 50,
+          "specialQuota": 5,
+          "separateQuota": 5,
+          "targetQuota": 2
+        },
+        {
+          "code": "13.03.02",
+          "title": "Электроэнергетика и электротехника",
+          "institute": "Горный институт",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 20,
+          "specialQuota": 2,
+          "separateQuota": 2,
+          "targetQuota": 1
+        },
+        {
+          "code": "15.03.02",
+          "title": "Технологические машины и оборудование",
+          "institute": "Институт технологий",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 60,
+          "specialQuota": 6,
+          "separateQuota": 6,
+          "targetQuota": 1
+        },
+        {
+          "code": "18.03.01",
+          "title": "Химическая технология",
+          "institute": "Институт новых материалов",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 25,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null
+        },
+        {
+          "code": "19.03.01",
+          "title": "Биотехнология",
+          "institute": "Институт биомедицинской инженерии",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 30,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null
+        },
+        {
+          "code": "21.05.04",
+          "title": "Горное дело",
+          "institute": "Горный институт",
+          "form": "очная",
+          "budgetContractFlag": "+/-",
+          "seats": 145,
+          "specialQuota": 15,
+          "separateQuota": 15,
+          "targetQuota": 4
+        },
+        {
+          "code": "22.03.01",
+          "title": "Материаловедение и технологии материалов",
+          "institute": "Институт новых материалов",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 60,
+          "specialQuota": 6,
+          "separateQuota": 8,
+          "targetQuota": 7
+        },
+        {
+          "code": "22.03.02",
+          "title": "Металлургия",
+          "institute": "Институт технологий",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 50,
+          "specialQuota": 5,
+          "separateQuota": 5,
+          "targetQuota": 20
+        },
+        {
+          "code": "27.03.03",
+          "title": "Системный анализ и управление",
+          "institute": "Институт компьютерных наук",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 5,
+          "specialQuota": 1,
+          "separateQuota": 1,
+          "targetQuota": null
+        },
+        {
+          "code": "27.03.05",
+          "title": "Инноватика",
+          "institute": "Институт экономики и управления",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 5,
+          "specialQuota": 1,
+          "separateQuota": 1,
+          "targetQuota": null
+        },
+        {
+          "code": "28.00.00",
+          "title": "Нанотехнологии и наноматериалы",
+          "institute": "Институт новых материалов",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 50,
+          "specialQuota": 6,
+          "separateQuota": 6,
+          "targetQuota": null
+        },
+        {
+          "code": "38.00.00",
+          "title": "Экономика и управление",
+          "institute": "Институт экономики и управления",
+          "form": "очная",
+          "budgetContractFlag": "+/-",
+          "seats": 36,
+          "specialQuota": 4,
+          "separateQuota": 4,
+          "targetQuota": null
+        },
+        {
+          "code": "38.03.05",
+          "title": "Бизнес-информатика",
+          "institute": "Институт компьютерных наук",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 20,
+          "specialQuota": 2,
+          "separateQuota": 2,
+          "targetQuota": null
+        },
+        {
+          "code": "45.03.02",
+          "title": "Лингвистика",
+          "institute": "Институт базового образования",
+          "form": "очная",
+          "budgetContractFlag": "+/+",
+          "seats": 25,
+          "specialQuota": 3,
+          "separateQuota": 3,
+          "targetQuota": null
+        }
+      ]
+    },
+    "paid": {
+      "sourceYear": null,
+      "source": "paid-plan",
+      "rows": [
+        {
+          "code": "01.03.04",
+          "title": "Прикладная математика",
+          "institute": "Институт компьютерных наук",
+          "form": "очная",
+          "seats": 40
+        },
+        {
+          "code": "03.03.02",
+          "title": "Физика",
+          "institute": "Институт физики и квантовой инженерии",
+          "form": "очная",
+          "seats": 2
+        },
+        {
+          "code": "09.00.00",
+          "title": "Информатика и вычислительная техника",
+          "institute": "Институт компьютерных наук",
+          "form": "очная",
+          "seats": 270
+        },
+        {
+          "code": "11.03.04",
+          "title": "Электроника и наноэлектроника",
+          "institute": "Институт новых материалов",
+          "form": "очная",
+          "seats": 0
+        },
+        {
+          "code": "13.03.02",
+          "title": "Электроэнергетика и электротехника",
+          "institute": "Горный институт",
+          "form": "очная",
+          "seats": 1
+        },
+        {
+          "code": "15.03.02",
+          "title": "Технологические машины и оборудование",
+          "institute": "Институт технологий",
+          "form": "очная",
+          "seats": 2
+        },
+        {
+          "code": "18.03.01",
+          "title": "Химическая технология",
+          "institute": "Институт новых материалов",
+          "form": "очная",
+          "seats": 3
+        },
+        {
+          "code": "19.03.01",
+          "title": "Биотехнология",
+          "institute": "Институт биомедицинской инженерии",
+          "form": "очная",
+          "seats": 5
+        },
+        {
+          "code": "21.05.04",
+          "title": "Горное дело",
+          "institute": "Горный институт",
+          "form": "очная",
+          "seats": 7
+        },
+        {
+          "code": "22.03.01",
+          "title": "Материаловедение и технологии материалов",
+          "institute": "Институт новых материалов",
+          "form": "очная",
+          "seats": 0
+        },
+        {
+          "code": "22.03.02",
+          "title": "Металлургия",
+          "institute": "Институт технологий",
+          "form": "очная",
+          "seats": 2
+        },
+        {
+          "code": "27.03.03",
+          "title": "Системный анализ и управление",
+          "institute": "Институт компьютерных наук",
+          "form": "очная",
+          "seats": 40
+        },
+        {
+          "code": "27.03.05",
+          "title": "Инноватика",
+          "institute": "Институт экономики и управления",
+          "form": "очная",
+          "seats": 27
+        },
+        {
+          "code": "28.00.00",
+          "title": "Нанотехнологии и наноматериалы",
+          "institute": "Институт новых материалов",
+          "form": "очная",
+          "seats": 3
+        },
+        {
+          "code": "38.03.01",
+          "title": "Экономика",
+          "institute": "Институт экономики и управления",
+          "form": "очная",
+          "seats": 119
+        },
+        {
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "institute": "Институт экономики и управления",
+          "form": "очная",
+          "seats": 51
+        },
+        {
+          "code": "38.03.05",
+          "title": "Бизнес-информатика",
+          "institute": "Институт компьютерных наук",
+          "form": "очная",
+          "seats": 150
+        },
+        {
+          "code": "45.03.02",
+          "title": "Лингвистика",
+          "institute": "Институт базового образования",
+          "form": "очная",
+          "seats": 51
+        }
+      ]
+    }
+  },
+  "publishedPassingScores": {
+    "budget": {
+      "source": "archive",
+      "stage": null,
+      "rows": [
+        {
+          "code": "13.03.02",
+          "title": "Электроэнергетика и электротехника",
+          "institute": "ГОРНЫЙ ИНСТИТУТ",
+          "scores": {
+            "2026": 266,
+            "2025": 245,
+            "2024": 242,
+            "2023": 226,
+            "2022": 223,
+            "2021": 247,
+            "2020": 242
+          }
+        },
+        {
+          "code": "21.05.04",
+          "title": "Горное дело",
+          "institute": "ГОРНЫЙ ИНСТИТУТ",
+          "scores": {
+            "2026": 241,
+            "2025": 216,
+            "2024": 232,
+            "2023": 200,
+            "2022": 200,
+            "2021": 220,
+            "2020": 222
+          }
+        },
+        {
+          "code": "45.03.02",
+          "title": "Лингвистика",
+          "institute": "ИНСТИТУТ БАЗОВОГО ОБРАЗОВАНИЯ",
+          "scores": {
+            "2026": 276,
+            "2025": 266,
+            "2024": 287,
+            "2023": 287,
+            "2022": 286,
+            "2021": 292,
+            "2020": 285
+          }
+        },
+        {
+          "code": "03.03.02",
+          "title": "Физика",
+          "institute": "ИНСТИТУТ ФИЗИКИ И КВАНТОВОЙ ИНЖЕНЕРИИ",
+          "scores": {
+            "2026": 276,
+            "2025": 253,
+            "2024": 260,
+            "2023": 242,
+            "2022": 236,
+            "2021": 249,
+            "2020": 237
+          }
+        },
+        {
+          "code": "11.03.04",
+          "title": "Электроника и наноэлектроника",
+          "institute": "ИНСТИТУТ НОВЫХ МАТЕРИАЛОВ",
+          "scores": {
+            "2026": 265,
+            "2025": 246,
+            "2024": 248,
+            "2023": 238,
+            "2022": 217,
+            "2021": 247,
+            "2020": 219
+          }
+        },
+        {
+          "code": "18.03.03",
+          "title": "Химическая технология",
+          "institute": "ИНСТИТУТ НОВЫХ МАТЕРИАЛОВ",
+          "scores": {
+            "2026": 262
+          }
+        },
+        {
+          "code": "22.03.01",
+          "title": "Материаловедение и технологии материалов",
+          "institute": "ИНСТИТУТ НОВЫХ МАТЕРИАЛОВ",
+          "scores": {
+            "2026": 262,
+            "2025": 250,
+            "2024": 247,
+            "2023": 231,
+            "2022": 206,
+            "2021": 249,
+            "2020": 220
+          }
+        },
+        {
+          "code": "28.00.00",
+          "title": "Нанотехнологии и наноматериалы",
+          "institute": "ИНСТИТУТ НОВЫХ МАТЕРИАЛОВ",
+          "scores": {
+            "2026": 265,
+            "2025": 249,
+            "2024": 266,
+            "2023": 252,
+            "2022": 234,
+            "2021": 254,
+            "2020": 233
+          }
+        },
+        {
+          "code": "01.03.04",
+          "title": "Прикладная математика",
+          "institute": "ИНСТИТУТ КОМПЬЮТЕРНЫХ НАУК",
+          "scores": {
+            "2026": 294,
+            "2025": 283,
+            "2024": 288,
+            "2023": 276,
+            "2022": 270,
+            "2021": 283,
+            "2020": 274
+          }
+        },
+        {
+          "code": "09.00.00",
+          "title": "Информатика и вычислительная техника",
+          "institute": "ИНСТИТУТ КОМПЬЮТЕРНЫХ НАУК",
+          "scores": {
+            "2026": 289,
+            "2025": 284,
+            "2024": 287,
+            "2023": 274,
+            "2022": 273,
+            "2021": 285,
+            "2020": 269
+          }
+        },
+        {
+          "code": "27.03.03",
+          "title": "Системный анализ и управление",
+          "institute": "ИНСТИТУТ КОМПЬЮТЕРНЫХ НАУК",
+          "scores": {
+            "2026": 296
+          }
+        },
+        {
+          "code": "38.03.05",
+          "title": "Бизнес-информатика",
+          "institute": "ИНСТИТУТ КОМПЬЮТЕРНЫХ НАУК",
+          "scores": {
+            "2026": 290,
+            "2025": 287,
+            "2024": 284,
+            "2023": 272
+          }
+        },
+        {
+          "code": "15.03.02",
+          "title": "Технологические машины и оборудование",
+          "institute": "ИНСТИТУТ ТЕХНОЛОГИЙ",
+          "scores": {
+            "2026": 260,
+            "2025": 250,
+            "2024": 242,
+            "2023": 223,
+            "2022": 186,
+            "2021": 242,
+            "2020": 230
+          }
+        },
+        {
+          "code": "22.03.02",
+          "title": "Металлургия",
+          "institute": "ИНСТИТУТ ТЕХНОЛОГИЙ",
+          "scores": {
+            "2026": 247,
+            "2025": 228,
+            "2024": 229,
+            "2023": 206,
+            "2022": 201,
+            "2021": 232,
+            "2020": 216
+          }
+        },
+        {
+          "code": "38.00.00",
+          "title": "Экономика и управление",
+          "institute": "ИНСТИТУТ ЭКОНОМИКИ И УПРАВЛЕНИЯ",
+          "scores": {
+            "2026": 278,
+            "2025": 270,
+            "2024": 272,
+            "2023": 266,
+            "2022": 268,
+            "2021": 259
+          }
+        },
+        {
+          "code": "27.03.05",
+          "title": "Инноватика",
+          "institute": "ИНСТИТУТ ЭКОНОМИКИ И УПРАВЛЕНИЯ",
+          "scores": {
+            "2026": 300,
+            "2025": 275
+          }
+        },
+        {
+          "code": "19.03.01",
+          "title": "Биотехнологии",
+          "institute": "ИНСТИТУТ БИОМЕДИЦИНСКОЙ ИНЖЕНЕРИИ",
+          "scores": {
+            "2026": 290,
+            "2025": 288
+          }
+        }
+      ]
+    },
+    "paid": {
+      "source": "archive",
+      "stage": null,
+      "rows": [
+        {
+          "code": "13.03.02",
+          "title": "Электроэнергетика и электротехника",
+          "institute": "Горный институт",
+          "scores": {
+            "2026": 216,
+            "2025": 204
+          }
+        },
+        {
+          "code": "21.05.04",
+          "title": "Горное дело",
+          "institute": "Горный институт",
+          "scores": {
+            "2026": 222,
+            "2025": 212
+          }
+        },
+        {
+          "code": "45.03.02",
+          "title": "Лингвистика",
+          "institute": "Институт базового образования",
+          "scores": {
+            "2026": 231,
+            "2025": 205
+          }
+        },
+        {
+          "code": "19.03.01",
+          "title": "Биотехнология",
+          "institute": "Институт биомедицинской инженерии",
+          "scores": {
+            "2026": 266,
+            "2025": 221
+          }
+        },
+        {
+          "code": "01.03.04",
+          "title": "Прикладная математика",
+          "institute": "Институт компьютерных наук",
+          "scores": {
+            "2026": 252,
+            "2025": 218
+          }
+        },
+        {
+          "code": "09.03.00",
+          "title": "Информатика и вычислительная техника",
+          "institute": "Институт компьютерных наук",
+          "scores": {
+            "2026": 230,
+            "2025": 210
+          }
+        },
+        {
+          "code": "27.03.03",
+          "title": "Системный анализ и управление",
+          "institute": "Институт компьютерных наук",
+          "scores": {
+            "2026": 225
+          }
+        },
+        {
+          "code": "38.03.05",
+          "title": "Бизнес-информатика",
+          "institute": "Институт компьютерных наук",
+          "scores": {
+            "2026": 228,
+            "2025": 220
+          }
+        },
+        {
+          "code": "18.03.03",
+          "title": "Химическая технология",
+          "institute": "Институт новых материалов",
+          "scores": {
+            "2026": 227
+          }
+        },
+        {
+          "code": "28.03.00",
+          "title": "Нанотехнологии и наноматериалы",
+          "institute": "Институт новых материалов",
+          "scores": {
+            "2026": 260,
+            "2025": 211
+          }
+        },
+        {
+          "code": "03.03.02",
+          "title": "Физика",
+          "institute": "Институт физики и квантовой инженерии",
+          "scores": {
+            "2026": 257,
+            "2025": 221
+          }
+        },
+        {
+          "code": "27.03.05",
+          "title": "Инноватика",
+          "institute": "Институт экономики и управления",
+          "scores": {
+            "2026": 222,
+            "2025": 205
+          }
+        },
+        {
+          "code": "38.03.01",
+          "title": "Экономика",
+          "institute": "Институт экономики и управления",
+          "scores": {
+            "2026": 235,
+            "2025": 211
+          }
+        },
+        {
+          "code": "38.03.02",
+          "title": "Менеджмент",
+          "institute": "Институт экономики и управления",
+          "scores": {
+            "2026": 231,
+            "2025": 211
+          }
+        },
+        {
+          "code": "15.03.02",
+          "title": "Технологические машины и оборудование",
+          "institute": "Институт технологий",
+          "scores": {
+            "2026": 258,
+            "2025": 221
+          }
+        },
+        {
+          "code": "22.03.02",
+          "title": "Металлургия",
+          "institute": "Институт технологий",
+          "scores": {
+            "2026": 236,
+            "2025": 214
+          }
+        }
+      ]
+    }
+  },
+  "tuition": {
+    "year": 2026,
+    "schoolYear": "2026/27",
+    "course": 1,
+    "form": "очная",
+    "currency": "RUB",
+    "source": "price-order",
+    "rows": [
+      {
+        "code": "01.03.04",
+        "title": "Прикладная математика",
+        "annualRub": 402000
+      },
+      {
+        "code": "03.03.02",
+        "title": "Физика",
+        "annualRub": 467000
+      },
+      {
+        "code": "09.00.00",
+        "title": "Информатика и вычислительная техника",
+        "annualRub": 440000
+      },
+      {
+        "code": "09.03.01",
+        "title": "Информатика и вычислительная техника",
+        "annualRub": 440000
+      },
+      {
+        "code": "09.03.02",
+        "title": "Информационные системы и технологии",
+        "annualRub": 440000
+      },
+      {
+        "code": "09.03.03",
+        "title": "Прикладная информатика",
+        "annualRub": 440000
+      },
+      {
+        "code": "13.03.02",
+        "title": "Электроэнергетика и электротехника",
+        "annualRub": 459000
+      },
+      {
+        "code": "15.03.02",
+        "title": "Технологические машины и оборудование",
+        "annualRub": 459000
+      },
+      {
+        "code": "18.03.01",
+        "title": "Химическая технология",
+        "annualRub": 467000
+      },
+      {
+        "code": "19.03.01",
+        "title": "Биотехнология",
+        "annualRub": 490000
+      },
+      {
+        "code": "21.05.04",
+        "title": "Горное дело",
+        "annualRub": 510000
+      },
+      {
+        "code": "22.03.02",
+        "title": "Металлургия",
+        "annualRub": 459000
+      },
+      {
+        "code": "27.03.03",
+        "title": "Системный анализ и управление",
+        "annualRub": 440000
+      },
+      {
+        "code": "27.03.05",
+        "title": "Инноватика",
+        "annualRub": 440000
+      },
+      {
+        "code": "28.00.00",
+        "title": "Нанотехнологии и наноматериалы",
+        "annualRub": 510000
+      },
+      {
+        "code": "28.03.01",
+        "title": "Нанотехнологии и микросистемная техника",
+        "annualRub": 510000
+      },
+      {
+        "code": "28.03.03",
+        "title": "Наноматериалы",
+        "annualRub": 510000
+      },
+      {
+        "code": "38.03.01",
+        "title": "Экономика",
+        "annualRub": 390000
+      },
+      {
+        "code": "38.03.02",
+        "title": "Менеджмент",
+        "annualRub": 390000
+      },
+      {
+        "code": "38.03.05",
+        "title": "Бизнес-информатика",
+        "annualRub": 390000
+      },
+      {
+        "code": "45.03.02",
+        "title": "Лингвистика",
+        "annualRub": 386000
+      }
+    ],
+    "contractCriteria": {
+      "source": "payment",
+      "label": "Сумма баллов ЕГЭ без индивидуальных достижений",
+      "rows": [
+        ["01.03.04 Прикладная математика", "220"],
+        ["03.03.02 Физика", "205"],
+        [
+          "09.00.00 Информатика и вычислительная техника (09.03.01 Информатика и вычислительная техника, 09.03.02 Информационные системы и технологии, 09.03.03 Прикладная информатика)",
+          "210"
+        ],
+        ["13.03.02 Электроэнергетика и электротехника", "205"],
+        ["15.03.02 Технологические машины и оборудование", "205"],
+        ["18.03.01 Химическая технология", "205"],
+        ["19.03.01 Биотехнология", "240"],
+        ["21.05.04 Горное дело", "205"],
+        ["22.03.02 Металлургия", "205"],
+        ["27.03.03 Системный анализ и управление", "205"],
+        ["27.03.05 Инноватика", "205"],
+        [
+          "28.00.00 Нанотехнологии и наноматериалы (28.03.01 Нанотехнологии и микросистемная техника, 28.03.03 Наноматериалы)",
+          "205"
+        ],
+        ["38.03.01 Экономика", "210"],
+        ["38.03.02 Менеджмент", "210"],
+        ["38.03.05 Бизнес-информатика", "210"],
+        ["45.03.02 Лингвистика", "210"]
+      ]
+    },
+    "discounts": {
+      "source": "payment",
+      "label": "Размер скидки по среднему баллу ЕГЭ",
+      "rows": [
+        [
+          "Поступающие на программы базового высшего образования (очная форма обучения)",
+          "95,0-100,0",
+          "50%"
+        ],
+        ["90,0-94,9", "40%"],
+        ["87,0-89,9", "30%"],
+        ["85,0-86,9", "25%"],
+        ["80,0-84,9", "20%"],
+        ["Призеры олимпиады Open Doors", "—", "10%"],
+        [
+          "* По трем предметам без учета индивидуальных достижений. Значение среднего балла ЕГЭ округляется до десятых."
+        ]
+      ]
+    }
+  },
+  "entranceExams": {
+    "source": "exams",
+    "baseCategories": [
+      {
+        "section": "Форма, перечень и минимальное количество баллов вступительных испытаний при приеме на обучение на базе среднего общего образования и на базе высшего образования",
+        "rows": [
+          {
+            "group": "45.03.02 Лингвистика",
+            "institute": "ИБО",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) иностранный язык**",
+            "budgetMinimum": 80,
+            "paidMinimum": 70
+          },
+          {
+            "group": "45.03.02 Лингвистика",
+            "institute": "ИБО",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) русский язык",
+            "budgetMinimum": 70,
+            "paidMinimum": 60
+          },
+          {
+            "group": "45.03.02 Лингвистика",
+            "institute": "ИБО",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) обществознание или история",
+            "budgetMinimum": 60,
+            "paidMinimum": 60
+          },
+          {
+            "group": "03.03.02 Физика",
+            "institute": "ИФКИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) физика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "03.03.02 Физика",
+            "institute": "ИФКИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) математика или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "03.03.02 Физика",
+            "institute": "ИФКИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "11.03.04 Электроника и наноэлектроника",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) физика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "11.03.04 Электроника и наноэлектроника",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) математика или информатика или химия",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "11.03.04 Электроника и наноэлектроника",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "18.03.01 Химическая технология",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) химия",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "18.03.01 Химическая технология",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) математика или физика или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "18.03.01 Химическая технология",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.01 Материаловедение и технологии материалов",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "22.03.01 Материаловедение и технологии материалов",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.01 Материаловедение и технологии материалов",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "28.00.00 Нанотехнологии и наноматериалы (28.03.01 Наноматериалы и микросистемная техника, 28.03.03 Наноматериалы)",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "28.00.00 Нанотехнологии и наноматериалы (28.03.01 Наноматериалы и микросистемная техника, 28.03.03 Наноматериалы)",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "28.00.00 Нанотехнологии и наноматериалы (28.03.01 Наноматериалы и микросистемная техника, 28.03.03 Наноматериалы)",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "19.03.01 Биотехнология",
+            "institute": "БиоИнж",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) химия",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "19.03.01 Биотехнология",
+            "institute": "БиоИнж",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) биология или физика или математика или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "19.03.01 Биотехнология",
+            "institute": "БиоИнж",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "01.03.04 Прикладная математика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 70,
+            "paidMinimum": 60
+          },
+          {
+            "group": "01.03.04 Прикладная математика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) информатика или физика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "01.03.04 Прикладная математика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "09.00.00 Информатика и вычислительная техника (09.03.01 Информатика и вычислительная техника, 09.03.02 Информационные системы и технологии, 09.03.03 Прикладная информатика)",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "09.00.00 Информатика и вычислительная техника (09.03.01 Информатика и вычислительная техника, 09.03.02 Информационные системы и технологии, 09.03.03 Прикладная информатика)",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) информатика или физика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "09.00.00 Информатика и вычислительная техника (09.03.01 Информатика и вычислительная техника, 09.03.02 Информационные системы и технологии, 09.03.03 Прикладная информатика)",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.05 Бизнес-информатика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "38.03.05 Бизнес-информатика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) обществознание или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.05 Бизнес-информатика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.03 Системный анализ и управление",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "27.03.03 Системный анализ и управление",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.03 Системный анализ и управление",
+            "institute": "ИТКН",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) физика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) математика или информатика или химия",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) обществознание или информатика или история или иностранный язык**",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": null,
+            "paidMinimum": 55
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) обществознание или информатика или история или иностранный язык**",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "1) математика",
+            "budgetMinimum": null,
+            "paidMinimum": 55
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "2) обществознание или информатика или история или иностранный язык**",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ/ письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          }
+        ]
+      },
+      {
+        "section": "Форма, перечень и минимальное количество баллов вступительных испытаний при приеме на обучение на базе среднего профессионального образования по результатам ЕГЭ",
+        "rows": [
+          {
+            "group": "45.03.02 Лингвистика",
+            "institute": "ИБО",
+            "method": "ЕГЭ",
+            "subject": "1) иностранный язык**",
+            "budgetMinimum": 80,
+            "paidMinimum": 70
+          },
+          {
+            "group": "45.03.02 Лингвистика",
+            "institute": "ИБО",
+            "method": "ЕГЭ",
+            "subject": "2) русский язык",
+            "budgetMinimum": 70,
+            "paidMinimum": 60
+          },
+          {
+            "group": "45.03.02 Лингвистика",
+            "institute": "ИБО",
+            "method": "ЕГЭ",
+            "subject": "3) обществознание или история",
+            "budgetMinimum": 60,
+            "paidMinimum": 60
+          },
+          {
+            "group": "03.03.02 Физика",
+            "institute": "ИФКИ",
+            "method": "ЕГЭ",
+            "subject": "1) физика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "03.03.02 Физика",
+            "institute": "ИФКИ",
+            "method": "ЕГЭ",
+            "subject": "2) математика или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "03.03.02 Физика",
+            "institute": "ИФКИ",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "11.03.04 Электроника и наноэлектроника",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "1) физика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "11.03.04 Электроника и наноэлектроника",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "2) математика или информатика или химия",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "11.03.04 Электроника и наноэлектроника",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "18.03.01 Химическая технология",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "1)химия",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "18.03.01 Химическая технология",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "2)математика или физика или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "18.03.01 Химическая технология",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.01 Материаловедение и технологии материалов",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "22.03.01 Материаловедение и технологии материалов",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.01 Материаловедение и технологии материалов",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "28.00.00 Нанотехнологии и наноматериалы (28.03.01 Наноматериалы и микросистемная техника, 28.03.03 Наноматериалы)",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "28.00.00 Нанотехнологии и наноматериалы (28.03.01 Наноматериалы и микросистемная техника, 28.03.03 Наноматериалы)",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "28.00.00 Нанотехнологии и наноматериалы (28.03.01 Наноматериалы и микросистемная техника, 28.03.03 Наноматериалы)",
+            "institute": "ИНМиН",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "19.03.01 Биотехнология",
+            "institute": "БиоИнж",
+            "method": "ЕГЭ",
+            "subject": "1) химия",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "19.03.01 Биотехнология",
+            "institute": "БиоИнж",
+            "method": "ЕГЭ",
+            "subject": "2) биология или физика или математика или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "19.03.01 Биотехнология",
+            "institute": "БиоИнж",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "01.03.04 Прикладная математика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 70,
+            "paidMinimum": 60
+          },
+          {
+            "group": "01.03.04 Прикладная математика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "2) информатика или физика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "01.03.04 Прикладная математика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "09.00.00 Информатика и вычислительная техника (09.03.01 Информатика и вычислительная техника, 09.03.02 Информационные системы и технологии, 09.03.03 Прикладная информатика)",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "09.00.00 Информатика и вычислительная техника (09.03.01 Информатика и вычислительная техника, 09.03.02 Информационные системы и технологии, 09.03.03 Прикладная информатика)",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "2) информатика или физика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "09.00.00 Информатика и вычислительная техника (09.03.01 Информатика и вычислительная техника, 09.03.02 Информационные системы и технологии, 09.03.03 Прикладная информатика)",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.05 Бизнес-информатика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": 55
+          },
+          {
+            "group": "38.03.05 Бизнес-информатика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "2) обществознание или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.05 Бизнес-информатика",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.03 Системный анализ и управление",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "27.03.03 Системный анализ и управление",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.03 Системный анализ и управление",
+            "institute": "ИТКН",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "ЕГЭ",
+            "subject": "1) физика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "ЕГЭ",
+            "subject": "2) математика или информатика или химия",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "ЕГЭ",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "2) физика или химия или информатика",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": 65,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "2) обществознание или информатика или история или иностранный язык**",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": null,
+            "paidMinimum": 55
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "2) обществознание или информатика или история или иностранный язык**",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "1) математика",
+            "budgetMinimum": null,
+            "paidMinimum": 55
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "2) обществознание или информатика или история или иностранный язык**",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "ЕГЭ",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          }
+        ]
+      },
+      {
+        "section": "Форма, перечень и минимальное количество баллов вступительных испытаний при приеме на обучение на базе среднего профессионального образования по результатам письменных вступительных испытаний",
+        "rows": [
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "Письменное вступительное испытание",
+            "subject": "1) инженерное дело",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "Письменное вступительное испытание",
+            "subject": "2) естественные науки",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "13.03.02 Электроэнергетика и электротехника",
+            "institute": "МГИ",
+            "method": "Письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "Письменное вступительное испытание",
+            "subject": "1) инженерное дело",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "Письменное вступительное испытание",
+            "subject": "2) естественные науки",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "21.05.04 Горное дело",
+            "institute": "МГИ",
+            "method": "Письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "Письменное вступительное испытание",
+            "subject": "1) инженерное дело",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "Письменное вступительное испытание",
+            "subject": "2) естественные науки",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "15.03.02 Технологические машины и оборудование",
+            "institute": "ЭкоТех",
+            "method": "Письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "Письменное вступительное испытание",
+            "subject": "1) инженерное дело",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "Письменное вступительное испытание",
+            "subject": "2) естественные науки",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "22.03.02 Металлургия",
+            "institute": "ЭкоТех",
+            "method": "Письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "1) основы бережливого производства",
+            "budgetMinimum": 60,
+            "paidMinimum": 55
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "2) управление качеством",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "27.03.05 Инноватика",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "1) экономика",
+            "budgetMinimum": 65,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "2) менеджмент",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.00.00 Экономика и управление (38.03.01 Экономика, 38.03.02 Менеджмент)",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "1) экономика",
+            "budgetMinimum": null,
+            "paidMinimum": 55
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "2) менеджмент",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.01 Экономика",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "1) экономика",
+            "budgetMinimum": null,
+            "paidMinimum": 55
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "2) менеджмент",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          },
+          {
+            "group": "38.03.02 Менеджмент",
+            "institute": "ЭУПП",
+            "method": "Письменное вступительное испытание",
+            "subject": "3) русский язык",
+            "budgetMinimum": null,
+            "paidMinimum": null
+          }
+        ]
+      }
+    ]
+  },
+  "deadlines": {
+    "source": "deadlines",
+    "sourceYear": null,
+    "ruleNote": "Портал показывает даты без года. Срок оплаты по договору подтверждён в документе 2026/27.",
+    "budgetFullTime": [
+      "НИТУ МИСИС (головное отделение) и филиалы",
+      "с 20.06 до 17.00 25.07 (по результатам ЕГЭ) с 20.06 до 17.00 10.07 (по вступительным испытаниям)",
+      "13.07–23.07",
+      "до 12.00 01.08 (этап приоритетного зачисления) до 12.00 05.08 (основной этап зачисления) до 12.00 09.08 (дополнительный этап зачисления)",
+      "03.08 (этап приоритетного зачисления) 07.08 (основной этап зачисления) 11.08 (дополнительный этап зачисления)"
+    ],
+    "paidFullTime": [
+      "НИТУ МИСИС (головное отделение) и филиалы",
+      "20.06 — до 17.00 18.08* (по результатам ЕГЭ) 20.06 — до 17.00 31.07 (по вступительным испытаниям)",
+      "13.07 — 23.07 01.08 — 12.08",
+      "до 17.00 18.08 (завершение заключения договоров на оказание платных образовательных услуг)",
+      "20.08"
+    ],
+    "paymentFirstHalf2026": {
+      "source": "payment",
+      "date": "2026-08-19"
+    }
+  },
+  "admissionsDocuments": {
+    "campaignYear": 2026,
+    "campaign2027": "Найдена подписка на новости. Правила и план набора 2027 не подтверждены.",
+    "rules": "rules",
+    "exams": ["exams", "exams-rules"],
+    "deadlines": "deadlines",
+    "quotas": ["rules", "budget-plan", "separate-quota"],
+    "individualAchievements": "achievements",
+    "rights": ["rights", "olympiads"],
+    "admissionOrdersIndex": "enrollment",
+    "payment": "payment"
+  },
+  "admissionsContacts": {
+    "source": "contacts",
+    "phone": "+7 499 649-44-80",
+    "email": "vopros@misis.ru"
+  },
+  "reviewedProgram": {
+    "source": "analysis",
+    "code": "27.03.03",
+    "name": "Системный анализ и управление",
+    "faculty": "Институт компьютерных наук",
+    "level": "Базовое высшее образование",
+    "form": "очная",
+    "campus": "Москва",
+    "year": 2026,
+    "budgetSeats": 5,
+    "paidSeats": 40,
+    "annualTuitionRub": 440000
+  },
+  "issues": [
+    "В итоговых таблицах бюджетных и платных проходных этап зачисления не указан. Примеры списков общего конкурса, особой и отдельной квот и договора возвращают HTTP 404 по ссылкам самого вуза. Вкладка целевой квоты без таблицы.",
+    "План платного приёма и таблица разбивки КЦП на квоты не содержат года. Для КЦП без разбивки год установлен по приложению 2 правил. Год платных мест 27.03.03 подтверждён отдельной датированной карточкой.",
+    "Направление 21.05.04 помечено «+/-» в бюджетной таблице. Платная таблица указывает 7 мест, а приказ о стоимости публикует 510 000 рублей. Аналогичная пометка для общей группы 38.00.00 в платном плане сопровождается отдельными строками 38.03.01 и 38.03.02.",
+    "В прейскуранте есть строки укрупнённых групп и строки направлений внутри них. Стоимость не суммируется.",
+    "В модели уровня конкурсной программы представлены бакалавриат и специалитет. Для направления 27.03.03 вуз публикует БВО. Проходные 296 и 225, скидки, платные пороги и объединённые места сохранены в доказательствах."
+  ],
+  "counts": {
+    "budgetSeatGroups": 17,
+    "paidSeatGroups": 18,
+    "tuitionRows": 21,
+    "historicScores": {
+      "budget": 93,
+      "paid": 30
+    },
+    "examRows": [57, 57, 24]
+  }
+}

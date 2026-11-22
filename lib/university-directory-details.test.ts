@@ -899,6 +899,20 @@ describe("official university profile evidence", () => {
     );
   });
 
+  it("updates the existing MISIS system analysis program from its official card", () => {
+    const misisPrograms = programs.filter(
+      (program) => program.universitySlug === "misis",
+    );
+    expect(misisPrograms).toHaveLength(1);
+    expect(misisPrograms[0]).toMatchObject({
+      id: "misis-analysis",
+      code: "27.03.03",
+      faculty: "Институт компьютерных наук",
+      passingScore: null,
+      passingHistory: [],
+    });
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(

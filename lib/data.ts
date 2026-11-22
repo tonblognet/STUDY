@@ -641,17 +641,26 @@ programsBase.push(
 
 const misisSource =
   "https://misis.ru/applicants/admission/baccalaureate-and-specialty/faculties/analysis/";
+const misisChecked = "2026-11-22T20:50:33Z";
 programsBase.push(
   program({
     id: "misis-analysis",
     slug: "misis-system-analysis",
     universitySlug: "misis",
-    code: "не опубликован",
+    code: "27.03.03",
     title: "Системный анализ и управление",
     level: "Бакалавриат",
     form: "Очная",
     duration: "4 года",
-    faculty: null,
+    faculty: "Институт компьютерных наук",
+    facultyValue: sourced(
+      "Институт компьютерных наук",
+      2026,
+      "verified",
+      misisSource,
+      "НИТУ МИСИС",
+      { checkedAt: misisChecked, retrievedAt: misisChecked },
+    ),
     campus: "Москва",
     language: "Русский",
     subjects: ["Математика", "Русский язык", "Физика / Химия / Информатика"],
@@ -692,7 +701,7 @@ programsBase.push(
       misisSource,
       "НИТУ МИСИС",
       {
-        note: "Программа обозначена вузом как новая в 2026 году; исторического проходного балла нет.",
+        note: "Первый приём по программе состоялся в 2026 году.",
       },
     ),
     passingHistory: [],
@@ -778,12 +787,12 @@ programsBase.push(
       dataYear: 2026,
       status: "verified",
       completeness: 68,
-      checkedAt: CHECKED,
+      checkedAt: misisChecked,
       checkedBy: "Редакция Поступай",
       nextReviewAt: NEXT,
       sourceName: "НИТУ МИСИС",
       sourceSection: "Системный анализ и управление",
-      note: "Новая программа: исторический проходной балл неприменим.",
+      note: "Программа базового высшего образования. В сводке проходных баллов за 2026 год этап зачисления не указан.",
     },
     tags: ["Инженерия", "Новая программа"],
   }),
