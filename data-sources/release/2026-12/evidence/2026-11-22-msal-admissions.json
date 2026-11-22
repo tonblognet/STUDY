@@ -1,0 +1,1348 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "msal",
+  "reviewedAtUtc": "2026-11-22T20:16:24Z",
+  "scope": "Москва, бакалавриат и специалитет, набор 2026 года. Суммы и квоты по головному университету.",
+  "sources": {
+    "intake": {
+      "sourceUrl": "https://msal.ru/content/abiturientam/priemnaya-kampaniya/bakalavriat-spetsialitet/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:52:20Z",
+      "sourceSha256": "86d0fecd334c2ed4827c63a321cb35332df51d31ed4b63b9b5640f8e8ebc9a50",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "contacts": {
+      "sourceUrl": "https://msal.ru/content/abiturientam/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:52:21Z",
+      "sourceSha256": "6d594d2d8fce2a77bbce4adab91ff9e24f9b2627d5ef38fd9683418818de575e",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "rules": {
+      "sourceUrl": "https://msal.ru/upload/iblock/375/dv1dqy6ckb5jhf34ev5zkz7fs7bxh5a3.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:56:46Z",
+      "sourceSha256": "910e9c595aa13b0fb854392aefa541af2014c8b008af8b6d1350eac8a93dd993",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "tests": {
+      "sourceUrl": "https://msal.ru/upload/iblock/3d5/7hwfaogrknyx0lb1hvdzy1vfosywg1di.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:54:10Z",
+      "sourceSha256": "c482a7c244db30bce6beacf2ad3a0038471bb52269179a2d9f64d1d537930a45",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "seats": {
+      "sourceUrl": "https://msal.ru/upload/iblock/fad/q2ji60gh3vi4wz2k3itmlpzwpjco287q.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:54:09Z",
+      "sourceSha256": "7eaee2601ae8daa02ee908a8e4b2219fc92394e34743f056fb8937bb63c35abe",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "schedule": {
+      "sourceUrl": "https://msal.ru/upload/iblock/76d/6cwrx8j2vmzlwoqhj7our7cm9uo9v21c.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:54:08Z",
+      "sourceSha256": "3bd5c0ad0a5e7154ae4e29ce485e44002a7fc28dfaaa6ac4f85b9131d70b9686",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "achievements": {
+      "sourceUrl": "https://msal.ru/upload/iblock/8a7/e3y4ayjw27ersb9tzg63ewofpoqwly1f.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:54:10Z",
+      "sourceSha256": "9640c1362541cf9155b58bbfab37e022118f60c6765d9ad9b19121fe726fa9c7",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "summary": {
+      "sourceUrl": "https://msal.ru/upload/iblock/634/sz7h9umpjnrk8pcwk1x4b0crh5tbmsyy.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:54:40Z",
+      "sourceSha256": "71d6ab2e978d2de53b7e019fc5daec1757ad60daef1d1c07c9fef8bf5b2a56d0",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "enrollment-index": {
+      "sourceUrl": "https://msal.ru/content/abiturientam/priemnaya-kampaniya/informatsiya-o-zachislenii/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T18:54:09Z",
+      "sourceSha256": "8c34ea66500ea2dfcdfb2e3d93457fa7d675909e991257bd3a1b5b6c4ab520d9",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "price-order": {
+      "sourceUrl": "https://msal.ru/upload/iblock/15e/wv9i2lxxmh2jjkwu6zzhsccgnhhu5yw5.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:40Z",
+      "sourceSha256": "b6173a2c251c34e7dce157a750fc0f3fd11a276705e9b3232463b235dcdb9501",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "price-summary": {
+      "sourceUrl": "https://msal.ru/upload/iblock/ebb/pfhavhft8qn09cnvn5kshf82indsvbwl.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:40Z",
+      "sourceSha256": "6c58dbb97817f79cff6bb6d3c7c5f2fcabe76e11d3ffa09e4ceee92b4226f535",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "contract": {
+      "sourceUrl": "https://msal.ru/content/abiturientam/priemnaya-kampaniya/zaklyuchenie-dogovora/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:40Z",
+      "sourceSha256": "f3bc964746514b034606141c3893886a6d144e2bbafd4bee8ed2dd7692491f6a",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "price-index": {
+      "sourceUrl": "https://msal.ru/sveden/paid_edu/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:40Z",
+      "sourceSha256": "a8dc7dfcdcc20fd75ff87a1bfcb6280dcd57a350d5007fc2e8aaff57efdb23f2",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-bac-01": {
+      "sourceUrl": "https://msal.ru/upload/iblock/709/mznesz8kiksam6zwxplj02w4mjckyl00.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:40Z",
+      "sourceSha256": "eb075c7eef1a7f82d4f2ba32ae586b2d0a101459b83e386e5c7eb34210ef016d",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-bac-02": {
+      "sourceUrl": "https://msal.ru/upload/iblock/737/bvgy3j4ticyat96tps58fq1oywjmtmo2.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:40Z",
+      "sourceSha256": "7d94f01d7f6e38f03f92ae1bada3a87836b871f03aff6a7a5eff22125f04096c",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-bac-03": {
+      "sourceUrl": "https://msal.ru/upload/iblock/e79/hcliar1j9ewcwrz5x1hry9l0pdqt8u0d.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:40Z",
+      "sourceSha256": "52a27b51f77372cf12ab3887285331d1b9fee0bd5dff62c4bb7cd6ea68cf040b",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-spec-01": {
+      "sourceUrl": "https://msal.ru/upload/iblock/096/1f98zspylzxk8shu87o1irj79a6bo9zt.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:40Z",
+      "sourceSha256": "01d53a70dbe5aa9f0f4f8fa81d6de3820ea3b43b2cbe30f10822415b8d2d1e40",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-spec-02": {
+      "sourceUrl": "https://msal.ru/upload/iblock/564/wwi4ph2w79dsgav0d8f5mnkpho9x20ft.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:41Z",
+      "sourceSha256": "23a4d8d59b320002e2b95324ecbff2a246bf0ccc246281b4cbb000c44dcf54c0",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-spec-03": {
+      "sourceUrl": "https://msal.ru/upload/iblock/778/kymzy99hnbq9dtusym8k82wvdmywdr2k.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:41Z",
+      "sourceSha256": "687a9a8589b4f4e7c7312152bfd91187159f68f033a198ccc7540e6492488f12",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "budget-spec-04": {
+      "sourceUrl": "https://msal.ru/upload/iblock/4f5/oafvx4hjynzd5myxxh0wr0hhhnxa4wqv.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:41Z",
+      "sourceSha256": "44d8eda658b3395d542b3f993a225b613cd7a7aca86f3832b37b54ee8dfe030b",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-bac-01": {
+      "sourceUrl": "https://msal.ru/upload/iblock/935/tzwtoi9667mj7v297t84vkj4ifr4zn2v.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:49Z",
+      "sourceSha256": "3283e65f0b53fd225ce41c006be37de592de12e9a340a48af0d10d66e312fb24",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-bac-02": {
+      "sourceUrl": "https://msal.ru/upload/iblock/8d9/vsbwcxcmdsl8h19z81e9p1hv0lsgkuub.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:58Z",
+      "sourceSha256": "f8b1f2718e48fee3ab9d8f488e4e32ddd833f545b0733e5e3c594af5c01a4ab2",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-bac-03": {
+      "sourceUrl": "https://msal.ru/upload/iblock/5e8/26f8htbkhdouout4rs5934b5ofooxm28.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:42Z",
+      "sourceSha256": "ade9ee17f7ecfa7d180f44ac45a87e811b6a091774af47bf840d6c74e9f4be69",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-bac-04": {
+      "sourceUrl": "https://msal.ru/upload/iblock/8b8/gbi3bq0e63xsj991z1j6kryl22yfp8z7.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:42Z",
+      "sourceSha256": "81eb296871e7a616800825352c46a9e374c9bab7b8dd146d8a0510a0a97c00ac",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-bac-05": {
+      "sourceUrl": "https://msal.ru/upload/iblock/093/akaka1w1e9d9trz1n3bfner0zf7u1bby.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:42Z",
+      "sourceSha256": "1350ed33fc4413718063a2d9d05990513e2125f02de5c9b33a56cd643c36c983",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-bac-06": {
+      "sourceUrl": "https://msal.ru/upload/iblock/e48/hbjzutqcuz5nfz9nrhi5h0hnabsmv7fe.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:43Z",
+      "sourceSha256": "52ab2c0e8da1f9e66be237e96d3965741a2e5832b4ccf2caa217bc2c25a6ecbe",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-bac-07": {
+      "sourceUrl": "https://msal.ru/upload/iblock/0f7/r1ohv9hqn7bq7ridajc1rwh707s0iufo.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:43Z",
+      "sourceSha256": "df8d0a2484332e147370a90bda86358bb0f849ad706757359a4746df289f3564",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-spec-01": {
+      "sourceUrl": "https://msal.ru/upload/iblock/938/bnis87jiz4y4gb5qqb3y31gzhamdxcfy.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:43Z",
+      "sourceSha256": "16099cda074a8835ab936525fe9faf50048afb5d26b2890b72f43e57f02512f6",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-spec-02": {
+      "sourceUrl": "https://msal.ru/upload/iblock/689/4qubvqqclvyjlijzmmlrttw2ql0b9rlz.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:45Z",
+      "sourceSha256": "4832645ed61f364389279664c5c02dce474638199f489897c588603e36647c66",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-spec-03": {
+      "sourceUrl": "https://msal.ru/upload/iblock/bee/03kzmfxh9xhk2ccf5gpcyfz4351r9fkx.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:44Z",
+      "sourceSha256": "d53a0682c415d3dc128db9a6b363539174819b8443fd6e933c76af387b6535e2",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-spec-04": {
+      "sourceUrl": "https://msal.ru/upload/iblock/242/89ayztio7dal3defsaq0b4q0ccm17vbj.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:44Z",
+      "sourceSha256": "d8a0cb7db45623eeb7bbda6e03589ee1b33a9425351b35ccb4af60e6f01854eb",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "paid-spec-05": {
+      "sourceUrl": "https://msal.ru/upload/iblock/b45/hvqyo2ucw7j385x4ouwlyf5lujtssb07.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T20:05:45Z",
+      "sourceSha256": "9030f597d462416e53b98214fe6bee26de41bc742a17bb09aa2725cac3107117",
+      "sourceSha256Basis": "response-bytes"
+    }
+  },
+  "campaign2027": {
+    "status": "not_found",
+    "checkedSources": ["intake", "rules"]
+  },
+  "campaign2026": {
+    "rules": "rules",
+    "schedule": "schedule",
+    "individualAchievements": "achievements",
+    "specialRightsAndBvi": {
+      "source": "rules",
+      "sourceSection": "Особые права и особые преимущества при приёме на обучение по программам бакалавриата и программам специалитета"
+    },
+    "entranceExams": {
+      "source": "tests",
+      "contractSubjectMinimumsSource": "contract",
+      "contractSubjectMinimums": {
+        "Русский язык": 48,
+        "Обществознание": 52,
+        "История": 44,
+        "Иностранный язык": 44,
+        "Информатика и ИКТ": 48
+      },
+      "note": "Индивидуальные условия по уровню входного образования и направление языковых испытаний различаются. Минимумы из договора приведены по предметам."
+    },
+    "announcedSeats": {
+      "source": "seats",
+      "rows": [
+        {
+          "code": "40.03.01",
+          "groupLabel": "Частное право, Публичное право, Международное право, Бизнес-право, Правовой консалтинг",
+          "pdfPage": 1,
+          "sourceRow": "1.1.1.",
+          "generalBudgetTotal": 474,
+          "paidTotal": 1080,
+          "forms": [
+            {
+              "form": "Очная",
+              "generalBudget": 305,
+              "specialQuota": 57,
+              "targetQuota": 85,
+              "separateQuota": 92,
+              "paid": 919,
+              "targetQuotaFootnote": "2"
+            },
+            {
+              "form": "Очно-заочная",
+              "generalBudget": 169,
+              "specialQuota": 25,
+              "targetQuota": 26,
+              "separateQuota": 30,
+              "paid": 161,
+              "targetQuotaFootnote": "3"
+            },
+            {
+              "form": "Заочная",
+              "paid": null
+            }
+          ]
+        },
+        {
+          "code": "40.03.01",
+          "groupLabel": "Частное право, Публичное право",
+          "pdfPage": 1,
+          "sourceRow": "1.1.2.",
+          "generalBudgetTotal": null,
+          "paidTotal": 87,
+          "forms": [
+            {
+              "form": "Очная",
+              "generalBudget": null,
+              "specialQuota": null,
+              "targetQuota": null,
+              "separateQuota": null,
+              "paid": null,
+              "targetQuotaFootnote": null
+            },
+            {
+              "form": "Очно-заочная",
+              "generalBudget": null,
+              "specialQuota": null,
+              "targetQuota": null,
+              "separateQuota": null,
+              "paid": null,
+              "targetQuotaFootnote": null
+            },
+            {
+              "form": "Заочная",
+              "paid": 87
+            }
+          ]
+        },
+        {
+          "code": "40.03.01",
+          "groupLabel": "Инновационная юриспруденция",
+          "pdfPage": 1,
+          "sourceRow": "1.1.3.",
+          "generalBudgetTotal": 30,
+          "paidTotal": 30,
+          "forms": [
+            {
+              "form": "Очная",
+              "generalBudget": 30,
+              "specialQuota": 4,
+              "targetQuota": null,
+              "separateQuota": 4,
+              "paid": 30,
+              "targetQuotaFootnote": null
+            },
+            {
+              "form": "Очно-заочная",
+              "generalBudget": 0,
+              "specialQuota": null,
+              "targetQuota": null,
+              "separateQuota": null,
+              "paid": null,
+              "targetQuotaFootnote": null
+            },
+            {
+              "form": "Заочная",
+              "paid": null
+            }
+          ]
+        },
+        {
+          "code": "40.03.01",
+          "groupLabel": "International Business Law",
+          "pdfPage": 1,
+          "sourceRow": "1.1.4.",
+          "generalBudgetTotal": null,
+          "paidTotal": 15,
+          "forms": [
+            {
+              "form": "Очная",
+              "generalBudget": null,
+              "specialQuota": null,
+              "targetQuota": null,
+              "separateQuota": null,
+              "paid": 15,
+              "targetQuotaFootnote": null
+            },
+            {
+              "form": "Очно-заочная",
+              "generalBudget": null,
+              "specialQuota": null,
+              "targetQuota": null,
+              "separateQuota": null,
+              "paid": null,
+              "targetQuotaFootnote": null
+            },
+            {
+              "form": "Заочная",
+              "paid": null
+            }
+          ]
+        },
+        {
+          "code": "40.05.01",
+          "groupLabel": "Государственно-правовая",
+          "pdfPage": 2,
+          "sourceRow": "1.1.",
+          "generalBudgetTotal": 63,
+          "paidTotal": 212,
+          "forms": [
+            {
+              "form": "Очная",
+              "generalBudget": 52,
+              "specialQuota": 9,
+              "targetQuota": 10,
+              "separateQuota": 10,
+              "paid": 170,
+              "targetQuotaFootnote": "8"
+            },
+            {
+              "form": "Заочная",
+              "generalBudget": 11,
+              "specialQuota": 2,
+              "targetQuota": 0,
+              "separateQuota": 2,
+              "paid": 42,
+              "targetQuotaFootnote": null
+            }
+          ]
+        },
+        {
+          "code": "40.05.03",
+          "groupLabel": "Речеведческие экспертизы, Экономические экспертизы",
+          "pdfPage": 2,
+          "sourceRow": "2.",
+          "generalBudgetTotal": 3,
+          "paidTotal": 43,
+          "forms": [
+            {
+              "form": "Очная",
+              "generalBudget": 3,
+              "specialQuota": 2,
+              "targetQuota": 5,
+              "separateQuota": 2,
+              "paid": 43,
+              "targetQuotaFootnote": "10"
+            },
+            {
+              "form": "Заочная",
+              "generalBudget": null,
+              "specialQuota": null,
+              "targetQuota": null,
+              "separateQuota": null,
+              "paid": null,
+              "targetQuotaFootnote": null
+            }
+          ]
+        },
+        {
+          "code": "40.05.04",
+          "groupLabel": "Прокурорская деятельность",
+          "pdfPage": 3,
+          "sourceRow": "3.1.",
+          "generalBudgetTotal": 9,
+          "paidTotal": 200,
+          "forms": [
+            {
+              "form": "Очная",
+              "generalBudget": 0,
+              "specialQuota": 18,
+              "targetQuota": 139,
+              "separateQuota": 18,
+              "paid": 159,
+              "targetQuotaFootnote": "11"
+            },
+            {
+              "form": "Заочная",
+              "generalBudget": 9,
+              "specialQuota": 2,
+              "targetQuota": null,
+              "separateQuota": 2,
+              "paid": 41,
+              "targetQuotaFootnote": null
+            }
+          ]
+        }
+      ],
+      "note": "Общие бюджетные места в PDF указаны после вычета квот. Числа по договорам включают отдельные категории, указанные в сносках."
+    },
+    "tuition": {
+      "source": "price-summary",
+      "officialPriceOrder": "price-order",
+      "academicYear": "2026/2027",
+      "rows": [
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт частного права",
+          "profile": "Частное право",
+          "form": "очная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 560000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт частного права",
+          "profile": "Частное право",
+          "form": "очно-заочная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 400000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Международно-правовой институт",
+          "profile": "Международное право",
+          "form": "очная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 560000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Международно-правовой институт",
+          "profile": "Международное право",
+          "form": "очно-заочная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 400000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт публичного права и управления",
+          "profile": "Публичное право",
+          "form": "очная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 600000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт публичного права и управления",
+          "profile": "Публичное право",
+          "form": "очно-заочная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 400000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт бизнес-права",
+          "profile": "Бизнес-право",
+          "form": "очная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 500000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт бизнес-права",
+          "profile": "Бизнес-право",
+          "form": "очно-заочная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 400000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт правового консалтинга",
+          "profile": "Правовой консалтинг",
+          "form": "очная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 500000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт правового консалтинга",
+          "profile": "Правовой консалтинг",
+          "form": "очно-заочная",
+          "printedFootnote": "1",
+          "amountRubPerYear": 400000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт правового консалтинга",
+          "profile": "Частное право",
+          "form": "очно-заочная",
+          "printedFootnote": "2",
+          "amountRubPerYear": 400000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт правового консалтинга",
+          "profile": "Частное право",
+          "form": "заочная",
+          "printedFootnote": "2",
+          "amountRubPerYear": 350000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт правового консалтинга",
+          "profile": "Частное право",
+          "form": "заочная",
+          "printedFootnote": "3",
+          "amountRubPerYear": 350000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт правового консалтинга",
+          "profile": "Публичное право",
+          "form": "очно-заочная",
+          "printedFootnote": "2",
+          "amountRubPerYear": 400000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт правового консалтинга",
+          "profile": "Публичное право",
+          "form": "заочная",
+          "printedFootnote": "2",
+          "amountRubPerYear": 350000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Институт правового консалтинга",
+          "profile": "Публичное право",
+          "form": "заочная",
+          "printedFootnote": "3",
+          "amountRubPerYear": 350000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Высшая школа права",
+          "profile": "Инновационная юриспруденция",
+          "form": "очная",
+          "printedFootnote": null,
+          "amountRubPerYear": 700000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.03.01",
+          "title": "Юриспруденция",
+          "institute": "Международно-правовой институт",
+          "profile": "International Business Law",
+          "form": "очная",
+          "printedFootnote": null,
+          "amountRubPerYear": 700000,
+          "pdfPage": 2
+        },
+        {
+          "code": "40.05.01",
+          "title": "Правовое обеспечение национальной безопасности",
+          "institute": "Институт публичного права и управления",
+          "profile": "Государственно-правовая",
+          "form": "очная",
+          "printedFootnote": "4",
+          "amountRubPerYear": 580000,
+          "pdfPage": 3
+        },
+        {
+          "code": "40.05.01",
+          "title": "Правовое обеспечение национальной безопасности",
+          "institute": "Институт публичного права и управления",
+          "profile": "Государственно-правовая",
+          "form": "заочная",
+          "printedFootnote": "5",
+          "amountRubPerYear": 350000,
+          "pdfPage": 3
+        },
+        {
+          "code": "40.05.01",
+          "title": "Правовое обеспечение национальной безопасности",
+          "institute": "Институт публичного права и управления",
+          "profile": "Государственно-правовая",
+          "form": "заочная",
+          "printedFootnote": "4",
+          "amountRubPerYear": 350000,
+          "pdfPage": 3
+        },
+        {
+          "code": "40.05.03",
+          "title": "Судебная экспертиза",
+          "institute": "Институт судебных экспертиз",
+          "profile": "Экономические экспертизы",
+          "form": "очная",
+          "printedFootnote": null,
+          "amountRubPerYear": 400000,
+          "pdfPage": 3
+        },
+        {
+          "code": "40.05.03",
+          "title": "Судебная экспертиза",
+          "institute": "Институт судебных экспертиз",
+          "profile": "Речеведческие экспертизы",
+          "form": "очная",
+          "printedFootnote": null,
+          "amountRubPerYear": 400000,
+          "pdfPage": 3
+        },
+        {
+          "code": "40.05.04",
+          "title": "Судебная и прокурорская деятельность",
+          "institute": "Институт прокуратуры",
+          "profile": "Прокурорская деятельность",
+          "form": "очная",
+          "printedFootnote": "4",
+          "amountRubPerYear": 580000,
+          "pdfPage": 3
+        },
+        {
+          "code": "40.05.04",
+          "title": "Судебная и прокурорская деятельность",
+          "institute": "Институт прокуратуры",
+          "profile": "Прокурорская деятельность",
+          "form": "заочная",
+          "printedFootnote": "5",
+          "amountRubPerYear": 350000,
+          "pdfPage": 3
+        },
+        {
+          "code": "40.05.04",
+          "title": "Судебная и прокурорская деятельность",
+          "institute": "Институт прокуратуры",
+          "profile": "Прокурорская деятельность",
+          "form": "заочная",
+          "printedFootnote": "4",
+          "amountRubPerYear": 350000,
+          "pdfPage": 3
+        }
+      ],
+      "note": "Цены первого года. Сноски обозначают разные основания поступления. Институты названы по документу приёма."
+    },
+    "publishedPassingScores": {
+      "source": "summary",
+      "stage": null,
+      "rows": [
+        {
+          "code": "40.03.01",
+          "label": "Юриспруденция, направленность (профиль) Юриспруденция",
+          "scores": [
+            {
+              "funding": "budget",
+              "form": "Очная",
+              "minimum": 279,
+              "publishedMarker": null
+            },
+            {
+              "funding": "budget",
+              "form": "Очно-заочная",
+              "minimum": 244,
+              "publishedMarker": null
+            },
+            {
+              "funding": "budget",
+              "form": "Заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Очная",
+              "minimum": 192,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Очно-заочная",
+              "minimum": 159,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Заочная",
+              "minimum": 153,
+              "publishedMarker": null
+            }
+          ]
+        },
+        {
+          "code": "40.03.01",
+          "label": "Юриспруденция, направленность (профиль) Инновационная юриспруденция",
+          "scores": [
+            {
+              "funding": "budget",
+              "form": "Очная",
+              "minimum": 294,
+              "publishedMarker": null
+            },
+            {
+              "funding": "budget",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "budget",
+              "form": "Заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Очная",
+              "minimum": 182,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            }
+          ]
+        },
+        {
+          "code": "40.03.01",
+          "label": "Юриспруденция, направленность (профиль) International Business Law (на английском языке)",
+          "scores": [
+            {
+              "funding": "budget",
+              "form": "Очная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "budget",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "budget",
+              "form": "Заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Очная",
+              "minimum": 211,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            }
+          ]
+        },
+        {
+          "code": "40.05.01",
+          "label": "Правовое обеспечение национальной безопасности, специализация Государственно- правовая",
+          "scores": [
+            {
+              "funding": "budget",
+              "form": "Очная",
+              "minimum": 273,
+              "publishedMarker": null
+            },
+            {
+              "funding": "budget",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "budget",
+              "form": "Заочная",
+              "minimum": 260,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Очная",
+              "minimum": 178,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Заочная",
+              "minimum": 189,
+              "publishedMarker": null
+            }
+          ]
+        },
+        {
+          "code": "40.05.03",
+          "label": "Судебная экспертиза, специализации Экономические экспертизы, Речеведческие экспертизы",
+          "scores": [
+            {
+              "funding": "budget",
+              "form": "Очная",
+              "minimum": 288,
+              "publishedMarker": null
+            },
+            {
+              "funding": "budget",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "budget",
+              "form": "Заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Очная",
+              "minimum": 181,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            }
+          ]
+        },
+        {
+          "code": "40.05.04",
+          "label": "Судебная и прокурорская деятельность, специализация Прокурорская деятельность",
+          "scores": [
+            {
+              "funding": "budget",
+              "form": "Очная",
+              "minimum": null,
+              "publishedMarker": "-*"
+            },
+            {
+              "funding": "budget",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "budget",
+              "form": "Заочная",
+              "minimum": 247,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Очная",
+              "minimum": 178,
+              "publishedMarker": null
+            },
+            {
+              "funding": "paid",
+              "form": "Очно-заочная",
+              "minimum": null,
+              "publishedMarker": "-"
+            },
+            {
+              "funding": "paid",
+              "form": "Заочная",
+              "minimum": 158,
+              "publishedMarker": null
+            }
+          ]
+        }
+      ],
+      "footnote": "* в 2026 году прием осуществлялся только на места в пределах отдельной, особой и целевой квот."
+    },
+    "enrollmentOrders": {
+      "source": "enrollment-index",
+      "orders": [
+        {
+          "source": "budget-bac-01",
+          "code": "40.03.01",
+          "groupLabel": "Юриспруденция",
+          "form": "Очная",
+          "funding": "budget",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "5978",
+          "orderDate": "2026-08-07",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата по направлению подготовки Юриспруденция поступающих на места в пределах контрольных цифр приема по очной форме обучения (приказ № 5978 от 07.08.2026)",
+          "stage": "Основной этап, общий конкурс",
+          "listedEnrolled": 252,
+          "minTotalScoreInOrder": 279,
+          "pdfPagesWithMinimum": [5]
+        },
+        {
+          "source": "budget-bac-02",
+          "code": "40.03.01",
+          "groupLabel": "Юриспруденция",
+          "form": "Очно-заочная",
+          "funding": "budget",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "5979",
+          "orderDate": "2026-08-07",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата по направлению подготовки Юриспруденция поступающих на места в пределах контрольных цифр приема по очно-заочной форме обучения (приказ № 5979 от 07.08.2026)",
+          "stage": "Основной этап, общий конкурс",
+          "listedEnrolled": 202,
+          "minTotalScoreInOrder": 244,
+          "pdfPagesWithMinimum": [4]
+        },
+        {
+          "source": "budget-bac-03",
+          "code": "40.03.01",
+          "groupLabel": "Инновационная юриспруденция",
+          "form": "Очная",
+          "funding": "budget",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "5977",
+          "orderDate": "2026-08-07",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата по направлению подготовки Юриспруденция направленность (профиль) Инновационная юриспруденция поступающих на места в пределах контрольных цифр приема (приказ № 5977 от 07.08.2026)",
+          "stage": "Основной этап, общий конкурс",
+          "listedEnrolled": 4,
+          "minTotalScoreInOrder": 294,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "budget-spec-01",
+          "code": "40.05.01",
+          "groupLabel": "Государственно-правовая",
+          "form": "Очная",
+          "funding": "budget",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "5980",
+          "orderDate": "2026-08-07",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу специалитета по специальности Правовое обеспечение национальной безопасности поступающих на места в пределах контрольных цифр приема по очной форме обучения (приказ № 5980 от 07.08.2026)",
+          "stage": "Основной этап, общий конкурс",
+          "listedEnrolled": 48,
+          "minTotalScoreInOrder": 273,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "budget-spec-02",
+          "code": "40.05.01",
+          "groupLabel": "Государственно-правовая",
+          "form": "Заочная",
+          "funding": "budget",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "5981",
+          "orderDate": "2026-08-07",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу специалитета по специальности Правовое обеспечение национальной безопасности поступающих на места в пределах контрольных цифр приема по заочной форме обучения (приказ № 5981 от 07.08.2026)",
+          "stage": "Основной этап, общий конкурс",
+          "listedEnrolled": 9,
+          "minTotalScoreInOrder": 260,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "budget-spec-03",
+          "code": "40.05.03",
+          "groupLabel": "Экономические экспертизы, Речеведческие экспертизы",
+          "form": "Очная",
+          "funding": "budget",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "5982",
+          "orderDate": "2026-08-07",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу специалитета по специальности Судебная экспертиза поступающих на места в пределах контрольных цифр приема по очной форме обучения (приказ № 5982 от 07.08.2026)",
+          "stage": "Основной этап, общий конкурс",
+          "listedEnrolled": 3,
+          "minTotalScoreInOrder": 288,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "budget-spec-04",
+          "code": "40.05.04",
+          "groupLabel": "Прокурорская деятельность",
+          "form": "Заочная",
+          "funding": "budget",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "5983",
+          "orderDate": "2026-08-07",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу специалитета по специальности Судебная и прокурорская деятельность поступающих на места в пределах контрольных цифр приема по заочной форме обучения (приказ № 5983 от 07.08.2026)",
+          "stage": "Основной этап, общий конкурс",
+          "listedEnrolled": 9,
+          "minTotalScoreInOrder": 247,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "paid-bac-01",
+          "code": "40.03.01",
+          "groupLabel": "Юриспруденция",
+          "form": "Очная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6140",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата по направлению подготовки 40.03.01 Юриспруденция поступающих на места по договорам об оказании платных образовательных услуг на ОФО (приказ № 6140 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 900,
+          "minTotalScoreInOrder": 195,
+          "pdfPagesWithMinimum": [16]
+        },
+        {
+          "source": "paid-bac-02",
+          "code": "40.03.01",
+          "groupLabel": "Юриспруденция",
+          "form": "Очно-заочная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6141",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата по направлению подготовки 40.03.01 Юриспруденция поступающих на места по договорам об оказании платных образовательных услуг на ОЗФО (приказ № 6141 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 128,
+          "minTotalScoreInOrder": 162,
+          "pdfPagesWithMinimum": [3]
+        },
+        {
+          "source": "paid-bac-03",
+          "code": "40.03.01",
+          "groupLabel": "Юриспруденция",
+          "form": "Заочная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6142",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата по направлению подготовки 40.03.01 Юриспруденция поступающих на места по договорам об оказании платных образовательных услуг на ЗФО (приказ № 6142 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 40,
+          "minTotalScoreInOrder": 158,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "paid-bac-04",
+          "code": "40.03.01",
+          "groupLabel": "Юриспруденция",
+          "form": "Очная",
+          "funding": "paid",
+          "foreignSeparateCompetition": true,
+          "orderNumber": "6148",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата/специалитета по направлению подготовки Юриспруденция, иностранных граждан, поступающих на места по договорам об оказании платных образовательных услуг на ОФО (приказ № 6148 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 15,
+          "minTotalScoreInOrder": 108,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "paid-bac-05",
+          "code": "40.03.01",
+          "groupLabel": "Юриспруденция",
+          "form": null,
+          "funding": "paid",
+          "foreignSeparateCompetition": true,
+          "orderNumber": "6149",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата/специалитета по направлению подготовки Юриспруденция, иностранных граждан, поступающих на места по договорам об оказании платных образовательных услуг (приказ № 6149 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 2,
+          "minTotalScoreInOrder": 108,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "paid-bac-06",
+          "code": "40.03.01",
+          "groupLabel": "Инновационная юриспруденция",
+          "form": "Очная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6140",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата по направлению подготовки 40.03.01 Юриспруденция, направленность (профиль) Инновационная юриспруденция поступающих на места по договорам об оказании платных образовательных услуг (приказ № 6140 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 30,
+          "minTotalScoreInOrder": 187,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "paid-bac-07",
+          "code": "40.03.01",
+          "groupLabel": "International Business Law",
+          "form": "Очная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6140",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата по направлению подготовки 40.03.01 Юриспруденция, направленность (профиль) International Business Law (на английском языке) поступающих на места по договорам об оказании платных образовательных услуг (приказ № 6140 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 15,
+          "minTotalScoreInOrder": 211,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "paid-spec-01",
+          "code": "40.05.01",
+          "groupLabel": "Государственно-правовая",
+          "form": "Очная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6143",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу специалитета по специальности Правовое обеспечение национальной безопасности поступающих на места по договорам об оказании платных образовательных услуг на ОФО (приказ № 6143 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 170,
+          "minTotalScoreInOrder": 178,
+          "pdfPagesWithMinimum": [4]
+        },
+        {
+          "source": "paid-spec-02",
+          "code": "40.05.01",
+          "groupLabel": "Государственно-правовая",
+          "form": "Заочная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6144",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу специалитета по специальности Правовое обеспечение национальной безопасности поступающих на места по договорам об оказании платных образовательных услуг на ЗФО (приказ № 6144 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 22,
+          "minTotalScoreInOrder": 189,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "paid-spec-03",
+          "code": "40.05.03",
+          "groupLabel": "Экономические экспертизы, Речеведческие экспертизы",
+          "form": "Очная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6145",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программы специалитета по специальности 40.05.03 Судебная экспертиза поступающих на места по договорам об оказании платных образовательных услуг на ОФО (приказ № 6145 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 43,
+          "minTotalScoreInOrder": 184,
+          "pdfPagesWithMinimum": [1]
+        },
+        {
+          "source": "paid-spec-04",
+          "code": "40.05.04",
+          "groupLabel": "Прокурорская деятельность",
+          "form": "Очная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6146",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу специалитета по направлению подготовки Судебная и прокурорская деятельность поступающих на места по договорам об оказании платных образовательных услуг на ОФО (приказ № 6146 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 159,
+          "minTotalScoreInOrder": 178,
+          "pdfPagesWithMinimum": [3]
+        },
+        {
+          "source": "paid-spec-05",
+          "code": "40.05.04",
+          "groupLabel": "Прокурорская деятельность",
+          "form": "Заочная",
+          "funding": "paid",
+          "foreignSeparateCompetition": false,
+          "orderNumber": "6147",
+          "orderDate": "2026-08-20",
+          "sourceSection": "Сведения о зачислении на обучение в Университет имени О.Е. Кутафина (МГЮА) на программу высшего образования - программу бакалавриата/специалитета по направлению подготовки Судебная и прокурорская деятельность поступающих на места по договорам об оказании платных образовательных услуг на ЗФО (приказ № 6147 от 20.08.2026)",
+          "stage": "Договор, приказы от 20 августа",
+          "listedEnrolled": 21,
+          "minTotalScoreInOrder": 158,
+          "pdfPagesWithMinimum": [1]
+        }
+      ],
+      "summaryDifferences": [
+        {
+          "orderSource": "paid-bac-01",
+          "publishedSummary": 192,
+          "orderMinimum": 195
+        },
+        {
+          "orderSource": "paid-bac-02",
+          "publishedSummary": 159,
+          "orderMinimum": 162
+        },
+        {
+          "orderSource": "paid-bac-03",
+          "publishedSummary": 153,
+          "orderMinimum": 158
+        },
+        {
+          "orderSource": "paid-bac-06",
+          "publishedSummary": 182,
+          "orderMinimum": 187
+        },
+        {
+          "orderSource": "paid-spec-03",
+          "publishedSummary": 181,
+          "orderMinimum": 184
+        }
+      ],
+      "note": "Минимум опубликованной суммы по всем строкам с порядковым номером в отдельном листе приказа. Два списка иностранных граждан выделены отдельно. В итоговой сводке этап не подписан."
+    },
+    "officialAdditionalDocuments": {
+      "Вступительные испытания": [
+        "https://msal.ru/upload/iblock/768/f2tmw60xsu4nqg06inax191dx7zjw9q3.pdf",
+        "https://msal.ru/upload/iblock/3d5/7hwfaogrknyx0lb1hvdzy1vfosywg1di.pdf",
+        "https://msal.ru/upload/medialibrary/cbe/xejzp9ft05hdzggkxyu60104v2jdkge0.PDF",
+        "https://msal.ru/upload/medialibrary/1f2/bmn5rpc5pm9cd5e6n2lzrxlk1bjd5mya.PDF",
+        "https://msal.ru/upload/medialibrary/c00/gaq5w065k1see0sw4jz5c562dbosvw9f.pdf",
+        "https://msal.ru/upload/medialibrary/81b/w3k7zalqvs0qqvqixz4ozzgs6cx3qvtf.PDF",
+        "https://msal.ru/upload/iblock/9db/0m12prozrk1p61q1tddp32jb06ua0dha.pdf",
+        "https://msal.ru/upload/iblock/0bc/pyxwvdsduth9c6jo400da8zh8q3hoh00.pdf",
+        "https://msal.ru/upload/iblock/1f7/gvwchm6kuiaioz324wo1pmb5oec934sy.pdf",
+        "https://msal.ru/upload/iblock/0ac/svg1okdbk48vgvn2y7hp9i2bujt6r1m5.pdf",
+        "https://msal.ru/upload/iblock/e4b/7lg1u5tuw9kcsenjnt3lpc0rp0imo35o.pdf",
+        "https://msal.ru/upload/iblock/75d/1i7emmgqrsqj327gb2gfrmwlj4o2ayrm.pdf",
+        "https://msal.ru/upload/iblock/d43/n1tj8kz3jhoqgh1fue26jn4fd3omagwa.pdf",
+        "https://msal.ru/upload/iblock/ee1/xbhrqaxqt47xjvzwco7yz24dq5p902ug.pdf",
+        "https://msal.ru/upload/iblock/f0b/zag4unzlqogjfr9sef1nc85xiwnxumwk.pdf",
+        "https://msal.ru/upload/iblock/901/rzmnbz86venukmrojqo0to1oi8l2qer9.pdf"
+      ],
+      "Учет индивидуальных достижений": [
+        "https://msal.ru/upload/iblock/8a7/e3y4ayjw27ersb9tzg63ewofpoqwly1f.pdf"
+      ]
+    }
+  },
+  "modelGaps": [
+    "Платные проходные по формам и категориям поступающих.",
+    "Общий конкурс для нескольких профилей и отдельная стоимость каждого профиля.",
+    "Сохранение различий между минимумом из приказа и итоговой архивной таблицей, в которой этап не указан."
+  ]
+}

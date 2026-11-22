@@ -844,6 +844,31 @@ describe("official university profile evidence", () => {
     expect(offerings).toHaveLength(219);
   });
 
+  it("adds the dated MSAL admissions contacts and the official education listings", () => {
+    const { fields, faculties, offerings } = getDirectoryDetails("msal")!;
+    expect(fields.admissionsPhone).toMatchObject({
+      value: "8-800-555-7919",
+      sourceYear: 2026,
+    });
+    expect(fields.overview?.value).toContain("с 1931 года");
+    expect(faculties).toHaveLength(13);
+    expect(offerings).toHaveLength(109);
+    expect(offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "40.03.01",
+          profile: "ИННОВАЦИОННАЯ ЮРИСПРУДЕНЦИЯ",
+          admissionsStatus: "pending_review",
+        }),
+        expect.objectContaining({
+          code: "5.1.5",
+          level: "Аспирантура",
+          sourceYear: 2026,
+        }),
+      ]),
+    );
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
