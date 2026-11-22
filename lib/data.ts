@@ -837,7 +837,7 @@ const mpeiTuition = sourced(420_000, 2026, "verified", mpeiSource, mpeiOffice, {
   ...mpeiCardEvidence,
   note: "Стоимость одного года обучения для очного профиля.",
 });
-const mpeiPass = sourced(
+const mpeiPass2025 = sourced(
   261,
   2025,
   "verified",
@@ -850,6 +850,21 @@ const mpeiPass = sourced(
     sourceSection:
       "Очная форма, бюджетные места, Прикладная информатика, 09.03.03",
     note: "Проходной балл по итогам конкурса 2025 года. Шкала трёх испытаний до учёта достижений — 300 баллов по правилам 2025 года.",
+  },
+);
+const mpeiPass2026 = sourced(
+  269,
+  2026,
+  "verified",
+  "https://pk.mpei.ru/inform/enrolled35ebacc.html",
+  mpeiOffice,
+  {
+    ...mpeiReview,
+    checkedAt: "2026-11-22T21:15:09Z",
+    retrievedAt: "2026-11-22T21:15:09Z",
+    sourceKind: "html",
+    sourceSection: "09.03.03, очная, основные места в рамках КЦП",
+    note: "Минимальная сумма с учётом индивидуальных достижений в списке зачисленных 7 августа 2026 года. Бюджетный основной этап.",
   },
 );
 programsBase.push(
@@ -911,10 +926,10 @@ programsBase.push(
         required: true,
       },
     ],
-    passingScore: mpeiPass.value,
-    passingScoreValue: mpeiPass,
+    passingScore: mpeiPass2025.value,
+    passingScoreValue: mpeiPass2025,
     passingScoreExamScale: 300,
-    passingHistory: [mpeiPass],
+    passingHistory: [mpeiPass2025, mpeiPass2026],
     placesHistory: [mpeiBudget],
     tuitionHistory: [mpeiTuition],
     competitionHistory: [],

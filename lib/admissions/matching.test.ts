@@ -152,7 +152,7 @@ describe("очные конкурсы МЭИ и РУДН 2026", () => {
     expect(program.minScore).toBeNull();
   });
 
-  it("сравнивает балл МЭИ с бюджетным ориентиром 2025 на сопоставимой шкале", () => {
+  it("сравнивает балл МЭИ с ориентиром 2025 и сохраняет результат 2026 в истории", () => {
     const program = programs.find((item) => item.id === ids[0])!;
     const result = matchProgram(
       program,
@@ -162,6 +162,13 @@ describe("очные конкурсы МЭИ и РУДН 2026", () => {
     expect(result.passingScore).toBe(261);
     expect(result.margin).toBe(9);
     expect(program.passingScoreValue.year).toBe(2025);
+    expect(
+      program.passingHistory.find((row) => row.year === 2026),
+    ).toMatchObject({
+      value: 269,
+      year: 2026,
+      sourceUrl: "https://pk.mpei.ru/inform/enrolled35ebacc.html",
+    });
     expect(program.quotas.general.value).toBeNull();
   });
 
