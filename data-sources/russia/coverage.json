@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-22T20:15:09.182Z",
+  "generatedAt": "2026-11-22T20:34:51.201Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
     "universitiesWithFields": 194,
-    "sourcedFields": 1509,
-    "universitiesWithFaculties": 98,
-    "faculties": 1067,
-    "universitiesWithEducationalListings": 176,
-    "educationalListings": 22442,
+    "sourcedFields": 1512,
+    "universitiesWithFaculties": 99,
+    "faculties": 1072,
+    "universitiesWithEducationalListings": 177,
+    "educationalListings": 22550,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
-    "universitiesWithoutFaculties": 1127,
+    "universitiesWithoutFaculties": 1126,
     "universitiesWithoutAdmissionPrograms": 1205
   },
   "cities": [
@@ -957,7 +957,7 @@
     {
       "city": "Москва",
       "universities": 160,
-      "universitiesWithFaculties": 50,
+      "universitiesWithFaculties": 51,
       "admissionPrograms": 304
     },
     {
@@ -2601,21 +2601,14 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=131",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://mai.ru",
-      "sourcedFields": 7,
-      "faculties": 0,
-      "educationalListings": 0,
+      "sourcedFields": 10,
+      "faculties": 5,
+      "educationalListings": 108,
       "historicalEducationAreas": 19,
       "admissionPrograms": 1,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "telephone",
-        "admissionsPhone",
-        "admissionsEmail",
-        "overview",
-        "faculties",
-        "educationalListings"
-      ]
+      "missing": ["telephone"]
     },
     {
       "slug": "mipt",

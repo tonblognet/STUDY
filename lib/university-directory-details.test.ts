@@ -869,6 +869,36 @@ describe("official university profile evidence", () => {
     );
   });
 
+  it("preserves MAI's published education levels and dated admissions contacts", () => {
+    const { fields, faculties, offerings } = getDirectoryDetails("mai")!;
+    expect(fields.admissionsPhone).toMatchObject({
+      value: "+7 499 110-16-71",
+      sourceYear: 2026,
+    });
+    expect(fields.admissionsEmail).toMatchObject({
+      value: "priem@mai.ru",
+      sourceYear: 2019,
+    });
+    expect(faculties).toHaveLength(5);
+    expect(offerings).toHaveLength(108);
+    expect(offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "01.03.02",
+          profile: "Информатика",
+          level: "Базовое высшее образование",
+          sourceYear: 2026,
+          admissionsStatus: "pending_review",
+        }),
+        expect.objectContaining({
+          code: "1.1.7",
+          level: "Аспирантура",
+          sourceYear: 2026,
+        }),
+      ]),
+    );
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
