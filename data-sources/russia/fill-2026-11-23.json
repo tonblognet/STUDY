@@ -1,0 +1,137 @@
+{
+  "sourceYear": null,
+  "profiles": [
+    {
+      "universitySlug": "ranepa",
+      "fields": {
+        "admissionsUrl": {
+          "value": "https://www.ranepa.ru/bakalavriat/",
+          "sourceUrl": "https://www.ranepa.ru/bakalavriat/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:20:26Z",
+          "sourceSha256": "82f6620f9708865a82cd0e33292156e4d27f7512141a80639dd9a0647f499790"
+        },
+        "admissionsPhone": {
+          "value": "+7 (499) 956-99-99",
+          "sourceUrl": "https://www.ranepa.ru/bakalavriat/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:20:26Z",
+          "sourceSha256": "82f6620f9708865a82cd0e33292156e4d27f7512141a80639dd9a0647f499790"
+        },
+        "admissionsEmail": {
+          "value": "pkranepa@ranepa.ru",
+          "sourceUrl": "https://www.ranepa.ru/bakalavriat/",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:20:26Z",
+          "sourceSha256": "82f6620f9708865a82cd0e33292156e4d27f7512141a80639dd9a0647f499790"
+        },
+        "overview": {
+          "value": "Президентская академия в современном виде создана 20 сентября 2010 года. В неё вошли Академия народного хозяйства, Российская академия государственной службы и двенадцать региональных академий государственной службы.",
+          "sourceUrl": "https://www.ranepa.ru/upload/doc/prikazy-ranhigs/2026/Othet_o_samoobsledovanii_2025_academy.pdf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:30:08Z",
+          "sourceSha256": "1132e70ce0ce0f163f8f36be3e46b9adcb5a3f0f2cc2cf1560bbd6a14b952885"
+        }
+      },
+      "faculties": [
+        {
+          "name": "Институт государственной службы и управления",
+          "url": "https://igsu.ranepa.ru/",
+          "sourceSection": "Реализующее структурное подразделение Академии, Москва",
+          "sourceUrl": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%9F%D0%9B%D0%90%D0%A2%D0%9D%D0%AB%D0%95_%D0%9C%D0%95%D0%A1%D0%A2%D0%90_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1.pdf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:21:55Z",
+          "sourceSha256": "6f3dae38c7ef73591e573d40c7c96c025b57b072650f3fcc0f1b1ffa302c0b05"
+        },
+        {
+          "name": "Институт общественных наук",
+          "url": "https://www.ion.ranepa.ru/",
+          "sourceSection": "Реализующее структурное подразделение Академии, Москва",
+          "sourceUrl": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%9F%D0%9B%D0%90%D0%A2%D0%9D%D0%AB%D0%95_%D0%9C%D0%95%D0%A1%D0%A2%D0%90_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1.pdf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:21:55Z",
+          "sourceSha256": "6f3dae38c7ef73591e573d40c7c96c025b57b072650f3fcc0f1b1ffa302c0b05"
+        },
+        {
+          "name": "Институт права и национальной безопасности",
+          "url": "https://www.ilns.ranepa.ru/",
+          "sourceSection": "Реализующее структурное подразделение Академии, Москва",
+          "sourceUrl": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%9F%D0%9B%D0%90%D0%A2%D0%9D%D0%AB%D0%95_%D0%9C%D0%95%D0%A1%D0%A2%D0%90_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1.pdf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:21:55Z",
+          "sourceSha256": "6f3dae38c7ef73591e573d40c7c96c025b57b072650f3fcc0f1b1ffa302c0b05"
+        },
+        {
+          "name": "Институт управления",
+          "url": "https://im.ranepa.ru/",
+          "sourceSection": "Реализующее структурное подразделение Академии, Москва",
+          "sourceUrl": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%9F%D0%9B%D0%90%D0%A2%D0%9D%D0%AB%D0%95_%D0%9C%D0%95%D0%A1%D0%A2%D0%90_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1.pdf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:21:55Z",
+          "sourceSha256": "6f3dae38c7ef73591e573d40c7c96c025b57b072650f3fcc0f1b1ffa302c0b05"
+        },
+        {
+          "name": "Институт экономики, математики и информационных технологий",
+          "url": "https://emit.ranepa.ru/",
+          "sourceSection": "Реализующее структурное подразделение Академии, Москва",
+          "sourceUrl": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%9F%D0%9B%D0%90%D0%A2%D0%9D%D0%AB%D0%95_%D0%9C%D0%95%D0%A1%D0%A2%D0%90_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1.pdf",
+          "sourceYear": 2026,
+          "checkedAt": "2026-11-22T21:21:55Z",
+          "sourceSha256": "6f3dae38c7ef73591e573d40c7c96c025b57b072650f3fcc0f1b1ffa302c0b05"
+        }
+      ],
+      "offerings": []
+    }
+  ],
+  "sources": [
+    {
+      "universitySlug": "ranepa",
+      "id": "ranepa:admissions-2026",
+      "url": "https://www.ranepa.ru/bakalavriat/",
+      "checkedAt": "2026-11-22T21:20:26Z",
+      "sourceYear": 2026,
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 694585,
+      "sourceSha256": "82f6620f9708865a82cd0e33292156e4d27f7512141a80639dd9a0647f499790"
+    },
+    {
+      "universitySlug": "ranepa",
+      "id": "ranepa:history-2026",
+      "url": "https://www.ranepa.ru/upload/doc/prikazy-ranhigs/2026/Othet_o_samoobsledovanii_2025_academy.pdf",
+      "checkedAt": "2026-11-22T21:30:08Z",
+      "sourceYear": 2026,
+      "verificationTextBasis": "reviewed-extraction",
+      "extractText": "Современный вид Академия приобрела 20 сентября 2010 года",
+      "extractTextSha256": "b9cb484d390959ac72ac7ecefc810a09be363fbe1db9fae95fbeaeb0125d62d0",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 1650159,
+      "sourceSha256": "1132e70ce0ce0f163f8f36be3e46b9adcb5a3f0f2cc2cf1560bbd6a14b952885"
+    },
+    {
+      "universitySlug": "ranepa",
+      "id": "ranepa:institutes-2026",
+      "url": "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%9F%D0%9B%D0%90%D0%A2%D0%9D%D0%AB%D0%95_%D0%9C%D0%95%D0%A1%D0%A2%D0%90_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1.pdf",
+      "checkedAt": "2026-11-22T21:21:55Z",
+      "sourceYear": 2026,
+      "verificationTextBasis": "reviewed-extraction",
+      "extractText": "На 2026/27 учебный год\nДирекция приоритетных образовательных инициатив\nИнститут государственной службы и управления\nИнститут общественных наук\nИнститут права и национальной безопасности\nИнститут управления\nИнститут экономики, математики и информационных технологий",
+      "extractTextSha256": "b47f1c6a3f361a0025f8e0fa2e55e2241e51b6b9adab46d4a092110d9d702bf1",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 203574,
+      "sourceSha256": "6f3dae38c7ef73591e573d40c7c96c025b57b072650f3fcc0f1b1ffa302c0b05"
+    }
+  ],
+  "issues": [
+    {
+      "type": "admissions_campaign_not_found",
+      "year": 2027,
+      "sourceUrl": "https://www.ranepa.ru/bakalavriat/obshchie-osnovaniya/",
+      "universitySlug": "ranepa"
+    }
+  ],
+  "scopes": {
+    "ranepa": "РАНХиГС, Москва. Контакты приёмной комиссии, учебные институты и история."
+  },
+  "scope": "РАНХиГС, Москва. Контакты приёмной комиссии, учебные институты и история.",
+  "checkedAt": "2026-11-22T21:30:08Z"
+}

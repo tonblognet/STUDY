@@ -1731,7 +1731,61 @@ programsBase.push(
 );
 
 const ranepaSource =
-  "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf.pdf";
+  "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf";
+const ranepaProgramUrl =
+  "https://www.ranepa.ru/bakalavriat/napravleniya-i-programmy/010248/";
+const ranepaSection =
+  "09.03.03, Цифровые технологии и разработка информационных систем, очная форма, Москва";
+const ranepaChecked = "2026-11-22T21:30:06Z";
+const ranepaExamSource =
+  "https://www.ranepa.ru/upload/doc/pk/2026/min_ball_2026.pdf";
+const ranepaMinima = (value: number) =>
+  sourced(value, 2026, "verified", ranepaExamSource, "РАНХиГС", {
+    sourceKind: "pdf",
+    sourcePage: 1,
+    sourceSection: "Очная форма, места в рамках контрольных цифр приёма",
+    checkedAt: "2026-11-22T21:34:18Z",
+    retrievedAt: "2026-11-22T21:34:18Z",
+  });
+const ranepaQuotaSource =
+  "https://www.ranepa.ru/upload/doc/pk/2026/%D0%A6%D0%B8%D1%84%D1%80%D1%8B_%D0%91%D0%AE%D0%94%D0%96%D0%95%D0%A2_%D0%91%D0%90%D0%9A%20%D0%9C%D0%9E%D0%A1%D0%9A%D0%9E%D0%92%D0%A1%D0%9A%D0%98%D0%99_%D0%9A%D0%90%D0%9C%D0%9F%D0%A3%D0%A1%20%D1%81%20%D0%BA%D0%B2%D0%BE%D1%82%D0%B0%D0%BC%D0%B8.pdf";
+const ranepaSeat = (value: number, sourceSection: string) =>
+  sourced(value, 2026, "verified", ranepaQuotaSource, "РАНХиГС", {
+    sourceKind: "pdf",
+    sourcePage: 1,
+    sourceSection: `${ranepaSection}, ${sourceSection}`,
+    checkedAt: ranepaChecked,
+    retrievedAt: ranepaChecked,
+  });
+const ranepaBudget = ranepaSeat(23, "всего мест по плану");
+const ranepaPaid = sourced(67, 2026, "verified", ranepaProgramUrl, "РАНХиГС", {
+  sourceKind: "html",
+  sourceSection: "Места договор/бюджет",
+  checkedAt: ranepaChecked,
+  retrievedAt: ranepaChecked,
+});
+const ranepaTuition = sourced(
+  475_000,
+  2026,
+  "verified",
+  "https://www.ranepa.ru/upload/doc/platnye/2026/02-00851_001_04.05.2026.pdf",
+  "РАНХиГС",
+  {
+    sourceKind: "pdf",
+    sourcePage: 3,
+    sourceSection: ranepaSection,
+    note: "Стоимость первого курса для набора 2026/27.",
+    checkedAt: "2026-11-22T21:21:54Z",
+    retrievedAt: "2026-11-22T21:21:54Z",
+  },
+);
+const ranepaNoDvi = {
+  sourceKind: "pdf" as const,
+  sourcePage: 1,
+  sourceSection: ranepaSection,
+  checkedAt: "2026-11-22T21:21:53Z",
+  retrievedAt: "2026-11-22T21:21:53Z",
+};
 programsBase.push(
   program({
     id: "ranepa-digital",
@@ -1745,94 +1799,91 @@ programsBase.push(
     faculty: "Институт экономики, математики и информационных технологий",
     campus: "Москва",
     language: "Русский",
-    subjects: [],
-    examRequirements: [],
+    subjects: ["Математика", "Русский язык", "Физика / Информатика"],
+    examRequirements: [
+      {
+        id: "ranepa-digital-math",
+        label: "Обязательный предмет",
+        subjects: ["Математика"],
+        minimum: ranepaMinima(60),
+        required: true,
+      },
+      {
+        id: "ranepa-digital-russian",
+        label: "Обязательный предмет",
+        subjects: ["Русский язык"],
+        minimum: ranepaMinima(70),
+        required: true,
+      },
+      {
+        id: "ranepa-digital-alternative",
+        label: "Один предмет на выбор",
+        subjects: ["Физика", "Информатика"],
+        minimum: ranepaMinima(60),
+        required: true,
+      },
+    ],
     passingScore: null,
-    passingScoreValue: unknownNumber(
-      2025,
-      ranepaSource,
-      "РАНХиГС",
-      "В перечне испытаний нет проходного балла.",
-    ),
-    passingHistory: [],
-    placesHistory: [],
-    tuitionHistory: [],
-    competitionHistory: [],
-    minScore: null,
-    budgetPlaces: null,
-    budgetPlacesValue: sourced<number>(
+    passingScoreValue: sourced<number>(
       null,
       2026,
       "pending_review",
-      ranepaSource,
+      "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/",
       "РАНХиГС",
       {
-        sourcePage: 3,
-        sourceSection: "09.03.03",
-        note: "Программа помечена как бюджетная; точное число мест требует сопоставления с планом приёма.",
+        sourceSection: ranepaSection,
+        note: "В сводке для опубликованного результата не указан этап зачисления.",
+        checkedAt: "2026-11-22T21:20:23Z",
+        retrievedAt: "2026-11-22T21:20:23Z",
       },
     ),
-    paidPlaces: null,
-    paidPlacesValue: unknownNumber(
-      2026,
-      ranepaSource,
-      "РАНХиГС",
-      "Не указано в перечне испытаний.",
-    ),
-    tuition: null,
-    tuitionValue: unknownNumber(
-      2026,
-      ranepaSource,
-      "РАНХиГС",
-      "Не указано в перечне испытаний.",
-    ),
+    passingHistory: [],
+    placesHistory: [ranepaBudget],
+    tuitionHistory: [ranepaTuition],
+    competitionHistory: [],
+    minScore: null,
+    budgetPlaces: ranepaBudget.value,
+    budgetPlacesValue: ranepaBudget,
+    paidPlaces: ranepaPaid.value,
+    paidPlacesValue: ranepaPaid,
+    tuition: ranepaTuition.value,
+    tuitionValue: ranepaTuition,
     dvi: null,
     dviValue: sourced<string>(
       null,
       2026,
-      "pending_review",
+      "not_applicable",
       ranepaSource,
       "РАНХиГС",
-      { note: "Требуется извлечь полный набор испытаний из таблицы." },
+      ranepaNoDvi,
     ),
     dviMax: sourced<number>(
       null,
       2026,
-      "pending_review",
+      "not_applicable",
       ranepaSource,
       "РАНХиГС",
+      ranepaNoDvi,
     ),
-    individualAchievementsMax: unknownNumber(
+    individualAchievementsMax: sourced(
+      10,
       2026,
-      ranepaSource,
+      "verified",
+      "https://www.ranepa.ru/upload/doc/pk/2026/Pravila_priema_bac_spec_2026.pdf",
       "РАНХиГС",
-      "Не указано в перечне испытаний.",
+      {
+        sourceKind: "pdf",
+        sourcePage: 20,
+        sourceSection: "Лимит за общие индивидуальные достижения",
+        checkedAt: "2026-11-22T21:24:36Z",
+        retrievedAt: "2026-11-22T21:24:36Z",
+      },
     ),
     quotas: {
-      special: unknownNumber(
-        2026,
-        ranepaSource,
-        "РАНХиГС",
-        "Требуется план приёма.",
-      ),
-      separate: unknownNumber(
-        2026,
-        ranepaSource,
-        "РАНХиГС",
-        "Требуется план приёма.",
-      ),
-      target: unknownNumber(
-        2026,
-        ranepaSource,
-        "РАНХиГС",
-        "Требуется план приёма.",
-      ),
-      general: unknownNumber(
-        2026,
-        ranepaSource,
-        "РАНХиГС",
-        "Требуется план приёма.",
-      ),
+      special: ranepaSeat(3, "особая квота по плану"),
+      separate: ranepaSeat(3, "отдельная квота по плану"),
+      target: ranepaSeat(0, "целевая квота по плану"),
+      general: ranepaSeat(17, "основные места по плану"),
     },
     hostel: unknownBoolean(
       2026,
@@ -1851,15 +1902,15 @@ programsBase.push(
     trust: {
       dataYear: 2026,
       status: "pending_review",
-      completeness: 24,
-      checkedAt: CHECKED,
+      completeness: 80,
+      checkedAt: ranepaChecked,
       checkedBy: "Редакция Поступай",
       nextReviewAt: NEXT,
       sourceName: "РАНХиГС",
       sourceDocumentTitle: "Перечень вступительных испытаний 2026",
-      sourcePage: 3,
-      sourceSection: "09.03.03",
-      note: "Идентичность программы подтверждена; числовые показатели ещё не сопоставлены.",
+      sourcePage: 1,
+      sourceSection: ranepaSection,
+      note: "Минимумы в карточке относятся к бюджетным местам. Этап зачисления в сводке проходных не указан.",
     },
     tags: ["ИТ", "Информационные системы"],
   }),

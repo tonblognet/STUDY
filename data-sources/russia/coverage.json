@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-22T21:20:31.790Z",
+  "generatedAt": "2026-11-22T21:38:19.729Z",
   "scope": "repository_candidate",
   "note": "Покрытие файлового кандидата. Исторический мониторинг, образовательные перечни и конкурсные программы учитываются отдельно; список факультетов может быть неполным. Отсутствие поля не означает отсутствие условия у вуза. Публикация БД требует отдельного редакционного решения.",
   "totals": {
     "universities": 1225,
     "cities": 320,
     "universitiesWithFields": 194,
-    "sourcedFields": 1512,
-    "universitiesWithFaculties": 99,
-    "faculties": 1072,
+    "sourcedFields": 1516,
+    "universitiesWithFaculties": 100,
+    "faculties": 1077,
     "universitiesWithEducationalListings": 177,
     "educationalListings": 22550,
     "historicalEducationAreas": 8757,
     "admissionPrograms": 305,
     "verifiedAdmissionPrograms": 12,
-    "universitiesWithoutFaculties": 1126,
+    "universitiesWithoutFaculties": 1125,
     "universitiesWithoutAdmissionPrograms": 1205
   },
   "cities": [
@@ -957,7 +957,7 @@
     {
       "city": "Москва",
       "universities": 160,
-      "universitiesWithFaculties": 51,
+      "universitiesWithFaculties": 52,
       "admissionPrograms": 304
     },
     {
@@ -2715,20 +2715,14 @@
       "organizationSourceUrl": "https://monitoring.miccedu.ru/iam/2025/_vpo/inst.php?id=1783",
       "organizationCheckedAt": "2026-09-15T00:00:00.000Z",
       "officialWebsite": "https://www.ranepa.ru",
-      "sourcedFields": 7,
-      "faculties": 0,
+      "sourcedFields": 11,
+      "faculties": 5,
       "educationalListings": 574,
       "historicalEducationAreas": 14,
       "admissionPrograms": 1,
       "verifiedAdmissionPrograms": 0,
       "currentLicenseStatus": "not_checked",
-      "missing": [
-        "admissionsUrl",
-        "admissionsPhone",
-        "admissionsEmail",
-        "overview",
-        "faculties"
-      ]
+      "missing": []
     },
     {
       "slug": "mgu",

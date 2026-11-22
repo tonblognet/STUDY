@@ -913,6 +913,31 @@ describe("official university profile evidence", () => {
     });
   });
 
+  it("loads the RANEPA admissions contacts and reviewed Moscow institutes", () => {
+    const { fields, faculties } = getDirectoryDetails("ranepa")!;
+    expect(fields.admissionsEmail).toMatchObject({
+      value: "pkranepa@ranepa.ru",
+      sourceYear: 2026,
+    });
+    expect(fields.overview?.value).toContain("20 сентября 2010 года");
+    expect(faculties).toHaveLength(5);
+    expect(faculties).toContainEqual(
+      expect.objectContaining({
+        name: "Институт общественных наук",
+        sourceYear: 2026,
+      }),
+    );
+    expect(
+      programs.find((entry) => entry.id === "ranepa-digital"),
+    ).toMatchObject({
+      budgetPlaces: 23,
+      paidPlaces: 67,
+      tuition: 475000,
+      quotas: { general: { value: 17 }, target: { value: 0 } },
+      passingScore: null,
+    });
+  });
+
   it("preserves the independent review date of a military center", () => {
     const university = universities.find((row) => row.slug === "stankin")!;
     const evidence = universityFactProfiles.find(
