@@ -336,13 +336,28 @@ class FakeNetworkTests(unittest.TestCase):
         self.assertIn("error", self.fetcher.get("x", "https://x.ru/sveden/education/", "x.ru"))
         self.assertNotIn("error", self.fetcher.get("x", "https://x.ru/sveden/struct/", "x.ru"))
 
-    def test_silent_host_fails_fast_after_first_timeout(self):
-        self.script["https://y.ru/robots.txt"] = (None, None, "curl: (28) Connection timed out")
+    def test_silent_host_fails_fast_after_first_page_timeout(self):
+        for url in ("https://y.ru/robots.txt", "https://y.ru/sveden/common/"):
+            self.script[url] = (None, None, "curl: (28) Connection timed out")
         first = self.fetcher.get("y", "https://y.ru/sveden/common/", "y.ru")
         second = self.fetcher.get("y", "https://y.ru/sveden/struct/", "y.ru")
-        self.assertIn("unreachable earlier", first["error"])
+        self.assertTrue(first["error"].startswith("network: curl: (28)"))
         self.assertIn("unreachable earlier", second["error"])
-        self.assertEqual(self.calls, ["https://y.ru/robots.txt"])
+        self.assertEqual(self.calls, ["https://y.ru/robots.txt", "https://y.ru/sveden/common/"])
+
+    def test_unanswered_robots_txt_does_not_hide_a_live_site(self):
+        self.script["https://y.ru/robots.txt"] = (None, None, "curl: (28) Connection timed out")
+        record = self.fetcher.get("y", "https://y.ru/sveden/common/", "y.ru")
+        self.assertNotIn("error", record)
+
+    def test_bare_domain_is_tried_when_www_host_is_silent(self):
+        for url in ("https://www.z.ru/robots.txt", "https://www.z.ru/sveden/common/"):
+            self.script[url] = (None, None, "curl: (28) Connection timed out")
+        university = {"slug": "z", "name": "Тестовый университет", "website": "http://www.z.ru"}
+        _, report = reader.collect("z", university, self.fetcher, max_pages=2)
+        fetched = [page["url"] for page in report["pages"] if not page.get("error")]
+        self.assertIn("https://z.ru/sveden/common/", fetched)
+        self.assertTrue(all(url.startswith("https://z.ru/") for url in fetched))
 
     def test_robots_disallow_is_honoured(self):
         record = self.fetcher.get("x", "https://x.ru/private/sveden/", "x.ru")

@@ -243,20 +243,18 @@ class Fetcher:
             if not self.offline:
                 body, _, headers = self.paths(slug, root + "/robots.txt")
                 body.parent.mkdir(parents=True, exist_ok=True)
+                # A robots.txt that does not answer means "no rules", not a dead
+                # site: on 20.11 such timeouts hid 164 live universities. Only a
+                # failed page marks the host unreachable.
                 try:
                     status, _, error = self.curl_once(root + "/robots.txt", body, headers, 20)
-                    if error:
-                        with self.lock:
-                            if parsed.hostname not in self.alive:
-                                self.dead.setdefault(parsed.hostname, "robots.txt: " + error)
-                    else:
+                    if not error:
                         with self.lock:
                             self.alive.add(parsed.hostname)
                         if status == "200" and body.exists():
                             lines = body.read_bytes().decode("utf-8", errors="replace").splitlines()
-                except (OSError, subprocess.SubprocessError) as error:
-                    with self.lock:
-                        self.dead.setdefault(parsed.hostname, "robots.txt: " + str(error))
+                except (OSError, subprocess.SubprocessError):
+                    lines = []
             parser.parse(lines)
             with self.lock:
                 cached = self.robots.setdefault(root, parser)
@@ -672,6 +670,13 @@ def collect(slug, university, fetcher, max_pages=25):
         return doc, record["url"], source_id
 
     doc, url, source = page("common", root + "/sveden/common/")
+    if doc is None and (report["pages"][-1].get("error") or "").startswith("network:"):
+        # The catalog may store www.<domain> while only <domain> answers, or the reverse.
+        host = urlparse(root).hostname
+        alternate = host[4:] if host.startswith("www.") else "www." + host
+        if allowed(f"https://{alternate}/", base):
+            root = f"https://{alternate}"
+            doc, url, source = page("common", root + "/sveden/common/")
     if doc is not None:
         found, notes = common_fields(doc)
         issues.extend({**note, "sourceUrl": url} for note in notes)
