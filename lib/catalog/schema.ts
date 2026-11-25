@@ -5,26 +5,8 @@ import { validateUniversityFactProfile } from "@/data-sources/core/university-fa
 import { validateAdmissionCampaign } from "@/lib/university-admission-campaigns";
 import type { CatalogSnapshot } from "./types";
 import { CatalogError } from "./types";
-import { directoryDetails as repositoryDirectoryDetails } from "@/lib/university-directory-details";
+import { isReviewedDirectoryUrl } from "./directory-sources";
 import { createHseAdmissionResourcesSchema } from "./hse-admission-resources-schema";
-
-// Preserve exact, previously reviewed directory evidence (including official
-// registry documents and university redirects); it is not an arbitrary host allowlist.
-function knownDirectoryUrls(value: unknown): string[] {
-  if (!value || typeof value !== "object") return [];
-  return Object.entries(value).flatMap(([key, child]) =>
-    ["sourceUrl", "url", "pageUrl", "programUrl"].includes(key) &&
-    typeof child === "string"
-      ? [child]
-      : knownDirectoryUrls(child),
-  );
-}
-const repositoryDirectorySources = new Map(
-  repositoryDirectoryDetails.map((row) => [
-    row.universitySlug,
-    new Set(knownDirectoryUrls(row)),
-  ]),
-);
 
 const text = z.string().min(1);
 const date = text.refine(
@@ -294,6 +276,46 @@ const directoryField = z
     sourceSha256: text.regex(/^[a-f0-9]{64}$/),
   })
   .strict();
+const offering = z
+  .object({
+    id: text,
+    code: text,
+    title: text,
+    profile: z.string().nullable(),
+    level: text,
+    forms: z.string().nullable(),
+    duration: z.string().nullable(),
+    admissionsStatus: text,
+    programUrl: url.optional(),
+    campus: text.optional(),
+    admissionDetails: z
+      .object({
+        priorEducation: stringFact.optional(),
+        schoolBase: z.union([z.literal(9), z.literal(11)]).optional(),
+        annualTuition: numberFact.optional(),
+        budgetPlaces: placesFact.optional(),
+        paidPlaces: placesFact.optional(),
+        exams: stringFact.optional(),
+        note: text.optional(),
+      })
+      .strict()
+      .optional(),
+    publishedPrice: z
+      .object({
+        amount: z.number().nonnegative(),
+        currency: z.string().refine((value) => value.trim().length > 0),
+        period: z.string().nullable(),
+      })
+      .strict()
+      .optional(),
+    sourceUrl: url,
+    sourceYear: z.number().int().nullable(),
+    checkedAt: date,
+    sourceSha256: text.regex(/^[a-f0-9]{64}$/),
+    sourceSection: z.string().optional(),
+  })
+  .strict();
+export const offeringsSchema = z.array(offering);
 const details = z
   .object({
     universitySlug: slug,
@@ -357,47 +379,14 @@ const details = z
     documents: z.array(
       z.object({ label: text, kind: z.string(), url, pageUrl: url }).strict(),
     ),
-    offerings: z.array(
-      z
-        .object({
-          id: text,
-          code: text,
-          title: text,
-          profile: z.string().nullable(),
-          level: text,
-          forms: z.string().nullable(),
-          duration: z.string().nullable(),
-          admissionsStatus: text,
-          programUrl: url.optional(),
-          campus: text.optional(),
-          admissionDetails: z
-            .object({
-              priorEducation: stringFact.optional(),
-              schoolBase: z.union([z.literal(9), z.literal(11)]).optional(),
-              annualTuition: numberFact.optional(),
-              budgetPlaces: placesFact.optional(),
-              paidPlaces: placesFact.optional(),
-              exams: stringFact.optional(),
-              note: text.optional(),
-            })
-            .strict()
-            .optional(),
-          publishedPrice: z
-            .object({
-              amount: z.number().nonnegative(),
-              currency: z.string().refine((value) => value.trim().length > 0),
-              period: z.string().nullable(),
-            })
-            .strict()
-            .optional(),
-          sourceUrl: url,
-          sourceYear: z.number().int().nullable(),
-          checkedAt: date,
-          sourceSha256: text.regex(/^[a-f0-9]{64}$/),
-          sourceSection: z.string().optional(),
-        })
-        .strict(),
-    ),
+    offerings: z.array(offering),
+    offeringSet: z
+      .object({
+        digest: text.regex(/^[a-f0-9]{64}$/),
+        count: z.number().int().positive(),
+      })
+      .strict()
+      .optional(),
   })
   .strict();
 const campaignFact = <T extends z.ZodType>(value: T) =>
@@ -500,11 +489,7 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     sourceUrl: string,
     directory = false,
   ) => {
-    if (
-      directory &&
-      repositoryDirectorySources.get(universitySlug)?.has(sourceUrl)
-    )
-      return;
+    if (directory && isReviewedDirectoryUrl(universitySlug, sourceUrl)) return;
     const adapter = getUniversityAdapter(universitySlug);
     if (!adapter) {
       errors.push(`Нет адаптера: ${universitySlug}`);
@@ -599,6 +584,10 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
   for (const row of snapshot.directoryDetails) {
     if (row.admissionResources && row.universitySlug !== "hse")
       errors.push("Ресурсы приёма ВШЭ относятся только к профилю hse");
+    if (row.offeringSet && row.offerings.length)
+      errors.push(
+        `Перечень указан и в публикации, и отдельным набором: ${row.universitySlug}`,
+      );
     visitSources(row, row.universitySlug, true);
     unique(
       (row.faculties ?? []).map((faculty) =>

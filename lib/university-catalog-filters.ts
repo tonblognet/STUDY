@@ -1,7 +1,7 @@
 import type { z } from "zod";
 import type { University } from "./data";
 import type { universityViewSchema } from "./catalog/view-state";
-import type { directoryEvidenceSummary } from "./university-directory-details";
+import type { directoryEvidenceSummary } from "@/lib/directory/model";
 
 /** Only the values rendered or searched by the university list cross the client boundary. */
 export type UniversityCatalogEntry = Pick<

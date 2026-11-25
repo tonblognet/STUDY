@@ -1,6 +1,8 @@
 import { Prisma, type PrismaClient, type Role } from "@prisma/client";
 import { catalogChecksum, catalogDiff } from "./diff";
 import { parseCatalog } from "./schema";
+import { externalizeOfferings, type OfferingSet } from "./offering-sets";
+import { offeringTrack } from "@/lib/education-pathways";
 import { CatalogError, type CatalogSnapshot } from "./types";
 
 export type CatalogActor = { id: string; role: Role };
@@ -45,30 +47,109 @@ async function assertProgramIdentities(
     );
 }
 
-export async function readPublishedCatalog(db: PrismaClient) {
+type PublishedCatalog = {
+  revisionId: string;
+  publishedAt: string;
+  snapshot: CatalogSnapshot;
+};
+let publishedCache: PublishedCatalog | null = null;
+
+function deepFreeze<T>(value: T): T {
+  if (value && typeof value === "object" && !Object.isFrozen(value)) {
+    Object.freeze(value);
+    for (const child of Object.values(value)) deepFreeze(child);
+  }
+  return value;
+}
+
+/**
+ * Revisions are immutable (database triggers), so a verified and parsed
+ * publication is reused until the head moves; only the head is read per call.
+ * The shared snapshot is frozen: a caller can never alter another request.
+ */
+export async function readPublishedCatalog(
+  db: PrismaClient,
+): Promise<PublishedCatalog> {
   const head = await db.catalogHead.findUnique({
     where: { id: "public" },
     select: {
-      revision: {
-        select: {
-          id: true,
-          status: true,
-          checksum: true,
-          payload: true,
-          reviewedAt: true,
-        },
-      },
+      revision: { select: { id: true, status: true, reviewedAt: true } },
     },
   });
   if (!head?.revision || head.revision.status !== "PUBLISHED")
     throw new CatalogError("Каталог ещё не опубликован", 503);
-  if (catalogChecksum(head.revision.payload) !== head.revision.checksum)
+  if (publishedCache?.revisionId === head.revision.id) return publishedCache;
+  const revision = await db.catalogRevision.findUniqueOrThrow({
+    where: { id: head.revision.id },
+    select: { checksum: true, payload: true },
+  });
+  if (catalogChecksum(revision.payload) !== revision.checksum)
     throw new CatalogError("Нарушена целостность публикации каталога", 503);
-  return {
+  publishedCache = deepFreeze({
     revisionId: head.revision.id,
     publishedAt: head.revision.reviewedAt!.toISOString(),
-    snapshot: parseCatalog(head.revision.payload),
-  };
+    snapshot: parseCatalog(revision.payload),
+  });
+  return publishedCache;
+}
+
+/** Write each new listing set atomically; existing digests are reused as is. */
+export async function storeOfferingSets(
+  db: PrismaClient,
+  snapshot: CatalogSnapshot,
+  sets: OfferingSet[],
+) {
+  const fresh = new Set(sets.map((set) => set.digest));
+  const referenced = snapshot.directoryDetails
+    .map((row) => row.offeringSet?.digest)
+    .filter((digest): digest is string => Boolean(digest));
+  if (!referenced.length) return;
+  const existing = new Set(
+    (
+      await db.catalogOfferingSet.findMany({
+        where: { digest: { in: referenced } },
+        select: { digest: true },
+      })
+    ).map((row) => row.digest),
+  );
+  const missing = referenced.filter(
+    (digest) => !fresh.has(digest) && !existing.has(digest),
+  );
+  if (missing.length)
+    throw new CatalogError(
+      `Нет сохранённого перечня ${missing[0]}: импортируйте каталог с перечнями`,
+      409,
+    );
+  for (const set of sets) {
+    if (existing.has(set.digest)) continue;
+    try {
+      await db.$transaction([
+        db.catalogOfferingSet.create({
+          data: {
+            digest: set.digest,
+            universitySlug: set.universitySlug,
+            count: set.offerings.length,
+          },
+        }),
+        db.catalogOffering.createMany({
+          data: set.offerings.map((offering, position) => ({
+            setDigest: set.digest,
+            position,
+            offeringId: offering.id,
+            track: offeringTrack(offering.level),
+            data: json(offering),
+          })),
+        }),
+      ]);
+    } catch (error) {
+      // A concurrent import may have stored the identical content first.
+      if (
+        !(error instanceof Prisma.PrismaClientKnownRequestError) ||
+        error.code !== "P2002"
+      )
+        throw error;
+    }
+  }
 }
 
 export async function stageCatalog(
@@ -81,7 +162,10 @@ export async function stageCatalog(
   },
 ) {
   assertCatalogEditor(options.actor);
-  const snapshot = parseCatalog(input);
+  // Listings leave the payload as content-addressed sets (ADR 0006). Sets are
+  // written before the revision, outside its transaction; an unused set is
+  // harmless, while a revision never references a missing one.
+  const { snapshot, sets } = externalizeOfferings(parseCatalog(input));
   const reason = reasonText(options.reason);
   const checksum = catalogChecksum(snapshot);
   const base = await db.catalogHead.findUniqueOrThrow({
@@ -96,6 +180,7 @@ export async function stageCatalog(
       "Каталог уже изменился. Загрузите опубликованную версию и повторите импорт",
       409,
     );
+  await storeOfferingSets(db, snapshot, sets);
   // Published evidence is immutable. Prepare the potentially large diff and JSON
   // before taking the shared lock, then verify its base again inside the transaction.
   const changes =

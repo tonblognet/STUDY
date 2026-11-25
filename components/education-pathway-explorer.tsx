@@ -1,17 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import type { EducationPathwayRow } from "@/lib/education-pathways";
 import {
-  filterHseExplorerRows,
-  hseAdmissionYears,
-  hseCampusNames,
   hseHasKnownConditions,
-  hseStudyModes,
   type HseDisplayFact,
-  type HseExplorerFilters,
 } from "@/lib/hse-explorer-data";
+import {
+  PATHWAY_PAGE,
+  PATHWAY_STEP,
+  pathwaySearch,
+  type PathwayView,
+} from "@/lib/catalog/pathway-view";
 import styles from "./hse-program-explorer.module.css";
 
 function Fact({
@@ -49,79 +48,28 @@ function Fact({
 }
 
 export function EducationPathwayExplorer({
-  rows,
+  track,
+  view,
 }: {
-  rows: EducationPathwayRow[];
+  track: string;
+  view: PathwayView;
 }) {
-  const [filters, setFilters] = useState<HseExplorerFilters>({});
-  const [university, setUniversity] = useState("");
-  const [schoolBase, setSchoolBase] = useState("");
-  const [limit, setLimit] = useState(12);
-  const update = (key: keyof HseExplorerFilters, value: string) => {
-    setFilters((current) => ({ ...current, [key]: value }));
-    setLimit(12);
-  };
-  const universities = useMemo(
-    () =>
-      [
-        ...new Map(
-          rows.map((row) => [row.universitySlug, row.universityName]),
-        ).entries(),
-      ].sort((a, b) => a[1].localeCompare(b[1], "ru")),
-    [rows],
-  );
-  const scoped = useMemo(
-    () =>
-      rows.filter((row) => !university || row.universitySlug === university),
-    [rows, university],
-  );
-  const campuses = useMemo(
-    () =>
-      [...new Set(scoped.flatMap((row) => hseCampusNames(row.campus)))].sort(
-        (a, b) => a.localeCompare(b, "ru"),
-      ),
-    [scoped],
-  );
-  const faculties = useMemo(
-    () =>
-      [
-        ...new Set(
-          scoped
-            .map((row) => row.faculty)
-            .filter((value): value is string => Boolean(value)),
-        ),
-      ].sort((a, b) => a.localeCompare(b, "ru")),
-    [scoped],
-  );
-  const forms = useMemo(
-    () => [...new Set(scoped.flatMap(hseStudyModes))],
-    [scoped],
-  );
-  const years = useMemo(
-    () => [...new Set(scoped.flatMap(hseAdmissionYears))].sort((a, b) => b - a),
-    [scoped],
-  );
-  const filtered = useMemo(
-    () =>
-      filterHseExplorerRows(
-        scoped.filter(
-          (row) =>
-            !schoolBase || row.admission?.schoolBase === Number(schoolBase),
-        ),
-        filters,
-      ),
-    [scoped, filters, schoolBase],
-  );
-  const identity = new Map(rows.map((row) => [row.id, row]));
+  // Filtering runs on the server (ADR 0006); a changed select submits the form.
+  const { query, options } = view;
+  const submit = (event: { currentTarget: { form: HTMLFormElement | null } }) =>
+    event.currentTarget.form?.requestSubmit();
   const hasFilters = Boolean(
-    university || schoolBase || Object.values(filters).some(Boolean),
+    query.query ||
+      query.university ||
+      query.campus ||
+      query.faculty ||
+      query.form ||
+      query.funding ||
+      query.maxTuition ||
+      query.year ||
+      query.conditions ||
+      query.schoolBase,
   );
-  const reset = () => {
-    setUniversity("");
-    setSchoolBase("");
-    setFilters({});
-    setLimit(12);
-  };
   return (
     <section
       className={styles.explorer}
@@ -136,13 +84,14 @@ export function EducationPathwayExplorer({
           </p>
         </div>
       </div>
-      <div className={styles.controls}>
+      <form className={styles.controls} method="get" action="/programs">
+        <input type="hidden" name="track" value={track} />
         <label>
           Название или код программы
           <input
             type="search"
-            value={filters.query ?? ""}
-            onChange={(event) => update("query", event.target.value)}
+            name="q"
+            defaultValue={query.query ?? ""}
             placeholder="Например, экономика"
           />
         </label>
@@ -150,15 +99,12 @@ export function EducationPathwayExplorer({
           Учебное заведение
           <select
             aria-label="Учебное заведение"
-            value={university}
-            onChange={(event) => {
-              setUniversity(event.target.value);
-              setFilters(({ query }) => ({ query }));
-              setLimit(12);
-            }}
+            name="university"
+            defaultValue={query.university}
+            onChange={submit}
           >
             <option value="">Все учебные заведения</option>
-            {universities.map(([slug, name]) => (
+            {options.universities.map(([slug, name]) => (
               <option key={slug} value={slug}>
                 {name}
               </option>
@@ -169,11 +115,12 @@ export function EducationPathwayExplorer({
           Город или кампус
           <select
             aria-label="Город или кампус"
-            value={filters.campus ?? ""}
-            onChange={(event) => update("campus", event.target.value)}
+            name="campus"
+            defaultValue={query.campus ?? ""}
+            onChange={submit}
           >
             <option value="">Все города и кампусы</option>
-            {campuses.map((value) => (
+            {options.campuses.map((value) => (
               <option key={value}>{value}</option>
             ))}
           </select>
@@ -182,11 +129,12 @@ export function EducationPathwayExplorer({
           Подразделение
           <select
             aria-label="Подразделение"
-            value={filters.faculty ?? ""}
-            onChange={(event) => update("faculty", event.target.value)}
+            name="faculty"
+            defaultValue={query.faculty ?? ""}
+            onChange={submit}
           >
             <option value="">Все подразделения, включая неуказанные</option>
-            {faculties.map((value) => (
+            {options.faculties.map((value) => (
               <option key={value}>{value}</option>
             ))}
           </select>
@@ -195,11 +143,12 @@ export function EducationPathwayExplorer({
           Форма обучения
           <select
             aria-label="Форма обучения"
-            value={filters.form ?? ""}
-            onChange={(event) => update("form", event.target.value)}
+            name="form"
+            defaultValue={query.form ?? ""}
+            onChange={submit}
           >
             <option value="">Любая форма</option>
-            {forms.map((value) => (
+            {options.forms.map((value) => (
               <option key={value}>{value}</option>
             ))}
           </select>
@@ -208,8 +157,9 @@ export function EducationPathwayExplorer({
           Финансирование
           <select
             aria-label="Финансирование"
-            value={filters.funding ?? ""}
-            onChange={(event) => update("funding", event.target.value)}
+            name="funding"
+            defaultValue={query.funding ?? ""}
+            onChange={submit}
           >
             <option value="">Любое финансирование</option>
             <option value="budget">Есть бюджетные места</option>
@@ -220,10 +170,10 @@ export function EducationPathwayExplorer({
           Стоимость года до, ₽
           <input
             type="number"
+            name="maxTuition"
             min="0"
             step="10000"
-            value={filters.maxTuition ?? ""}
-            onChange={(event) => update("maxTuition", event.target.value)}
+            defaultValue={query.maxTuition ?? ""}
             placeholder="Без ограничения"
           />
         </label>
@@ -231,11 +181,12 @@ export function EducationPathwayExplorer({
           Год набора
           <select
             aria-label="Год набора"
-            value={filters.year ?? ""}
-            onChange={(event) => update("year", event.target.value)}
+            name="year"
+            defaultValue={query.year ?? ""}
+            onChange={submit}
           >
             <option value="">Все годы, включая неуказанные</option>
-            {years.map((value) => (
+            {options.years.map((value) => (
               <option key={value}>{value}</option>
             ))}
           </select>
@@ -244,24 +195,23 @@ export function EducationPathwayExplorer({
           Наличие условий
           <select
             aria-label="Наличие условий"
-            value={filters.conditions ?? ""}
-            onChange={(event) => update("conditions", event.target.value)}
+            name="conditions"
+            defaultValue={query.conditions ?? ""}
+            onChange={submit}
           >
             <option value="">Все записи</option>
             <option value="known">Есть подтверждённые условия</option>
             <option value="needs-review">Условия нужно сверить</option>
           </select>
         </label>
-        {rows.some((row) => row.admission?.schoolBase) && (
+        {options.schoolBase && (
           <label>
             Образование до колледжа
             <select
               aria-label="Образование до колледжа"
-              value={schoolBase}
-              onChange={(event) => {
-                setSchoolBase(event.target.value);
-                setLimit(12);
-              }}
+              name="school"
+              defaultValue={query.schoolBase}
+              onChange={submit}
             >
               <option value="">Любое, включая неуказанное</option>
               <option value="9">После 9 классов</option>
@@ -269,7 +219,10 @@ export function EducationPathwayExplorer({
             </select>
           </label>
         )}
-      </div>
+        <button className="button button-secondary" type="submit">
+          Найти
+        </button>
+      </form>
       <p className={styles.filterNote}>
         Фильтры цены, финансирования и года учитывают подтверждённые условия
         конкретной программы. Год публикации перечня не считается годом набора.
@@ -277,17 +230,15 @@ export function EducationPathwayExplorer({
       </p>
       <div className={styles.results}>
         <p role="status">
-          Найдено записей: {filtered.length} из {rows.length}
+          Найдено записей: {view.matched} из {view.total}
         </p>
         {hasFilters && (
-          <button type="button" onClick={reset}>
-            Сбросить фильтры
-          </button>
+          <Link href={`/programs?track=${track}`}>Сбросить фильтры</Link>
         )}
       </div>
       <div className={styles.cards}>
-        {filtered.slice(0, limit).map((row) => {
-          const institution = identity.get(row.id)!;
+        {view.rows.map((row) => {
+          const institution = row;
           const master = row.masterTuition;
           const admission = row.admission;
           const exams = master?.exams ?? admission?.exams;
@@ -388,21 +339,23 @@ export function EducationPathwayExplorer({
           );
         })}
       </div>
-      {filtered.length === 0 && (
+      {view.matched === 0 && (
         <p className={styles.empty}>
-          {rows.length
+          {view.total
             ? "По выбранным фильтрам записей нет. Попробуйте расширить поиск."
             : "Подтверждённые программы этого уровня ещё не добавлены. Это не означает, что учебные заведения их не предлагают."}
         </p>
       )}
-      {filtered.length > limit && (
-        <button
+      {view.matched > view.rows.length && (
+        <Link
           className="button button-secondary"
-          type="button"
-          onClick={() => setLimit((value) => value + 24)}
+          href={`/programs${pathwaySearch(track, query, {
+            limit: String(Math.max(query.limit, PATHWAY_PAGE) + PATHWAY_STEP),
+          })}`}
+          scroll={false}
         >
           Показать ещё
-        </button>
+        </Link>
       )}
     </section>
   );

@@ -42,6 +42,8 @@ GRANT UPDATE ("revokedAt") ON postupai_roles."Session" TO ci_role_operator;
 GRANT UPDATE ("usedAt") ON postupai_roles."AuthChallenge" TO ci_role_operator;
 GRANT SELECT, INSERT ON postupai_roles."AuditLog" TO ci_role_operator;
 GRANT INSERT ON postupai_roles."CatalogRevision" TO ci_role_operator;
+-- Catalog staging writes content-addressed listing sets before the revision (ADR 0006).
+GRANT SELECT, INSERT ON postupai_roles."CatalogOfferingSet", postupai_roles."CatalogOffering" TO ci_role_operator;
 -- Catalog staging locks the singleton row. The operator cannot change its revisionId.
 GRANT UPDATE (id) ON postupai_roles."CatalogHead" TO ci_role_operator;
 \else

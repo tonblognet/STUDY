@@ -5,6 +5,8 @@ const developmentEval =
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  // Runtime reads the generated catalog lazily from disk (ADR 0006).
+  outputFileTracingIncludes: { "/*": ["./generated/catalog/**/*"] },
   poweredByHeader: false,
   async headers() {
     return [

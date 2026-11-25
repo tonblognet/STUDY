@@ -1,3 +1,4 @@
+import "../lib/catalog/repository-sources";
 import { after, before, describe, it } from "node:test";
 import assert from "node:assert/strict";
 import { randomUUID } from "node:crypto";
@@ -11,6 +12,9 @@ import {
   readPublishedCatalog,
 } from "../lib/catalog/service";
 import { catalogChecksum } from "../lib/catalog/diff";
+import { offeringSetDigest } from "../lib/catalog/offering-sets";
+import { educationPathwayRows, offeringTrack } from "../lib/education-pathways";
+import type { UniversityOffering } from "../lib/directory/model";
 import { formatPrice } from "../lib/catalog/format";
 import { requiredMigration } from "../lib/operations/readiness";
 
@@ -176,6 +180,58 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
       } finally {
         await db.$executeRaw`UPDATE "_prisma_migrations" SET finished_at = ${migration[0].finished_at} WHERE migration_name = ${latest}`;
       }
+    }
+  });
+  it("stores listings as immutable sets and serves them from PostgreSQL (ADR 0006)", async () => {
+    const current = await readPublishedCatalog(db);
+    const rudn = current.snapshot.directoryDetails.find(
+      (row) => row.universitySlug === "rudn",
+    )!;
+    const expected = initial.directoryDetails.find(
+      (row) => row.universitySlug === "rudn",
+    )!.offerings;
+    assert.ok(rudn.offeringSet, "RUDN listings are an external set");
+    assert.deepEqual(rudn.offerings, []);
+    assert.equal(rudn.offeringSet.count, expected.length);
+    const rows = await db.catalogOffering.findMany({
+      where: { setDigest: rudn.offeringSet.digest },
+      orderBy: { position: "asc" },
+      select: { data: true, track: true },
+    });
+    assert.equal(
+      offeringSetDigest(rows.map((row) => row.data as UniversityOffering)),
+      rudn.offeringSet.digest,
+    );
+    assert.deepEqual(
+      rows.map((row) => row.track),
+      expected.map((offering) => offeringTrack(offering.level)),
+    );
+    assert.equal(
+      await db.catalogOfferingSet.count(),
+      current.snapshot.directoryDetails.filter((row) => row.offeringSet).length,
+    );
+    await assert.rejects(
+      db.$executeRaw`UPDATE "CatalogOffering" SET "track" = 'master' WHERE "setDigest" = ${rudn.offeringSet.digest}`,
+      /immutable/,
+    );
+    await assert.rejects(
+      db.$executeRaw`DELETE FROM "CatalogOfferingSet" WHERE "digest" = ${rudn.offeringSet.digest}`,
+      /immutable/,
+    );
+    if (process.env.CATALOG_HTTP_TESTS === "true") {
+      const card = await (await fetch(`${base}/universities/rudn`)).text();
+      assert.ok(card.includes(`${expected.length} в перечне вуза`));
+      const listed = educationPathwayRows(initial, "aspirantura").filter(
+        (row) => row.universitySlug === "rudn",
+      ).length;
+      assert.ok(listed > 0);
+      const track = await (
+        await fetch(`${base}/programs?track=aspirantura&university=rudn`)
+      ).text();
+      assert.match(
+        track,
+        new RegExp(`Найдено записей: (?:<!-- -->)?${listed}(?:<!-- -->)? из`),
+      );
     }
   });
   it("publishes a source-only change and rejects a competing stale draft", async () => {

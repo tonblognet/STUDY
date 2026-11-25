@@ -1,7 +1,7 @@
 import type { PrismaClient } from "@prisma/client";
 
 type Environment = Readonly<Record<string, string | undefined>>;
-export const requiredMigration = "20261110010000_deadline_worker";
+export const requiredMigration = "20261125000000_catalog_offering_sets";
 
 function origin(value: string | undefined, staging: boolean) {
   try {

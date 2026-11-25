@@ -1,6 +1,6 @@
 import type { Program } from "@/lib/data";
 import type { SourcedValue } from "@/lib/admissions/types";
-import type { UniversityOffering } from "@/lib/university-directory-details";
+import type { UniversityOffering } from "@/lib/directory/model";
 import type { HseMasterTuition } from "@/lib/hse-admissions";
 import type { ArchiveData } from "@/components/hse-score-archive";
 
@@ -291,10 +291,10 @@ export function hseExplorerRows(
   );
 }
 
-export function filterHseExplorerRows(
-  rows: HseExplorerRow[],
+export function filterHseExplorerRows<T extends HseExplorerRow>(
+  rows: T[],
   filters: HseExplorerFilters,
-) {
+): T[] {
   const term = normalize(filters.query ?? "");
   const maxTuition = filters.maxTuition?.trim()
     ? Number(filters.maxTuition)

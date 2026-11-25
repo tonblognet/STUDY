@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { UniversityCatalog } from "@/components/university-catalog";
 import { getCatalog } from "@/lib/catalog/server";
+import { catalogOfferingCount } from "@/lib/catalog/offering-sets";
 import { universityCatalogEntries } from "@/lib/catalog/university-list";
 import {
   initialView,
@@ -23,11 +24,8 @@ export default async function UniversitiesPage({
 }) {
   const params = await searchParams;
   const catalog = await getCatalog();
-  const { programs, universities, directoryDetails } = catalog;
-  const directoryOfferingCount = directoryDetails.reduce(
-    (sum, item) => sum + item.offerings.length,
-    0,
-  );
+  const { programs, universities } = catalog;
+  const directoryOfferingCount = catalogOfferingCount(catalog);
   return (
     <div className={styles.page}>
       <header className={styles.masthead}>

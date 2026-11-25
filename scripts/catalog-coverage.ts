@@ -1,3 +1,4 @@
+import "../lib/catalog/repository-sources";
 import { mkdir, writeFile } from "node:fs/promises";
 import { universities, programs } from "../lib/data";
 import { getDirectoryDetails } from "../lib/university-directory-details";

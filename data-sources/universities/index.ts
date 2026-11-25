@@ -22,16 +22,11 @@ import directory from "../moscow/universities.json";
 import { completeRussiaDirectory } from "../../lib/russia-universities";
 import { createUniversityAdapter } from "../core/adapter";
 import type { University } from "../../lib/data";
-import { getDirectoryDetails } from "../../lib/university-directory-details";
+import { reviewedFieldDomains } from "../../lib/catalog/directory-sources";
 import { getAdmissionCampaign } from "../../lib/university-admission-campaigns";
 
 function reviewedProfileDomains(slug: string): string[] {
-  const fields = getDirectoryDetails(slug)?.fields ?? {};
-  return [
-    ...new Set(
-      Object.values(fields).map((field) => new URL(field.sourceUrl).hostname),
-    ),
-  ];
+  return reviewedFieldDomains(slug);
 }
 
 const programAdapters = [

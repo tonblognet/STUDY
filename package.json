@@ -6,8 +6,8 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "tsx scripts/catalog-generate.ts && next dev",
+    "build": "tsx scripts/catalog-generate.ts && next build",
     "start": "next start",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
@@ -26,6 +26,7 @@
     "data:import": "tsx scripts/data-pipeline.ts import",
     "data:report": "tsx scripts/data-pipeline.ts report",
     "data:coverage": "tsx scripts/catalog-coverage.ts",
+    "catalog:generate": "tsx scripts/catalog-generate.ts",
     "security:audit": "pnpm audit --prod",
     "data:export": "tsx scripts/catalog.ts export",
     "data:diff": "tsx scripts/catalog.ts diff",

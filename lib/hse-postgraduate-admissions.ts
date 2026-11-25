@@ -4,7 +4,7 @@ import type {
   SourceKind,
   SourcedValue,
 } from "@/lib/admissions/types";
-import type { UniversityOffering } from "@/lib/university-directory-details";
+import type { UniversityOffering } from "@/lib/directory/model";
 
 type SpecialtyRow =
   (typeof snapshot.aspAdmission2026.scientificSpecialtyProgrammeCampusRows)[number];

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { UniversityLogo } from "@/components/university-logo";
 import { DATA_STATUS_LABELS } from "@/lib/admissions/constants";
 import { getCatalog } from "@/lib/catalog/server";
+import { directoryOfferings } from "@/lib/catalog/offerings";
 import { formatPrice } from "@/lib/catalog/format";
 import { HseProgramExplorer } from "@/components/hse-program-explorer";
 import { HseScoreArchive } from "@/components/hse-score-archive";
@@ -59,7 +60,7 @@ export default async function UniversityPage({
   const campaign = catalog.admissionCampaigns.find(
     (item) => item.universitySlug === slug,
   );
-  const offerings = directoryDetails?.offerings ?? [];
+  const offerings = await directoryOfferings(directoryDetails);
   const hseResources = directoryDetails?.admissionResources;
   const admissionsUrl =
     university.admissionsUrl ?? directoryDetails?.fields.admissionsUrl?.value;

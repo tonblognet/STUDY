@@ -1,3 +1,4 @@
+import "../lib/catalog/repository-sources";
 import { createHash } from "node:crypto";
 import { validAggregateScore } from "../data-sources/core/score-range";
 import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";

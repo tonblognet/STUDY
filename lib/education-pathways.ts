@@ -1,3 +1,4 @@
+import type { UniversityOffering } from "@/lib/directory/model";
 import type { CatalogSnapshot } from "@/lib/catalog/types";
 import {
   hseExplorerData,
@@ -78,10 +79,21 @@ export type EducationPathwayRow = HseExplorerRow & {
 export function educationPathwayRows(
   catalog: CatalogSnapshot,
   track: AdvancedEducationTrack,
+  /** Listings of externally stored sets of this track (ADR 0006). */
+  listings: ReadonlyArray<{
+    universitySlug: string;
+    offering: UniversityOffering;
+  }> = [],
 ): EducationPathwayRow[] {
   const universities = new Map(
     catalog.universities.map((row) => [row.slug, row]),
   );
+  const external = new Map<string, UniversityOffering[]>();
+  for (const row of listings)
+    external.set(row.universitySlug, [
+      ...(external.get(row.universitySlug) ?? []),
+      row.offering,
+    ]);
   const result: EducationPathwayRow[] = [];
   for (const directory of catalog.directoryDetails) {
     const university = universities.get(directory.universitySlug);
@@ -113,7 +125,10 @@ export function educationPathwayRows(
       continue;
     }
     const identities = new Set<string>();
-    for (const offering of directory.offerings) {
+    const offerings = directory.offeringSet
+      ? (external.get(directory.universitySlug) ?? [])
+      : directory.offerings;
+    for (const offering of offerings) {
       if (offeringTrack(offering.level) !== track) continue;
       const title =
         track === "college"

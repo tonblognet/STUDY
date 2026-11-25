@@ -1,3 +1,4 @@
+import "../lib/catalog/repository-sources";
 import { readFile, writeFile } from "node:fs/promises";
 import { PrismaClient } from "@prisma/client";
 import { baselineCatalog } from "../lib/catalog/baseline";

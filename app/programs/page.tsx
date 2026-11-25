@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { CatalogClient } from "@/components/catalog-client";
 import { programListItem } from "@/lib/catalog/program-list";
 import { getCatalog } from "@/lib/catalog/server";
+import { trackListings } from "@/lib/catalog/offerings";
+import { pathwayQuery, pathwayView } from "@/lib/catalog/pathway-view";
 import { EducationPathwayNavigation } from "@/components/education-pathway-navigation";
 import { EducationPathwayExplorer } from "@/components/education-pathway-explorer";
 import {
@@ -33,7 +35,16 @@ export default async function ProgramsPage({
   const track = educationTrack(params.track);
   if (track !== "undergraduate") {
     const title = educationTracks.find((item) => item.key === track)!.label;
-    const rows = educationPathwayRows(catalog, track);
+    // Listings of the track are filtered on the server (ADR 0006).
+    const rows = educationPathwayRows(
+      catalog,
+      track,
+      await trackListings(catalog, track),
+    );
+    const view = pathwayView(
+      rows,
+      pathwayQuery(params as Record<string, string | string[] | undefined>),
+    );
     const context = catalog.directoryDetails
       .find((row) => row.universitySlug === "hse")
       ?.admissionResources?.pathways?.find((item) => item.key === track);
@@ -92,7 +103,7 @@ export default async function ProgramsPage({
             </details>
           </section>
         )}
-        <EducationPathwayExplorer key={track} rows={rows} />
+        <EducationPathwayExplorer key={track} track={track} view={view} />
       </div>
     );
   }

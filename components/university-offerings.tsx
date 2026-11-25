@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { UniversityOffering } from "@/lib/university-directory-details";
+import type { UniversityOffering } from "@/lib/directory/model";
 import styles from "./university-offerings.module.css";
 
 export function UniversityOfferings({ rows }: { rows: UniversityOffering[] }) {

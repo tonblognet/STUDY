@@ -856,6 +856,32 @@ model CatalogRevision {
   @@index([status, createdAt])
 }
 
+/// Directory listings of one university, addressed by the checksum of their
+/// content (ADR 0006). Catalog payloads reference sets by digest; sets are
+/// immutable and shared by every revision that references the same content.
+model CatalogOfferingSet {
+  digest         String            @id
+  universitySlug String
+  count          Int
+  createdAt      DateTime          @default(now())
+  offerings      CatalogOffering[]
+
+  @@index([universitySlug])
+}
+
+model CatalogOffering {
+  setDigest  String
+  position   Int
+  offeringId String
+  /// Education track of the listing (master, aspirantura, doctorate, college).
+  track      String?
+  data       Json
+  set        CatalogOfferingSet @relation(fields: [setDigest], references: [digest], onDelete: Restrict)
+
+  @@id([setDigest, position])
+  @@index([track, setDigest])
+}
+
 model CatalogHead {
   id         String           @id @default("public")
   revisionId String?          @unique

@@ -2,7 +2,7 @@ import {
   formatDirectoryDate,
   directoryEvidenceSummary,
   type DirectoryDetails,
-} from "@/lib/university-directory-details";
+} from "@/lib/directory/model";
 import { UniversityFaculties } from "./university-faculties";
 
 const labels = {

@@ -1,6 +1,7 @@
 import type { CatalogSnapshot } from "./types";
 import type { UniversityCatalogEntry } from "../university-catalog-filters";
-import { directoryEvidenceSummary } from "../university-directory-details";
+import { directoryEvidenceSummary } from "@/lib/directory/model";
+import { offeringCount } from "./offering-sets";
 
 export function universityCatalogEntries(
   catalog: Pick<
@@ -58,7 +59,7 @@ export function universityCatalogEntries(
         : {}),
       campaignCount: campaigns.get(university.slug) ?? 0,
       evidence: directoryEvidenceSummary(profile),
-      offeringCount: profile?.offerings.length ?? 0,
+      offeringCount: offeringCount(profile),
       facultyCount: profile?.faculties?.length ?? 0,
       catalogProgramCount: programCounts.get(university.slug) ?? 0,
     };
