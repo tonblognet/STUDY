@@ -914,11 +914,23 @@ def program_key(code, title, profile, forms):
     return (code, norm(title), norm(profile), norm(forms))
 
 
+FORM_TOKEN = re.compile(r"очно-заочная|заочная|очная")
+
+
+def aggregate_forms(text):
+    """Distinct forms of a cell listing two or more («Очная Заочная», «очная; заочная»)."""
+    norm = clean(text or "").casefold().replace("ё", "е")
+    forms = set(FORM_TOKEN.findall(norm))
+    rest = re.sub(r"(?:^|\s)и(?=\s|$)", " ", FORM_TOKEN.sub(" ", norm))
+    rest = re.sub(r"[\s,;/]+", "", rest)
+    return forms if len(forms) > 1 and not rest else None
+
+
 def covered_aggregate_form(key, known):
-    if ";" not in key[-1]:
-        return False
-    forms = {clean(form) for form in key[-1].split(";")}
-    return len(forms) > 1 and forms <= STUDY_FORMS and all((*key[:-1], form) in known for form in forms)
+    # Since 25.11.2026 any separator counts: the 20.11 crawl wrote «Очная Заочная»
+    # with a space and 3 772 such rows duplicated separate single-form rows.
+    forms = aggregate_forms(key[-1])
+    return bool(forms) and forms <= STUDY_FORMS and all((*key[:-1], form) in known for form in forms)
 
 
 def existing_offerings(slugs, root=ROOT):

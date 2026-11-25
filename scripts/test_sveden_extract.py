@@ -390,6 +390,17 @@ class FakeNetworkTests(unittest.TestCase):
 
 
 class HelperTests(unittest.TestCase):
+    def test_combined_forms_with_any_separator(self):
+        # The 20.11 crawl wrote forms separated by spaces; they are combined too.
+        self.assertEqual(reader.aggregate_forms("Очная Заочная"), {"очная", "заочная"})
+        self.assertEqual(reader.aggregate_forms("очная, очно-заочная и заочная"), {"очная", "очно-заочная", "заочная"})
+        self.assertIsNone(reader.aggregate_forms("Очная"))
+        self.assertIsNone(reader.aggregate_forms("Очная (с применением ДОТ), заочная"))
+        key = ("19.03.01", "пищевая биотехнология", "пищевая биотехнология", "очная заочная")
+        known = {key[:-1] + ("очная",), key[:-1] + ("заочная",)}
+        self.assertTrue(reader.covered_aggregate_form(key, known))
+        self.assertFalse(reader.covered_aggregate_form(key, {key[:-1] + ("очная",)}))
+
     def test_non_delivery_marker_must_be_the_entire_form(self):
         self.assertTrue(reader.explicitly_not_delivered("  НЕ РЕАЛИЗУЕТСЯ.  "))
         self.assertFalse(reader.explicitly_not_delivered("очная; заочная не реализуется"))

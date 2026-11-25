@@ -11,6 +11,10 @@ import { universityFactProfiles } from "./university-facts";
 import originalProfiles from "@/data-sources/moscow/profiles.json";
 import moscowOctober20 from "@/data-sources/russia/moscow-enrichment-2026-10-20.json";
 import catalogFillNovember25 from "@/data-sources/russia/fill-2026-11-25.json";
+import {
+  aggregateStudyForms,
+  normalizeProgramText,
+} from "./directory/study-forms";
 import northOctober20 from "@/data-sources/russia/regional-north-enrichment-2026-10-20.json";
 import southOctober20 from "@/data-sources/russia/regional-south-enrichment-2026-10-20.json";
 import moscowOctober22 from "@/data-sources/russia/moscow-enrichment-2026-10-22.json";
@@ -185,7 +189,13 @@ describe("official university profile evidence", () => {
         expect(fact.sourceSha256).toMatch(/^[a-f0-9]{64}$/);
       }
     }
-    expect(getDirectoryDetails("russia-1638")!.offerings).toHaveLength(81);
+    // Later batches add other levels (SPO, specialist/master); the
+    // November 9 inventory itself is unchanged.
+    expect(
+      getDirectoryDetails("russia-1638")!.offerings.filter((row) =>
+        row.checkedAt.startsWith("2026-11-09T"),
+      ),
+    ).toHaveLength(81);
     expect(
       getDirectoryDetails("russia-1638")!
         .offerings.map((row) => row.profile)
@@ -677,7 +687,8 @@ describe("official university profile evidence", () => {
       "https://misis.ru/applicants/accommodation/zaselenievobsh_ezhitiepervokusn/order/",
     );
     expect(profile.faculties).toHaveLength(10);
-    expect(profile.offerings).toHaveLength(303);
+    // One combined-form row duplicated its separate rows (cleanup 25.11.2026).
+    expect(profile.offerings).toHaveLength(302);
   });
 
   it("separates admissions contacts, accommodation types and redirected hosting pages", () => {
@@ -1019,6 +1030,51 @@ describe("/sveden/ directory facts dated by the check (owner decision 25.11.2026
       expect(profile.offerings).toHaveLength(0);
       for (const field of Object.values(profile.fields))
         expect(field.sourceYear).toBe(2026);
+    }
+  });
+});
+
+describe("combined study forms (25.11.2026 cleanup)", () => {
+  it("reads forms separated by spaces, commas, semicolons or «и»", () => {
+    expect(aggregateStudyForms("Очная Заочная")).toEqual(["очная", "заочная"]);
+    expect(aggregateStudyForms("очная, очно-заочная и заочная")).toEqual([
+      "очная",
+      "очно-заочная",
+      "заочная",
+    ]);
+    expect(aggregateStudyForms("Очная")).toBeNull();
+    expect(
+      aggregateStudyForms("Очная (с применением ДОТ), заочная"),
+    ).toBeNull();
+  });
+
+  it("never shows a combined row whose forms are all listed separately", () => {
+    for (const details of directoryDetails) {
+      const single = new Set(
+        details.offerings
+          .filter((row) => !aggregateStudyForms(row.forms))
+          .map((row) =>
+            [row.code, row.title, row.profile, row.forms]
+              .map((value) => normalizeProgramText(value))
+              .join("|"),
+          ),
+      );
+      for (const row of details.offerings) {
+        const forms = aggregateStudyForms(row.forms);
+        if (!forms) continue;
+        const covered = forms.every((form) =>
+          single.has(
+            [row.code, row.title, row.profile]
+              .map((value) => normalizeProgramText(value))
+              .concat(form)
+              .join("|"),
+          ),
+        );
+        expect(
+          covered,
+          `${details.universitySlug} ${row.code} ${row.forms}`,
+        ).toBe(false);
+      }
     }
   });
 });

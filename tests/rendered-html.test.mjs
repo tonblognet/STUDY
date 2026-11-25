@@ -114,8 +114,19 @@ test("nationwide directory filters a city and keeps historical records separate 
   const { universities } = JSON.parse(
     readFileSync("data-sources/russia/universities.json", "utf8"),
   );
-  const sample = universities.find((row) => row.city === "Казань");
-  assert.ok(sample, "reviewed Kazan directory entry");
+  // A Kazan entry that still has no listings or contests: catalog filling
+  // keeps adding programmes, so the sample is chosen from current coverage.
+  const empty = new Set(
+    JSON.parse(readFileSync("data-sources/russia/coverage.json", "utf8"))
+      .universities.filter(
+        (row) => row.educationalListings === 0 && row.admissionPrograms === 0,
+      )
+      .map((row) => row.slug),
+  );
+  const sample = universities.find(
+    (row) => row.city === "Казань" && empty.has(row.slug),
+  );
+  assert.ok(sample, "reviewed Kazan directory entry without listings");
   const filters = encodeURIComponent(JSON.stringify({ city: "Казань" }));
   const html = await (
     await fetch(`${base}/universities?filters=${filters}`)
