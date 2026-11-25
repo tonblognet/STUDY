@@ -209,9 +209,12 @@ def detect_encoding(raw, content_type=""):
 class Fetcher:
     """curl-based fetcher: Windows trust store, manual same-domain redirects, cache."""
 
-    def __init__(self, cache, refresh=False, offline=False, delay=1.0, timeout=40, no_proxy=False):
+    def __init__(self, cache, refresh=False, offline=False, delay=1.0, timeout=40, no_proxy=False, cacert=None):
         self.cache, self.refresh, self.offline = cache, refresh, offline
         self.delay, self.timeout, self.no_proxy = delay, timeout, no_proxy
+        # Optional CA bundle for this collector only (e.g. public roots plus the
+        # Russian Trusted Root CA); the system certificate store is never changed.
+        self.cacert = cacert
         self.curl = shutil.which("curl.exe") or shutil.which("curl")
         self.lock = threading.Lock()
         self.host_locks, self.last, self.robots = {}, {}, {}
@@ -240,6 +243,8 @@ class Fetcher:
                 "--proto", "=https", "-A", USER_AGENT, "-D", str(headers), "-o", str(body),
                 "-w", "%{http_code}", url,
             ]
+            if self.cacert:
+                command[1:1] = ["--cacert", str(self.cacert)]
             if self.no_proxy:
                 command[1:1] = ["--noproxy", "*"]
             try:
@@ -1053,6 +1058,7 @@ def main():
     parser.add_argument("--refresh", action="store_true", help="refetch even when cached")
     parser.add_argument("--offline", action="store_true", help="rebuild from cache, no network")
     parser.add_argument("--no-proxy", action="store_true", help="bypass HTTP(S)_PROXY for university sites")
+    parser.add_argument("--cacert", type=Path, help="CA bundle for this run only (see docs/CATALOG_FILL_RUNBOOK.md)")
     parser.add_argument("--cache-dir", type=Path, default=CACHE)
     parser.add_argument("--apply", action="store_true", help="merge accepted reviews via fill_university.py")
     parser.add_argument("--reuse-reviews", action="store_true", help="verify and apply already rebuilt offline reviews without extracting pages again")
@@ -1078,7 +1084,7 @@ def main():
     if not slugs:
         parser.error("name slugs, --queue N or --all")
     catalog = universities()
-    fetcher = Fetcher(args.cache_dir, args.refresh, args.offline, args.delay, args.timeout, args.no_proxy)
+    fetcher = Fetcher(args.cache_dir, args.refresh, args.offline, args.delay, args.timeout, args.no_proxy, args.cacert)
     started = now()
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
         reports = []

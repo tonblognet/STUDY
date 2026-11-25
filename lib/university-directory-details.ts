@@ -48,6 +48,7 @@ import catalogFillNovember25A04 from "@/data-sources/russia/fill-2026-11-25-a04.
 import catalogFillNovember25A05 from "@/data-sources/russia/fill-2026-11-25-a05.json";
 import catalogFillNovember25A06 from "@/data-sources/russia/fill-2026-11-25-a06.json";
 import catalogFillNovember25A07 from "@/data-sources/russia/fill-2026-11-25-a07.json";
+import catalogFillNovember25A08 from "@/data-sources/russia/fill-2026-11-25-a08.json";
 import admissionFactsData from "@/data-sources/admissions/facts.json";
 import type { AdmissionFact } from "@/lib/admissions/facts";
 import { hsePostgraduateOfferings } from "@/lib/hse-postgraduate-admissions";
@@ -119,6 +120,7 @@ export const directoryDetails = mergeDirectoryEnrichment(
     ...catalogFillNovember25A05.profiles,
     ...catalogFillNovember25A06.profiles,
     ...catalogFillNovember25A07.profiles,
+    ...catalogFillNovember25A08.profiles,
   ] as DirectoryEnrichment[],
 )
   .map((profile) =>
