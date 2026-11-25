@@ -10,6 +10,7 @@ import {
 import { universityFactProfiles } from "./university-facts";
 import originalProfiles from "@/data-sources/moscow/profiles.json";
 import moscowOctober20 from "@/data-sources/russia/moscow-enrichment-2026-10-20.json";
+import catalogFillNovember25 from "@/data-sources/russia/fill-2026-11-25.json";
 import northOctober20 from "@/data-sources/russia/regional-north-enrichment-2026-10-20.json";
 import southOctober20 from "@/data-sources/russia/regional-south-enrichment-2026-10-20.json";
 import moscowOctober22 from "@/data-sources/russia/moscow-enrichment-2026-10-22.json";
@@ -985,5 +986,39 @@ describe("official university profile evidence", () => {
     )!.facts.website;
     expect(original.checkedAt).toBe(unchanged.directory?.checkedAt);
     expect(original.year).toBe(unchanged.directory?.sourceYear);
+  });
+});
+
+describe("/sveden/ directory facts dated by the check (owner decision 25.11.2026)", () => {
+  it("shows contacts and first faculty lists of batch universities", () => {
+    const profile = getDirectoryDetails("academy-gps")!;
+    expect(profile.fields.address?.value).toContain("Бориса Галушкина");
+    expect(profile.fields.telephone?.value).toBeTruthy();
+    expect(profile.faculties?.length).toBe(5);
+    for (const faculty of profile.faculties ?? []) {
+      expect(faculty.sourceYear).toBe(2026);
+      expect(faculty.sourceUrl).toMatch(
+        /^https:\/\/(?:www\.)?academygps\.ru\/sveden\/struct/,
+      );
+    }
+  });
+
+  it("never mixes a /sveden/ faculty list into a curated one or re-adds listings", () => {
+    const curated = catalogFillNovember25.issues.filter(
+      (issue) => issue.kind === "faculties_already_curated",
+    );
+    expect(curated.length).toBeGreaterThan(0);
+    for (const issue of curated) {
+      const profile = catalogFillNovember25.profiles.find(
+        (row) => row.universitySlug === issue.universitySlug,
+      )!;
+      expect(profile.faculties).toHaveLength(0);
+    }
+    expect(getDirectoryDetails("mgimo")!.faculties).toHaveLength(12);
+    for (const profile of catalogFillNovember25.profiles) {
+      expect(profile.offerings).toHaveLength(0);
+      for (const field of Object.values(profile.fields))
+        expect(field.sourceYear).toBe(2026);
+    }
   });
 });

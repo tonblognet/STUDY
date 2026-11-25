@@ -40,6 +40,7 @@ import catalogFillNovember20 from "@/data-sources/russia/fill-2026-11-20.json";
 import catalogFillNovember21 from "@/data-sources/russia/fill-2026-11-21.json";
 import catalogFillNovember22 from "@/data-sources/russia/fill-2026-11-22.json";
 import catalogFillNovember23 from "@/data-sources/russia/fill-2026-11-23.json";
+import catalogFillNovember25 from "@/data-sources/russia/fill-2026-11-25.json";
 import { hsePostgraduateOfferings } from "@/lib/hse-postgraduate-admissions";
 import { hseMasterTuition } from "@/lib/hse-admissions";
 import type { HseAdmissionResources } from "@/lib/hse-admission-resources";
@@ -276,6 +277,7 @@ export const directoryDetails = mergeDirectoryEnrichment(
     ...catalogFillNovember21.profiles,
     ...catalogFillNovember22.profiles,
     ...catalogFillNovember23.profiles,
+    ...catalogFillNovember25.profiles,
   ] as DirectoryEnrichment[],
 ).map((profile) =>
   profile.universitySlug === "hse"
