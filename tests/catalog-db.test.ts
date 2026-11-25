@@ -220,13 +220,27 @@ describe("PostgreSQL editorial publication", { concurrency: false }, () => {
     );
     if (process.env.CATALOG_HTTP_TESTS === "true") {
       const card = await (await fetch(`${base}/universities/rudn`)).text();
-      assert.ok(card.includes(`${expected.length} в перечне вуза`));
-      const listed = educationPathwayRows(initial, "aspirantura").filter(
-        (row) => row.universitySlug === "rudn",
-      ).length;
-      assert.ok(listed > 0);
+      // The listing block counts every row read from the set in PostgreSQL.
+      assert.match(
+        card,
+        new RegExp(
+          `Найдено направлений и профилей: (?:<!-- -->)?\\d+(?:<!-- -->)? из (?:<!-- -->)?${expected.length}(?!\\d)`,
+        ),
+      );
+      // A university whose master's listings live in an external set.
+      const external = new Set(
+        current.snapshot.directoryDetails
+          .filter((row) => row.offeringSet)
+          .map((row) => row.universitySlug),
+      );
+      const master = educationPathwayRows(initial, "master").filter((row) =>
+        external.has(row.universitySlug),
+      );
+      assert.ok(master.length > 0);
+      const slug = master[0].universitySlug;
+      const listed = master.filter((row) => row.universitySlug === slug).length;
       const track = await (
-        await fetch(`${base}/programs?track=aspirantura&university=rudn`)
+        await fetch(`${base}/programs?track=master&university=${slug}`)
       ).text();
       assert.match(
         track,
