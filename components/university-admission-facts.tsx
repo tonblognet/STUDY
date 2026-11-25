@@ -53,8 +53,12 @@ function headline(group: AdmissionFactGroup): string {
 
 export function UniversityAdmissionFacts({
   facts,
+  title = "Результаты приёма, места и стоимость",
+  intro,
 }: {
   facts: AdmissionFact[];
+  title?: string;
+  intro?: string;
 }) {
   const groups = useMemo(() => groupAdmissionFacts(facts), [facts]);
   const [query, setQuery] = useState("");
@@ -77,14 +81,11 @@ export function UniversityAdmissionFacts({
       <div className={styles.intro}>
         <div>
           <h2 id="admission-results-heading">
-            Результаты приёма, места и стоимость · {groups.length}
+            {title} · {groups.length}
           </h2>
           <p>
-            Числа, опубликованные вузом: проходные баллы, места и цены. Бюджет и
-            договор показаны раздельно, у каждого значения — год, этап и
-            источник, если вуз их указал. Проходной балл прошлых лет — это
-            исторический результат, а не гарантия поступления; группы с одним
-            кодом не объединяются.
+            {intro ??
+              "Числа, опубликованные вузом: проходные баллы, места и цены. Бюджет и договор показаны раздельно, у каждого значения — год, этап и источник, если вуз их указал. Проходной балл прошлых лет — это исторический результат, а не гарантия поступления; группы с одним кодом не объединяются."}
           </p>
         </div>
         <label className="university-offering-search">
