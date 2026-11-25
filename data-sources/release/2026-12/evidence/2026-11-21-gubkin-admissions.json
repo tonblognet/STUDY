@@ -1,0 +1,928 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "gubkin",
+  "reviewedAtUtc": "2026-11-21T17:12:02Z",
+  "scope": "Сведения головной московской площадки и официальные документы бакалавриата и специалитета 2026 года.",
+  "sources": {
+    "cached-admissions-2026": {
+      "sourceUrl": "https://gubkin.ru/info/enrollee/admission_board/obyavleniya-priyemnoy-komissii.php",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-20T00:42:39.093743Z",
+      "sourceSha256": "ee8c8a6e68a9015b2a3b73bce8cae68e0ca3512dd90494cdff5c28903f954fbd",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "common-2026": {
+      "sourceUrl": "https://gubkin.ru/sveden/common/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-20T00:41:52.497333Z",
+      "sourceSha256": "f221317232cc18fdcdbb9c4b0e38e5f9fdf772fab535def6205a847e198bfd32",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "structure-2026": {
+      "sourceUrl": "https://gubkin.ru/sveden/struct/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-20T00:42:01.824002Z",
+      "sourceSha256": "e86bee0885cec2c29b5485adb710eed039fc5168f5d37074f9ab0fc29394aafd",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "enrollment-summary-2026": {
+      "sourceUrl": "https://gubkin.ru/sveden/education/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-20T00:42:06.370937Z",
+      "sourceSha256": "b2aa38c6d5c1eef1670397c974bd4660c6f8fa831245560e84d767cd9032a8cb",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "portal-2026": {
+      "sourceUrl": "https://priem.gubkin.ru/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:12:02Z",
+      "sourceSha256": "18bade9deb73c485d383ab47edbebbea60d92b3928473240e16b6b791c66dcff",
+      "sourceSha256Basis": "extract-only"
+    },
+    "documents-index-2026": {
+      "sourceUrl": "https://priem.gubkin.ru/#/page/applicants/2",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:12:02Z",
+      "sourceSha256": "80eea562b9140e652cd8f8b95d0bc2360165d7345836295c63c2a84c3b545819",
+      "sourceSha256Basis": "extract-only"
+    },
+    "faq-admissions-2026": {
+      "sourceUrl": "https://priem.gubkin.ru/#/page/faq",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T17:12:02Z",
+      "sourceSha256": "7d6c31e3da70606eadb6c959c179fbc2b37ac9c880f0ab455e548c59e0a13cd8",
+      "sourceSha256Basis": "extract-only"
+    },
+    "faq-housing-2025": {
+      "sourceUrl": "https://priem.gubkin.ru/#/page/faq",
+      "sourceYear": 2025,
+      "checkedAt": "2026-11-21T17:12:02Z",
+      "sourceSha256": "92cafde3361715698c112d2feae682a79e8f7356da2b7e14b203f43d8cbdfbc5",
+      "sourceSha256Basis": "extract-only"
+    },
+    "housing-capacity": {
+      "sourceUrl": "https://gubkin.ru/sveden/objects/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-20T00:42:35.923429Z",
+      "sourceSha256": "f02f6dbc2a1d7778e76eab3eff1a638491fc7984088bf2ce566faed603a8048b",
+      "sourceSha256Basis": "response-bytes"
+    },
+    "contact-landing": {
+      "sourceUrl": "https://postupai.gubkin.ru/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T17:12:02Z",
+      "sourceSha256": "13c278faf013e114989d89934eb0a32f2620e331939954f1ff80799b4dfa329c",
+      "sourceSha256Basis": "response-bytes"
+    }
+  },
+  "campaigns": [
+    {
+      "year": 2027,
+      "state": "not_found",
+      "checkedUrls": [
+        "https://priem.gubkin.ru/",
+        "https://priem.gubkin.ru/#/page/applicants/2",
+        "https://gubkin.ru/info/enrollee/admission_board/obyavleniya-priyemnoy-komissii.php"
+      ]
+    },
+    {
+      "year": 2026,
+      "documentsSource": "documents-index-2026",
+      "documents": [
+        {
+          "title": "Правила приёма, Москва",
+          "url": "https://gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/1.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0%20(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)%20-%202026_.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Количество мест для приёма на 1 курс (Москва) - 2026",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/2.%20%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D0%BC%D0%B5%D1%81%D1%82%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0%20%D0%BD%D0%B0%201%20%D0%BA%D1%83%D1%80%D1%81%20(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)%20-%202026%20%D1%81%20%D0%BA%D0%B2%D0%BE%D1%82%D0%B0%D0%BC%D0%B8%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%20%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D0%B0.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Информация о сроках проведения приёма (Москва, Оренбург) - 2026",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/3.%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BE%20%D1%81%D1%80%D0%BE%D0%BA%D0%B0%D1%85%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC%D0%B0%20(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3)%20-%202026.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Перечень и приоритетность вступительных испытаний (Москва) - 2026",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/4.%20%D0%9F%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D0%B8%20%D0%BF%D1%80%D0%B8%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B8%D1%81%D0%BF%D1%8B%D1%82%D0%B0%D0%BD%D0%B8%D0%B9%20(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)-2026.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Минимальное количество баллов (Москва, Оренбург, Ташкент, Атырау) - 2026",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/5.%20%D0%9C%D0%B8%D0%BD%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D0%B1%D0%B0%D0%BB%D0%BB%D0%BE%D0%B2%20(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3,%20%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,%20%D0%90%D1%82%D1%8B%D1%80%D0%B0%D1%83)-2026.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Информация о проведении внутренних вступительных испытаний (Москва, Оренбург) - 2026",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/6.%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D1%85%20%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B8%D1%81%D0%BF%D1%8B%D1%82%D0%B0%D0%BD%D0%B8%D0%B9%20(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3)%20-%202026.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Перечень и порядок учёта индивидуальных достижений (Москва, Оренбург) - 2026",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/8.%20%D0%9F%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D0%B8%20%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D1%83%D1%87%D1%91%D1%82%D0%B0%20%D0%B8%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9%20(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3)%20-%202026_.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Информация о предоставлении особых прав и особого преимущества (Москва, Оренбург) - 2026",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/9_Informaciya_o_predostavlenii_osobyh_prav_i_osobogo_preimushchestva_Moskva_Orenburg_2026.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Информация о наличии общежития (Москва) - 2026",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/postupayushchim-v-bakalavriat/16.%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BE%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8%20%D0%BE%D0%B1%D1%89%D0%B5%D0%B6%D0%B8%D1%82%D0%B8%D1%8F%20(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)%20-%202026.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Минимальные проходные баллы в 2026 году",
+          "url": "https://gubkin.ru/info/enrollee/admission_board/itogi-priema-2026/Priem_Minimallnue_ballu_2026.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Сумма баллов, набранных на вступительных испытаниях, необходимая для включения в проект приказа о зачислении на обучение за счет средств физических и(или) юридических лиц в 2026 г.",
+          "url": "https://www.gubkin.ru/info/enrollee/admission_board/itogi-priema-2026/Priem_Minimallnue%20ballu_15082026.pdf",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        },
+        {
+          "title": "Стоимость обучения",
+          "url": "https://gubkin.ru/sveden/paid_edu/",
+          "listedFor": 2026,
+          "verification": "official_link_only"
+        }
+      ],
+      "faqSource": "faq-admissions-2026",
+      "undergraduateApplicationDeadlines": {
+        "internalExams": {
+          "budget": "2026-07-15",
+          "paid": "2026-08-17"
+        },
+        "unifiedStateExamOnly": {
+          "budget": "2026-07-25",
+          "paid": "2026-08-27"
+        }
+      },
+      "minimumEntranceScores": {
+        "campus": "Москва",
+        "level": "бакалавриат и специалитет",
+        "funding": "budget",
+        "includesQuotas": true,
+        "pointsPerSubject": 60
+      },
+      "results": {
+        "source": "enrollment-summary-2026",
+        "rows": [
+          {
+            "code": "01.03.04",
+            "programme": "Прикладная математика",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "23 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "7",
+            "meanEntranceScorePublished": "256"
+          },
+          {
+            "code": "05.03.01",
+            "programme": "Геология",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "40 + 8 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "6",
+            "meanEntranceScorePublished": "228"
+          },
+          {
+            "code": "05.03.06",
+            "programme": "Экология и природопользование",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "23",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "5",
+            "meanEntranceScorePublished": "224"
+          },
+          {
+            "code": "09.03.01",
+            "programme": "Информатика и вычислительная техника",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "90 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "30",
+            "meanEntranceScorePublished": "242"
+          },
+          {
+            "code": "10.03.01",
+            "programme": "Информационная безопасность",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "30",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "8",
+            "meanEntranceScorePublished": "228"
+          },
+          {
+            "code": "12.03.01",
+            "programme": "Приборостроение",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "20 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "4",
+            "meanEntranceScorePublished": "238"
+          },
+          {
+            "code": "13.03.02",
+            "programme": "Электроэнергетика и электротехника",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "20 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "5",
+            "meanEntranceScorePublished": "234"
+          },
+          {
+            "code": "15.03.01",
+            "programme": "Машиностроение",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "44 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "23",
+            "meanEntranceScorePublished": "221"
+          },
+          {
+            "code": "15.03.02",
+            "programme": "Технологические машины и оборудование",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "35",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "17",
+            "meanEntranceScorePublished": "227"
+          },
+          {
+            "code": "18.03.01",
+            "programme": "Химическая технология",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "158 + 3 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "51",
+            "meanEntranceScorePublished": "250"
+          },
+          {
+            "code": "18.03.02",
+            "programme": "Энерго- и ресурсосберегающие процессы в химической технологии, нефтехимии и биотехнологии",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "25 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "3",
+            "meanEntranceScorePublished": "242"
+          },
+          {
+            "code": "20.03.01",
+            "programme": "Техносферная безопасность",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "20",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "4",
+            "meanEntranceScorePublished": "230"
+          },
+          {
+            "code": "21.03.01",
+            "programme": "Нефтегазовое дело",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "220 + 38 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "63",
+            "meanEntranceScorePublished": "234"
+          },
+          {
+            "code": "27.03.01",
+            "programme": "Стандартизация и метрология",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "20",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "4",
+            "meanEntranceScorePublished": "231"
+          },
+          {
+            "code": "27.03.04",
+            "programme": "Управление в технических системах",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "20 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "11",
+            "meanEntranceScorePublished": "239"
+          },
+          {
+            "code": "38.03.01",
+            "programme": "Экономика",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "20 + 4 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "186",
+            "meanEntranceScorePublished": "209"
+          },
+          {
+            "code": "38.03.02",
+            "programme": "Менеджмент",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "0 + 4 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "126",
+            "meanEntranceScorePublished": "200"
+          },
+          {
+            "code": "38.03.05",
+            "programme": "Бизнес-информатика",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "14",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "18",
+            "meanEntranceScorePublished": "231"
+          },
+          {
+            "code": "40.03.01",
+            "programme": "Юриспруденция",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "5",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "70",
+            "meanEntranceScorePublished": "195"
+          },
+          {
+            "code": "41.03.05",
+            "programme": "Международные отношения",
+            "level": "бакалавриат",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "5",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "12",
+            "meanEntranceScorePublished": "196"
+          },
+          {
+            "code": "38.03.01",
+            "programme": "Экономика",
+            "level": "бакалавриат",
+            "form": "очно-заочная",
+            "federalBudgetEnrollmentPublished": "11",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "6",
+            "meanEntranceScorePublished": "239"
+          },
+          {
+            "code": "38.03.02",
+            "programme": "Менеджмент",
+            "level": "бакалавриат",
+            "form": "очно-заочная",
+            "federalBudgetEnrollmentPublished": "12",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "6",
+            "meanEntranceScorePublished": "242"
+          },
+          {
+            "code": "10.05.03",
+            "programme": "Информационная безопасность автоматизированных систем",
+            "level": "специалитет",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "45",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "14",
+            "meanEntranceScorePublished": "233"
+          },
+          {
+            "code": "10.05.04",
+            "programme": "Информационно-аналитические системы безопасности",
+            "level": "специалитет",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "23",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "7",
+            "meanEntranceScorePublished": "239"
+          },
+          {
+            "code": "21.05.02",
+            "programme": "Прикладная геология",
+            "level": "специалитет",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "40",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "8",
+            "meanEntranceScorePublished": "234"
+          },
+          {
+            "code": "21.05.03",
+            "programme": "Технология геологической разведки",
+            "level": "специалитет",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "40",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "7",
+            "meanEntranceScorePublished": "236"
+          },
+          {
+            "code": "21.05.05",
+            "programme": "Физические процессы горного или нефтегазового производства",
+            "level": "специалитет",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "20 + 3 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "6",
+            "meanEntranceScorePublished": "241"
+          },
+          {
+            "code": "21.05.06",
+            "programme": "Нефтегазовые техника и технологии",
+            "level": "специалитет",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "161 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "32",
+            "meanEntranceScorePublished": "250"
+          },
+          {
+            "code": "38.05.01",
+            "programme": "Экономическая безопасность",
+            "level": "специалитет",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "20",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "9",
+            "meanEntranceScorePublished": "245"
+          },
+          {
+            "code": "40.05.01",
+            "programme": "Правовое обеспечение национальной безопасности",
+            "level": "специалитет",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "25",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "15",
+            "meanEntranceScorePublished": "228"
+          },
+          {
+            "code": "01.04.04",
+            "programme": "Прикладная математика",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "11",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "85"
+          },
+          {
+            "code": "05.04.06",
+            "programme": "Экология и природопользование",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "12 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "1",
+            "meanEntranceScorePublished": "97"
+          },
+          {
+            "code": "09.04.01",
+            "programme": "Информатика и вычислительная техника",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "28 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "11",
+            "meanEntranceScorePublished": "85"
+          },
+          {
+            "code": "12.04.01",
+            "programme": "Приборостроение",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "15",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "1",
+            "meanEntranceScorePublished": "81"
+          },
+          {
+            "code": "13.04.02",
+            "programme": "Электроэнергетика и электротехника",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "15 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "2",
+            "meanEntranceScorePublished": "84"
+          },
+          {
+            "code": "15.04.02",
+            "programme": "Технологические машины и оборудование",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "45 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "12",
+            "meanEntranceScorePublished": "90"
+          },
+          {
+            "code": "18.04.01",
+            "programme": "Химическая технология",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "80 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "11",
+            "meanEntranceScorePublished": "78"
+          },
+          {
+            "code": "18.04.02",
+            "programme": "Энерго- и ресурсосберегающие процессы в химической технологии, нефтехимии и биотехнологии",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "15",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "69"
+          },
+          {
+            "code": "20.04.01",
+            "programme": "Техносферная безопасность",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "15",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "94"
+          },
+          {
+            "code": "21.04.01",
+            "programme": "Нефтегазовое дело",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "180 + 29 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "30",
+            "meanEntranceScorePublished": "79"
+          },
+          {
+            "code": "27.04.01",
+            "programme": "Стандартизация и метрология",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "15",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "92"
+          },
+          {
+            "code": "38.04.01",
+            "programme": "Экономика",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "24 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "53",
+            "meanEntranceScorePublished": "69"
+          },
+          {
+            "code": "38.04.02",
+            "programme": "Менеджмент",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "6 + 5 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "64",
+            "meanEntranceScorePublished": "61"
+          },
+          {
+            "code": "40.04.01",
+            "programme": "Юриспруденция",
+            "level": "магистратура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "0 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "30",
+            "meanEntranceScorePublished": "66"
+          },
+          {
+            "code": "18.04.01",
+            "programme": "Химическая технология",
+            "level": "магистратура",
+            "form": "очно-заочная",
+            "federalBudgetEnrollmentPublished": "0",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "13",
+            "meanEntranceScorePublished": "69"
+          },
+          {
+            "code": "21.04.01",
+            "programme": "Нефтегазовое дело",
+            "level": "магистратура",
+            "form": "очно-заочная",
+            "federalBudgetEnrollmentPublished": "7",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "13",
+            "meanEntranceScorePublished": "67"
+          },
+          {
+            "code": "38.04.01",
+            "programme": "Экономика",
+            "level": "магистратура",
+            "form": "очно-заочная",
+            "federalBudgetEnrollmentPublished": "18",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "44",
+            "meanEntranceScorePublished": "70"
+          },
+          {
+            "code": "38.04.02",
+            "programme": "Менеджмент",
+            "level": "магистратура",
+            "form": "очно-заочная",
+            "federalBudgetEnrollmentPublished": "32",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "56",
+            "meanEntranceScorePublished": "74"
+          },
+          {
+            "code": "40.04.01",
+            "programme": "Юриспруденция",
+            "level": "магистратура",
+            "form": "очно-заочная",
+            "federalBudgetEnrollmentPublished": "0",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "13",
+            "meanEntranceScorePublished": "62"
+          },
+          {
+            "code": "1.1",
+            "programme": "Математика и механика",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "2",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "85"
+          },
+          {
+            "code": "1.2",
+            "programme": "Компьютерные науки и информатика",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "2",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "70"
+          },
+          {
+            "code": "1.4",
+            "programme": "Химические науки",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "1 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "95"
+          },
+          {
+            "code": "1.5",
+            "programme": "Биологические науки",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "3",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "88"
+          },
+          {
+            "code": "1.6",
+            "programme": "Науки о земле и окружающей среде",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "10",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "3",
+            "meanEntranceScorePublished": "94"
+          },
+          {
+            "code": "2.2",
+            "programme": "Электроника, фотоника, приборостроение и связь",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "1",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "80"
+          },
+          {
+            "code": "2.3",
+            "programme": "Информационные технологии и телекоммуникации",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "13 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "3",
+            "meanEntranceScorePublished": "87"
+          },
+          {
+            "code": "2.4",
+            "programme": "Энергетика и электротехника",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "2 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "1",
+            "meanEntranceScorePublished": "91"
+          },
+          {
+            "code": "2.5",
+            "programme": "Машиностроение",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "8",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "1",
+            "meanEntranceScorePublished": "94"
+          },
+          {
+            "code": "2.6",
+            "programme": "Химические технологии, науки о материалах, металлургия",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "21 + 5 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "92"
+          },
+          {
+            "code": "2.8",
+            "programme": "Недропользование и горные науки",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "22 + 9 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "5",
+            "meanEntranceScorePublished": "91"
+          },
+          {
+            "code": "2.10",
+            "programme": "Техносферная безопасность",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "0",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "1",
+            "meanEntranceScorePublished": "95"
+          },
+          {
+            "code": "5.1",
+            "programme": "Право",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "0 + 1 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "3",
+            "meanEntranceScorePublished": "83"
+          },
+          {
+            "code": "5.2",
+            "programme": "Экономика",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "5 + 2 ГОС",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "25",
+            "meanEntranceScorePublished": "79"
+          },
+          {
+            "code": "5.4",
+            "programme": "Социология",
+            "level": "аспирантура",
+            "form": "очная",
+            "federalBudgetEnrollmentPublished": "1",
+            "regionalEnrollmentPublished": "0",
+            "municipalEnrollmentPublished": "0",
+            "paidEnrollmentPublished": "0",
+            "meanEntranceScorePublished": "95"
+          }
+        ],
+        "omittedBranchRowCounts": {
+          "Филиал РГУ нефти и газа (НИУ) имени И.М. Губкина в г. Оренбурге": 6,
+          "Филиал РГУ нефти и газа (НИУ) имени И.М. Губкина в г. Ташкенте": 5,
+          "Филиал РГУ нефти и газа (НИУ) имени И.М. Губкина в г. Атырау": 1
+        },
+        "budgetPassingScores": null,
+        "paidPassingScores": null
+      }
+    }
+  ],
+  "admissionsContacts": {
+    "mainPortal": "https://priem.gubkin.ru/",
+    "email": "priem@gubkin.ru",
+    "hotline": "+7 (499) 507-82-73",
+    "officialCampaignContact": "cached-admissions-2026",
+    "landingPhone": "+7 (499) 507-84-06",
+    "landingPhoneSource": "contact-landing"
+  },
+  "housing": {
+    "capacitySource": "housing-capacity",
+    "numberOfDormitories": 5,
+    "totalPlaces": 4702,
+    "faqSource": "faq-housing-2025",
+    "firstYearRequirements": "Иногородние очники, зачисленные на бюджет и нуждающиеся в общежитии. Раздел ссылается на документ 2025 года.",
+    "campaignRules2026": null
+  },
+  "issues": [
+    "Прямые запросы gubkin.ru и www.gubkin.ru завершались тайм-аутом. Через веб-извлечение PDF с итогами также не открылся. Ссылки на документы 2026 подтверждены на рабочем портале приёма.",
+    "Официальная таблица /sveden/ содержит средние баллы и численность зачисленных. Ссылка на отдельный PDF проходных сохранена без числовых значений.",
+    "Документ о сумме баллов для включения в проект приказа по договору описывает порог проекта приказа. Итоговый платный проходной из него не установлен.",
+    "В архиве есть строки головного кампуса и филиалов. В набор включены московские строки, число исключённых строк зафиксировано по филиалам."
+  ],
+  "archiveModelLimits": [
+    "В показателе численности федерального набора есть составные записи с пометой «ГОС». Сохранена исходная строка без сведения компонентов в один показатель.",
+    "Средние баллы по направлениям и фактическая численность групп из отчёта не представлены историей конкурсов в текущей модели.",
+    "Вместимость общежитий приведена для всего жилого фонда без числа мест для первокурсников."
+  ]
+}

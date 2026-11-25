@@ -1,6 +1,7 @@
 import type { CatalogSnapshot } from "./types";
 import type { UniversityCatalogEntry } from "../university-catalog-filters";
-import { directoryEvidenceSummary } from "../university-directory-details";
+import { directoryEvidenceSummary } from "@/lib/directory/model";
+import { offeringCount } from "./offering-sets";
 
 export function universityCatalogEntries(
   catalog: Pick<
@@ -33,7 +34,9 @@ export function universityCatalogEntries(
       id: university.id,
       slug: university.slug,
       name: university.name,
-      shortName: university.shortName,
+      ...(university.shortName !== university.name
+        ? { shortName: university.shortName }
+        : {}),
       city: university.city,
       address: university.address,
       website: university.website,
@@ -47,14 +50,16 @@ export function universityCatalogEntries(
             directory: {
               kind: university.directory.kind,
               ownership: university.directory.ownership,
-              legalName: university.directory.legalName,
+              ...(university.directory.legalName !== university.name
+                ? { legalName: university.directory.legalName }
+                : {}),
               region: university.directory.region,
             },
           }
         : {}),
       campaignCount: campaigns.get(university.slug) ?? 0,
       evidence: directoryEvidenceSummary(profile),
-      offeringCount: profile?.offerings.length ?? 0,
+      offeringCount: offeringCount(profile),
       facultyCount: profile?.faculties?.length ?? 0,
       catalogProgramCount: programCounts.get(university.slug) ?? 0,
     };

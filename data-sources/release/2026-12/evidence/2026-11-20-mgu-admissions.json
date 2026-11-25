@@ -1,0 +1,1100 @@
+{
+  "universitySlug": "mgu",
+  "catalogDate": "2026-11-20",
+  "checkedAt": "2026-11-20T00:47:58.082621Z",
+  "scope": "МГУ, головной кампус: ручной разбор открытых сведений и опубликованных документов приёма.",
+  "sources": [
+    {
+      "id": "admissions",
+      "url": "https://cpk.msu.ru/",
+      "finalUrl": "https://cpk.msu.ru/",
+      "checkedAt": "2026-11-19T23:40:14.668754Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 48582,
+      "sourceSha256": "7297aa90efe9d4c1f35ffdc805584d92da238dadf5a31b6d350af5de1d5784e4",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "admissions-contacts",
+      "url": "https://cpk.msu.ru/pk",
+      "finalUrl": "https://cpk.msu.ru/pk",
+      "checkedAt": "2026-11-19T23:40:14.705851Z",
+      "sourceYear": null,
+      "status": 200,
+      "bytes": 42162,
+      "sourceSha256": "5ba297b3e375946761f0cab53a0a5d1566914eedbbb2666e5a295cf3269ec8cc",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "common-parser",
+      "url": "https://msu.ru/parser/sveden/common/",
+      "finalUrl": "https://msu.ru/parser/sveden/common/",
+      "checkedAt": "2026-11-19T23:42:34.430924Z",
+      "sourceYear": null,
+      "status": 200,
+      "bytes": 48591,
+      "sourceSha256": "b3746255e1b0ecc07d99b8febb8c4b7e00ace9534765604bbd7bbfd0bb87e334",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "struct-parser",
+      "url": "https://msu.ru/parser/sveden/struct/",
+      "finalUrl": "https://msu.ru/parser/sveden/struct/",
+      "checkedAt": "2026-11-19T23:42:34.447104Z",
+      "sourceYear": null,
+      "status": 200,
+      "bytes": 149941,
+      "sourceSha256": "bc3493281afaaf8410348db2dce7ada9ee1057203e8f205ccb746030d7710b36",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "objects-parser",
+      "url": "https://msu.ru/parser/sveden/objects/",
+      "finalUrl": "https://msu.ru/parser/sveden/objects/",
+      "checkedAt": "2026-11-19T23:42:34.447104Z",
+      "sourceYear": null,
+      "status": 200,
+      "bytes": 44300,
+      "sourceSha256": "6520be8927042cd7cb58fbaec309ceba05b05e95764d1b794bed4906cd20fd08",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "grants-parser",
+      "url": "https://msu.ru/parser/sveden/grants/",
+      "finalUrl": "https://msu.ru/parser/sveden/grants/",
+      "checkedAt": "2026-11-19T23:42:34.447104Z",
+      "sourceYear": null,
+      "status": 200,
+      "bytes": 39979,
+      "sourceSha256": "11540a175858a2b5182f10d451c4ccb4e8a4836a7a346bc1a115ea343fa2c14e",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "paid-edu-parser",
+      "url": "https://msu.ru/parser/sveden/paid_edu/",
+      "finalUrl": "https://msu.ru/parser/sveden/paid_edu/",
+      "checkedAt": "2026-11-19T23:42:34.455365Z",
+      "sourceYear": null,
+      "status": 200,
+      "bytes": 37647,
+      "sourceSha256": "b3137afcd0e6c262fa772b4363bd5fa64fdb60158d9ae5956a79550b4217ca7d",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "about-parser",
+      "url": "https://msu.ru/parser/info/",
+      "finalUrl": "https://msu.ru/parser/info/",
+      "checkedAt": "2026-11-19T23:42:34.526632Z",
+      "sourceYear": null,
+      "status": 200,
+      "bytes": 47456,
+      "sourceSha256": "e5a62370249fbeebbcf944051be0b0f3e5246b0fa311c530719ea04356e44697",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "rules2026",
+      "url": "https://cpk.msu.ru/files/2026/rules.pdf",
+      "finalUrl": "https://cpk.msu.ru/files/2026/rules.pdf",
+      "checkedAt": "2026-11-19T23:43:44.994428Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 485095,
+      "sourceSha256": "65fe8d515816549f3f70e831aa654400d2343c91cf21f4d85fabb5aa8eeda422",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "asp-rules2026",
+      "url": "https://msu.ru/upload/pdf/2026/2026-aspr-priem.pdf",
+      "finalUrl": "https://msu.ru/upload/pdf/2026/2026-aspr-priem.pdf",
+      "checkedAt": "2026-11-19T23:43:44.994428Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 448252,
+      "sourceSha256": "529bf9e8a465c5c65f36e593217d465218c01dacc3b4036431e6ea87f9f8250a",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "summer-contract2026",
+      "url": "https://school.msu.ru/upload/iblock/472/37u6yg66jxd7msgodasxxervelxhyqgc/Dokumenty-_blanki_-dlya-zaezda-na-LSH.pdf",
+      "checkedAt": "2026-11-19T23:47:38.430648Z",
+      "sourceYear": 2026,
+      "sourceSha256": "106e31b876fb2f64d5ca6cd3f41cd0ca766e79ce4810ac1f5f942372c89807ed",
+      "sourceSha256Basis": "extract-only"
+    },
+    {
+      "id": "birthday2026",
+      "url": "https://math.msu.ru/node/2384",
+      "checkedAt": "2026-11-19T23:47:38.430648Z",
+      "sourceYear": 2026,
+      "sourceSha256": "e41a8d13d08ab651ab62b366159dfefbbaa38eddeb517cf8e74f1cfa5889d1b6",
+      "sourceSha256Basis": "extract-only"
+    },
+    {
+      "id": "2027-notice",
+      "url": "https://www.journ.msu.ru/entry/admission/",
+      "checkedAt": "2026-11-19T23:46:16.459088Z",
+      "sourceYear": 2027,
+      "status": 200,
+      "bytes": 47650,
+      "sourceSha256": "80f0b6a0843a824f25c42932b57f0f9ff530e8d13a90bcbbcfbb5af954a71d7d",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "official-program-list",
+      "url": "https://msu.ru/sveden/education/sd.pdf",
+      "checkedAt": "2026-11-19T23:42:11.064073Z",
+      "sourceYear": null,
+      "bytes": 312370,
+      "sourceSha256": "21f7834ac40c40012fb4422969d58422181c8d2da5dbb074c11b4809ded80c5c",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "education-index",
+      "url": "https://msu.ru/parser/sveden/education/",
+      "checkedAt": "2026-11-19T23:41:34.245339Z",
+      "sourceYear": null,
+      "bytes": 41853,
+      "sourceSha256": "b06b56e96f846d994461f70a84ebd886ebe3efa5d3af73fbf5be151d6827aca0",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "postgraduate-index",
+      "url": "https://msu.ru/parser/entrance/aspirantura.php",
+      "checkedAt": "2026-11-19T23:43:55.331688Z",
+      "sourceYear": null,
+      "bytes": 45948,
+      "sourceSha256": "aec0ca228d57d18d2991f88d59d0308be208f4b14a0302949fa216035a8e3bc4",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "econ-scores2026",
+      "url": "https://www.econ.msu.ru/entrance/bachelor/landing/",
+      "finalUrl": "https://www.econ.msu.ru/entrance/bachelor/landing/",
+      "checkedAt": "2026-11-20T00:47:58.013205Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 58529,
+      "sourceSha256": "6b20601e5ba18405c6f6e298abe3c7c2e5213c3e4e3f3171ca8e3a853f776733",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "rating-index2026",
+      "url": "https://cpk.msu.ru/rating",
+      "finalUrl": "https://cpk.msu.ru/rating",
+      "checkedAt": "2026-11-20T00:47:57.943820Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 12338,
+      "sourceSha256": "4a66c7dbab1b0449ef685a9a166787e4e259ed4adb8bca9b7c904ad5a6df18bb",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "kcp-bak2026",
+      "url": "https://cpk.msu.ru/files/2026/kcp_bak.pdf",
+      "finalUrl": "https://cpk.msu.ru/files/2026/kcp_bak.pdf",
+      "checkedAt": "2026-11-20T00:47:58.023136Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 609464,
+      "sourceSha256": "cef7631a567d86863ef442e8c9ee5a27a086c1808fd5545d78d36abd62901090",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "minimum2026",
+      "url": "https://cpk.msu.ru/files/2026/minimum.pdf",
+      "finalUrl": "https://cpk.msu.ru/files/2026/minimum.pdf",
+      "checkedAt": "2026-11-20T00:47:57.953002Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 75705,
+      "sourceSha256": "7470e8d7c98297b2b9ae9e1af7f5488a0fec4bb5dc38f9cc35da056541312c45",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "schedule2026",
+      "url": "https://cpk.msu.ru/files/2026/schedule.pdf",
+      "finalUrl": "https://cpk.msu.ru/files/2026/schedule.pdf",
+      "checkedAt": "2026-11-20T00:47:57.954692Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 187179,
+      "sourceSha256": "dc8f3d7bc6b4c691041071d9f99d688dd7396cb2dab1f6f6d709a3961c9b2cf8",
+      "sourceSha256Basis": "response-bytes"
+    },
+    {
+      "id": "dvi-rules2026",
+      "url": "https://cpk.msu.ru/files/2026/dvi_rules.pdf",
+      "finalUrl": "https://cpk.msu.ru/files/2026/dvi_rules.pdf",
+      "checkedAt": "2026-11-20T00:47:58.082621Z",
+      "sourceYear": 2026,
+      "status": 200,
+      "bytes": 2156814,
+      "sourceSha256": "2f36c1191521a97926c7439f5461475c3bb90c6bcdc30e51cf58dd44e8240ede",
+      "sourceSha256Basis": "response-bytes"
+    }
+  ],
+  "counts": {
+    "directoryFields": 6,
+    "facultiesAdded": 0,
+    "educationRows": 166,
+    "newAdmissionPrograms": 0,
+    "evidenceOnlyPassingScores": 4
+  },
+  "directory": {
+    "educationSourceId": "official-program-list",
+    "sourceYear": null,
+    "levels": {
+      "бакалавриат": 52,
+      "специалитет": 12,
+      "магистратура": 58,
+      "аспирантура": 35,
+      "ординатура": 9
+    },
+    "forms": {
+      "очная": 134,
+      "Очно-заочная": 20,
+      "заочная": 12
+    },
+    "educationReviewNote": "Перечень доступен по официальной ссылке. Год набора и действующая аккредитация из этого документа не устанавливаются.",
+    "unmodeledFacts": [
+      {
+        "key": "email",
+        "value": "info@org.msu.ru",
+        "sourceUrl": "https://msu.ru/parser/sveden/common/",
+        "sourceYear": null,
+        "sourceSha256": "b3746255e1b0ecc07d99b8febb8c4b7e00ace9534765604bbd7bbfd0bb87e334",
+        "sourceSha256Basis": "response-bytes",
+        "checkedAt": "2026-11-19T23:42:34.430924Z",
+        "note": "Текущий общий email в /sveden/common не снабжён годом. Модель fields.sourceYear требует число. Датированный бланк аспирантуры2026 публикует другой адрес info@rector.msu.ru; он сохранён как отдельный контакт, не подставлен вместо email текущего /sveden."
+      },
+      {
+        "key": "overview",
+        "value": "Московский государственный университет имени М.В.Ломоносова — федеральное государственное бюджетное образовательное учреждение высшего образования. Полномочия учредителя от имени Российской Федерации осуществляет Правительство Российской Федерации.",
+        "sourceUrl": "https://msu.ru/parser/info/",
+        "sourceYear": null,
+        "sourceSha256": "e5a62370249fbeebbcf944051be0b0f3e5246b0fa311c530719ea04356e44697",
+        "sourceSha256Basis": "response-bytes",
+        "checkedAt": "2026-11-19T23:42:34.526632Z",
+        "note": "Нейтральное описание по официальной странице «Общие сведения». Год публикации основного текста не указан; даты перечисленных документов не назначаются годом описания."
+      },
+      {
+        "key": "hostelStock",
+        "value": "В /sveden/grants перечислены 7 общежитий/комплексов: ДС, ФДС, ДСЛ, ДСВ, ДСК, ДАС, ДСЯ; опубликованный итог17703 койкоместа.",
+        "sourceUrl": "https://msu.ru/parser/sveden/grants/",
+        "sourceYear": null,
+        "sourceSha256": "11540a175858a2b5182f10d451c4ccb4e8a4836a7a346bc1a115ea343fa2c14e",
+        "sourceSha256Basis": "response-bytes",
+        "checkedAt": "2026-11-19T23:42:34.447104Z",
+        "note": "Год таблицы не указан. Исторический состав/общая вместимость не трактуются как число свободных мест или гарантия на2026/2027."
+      }
+    ],
+    "alternativeContacts": [
+      {
+        "value": "info@rector.msu.ru",
+        "scope": "Бланк расписки аспирантуры2026, институциональный контакт в шапке",
+        "sourceUrl": "https://msu.ru/upload/pdf/2026/2026-aspr-priem.pdf",
+        "sourceYear": 2026,
+        "sourceSha256": "529bf9e8a465c5c65f36e593217d465218c01dacc3b4036431e6ea87f9f8250a",
+        "checkedAt": "2026-11-19T23:43:44.994428Z"
+      }
+    ],
+    "unmodeledProgramRows": [
+      {
+        "codeAsPublished": "кроме",
+        "title": "Перспективные вычислительные технологии и сети",
+        "levelAsPublished": "магистратура",
+        "form": "очная",
+        "duration": "2 года",
+        "language": "Английский",
+        "sourcePage": 3,
+        "sourceTable": 1,
+        "sourceRow": 15
+      },
+      {
+        "codeAsPublished": "кроме",
+        "title": "Управление проектами в области вывода из эксплуатации ядерно- и радиационноопасных объектов (включая обращение с радиоактивными отходами)",
+        "levelAsPublished": "магистратура",
+        "form": "очная",
+        "duration": "2 года",
+        "language": "Английский",
+        "sourcePage": 3,
+        "sourceTable": 1,
+        "sourceRow": 22
+      },
+      {
+        "codeAsPublished": "кроме",
+        "title": "Международная экономика и финансы",
+        "levelAsPublished": "магистратура",
+        "form": "очная",
+        "duration": "2 года",
+        "language": "Английский",
+        "sourcePage": 4,
+        "sourceTable": 1,
+        "sourceRow": 15
+      },
+      {
+        "codeAsPublished": "кроме",
+        "title": "Международный бизнес менеджмент",
+        "levelAsPublished": "магистратура",
+        "form": "очная",
+        "duration": "2 года",
+        "language": "Английский",
+        "sourcePage": 4,
+        "sourceTable": 1,
+        "sourceRow": 17
+      },
+      {
+        "codeAsPublished": "кроме",
+        "title": "Государственная политика в постсоветских странах",
+        "levelAsPublished": "магистратура",
+        "form": "очная",
+        "duration": "2 года",
+        "language": "Английский",
+        "sourcePage": 5,
+        "sourceTable": 1,
+        "sourceRow": 1
+      },
+      {
+        "codeAsPublished": "",
+        "title": "Глобальный порядок: трансформации и вызовы",
+        "levelAsPublished": "магистратура",
+        "form": "очная",
+        "duration": "2 года",
+        "language": "Английский",
+        "sourcePage": 5,
+        "sourceTable": 1,
+        "sourceRow": 2
+      },
+      {
+        "codeAsPublished": "-",
+        "title": "Основное общее образование",
+        "levelAsPublished": "",
+        "form": "очная",
+        "duration": "5 лет",
+        "language": "Русский",
+        "sourcePage": 8,
+        "sourceTable": 1,
+        "sourceRow": 10
+      },
+      {
+        "codeAsPublished": "-",
+        "title": "Среднее общее образование",
+        "levelAsPublished": "",
+        "form": "очная",
+        "duration": "2 года",
+        "language": "Русский",
+        "sourcePage": 8,
+        "sourceTable": 1,
+        "sourceRow": 11
+      }
+    ]
+  },
+  "admissions": {
+    "campaignYear": 2026,
+    "admissionsOfficeSourceId": "admissions-contacts",
+    "documentIndex": [
+      {
+        "label": "Правила приема в МГУ в 2026 году",
+        "url": "https://cpk.msu.ru/files/2026/rules.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "sourceId": "rules2026"
+      },
+      {
+        "label": "Программы вступительных испытаний в бакалавриат и специалитет",
+        "url": "http://www.msu.ru/entrance/program/",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": null,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Программы вступительных испытаний в магистратуру",
+        "url": "https://cpk.msu.ru/magister_exams",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": null,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2025 году",
+        "url": "https://msu.ru/entrance/pr-b-2025.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2025,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2024 году",
+        "url": "https://msu.ru/entrance/pr-b-2024.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2024,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2023 году",
+        "url": "https://msu.ru/entrance/pr-b-2023.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2023,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2022 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2022.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2022,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2021 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2021.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2021,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2020 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2020.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2020,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2019 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2019.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2019,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2018 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2018.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2018,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2017 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2017.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2017,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2016 году",
+        "url": "https://www.msu.ru/entrance/pr-b.html",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2016,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2015 году",
+        "url": "https://www.msu.ru/entrance/prokhodnye-bally-v-2015-godu-na-byudzhetnye-mesta.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2015,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2014 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2014.html",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2014,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2013 году",
+        "url": "https://www.msu.ru/entrance/prokhodnye-bally-2013.php",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2013,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2012 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2012.html",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2012,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Проходной балл в 2011 году",
+        "url": "https://www.msu.ru/entrance/pr-b-2011.html",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2011,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Форма заявления о приеме в МГУ",
+        "url": "https://cpk.msu.ru/files/2026/zayavlenie-mgu-2026.html",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Инструкция по подаче заявления",
+        "url": "https://cpk.msu.ru/files/2026/submit_instruction_via_post_2026.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "График работы приёмных комиссий",
+        "url": "https://cpk.msu.ru/files/2026/schedule.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "sourceId": "schedule2026"
+      },
+      {
+        "label": "Частые вопросы и памятки для абитуриентов",
+        "url": "https://cpk.msu.ru/2026/faq",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Особенности приёма в МГУ имени М.В.Ломоносова в 2026 году",
+        "url": "https://cpk.msu.ru/files/2026/rules_peculiarities.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Расписание вступительных испытаний: бакалавриат и специалитет",
+        "url": "https://cpk.msu.ru/files/2026/bak_exams.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Резервный день для испытаний вместо ЕГЭ",
+        "url": "https://cpk.msu.ru/files/2026/bak_exams_reserve.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Резервный день ДВИ",
+        "url": "https://cpk.msu.ru/files/2026/bak_dvi_reserve.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Расписание вступительных испытаний: магистратура",
+        "url": "https://cpk.msu.ru/files/2026/mag_exams.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Расписание вступительных испытаний: дополнительные потоки магистратуры",
+        "url": "https://cpk.msu.ru/files/2026/mag_exams_dop.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Регламент проведения ДВИ в 2026 году",
+        "url": "https://cpk.msu.ru/files/2026/dvi_rules.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "sourceId": "dvi-rules2026"
+      },
+      {
+        "label": "Направления, места и испытания бакалавриата и специалитета",
+        "url": "https://cpk.msu.ru/files/2026/kcp_bak.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "sourceId": "kcp-bak2026"
+      },
+      {
+        "label": "Направления, места и испытания магистратуры",
+        "url": "https://cpk.msu.ru/files/2026/kcp_mag.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Второе высшее",
+        "url": "https://cpk.msu.ru/files/pages/1/kcp_vvo_2026.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": null,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Направления, места и испытания бакалавриата и специалитета для иностранных граждан",
+        "url": "https://cpk.msu.ru/files/2026/kcp_bak_in.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Направления, места и испытания магистратуры для иностранных граждан",
+        "url": "https://cpk.msu.ru/files/2026/kcp_mag_in.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Соотнесение профилей Всероссийской олимпиады школьников и международных олимпиад к профилям направлений подготовки (специальностей) МГУ в 2026 году",
+        "url": "https://cpk.msu.ru/files/2026/olymp_disciplines.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Особые права, предоставляемые победителям и призерам олимпиад школьников, включенных в Перечень олимпиад школьников на 2025/26 учебный год, поступающим в МГУ имени М.В.Ломоносова в 2026 году",
+        "url": "https://cpk.msu.ru/files/2026/olymp_benefits.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Перечень иностранных языков, по которым проводится вступительное испытание по иностранному языку при приеме на первый курс в МГУ имени М.В.Ломоносова в 2026 году",
+        "url": "https://cpk.msu.ru/files/2026/language_exam.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Особые права и преимущества при приеме на обучение по программам бакалавриата или программам специалитета, предоставляемые поступающим в Московский университет",
+        "url": "https://cpk.msu.ru/files/2026/quota.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Минимальное количество баллов, подтверждающее успешное прохождение вступительных испытаний в МГУ имени М.В.Ломоносова в 2026 году для поступающих на 1 курс на обучение по программам бакалавриата, программам специалитета и программам магистратуры",
+        "url": "https://cpk.msu.ru/files/2026/minimum.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "sourceId": "minimum2026"
+      },
+      {
+        "label": "Правила подачи и рассмотрения апелляций",
+        "url": "https://cpk.msu.ru/files/2026/appeal.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Особенности проведения вступительных испытаний для лиц с ограниченными возможностями здоровья и инвалидов, поступающих в МГУ имени М.В.Ломоносова",
+        "url": "https://cpk.msu.ru/files/2026/disabled_conditions.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "yearBasis": "раздел кампании 2026 в официальном индексе",
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Информация о необходимости (отсутствии необходимости) прохождения поступающими обязательного предварительного медицинского осмотра (обследования) в 2026 году",
+        "url": "https://cpk.msu.ru/files/2026/medical.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Соответствие направлений подготовки (специальностей) высшего образования специальностям (профилям) среднего профессионального образования при приеме в МГУ имени М.В.Ломоносова в 2026 году",
+        "url": "https://cpk.msu.ru/files/pages/1/compliance_spo_2026.pdf",
+        "sourcePage": "https://cpk.msu.ru/",
+        "sourceYear": 2026,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Платные образовательные услуги",
+        "url": "https://msu.ru/sveden/paid_edu/",
+        "sourcePage": "https://msu.ru/parser/sveden/paid_edu/",
+        "sourceYear": null,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Порядок оказания платных образовательных услуг по основным образовательным программам высшего образования (бакалавриат, специалитет, магистратура) для граждан Российской Федерации, иностранных граждан и лиц без гражданства",
+        "url": "https://msu.ru/upload/pdf/por_plat_obraz_uslugi.pdf",
+        "sourcePage": "https://msu.ru/parser/sveden/paid_edu/",
+        "sourceYear": null,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Приказ «О минимальных размерах платы за оказание образовательных услуг в МГУ и о порядке установления платы за оказание платных образовательных услуг в МГУ»",
+        "url": "https://msu.ru/upload/pdf/pr2019-324.pdf",
+        "sourcePage": "https://msu.ru/parser/sveden/paid_edu/",
+        "sourceYear": null,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Приказ «О порядке установления размеров платы за оказание платных образовательных услуг в МГУ в 2021 году»",
+        "url": "https://msu.ru/upload/pdf/2021/pr2021-662.pdf",
+        "sourcePage": "https://msu.ru/parser/sveden/paid_edu/",
+        "sourceYear": 2021,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Образец договора на оказание платных образовательных услуг для граждан Российской Федерации",
+        "url": "http://cpk.msu.ru/files/contract/contract_russian_citizen.pdf",
+        "sourcePage": "https://msu.ru/parser/sveden/paid_edu/",
+        "sourceYear": null,
+        "reviewState": "official-link-index-only"
+      },
+      {
+        "label": "Образец договора на оказание платных образовательных услуг для иностранных граждан",
+        "url": "http://cpk.msu.ru/files/contract/contract_foreign_citizen.pdf",
+        "sourcePage": "https://msu.ru/parser/sveden/paid_edu/",
+        "sourceYear": null,
+        "reviewState": "official-link-index-only"
+      }
+    ],
+    "individualAchievements": {
+      "sourceId": "rules2026",
+      "locator": "Правила приёма, пп. 27–28"
+    },
+    "admissionListsSourceId": "rating-index2026",
+    "passingScores": [
+      {
+        "faculty": "Экономический факультет",
+        "campus": "Москва",
+        "code": "38.03.01",
+        "program": "Экономика",
+        "form": "очная",
+        "year": 2026,
+        "fundingType": "budget",
+        "score": 358,
+        "stage": null,
+        "contestCategory": null,
+        "sourceUrl": "https://www.econ.msu.ru/entrance/bachelor/landing/#documents",
+        "checkedAt": "2026-11-20T00:47:58.013205Z",
+        "sourceSha256": "6b20601e5ba18405c6f6e298abe3c7c2e5213c3e4e3f3171ca8e3a853f776733"
+      },
+      {
+        "faculty": "Экономический факультет",
+        "campus": "Москва",
+        "code": "38.03.01",
+        "program": "Экономика",
+        "form": "очная",
+        "year": 2026,
+        "fundingType": "paid",
+        "score": 272,
+        "stage": null,
+        "contestCategory": null,
+        "sourceUrl": "https://www.econ.msu.ru/entrance/bachelor/landing/#documents",
+        "checkedAt": "2026-11-20T00:47:58.013205Z",
+        "sourceSha256": "6b20601e5ba18405c6f6e298abe3c7c2e5213c3e4e3f3171ca8e3a853f776733"
+      },
+      {
+        "faculty": "Экономический факультет",
+        "campus": "Москва",
+        "code": "38.03.02",
+        "program": "Менеджмент",
+        "form": "очная",
+        "year": 2026,
+        "fundingType": "budget",
+        "score": 364,
+        "stage": null,
+        "contestCategory": null,
+        "sourceUrl": "https://www.econ.msu.ru/entrance/bachelor/landing/#documents",
+        "checkedAt": "2026-11-20T00:47:58.013205Z",
+        "sourceSha256": "6b20601e5ba18405c6f6e298abe3c7c2e5213c3e4e3f3171ca8e3a853f776733"
+      },
+      {
+        "faculty": "Экономический факультет",
+        "campus": "Москва",
+        "code": "38.03.02",
+        "program": "Менеджмент",
+        "form": "очная",
+        "year": 2026,
+        "fundingType": "paid",
+        "score": 284,
+        "stage": null,
+        "contestCategory": null,
+        "sourceUrl": "https://www.econ.msu.ru/entrance/bachelor/landing/#documents",
+        "checkedAt": "2026-11-20T00:47:58.013205Z",
+        "sourceSha256": "6b20601e5ba18405c6f6e298abe3c7c2e5213c3e4e3f3171ca8e3a853f776733"
+      }
+    ],
+    "passingScoresNote": "Факультет публикует значения отдельно для бюджета и договора. Этап и категория конкурса в блоке не указаны. Значения сохранены в доказательствах. Отдельная платная история не входит в модель, а текущий архив МГУ и подпись на карточке охватывают 2011–2025 годы.",
+    "postgraduatePlaces": {
+      "sourceId": "asp-rules2026",
+      "locator": "Приложение 1, страница 13 PDF",
+      "year": 2026,
+      "groups": [
+        {
+          "title": "Математика и механика",
+          "code": "1.1.",
+          "budgetPlaces": 149,
+          "paidPlaces": 16
+        },
+        {
+          "title": "Компьютерные науки и информатика",
+          "code": "1.2.",
+          "budgetPlaces": 33,
+          "paidPlaces": 8
+        },
+        {
+          "title": "Физические науки",
+          "code": "1.3.",
+          "budgetPlaces": 98,
+          "paidPlaces": 5
+        },
+        {
+          "title": "Химические науки",
+          "code": "1.4.",
+          "budgetPlaces": 113,
+          "paidPlaces": 8
+        },
+        {
+          "title": "Биологические науки",
+          "code": "1.5.",
+          "budgetPlaces": 101,
+          "paidPlaces": 9
+        },
+        {
+          "title": "Науки о земле и окружающей среде",
+          "code": "1.6.",
+          "budgetPlaces": 100,
+          "paidPlaces": 11
+        },
+        {
+          "title": "Электроника, фотоника, приборостроение и связь",
+          "code": "2.2.",
+          "budgetPlaces": 2,
+          "paidPlaces": 1
+        },
+        {
+          "title": "Информационные технологии и телекоммуникации",
+          "code": "2.3.",
+          "budgetPlaces": 35,
+          "paidPlaces": 8
+        },
+        {
+          "title": "Химические технологии, науки о материалах, металлургия",
+          "code": "2.6.",
+          "budgetPlaces": 2,
+          "paidPlaces": 1
+        },
+        {
+          "title": "Клиническая медицина",
+          "code": "3.1.",
+          "budgetPlaces": 25,
+          "paidPlaces": 3
+        },
+        {
+          "title": "Профилактическая медицина",
+          "code": "3.2.",
+          "budgetPlaces": 3,
+          "paidPlaces": 1
+        },
+        {
+          "title": "Медико-биологические науки",
+          "code": "3.3.",
+          "budgetPlaces": 8,
+          "paidPlaces": 3
+        },
+        {
+          "title": "Фармацевтические науки",
+          "code": "3.4.",
+          "budgetPlaces": 10,
+          "paidPlaces": 2
+        },
+        {
+          "title": "Агрономия, лесное и водное хозяйство",
+          "code": "4.1.",
+          "budgetPlaces": 8,
+          "paidPlaces": 1
+        },
+        {
+          "title": "Право",
+          "code": "5.1.",
+          "budgetPlaces": 70,
+          "paidPlaces": 22
+        },
+        {
+          "title": "Экономика",
+          "code": "5.2.",
+          "budgetPlaces": 74,
+          "paidPlaces": 46
+        },
+        {
+          "title": "Психология",
+          "code": "5.3.",
+          "budgetPlaces": 30,
+          "paidPlaces": 5
+        },
+        {
+          "title": "Социология",
+          "code": "5.4.",
+          "budgetPlaces": 14,
+          "paidPlaces": 14
+        },
+        {
+          "title": "Политология",
+          "code": "5.5.",
+          "budgetPlaces": 41,
+          "paidPlaces": 33
+        },
+        {
+          "title": "Исторические науки",
+          "code": "5.6.",
+          "budgetPlaces": 70,
+          "paidPlaces": 6
+        },
+        {
+          "title": "Философия",
+          "code": "5.7.",
+          "budgetPlaces": 33,
+          "paidPlaces": 6
+        },
+        {
+          "title": "Педагогика",
+          "code": "5.8.",
+          "budgetPlaces": 12,
+          "paidPlaces": 14
+        },
+        {
+          "title": "Филология",
+          "code": "5.9.",
+          "budgetPlaces": 100,
+          "paidPlaces": 33
+        },
+        {
+          "title": "Искусствоведение и культурология",
+          "code": "5.10.",
+          "budgetPlaces": 18,
+          "paidPlaces": 11
+        },
+        {
+          "title": "Когнитивные науки",
+          "code": "5.12.",
+          "budgetPlaces": 12,
+          "paidPlaces": 4
+        }
+      ],
+      "note": "Опубликованы КЦП и платные места по группам научных специальностей. Эти цифры не распределены по отдельным программам."
+    },
+    "nextCampaignSourceId": "2027-notice",
+    "campaignDeadlines": [
+      {
+        "kind": "application",
+        "levels": ["бакалавриат", "специалитет"],
+        "category": "поступающие со сдачей ДВИ",
+        "opensOn": "2026-06-20",
+        "closesOn": "2026-07-15",
+        "sourceId": "rules2026",
+        "locator": "п. 24"
+      },
+      {
+        "kind": "application",
+        "levels": ["бакалавриат", "специалитет"],
+        "category": "поступающие без вступительных испытаний по п. 24",
+        "opensOn": "2026-06-20",
+        "closesAt": "2026-07-25T17:00:00+03:00",
+        "sourceId": "rules2026",
+        "locator": "п. 24"
+      },
+      {
+        "kind": "application",
+        "levels": ["магистратура"],
+        "opensOn": "2026-06-20",
+        "closesOn": "2026-08-10",
+        "sourceId": "rules2026",
+        "locator": "п. 35"
+      },
+      {
+        "kind": "enrollment",
+        "levels": ["бакалавриат", "специалитет"],
+        "form": "очная",
+        "fundingType": "budget",
+        "stage": "priority",
+        "consentDeadline": "2026-08-01T12:00:00+03:00",
+        "orderDate": "2026-08-03",
+        "sourceId": "rules2026",
+        "locator": "п. 31"
+      },
+      {
+        "kind": "enrollment",
+        "levels": ["бакалавриат", "специалитет"],
+        "form": "очная",
+        "fundingType": "budget",
+        "stage": "main",
+        "consentDeadline": "2026-08-05T12:00:00+03:00",
+        "orderDate": "2026-08-07",
+        "sourceId": "rules2026",
+        "locator": "п. 31"
+      },
+      {
+        "kind": "enrollment",
+        "levels": ["бакалавриат", "специалитет"],
+        "form": "очная",
+        "fundingType": "budget",
+        "stage": "additional",
+        "consentDeadline": "2026-08-09T12:00:00+03:00",
+        "orderDate": "2026-08-11",
+        "sourceId": "rules2026",
+        "locator": "п. 31"
+      },
+      {
+        "kind": "paid-contract-and-enrollment-notification",
+        "levels": ["бакалавриат", "специалитет"],
+        "fundingType": "paid",
+        "closesOn": "2026-08-15",
+        "sourceId": "admissions",
+        "locator": "Сроки зачисления"
+      },
+      {
+        "kind": "enrollment",
+        "levels": ["магистратура"],
+        "fundingType": "budget",
+        "stage": "main",
+        "consentDeadline": "2026-08-24T12:00:00+03:00",
+        "orderDate": "2026-08-25",
+        "sourceId": "rules2026",
+        "locator": "п. 39"
+      },
+      {
+        "kind": "enrollment",
+        "levels": ["магистратура"],
+        "fundingType": "budget",
+        "stage": "additional",
+        "consentDeadline": "2026-08-26T12:00:00+03:00",
+        "orderDate": "2026-08-27",
+        "sourceId": "rules2026",
+        "locator": "п. 39"
+      }
+    ]
+  },
+  "attemptedSources": [
+    {
+      "url": "https://msu.ru/entrance/pr-b-2026.php",
+      "checkedAt": "2026-11-20T00:47:57.976606+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://edu.msu.ru/depts.shtml",
+      "local": "timed out",
+      "web": "not accessible"
+    },
+    {
+      "url": "https://edu.msu.ru/depts.shtml",
+      "local": "TLS handshake timeout",
+      "web": "not accessible"
+    }
+  ],
+  "gaps": [
+    "ЦПК публикует конкурсные списки 2026. В центральном архиве опубликованные проходные заканчиваются 2025 годом. Два факультетских результата бюджета и два платных результата 2026 подтверждены отдельно.",
+    "Правила МГУ на 2027 год, по сообщению факультета журналистики, ожидаются после 20 января 2027 года. Указанные там сроки помечены как проект.",
+    "Детализированный перечень edu.msu.ru/depts.shtml недоступен. В центральном перечне СПО не найдено.",
+    "Страница подразделений не датирована. Существующие 41 подразделение сохранены.",
+    "Текущая модель требует год для общего email и описания, а для образовательных строк — код и уровень. Вместимость общежитий без года и места аспирантуры по группам также сохранены в доказательствах.",
+    "Карточка МГУ выводит свой каталог конкурсов. Общий образовательный перечень загружается в модели каталога."
+  ]
+}

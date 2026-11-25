@@ -130,6 +130,8 @@ type Notification = {
 export function AccountNotifications() {
   const [items, setItems] = useState<Notification[]>([]);
   const [enabled, setEnabled] = useState(true);
+  const [emailEnabled, setEmailEnabled] = useState(false);
+  const [emailAvailable, setEmailAvailable] = useState(false);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const [loaded, setLoaded] = useState(false);
@@ -138,6 +140,8 @@ export function AccountNotifications() {
       const data = await accountRequest("/api/account/notifications");
       setItems(data.items);
       setEnabled(data.enabled);
+      setEmailEnabled(data.emailEnabled === true);
+      setEmailAvailable(data.emailAvailable === true);
       setLoaded(true);
       setError("");
     } catch (e) {
@@ -173,10 +177,7 @@ export function AccountNotifications() {
   return (
     <div className="account-settings">
       <h2>Уведомления</h2>
-      <p>
-        Напоминания о личных сроках появляются здесь за 7 дней и после просрочки
-        при открытии кабинета. Email-рассылка дедлайнов не подключена.
-      </p>
+      <p>Личные сроки отображаются здесь за 7 дней и после просрочки.</p>
       <label className="account-check">
         <input
           type="checkbox"
@@ -186,6 +187,18 @@ export function AccountNotifications() {
         />
         Напоминать о личных сроках в кабинете
       </label>
+      {(emailAvailable || emailEnabled) && (
+        <label className="account-check">
+          <input
+            type="checkbox"
+            checked={emailEnabled}
+            disabled={!loaded || busy || (!emailAvailable && !emailEnabled)}
+            onChange={(e) => void update({ emailEnabled: e.target.checked })}
+          />
+          Получать письма о предстоящих личных сроках
+          {!emailAvailable && " (рассылка приостановлена)"}
+        </label>
+      )}
       {error && (
         <p role="alert" className="form-error">
           {error}{" "}

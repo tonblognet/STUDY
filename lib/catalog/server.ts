@@ -17,8 +17,13 @@ export function catalogStorage(): "snapshot" | "database" {
 export const getCatalogPublication = cache(async () => {
   await connection();
   if (catalogStorage() === "snapshot") {
-    const { baselineCatalog } = await import("./baseline");
-    return { revisionId: null, publishedAt: null, snapshot: baselineCatalog() };
+    // Generated from repository evidence by `pnpm catalog:generate` (ADR 0006).
+    const { generatedCatalog } = await import("./generated");
+    return {
+      revisionId: null,
+      publishedAt: null,
+      snapshot: generatedCatalog(),
+    };
   }
   return readPublishedCatalog(prisma);
 });

@@ -49,3 +49,6 @@ next-env.d.ts
 *.tsbuildinfo
 __pycache__/
 *.pyc
+
+# generated repository catalog (pnpm catalog:generate, ADR 0006)
+/generated/

@@ -1,0 +1,889 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "mephi",
+  "scope": "НИЯУ МИФИ, головная площадка в Москве. Документы и опубликованные результаты приёма.",
+  "reviewedAtUtc": "2026-11-21T14:37:17.515378Z",
+  "sources": {
+    "documents": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/admission/baccalaureate-and-specialty/documents",
+      "checkedAt": "2026-11-20T00:52:12.381963Z",
+      "sourceSha256": "ce6adb2c9eb10892d87332c0294ee87f356099906841685301c3e366bc7440ff",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 196719
+    },
+    "rules": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/pravila_priema_2026_bak_spec_bez_bvo.pdf",
+      "checkedAt": "2026-11-20T00:52:17.164852Z",
+      "sourceSha256": "f256add42abe46a78dd704f4344fb18df7f2896cf74137add2dc1d9be9e925a2",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 458517
+    },
+    "deadlines": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/22._sroki_provedeniya_priyoma_26.pdf",
+      "checkedAt": "2026-11-20T00:52:15.801644Z",
+      "sourceSha256": "d705aa08138f6eee3960e7014aff95fbf170e5cff149745e74d0e47c872b8185",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 185932
+    },
+    "intake": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/13._spec_napravl_2026_pravka_itog.pdf",
+      "checkedAt": "2026-11-20T00:52:17.913450Z",
+      "sourceSha256": "f2585b7f3ec59adfea1ea0de21c9f065dd02962fd5659babacbd68a7fde5d0b3",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 306519
+    },
+    "kcp": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/kcp_niyau_mifi_2026_7.pdf",
+      "checkedAt": "2026-11-20T00:52:17.955597Z",
+      "sourceSha256": "56e6922ea3f3ad68ed5540f3085ac404db7be7e35b393d8d704f3504bdd303e7",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 207713
+    },
+    "special-quota": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/kcp_osobaya_kvota_2026.pdf",
+      "checkedAt": "2026-11-20T00:52:19.496917Z",
+      "sourceSha256": "0eb32684cae3775fb2aaf902483620676852bf01fa5c145ea4dda2d6e7a95aeb",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 222964
+    },
+    "separate-quota": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/kcp_otdelnaya_kvota_2026.pdf",
+      "checkedAt": "2026-11-20T00:52:19.902201Z",
+      "sourceSha256": "f16555211d5cebf8651359ea96ab43f3f9cfb2e6fa669656685daa6d1985be5c",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 221968
+    },
+    "places-moscow": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/admission/baccalaureate-and-specialty/education/moscow",
+      "checkedAt": "2026-11-20T00:52:16.230607Z",
+      "sourceSha256": "af0d8f10592df8169081340e1a8e9360fcf8a98911fa95a95af1485dd185c986",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 147312
+    },
+    "paid-places": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/kolichestvo_mest_platnoe_1.pdf",
+      "checkedAt": "2026-11-20T00:52:19.402092Z",
+      "sourceSha256": "af9e59dafdf4dfce23bba5fa4d9f93c88294c74b5545f0da4bfc08aedb296440",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 86092
+    },
+    "exam": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/11._ekzameny_2026_moskva_pravka.pdf",
+      "checkedAt": "2026-11-20T00:52:20.198959Z",
+      "sourceSha256": "ecc71aceb601fd87519a37b4afe4adffb1f3cc076ae432c315e7fc4eedb4f84f",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 770903
+    },
+    "special-rights": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/19._osobye_prava_moskva_2026_last_1.pdf",
+      "checkedAt": "2026-11-20T00:52:19.498550Z",
+      "sourceSha256": "94c570016d4c2a45c63249e4baea4319b14f1550aebe89350b55f180adf35c73",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 340556
+    },
+    "achievements": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/4._prilozhenie_1_bak_spec_id_bally_2026_itog_1.pdf",
+      "checkedAt": "2026-11-20T00:52:20.230516Z",
+      "sourceSha256": "5f0067506bfa42908891656071bc1c775a8a86c84f1c16bfb0f9a17b128bfd91",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 515395
+    },
+    "tuition-order-autumn": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://mephi.ru/content/public/uploads/files/education/docs/Platnoe/2027/prikaz_o_stoimosti_osen_2026-2027_uch._god.pdf",
+      "checkedAt": "2026-11-20T00:53:44.520293Z",
+      "sourceSha256": "6814bd1630d70af6dc2e8fe91d84af2357057ff484b94234037a45887e263757",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 1637424
+    },
+    "paid": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/admission/baccalaureate-and-specialty/education/paid-formation",
+      "checkedAt": "2026-11-20T00:52:14.266015Z",
+      "sourceSha256": "f2053ced1d8df9321abce94b9c07c6b67647762f1f07535001805586f488c646",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 196305
+    },
+    "results-2026": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://mephi.ru/press/news/26374",
+      "checkedAt": "2026-11-20T00:53:44.181266Z",
+      "sourceSha256": "ac6bf44eb73440a962cd1009901a05e223a2ee1f4ac2dbb0e153e7c1fc406d90",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 278819
+    },
+    "dorm-count": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/content/public/uploads/documents/2026/main_doc/informaciya_o_kolichestve_mest_v_obshch_2026_vo_sayt.pdf",
+      "checkedAt": "2026-11-20T00:52:15.980160Z",
+      "sourceSha256": "f8bd3d313d497949c5772eb59db1e5130c070d9f028221514124c4a4308ebbdc",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 201593
+    },
+    "entrants": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/lists/entrants",
+      "checkedAt": "2026-11-20T00:53:43.936706Z",
+      "sourceSha256": "60157e5af1428b89936834a3ea81f84dd53b95cdeee98294c527cf238001edb9",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 130872
+    },
+    "ma-2026-documents": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/admission/magistracy/documents",
+      "checkedAt": "2026-11-20T01:15:18.729909Z",
+      "sourceSha256": "26abd395d8a0521b7e0707d3cfd078d1d1bb7851e6c1b971f676ff06c05fc2df",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 134493
+    },
+    "ma-2026-programs": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/admission/magistracy/education/programs",
+      "checkedAt": "2026-11-20T01:15:18.422754Z",
+      "sourceSha256": "1b7a8f47f478d5696e829b7ba7879fac0a93741c9347e08b632b75e98b2e42a5",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 176542
+    },
+    "phd-2026-programs": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/postgraduate/education/programs",
+      "checkedAt": "2026-11-20T01:15:18.743385Z",
+      "sourceSha256": "d93279653c49e77f739a3d05a32b102f8cedcd807a5583e8dd811d2fb391743a",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 150218
+    },
+    "spo-2026-documents": {
+      "sourceYear": 2026,
+      "sourceUrl": "https://admission.mephi.ru/admission/spo/documents",
+      "checkedAt": "2026-11-20T01:15:18.744604Z",
+      "sourceSha256": "017d43c1287220c2c41b8c493098e95fa9fc706cac96382ada75259823b765c5",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 130307
+    },
+    "target-ba": {
+      "sourceYear": null,
+      "sourceUrl": "https://admission.mephi.ru/target-admission-baccalaureate-and-specialty",
+      "checkedAt": "2026-11-20T01:15:18.956454Z",
+      "sourceSha256": "92025ee89c689ab251831fa5dab369496f5fa19a71e6e6f4d7ca143f87b13e9f",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 146059
+    },
+    "passing-archive": {
+      "sourceYear": null,
+      "sourceUrl": "https://admission.mephi.ru/admission/baccalaureate-and-specialty/exams/previous-years",
+      "checkedAt": "2026-11-20T00:52:16.578968Z",
+      "sourceSha256": "0376a28ac0b0860e5b2356b4f30ed24656860a185d8f0275ca10d314789a0ea2",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 196624
+    },
+    "contacts": {
+      "sourceYear": null,
+      "sourceUrl": "https://admission.mephi.ru/about/contacts",
+      "checkedAt": "2026-11-20T00:53:44.491223Z",
+      "sourceSha256": "a4dce80240b3dc93aaf2e3b5f9f986ed48fbcb431157588bf7110efdcc856bc9",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 214044
+    },
+    "dorms-admissions": {
+      "sourceYear": null,
+      "sourceUrl": "https://admission.mephi.ru/about/dorm",
+      "checkedAt": "2026-11-20T00:52:13.442466Z",
+      "sourceSha256": "c3e14de4bfee9fccbbdf7618086e72984a66e5c74ea1a95675af7eb96755dca3",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 141569
+    },
+    "orders": {
+      "sourceYear": null,
+      "sourceUrl": "https://admission.mephi.ru/lists/orders",
+      "checkedAt": "2026-11-20T00:53:44.505011Z",
+      "sourceSha256": "22c8852e11d29c2d55cc9b28a08000475518fa572e7d3b7cb434e93b41290ec4",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 125997
+    },
+    "official-units": {
+      "sourceYear": null,
+      "sourceUrl": "https://mephi.ru/node/18496",
+      "checkedAt": "2026-11-20T00:55:34.007337Z",
+      "sourceSha256": "08c9aa5260d7460e446511fcf75393400cd9811552665bc05a2e398307f75f59",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 392224
+    },
+    "official-programs": {
+      "sourceYear": null,
+      "sourceUrl": "https://mephi.ru/obrdeyat/obrazovatelnye-programmy",
+      "checkedAt": "2026-11-20T00:55:33.932519Z",
+      "sourceSha256": "82e1607bf55de0faf511cce612ffcf737a2fffc889adf32edf6e5d1c901342fc",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 286139
+    },
+    "official-spo": {
+      "sourceYear": null,
+      "sourceUrl": "https://mephi.ru/obrdeyat/obrazovatelnye-programmy/SPO",
+      "checkedAt": "2026-11-20T00:57:11.161685Z",
+      "sourceSha256": "5dd8a4eb893b2e62469d0d908f5f29ec24ab42e609055f58745af2e60fa4a5f2",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 280931
+    },
+    "consolidated-results-2026": {
+      "sourceUrl": "https://mephi.ru/content/public/uploads/files/education/docs/Sveden_Kontingent/2026/svedeniya_o_rezultatah_priema_v_niyau_mifi_moskva_v_2026_g.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-20T01:24:34.032691Z",
+      "sourceSha256": "905611ea8d998fa7612630c04cd22f7cf9910537119a3e793f4b85c69f1137e8",
+      "sourceSha256Basis": "response-bytes",
+      "bytes": 536596
+    }
+  },
+  "campaigns": {
+    "2026": {
+      "academicYear": "2026/2027",
+      "docsIndexSource": "documents",
+      "documents": {
+        "правила приёма": "rules",
+        "направления и специальности": "intake",
+        "КЦП": "kcp",
+        "особая квота": "special-quota",
+        "отдельная квота": "separate-quota",
+        "целевой приём": "target-ba",
+        "платные места": "paid-places",
+        "стоимость осеннего семестра": "tuition-order-autumn",
+        "сроки кампании и зачисления": "deadlines",
+        "испытания и минимумы": "exam",
+        "индивидуальные достижения": "achievements",
+        "особые права, преимущества и БВИ": "special-rights",
+        "программы и расписание внутренних испытаний": "documents"
+      },
+      "announcedFullTimeCodes": [
+        "01.03.02",
+        "03.03.01",
+        "03.03.02",
+        "09.03.01",
+        "09.03.03",
+        "09.03.04",
+        "10.03.01",
+        "11.03.04",
+        "12.03.01",
+        "12.03.03",
+        "12.03.04",
+        "12.03.05",
+        "14.03.01",
+        "14.03.02",
+        "15.03.06",
+        "16.03.01",
+        "16.03.02",
+        "18.03.01",
+        "22.03.01",
+        "27.03.03",
+        "38.03.01",
+        "38.03.02",
+        "38.03.05",
+        "41.03.05",
+        "03.05.02",
+        "10.05.04",
+        "10.05.05",
+        "14.05.01",
+        "14.05.02",
+        "14.05.04",
+        "38.05.01"
+      ],
+      "budgetControlFigures": {
+        "total": 1011,
+        "bachelor": 831,
+        "specialist": 180,
+        "source": "places-moscow",
+        "sourceSection": "Контрольные цифры приёма на 2026/2027 учебный год, итог Москвы"
+      }
+    },
+    "2027": {
+      "academicYear": "2027/2028",
+      "status": "not_found",
+      "checkedSources": [
+        "documents",
+        "ma-2026-documents",
+        "spo-2026-documents"
+      ],
+      "note": "Официальные разделы содержат кампанию 2026 года. Документы на набор 2027 года не найдены.",
+      "checkedAtUtc": "2026-11-21T14:37:17.515378Z"
+    }
+  },
+  "results2026Budget": [
+    {
+      "codes": ["09.03.04"],
+      "titleAsPublished": "Программная инженерия",
+      "year": 2026,
+      "campus": "Москва",
+      "funding": "budget",
+      "value": 300,
+      "status": "verified",
+      "stage": "итоги бюджетного приёма 7 августа 2026 года",
+      "source": "results-2026",
+      "sourceSection": "Итоговая статья, Программная инженерия"
+    },
+    {
+      "codes": ["09.03.01"],
+      "titleAsPublished": "Информатика и вычислительная техника",
+      "year": 2026,
+      "campus": "Москва",
+      "funding": "budget",
+      "value": 300,
+      "status": "verified",
+      "stage": "итоги бюджетного приёма 7 августа 2026 года",
+      "source": "results-2026",
+      "sourceSection": "Итоговая статья, Информатика и вычислительная техника"
+    },
+    {
+      "codes": ["15.03.06"],
+      "titleAsPublished": "Мехатроника",
+      "year": 2026,
+      "campus": "Москва",
+      "funding": "budget",
+      "value": 300,
+      "status": "verified",
+      "stage": "итоги бюджетного приёма 7 августа 2026 года",
+      "source": "results-2026",
+      "sourceSection": "Итоговая статья, Мехатроника",
+      "note": "Включены индивидуальные достижения."
+    },
+    {
+      "codes": ["03.03.01"],
+      "titleAsPublished": "Прикладная математика и физика",
+      "year": 2026,
+      "campus": "Москва",
+      "funding": "budget",
+      "value": 295,
+      "status": "verified",
+      "stage": "итоги бюджетного приёма 7 августа 2026 года",
+      "source": "results-2026",
+      "sourceSection": "Итоговая статья, Прикладная математика и физика",
+      "canonicalTitle": "Прикладные математика и физика"
+    },
+    {
+      "codes": ["14.05.01", "14.05.02"],
+      "titleAsPublished": "Атомные станции и ядерные энергетические установки",
+      "year": 2026,
+      "campus": "Москва",
+      "funding": "budget",
+      "value": 301,
+      "status": "verified",
+      "stage": "итоги бюджетного приёма 7 августа 2026 года",
+      "source": "results-2026",
+      "sourceSection": "Итоговая статья, Атомные станции и ядерные энергетические установки",
+      "note": "301 относится к объединённому конкурсу. Состав группы указан в плане платных мест и сверён с общей строкой КЦП."
+    },
+    {
+      "codes": ["01.03.02"],
+      "titleAsPublished": "Прикладная математика и информатика",
+      "year": 2026,
+      "campus": "Москва",
+      "funding": "budget",
+      "value": null,
+      "status": "bvi_only",
+      "stage": "итоги бюджетного приёма 7 августа 2026 года",
+      "source": "results-2026",
+      "sourceSection": "Итоговая статья, Прикладная математика и информатика",
+      "note": "По общему конкурсу зачислены только поступающие без вступительных испытаний."
+    }
+  ],
+  "results2026Paid": {
+    "year": 2026,
+    "funding": "paid",
+    "status": "not_verified",
+    "value": null,
+    "checkedSources": [
+      "passing-archive",
+      "results-2026",
+      "orders",
+      "entrants",
+      "consolidated-results-2026"
+    ],
+    "note": "Итоговая статья и архив описывают бюджет. Сводка 2026 по Москве публикует число зачисленных. Комиссия указывает, что приказы о зачислении не публикуются. На открытых страницах числовые платные проходные не подтверждены."
+  },
+  "results2025Budget": [
+    {
+      "code": "01.03.02",
+      "title": "Прикладная математика и информатика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 305,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 1"
+    },
+    {
+      "code": "03.03.01",
+      "title": "Прикладные математика и физика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 282,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 2",
+      "note": "В таблице есть несколько результатов для кода. Разделение по конкурсам не указано."
+    },
+    {
+      "code": "03.03.02",
+      "title": "Физика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 282,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 3"
+    },
+    {
+      "code": "03.03.01",
+      "title": "Прикладные математика и физика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 281,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 4",
+      "note": "В таблице есть несколько результатов для кода. Разделение по конкурсам не указано."
+    },
+    {
+      "code": "09.03.01",
+      "title": "Информатика и вычислительная техника",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": null,
+      "status": "bvi_only",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 5"
+    },
+    {
+      "code": "09.03.04",
+      "title": "Программная инженерия",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": null,
+      "status": "bvi_only",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 6"
+    },
+    {
+      "code": "10.03.01",
+      "title": "Информационная безопасность",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 278,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 7"
+    },
+    {
+      "code": "11.03.04",
+      "title": "Электроника и наноэлектроника",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 261,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 8"
+    },
+    {
+      "code": "12.03.04",
+      "title": "Биотехнические системы и технологии",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 272,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 9"
+    },
+    {
+      "code": "12.03.01",
+      "title": "Приборостроение",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 267,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 10"
+    },
+    {
+      "code": "12.03.03",
+      "title": "Фотоника и оптоинформатика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 270,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 11"
+    },
+    {
+      "code": "12.03.05",
+      "title": "Лазерная техника и лазерные технологии",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 266,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 12"
+    },
+    {
+      "code": "14.03.02",
+      "title": "Ядерные физика и технологии",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 272,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 13",
+      "note": "В таблице есть несколько результатов для кода. Разделение по конкурсам не указано."
+    },
+    {
+      "code": "14.03.01",
+      "title": "Ядерная энергетика и теплофизика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 271,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 14"
+    },
+    {
+      "code": "14.03.02",
+      "title": "Ядерные физика и технологии",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 273,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 15",
+      "note": "В таблице есть несколько результатов для кода. Разделение по конкурсам не указано."
+    },
+    {
+      "code": "15.03.06",
+      "title": "Мехатроника и робототехника",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 270,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 16"
+    },
+    {
+      "code": "16.03.01",
+      "title": "Техническая физика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 275,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 17"
+    },
+    {
+      "code": "16.03.02",
+      "title": "Высокотехнологические плазменные и энергетические установки",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 272,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 18"
+    },
+    {
+      "code": "22.03.01",
+      "title": "Материаловедение и технология материалов",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 259,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 19"
+    },
+    {
+      "code": "27.03.03",
+      "title": "Системный анализ и управление",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 270,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 20"
+    },
+    {
+      "code": "38.03.01",
+      "title": "Экономика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 275,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 21"
+    },
+    {
+      "code": "38.03.05",
+      "title": "Бизнес-информатика",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 273,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 22"
+    },
+    {
+      "code": "41.03.05",
+      "title": "Международные отношения",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 272,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 23"
+    },
+    {
+      "code": "09.05.01",
+      "title": "Применение и эксплуатация автоматизированных систем специального назначения",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 275,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 24"
+    },
+    {
+      "code": "10.05.04",
+      "title": "Информационно-аналитические системы безопасности",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 275,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 25"
+    },
+    {
+      "code": "10.05.05",
+      "title": "Безопасность информационных технологий в правоохранительной сфере",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 279,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 26"
+    },
+    {
+      "code": "14.05.01",
+      "title": "Ядерные реакторы и материалы",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": null,
+      "status": "bvi_only",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 27"
+    },
+    {
+      "code": "14.05.02",
+      "title": "Атомные станции: проектирование, эксплуатация и инжиниринг",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 285,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 28"
+    },
+    {
+      "code": "14.05.04",
+      "title": "Электроника и автоматика физических установок",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 269,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 29"
+    },
+    {
+      "code": "38.05.01",
+      "title": "Экономическая безопасность",
+      "year": 2025,
+      "campus": "Москва",
+      "form": "Очная",
+      "funding": "budget",
+      "value": 264,
+      "status": "verified",
+      "source": "passing-archive",
+      "sourceSection": "Проходные баллы очной формы обучения в 2025 году, строка 30"
+    }
+  ],
+  "housing": {
+    "year": 2026,
+    "campus": "Москва",
+    "firstYearHigherEducationPlaces": 800,
+    "source": "dorm-count",
+    "sourceSection": "Страница 1, строка «НИЯУ МИФИ (г. Москва)»"
+  },
+  "admissionsContacts": {
+    "phone": ["+7 495 785 55 25", "+7 800 775 15 51"],
+    "email": "priem@mephi.ru",
+    "source": "contacts",
+    "sourceSection": "Приёмная комиссия, телефон и электронная почта"
+  },
+  "educationReview": {
+    "cataloguePages": 16,
+    "rawRows": 315,
+    "levelsPublished": {
+      "Бакалавриат": 37,
+      "Магистратура": 142,
+      "Аспирантура": 64,
+      "Специалитет": 3
+    },
+    "overlaps": 69
+  },
+  "unmodeledFacts": [
+    {
+      "name": "Факультет повышения квалификации и переподготовки кадров",
+      "sourceUrl": "https://mephi.ru/node/18496",
+      "checkedAt": "2026-11-20T00:55:34.007337Z",
+      "sourceSha256": "08c9aa5260d7460e446511fcf75393400cd9811552665bc05a2e398307f75f59",
+      "sourceSha256Basis": "response-bytes",
+      "sourceYear": null,
+      "sourceSection": "Учебные подразделения, строка 15 таблицы (с заголовком)",
+      "existing": false
+    },
+    {
+      "name": "Факультет иностранных учащихся",
+      "sourceUrl": "https://mephi.ru/node/18496",
+      "checkedAt": "2026-11-20T00:55:34.007337Z",
+      "sourceSha256": "08c9aa5260d7460e446511fcf75393400cd9811552665bc05a2e398307f75f59",
+      "sourceSha256Basis": "response-bytes",
+      "sourceYear": null,
+      "sourceSection": "Учебные подразделения, строка 16 таблицы (с заголовком)",
+      "existing": false
+    },
+    {
+      "name": "Предуниверситарий",
+      "sourceUrl": "https://mephi.ru/node/18496",
+      "checkedAt": "2026-11-20T00:55:34.007337Z",
+      "sourceSha256": "08c9aa5260d7460e446511fcf75393400cd9811552665bc05a2e398307f75f59",
+      "sourceSha256Basis": "response-bytes",
+      "sourceYear": null,
+      "sourceSection": "Учебные подразделения, строка 17 таблицы (с заголовком)",
+      "existing": false
+    },
+    {
+      "name": "Военный учебный центр",
+      "sourceUrl": "https://mephi.ru/node/18496",
+      "checkedAt": "2026-11-20T00:55:34.007337Z",
+      "sourceSha256": "08c9aa5260d7460e446511fcf75393400cd9811552665bc05a2e398307f75f59",
+      "sourceSha256Basis": "response-bytes",
+      "sourceYear": null,
+      "sourceSection": "Учебные подразделения, строка 18 таблицы (с заголовком)",
+      "existing": false
+    }
+  ],
+  "unresolved": [
+    {
+      "kind": "published_places_conflict",
+      "code": "22.03.01",
+      "year": 2026,
+      "funding": "paid",
+      "publishedValues": [
+        {
+          "value": 5,
+          "source": "places-moscow"
+        },
+        {
+          "value": 15,
+          "source": "paid-places"
+        }
+      ],
+      "note": "В таблице сайта указано 5, в связанном PDF указано 15. Требуется редакционная сверка."
+    },
+    {
+      "kind": "shared_competition",
+      "codes": ["14.05.01", "14.05.02"],
+      "year": 2026,
+      "sources": ["results-2026", "kcp", "paid-places"],
+      "note": "Группе относятся общий бюджетный проходной и места. Отдельных значений по кодам нет."
+    },
+    {
+      "kind": "shared_places",
+      "codes": ["09.03.01", "09.03.02", "09.03.03", "09.03.04"],
+      "year": 2026,
+      "sources": ["places-moscow", "paid-places", "intake"],
+      "note": "09.03.02 входит в общую таблицу КЦП и отсутствует в московском перечне объявленного приёма и строке платных мест."
+    },
+    {
+      "kind": "tuition_period",
+      "year": 2026,
+      "source": "tuition-order-autumn",
+      "note": "Приказ устанавливает тариф за осенний семестр. Годовая стоимость этим приказом не подтверждена."
+    },
+    {
+      "kind": "unknown_unit_source_year",
+      "source": "official-units",
+      "note": "У четырёх новых подразделений не указан год. Названия и локаторы сохранены в unmodeledFacts."
+    }
+  ],
+  "catalogueResultCodes": ["03.03.01", "09.03.01", "15.03.06"]
+}

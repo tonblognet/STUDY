@@ -18,6 +18,17 @@ const profile = (
 });
 
 describe("детерминированный подбор", () => {
+  it("checks HSE alternatives without treating the paid archive as a current minimum", () => {
+    const math = programs.find((program) => program.slug === "hse-math")!;
+    expect(math.paidPassingHistory?.[0].value).toBe(250);
+    const scores = { Математика: 75, "Русский язык": 65, Физика: 69 };
+    expect(matchProgram(math, profile(scores)).eligibility).toBe("ineligible");
+    const result = matchProgram(math, profile({ ...scores, Информатика: 70 }));
+    expect(result.eligibility).toBe("eligible");
+    expect(result.consideredScore).toBe(210);
+    expect(result.passingScore).toBe(282);
+    expect(result.margin).toBeNull();
+  });
   it("выбирает лучший допустимый альтернативный предмет", () => {
     const result = matchProgram(
       hse,
@@ -113,5 +124,83 @@ describe("полнота карточки", () => {
     expect(calculateCompleteness(partial).percent).toBeLessThan(
       calculateCompleteness(hse).percent,
     );
+  });
+});
+
+describe("очные конкурсы МЭИ и РУДН 2026", () => {
+  const ids = ["mpei-applied-informatics", "rudn-ami"];
+  const required = { Математика: 40, "Русский язык": 40 };
+
+  it.each(ids)("применяет отдельные минимумы альтернатив в %s", (id) => {
+    const program = programs.find((item) => item.id === id)!;
+    const physics = matchProgram(
+      program,
+      profile({ ...required, Физика: 41 }, { individualAchievements: 10 }),
+    );
+    expect(physics.eligibility).toBe("eligible");
+    expect(physics.consideredScore).toBe(131);
+    const informatics = matchProgram(
+      program,
+      profile({ ...required, Информатика: 45 }),
+    );
+    expect(informatics.eligibility).toBe("ineligible");
+    expect(informatics.blockers).toContain("Информатика: 45, минимум 46");
+    expect(
+      matchProgram(program, profile({ ...required, Информатика: 46 }))
+        .consideredScore,
+    ).toBe(126);
+    expect(program.minScore).toBeNull();
+  });
+
+  it("сравнивает балл МЭИ с ориентиром 2025 и сохраняет результат 2026 в истории", () => {
+    const program = programs.find((item) => item.id === ids[0])!;
+    const result = matchProgram(
+      program,
+      profile({ Математика: 90, "Русский язык": 90, Информатика: 90 }),
+    );
+    expect(result.eligibility).toBe("eligible");
+    expect(result.passingScore).toBe(261);
+    expect(result.margin).toBe(9);
+    expect(program.passingScoreValue.year).toBe(2025);
+    expect(
+      program.passingHistory.find((row) => row.year === 2026),
+    ).toMatchObject({
+      value: 269,
+      year: 2026,
+      sourceUrl: "https://pk.mpei.ru/inform/enrolled35ebacc.html",
+    });
+    expect(program.quotas.general.value).toBeNull();
+  });
+
+  it("оценивает минимумы РУДН без сравнения с многопрофильным конкурсом 2025", () => {
+    const program = programs.find((item) => item.id === ids[1])!;
+    const result = matchProgram(
+      program,
+      profile({ Математика: 90, "Русский язык": 90, Информатика: 90 }),
+    );
+    expect(result.eligibility).toBe("eligible");
+    expect(result.consideredScore).toBe(270);
+    expect(result.margin).toBeNull();
+    expect(result.passingScore).toBeNull();
+    expect(program.passingHistory).toHaveLength(0);
+    expect(program.quotas.general).toMatchObject({
+      status: "conflicting_sources",
+      value: null,
+    });
+    expect(program.paidPlacesValue.value).toBe(17);
+    expect(program.tuitionValue.value).toBe(285_000);
+  });
+
+  it("оставляет пять неполных конкурсов в редакционной очереди", () => {
+    for (const id of [
+      ...ids,
+      "mipt-ami",
+      "rea-international-law",
+      "mephi-nuclear",
+    ]) {
+      const program = programs.find((item) => item.id === id)!;
+      expect(program.trust.status).toBe("pending_review");
+      expect(program.verified).toBe(false);
+    }
   });
 });

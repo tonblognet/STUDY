@@ -27,7 +27,7 @@ describe("Moscow university directory", () => {
     expect(new Set(universities.map((u) => u.slug)).size).toBe(
       universities.length,
     );
-    expect(programs).toHaveLength(185);
+    expect(programs).toHaveLength(305);
     expect(programs.filter((p) => p.universitySlug === "mgu")).toHaveLength(85);
   });
 

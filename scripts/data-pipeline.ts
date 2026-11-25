@@ -1,3 +1,4 @@
+import "../lib/catalog/repository-sources";
 import { createHash } from "node:crypto";
 import { validAggregateScore } from "../data-sources/core/score-range";
 import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
@@ -125,6 +126,13 @@ function sourcedFields(
     ...program.passingHistory.map(
       (item) =>
         ["passing_score_general", item] as [string, SourcedValue<unknown>],
+    ),
+    ...(program.paidPassingHistory ?? []).map(
+      (item) => ["passing_score_paid", item] as [string, SourcedValue<unknown>],
+    ),
+    ...(program.admissionConditions ?? []).map(
+      (item) =>
+        ["admission_condition", item] as [string, SourcedValue<unknown>],
     ),
     ...program.placesHistory.map(
       (item) => ["budget_places", item] as [string, SourcedValue<unknown>],

@@ -1,0 +1,4916 @@
+{
+  "schemaVersion": 1,
+  "batchDateMoscow": "2026-11-18",
+  "generatedAt": "2026-11-18T00:45:18.913450+00:00",
+  "scope": "hse_education_pathway_contexts_master_aspirantura_russian_doctorate_and_spo_discovery",
+  "universitySlug": "hse",
+  "campuses": ["Москва", "Нижний Новгород", "Санкт-Петербург", "Пермь"],
+  "contexts": [
+    {
+      "key": "master",
+      "title": "Магистратура",
+      "status": "verified",
+      "year": 2026,
+      "priorEducation": "Высшее образование любого уровня, подтверждённое документом установленного образца.",
+      "admissionBasis": "Вступительные испытания выбранной программы: экзамен, портфолио или их сочетание. Состав нужно проверять по программе и кампусу.",
+      "dates": [
+        {
+          "label": "Приём документов: 20 июня — 8 августа 2026, до 17:00 МСК",
+          "year": 2026,
+          "startDate": "2026-06-20",
+          "endDate": "2026-08-08",
+          "timeMoscow": "17:00",
+          "sourceIds": ["ma-information"]
+        },
+        {
+          "label": "Вступительные испытания: 20 июня — 19 августа 2026",
+          "year": 2026,
+          "startDate": "2026-06-20",
+          "endDate": "2026-08-19",
+          "timeMoscow": null,
+          "sourceIds": ["ma-information"]
+        },
+        {
+          "label": "Согласие на основной этап бюджетного зачисления: до 24 августа 2026, 12:00 МСК",
+          "year": 2026,
+          "startDate": null,
+          "endDate": "2026-08-24",
+          "timeMoscow": "12:00",
+          "sourceIds": ["ma-information"]
+        },
+        {
+          "label": "Договоры на платное обучение: не позднее 28 августа 2026",
+          "year": 2026,
+          "startDate": null,
+          "endDate": "2026-08-28",
+          "timeMoscow": null,
+          "sourceIds": ["ma-information"]
+        }
+      ],
+      "notes": [
+        "Минимум обычного вступительного испытания — 21 из 100; портфолио — 31 из 100. Для иностранного языка действует отдельное приложение.",
+        "Минимум для подачи не является историческим проходным баллом и не гарантирует зачисление.",
+        "Для подачи нужны заявление, согласие на обработку данных, удостоверение личности, документ о высшем образовании, фотография; дополнительные документы зависят от программы и обстоятельств поступающего.",
+        "ВШЭ проводит отдельный конкурс в Москве и каждом филиале. Состав испытаний не переносится между кампусами автоматически.",
+        "Сроки относятся к кампании 2026 года. Следующий приём проверяется отдельно."
+      ],
+      "sources": [
+        {
+          "id": "ma-information",
+          "url": "https://ma.hse.ru/information",
+          "title": "Информирование о приёме в магистратуру — 2026",
+          "checkedAt": "2026-11-18T00:36:41.680189+00:00"
+        },
+        {
+          "id": "ma-rules-pdf",
+          "url": "https://ma.hse.ru/mirror/pubs/share/1170485582.pdf",
+          "title": "Правила приёма в магистратуру, изменения по 28.05.2026",
+          "checkedAt": "2026-11-18T00:37:42.453188+00:00"
+        },
+        {
+          "id": "ma-rules",
+          "url": "https://ma.hse.ru/priem",
+          "title": "Документы и правила приёма в магистратуру — 2026",
+          "checkedAt": "2026-11-18T00:36:41.136747+00:00"
+        },
+        {
+          "id": "ma-entrance",
+          "url": "https://ma.hse.ru/entrance",
+          "title": "Программы магистратуры и состав вступительных испытаний",
+          "checkedAt": "2026-11-18T00:36:41.269842+00:00"
+        },
+        {
+          "id": "ma-english-pdf",
+          "url": "https://ma.hse.ru/mirror/pubs/share/1120662495.pdf",
+          "title": "Приложение 7: минимальные баллы по иностранному языку",
+          "checkedAt": "2026-11-18T00:37:42.770839+00:00"
+        }
+      ],
+      "examples": [
+        {
+          "title": "Математика / Mathematics",
+          "campus": "Москва",
+          "programUrl": "https://www.hse.ru/ma/math/",
+          "admissionBasis": "Математика, письменный экзамен очно",
+          "status": "verified",
+          "sourceIds": ["ma-entrance", "ma-rules"],
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "row": 4
+          },
+          "admissionYear": 2026
+        },
+        {
+          "title": "Анализ данных в биологии и медицине",
+          "campus": "Москва",
+          "programUrl": "https://www.hse.ru/ma/adbm/",
+          "admissionBasis": "Конкурсный отбор: портфолио",
+          "status": "verified",
+          "sourceIds": ["ma-entrance", "ma-rules"],
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "row": 7
+          },
+          "admissionYear": 2026
+        }
+      ]
+    },
+    {
+      "key": "aspirantura",
+      "title": "Аспирантура",
+      "status": "verified",
+      "year": 2026,
+      "priorEducation": "Специалитет или магистратура. Обучение в аспирантуре — очное.",
+      "admissionBasis": "Портфолио, научная специальность и иностранный язык. Программу испытаний нужно проверять для выбранного конкурса.",
+      "dates": [
+        {
+          "label": "Приём документов: 20 июня — 17 августа 2026, до 18:00 МСК",
+          "year": 2026,
+          "startDate": "2026-06-20",
+          "endDate": "2026-08-17",
+          "timeMoscow": "18:00",
+          "sourceIds": ["asp-docs"]
+        },
+        {
+          "label": "Вступительные испытания: 1–18 сентября 2026",
+          "year": 2026,
+          "startDate": "2026-09-01",
+          "endDate": "2026-09-18",
+          "timeMoscow": null,
+          "sourceIds": ["asp-procedure"]
+        }
+      ],
+      "notes": [
+        "В 2026 году ВШЭ не ведёт приём на места с оплатой стоимости обучения. Это не означает цену 0 рублей.",
+        "Испытания оцениваются по 50-балльной шкале. Правила называют оценку «до 15 баллов» неудовлетворительной; отдельный числовой минимум в этом пакете не вычислен.",
+        "По правилам основной иностранный язык — английский. Другие перечисленные языки доступны школам филологических, исторических и философских наук.",
+        "Портфолио — обязательный документ по изменению правил от 12 августа 2026. На странице подачи документов сохранился более ранний перечень.",
+        "Бюджетные места опубликованы для программ и групп программ. Они не являются индивидуальными квотами каждой научной специальности.",
+        "Текущий перечень из 89 строк научных специальностей не подтверждает набор 2026 для каждой строки."
+      ],
+      "sources": [
+        {
+          "id": "asp-rules-current-docx",
+          "url": "https://www.hse.ru/data/xf/536/786/0191/Правила приема (с изм. 2026).docx",
+          "title": "Правила аспирантуры с изменениями от 12.08.2026",
+          "checkedAt": "2026-11-18T00:38:42.877514+00:00"
+        },
+        {
+          "id": "asp-canonical",
+          "url": "https://www.hse.ru/docs/1123577082.html",
+          "title": "Официальная карточка правил аспирантуры, включая изменение 12.08.2026",
+          "checkedAt": "2026-11-18T00:38:15.872430+00:00"
+        },
+        {
+          "id": "asp-rules-august-amendment",
+          "url": "https://www.hse.ru/data/xf/091/484/0256/Приказ.docx",
+          "title": "Приказ № 6.18-01/120826-2 от 12.08.2026",
+          "checkedAt": "2026-11-18T00:38:43.125840+00:00"
+        },
+        {
+          "id": "asp-docs",
+          "url": "https://aspirantura.hse.ru/perechen",
+          "title": "Подача документов для поступления в аспирантуру — 2026",
+          "checkedAt": "2026-11-18T00:36:40.824427+00:00"
+        },
+        {
+          "id": "asp-procedure",
+          "url": "https://aspirantura.hse.ru/prog_vstup",
+          "title": "Порядок сдачи вступительных испытаний в аспирантуру — 2026",
+          "checkedAt": "2026-11-18T00:36:40.744069+00:00"
+        },
+        {
+          "id": "asp-exam",
+          "url": "https://aspirantura.hse.ru/programmes2026",
+          "title": "Программы вступительных испытаний в аспирантуру — 2026",
+          "checkedAt": "2026-11-18T00:36:40.101372+00:00"
+        },
+        {
+          "id": "asp-places",
+          "url": "https://aspirantura.hse.ru/kcp2026",
+          "title": "Количество бюджетных мест в аспирантуре — 2026",
+          "checkedAt": "2026-11-18T00:36:40.654109+00:00"
+        },
+        {
+          "id": "asp-price",
+          "url": "https://aspirantura.hse.ru/fares",
+          "title": "Стоимость обучения в аспирантуре: платного набора в 2026 нет",
+          "checkedAt": "2026-11-18T00:36:42.530034+00:00"
+        }
+      ],
+      "examples": [
+        {
+          "title": "Математика и механика: 1.1.1. Вещественный, комплексный и функциональный анализ",
+          "campus": "Москва",
+          "programUrl": "https://aspirantura.hse.ru/math/",
+          "status": "verified",
+          "admissionYear": 2026,
+          "sourceIds": ["asp-admission-moscow"],
+          "sourceLocator": {
+            "type": "pdf_table",
+            "page": 1,
+            "table": 1,
+            "row": 2
+          }
+        }
+      ]
+    },
+    {
+      "key": "doctorate",
+      "title": "Докторантура",
+      "status": "unknown",
+      "year": null,
+      "priorEducation": "Требования ВШЭ к предыдущей квалификации нужно уточнить у Управления аспирантуры и докторантуры.",
+      "admissionBasis": "На официальной странице ВШЭ опубликован контакт по подготовке и защите докторской диссертации. Отдельные условия набора в российскую докторантуру не подтверждены.",
+      "dates": [
+        {
+          "label": "Подтверждённые сроки отдельного набора не опубликованы в проверенной странице",
+          "year": null,
+          "startDate": null,
+          "endDate": null,
+          "timeMoscow": null,
+          "sourceIds": ["asp-doctor"]
+        }
+      ],
+      "notes": [
+        "Российская докторантура учитывается отдельно от аспирантуры; английское название Doctoral Programmes на сайте аспирантуры не подтверждает российский докторский набор.",
+        "Программы, научные направления приёма, требования, число мест, стоимость и сроки набора 2026 остаются неизвестны.",
+        "По вопросам подготовки и защиты докторской диссертации ВШЭ направляет к Кобзарь Елене Николаевне, начальнику Управления аспирантуры и докторантуры."
+      ],
+      "sources": [
+        {
+          "id": "asp-doctor",
+          "url": "https://aspirantura.hse.ru/doct",
+          "title": "Докторские диссертации: официальный контакт ВШЭ",
+          "checkedAt": "2026-11-18T00:36:40.552177+00:00"
+        },
+        {
+          "id": "doctor-contact",
+          "url": "https://www.hse.ru/org/persons/148038",
+          "title": "Кобзарь Елена Николаевна: официальный профиль",
+          "checkedAt": "2026-11-18T00:38:15.948506+00:00"
+        }
+      ],
+      "examples": []
+    },
+    {
+      "key": "college",
+      "title": "Колледжи и СПО",
+      "status": "unknown",
+      "year": null,
+      "priorEducation": "Требования к предыдущему образованию проверяются по правилам конкретного колледжа и специальности.",
+      "admissionBasis": "Собственные действующие программы СПО НИУ ВШЭ в проверенных официальных материалах пока не подтверждены.",
+      "dates": [
+        {
+          "label": "Подтверждённые сроки приёма на собственные программы СПО ВШЭ не найдены",
+          "year": null,
+          "startDate": null,
+          "endDate": null,
+          "timeMoscow": null,
+          "sourceIds": ["hse-levels"]
+        }
+      ],
+      "notes": [
+        "Статус «не подтверждено» не означает, что программ СПО точно нет.",
+        "В проверенном перечне уровней образования четырёх кампусов ВШЭ есть высшее образование, лицей и дополнительные программы; отдельный подтверждённый набор СПО не найден.",
+        "Одноимённые сторонние колледжи и лицей ВШЭ не выдаются за собственные программы СПО университета.",
+        "Страницы Колледжа информатики и программирования Финансового университета дали HTTP 403; поисковые выдержки не использованы для публикации условий."
+      ],
+      "sources": [
+        {
+          "id": "hse-levels",
+          "url": "https://www.hse.ru/sveden/education/58898a2d-b686-41e5-afc2-4fc1b9d20bde/",
+          "title": "Реализуемые уровни образования во всех четырёх кампусах ВШЭ",
+          "checkedAt": "2026-11-18T00:38:16.252583+00:00"
+        },
+        {
+          "id": "hse-education",
+          "url": "https://www.hse.ru/sveden/education/",
+          "title": "Сведения об образовательной организации: раздел «Образование»",
+          "checkedAt": "2026-11-18T00:36:01.825804+00:00"
+        }
+      ],
+      "examples": []
+    }
+  ],
+  "facts": [
+    {
+      "key": "master.priorEducation",
+      "value": "Высшее образование любого уровня",
+      "status": "verified",
+      "year": 2026,
+      "sourceId": "ma-rules-pdf",
+      "sourceLocator": {
+        "type": "pdf_section",
+        "page": 2,
+        "section": "2.2"
+      }
+    },
+    {
+      "key": "master.minimumExamScore",
+      "value": 21,
+      "maxScore": 100,
+      "exclusions": ["portfolio", "foreign_language"],
+      "status": "verified",
+      "year": 2026,
+      "sourceId": "ma-rules-pdf",
+      "sourceLocator": {
+        "type": "pdf_section",
+        "page": 9,
+        "section": "2.18"
+      }
+    },
+    {
+      "key": "master.minimumPortfolioScore",
+      "value": 31,
+      "maxScore": 100,
+      "status": "verified",
+      "year": 2026,
+      "sourceId": "ma-rules-pdf",
+      "sourceLocator": {
+        "type": "pdf_section",
+        "page": 9,
+        "section": "2.18"
+      }
+    },
+    {
+      "key": "master.foreignLanguageMinimum",
+      "value": [
+        {
+          "programTitle": "Мировая экономика",
+          "minimum": 41
+        },
+        {
+          "programTitle": "Глобальная и региональная история / Global and Regional History",
+          "campus": "Санкт-Петербург",
+          "minimum": 41
+        },
+        {
+          "programTitle": "Когнитивные науки и технологии: от нейрона к познанию / Cognitive sciences and technologies: from neuron to cognition",
+          "minimum": 51
+        }
+      ],
+      "maxScore": 100,
+      "status": "verified",
+      "year": 2026,
+      "sourceId": "ma-english-pdf",
+      "sourceLocator": {
+        "type": "pdf_page",
+        "page": 1,
+        "section": "Приложение 7"
+      }
+    },
+    {
+      "key": "aspirantura.priorEducationAndForm",
+      "value": {
+        "priorEducation": ["специалитет", "магистратура"],
+        "studyForm": "очная"
+      },
+      "status": "verified",
+      "year": 2026,
+      "sourceId": "asp-rules-current-docx",
+      "sourceLocator": {
+        "type": "docx_paragraph",
+        "part": "word/document.xml",
+        "xpath": "(//w:p)[21]",
+        "paragraph": 21
+      }
+    },
+    {
+      "key": "aspirantura.requiredPortfolio",
+      "value": true,
+      "status": "verified",
+      "year": 2026,
+      "sourceId": "asp-rules-current-docx",
+      "sourceLocator": {
+        "type": "docx_paragraph",
+        "part": "word/document.xml",
+        "xpath": "(//w:p)[51]",
+        "paragraph": 51
+      },
+      "amendmentSourceId": "asp-rules-august-amendment"
+    },
+    {
+      "key": "aspirantura.examComponents",
+      "value": ["портфолио", "научная специальность", "иностранный язык"],
+      "status": "verified",
+      "year": 2026,
+      "sourceId": "asp-rules-current-docx",
+      "sourceLocator": {
+        "type": "docx_paragraph",
+        "part": "word/document.xml",
+        "xpath": "(//w:p)[88]",
+        "paragraph": 88
+      }
+    },
+    {
+      "key": "aspirantura.scoreScaleAndThreshold",
+      "value": {
+        "maxScore": 50,
+        "minimumAcceptedScore": null,
+        "unacceptableScoreWording": "Оценка до 15 баллов ... считается неудовлетворительной",
+        "minimumStatus": "pending_review"
+      },
+      "status": "verified_wording_only",
+      "year": 2026,
+      "sourceId": "asp-rules-current-docx",
+      "sourceLocator": {
+        "type": "docx_paragraph",
+        "part": "word/document.xml",
+        "xpath": "(//w:p)[92]",
+        "paragraph": 92
+      }
+    },
+    {
+      "key": "aspirantura.paidAdmissionOpen",
+      "value": false,
+      "annualPriceRub": null,
+      "priceStatus": "not_applicable_to_2026_paid_intake",
+      "status": "verified",
+      "year": 2026,
+      "sourceId": "asp-price",
+      "sourceLocator": {
+        "type": "html_text",
+        "heading": "Стоимость обучения в аспирантуре",
+        "textAnchor": "В 2026 году прием на места с оплатой стоимости обучения не ведется."
+      }
+    },
+    {
+      "key": "doctorate.admissions2026",
+      "value": null,
+      "status": "unknown",
+      "year": 2026,
+      "sourceId": "asp-doctor",
+      "sourceLocator": {
+        "type": "html_text",
+        "heading": "Докторские диссертации",
+        "textAnchor": "По вопросам подготовки и защиты докторской диссертации"
+      }
+    },
+    {
+      "key": "college.hseOwnCurrentSpoProgrammes",
+      "value": null,
+      "status": "unknown",
+      "year": null,
+      "sourceId": "hse-levels",
+      "sourceLocator": {
+        "type": "html_headings",
+        "selectors": ["h4", "h6"],
+        "scope": "Москва; Нижний Новгород; Пермь; Санкт-Петербург"
+      },
+      "note": "No СПО subsection found in this checked source; no negative claim about the university is inferred."
+    }
+  ],
+  "sources": [
+    {
+      "id": "ma-information",
+      "title": "Информирование о приёме в магистратуру — 2026",
+      "url": "https://ma.hse.ru/information",
+      "finalUrl": "https://ma.hse.ru/information",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:36:41.680189+00:00",
+      "checkedAt": "2026-11-18T00:36:41.680189+00:00",
+      "httpStatus": 200,
+      "bytes": 171184,
+      "sha256": "6309fe9926a5ff7e3b4da235a1c18a4c112977cce26fcd5f1bf7fb2dbf8f80b3",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/ma-information.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "ma-rules",
+      "title": "Документы и правила приёма в магистратуру — 2026",
+      "url": "https://ma.hse.ru/priem",
+      "finalUrl": "https://ma.hse.ru/priem",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:36:41.136747+00:00",
+      "checkedAt": "2026-11-18T00:36:41.136747+00:00",
+      "httpStatus": 200,
+      "bytes": 164720,
+      "sha256": "49748936be0bc232ac5140208815ab7eb705d312903530e9eab829a1f46a9403",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/ma-rules.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "ma-rules-pdf",
+      "title": "Правила приёма в магистратуру, изменения по 28.05.2026",
+      "url": "https://ma.hse.ru/mirror/pubs/share/1170485582.pdf",
+      "finalUrl": "https://ma.hse.ru/mirror/pubs/share/1170485582.pdf",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:37:42.453188+00:00",
+      "checkedAt": "2026-11-18T00:37:42.453188+00:00",
+      "httpStatus": 200,
+      "bytes": 496936,
+      "sha256": "6ea59794d71026c27d597bd4f164b8b2da7211e94c54eef7c5b5820de3314b11",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/ma-rules-pdf.pdf",
+      "rawCaptureTracked": false,
+      "pageCount": 16
+    },
+    {
+      "id": "ma-english-pdf",
+      "title": "Приложение 7: минимальные баллы по иностранному языку",
+      "url": "https://ma.hse.ru/mirror/pubs/share/1120662495.pdf",
+      "finalUrl": "https://ma.hse.ru/mirror/pubs/share/1120662495.pdf",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:37:42.770839+00:00",
+      "checkedAt": "2026-11-18T00:37:42.770839+00:00",
+      "httpStatus": 200,
+      "bytes": 394623,
+      "sha256": "07a04963158e1eb7f83f0a9f81c1c002140daa5a2b34dbda2fa05bf3be3b6604",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/ma-english-pdf.pdf",
+      "rawCaptureTracked": false,
+      "pageCount": 1
+    },
+    {
+      "id": "ma-entrance",
+      "title": "Программы магистратуры и состав вступительных испытаний",
+      "url": "https://ma.hse.ru/entrance",
+      "finalUrl": "https://ma.hse.ru/entrance",
+      "sourceType": "official_university_page",
+      "sourceYear": null,
+      "retrievedAt": "2026-11-18T00:36:41.269842+00:00",
+      "checkedAt": "2026-11-18T00:36:41.269842+00:00",
+      "httpStatus": 200,
+      "bytes": 237648,
+      "sha256": "185ec7f49eec528ccdfb7c6f3e0f30d80965f3e978094559fc6f31a1cd79629f",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/ma-entrance.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-rules",
+      "title": "Приём в аспирантуру — 2026: правила и кампусные перечни",
+      "url": "https://aspirantura.hse.ru/rules2026",
+      "finalUrl": "https://aspirantura.hse.ru/rules2026",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:36:40.104575+00:00",
+      "checkedAt": "2026-11-18T00:36:40.104575+00:00",
+      "httpStatus": 200,
+      "bytes": 124188,
+      "sha256": "a2575e250fe2a8231f51d5ead688169f4d1f258f0d3ca99bee0c4b3ba2edf680",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-rules.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-canonical",
+      "title": "Официальная карточка правил аспирантуры, включая изменение 12.08.2026",
+      "url": "https://www.hse.ru/docs/1123577082.html",
+      "finalUrl": "https://www.hse.ru/docs/1123577082.html",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:38:15.872430+00:00",
+      "checkedAt": "2026-11-18T00:38:15.872430+00:00",
+      "httpStatus": 200,
+      "bytes": 41024,
+      "sha256": "cefe774c491508f1e9c28599a4b697c740524e6b45b417288e108b544cb757c6",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-canonical.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-rules-current-docx",
+      "title": "Правила аспирантуры с изменениями от 12.08.2026",
+      "url": "https://www.hse.ru/data/xf/536/786/0191/Правила приема (с изм. 2026).docx",
+      "finalUrl": "https://www.hse.ru/data/xf/536/786/0191/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0%20(%D1%81%20%D0%B8%D0%B7%D0%BC.%202026).docx",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:38:42.877514+00:00",
+      "checkedAt": "2026-11-18T00:38:42.877514+00:00",
+      "httpStatus": 200,
+      "bytes": 55134,
+      "sha256": "0b7d36f3b878e6bb30b46e323c8e79da14ea81f21054fcfb425553fb8b89c1e4",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-rules-current-docx.docx",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-rules-august-amendment",
+      "title": "Приказ № 6.18-01/120826-2 от 12.08.2026",
+      "url": "https://www.hse.ru/data/xf/091/484/0256/Приказ.docx",
+      "finalUrl": "https://www.hse.ru/data/xf/091/484/0256/%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7.docx",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:38:43.125840+00:00",
+      "checkedAt": "2026-11-18T00:38:43.125840+00:00",
+      "httpStatus": 200,
+      "bytes": 34673,
+      "sha256": "8882b15435632875bf99ad107a48c3a45bd93137dc7956f280a4451e7b7593ad",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-rules-august-amendment.docx",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-rules-pdf",
+      "title": "Правила аспирантуры, редакция PDF по 19.06.2026",
+      "url": "https://aspirantura.hse.ru/mirror/pubs/share/1193464735",
+      "finalUrl": "https://aspirantura.hse.ru/mirror/pubs/share/1193464735",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:37:41.370616+00:00",
+      "checkedAt": "2026-11-18T00:37:41.370616+00:00",
+      "httpStatus": 200,
+      "bytes": 500416,
+      "sha256": "6321ac649e33218eaa5e008d5b0410397372061889b785b1b047183ba2fdf9f5",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-rules-pdf.pdf",
+      "rawCaptureTracked": false,
+      "pageCount": 16
+    },
+    {
+      "id": "asp-docs",
+      "title": "Подача документов для поступления в аспирантуру — 2026",
+      "url": "https://aspirantura.hse.ru/perechen",
+      "finalUrl": "https://aspirantura.hse.ru/perechen",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:36:40.824427+00:00",
+      "checkedAt": "2026-11-18T00:36:40.824427+00:00",
+      "httpStatus": 200,
+      "bytes": 133117,
+      "sha256": "a3008ccd38a491a449f79cba39939d39e9ea689c7913f8763a8bcfbde8ac089a",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-docs.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-procedure",
+      "title": "Порядок сдачи вступительных испытаний в аспирантуру — 2026",
+      "url": "https://aspirantura.hse.ru/prog_vstup",
+      "finalUrl": "https://aspirantura.hse.ru/prog_vstup",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:36:40.744069+00:00",
+      "checkedAt": "2026-11-18T00:36:40.744069+00:00",
+      "httpStatus": 200,
+      "bytes": 127608,
+      "sha256": "851529f540b713ba11b2fb35b834157875c83646be72fc020c1e9333144bd95e",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-procedure.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-exam",
+      "title": "Программы вступительных испытаний в аспирантуру — 2026",
+      "url": "https://aspirantura.hse.ru/programmes2026",
+      "finalUrl": "https://aspirantura.hse.ru/programmes2026",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:36:40.101372+00:00",
+      "checkedAt": "2026-11-18T00:36:40.101372+00:00",
+      "httpStatus": 200,
+      "bytes": 142774,
+      "sha256": "0b1a563304a0e885c236122d72fb0a89bad31275777e28a633b73072fc544197",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-exam.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-places",
+      "title": "Количество бюджетных мест в аспирантуре — 2026",
+      "url": "https://aspirantura.hse.ru/kcp2026",
+      "finalUrl": "https://aspirantura.hse.ru/kcp2026",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:36:40.654109+00:00",
+      "checkedAt": "2026-11-18T00:36:40.654109+00:00",
+      "httpStatus": 200,
+      "bytes": 136831,
+      "sha256": "9ad1c1062c5a774e1a28839e3089eed81229b0b14be89fb98a7bf9d2ba6dd988",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-places.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-price",
+      "title": "Стоимость обучения в аспирантуре: платного набора в 2026 нет",
+      "url": "https://aspirantura.hse.ru/fares",
+      "finalUrl": "https://aspirantura.hse.ru/fares",
+      "sourceType": "official_university_page",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:36:42.530034+00:00",
+      "checkedAt": "2026-11-18T00:36:42.530034+00:00",
+      "httpStatus": 200,
+      "bytes": 123061,
+      "sha256": "f575f9e9cba856335bc1c7fb3dada55d3abfa4ffa54f040a276a82255c4c2b8a",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-price.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-admission-moscow",
+      "title": "Перечень программ и научных специальностей аспирантуры 2026: Москва",
+      "url": "https://aspirantura.hse.ru/mirror/pubs/share/1120769614",
+      "finalUrl": "https://aspirantura.hse.ru/mirror/pubs/share/1120769614",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:39:10.168337+00:00",
+      "checkedAt": "2026-11-18T00:39:10.168337+00:00",
+      "httpStatus": 200,
+      "bytes": 417548,
+      "sha256": "f3812685b58841b8231d32eb3fa8d6b36c620de0bc4b3633612bd777669c1f53",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-admission-moscow.pdf",
+      "rawCaptureTracked": false,
+      "pageCount": 6
+    },
+    {
+      "id": "asp-admission-nnov",
+      "title": "Перечень программ и научных специальностей аспирантуры 2026: Нижний Новгород",
+      "url": "https://aspirantura.hse.ru/mirror/pubs/share/1120757272",
+      "finalUrl": "https://aspirantura.hse.ru/mirror/pubs/share/1120757272",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:39:10.493665+00:00",
+      "checkedAt": "2026-11-18T00:39:10.493665+00:00",
+      "httpStatus": 200,
+      "bytes": 386838,
+      "sha256": "de2180163c452e5ed333b3bb997d16d3d0d49923f583e069f90a2587a8394b3b",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-admission-nnov.pdf",
+      "rawCaptureTracked": false,
+      "pageCount": 2
+    },
+    {
+      "id": "asp-admission-spb",
+      "title": "Перечень программ и научных специальностей аспирантуры 2026: Санкт-Петербург",
+      "url": "https://aspirantura.hse.ru/mirror/pubs/share/1120757184",
+      "finalUrl": "https://aspirantura.hse.ru/mirror/pubs/share/1120757184",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:39:26.851035+00:00",
+      "checkedAt": "2026-11-18T00:39:26.851035+00:00",
+      "httpStatus": 200,
+      "bytes": 387755,
+      "sha256": "7c7f08b14501e09fd8d00c4abd1974630d58d6da8f46d4ac34bbc2ecfeffb692",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-admission-spb.pdf",
+      "rawCaptureTracked": false,
+      "pageCount": 2
+    },
+    {
+      "id": "asp-admission-perm",
+      "title": "Перечень программ и научных специальностей аспирантуры 2026: Пермь",
+      "url": "https://aspirantura.hse.ru/mirror/pubs/share/1120756815",
+      "finalUrl": "https://aspirantura.hse.ru/mirror/pubs/share/1120756815",
+      "sourceType": "official_university_document",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T00:39:27.376018+00:00",
+      "checkedAt": "2026-11-18T00:39:27.376018+00:00",
+      "httpStatus": 200,
+      "bytes": 362472,
+      "sha256": "74135578b33448b53c3abf1683868af43f2dea83aa95109e9c242552c8321476",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-admission-perm.pdf",
+      "rawCaptureTracked": false,
+      "pageCount": 1
+    },
+    {
+      "id": "asp-doctor",
+      "title": "Докторские диссертации: официальный контакт ВШЭ",
+      "url": "https://aspirantura.hse.ru/doct",
+      "finalUrl": "https://aspirantura.hse.ru/doct",
+      "sourceType": "official_university_page",
+      "sourceYear": null,
+      "retrievedAt": "2026-11-18T00:36:40.552177+00:00",
+      "checkedAt": "2026-11-18T00:36:40.552177+00:00",
+      "httpStatus": 200,
+      "bytes": 121744,
+      "sha256": "713de61ddb014f8150d1d05c8039c72cca57924e2e3b0223546d68a85a009258",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/asp-doctor.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "doctor-contact",
+      "title": "Кобзарь Елена Николаевна: официальный профиль",
+      "url": "https://www.hse.ru/org/persons/148038",
+      "finalUrl": "https://www.hse.ru/org/persons/148038",
+      "sourceType": "official_university_page",
+      "sourceYear": null,
+      "retrievedAt": "2026-11-18T00:38:15.948506+00:00",
+      "checkedAt": "2026-11-18T00:38:15.948506+00:00",
+      "httpStatus": 200,
+      "bytes": 92432,
+      "sha256": "3e43c8f62662adb02405f24d239504bb8bc2b5a41cfeda1fb2e71797e8c6a378",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/doctor-contact.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "hse-education",
+      "title": "Сведения об образовательной организации: раздел «Образование»",
+      "url": "https://www.hse.ru/sveden/education/",
+      "finalUrl": "https://www.hse.ru/sveden/education/",
+      "sourceType": "official_university_page",
+      "sourceYear": null,
+      "retrievedAt": "2026-11-18T00:36:01.825804+00:00",
+      "checkedAt": "2026-11-18T00:36:01.825804+00:00",
+      "httpStatus": 200,
+      "bytes": 42109,
+      "sha256": "18dedcb1a5d4a2387f5ac04c3284ed934e8eec3361c7fb7a42a2f845453e2472",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/hse-education.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "hse-levels",
+      "title": "Реализуемые уровни образования во всех четырёх кампусах ВШЭ",
+      "url": "https://www.hse.ru/sveden/education/58898a2d-b686-41e5-afc2-4fc1b9d20bde/",
+      "finalUrl": "https://www.hse.ru/sveden/education/58898a2d-b686-41e5-afc2-4fc1b9d20bde/",
+      "sourceType": "official_university_page",
+      "sourceYear": null,
+      "retrievedAt": "2026-11-18T00:38:16.252583+00:00",
+      "checkedAt": "2026-11-18T00:38:16.252583+00:00",
+      "httpStatus": 200,
+      "bytes": 2013260,
+      "sha256": "faf3478e18cf41f7da1e363f633f4b96b80a5c6a023400c853b7b6b671316a74",
+      "sha256Scope": "response_bytes",
+      "captureKind": "http_response",
+      "localRawCapture": "tmp/education-pathways/hse-levels.html",
+      "rawCaptureTracked": false,
+      "pageCount": null
+    },
+    {
+      "id": "asp-places-spb",
+      "title": "Кампусный план бюджетного приёма в аспирантуру Санкт-Петербурга, 2026",
+      "url": "https://spb.hse.ru/postgrad/controlnumbers2026",
+      "sourceType": "official_university_page",
+      "reviewedExtract": {
+        "year": 2026,
+        "campus": "Санкт-Петербург",
+        "programTitle": "Гражданское право и процесс",
+        "budgetPlaces": 3
+      },
+      "sourceLocator": "Раздел «Количество мест в аспирантуре в 2026 году»; таблица распределения КЦП; строка «Гражданское право и процесс», колонка контрольных цифр приёма.",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T18:30:59.246Z",
+      "checkedAt": "2026-11-18T18:30:59.246Z",
+      "sha256": "9ec46a11a8a3395d9d00aa52441f45856931079a35320aedd5ecf7e513f82bc1",
+      "bytes": 140,
+      "sha256Scope": "utf8_json_of_reviewedExtract",
+      "captureKind": "reviewed_official_extract",
+      "rawCaptureTracked": false,
+      "transportNote": "Direct local HTTP retrieval timed out. Official page/document was reviewed through web browsing; the hash covers only the stored reviewedExtract JSON in field order (UTF-8), not original HTTP response bytes. Failed local retrieval receipts are retained in ignored tmp/nov18-asp-campus-completions."
+    },
+    {
+      "id": "asp-places-perm",
+      "title": "Кампусный план бюджетного приёма в аспирантуру Перми, 2026",
+      "url": "https://perm.hse.ru/asp/ControlNumbers",
+      "sourceType": "official_university_page",
+      "reviewedExtract": {
+        "year": 2026,
+        "campus": "Пермь",
+        "scientificGroup": "5.2 Экономика",
+        "programTitle": "Прикладная экономика",
+        "budgetPlaces": 3
+      },
+      "sourceLocator": "Заголовок приёма 2026; таблица 1, строка «5.2 Экономика / Прикладная экономика», колонка бюджетных контрольных цифр.",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T18:30:59.246Z",
+      "checkedAt": "2026-11-18T18:30:59.246Z",
+      "sha256": "d13d17210e773c7861274c49c130500442dce3286c65506530cf101fd4d6a5e9",
+      "bytes": 152,
+      "sha256Scope": "utf8_json_of_reviewedExtract",
+      "captureKind": "reviewed_official_extract",
+      "rawCaptureTracked": false,
+      "transportNote": "Direct local HTTP retrieval timed out. Official page/document was reviewed through web browsing; the hash covers only the stored reviewedExtract JSON in field order (UTF-8), not original HTTP response bytes. Failed local retrieval receipts are retained in ignored tmp/nov18-asp-campus-completions."
+    },
+    {
+      "id": "asp-mathmod-portfolio-2026",
+      "title": "Портфолио математического моделирования АШ по техническим наукам, Москва, 2026",
+      "url": "https://aspirantura.hse.ru/mirror/pubs/share/1121279686",
+      "sourceType": "official_university_document",
+      "reviewedExtract": {
+        "year": 2026,
+        "campus": "Москва",
+        "programTitle": "Математическое моделирование, численные методы и комплексы программ",
+        "scientificSpecialty": "1.2.2",
+        "school": "Аспирантская школа по техническим наукам"
+      },
+      "sourceLocator": "PDF, титульная страница 1: основная образовательная программа, научная специальность 1.2.2, АШ по техническим наукам, Москва 2026.",
+      "sourceYear": 2026,
+      "retrievedAt": "2026-11-18T18:30:59.246Z",
+      "checkedAt": "2026-11-18T18:30:59.246Z",
+      "sha256": "e6e9092348b4c4ac26849fcca7d28fbc7077c58e1a26b8540b73e2de5db87b22",
+      "bytes": 300,
+      "sha256Scope": "utf8_json_of_reviewedExtract",
+      "captureKind": "reviewed_official_extract",
+      "rawCaptureTracked": false,
+      "transportNote": "Direct local HTTP retrieval timed out. Official page/document was reviewed through web browsing; the hash covers only the stored reviewedExtract JSON in field order (UTF-8), not original HTTP response bytes. Failed local retrieval receipts are retained in ignored tmp/nov18-asp-campus-completions."
+    }
+  ],
+  "aspAdmission2026": {
+    "scientificSpecialtyProgrammeCampusRows": [
+      {
+        "campus": "Москва",
+        "programTitle": "Математика и механика",
+        "code": "1.1.1.",
+        "specialtyTitle": "Вещественный, комплексный и функциональный анализ",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Математика и механика",
+        "code": "1.1.2.",
+        "specialtyTitle": "Дифференциальные уравнения и математическая физика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Математика и механика",
+        "code": "1.1.3.",
+        "specialtyTitle": "Геометрия и топология",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Математика и механика",
+        "code": "1.1.4.",
+        "specialtyTitle": "Теория вероятностей и математическая статистика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Математика и механика",
+        "code": "1.1.5.",
+        "specialtyTitle": "Математическая логика, алгебра, теория чисел и дискретная математика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 6
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Компьютерные науки",
+        "code": "1.2.1.",
+        "specialtyTitle": "Искусственный интеллект и машинное обучение",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 7
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Компьютерные науки",
+        "code": "1.2.2.",
+        "specialtyTitle": "Математическое моделирование, численные методы и комплексы программ",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 8
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Компьютерные науки",
+        "code": "1.2.3.",
+        "specialtyTitle": "Теоретическая информатика, кибернетика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 9
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Математическое моделирование, численные методы и комплексы программ",
+        "code": "1.2.2.",
+        "specialtyTitle": "Математическое моделирование, численные методы и комплексы программ",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 10
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Физика и астрономия",
+        "code": "1.3.1.",
+        "specialtyTitle": "Физика космоса, астрономия",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 1
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Физика и астрономия",
+        "code": "1.3.3.",
+        "specialtyTitle": "Теоретическая физика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Физика и астрономия",
+        "code": "1.3.6.",
+        "specialtyTitle": "Оптика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Физика и астрономия",
+        "code": "1.3.8.",
+        "specialtyTitle": "Физика конденсированного состояния",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Физика и астрономия",
+        "code": "1.3.10.",
+        "specialtyTitle": "Физика низких температур",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Физика конденсированного состояния",
+        "code": "1.3.8.",
+        "specialtyTitle": "Физика конденсированного состояния",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 6
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Физика элементарных частиц",
+        "code": "1.3.15.",
+        "specialtyTitle": "Физика атомных ядер и элементарных частиц, физика высоких энергий",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 7
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Фундаментальные основы химии и наук о материалах",
+        "code": "1.4.3.",
+        "specialtyTitle": "Органическая химия",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 8
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Фундаментальные основы химии и наук о материалах",
+        "code": "1.4.7.",
+        "specialtyTitle": "Высокомолекулярные соединения",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 9
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Фундаментальные основы химии и наук о материалах",
+        "code": "1.4.8.",
+        "specialtyTitle": "Химия элементоорганических соединений",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 10
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Фундаментальные основы химии и наук о материалах",
+        "code": "1.4.15.",
+        "specialtyTitle": "Химия твердого тела",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 11
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Молекулярная биология",
+        "code": "1.5.3.",
+        "specialtyTitle": "Молекулярная биология",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 12
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Электроника, радиотехника и системы связи",
+        "code": "2.2.2.",
+        "specialtyTitle": "Электронная компонентная база микро- и наноэлектроники, квантовых устройств",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 13
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Электроника, радиотехника и системы связи",
+        "code": "2.2.13.",
+        "specialtyTitle": "Радиотехника, в том числе системы и устройства телевидения",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 14
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Электроника, радиотехника и системы связи",
+        "code": "2.2.14.",
+        "specialtyTitle": "Антенны, СВЧ-устройства и их технологии",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 15
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Электроника, радиотехника и системы связи",
+        "code": "2.2.15.",
+        "specialtyTitle": "Системы, сети и устройства телекоммуникаций",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 16
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Системный анализ. Математическое моделирование. Информационные технологии",
+        "code": "2.3.1.",
+        "specialtyTitle": "Системный анализ, управление и обработка информации, статистика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 1
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Системный анализ. Математическое моделирование. Информационные технологии",
+        "code": "2.3.2.",
+        "specialtyTitle": "Вычислительные системы и их элементы",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Системный анализ. Математическое моделирование. Информационные технологии",
+        "code": "2.3.7.",
+        "specialtyTitle": "Компьютерное моделирование и автоматизация проектирования",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Системный анализ. Математическое моделирование. Информационные технологии",
+        "code": "2.3.8.",
+        "specialtyTitle": "Информатика и информационные процессы",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Математическое и программное обеспечение вычислительных систем",
+        "code": "2.3.5.",
+        "specialtyTitle": "Математическое и программное обеспечение вычислительных систем, комплексов и компьютерных сетей",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Информационная безопасность",
+        "code": "2.3.6.",
+        "specialtyTitle": "Методы и системы защиты информации, информационная безопасность",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 6
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Юриспруденция",
+        "code": "5.1.1.",
+        "specialtyTitle": "Теоретико-исторические правовые науки",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 7
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Юриспруденция",
+        "code": "5.1.2.",
+        "specialtyTitle": "Публично-правовые (государственно-правовые) науки",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 8
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Юриспруденция",
+        "code": "5.1.3.",
+        "specialtyTitle": "Частно-правовые (цивилистические) науки",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 9
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Юриспруденция",
+        "code": "5.1.4.",
+        "specialtyTitle": "Уголовно-правовые науки",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 10
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Юриспруденция",
+        "code": "5.1.5.",
+        "specialtyTitle": "Международно-правовые науки",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 11
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Экономика",
+        "code": "5.2.1.",
+        "specialtyTitle": "Экономическая теория",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 12
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Экономика",
+        "code": "5.2.2.",
+        "specialtyTitle": "Математические, статистические и инструментальные методы в экономике",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 13
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Экономика",
+        "code": "5.2.3.",
+        "specialtyTitle": "Региональная и отраслевая экономика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 14
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Экономика",
+        "code": "5.2.4.",
+        "specialtyTitle": "Финансы",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 15
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Экономика",
+        "code": "5.2.5.",
+        "specialtyTitle": "Мировая экономика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 16
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Менеджмент",
+        "code": "5.2.6.",
+        "specialtyTitle": "Менеджмент",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 3,
+          "table": 1,
+          "row": 17
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Государственное и муниципальное управление",
+        "code": "5.2.7.",
+        "specialtyTitle": "Государственное и муниципальное управление",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 1
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Психологические науки",
+        "code": "5.3.1.",
+        "specialtyTitle": "Общая психология, психология личности, история психологии",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Психологические науки",
+        "code": "5.3.5.",
+        "specialtyTitle": "Социальная психология, политическая и экономическая психология",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Социологические науки",
+        "code": "5.4.1.",
+        "specialtyTitle": "Теория, методология и история социологии",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Социологические науки",
+        "code": "5.4.2.",
+        "specialtyTitle": "Экономическая социология",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Социологические науки",
+        "code": "5.4.3.",
+        "specialtyTitle": "Демография",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 6
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Социологические науки",
+        "code": "5.4.4.",
+        "specialtyTitle": "Социальная структура, социальные институты и процессы",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 7
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Политические науки",
+        "code": "5.5.1.",
+        "specialtyTitle": "История и теория политики",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 8
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Политические науки",
+        "code": "5.5.2.",
+        "specialtyTitle": "Политические институты, процессы, технологии",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 9
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Международные отношения и зарубежные региональные исследования",
+        "code": "5.5.4.",
+        "specialtyTitle": "Международные отношения, глобальные и региональные исследования",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 10
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Исторические науки и археология",
+        "code": "5.6.1.",
+        "specialtyTitle": "Отечественная история",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 11
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Исторические науки и археология",
+        "code": "5.6.2.",
+        "specialtyTitle": "Всеобщая история",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 12
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Исторические науки и археология",
+        "code": "5.6.3.",
+        "specialtyTitle": "Археология",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 13
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Исторические науки и археология",
+        "code": "5.6.4.",
+        "specialtyTitle": "Этнология, антропология и этнография",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 14
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Исторические науки и археология",
+        "code": "5.6.5.",
+        "specialtyTitle": "Историография, источниковедение, методы исторического исследования",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 15
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "История стран и народов Востока и Африки",
+        "code": "5.6.2.",
+        "specialtyTitle": "Всеобщая история",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 16
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Политическая история зарубежных стран и международных отношений в новейшее время",
+        "code": "5.6.2.",
+        "specialtyTitle": "Всеобщая история",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 4,
+          "table": 1,
+          "row": 17
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Философия",
+        "code": "5.7.1.",
+        "specialtyTitle": "Онтология и теория познания",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 1
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Философия",
+        "code": "5.7.2.",
+        "specialtyTitle": "История философии",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Философия",
+        "code": "5.7.4.",
+        "specialtyTitle": "Этика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Философия",
+        "code": "5.7.5.",
+        "specialtyTitle": "Логика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Философия",
+        "code": "5.7.6.",
+        "specialtyTitle": "Философия науки и техники",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Философия",
+        "code": "5.7.7.",
+        "specialtyTitle": "Социальная и политическая философия",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 6
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Философия",
+        "code": "5.7.8.",
+        "specialtyTitle": "Философская антропология, философия культуры",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 7
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Философия",
+        "code": "5.7.9.",
+        "specialtyTitle": "Философия религии и религиоведение",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 8
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Образование",
+        "code": "5.8.1.",
+        "specialtyTitle": "Общая педагогика, история педагогики и образования",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 9
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Образование",
+        "code": "5.8.2.",
+        "specialtyTitle": "Теория и методика обучения и воспитания (по областям и уровням образования)",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 10
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Образование",
+        "code": "5.8.7.",
+        "specialtyTitle": "Методология и технология профессионального образования",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 11
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Лингвистика и литературоведение",
+        "code": "5.9.1.",
+        "specialtyTitle": "Русская литература и литературы народов Российской Федерации",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 12
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Лингвистика и литературоведение",
+        "code": "5.9.2.",
+        "specialtyTitle": "Литературы народов мира",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 13
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Лингвистика и литературоведение",
+        "code": "5.9.8.",
+        "specialtyTitle": "Теоретическая, прикладная и сравнительно-сопоставительная лингвистика.",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 14
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Иностранные языки",
+        "code": "5.9.6.",
+        "specialtyTitle": "Языки народов зарубежных стран (германские языки)",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 15
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Коммуникации и медиа",
+        "code": "5.9.9.",
+        "specialtyTitle": "Медиакоммуникации и журналистика",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 5,
+          "table": 1,
+          "row": 16
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Языки и литературы стран и народов Востока и Африки",
+        "code": "5.9.2.",
+        "specialtyTitle": "Литературы народов мира",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 6,
+          "table": 1,
+          "row": 1
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Языки и литературы стран и народов Востока и Африки",
+        "code": "5.9.6.",
+        "specialtyTitle": "Языки народов зарубежных стран (языки народов Азии и Африки)",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 6,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Искусство и дизайн",
+        "code": "5.10.1.",
+        "specialtyTitle": "Теория и история культуры, искусства",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 6,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Искусство и дизайн",
+        "code": "5.10.3.",
+        "specialtyTitle": "Виды искусства (с указанием конкретного искусства)",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 6,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Культурология",
+        "code": "5.10.1.",
+        "specialtyTitle": "Теория и история культуры, искусства",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 6,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Когнитивные науки",
+        "code": "5.12.1.",
+        "specialtyTitle": "Междисциплинарные исследования когнитивных процессов",
+        "sourceId": "asp-admission-moscow",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 6,
+          "table": 1,
+          "row": 6
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Математика и механика",
+        "code": "1.1.1.",
+        "specialtyTitle": "Вещественный, комплексный и функциональный анализ",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Математика и механика",
+        "code": "1.1.2.",
+        "specialtyTitle": "Дифференциальные уравнения и математическая физика",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Математика и механика",
+        "code": "1.1.3.",
+        "specialtyTitle": "Геометрия и топология",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Математика и механика",
+        "code": "1.1.5.",
+        "specialtyTitle": "Математическая логика, алгебра, теория чисел и дискретная математика",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Компьютерные науки",
+        "code": "1.2.1.",
+        "specialtyTitle": "Искусственный интеллект и машинное обучение",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 6
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Компьютерные науки",
+        "code": "1.2.2.",
+        "specialtyTitle": "Математическое моделирование, численные методы и комплексы программ",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 7
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Компьютерные науки",
+        "code": "1.2.3.",
+        "specialtyTitle": "Теоретическая информатика, кибернетика",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 8
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Юриспруденция",
+        "code": "5.1.2.",
+        "specialtyTitle": "Публично-правовые (государственно-правовые науки)",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 9
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Экономика",
+        "code": "5.2.2.",
+        "specialtyTitle": "Математические, статистические и инструментальные методы в экономике",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 10
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Экономика",
+        "code": "5.2.4.",
+        "specialtyTitle": "Финансы",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 11
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Менеджмент",
+        "code": "5.2.6.",
+        "specialtyTitle": "Менеджмент",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 12
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Лингвистика и литературоведение",
+        "code": "5.9.1.",
+        "specialtyTitle": "Русская литература и литературы народов Российской Федерации",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 1
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Лингвистика и литературоведение",
+        "code": "5.9.2.",
+        "specialtyTitle": "Литературы народов мира",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Нижний Новгород",
+        "programTitle": "Лингвистика и литературоведение",
+        "code": "5.9.8.",
+        "specialtyTitle": "Теоретическая, прикладная и сравнительно-сопоставительная лингвистика.",
+        "sourceId": "asp-admission-nnov",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Математика и механика",
+        "code": "1.1.1.",
+        "specialtyTitle": "Вещественный, комплексный и функциональный анализ",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Математика и механика",
+        "code": "1.1.4.",
+        "specialtyTitle": "Теория вероятностей и математическая статистика",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Компьютерные науки",
+        "code": "1.2.1.",
+        "specialtyTitle": "Искусственный интеллект и машинное обучение",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Компьютерные науки",
+        "code": "1.2.3.",
+        "specialtyTitle": "Теоретическая информатика, кибернетика",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Математическое и программное обеспечение вычислительных систем",
+        "code": "2.3.5.",
+        "specialtyTitle": "Математическое и программное обеспечение вычислительных систем, комплексов и компьютерных сетей",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 6
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Физика полупроводников",
+        "code": "1.3.11.",
+        "specialtyTitle": "Физика полупроводников",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 7
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Гражданское право и процесс",
+        "code": "5.1.3.",
+        "specialtyTitle": "Частно-правовые (цивилистические) науки",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 8
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Экономика",
+        "code": "5.2.2.",
+        "specialtyTitle": "Математические, статистические и инструментальные методы в экономике",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 9
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Экономика",
+        "code": "5.2.3.",
+        "specialtyTitle": "Региональная и отраслевая экономика",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 10
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Менеджмент",
+        "code": "5.2.6.",
+        "specialtyTitle": "Менеджмент",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 11
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Государственное и муниципальное управление",
+        "code": "5.2.7.",
+        "specialtyTitle": "Государственное и муниципальное управление",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 12
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Социологические науки",
+        "code": "5.4.4.",
+        "specialtyTitle": "Социальная структура, социальные институты и процессы",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 13
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Политические науки",
+        "code": "5.5.1.",
+        "specialtyTitle": "История и теория политики",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 1
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Политические науки",
+        "code": "5.5.2.",
+        "specialtyTitle": "Политические институты, процессы, технологии",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 2
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Исторические науки",
+        "code": "5.6.1.",
+        "specialtyTitle": "Отечественная история",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 3
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Исторические науки",
+        "code": "5.6.4.",
+        "specialtyTitle": "Этнология, антропология и этнография",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 4
+        }
+      },
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Теоретическая, прикладная и сравнительно-сопоставительная лингвистика",
+        "code": "5.9.8.",
+        "specialtyTitle": "Теоретическая, прикладная и сравнительно-сопоставительная лингвистика",
+        "sourceId": "asp-admission-spb",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 2,
+          "table": 1,
+          "row": 5
+        }
+      },
+      {
+        "campus": "Пермь",
+        "programTitle": "Прикладная экономика",
+        "code": "5.2.3.",
+        "specialtyTitle": "Региональная и отраслевая экономика",
+        "sourceId": "asp-admission-perm",
+        "sourceLocator": {
+          "type": "pdf_table",
+          "page": 1,
+          "table": 1,
+          "row": 2
+        }
+      }
+    ],
+    "rowCountsByCampus": {
+      "Москва": 81,
+      "Нижний Новгород": 14,
+      "Санкт-Петербург": 17,
+      "Пермь": 1
+    },
+    "programmeCountsByCampus": {
+      "Москва": 32,
+      "Нижний Новгород": 6,
+      "Санкт-Петербург": 12,
+      "Пермь": 1
+    },
+    "budgetTable": {
+      "rows": [
+        {
+          "programTitleAsPublished": "Математика и механика",
+          "campusBudgetPlaces": {
+            "Москва": 24,
+            "Нижний Новгород": 5,
+            "Санкт-Петербург": 2,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 31,
+            "originRow": 1,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 1
+          }
+        },
+        {
+          "programTitleAsPublished": "Компьютерные науки",
+          "campusBudgetPlaces": {
+            "Москва": 25,
+            "Нижний Новгород": 3,
+            "Санкт-Петербург": 3,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 33,
+            "originRow": 2,
+            "rowSpan": 2,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 2
+          }
+        },
+        {
+          "programTitleAsPublished": "Математическое моделирование, численные методы и комплексы программ (АШ по техническим наукам)",
+          "campusBudgetPlaces": {
+            "Москва": 2,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 33,
+            "originRow": 2,
+            "rowSpan": 2,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 3
+          }
+        },
+        {
+          "programTitleAsPublished": "Физика и астрономия",
+          "campusBudgetPlaces": {
+            "Москва": 9,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 16,
+            "originRow": 4,
+            "rowSpan": 4,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 4
+          }
+        },
+        {
+          "programTitleAsPublished": "Физика полупроводников",
+          "campusBudgetPlaces": {
+            "Москва": null,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": 1,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 16,
+            "originRow": 4,
+            "rowSpan": 4,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 5
+          }
+        },
+        {
+          "programTitleAsPublished": "Физика элементарных частиц",
+          "campusBudgetPlaces": {
+            "Москва": 2,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 16,
+            "originRow": 4,
+            "rowSpan": 4,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 6
+          }
+        },
+        {
+          "programTitleAsPublished": "Физика конденсированного состояния",
+          "campusBudgetPlaces": {
+            "Москва": 4,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 16,
+            "originRow": 4,
+            "rowSpan": 4,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 7
+          }
+        },
+        {
+          "programTitleAsPublished": "Фундаментальные основы химии и наук о материалах",
+          "campusBudgetPlaces": {
+            "Москва": 9,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 9,
+            "originRow": 8,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 8
+          }
+        },
+        {
+          "programTitleAsPublished": "Молекулярная биология",
+          "campusBudgetPlaces": {
+            "Москва": 4,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 4,
+            "originRow": 9,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 9
+          }
+        },
+        {
+          "programTitleAsPublished": "Электроника, радиотехника и системы связи",
+          "campusBudgetPlaces": {
+            "Москва": 10,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 10,
+            "originRow": 10,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 10
+          }
+        },
+        {
+          "programTitleAsPublished": "Математическое и программное обеспечение вычислительных систем",
+          "campusBudgetPlaces": {
+            "Москва": 6,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": 1,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 27,
+            "originRow": 11,
+            "rowSpan": 3,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 11
+          }
+        },
+        {
+          "programTitleAsPublished": "Информационная безопасность",
+          "campusBudgetPlaces": {
+            "Москва": 7,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 27,
+            "originRow": 11,
+            "rowSpan": 3,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 12
+          }
+        },
+        {
+          "programTitleAsPublished": "Системный анализ. Математическое моделирование. Информационные технологии",
+          "campusBudgetPlaces": {
+            "Москва": 13,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 27,
+            "originRow": 11,
+            "rowSpan": 3,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 13
+          }
+        },
+        {
+          "programTitleAsPublished": "Юриспруденция",
+          "campusBudgetPlaces": {
+            "Москва": 20,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": 3,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 23,
+            "originRow": 14,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 14
+          }
+        },
+        {
+          "programTitleAsPublished": "Экономика",
+          "campusBudgetPlaces": {
+            "Москва": 34,
+            "Нижний Новгород": 2,
+            "Санкт-Петербург": 2,
+            "Пермь": 3
+          },
+          "groupTotal": {
+            "value": 63,
+            "originRow": 15,
+            "rowSpan": 3,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 15
+          }
+        },
+        {
+          "programTitleAsPublished": "Менеджмент",
+          "campusBudgetPlaces": {
+            "Москва": 12,
+            "Нижний Новгород": 1,
+            "Санкт-Петербург": 2,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 63,
+            "originRow": 15,
+            "rowSpan": 3,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 16
+          }
+        },
+        {
+          "programTitleAsPublished": "Государственное и муниципальное управление",
+          "campusBudgetPlaces": {
+            "Москва": 5,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": 2,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 63,
+            "originRow": 15,
+            "rowSpan": 3,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 17
+          }
+        },
+        {
+          "programTitleAsPublished": "Психологические науки",
+          "campusBudgetPlaces": {
+            "Москва": 18,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 18,
+            "originRow": 18,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 18
+          }
+        },
+        {
+          "programTitleAsPublished": "Социологические науки",
+          "campusBudgetPlaces": {
+            "Москва": 20,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": 3,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 23,
+            "originRow": 19,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 19
+          }
+        },
+        {
+          "programTitleAsPublished": "Политические науки",
+          "campusBudgetPlaces": {
+            "Москва": 10,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": 3,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 17,
+            "originRow": 20,
+            "rowSpan": 2,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 20
+          }
+        },
+        {
+          "programTitleAsPublished": "Международные отношения и зарубежные региональные исследования",
+          "campusBudgetPlaces": {
+            "Москва": 4,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 17,
+            "originRow": 20,
+            "rowSpan": 2,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 21
+          }
+        },
+        {
+          "programTitleAsPublished": "Политическая история зарубежных стран и международных отношений в новейшее время",
+          "campusBudgetPlaces": {
+            "Москва": 2,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 24,
+            "originRow": 22,
+            "rowSpan": 4,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 22
+          }
+        },
+        {
+          "programTitleAsPublished": "Исторические науки и археология",
+          "campusBudgetPlaces": {
+            "Москва": 17,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 24,
+            "originRow": 22,
+            "rowSpan": 4,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 23
+          }
+        },
+        {
+          "programTitleAsPublished": "Исторические науки",
+          "campusBudgetPlaces": {
+            "Москва": null,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": 3,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 24,
+            "originRow": 22,
+            "rowSpan": 4,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 24
+          }
+        },
+        {
+          "programTitleAsPublished": "История стран и народов Востока и Африки",
+          "campusBudgetPlaces": {
+            "Москва": 2,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 24,
+            "originRow": 22,
+            "rowSpan": 4,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 25
+          }
+        },
+        {
+          "programTitleAsPublished": "Философия",
+          "campusBudgetPlaces": {
+            "Москва": 15,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 15,
+            "originRow": 26,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 26
+          }
+        },
+        {
+          "programTitleAsPublished": "Образование",
+          "campusBudgetPlaces": {
+            "Москва": 17,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 17,
+            "originRow": 27,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 27
+          }
+        },
+        {
+          "programTitleAsPublished": "Лингвистика и литературоведение",
+          "campusBudgetPlaces": {
+            "Москва": 20,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 36,
+            "originRow": 28,
+            "rowSpan": 5,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 28
+          }
+        },
+        {
+          "programTitleAsPublished": "Иностранные языки",
+          "campusBudgetPlaces": {
+            "Москва": 3,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 36,
+            "originRow": 28,
+            "rowSpan": 5,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 29
+          }
+        },
+        {
+          "programTitleAsPublished": "Теоретическая, прикладная и сравнительно-сопоставительная лингвистика",
+          "campusBudgetPlaces": {
+            "Москва": null,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": 3,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 36,
+            "originRow": 28,
+            "rowSpan": 5,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 30
+          }
+        },
+        {
+          "programTitleAsPublished": "Языки и литературы стран и народов Востока и Африки",
+          "campusBudgetPlaces": {
+            "Москва": 4,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 36,
+            "originRow": 28,
+            "rowSpan": 5,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 31
+          }
+        },
+        {
+          "programTitleAsPublished": "Коммуникации и медиа",
+          "campusBudgetPlaces": {
+            "Москва": 6,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 36,
+            "originRow": 28,
+            "rowSpan": 5,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 32
+          }
+        },
+        {
+          "programTitleAsPublished": "Искусство и дизайн",
+          "campusBudgetPlaces": {
+            "Москва": 3,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 4,
+            "originRow": 33,
+            "rowSpan": 2,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 33
+          }
+        },
+        {
+          "programTitleAsPublished": "Культурология",
+          "campusBudgetPlaces": {
+            "Москва": 1,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 4,
+            "originRow": 33,
+            "rowSpan": 2,
+            "inheritedFromRowspan": true
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 34
+          }
+        },
+        {
+          "programTitleAsPublished": "Когнитивные науки",
+          "campusBudgetPlaces": {
+            "Москва": 16,
+            "Нижний Новгород": null,
+            "Санкт-Петербург": null,
+            "Пермь": null
+          },
+          "groupTotal": {
+            "value": 16,
+            "originRow": 35,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 35
+          }
+        },
+        {
+          "programTitleAsPublished": "Итого",
+          "campusBudgetPlaces": {
+            "Москва": 344,
+            "Нижний Новгород": 11,
+            "Санкт-Петербург": 28,
+            "Пермь": 3
+          },
+          "groupTotal": {
+            "value": 386,
+            "originRow": 36,
+            "rowSpan": 1,
+            "inheritedFromRowspan": false
+          },
+          "sourceId": "asp-places",
+          "sourceLocator": {
+            "type": "html_table",
+            "table": 1,
+            "tbodyRow": 36
+          }
+        }
+      ],
+      "total": 386,
+      "campusTotals": {
+        "Москва": 344,
+        "Нижний Новгород": 11,
+        "Санкт-Петербург": 28,
+        "Пермь": 3
+      },
+      "blankCellMeaning": "unknown_or_not_published; never converted to zero",
+      "groupTotalRule": "rowspan totals apply to all covered programme rows together, not separately to each row or specialty",
+      "generalCompetitionPlacesExcludingTargetQuota": null
+    },
+    "currentCatalogueFile": "data-sources/russia/hse-additional-education-2026-11-18.json",
+    "currentCatalogueScientificSpecialtyRows": 89,
+    "catalogueLinkage": {
+      "matched": [
+        {
+          "id": "hse-asp-1-1-1-57555f05ba23",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 2
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 2
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 2
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-1-2-89af36c7dccb",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 3
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 3
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-1-3-cd5ada101968",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 4
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 4
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-1-4-84299c963680",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 5
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 3
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-1-5-4d2638eaac21",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 6
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 5
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-2-1-1130b2f4440f",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 7
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 6
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 4
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-2-2-351935a1f3ed",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 8
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 7
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-2-3-a1270b641d5b",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 9
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 8
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 5
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-2-2-c4f4d9b6d9ec",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 10
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-3-1-b71b343973c3",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 1
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-3-3-242bafe270f5",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 2
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-3-6-d3272f467b43",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 3
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-3-8-0b4697130daf",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 4
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-3-10-61dd3d0c2256",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 5
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-3-11-b3304d4692eb",
+          "matches": [
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 7
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-3-8-92d2c6a2e312",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 6
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-3-15-d33d40afe703",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 7
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-4-3-a78a7a8dc6c6",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 8
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-4-7-e53c9750cab8",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 9
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-4-8-991032b1bdd8",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 10
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-4-15-85663e6afa25",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 11
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-1-5-3-96542349764c",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 12
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-2-2-50fb938b4a5f",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 13
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-2-13-20501a26676a",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 14
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-2-14-7329f3d0b725",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 15
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-2-15-e7280cfa5687",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 16
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-3-1-3472c1fa06e8",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 1
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-3-2-93ccaf6820f2",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 2
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-3-5-17c8551ff358",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 5
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 6
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-3-6-373d9f35776f",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 6
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-3-7-bbf7c8fdc567",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 3
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-2-3-8-54ca82045e0e",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 4
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-1-1-7574e4359caa",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 7
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-1-2-4cd87f45d097",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 8
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 9
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-1-3-d1976fa099b2",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 9
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-1-4-b90c09f4a511",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 10
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-1-5-0a3243285554",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 11
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-2-1-044292029931",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 12
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-2-2-b1192c2b0eee",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 13
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 10
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 9
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-2-3-2987f5e9c84b",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 14
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 10
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-2-4-fcfe527ee607",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 15
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 11
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-2-5-3b2722d6f28a",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 16
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-2-6-c0143a05fd8a",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 3,
+                "table": 1,
+                "row": 17
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 12
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 11
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-2-7-1f84e3166a24",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 1
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 12
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-3-1-4ca5a6c10d77",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 2
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-3-5-6d1d94ee5856",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 3
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-4-1-d64ab41964df",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 4
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-4-2-036d0ff6fea3",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 5
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-4-3-f703b326bb71",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 6
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-4-4-fbd8411c79a0",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 7
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 1,
+                "table": 1,
+                "row": 13
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-5-1-6a720df8922b",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 8
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 1
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-5-2-5970fbd56948",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 9
+              }
+            },
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 2
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-6-1-ba923f5c0348",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 11
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-6-2-06994413931a",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 12
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-6-3-2d312d41aa9f",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 13
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-6-4-b06b85e7f68e",
+          "matches": [
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 4
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-6-5-c8cbee33c674",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 4,
+                "table": 1,
+                "row": 15
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-7-1-09844dc178c8",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 1
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-7-2-e1f41ad3f3ab",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 2
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-7-4-cbb18fc44dd7",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 3
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-7-5-acca2ad903e7",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 4
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-7-6-0e154e95c313",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 5
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-7-7-25db5541372a",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 6
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-7-8-91dd527d07de",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 7
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-7-9-68cbbe999250",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 8
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-8-1-58936b9d2d37",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 9
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-8-2-dff6366f4629",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 10
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-8-7-dc838b911757",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 11
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-9-1-94aa67571459",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 12
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 1
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-9-2-7239ead422f7",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 13
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 2
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-9-6-b3ce62de2fcf",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 15
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-9-8-76566f69c2ea",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 14
+              }
+            },
+            {
+              "campus": "Нижний Новгород",
+              "sourceId": "asp-admission-nnov",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 3
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-9-8-87633bfd287c",
+          "matches": [
+            {
+              "campus": "Санкт-Петербург",
+              "sourceId": "asp-admission-spb",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 2,
+                "table": 1,
+                "row": 5
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-9-2-d4f2a2b531f9",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 6,
+                "table": 1,
+                "row": 1
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-9-6-4f22780878eb",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 6,
+                "table": 1,
+                "row": 2
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-9-9-cbddfda9629d",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 5,
+                "table": 1,
+                "row": 16
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-10-1-9c5b1742f476",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 6,
+                "table": 1,
+                "row": 3
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-10-3-e66a4dd27897",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 6,
+                "table": 1,
+                "row": 4
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        },
+        {
+          "id": "hse-asp-5-12-1-7fed1b10d873",
+          "matches": [
+            {
+              "campus": "Москва",
+              "sourceId": "asp-admission-moscow",
+              "sourceLocator": {
+                "type": "pdf_table",
+                "page": 6,
+                "table": 1,
+                "row": 6
+              }
+            }
+          ],
+          "status": "matched_code_and_program_title"
+        }
+      ],
+      "unmatched": [
+        {
+          "id": "hse-asp-1-1-8-45235b9f952b",
+          "code": "1.1.8.",
+          "profile": "Математика и механика",
+          "campus": "Москва",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-2-2-3-bbd08e3798c6",
+          "code": "2.2.3.",
+          "profile": "Электроника, радиотехника и системы связи",
+          "campus": "Москва",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-2-2-10-8c16393b4f10",
+          "code": "2.2.10.",
+          "profile": "Электроника, радиотехника и системы связи",
+          "campus": "Москва",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-2-3-3-db368d99df46",
+          "code": "2.3.3.",
+          "profile": "Системный анализ. Математическое моделирование. Информационные технологии",
+          "campus": "Москва",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-5-5-4-5650bd51a23b",
+          "code": "5.5.4.",
+          "profile": "Политические науки",
+          "campus": "Москва",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-5-5-3-72df8aee3fee",
+          "code": "5.5.3.",
+          "profile": "Государственное и муниципальное управление",
+          "campus": "Москва",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-5-6-7-9db635045a3f",
+          "code": "5.6.7.",
+          "profile": null,
+          "campus": "Москва",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-5-9-3-a9c29110ad0d",
+          "code": "5.9.3.",
+          "profile": "Лингвистика и литературоведение",
+          "campus": "Москва Нижний Новгород",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-5-9-4-ed41eedb8187",
+          "code": "5.9.4.",
+          "profile": "Лингвистика и литературоведение",
+          "campus": "Москва Нижний Новгород",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        },
+        {
+          "id": "hse-asp-5-9-5-e70b5e8b88ef",
+          "code": "5.9.5.",
+          "profile": "Лингвистика и литературоведение",
+          "campus": "Москва",
+          "admission2026Status": "pending_review",
+          "reason": "No exact scientific-specialty code + programme-title match in the four 2026 admissions lists; this is not evidence of discontinued admission."
+        }
+      ]
+    },
+    "linkageLimitation": "An exact code + programme-title match supports the listed campus admission scope only. It does not verify every campus string in the current general catalogue or assign a programme's budget seats to each scientific specialty.",
+    "reviewedBudgetMatches": [
+      {
+        "campus": "Санкт-Петербург",
+        "programTitle": "Гражданское право и процесс",
+        "budgetPlaces": 3,
+        "sourceId": "asp-places-spb",
+        "sourceLocator": "Раздел «Количество мест в аспирантуре в 2026 году»; таблица распределения КЦП; строка «Гражданское право и процесс», колонка контрольных цифр приёма.",
+        "identitySourceIds": ["asp-admission-spb"],
+        "note": "Кампусный план использует точное название программы из перечня приёма. Число относится к программе Санкт-Петербурга; центральная строка «Юриспруденция» не использована как неподтверждённый алиас."
+      },
+      {
+        "campus": "Пермь",
+        "programTitle": "Прикладная экономика",
+        "budgetPlaces": 3,
+        "sourceId": "asp-places-perm",
+        "sourceLocator": "Заголовок приёма 2026; таблица 1, строка «5.2 Экономика / Прикладная экономика», колонка бюджетных контрольных цифр.",
+        "identitySourceIds": ["asp-admission-perm"],
+        "note": "Кампусный план явно связывает группу 5.2 Экономика, программу «Прикладная экономика» и три бюджетных места. Места не назначаются автоматически другим экономическим программам."
+      },
+      {
+        "campus": "Москва",
+        "programTitle": "Математическое моделирование, численные методы и комплексы программ",
+        "budgetPlaces": 2,
+        "sourceId": "asp-places",
+        "sourceLocator": "Таблица КЦП 2026, строка «Математическое моделирование, численные методы и комплексы программ (АШ по техническим наукам)», колонка «Москва».",
+        "identitySourceIds": [
+          "asp-admission-moscow",
+          "asp-mathmod-portfolio-2026"
+        ],
+        "note": "Титульная страница программы портфолио 2026 подтверждает точное название, специальность 1.2.2, Москву и АШ по техническим наукам. Уточнение школы разрешает соответствие строке бюджетного плана. Это отдельная программа; места конкурса «Компьютерные науки» не переносятся."
+      }
+    ]
+  },
+  "sourceVersionIssues": [
+    {
+      "subject": "aspirantura_rules",
+      "olderSourceId": "asp-rules-pdf",
+      "olderVersionLatestAmendment": "2026-06-19",
+      "newerSourceId": "asp-rules-current-docx",
+      "newerVersionLatestAmendment": "2026-08-12",
+      "amendmentSourceId": "asp-rules-august-amendment",
+      "resolution": "Use current DOCX and August amendment for document requirements and submission methods; do not rely on the older HTML document checklist as exhaustive."
+    },
+    {
+      "subject": "aspirantura_languages",
+      "summarySourceId": "asp-procedure",
+      "controllingSourceId": "asp-rules-current-docx",
+      "resolution": "The English/French/German/Spanish/Italian list on the summary page is not universal. The rules limit non-English choices to philology, history and philosophy schools."
+    }
+  ],
+  "attemptedSources": [
+    {
+      "id": "fa-college-admission",
+      "url": "https://www.fa.ru/kip/priem/pk/admission.php",
+      "retrievedAt": "2026-11-18T00:38:15.892136+00:00",
+      "httpStatus": 403,
+      "sha256": "c1af4232143e8b521e7d4165a442dd2233602e74eba5c73dbd8407780d98d100",
+      "sha256Scope": "response_bytes",
+      "localRawCapture": "tmp/education-pathways/fa-college-admission.html",
+      "status": "access_failed",
+      "factExtraction": "none; search snippets were not treated as evidence"
+    },
+    {
+      "id": "fa-college-faq",
+      "url": "https://www.fa.ru/kip/priem/pk/answers.php",
+      "retrievedAt": "2026-11-18T00:38:15.945177+00:00",
+      "httpStatus": 403,
+      "sha256": "2da73a5c744e237424c83dc38c1010d9c8d3d515176b117695b571ee49a84c3d",
+      "sha256Scope": "response_bytes",
+      "localRawCapture": "tmp/education-pathways/fa-college-faq.html",
+      "status": "access_failed",
+      "factExtraction": "none; search snippets were not treated as evidence"
+    }
+  ],
+  "verification": {
+    "publicSourcesCheckedVia": ["web browsing", "direct HTTP requests"],
+    "pdfVisualChecks": [
+      "asp-admission-moscow page 1",
+      "asp-rules-pdf page 6",
+      "ma-english-pdf page 1"
+    ],
+    "rawHashesChecked": true,
+    "runtimeOrSchemaModified": false,
+    "budgetMatchReview": {
+      "checkedAt": "2026-11-18T18:30:59.246Z",
+      "rawResponsesAvailable": false,
+      "method": "Official web source review; raw local retrieval failed. Extract-only hashes are explicitly distinguished from original response hashes.",
+      "resolvedProgrammeBudgets": 3,
+      "remainingBlankCampusBudgets": 2
+    }
+  },
+  "limitations": [
+    "Campaign dates and scores are 2026 facts, not promises for 2027.",
+    "Current scientific-specialty catalogue rows are not automatically current admissions offers.",
+    "No historical passing score has been fabricated or derived from minimum examination thresholds.",
+    "Russian doctoral admissions and HSE-owned SPO availability remain unknown where current official evidence is insufficient.",
+    "Raw captures remain in ignored tmp/education-pathways; this tracked packet preserves official URLs, retrieval times, response-byte SHA256 hashes and fact locators.",
+    "Financial University college pages were unavailable with HTTP 403, so no example or conditions were published from search snippets."
+  ]
+}

@@ -1,4 +1,4 @@
-import type { DirectoryFaculty } from "./university-directory-details";
+import type { DirectoryFaculty } from "@/lib/directory/model";
 
 export type FacultyListItem = Pick<
   DirectoryFaculty,

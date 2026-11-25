@@ -18,7 +18,15 @@ export function hasValidOrigin(request: Request): boolean {
   const origin = request.headers.get("origin");
   if (!origin) return false;
   try {
-    return new URL(origin).origin === new URL(request.url).origin;
+    // A reverse proxy's internal request URL need not be the public origin.
+    // Do not authorize a client-selected Host or forwarded-host in production.
+    const expected = process.env.APP_URL;
+    if (!expected && process.env.NODE_ENV === "production") return false;
+    const actual = new URL(origin);
+    return (
+      actual.origin === origin &&
+      actual.origin === new URL(expected || request.url).origin
+    );
   } catch {
     return false;
   }

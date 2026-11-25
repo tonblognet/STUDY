@@ -1,0 +1,4260 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "mpei",
+  "reviewedAtUtc": "2026-11-22T21:17:45Z",
+  "scope": "НИУ МЭИ, Москва, бакалавриат и специалитет. Кампания 2026, три формы, архив 2025–2026.",
+  "sources": {
+    "rules-2026": {
+      "sourceUrl": "https://pk.mpei.ru/docs/rules_bach_2026.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:07:36Z",
+      "sourceSha256": "766fc62e192e5e9775a4348236da212f9b6ce0ce66d9d85dc949841b7f45cfd6",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Правила 2026. Разделы 4–5, сроки и порядок зачисления"
+    },
+    "quota-2026": {
+      "sourceUrl": "https://pk.mpei.ru/docs/quotas2026.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:07:36Z",
+      "sourceSha256": "f25220de084c4d55e651cb932f93544ced34d71f8e68261a4570afee2a2b273d",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "План 2026, Москва"
+    },
+    "tuition-2026": {
+      "sourceUrl": "https://pk.mpei.ru/docs/rules_cost_2026-27.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:08:19Z",
+      "sourceSha256": "826799a67c94cb3da0512de535aed326470c3abeca0ef99b1779a378f307294b",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Приказ от 03.06.2026 № 596, страницы 1–3, головной вуз"
+    },
+    "contacts": {
+      "sourceUrl": "https://pk.mpei.ru/contacts.html",
+      "sourceYear": null,
+      "checkedAt": "2026-11-22T21:14:22Z",
+      "sourceSha256": "b607371a4985dce4657d3c06a48816d08da64e1047e5e1ec3f1aa8a6c35f880c",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Приёмная комиссия и контакт-центр"
+    },
+    "special-rights": {
+      "sourceUrl": "https://pk.mpei.ru/info/Oprava",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:08:19Z",
+      "sourceSha256": "3e0d48f52004abf71e0c73bd2bf8a24303a252fe4fc9a114813fe58018e09083",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Победителям и призёрам олимпиад, кампания 2026"
+    },
+    "exams": {
+      "sourceUrl": "https://pk.mpei.ru/info/progrmpei",
+      "sourceYear": null,
+      "checkedAt": "2026-11-22T21:08:19Z",
+      "sourceSha256": "9377e62cde0a68ae76a46f24cb230e8338e4efd2ebf9ccd2765d01bd403312be",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Формы и программы внутренних испытаний"
+    },
+    "enrollment": {
+      "sourceUrl": "https://pk.mpei.ru/inform/enrolled.html",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:14:23Z",
+      "sourceSha256": "4bdc8c261648679809cfba75865abc0ae45e80a7a9c34620486484cb6dc5380d",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Индексы опубликованных списков зачисленных"
+    },
+    "rules-index": {
+      "sourceUrl": "https://pk.mpei.ru/info/rulesfirst.html",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:07:34Z",
+      "sourceSha256": "51ae9d6045843e8d7844f99a63d3f9adc57547870dfd1e58cdb77dcbb60d7936",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Опубликованы правила кампании 2026"
+    },
+    "statistics-2026": {
+      "sourceUrl": "https://pk.mpei.ru/info/statlastyear26.html",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:07:34Z",
+      "sourceSha256": "d1b9392a6f961871e0f9c457b0a00b3fe4c5139124a7afd90d1aef30d6c3ff4a",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Статистика приёма в 2026 году, массив PROGRAMS"
+    },
+    "statistics-2025": {
+      "sourceUrl": "https://pk.mpei.ru/info/statlastyear25.html",
+      "sourceYear": 2025,
+      "checkedAt": "2026-11-22T21:14:22Z",
+      "sourceSha256": "6da8bda1dfd8e3fac3c6248104a0a9c7fc5bfb1fcb07978b1c66e9b8953124d9",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Статистика приёма в 2025 году, две таблицы"
+    },
+    "programs-simple": {
+      "sourceUrl": "https://pk.mpei.ru/info/speclist_simple",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:08:19Z",
+      "sourceSha256": "0d919b82a996cb33f92eb7538b5a73c9d2104403af10da96dad364de65e325de",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "НИУ «МЭИ» (г. Москва), все три формы, заголовки плана и испытаний"
+    },
+    "deadlines": {
+      "sourceUrl": "https://pk.mpei.ru/info/datedoc.html",
+      "sourceYear": null,
+      "checkedAt": "2026-11-22T21:08:18Z",
+      "sourceSha256": "fd6ee7b925ca0260cde382dece4cc3121c88d5d9957313e3b7a7cf54789daf71",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Даты без года, отдельная сверка с календарём раздела 11 правил 2026"
+    },
+    "achievements": {
+      "sourceUrl": "https://pk.mpei.ru/info/raitingrules",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:14:22Z",
+      "sourceSha256": "ca4e3a36b5accb5cb923189841b20610590d91e102255558fc3668935240b164",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "Достижения для бакалавриата и специалитета"
+    },
+    "inf-budget": {
+      "sourceUrl": "https://pk.mpei.ru/inform/enrolled35ebacc.html",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:15:09Z",
+      "sourceSha256": "860ee08ad99de13c193d7bf8cb8722d7a452baeb14a96eae1ea5f4fbf8190add",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "09.03.03, Прикладная информатика, Москва, очная"
+    },
+    "inf-paid": {
+      "sourceUrl": "https://pk.mpei.ru/inform/enrolled56ebacpa.html",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:17:01Z",
+      "sourceSha256": "cf96efe8e80f81f7c95e5e2e89975bb6f0cdddd074b640ac3d22d25950ce452a",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "09.03.03, Прикладная информатика, Москва, очная"
+    },
+    "inf-target": {
+      "sourceUrl": "https://pk.mpei.ru/inform/enrolled2598ebact.html",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:15:17Z",
+      "sourceSha256": "b46abd741d76de6b3aaba3f8152d29b42734c89f19758474cd59c0070faa8141",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "09.03.03, Прикладная информатика, Москва, очная"
+    },
+    "inf-special": {
+      "sourceUrl": "https://pk.mpei.ru/inform/enrolled342ebacq.html",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:15:10Z",
+      "sourceSha256": "0781b1a5ad0189711b9f94b673a60cd5ef49489a31298fb98b76f08c39a33bc6",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "09.03.03, Прикладная информатика, Москва, очная"
+    },
+    "inf-separate": {
+      "sourceUrl": "https://pk.mpei.ru/inform/enrolled1050ebacqs.html",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-22T21:15:09Z",
+      "sourceSha256": "de4b3e21e3ac6fe8e289b2d2ac7781e857afe4a5d68dfd11c5b0432affa0eb95",
+      "sourceSha256Basis": "response-bytes",
+      "locator": "09.03.03, Прикладная информатика, Москва, очная"
+    }
+  },
+  "publishedPassingScores2026": {
+    "source": "statistics-2026",
+    "year": 2026,
+    "stage": null,
+    "placesMeaning": "Места в сводке результатов. Отдельный этап и методика подсчёта мест не указаны.",
+    "groups": [
+      {
+        "code": "01.03.02 / 01.03.03",
+        "group": "Прикладная математика, информатика, математическое моделирование",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 100,
+          "average": 93.25,
+          "score": 272
+        },
+        "paid": {
+          "places": 55,
+          "average": 75.75,
+          "score": 202
+        }
+      },
+      {
+        "code": "02.03.02",
+        "group": "Фундаментальная информатика и информационные технологии",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 20,
+          "average": 98.94,
+          "score": 292
+        },
+        "paid": {
+          "places": 30,
+          "average": 79.62,
+          "score": 216
+        }
+      },
+      {
+        "code": "08.03.01",
+        "group": "Строительство",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 49,
+          "average": 89.68,
+          "score": 258
+        },
+        "paid": {
+          "places": 10,
+          "average": 76.63,
+          "score": 222
+        }
+      },
+      {
+        "code": "09.03.01",
+        "group": "Информатика и вычислительная техника",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 201,
+          "average": 90.52,
+          "score": 262
+        },
+        "paid": {
+          "places": 59,
+          "average": 73.83,
+          "score": 191
+        }
+      },
+      {
+        "code": "09.03.01",
+        "group": "ИТНО. Информационные системы и технологии",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 50,
+          "average": 89.69,
+          "score": 263
+        },
+        "paid": {
+          "places": 25,
+          "average": 70.24,
+          "score": 179
+        }
+      },
+      {
+        "code": "09.03.03",
+        "group": "Прикладная информатика",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 30,
+          "average": 91.82,
+          "score": 269
+        },
+        "paid": {
+          "places": 60,
+          "average": 71.52,
+          "score": 189
+        }
+      },
+      {
+        "code": "10.03.01",
+        "group": "Информационная безопасность",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 53,
+          "average": 95.52,
+          "score": 275
+        },
+        "paid": {
+          "places": 100,
+          "average": 73.67,
+          "score": 195
+        }
+      },
+      {
+        "code": "11.03.01",
+        "group": "Беспроводные технологии",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 64,
+          "average": 84.16,
+          "score": 240
+        },
+        "paid": {
+          "places": 20,
+          "average": 67.07,
+          "score": 172
+        }
+      },
+      {
+        "code": "11.03.04",
+        "group": "Электроника и наноэлектроника",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 175,
+          "average": 85.17,
+          "score": 242
+        },
+        "paid": {
+          "places": 55,
+          "average": 72.72,
+          "score": 187
+        }
+      },
+      {
+        "code": "11.05.01",
+        "group": "Интеллектуальные системы (специалитет)",
+        "level": "Специалитет",
+        "form": "Очная",
+        "budget": {
+          "places": 62,
+          "average": 82.95,
+          "score": 237
+        },
+        "paid": {
+          "places": 15,
+          "average": 64.5,
+          "score": 152
+        }
+      },
+      {
+        "code": "12.03.04",
+        "group": "Биотехнические системы и технологии",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 75,
+          "average": 87.33,
+          "score": 248
+        },
+        "paid": {
+          "places": 15,
+          "average": 76.05,
+          "score": 218
+        }
+      },
+      {
+        "code": "13.03.01",
+        "group": "Теплоэнергетика, теплотехника, автоматизация и проектирование",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 180,
+          "average": 85.77,
+          "score": 246
+        },
+        "paid": {
+          "places": 55,
+          "average": 75.71,
+          "score": 207
+        }
+      },
+      {
+        "code": "13.03.01",
+        "group": "ИТНО. Энергетика, атомные и водородные технологии, математическое моделирование, цифровые двойники",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 75,
+          "average": 85.13,
+          "score": 248
+        },
+        "paid": {
+          "places": 50,
+          "average": 70.3,
+          "score": 166
+        }
+      },
+      {
+        "code": "13.03.01",
+        "group": "Экономика и управление на предприятии теплоэнергетики",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 25,
+          "average": 85.46,
+          "score": 246
+        },
+        "paid": {
+          "places": 5,
+          "average": 71.33,
+          "score": 198
+        }
+      },
+      {
+        "code": "13.03.02",
+        "group": "Экономика и управление на предприятиях электротехнической отрасли",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 20,
+          "average": 83.61,
+          "score": 241
+        },
+        "paid": {
+          "places": 30,
+          "average": 64.27,
+          "score": 144
+        }
+      },
+      {
+        "code": "13.03.02",
+        "group": "Электроэнергетика",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 285,
+          "average": 86.38,
+          "score": 244
+        },
+        "paid": {
+          "places": 100,
+          "average": 73.14,
+          "score": 193
+        }
+      },
+      {
+        "code": "13.03.02",
+        "group": "Цифровая электротехника и электроника",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 130,
+          "average": 84.44,
+          "score": 241
+        },
+        "paid": {
+          "places": 70,
+          "average": 66.13,
+          "score": 162
+        }
+      },
+      {
+        "code": "13.03.03",
+        "group": "Энергетическое машиностроение",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 65,
+          "average": 84.77,
+          "score": 245
+        },
+        "paid": {
+          "places": 20,
+          "average": 74.44,
+          "score": 206
+        }
+      },
+      {
+        "code": "14.03.01",
+        "group": "Ядерная энергетика и теплофизика",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 130,
+          "average": 91.43,
+          "score": 263
+        },
+        "paid": {
+          "places": 30,
+          "average": 77.54,
+          "score": 217
+        }
+      },
+      {
+        "code": "14.03.01",
+        "group": "ИТНО. Новые технологии и материалы в атомной энергетике и промышленности",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 50,
+          "average": 88.36,
+          "score": 256
+        },
+        "paid": {
+          "places": 25,
+          "average": 65.72,
+          "score": 146
+        }
+      },
+      {
+        "code": "14.05.01",
+        "group": "Ядерные реакторы и материалы (специалитет)",
+        "level": "Специалитет",
+        "form": "Очная",
+        "budget": {
+          "places": 25,
+          "average": 93.02,
+          "score": 269
+        },
+        "paid": {
+          "places": 5,
+          "average": 72,
+          "score": 200
+        }
+      },
+      {
+        "code": "15.03.01 / 15.03.03 / 15.03.04 / 15.03.06",
+        "group": "Мехатроника, робототехника, машиностроение и автоматизация",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 115,
+          "average": 89.76,
+          "score": 257
+        },
+        "paid": {
+          "places": 45,
+          "average": 74.05,
+          "score": 206
+        }
+      },
+      {
+        "code": "27.03.02",
+        "group": "Управление качеством процессов и продукции предприятия",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 20,
+          "average": 92.19,
+          "score": 263
+        },
+        "paid": {
+          "places": 30,
+          "average": 62.46,
+          "score": 148
+        }
+      },
+      {
+        "code": "27.03.04",
+        "group": "Управление в технических системах",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 67,
+          "average": 89.72,
+          "score": 261
+        },
+        "paid": {
+          "places": 10,
+          "average": 80,
+          "score": 224
+        }
+      },
+      {
+        "code": "38.03.01",
+        "group": "Экономика",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 40,
+          "average": 93.03,
+          "score": 273
+        },
+        "paid": {
+          "places": 150,
+          "average": 76.35,
+          "score": 204
+        }
+      },
+      {
+        "code": "38.03.02",
+        "group": "Менеджмент",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 20,
+          "average": 92.67,
+          "score": 272
+        },
+        "paid": {
+          "places": 30,
+          "average": 76.99,
+          "score": 207
+        }
+      },
+      {
+        "code": "38.03.05",
+        "group": "Бизнес-информатика",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 10,
+          "average": 94.25,
+          "score": 279
+        },
+        "paid": {
+          "places": 42,
+          "average": 79.15,
+          "score": 220
+        }
+      },
+      {
+        "code": "41.03.05",
+        "group": "Международные отношения",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 11,
+          "average": 73.3,
+          "score": 181
+        }
+      },
+      {
+        "code": "42.03.01",
+        "group": "Реклама и связи с общественностью",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 30,
+          "average": 73.49,
+          "score": 182
+        }
+      },
+      {
+        "code": "45.03.02",
+        "group": "Лингвистика",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 25,
+          "average": 67.24,
+          "score": 166
+        }
+      },
+      {
+        "code": "54.03.01",
+        "group": "Дизайн",
+        "level": "Бакалавриат",
+        "form": "Очная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 40,
+          "average": 71.4,
+          "score": 275
+        }
+      },
+      {
+        "code": "02.03.02",
+        "group": "Технологии разработки интеллектуальных систем (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 200,
+          "average": 79.02,
+          "score": 138
+        }
+      },
+      {
+        "code": "08.03.01",
+        "group": "Строительство о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 120,
+          "average": 69.96,
+          "score": 154
+        }
+      },
+      {
+        "code": "09.03.01",
+        "group": "Прикладная информатика о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 135,
+          "average": 76.79,
+          "score": 154
+        }
+      },
+      {
+        "code": "10.03.01",
+        "group": "Информационная безопасность о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 250,
+          "average": 78.08,
+          "score": 132
+        }
+      },
+      {
+        "code": "13.03.02",
+        "group": "Распределительные электрические сети",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 80,
+          "average": 68.71,
+          "score": 128
+        }
+      },
+      {
+        "code": "13.03.02",
+        "group": "Электрооборудование и электрохозяйство предприятий, организаций и учреждений",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 50,
+          "average": 66.57,
+          "score": 128
+        }
+      },
+      {
+        "code": "27.03.02",
+        "group": "Управление качеством процессов и продукции предприятия о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 200,
+          "average": 74.33,
+          "score": 139
+        }
+      },
+      {
+        "code": "38.03.01",
+        "group": "Экономика бизнеса (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 85,
+          "average": 86.81,
+          "score": 229
+        }
+      },
+      {
+        "code": "38.03.01",
+        "group": "Экономика о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 40,
+          "average": 80.7,
+          "score": 209
+        }
+      },
+      {
+        "code": "38.03.02",
+        "group": "Менеджмент о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 35,
+          "average": 86.94,
+          "score": 240
+        }
+      },
+      {
+        "code": "38.03.02",
+        "group": "Закупочная логистика (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 70,
+          "average": 80.81,
+          "score": 199
+        }
+      },
+      {
+        "code": "38.03.05",
+        "group": "Архитектура информационных систем (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 50,
+          "average": 86.17,
+          "score": 218
+        }
+      },
+      {
+        "code": "38.03.05",
+        "group": "Бизнес-информатика о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 87,
+          "average": 75.25,
+          "score": 133
+        }
+      },
+      {
+        "code": "42.03.01",
+        "group": "Реклама и связи с общественностью о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 30,
+          "average": 80.61,
+          "score": 179
+        }
+      },
+      {
+        "code": "45.03.02",
+        "group": "Лингвистика о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 20,
+          "average": 71.27,
+          "score": 165
+        }
+      },
+      {
+        "code": "54.03.01",
+        "group": "Дизайн о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 80,
+          "average": 85.81,
+          "score": 318
+        }
+      },
+      {
+        "code": "54.03.01",
+        "group": "Коммуникационный дизайн о-з",
+        "level": "Бакалавриат",
+        "form": "Очно-заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 150,
+          "average": 74.54,
+          "score": 223
+        }
+      },
+      {
+        "code": "09.03.01",
+        "group": "Технологии разработки программного обеспечения (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 200,
+          "average": 86.63,
+          "score": 218
+        }
+      },
+      {
+        "code": "09.03.03",
+        "group": "Информационные технологии в теплоэнергетике (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 100,
+          "average": 79.11,
+          "score": 156
+        }
+      },
+      {
+        "code": "11.03.01",
+        "group": "Интернет вещей (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 100,
+          "average": 82.63,
+          "score": 213
+        }
+      },
+      {
+        "code": "12.03.01",
+        "group": "Диагностические системы и технологии (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 100,
+          "average": 73.43,
+          "score": 165
+        }
+      },
+      {
+        "code": "13.03.01",
+        "group": "Технологии теплоэнергетики (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 100,
+          "average": 67.4,
+          "score": 149
+        }
+      },
+      {
+        "code": "13.03.02",
+        "group": "Электроэнергетика и электротехника з (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 100,
+          "average": 70.74,
+          "score": 174
+        }
+      },
+      {
+        "code": "15.03.06",
+        "group": "Робототехнические устройства (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 150,
+          "average": 71.56,
+          "score": 143
+        }
+      },
+      {
+        "code": "27.03.02",
+        "group": "Управление качеством продукции, процессов и услуг (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 100,
+          "average": 81.83,
+          "score": 216
+        }
+      },
+      {
+        "code": "27.03.04",
+        "group": "Автоматизированные системы управления (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 160,
+          "average": 78.37,
+          "score": 148
+        }
+      },
+      {
+        "code": "40.03.01",
+        "group": "Юриспруденция з",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 20,
+          "average": 85.28,
+          "score": 190
+        }
+      },
+      {
+        "code": "42.03.01",
+        "group": "Реклама и связи с общественностью з",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 90,
+          "average": 87.45,
+          "score": 141
+        }
+      },
+      {
+        "code": "42.03.01",
+        "group": "Реклама и продвижение СМИ (дистанционное обучение)",
+        "level": "Бакалавриат",
+        "form": "Заочная",
+        "budget": {
+          "places": 0,
+          "average": null,
+          "score": null
+        },
+        "paid": {
+          "places": 35,
+          "average": 94.19,
+          "score": 263
+        }
+      }
+    ]
+  },
+  "publishedPassingScores2025": {
+    "source": "statistics-2025",
+    "year": 2025,
+    "stage": null,
+    "budget": [
+      {
+        "group": "Прикладная математика и информатика МПОВМКС",
+        "code": "01.03.02",
+        "form": "Очная форма, бюджетные места",
+        "places": "60",
+        "score": "262",
+        "average": "89,75"
+      },
+      {
+        "group": "Прикладная математика и информатика ММ",
+        "code": "01.03.02",
+        "form": "Очная форма, бюджетные места",
+        "places": "40",
+        "score": "256",
+        "average": "87,76"
+      },
+      {
+        "group": "Фундаментальная информатика и информационные технологии",
+        "code": "02.03.02",
+        "form": "Очная форма, бюджетные места",
+        "places": "23",
+        "score": "271",
+        "average": "92,75"
+      },
+      {
+        "group": "Строительство",
+        "code": "08.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "49",
+        "score": "234",
+        "average": "82,95"
+      },
+      {
+        "group": "Информатика и вычислительная техника",
+        "code": "09.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "190",
+        "score": "248",
+        "average": "85,79"
+      },
+      {
+        "group": "ИТНО. Информационные системы и технологии",
+        "code": "09.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "41",
+        "score": "253",
+        "average": "86,64"
+      },
+      {
+        "group": "Прикладная информатика",
+        "code": "09.03.03",
+        "form": "Очная форма, бюджетные места",
+        "places": "30",
+        "score": "261",
+        "average": "90,09"
+      },
+      {
+        "group": "Информационная безопасность",
+        "code": "10.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "60",
+        "score": "261",
+        "average": "89,50"
+      },
+      {
+        "group": "Беспроводные технологии",
+        "code": "11.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "75",
+        "score": "216",
+        "average": "77,06"
+      },
+      {
+        "group": "Электроника и наноэлектроника",
+        "code": "11.03.04",
+        "form": "Очная форма, бюджетные места",
+        "places": "175",
+        "score": "217",
+        "average": "77,27"
+      },
+      {
+        "group": "Интеллектуальные системы",
+        "code": "11.05.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "75",
+        "score": "214",
+        "average": "76,7"
+      },
+      {
+        "group": "Биотехнические системы и технологии",
+        "code": "12.03.04",
+        "form": "Очная форма, бюджетные места",
+        "places": "75",
+        "score": "218",
+        "average": "77,06"
+      },
+      {
+        "group": "Теплоэнергетика, теплотехника, автоматизация и проектирование",
+        "code": "13.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "180",
+        "score": "216",
+        "average": "76,92"
+      },
+      {
+        "group": "Экономика и управление на предприятии теплоэнергетики",
+        "code": "13.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "25",
+        "score": "233",
+        "average": "82,27"
+      },
+      {
+        "group": "ИТНО. Энергетика, водородные технологии, математическое моделирование, цифровые двойники",
+        "code": "13.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "50",
+        "score": "227",
+        "average": "79,17"
+      },
+      {
+        "group": "Электроэнергетика",
+        "code": "13.03.02",
+        "form": "Очная форма, бюджетные места",
+        "places": "300",
+        "score": "214",
+        "average": "77,22"
+      },
+      {
+        "group": "Цифровая электротехника и электроника",
+        "code": "13.03.02",
+        "form": "Очная форма, бюджетные места",
+        "places": "150",
+        "score": "213",
+        "average": "75,2"
+      },
+      {
+        "group": "Энергетическое машиностроение",
+        "code": "13.03.03",
+        "form": "Очная форма, бюджетные места",
+        "places": "65",
+        "score": "215",
+        "average": "76,51"
+      },
+      {
+        "group": "Ядерная энергетика и теплофизика",
+        "code": "14.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "190",
+        "score": "239",
+        "average": "84,15"
+      },
+      {
+        "group": "Мехатроника, робототехника и машиностроение",
+        "code": "15.03.01 , 15.03.03 , 15.03.06 .",
+        "form": "Очная форма, бюджетные места",
+        "places": "100",
+        "score": "233",
+        "average": "82,01"
+      },
+      {
+        "group": "Управление качеством в производственно-технологических системах",
+        "code": "27.03.02",
+        "form": "Очная форма, бюджетные места",
+        "places": "25",
+        "score": "225",
+        "average": "78,88"
+      },
+      {
+        "group": "Управление в технических системах",
+        "code": "27.03.04",
+        "form": "Очная форма, бюджетные места",
+        "places": "75",
+        "score": "243",
+        "average": "84,02"
+      },
+      {
+        "group": "Экономика",
+        "code": "38.03.01",
+        "form": "Очная форма, бюджетные места",
+        "places": "50",
+        "score": "258",
+        "average": "90,54"
+      },
+      {
+        "group": "Менеджмент",
+        "code": "38.03.02",
+        "form": "Очная форма, бюджетные места",
+        "places": "30",
+        "score": "258",
+        "average": "88,63"
+      },
+      {
+        "group": "Бизнес-информатика",
+        "code": "38.03.05",
+        "form": "Очная форма, бюджетные места",
+        "places": "17",
+        "score": "270",
+        "average": "93,17"
+      }
+    ],
+    "paid": [
+      {
+        "group": "Фундаментальная информатика и информационные технологии",
+        "code": "02.03.02",
+        "form": "Очная форма, места по договору",
+        "places": "5",
+        "score": "198"
+      },
+      {
+        "group": "Строительство",
+        "code": "08.03.01",
+        "form": "Очная форма, места по договору",
+        "places": "11",
+        "score": "187"
+      },
+      {
+        "group": "Информационная безопасность",
+        "code": "10.03.01",
+        "form": "Очная форма, места по договору",
+        "places": "100",
+        "score": "151"
+      },
+      {
+        "group": "Электроэнергетика",
+        "code": "13.03.02",
+        "form": "Очная форма, места по договору",
+        "places": "65",
+        "score": "150"
+      },
+      {
+        "group": "Экономика бизнеса",
+        "code": "38.03.01",
+        "form": "Очно-заочная форма, места по договору",
+        "places": "120",
+        "score": "167"
+      },
+      {
+        "group": "Дизайн о-з",
+        "code": "54.03.01",
+        "form": "Очно-заочная форма, места по договору",
+        "places": "80",
+        "score": "259"
+      },
+      {
+        "group": "Технологии разработки программного обеспечения",
+        "code": "09.03.01",
+        "form": "Заочная форма, места по договору",
+        "places": "200",
+        "score": "198"
+      },
+      {
+        "group": "Робототехнические устройства",
+        "code": "15.03.06",
+        "form": "Заочная форма, места по договору",
+        "places": "80",
+        "score": "141"
+      },
+      {
+        "group": "Реклама и связи с общественностью (Дизайн в рекламе)",
+        "code": "42.03.01",
+        "form": "Заочная форма, места по договору",
+        "places": "90",
+        "score": "241"
+      }
+    ]
+  },
+  "publishedIntakePlan": {
+    "source": "programs-simple",
+    "year": 2026,
+    "forms": {
+      "Очная форма обучения": [
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Прикладная математика, информатика, математическое моделирование",
+              "rowspan": 3
+            },
+            {
+              "text": "ИВТИ",
+              "rowspan": 2
+            },
+            {
+              "text": "01.03.02 Прикладная математика и информатика",
+              "rowspan": 2
+            },
+            {
+              "text": "Математическое и программное обеспечение вычислительных машин и компьютерных сетей",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 или Информатика - 46",
+              "rowspan": 3,
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 50,
+            "specialQuota": 5,
+            "separateQuota": 5,
+            "target": 4,
+            "paid": 20,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 2,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Математическое моделирование",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 35,
+            "specialQuota": 4,
+            "separateQuota": 4,
+            "target": null,
+            "paid": 15,
+            "paidUnderRule16_12": 3
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": true
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "ЭнМИ"
+            },
+            {
+              "text": "01.03.03 Механика и математическое моделирование"
+            },
+            {
+              "text": "Математическое и компьютерное моделирование в механике",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 15,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 0,
+            "paid": 20,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Фундаментальная информатика и информационные технологии"
+            },
+            {
+              "text": "ИВТИ"
+            },
+            {
+              "text": "02.03.02 Фундаментальная информатика и информационные технологии"
+            },
+            {
+              "text": "Информационные технологии и системы искусственного интеллекта",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 или Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 20,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 3,
+            "paid": 30,
+            "paidUnderRule16_12": 95
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Строительство"
+            },
+            {
+              "text": "ИГВИЭ"
+            },
+            {
+              "text": "08.03.01 Строительство"
+            },
+            {
+              "text": "Промышленное, гражданское и энергетическое строительство",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 49,
+            "specialQuota": 5,
+            "separateQuota": 5,
+            "target": 3,
+            "paid": 10,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Информатика и вычислительная техника",
+              "rowspan": 2
+            },
+            {
+              "text": "ИВТИ"
+            },
+            {
+              "text": "09.03.01 Информатика и вычислительная техника",
+              "rowspan": 2
+            },
+            {
+              "text": "Вычислительные машины, комплексы, системы и сети",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "rowspan": 2,
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 185,
+            "specialQuota": 19,
+            "separateQuota": 19,
+            "target": 17,
+            "paid": 50,
+            "paidUnderRule16_12": 75
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "ИРЭ"
+            },
+            {
+              "text": "Информационные технологии и искусственный интеллект в радиоэлектронике",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 16,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 3,
+            "paid": 9,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "ИТНО. Информационные системы и технологии"
+            },
+            {
+              "text": "ИЭВТ"
+            },
+            {
+              "text": "09.03.01 Информатика и вычислительная техника"
+            },
+            {
+              "text": "Информационные системы и технологии в проектировании и производстве",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 50,
+            "specialQuota": 5,
+            "separateQuota": 5,
+            "target": 2,
+            "paid": 25,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "ИТНО. Энергетика, атомные и водородные технологии, математическое моделирование, цифровые двойники"
+            },
+            {
+              "text": "ИЭВТ"
+            },
+            {
+              "text": "13.03.01 Теплоэнергетика и теплотехника"
+            },
+            {
+              "text": "Энергетика предприятий и водородные технологии; Информационные системы и технологии в энергетике и промышленности; Инжиниринг объектов атомной и тепловой энергетики",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46 или Химия - 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 75,
+            "specialQuota": 8,
+            "separateQuota": 8,
+            "target": 11,
+            "paid": 50,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "ИТНО. Новые технологии и материалы в атомной энергетике и промышленности"
+            },
+            {
+              "text": "ИЭВТ"
+            },
+            {
+              "text": "14.03.01 Ядерная энергетика и теплофизика"
+            },
+            {
+              "text": "Новые технологии и материалы в атомной энергетике и промышленности",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика - 40 Информатика - 46 Химия- 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 50,
+            "specialQuota": 5,
+            "separateQuota": 5,
+            "target": 0,
+            "paid": 25,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Прикладная информатика"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "09.03.03 Прикладная информатика"
+            },
+            {
+              "text": "Прикладная информатика в экономике",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика – 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 30,
+            "specialQuota": 3,
+            "separateQuota": 3,
+            "target": 1,
+            "paid": 60,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Информационная безопасность"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "10.03.01 Информационная безопасность"
+            },
+            {
+              "text": "Безопасность компьютерных систем; Безопасность автоматизированных систем; Безопасность компьютерных систем (продвинутый уровень)",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 53,
+            "specialQuota": 6,
+            "separateQuota": 6,
+            "target": 12,
+            "paid": 100,
+            "paidUnderRule16_12": 3
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Беспроводные технологии"
+            },
+            {
+              "text": "ИРЭ"
+            },
+            {
+              "text": "11.03.01 Радиотехника"
+            },
+            {
+              "text": "Беспроводные технологии",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 64,
+            "specialQuota": 8,
+            "separateQuota": 8,
+            "target": 20,
+            "paid": 20,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Электроника и наноэлектроника",
+              "rowspan": 2
+            },
+            {
+              "text": "ИРЭ"
+            },
+            {
+              "text": "11.03.04 Электроника и наноэлектроника",
+              "rowspan": 2
+            },
+            {
+              "text": "Промышленная электроника; Светотехника и источники света; Микроэлектроника и твердотельная электроника; Лазерная и оптическая измерительная электроника",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46",
+              "rowspan": 2,
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 150,
+            "specialQuota": 15,
+            "separateQuota": 15,
+            "target": 8,
+            "paid": 30,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Электроника и наноэлектроника"
+            },
+            {
+              "text": "ИЭТЭ"
+            },
+            {
+              "text": "Материалы электроники и наноэлектроники",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 25,
+            "specialQuota": 3,
+            "separateQuota": 3,
+            "target": 2,
+            "paid": 25,
+            "paidUnderRule16_12": 35
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Интеллектуальные системы"
+            },
+            {
+              "text": "ИРЭ"
+            },
+            {
+              "text": "11.05.01 Радиоэлектронные системы и комплексы"
+            },
+            {
+              "text": "Радиоэлектронные системы и комплексы",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 62,
+            "specialQuota": 7,
+            "separateQuota": 7,
+            "target": 48,
+            "paid": 15,
+            "paidUnderRule16_12": 1
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Биотехнические системы и технологии"
+            },
+            {
+              "text": "ИРЭ"
+            },
+            {
+              "text": "12.03.04 Биотехнические системы и технологии"
+            },
+            {
+              "text": "Биотехнические и медицинские аппараты и системы",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46 Химия- 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 75,
+            "specialQuota": 8,
+            "separateQuota": 8,
+            "target": 0,
+            "paid": 15,
+            "paidUnderRule16_12": 75
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Теплоэнергетика, теплотехника, автоматизация и проектирование",
+              "rowspan": 2
+            },
+            {
+              "text": "ИТАЭ"
+            },
+            {
+              "text": "13.03.01 Теплоэнергетика и теплотехника",
+              "rowspan": 2
+            },
+            {
+              "text": "Тепловые электрические станции; Технология воды и топлива на ТЭС и АЭС; Автоматизация технологических процессов в теплоэнергетике; Цифровизация в тепловой и возобновляемой энергетике; Возведение и эксплуатация тепловых и атомных электростанций (с получением второй квалификации 08.03.01 Строительство)",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46 или Химия - 40",
+              "rowspan": 2,
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 130,
+            "specialQuota": 13,
+            "separateQuota": 13,
+            "target": 12,
+            "paid": 30,
+            "paidUnderRule16_12": 55
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "ИЭВТ"
+            },
+            {
+              "text": "Автономные энергетические системы; Энергообеспечение и инженерные системы зданий и сооружений; Системы теплоэнергоснабжения городов",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 50,
+            "specialQuota": 5,
+            "separateQuota": 5,
+            "target": 17,
+            "paid": 25,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Экономика и управление на предприятиях энергетики"
+            },
+            {
+              "text": "ИЭВТ"
+            },
+            {
+              "text": "13.03.01 Теплоэнергетика и теплотехника"
+            },
+            {
+              "text": "Экономика и управление на энергопредприятии",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика- 41 3. По выбору поступающего: Математика - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 25,
+            "specialQuota": 3,
+            "separateQuota": 3,
+            "target": 2,
+            "paid": 5,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Экономика и управление на предприятиях электротехнической отрасли"
+            },
+            {
+              "text": "ИЭТЭ"
+            },
+            {
+              "text": "13.03.02 Электроэнергетика и электротехника"
+            },
+            {
+              "text": "Экономика и управление на предприятиях электротехнической отрасли",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика- 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 20,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 0,
+            "paid": 30,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Электроэнергетика",
+              "rowspan": 2
+            },
+            {
+              "text": "ИГВИЭ"
+            },
+            {
+              "text": "13.03.02 Электроэнергетика и электротехника",
+              "rowspan": 2
+            },
+            {
+              "text": "Гидроэлектростанции; Гидроэнергетика и возобновляемые источники энергии; Энергоустановки на основе возобновляемых источников энергии",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика - 40 Информатика - 46",
+              "rowspan": 2,
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 40,
+            "specialQuota": 4,
+            "separateQuota": 4,
+            "target": 4,
+            "paid": 15,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "ИЭЭ"
+            },
+            {
+              "text": "Электроэнергетика; Распределительные электрические сети; Эксплуатация релейной защиты, автоматики и электрооборудования электростанций; Электроэнергетика и электротехника",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 245,
+            "specialQuota": 25,
+            "separateQuota": 25,
+            "target": 86,
+            "paid": 100,
+            "paidUnderRule16_12": 95
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Цифровая электротехника и электроника"
+            },
+            {
+              "text": "ИЭТЭ"
+            },
+            {
+              "text": "13.03.02 Электроэнергетика и электротехника"
+            },
+            {
+              "text": "Техногенная безопасность в электроэнергетике и электротехнике; Электрооборудование и электрохозяйство предприятий, организаций и учреждений; Электрооборудование летательных аппаратов и автомобилей; Электропривод и автоматика; Электромеханика, электрические и электронные аппараты; Инновационные электротехнические материалы и изделия; Электротехнология; Электротехнические комплексы беспилотных летательных аппаратов",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 130,
+            "specialQuota": 13,
+            "separateQuota": 13,
+            "target": 32,
+            "paid": 70,
+            "paidUnderRule16_12": 140
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Энергетическое машиностроение",
+              "rowspan": 2
+            },
+            {
+              "text": "ЭнМИ"
+            },
+            {
+              "text": "13.03.03 Энергетическое машиностроение",
+              "rowspan": 2
+            },
+            {
+              "text": "Газотурбинные, паротурбинные установки и двигатели; Интеллектуальные производственные технологии; Котлы, камеры сгорания и парогенераторы АЭС",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика - 40 Информатика - 46",
+              "rowspan": 2,
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 45,
+            "specialQuota": 5,
+            "separateQuota": 5,
+            "target": 6,
+            "paid": 15,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Энергетическое машиностроение"
+            },
+            {
+              "text": "ИГВИЭ"
+            },
+            {
+              "text": "Автоматизированные гидравлические и пневматические системы и агрегаты",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 20,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 2,
+            "paid": 5,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Ядерная энергетика и теплофизика"
+            },
+            {
+              "text": "ИТАЭ"
+            },
+            {
+              "text": "14.03.01 Ядерная энергетика и теплофизика"
+            },
+            {
+              "text": "Теплофизика; Атомные электростанции и установки; Термоядерные реакторы и плазменные установки",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 130,
+            "specialQuota": 13,
+            "separateQuota": 13,
+            "target": 21,
+            "paid": 30,
+            "paidUnderRule16_12": 7
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Ядерные реакторы и материалы"
+            },
+            {
+              "text": "ИТАЭ"
+            },
+            {
+              "text": "14.05.01 Ядерные реакторы и материалы"
+            },
+            {
+              "text": "Моделирование процессов в ядерных реакторах",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 25,
+            "specialQuota": 3,
+            "separateQuota": 3,
+            "target": 0,
+            "paid": 5,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Мехатроника, робототехника, машиностроение и автоматизация",
+              "rowspan": 4
+            },
+            {
+              "text": "ЭнМИ"
+            },
+            {
+              "text": "15.03.01 Машиностроение"
+            },
+            {
+              "text": "Машины и технология высокоэффективных процессов обработки материалов",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "rowspan": 4,
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 30,
+            "specialQuota": 3,
+            "separateQuota": 3,
+            "target": 9,
+            "paid": 10,
+            "paidUnderRule16_12": 121
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Мехатроника, робототехника и машиностроение"
+            },
+            {
+              "text": "ЭнМИ"
+            },
+            {
+              "text": "15.03.03 Прикладная механика"
+            },
+            {
+              "text": "Динамика и прочность машин, приборов и аппаратуры",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 20,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 1,
+            "paid": 10,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Мехатроника, робототехника и машиностроение"
+            },
+            {
+              "text": "ЭнМИ"
+            },
+            {
+              "text": "15.03.06 Мехатроника и робототехника"
+            },
+            {
+              "text": "Фундаментальные и прикладные задачи мехатроники и робототехники (Управление и моделирование роботов и мехатронных систем; Современные методы исследования и проектирования роботов и мехатронных систем)",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 50,
+            "specialQuota": 5,
+            "separateQuota": 5,
+            "target": 1,
+            "paid": 15,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": ""
+            },
+            {
+              "text": "ИЭВТ"
+            },
+            {
+              "text": "15.03.04 Автоматизация технологических процессов и производств"
+            },
+            {
+              "text": "Автоматизация технологических процессов и производств",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 15,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 2,
+            "paid": 10,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Управление качеством процессов и продукции предприятия"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "27.03.02 Управление качеством"
+            },
+            {
+              "text": "Управление качеством процессов и продукции предприятия",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 20,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 6,
+            "paid": 30,
+            "paidUnderRule16_12": 50
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Управление в технических системах"
+            },
+            {
+              "text": "ИВТИ"
+            },
+            {
+              "text": "27.03.04 Управление в технических системах"
+            },
+            {
+              "text": "Интеллектуальные технологии управления в технических системах, обработка и анализ данных; Системы и средства автоматизации, интеллектуального управления и анализа данных; Управление интеллектуальными автономными техническими системами",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 67,
+            "specialQuota": 9,
+            "separateQuota": 9,
+            "target": 5,
+            "paid": 10,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Экономика"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "38.03.01 Экономика"
+            },
+            {
+              "text": "Корпоративные финансы; Цифровая экономика; Экономика предприятий и организаций",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 40,
+            "specialQuota": 4,
+            "separateQuota": 4,
+            "target": 4,
+            "paid": 150,
+            "paidUnderRule16_12": 21
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Менеджмент"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "38.03.02 Менеджмент"
+            },
+            {
+              "text": "Менеджмент предприятий и организаций; Информационный менеджмент в бизнес-системах",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 20,
+            "specialQuota": 2,
+            "separateQuota": 2,
+            "target": 4,
+            "paid": 30,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Бизнес-информатика"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "38.03.05 Бизнес-информатика"
+            },
+            {
+              "text": "Информационное и программное обеспечение бизнес-процессов",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 10,
+            "specialQuota": 1,
+            "separateQuota": 1,
+            "target": 0,
+            "paid": 42,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Международные отношения"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "41.03.05 Международные отношения**"
+            },
+            {
+              "text": "Международное энергетическое сотрудничество",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. История - 40 3. По выбору поступающего: Обществознание - 45 или Иностранный язык - 40 или География - 40 или Математика - 40 или Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 11,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Реклама и связи с общественностью"
+            },
+            {
+              "text": "ГПИ"
+            },
+            {
+              "text": "42.03.01 Реклама и связи с общественностью"
+            },
+            {
+              "text": "Медиа коммуникации и дизайн в рекламе; Реклама и связи с общественностью",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Обществознание - 45 3. По выбору поступающего: История - 40 Иностранный язык - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 30,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Лингвистика"
+            },
+            {
+              "text": "ГПИ"
+            },
+            {
+              "text": "45.03.02 Лингвистика"
+            },
+            {
+              "text": "Перевод и переводоведение; Теория и методика преподавания иностранных языков и культур",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Иностранный язык - 40 3. По выбору поступающего: История - 40 Обществознание - 45 Литература - 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 25,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Дизайн"
+            },
+            {
+              "text": "ГПИ"
+            },
+            {
+              "text": "54.03.01 Дизайн"
+            },
+            {
+              "text": "Графический дизайн; Дизайн интерьера;",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Литература - 40 3. Рисунок - 40 4. Портфолио - 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 40,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        }
+      ],
+      "Очно-заочная форма обучения": [
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Технологии разработки интеллектуальных систем"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "02.03.02 Фундаментальная информатика и информационные технологии"
+            },
+            {
+              "text": "Технологии разработки интеллектуальных систем",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 200,
+            "paidUnderRule16_12": 1
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Строительство о-з"
+            },
+            {
+              "text": "ИГВИЭ"
+            },
+            {
+              "text": "08.03.01 Строительство"
+            },
+            {
+              "text": "Промышленное и гражданское строительство",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 120,
+            "paidUnderRule16_12": 5
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Прикладная информатика о-з"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "09.03.03 Прикладная информатика"
+            },
+            {
+              "text": "Прикладная информатика в экономике",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 135,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Информационная безопасность о-з"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "10.03.01 Информационная безопасность"
+            },
+            {
+              "text": "Безопасность автоматизированных систем",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 250,
+            "paidUnderRule16_12": 3
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Распределительные электрические сети"
+            },
+            {
+              "text": "ИЭЭ"
+            },
+            {
+              "text": "13.03.02 Электроэнергетика и электротехника"
+            },
+            {
+              "text": "Распределительные электрические сети",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 80,
+            "paidUnderRule16_12": 3
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Электрооборудование и электрохозяйство предприятий, организаций и учреждений"
+            },
+            {
+              "text": "ИЭТЭ"
+            },
+            {
+              "text": "13.03.02 Электроэнергетика и электротехника"
+            },
+            {
+              "text": "Электрооборудование и электрохозяйство предприятий, организаций и учреждений",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика - 41 3. По выбору поступающего: Математика - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 50,
+            "paidUnderRule16_12": 3
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Управление качеством процессов и продукции предприятия о-з"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "27.03.02 Управление качеством"
+            },
+            {
+              "text": "Управление качеством процессов и продукции предприятия",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 200,
+            "paidUnderRule16_12": 3
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Экономика бизнеса"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "38.03.01 Экономика"
+            },
+            {
+              "text": "Экономика бизнеса",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 85,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Экономика о-з"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "38.03.01 Экономика"
+            },
+            {
+              "text": "Бухгалтерский учет, анализ и аудит",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 40,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Менеджмент о-з"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "38.03.02 Менеджмент"
+            },
+            {
+              "text": "Логистические системы в экономике и управлении; Маркетинг; Менеджмент предприятий и организаций; Финансовый менеджмент",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 35,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Закупочная логистика"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "38.03.02 Менеджмент"
+            },
+            {
+              "text": "Логистика и управление закупками",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 70,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Архитектура информационных систем"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "38.03.05 Бизнес-информатика"
+            },
+            {
+              "text": "Архитектура информационных систем предприятия",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 50,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Бизнес-информатика о-з"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "38.03.05 Бизнес-информатика"
+            },
+            {
+              "text": "Информационное и программное обеспечение бизнес-процессов",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Обществознание - 45 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 87,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Реклама и связи с общественностью о-з"
+            },
+            {
+              "text": "ГПИ"
+            },
+            {
+              "text": "42.03.01 Реклама и связи с общественностью"
+            },
+            {
+              "text": "Реклама и связи с общественностью",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Обществознание - 45 3. По выбору поступающего: История - 40 Иностранный язык - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 30,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Лингвистика о-з"
+            },
+            {
+              "text": "ГПИ"
+            },
+            {
+              "text": "45.03.02 Лингвистика"
+            },
+            {
+              "text": "Теория и методика преподавания иностранных языков и культур",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Иностранный язык - 40 3. По выбору поступающего: История - 40 или Обществознание - 45 или Литература - 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 20,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Дизайн о-з"
+            },
+            {
+              "text": "ГПИ"
+            },
+            {
+              "text": "54.03.01 Дизайн"
+            },
+            {
+              "text": "Графический дизайн; Дизайн интерьера; Промышленный дизайн; Медиадизайн",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Литература - 40 3. Рисунок - 40 4. Портфолио - 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 80,
+            "paidUnderRule16_12": 1
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Коммуникационный дизайн"
+            },
+            {
+              "text": "ГПИ"
+            },
+            {
+              "text": "54.03.01 Дизайн"
+            },
+            {
+              "text": "Коммуникационный дизайн",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Литература - 40 3. Рисунок - 40 4. Портфолио - 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 150,
+            "paidUnderRule16_12": 1
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        }
+      ],
+      "Заочная форма обучения": [
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Технологии разработки программного обеспечения"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "09.03.01 Информатика и вычислительная техника"
+            },
+            {
+              "text": "Технологии разработки программного обеспечения",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 200,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Информационные технологии в теплоэнергетике"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "09.03.03 Прикладная информатика"
+            },
+            {
+              "text": "Информационные технологии в теплоэнергетике (с получением второй квалификации 13.03.01 теплоэнергетика и теплотехника)",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 100,
+            "paidUnderRule16_12": 1
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Интернет вещей"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "11.03.01 Радиотехника"
+            },
+            {
+              "text": "Беспроводные технологии и интернет вещей",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 100,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Диагностические системы и технологии"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "12.03.01 Приборостроение"
+            },
+            {
+              "text": "Диагностические системы и технологии (Приборы диагностики зданий и сооружений; Медицинские диагностические приборы; Компьютерная фотоника)",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 100,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Технологии теплоэнергетики"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "13.03.01 Теплоэнергетика и теплотехника"
+            },
+            {
+              "text": "Технологии теплоэнергетики (Тепловые станции; Теплоснабжение; Водоподготовка; Автоматизированные системы)",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 100,
+            "paidUnderRule16_12": 1
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Электроэнергетика и электротехника з"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "13.03.02 Электроэнергетика и электротехника"
+            },
+            {
+              "text": "Проектирование и эксплуатация объектов энергетики (Энергоснабжение; Электрооборудование автомобилей; Электрические аппараты станций и подстанций); Гидроэнергетика",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Физика – 41 3. По выбору поступающего: Математика – 40 или Информатика – 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 100,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Робототехнические устройства"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "15.03.06 Мехатроника и робототехника"
+            },
+            {
+              "text": "Робототехнические устройства",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 или Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 150,
+            "paidUnderRule16_12": 2
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Управление качеством продукции, процессов и услуг"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "27.03.02 Управление качеством"
+            },
+            {
+              "text": "Управление качеством продукции, процессов и услуг",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 100,
+            "paidUnderRule16_12": 1
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Автоматизированные системы управления"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "27.03.04 Управление в технических системах"
+            },
+            {
+              "text": "Автоматизированные системы управления (Интеллектуальные системы автоматизации; БПЛА)",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Математика - 40 3. По выбору поступающего: Физика - 41 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 160,
+            "paidUnderRule16_12": 1
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Юриспруденция"
+            },
+            {
+              "text": "ИнЭИ"
+            },
+            {
+              "text": "40.03.01 Юриспруденция**"
+            },
+            {
+              "text": "Гражданское право",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык – 40 2. Обществознание – 45 3. По выбору поступающего: История - 40 или Иностранный язык – 40 или Информатика – 46 или Математика - 40",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 20,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Реклама и связи с общественностью з"
+            },
+            {
+              "text": "ГПИ"
+            },
+            {
+              "text": "42.03.01 Реклама и связи с общественностью"
+            },
+            {
+              "text": "Реклама и связи с общественностью; Дизайн в рекламе",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Обществознание - 45 3. По выбору поступающего: История - 40 Иностранный язык – 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 90,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        },
+        {
+          "cellsBeforePlaces": [
+            {
+              "text": "Реклама и продвижение СМИ"
+            },
+            {
+              "text": "ИДДО"
+            },
+            {
+              "text": "42.03.01 Реклама и связи с общественностью"
+            },
+            {
+              "text": "Реклама и продвижение СМИ",
+              "colspan": 2
+            },
+            {
+              "text": "1. Русский язык - 40 2. Обществознание - 45 3. По выбору поступающего: История - 40 Иностранный язык - 40 Информатика - 46",
+              "colspan": 2
+            }
+          ],
+          "places": {
+            "budget": 0,
+            "specialQuota": null,
+            "separateQuota": null,
+            "target": null,
+            "paid": 35,
+            "paidUnderRule16_12": null
+          },
+          "targetCellRowspan": 1,
+          "targetQuotaCarriedFromPrevious": false
+        }
+      ]
+    },
+    "note": "В многопрофильных группах части мест могут относиться к разным профилям. Ячейка целевой квоты с rowspan относится к нескольким строкам и при агрегации учитывается один раз. Пропуск в исходнике сохранён отдельно от нуля."
+  },
+  "tuition": {
+    "source": "tuition-2026",
+    "year": 2026,
+    "course": 1,
+    "currency": "RUB",
+    "orderNumber": "596",
+    "orderDate": "2026-06-03",
+    "rows": [
+      {
+        "form": "Очная",
+        "institute": "ЭнМИ",
+        "code": "13.03.03",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ЭнМИ",
+        "code": "01.03.03",
+        "annualRub": 380000
+      },
+      {
+        "form": "Очная",
+        "institute": "ЭнМИ",
+        "code": "15.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ЭнМИ",
+        "code": "15.03.03",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ЭнМИ",
+        "code": "15.03.06",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИТАЭ",
+        "code": "13.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИТАЭ",
+        "code": "14.05.01",
+        "annualRub": 474000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИТАЭ",
+        "code": "14.03.01",
+        "annualRub": 474000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИЭВТ",
+        "code": "09.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИЭВТ",
+        "code": "15.03.04",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИЭВТ",
+        "code": "14.03.01",
+        "annualRub": 474000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИЭВТ",
+        "code": "13.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИЭТЭ",
+        "code": "11.03.04",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИЭТЭ",
+        "code": "13.03.02",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИГВИЭ",
+        "code": "08.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИГВИЭ",
+        "code": "13.03.02",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИГВИЭ",
+        "code": "13.03.03",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИЭЭ",
+        "code": "13.03.02",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИВТИ",
+        "code": "01.03.02",
+        "annualRub": 380000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИВТИ",
+        "code": "02.03.02",
+        "annualRub": 380000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИВТИ",
+        "code": "27.03.04",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИВТИ",
+        "code": "09.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИРЭ",
+        "code": "11.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИРЭ",
+        "code": "11.03.04",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИРЭ",
+        "code": "09.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИРЭ",
+        "code": "11.05.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИРЭ",
+        "code": "12.03.04",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИнЭИ",
+        "code": "09.03.03",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИнЭИ",
+        "code": "10.03.01",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИнЭИ",
+        "code": "27.03.02",
+        "annualRub": 420000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИнЭИ",
+        "code": "38.03.01",
+        "annualRub": 370000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИнЭИ",
+        "code": "38.03.02",
+        "annualRub": 370000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИнЭИ",
+        "code": "38.03.05",
+        "annualRub": 370000
+      },
+      {
+        "form": "Очная",
+        "institute": "ИнЭИ",
+        "code": "41.03.05",
+        "annualRub": 370000
+      },
+      {
+        "form": "Очная",
+        "institute": "ГПИ",
+        "code": "42.03.01",
+        "annualRub": 370000
+      },
+      {
+        "form": "Очная",
+        "institute": "ГПИ",
+        "code": "45.03.02",
+        "annualRub": 370000
+      },
+      {
+        "form": "Очная",
+        "institute": "ГПИ",
+        "code": "54.03.01",
+        "annualRub": 710000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ГПИ",
+        "code": "42.03.01",
+        "annualRub": 165000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ГПИ",
+        "code": "45.03.02",
+        "annualRub": 145000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ГПИ",
+        "code": "54.03.01",
+        "annualRub": 190000,
+        "orderTitle": "Коммуникационный дизайн"
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ГПИ",
+        "code": "54.03.01",
+        "annualRub": 190000,
+        "orderTitle": "Дизайн"
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИнЭИ",
+        "code": "09.03.03",
+        "annualRub": 180000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИнЭИ",
+        "code": "10.03.01",
+        "annualRub": 191000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИнЭИ",
+        "code": "27.03.02",
+        "annualRub": 140000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИнЭИ",
+        "code": "38.03.01",
+        "annualRub": 155000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИнЭИ",
+        "code": "38.03.02",
+        "annualRub": 155000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИнЭИ",
+        "code": "38.03.05",
+        "annualRub": 180000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИГВИЭ",
+        "code": "08.03.01",
+        "annualRub": 145000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИЭЭ",
+        "code": "13.03.02",
+        "annualRub": 196000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИЭТЭ",
+        "code": "13.03.02",
+        "annualRub": 160000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИДДО",
+        "code": "02.03.02",
+        "annualRub": 152000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИДДО",
+        "code": "38.03.01",
+        "annualRub": 155000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИДДО",
+        "code": "38.03.02",
+        "annualRub": 155000
+      },
+      {
+        "form": "Очно-заочная",
+        "institute": "ИДДО",
+        "code": "38.03.05",
+        "annualRub": 155000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ГПИ",
+        "code": "42.03.01",
+        "annualRub": 155000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "09.03.01",
+        "annualRub": 155000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "09.03.03",
+        "annualRub": 155000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "11.03.01",
+        "annualRub": 135000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "12.03.01",
+        "annualRub": 135000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "13.03.01",
+        "annualRub": 135000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "13.03.02",
+        "annualRub": 135000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "15.03.06",
+        "annualRub": 135000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "27.03.02",
+        "annualRub": 135000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "27.03.04",
+        "annualRub": 135000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИДДО",
+        "code": "42.03.01",
+        "annualRub": 155000
+      },
+      {
+        "form": "Заочная",
+        "institute": "ИнЭИ",
+        "code": "40.03.01",
+        "annualRub": 150000
+      }
+    ]
+  },
+  "deadlines": {
+    "source": "deadlines",
+    "academicYear": null,
+    "datedRuleSource": "rules-2026",
+    "tables": [
+      [
+        [
+          "Условия поступления",
+          "Дата завершения приёма документов",
+          "Сроки проведения вступительных испытаний",
+          "Сроки дополнительного приёма (при наличии вакантных мест)",
+          "Сроки вступительных испытаний при дополнительном приёме",
+          "Примечание"
+        ],
+        [
+          "Места в рамках КЦП",
+          "18 июля, 17:00",
+          "По 25 июля (потоками по мере подачи заявлений)",
+          "С 12 по 17 августа, 17:00",
+          "По 21 августа (потоками по мере подачи заявлений)",
+          "Для поступающих по результатам вступительных испытаний, проводимых НИУ «МЭИ» самостоятельно"
+        ],
+        [
+          "25 июля, 17:00",
+          "—",
+          "С 12 по 21 августа, 17:00",
+          "—",
+          "Для поступающих без прохождения вступительных испытаний, проводимых НИУ «МЭИ» самостоятельно"
+        ],
+        [
+          "Договорные места очной, очно-заочной и заочной форм обучения",
+          "8 августа, 17:00",
+          "По 14 августа (потоками по мере подачи заявлений)",
+          "С 1 по 14 сентября",
+          "С 1 по 18 сентября (потоками по мере подачи заявлений)",
+          "Для поступающих по результатам вступительных испытаний, проводимых НИУ «МЭИ» самостоятельно"
+        ],
+        [
+          "14 августа, 17:00",
+          "—",
+          "С 1 по 18 сентября",
+          "—",
+          "Для поступающих без прохождения вступительных испытаний, проводимых НИУ «МЭИ» самостоятельно"
+        ]
+      ],
+      [
+        [
+          "Публикация конкурсных списков на официальном сайте приёмной комиссии",
+          "27 июля"
+        ],
+        [
+          "Приоритетный этап зачисления Зачисление без вступительных испытаний; зачисление на места в пределах отдельной, особой и целевой квот (места в пределах квот)",
+          "1 августа, 12:00",
+          "День завершения предоставления согласия на зачисление от лиц, подлежащих зачислению"
+        ],
+        ["3 августа", "Издание приказов о зачислении"],
+        [
+          "Основной этап зачисления Зачисление по результатам вступительных испытаний на основные места в рамках КЦП, оставшиеся после зачисления без вступительных испытаний (основные конкурсные места)",
+          "5 августа, 12:00",
+          "День завершения предоставления согласия на зачисление от лиц, подлежащих зачислению"
+        ],
+        ["7 августа", "Издание приказов о зачислении"],
+        [
+          "Дополнительный этап зачисления Зачисление по результатам вступительных испытаний на основные места в рамках КЦП, оставшиеся после зачисления без вступительных испытаний (основные конкурсные места)",
+          "9 августа, 12:00",
+          "День завершения предоставления согласия на зачисление от лиц, подлежащих зачислению"
+        ],
+        ["11 августа", "Издание приказов о зачислении"]
+      ],
+      [
+        [
+          "Публикация конкурсных списков на официальном сайте приёмной комиссии",
+          "22 августа"
+        ],
+        [
+          "Приоритетный этап зачисления Зачисление без вступительных испытаний; зачисление на места в пределах отдельной и особой квот (места в пределах квот)",
+          "25 августа, 12:00",
+          "День завершения предоставления согласия на зачисление от лиц"
+        ],
+        ["26 августа", "Издание приказов о зачислении"],
+        [
+          "Основной этап зачисления Зачисление по результатам вступительных испытаний на основные места в рамках КЦП, оставшиеся после зачисления без вступительных испытаний (основные конкурсные места)",
+          "28 августа, 12:00",
+          "День завершения предоставления согласия на зачисление от лиц"
+        ],
+        ["29 августа", "Издание приказов о зачислении"]
+      ]
+    ],
+    "paidHeadings": ["16 августа", "20 сентября"]
+  },
+  "individualAchievements": {
+    "source": "achievements",
+    "year": 2026,
+    "generalMaximum": 10,
+    "maximumSource": "rules-2026",
+    "rows": [
+      [
+        "№ п/п",
+        "Вид достижения",
+        "Подтверждающие документы",
+        "Начисляемые баллы"
+      ],
+      [
+        "1",
+        "Наличие полученных в образовательных организациях Российской Федерации документов об образовании или об образовании и о квалификации с отличием (аттестата о среднем общем образовании с отличием, аттестата о среднем (полном) общем образовании с отличием, аттестата о среднем (полном) общем образовании для награжденных золотой (серебряной) медалью, диплома о среднем профессиональном образовании с отличием, диплома о начальном профессиональном образовании с отличием, диплома о начальном профессиональном образовании для награжденных золотой (серебряной) медалью) Наличие полученной в образовательной организации Российской Федерации медали «За особые успехи в учении» I или II степени",
+        "Соответствующий документ об образовании, удостоверение к медали «За особые успехи в учении»",
+        "10 баллов"
+      ],
+      [
+        "2",
+        "Лица, успешно прошедшие Демонстрационный экзамен, организованный Департаментом образования и науки г. Москвы",
+        "",
+        "5 баллов"
+      ],
+      [
+        "3",
+        "Наличие золотого, серебряного или бронзового знака отличия Всероссийского физкультурно-спортивного комплекса «Готов к труду и обороне» (ГТО) (далее соответственно - знак ГТО, Комплекс ГТО), которым поступающий награжден в соответствии с Порядком награждения лиц, выполнивших нормативы испытаний (тестов) Всероссийского физкультурно-спортивного комплекса «Готов к труду и обороне» (ГТО), соответствующими знаками отличия Всероссийского физкультурно-спортивного комплекса «Готов к труду и обороне» (ГТО), утвержденным приказом Министерства спорта Российской Федерации от 14 января 2016 г. № 16, за выполнение нормативов Комплекса ГТО для возрастной группы населения Российской Федерации (ступени), установленной Положением о Всероссийском физкультурно-спортивном комплексе «Готов к труду и обороне» (ГТО), утвержденным постановлением Правительства Российской Федерации от 11 июня 2014 г. № 540 (Собрание законодательства Российской Федерации, 2014, № 25, ст. 3309; 2018, № 50, ст. 7755), если поступающий в текущем году и (или) в предшествующем году относится (относился) к этой возрастной группе.",
+        "Удостоверение установленного образца о награждении знаком отличия Всероссийского физкультурно-спортивного комплекса «Готов к труду и обороне» (ГТО) или выписка из приказа Министерства спорта Российской Федерации о награждении золотым знаком ГТО, или выписка из приказа органа исполнительной власти субъекта Российской Федерации о награждении серебряным или бронзовым знаком ГТО, выписка должна быть заверена должностным лицом Министерства спорта Российской Федерации или органа исполнительной власти субъекта Российской Федерации, или сведения, размещенные на официальном сайте ВФСК «Готов к труду и обороне» (ГТО)",
+        "4 балла"
+      ],
+      [
+        "4",
+        "Осуществление волонтерской (добровольческой) деятельности в объеме не менее 100 часов",
+        "Личная книжка волонтера (бумажная или электронная версия)",
+        "4 балла"
+      ],
+      [
+        "5",
+        "Наличие спортивных достижений (первый разряд взрослый)",
+        "Зачетная классификационная книжка спортсмена, содержащая сведения (дата и номер) приказа о присвоении спортивного разряда или приказ (выписка из приказа) о присвоении спортивного разряда или удостоверение мастера спорта, или электронная зачетная книжка спортсмена",
+        "4 балла за каждый вид спорта"
+      ],
+      [
+        "6",
+        "Наличие спортивных достижений (КМС и выше)",
+        "6 баллов за каждый вид спорта"
+      ],
+      [
+        "7",
+        "Участие или результаты участия в заключительных этапах олимпиад школьников и (или) всероссийской олимпиады школьников (не используемые для получения особых прав и (или) особого преимущества при поступлении на обучение по конкретным условиям поступления)",
+        "Сертификат участника/ справка, выданные оргкомитетом олимпиады",
+        "6 баллов за каждую олимпиаду"
+      ],
+      [
+        "8",
+        "Диплом победителя/призера заключительного этапа, выданный организатором мероприятия/установленной формы РСОШ/ВОШ",
+        "10 баллов"
+      ],
+      [
+        "9",
+        "Участие или результаты участия в Олимпиаде школьников «Надежда энергетики», проводимой в 2021/2022-2025/2026 учебных годах. (не используемые для получения особых прав при поступлении на обучение по конкретным условиям поступления и конкретным основаниям приема)",
+        "Сертификат участника отборочного этапа, выданный организатором олимпиады",
+        "3 балла за каждую олимпиаду"
+      ],
+      [
+        "10",
+        "Диплом победителя/призера отборочного этапа, выданный организатором олимпиады",
+        "5 баллов за каждую олимпиаду"
+      ],
+      [
+        "11",
+        "Сертификат участника заключительного этапа, выданный организатором олимпиады",
+        "7 баллов за каждую олимпиаду"
+      ],
+      [
+        "12",
+        "Похвальная грамота, выданная организатором олимпиады",
+        "8 баллов за каждую олимпиаду"
+      ],
+      [
+        "13",
+        "Диплом победителя/ призера, выданный организатором олимпиады/ установленной формы РСОШ",
+        "10 баллов"
+      ],
+      [
+        "14",
+        "Участие или результаты участия в конкурсах, чемпионатах, конференциях, олимпиадах и в иных интеллектуальных и (или) творческих конкурсах, физкультурных мероприятиях и спортивных мероприятиях, проводимых в целях выявления и поддержки лиц, проявивших выдающиеся способности, учитываемых в НИУ «МЭИ» *",
+        "Сертификат участника, выданный оргкомитетом мероприятия",
+        "6 баллов за каждое достижение"
+      ],
+      [
+        "15",
+        "Диплом победителя/призера, выданный оргкомитетом мероприятия",
+        "10 баллов"
+      ],
+      [
+        "16",
+        "Наличие статуса победителя (призера) национального и (или) международного чемпионата по профессиональному мастерству среди инвалидов и лиц с ограниченными возможностями здоровья \"Абилимпикс\"",
+        "Диплом победителя/призера, выданный организатором чемпионата",
+        "10 баллов"
+      ],
+      [
+        "17",
+        "Наличие статуса чемпиона, призера Олимпийских игр, Паралимпийских игр, Сурдлимпийских игр, чемпиона мира, чемпиона Европы, лица, занявшего первое место на первенстве мира, первенстве Европы, первенстве России, чемпиона России, обладателя кубка России",
+        "Грамоты, сертификаты, дипломы победителя/чемпиона/призера, выданные организатором мероприятия",
+        "10 баллов"
+      ],
+      [
+        "18",
+        "Прохождение военной службы по призыву, а также военной службы по контракту, военной службы по мобилизации в Вооруженных Силах Российской Федерации, пребывание в добровольческих формированиях в соответствии с контрактом о добровольном содействии в выполнении задач, возложенных на Вооруженные Силы Российской Федерации или войска национальной гвардии Российской Федерации, в ходе специальной военной операции на территориях Украины, Донецкой Народной Республики, Луганской Народной Республики, Запорожской области и Херсонской области",
+        "Военный билет с отметками о прохождении военной службы, документ, подтверждающий пребывание в добровольческих формированиях, справка, выданная уполномоченным органом",
+        "5 баллов"
+      ]
+    ]
+  },
+  "admissionsContacts": {
+    "source": "contacts",
+    "phone": "+7 (495) 362-77-77",
+    "email": "pk@mpei.ru"
+  },
+  "admissionsDocuments": {
+    "campaign2026": [
+      "rules-2026",
+      "quota-2026",
+      "programs-simple",
+      "tuition-2026",
+      "deadlines",
+      "exams",
+      "achievements",
+      "special-rights",
+      "enrollment",
+      "statistics-2026"
+    ],
+    "campaign2027": "На странице правил подтверждена кампания 2026. Документы набора 2027 не найдены."
+  },
+  "appliedInformaticsOrders2026": [
+    {
+      "source": "inf-budget",
+      "date": "2026-08-07",
+      "stage": "основной этап КЦП",
+      "tableColumns": [
+        "Уникальный код",
+        "Сумма",
+        "Сумма без ИД",
+        "Баллы ВИ *",
+        "ИД",
+        "Преимущ. право **",
+        "Общежитие",
+        "Институт"
+      ],
+      "admittedWithNumericScores": 24,
+      "minimumRecordedTotal": 269
+    },
+    {
+      "source": "inf-paid",
+      "date": "2026-08-26",
+      "stage": "места по договорам",
+      "tableColumns": [
+        "Уникальный код",
+        "Сумма",
+        "Сумма без ИД",
+        "Баллы ВИ *",
+        "ИД",
+        "Преимущ. право **",
+        "Общежитие",
+        "Институт"
+      ],
+      "admittedWithNumericScores": 54,
+      "minimumRecordedTotal": 189
+    },
+    {
+      "source": "inf-target",
+      "date": "2026-08-03",
+      "stage": "целевая квота",
+      "tableColumns": [
+        "Уникальный код",
+        "Организация",
+        "Сумма",
+        "Сумма без ИД",
+        "Баллы ВИ *",
+        "ИД",
+        "Преимущ. право **",
+        "Общежитие",
+        "Институт"
+      ],
+      "admittedWithNumericScores": 1,
+      "minimumRecordedTotal": 211
+    },
+    {
+      "source": "inf-special",
+      "date": "2026-08-03",
+      "stage": "особая квота",
+      "tableColumns": [
+        "Уникальный код",
+        "Сумма",
+        "Сумма без ИД",
+        "Баллы ВИ *",
+        "ИД",
+        "Преимущ. право **",
+        "Общежитие",
+        "Институт"
+      ],
+      "admittedWithNumericScores": 3,
+      "minimumRecordedTotal": 235
+    },
+    {
+      "source": "inf-separate",
+      "date": "2026-08-03",
+      "stage": "отдельная квота",
+      "tableColumns": [
+        "Уникальный код",
+        "Сумма",
+        "Сумма без ИД",
+        "Баллы ВИ *",
+        "ИД",
+        "Преимущ. право **",
+        "Общежитие",
+        "Институт"
+      ],
+      "admittedWithNumericScores": 3,
+      "minimumRecordedTotal": 215
+    }
+  ],
+  "issues": [
+    "У сводных бюджетных и платных проходных 2026 отдельный этап не указан.",
+    "Для «Прикладная информатика о-з» сводка итогов 2026 указывает 09.03.01, а план приёма и индекс зачисления публикуют 09.03.03. Обе версии сохранены.",
+    "Некоторые конкурсные группы включают несколько кодов и профилей. В архиве отдельные платные проходные и разные формы обучения.",
+    "План разделяет обычный договор и договоры по п. 16.12. В приказе цена привязана к институту, коду, форме и курсу."
+  ],
+  "counts": {
+    "planLines": 70,
+    "tuitionRows": 66,
+    "passingScores2026": {
+      "budget": 27,
+      "paid": 60
+    },
+    "archiveRows2025": {
+      "budget": 25,
+      "paid": 9
+    },
+    "matchedOrderLists": 5
+  }
+}

@@ -1,0 +1,2751 @@
+{
+  "checkedAt": "2026-11-25T16:59:01Z",
+  "regions": [
+    {
+      "id": "10901",
+      "name": "Алтайский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10901",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "744a8a3b69d7ef5090eafd3e6fb3163191d0f84b48b6b4ba68d6b3842c82e384",
+      "rows": 81
+    },
+    {
+      "id": "11103",
+      "name": "Амурская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11103",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "f149d2da382d4778f5cdeb85f6de234102d1375df53c628b3c934309eace275b",
+      "rows": 22
+    },
+    {
+      "id": "10101",
+      "name": "Архангельская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10101",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "6b49db83dbadbcd90f899e38a669dad28e9f053c72652ed962472706a07debfa",
+      "rows": 43
+    },
+    {
+      "id": "10601",
+      "name": "Астраханская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10601",
+      "federalDistrict": "Южный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "ec012201fa39b0027eb693ff85e0f3bede0f3b98545f69e64645e3b2539a009a",
+      "rows": 37
+    },
+    {
+      "id": "10501",
+      "name": "Белгородская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10501",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "52d73182f30f9cb4f0f3a432080a4274c51744827925b9b1fa68760fbf2db6cd",
+      "rows": 44
+    },
+    {
+      "id": "10303",
+      "name": "Брянская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10303",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "142dbc4e1a6e74dfb5adb62600551b35a6e88281808d19271a8bcb4a589eb0a4",
+      "rows": 46
+    },
+    {
+      "id": "10304",
+      "name": "Владимирская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10304",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "f539065eec46bf8025db0777f30d0ba8f391fc0e8b321022b4b45f4f0d1f7bc1",
+      "rows": 37
+    },
+    {
+      "id": "10602",
+      "name": "Волгоградская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10602",
+      "federalDistrict": "Южный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "cecf47d22f9f02e42bc50a0b9d8b5dd6c5bd415957142485d2a54321eacf184d",
+      "rows": 73
+    },
+    {
+      "id": "10102",
+      "name": "Вологодская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10102",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "b76347e58d585262177d6acc677031402ad001c2f28dbf747936960f29b3eb21",
+      "rows": 47
+    },
+    {
+      "id": "10502",
+      "name": "Воронежская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10502",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "6d7304d534b5d688406f3e149ae4874b8973cc4618fad3fcec77fda13917d4a1",
+      "rows": 80
+    },
+    {
+      "id": "11303",
+      "name": "Донецкая Народная Республика",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11303",
+      "federalDistrict": null,
+      "httpStatus": "200",
+      "sourceSha256": "5da26bd2f86d3138b37a2483d982405bbd8727450917f88247a4953bfd53f4a1",
+      "rows": 0
+    },
+    {
+      "id": "11109",
+      "name": "Еврейская автономная область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11109",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "80d6325e535c9d6c6e3d7da5c6ea8b83bd209f8c7564cf195183b6964631e1f8",
+      "rows": 8
+    },
+    {
+      "id": "11003",
+      "name": "Забайкальский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11003",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "44c77474e08278d5b1a778fc36746a8860a65ec2cdbd44e7a902a3ee2451d2d8",
+      "rows": 38
+    },
+    {
+      "id": "11305",
+      "name": "Запорожская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11305",
+      "federalDistrict": null,
+      "httpStatus": "200",
+      "sourceSha256": "af592922e1305d9fa174581a7a8306a7a001abb78febc251b4f69f7c975af5b3",
+      "rows": 0
+    },
+    {
+      "id": "10305",
+      "name": "Ивановская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10305",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "a101fb4533d2ac4d423a610a901d880acd76b48383cf7fc133f34529c32be76d",
+      "rows": 46
+    },
+    {
+      "id": "11002",
+      "name": "Иркутская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11002",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "1eaebfcadbb2702af2149a6c2d217921747624aa4d17ab43f0d058c031547370",
+      "rows": 110
+    },
+    {
+      "id": "10705",
+      "name": "Кабардино-Балкарская Республика",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10705",
+      "federalDistrict": "Северо-Кавказский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "d757fd560aa94ed43c8c2c17bb5c348c94e38f046e7d8bdbf1829fb5cbcbc518",
+      "rows": 18
+    },
+    {
+      "id": "11200",
+      "name": "Калининградская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11200",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "85e0d13109f8d783bc29fc4406b4d2c1cbccff7ec9d66ace662a3c11131ba3dc",
+      "rows": 27
+    },
+    {
+      "id": "10307",
+      "name": "Калужская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10307",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "4c0058beeef51b34950b17b27df492f0729182367ee38b86b23c2f5dfaf86cea",
+      "rows": 35
+    },
+    {
+      "id": "11104",
+      "name": "Камчатский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11104",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "a6fba3f88a065526989ca4c0076a49ec873ef1f224a6d8807e23241b6b403b5c",
+      "rows": 15
+    },
+    {
+      "id": "10710",
+      "name": "Карачаево-Черкесская Республика",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10710",
+      "federalDistrict": "Северо-Кавказский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "e3ca2bfe809a6d3486ea5dcaa14368e68e5a4d1ae25b67b71021946cf63789a8",
+      "rows": 25
+    },
+    {
+      "id": "10902",
+      "name": "Кемеровская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10902",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "0650bdf6c5a182561b7a0db270f8c2ab7b87d9f9356e77e0ecfffa62821e037e",
+      "rows": 81
+    },
+    {
+      "id": "10402",
+      "name": "Кировская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10402",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "716779a24a7eba97a65d817b4b212d2fd454bc4016abce3359eca433ebddadf7",
+      "rows": 64
+    },
+    {
+      "id": "10308",
+      "name": "Костромская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10308",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "54ce93bbf5c1556cdb372256ac84307be9865f18f98472768cc158e04fa28854",
+      "rows": 33
+    },
+    {
+      "id": "10701",
+      "name": "Краснодарский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10701",
+      "federalDistrict": "Южный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "57aab3b539951fb723a406d398deff300149af2e9827dbe2feedd7b7c5c28e2a",
+      "rows": 166
+    },
+    {
+      "id": "11001",
+      "name": "Красноярский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11001",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "00d3e113d45dc5e5fcd86c45b835cf73bec1f8a80e688fb5ce9f1438075fa047",
+      "rows": 101
+    },
+    {
+      "id": "10801",
+      "name": "Курганская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10801",
+      "federalDistrict": "Уральский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "faa3c029071045dc27094ff69df68e8f34be19ca9726c5813626d185167b0e16",
+      "rows": 38
+    },
+    {
+      "id": "10503",
+      "name": "Курская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10503",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "98acc29a2b04f392da1b9731cdbafc2110cc831feab7bf2fce2d09a177919435",
+      "rows": 48
+    },
+    {
+      "id": "10202",
+      "name": "Ленинградская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10202",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "da24f4408332c56e80aa4d88ebc0a0bb87b4bab2ed58ca3b56a6d894d9adbe5a",
+      "rows": 33
+    },
+    {
+      "id": "10504",
+      "name": "Липецкая область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10504",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "7109ecdc96c0034294037160aeae942d6b179bd14b5c802e5765f88d373b905d",
+      "rows": 39
+    },
+    {
+      "id": "11304",
+      "name": "Луганская Народная Республика",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11304",
+      "federalDistrict": null,
+      "httpStatus": "200",
+      "sourceSha256": "a67514059d9e913bd65ab54e19c95e90f439f158f6e7c764aaee684b5cfc28fe",
+      "rows": 0
+    },
+    {
+      "id": "11105",
+      "name": "Магаданская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11105",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "78a0f21740e32ab82b47b0454a777e2de7135d9b5938c0759e5a1a66b850dfb8",
+      "rows": 9
+    },
+    {
+      "id": "10302",
+      "name": "Московская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10302",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "29584bbb82200a045b977370c6dac1ff8fc948bd2def3a6be06b2f4ee4b8f75e",
+      "rows": 143
+    },
+    {
+      "id": "10105",
+      "name": "Мурманская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10105",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "506d0df28033e7d26db71a001bfc3b8033979e5d5db496385fda499bb20a0a21",
+      "rows": 28
+    },
+    {
+      "id": "10106",
+      "name": "Ненецкий автономный округ",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10106",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "2e9de3b9e0f8ac220fd1b49eeaedd87aa3f3e0b661bc08207567e1f17052a57e",
+      "rows": 3
+    },
+    {
+      "id": "10401",
+      "name": "Нижегородская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10401",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "06760a682b90f0b45b332ff3567feeaa1ae397fdbdf6bd62e8cd9ba1bfe4c335",
+      "rows": 103
+    },
+    {
+      "id": "10204",
+      "name": "Новгородская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10204",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "00b8bf8bde23ea4526ce29ad3adfdc4e57c919b9c87502344c2248262a4fa71f",
+      "rows": 28
+    },
+    {
+      "id": "10903",
+      "name": "Новосибирская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10903",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "9e0c320797c8331d5ff17b4c38ebaa3075ca624101d6b7a885f56d08add1a27e",
+      "rows": 87
+    },
+    {
+      "id": "10904",
+      "name": "Омская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10904",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "1c23237fac7089843e158be5d8bb021171bc616bc6f4468bc15c936ba3d27b1c",
+      "rows": 70
+    },
+    {
+      "id": "10802",
+      "name": "Оренбургская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10802",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "6e03b93580a564d535195bf7230d7d9e76dde07374dc1c86bfd789b62666557b",
+      "rows": 75
+    },
+    {
+      "id": "10309",
+      "name": "Орловская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10309",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "7e6c482abdca1da411796fc6d0fbff85b4739d39e46851b7d1e6d4aebd2866db",
+      "rows": 30
+    },
+    {
+      "id": "10604",
+      "name": "Пензенская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10604",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "8192709b80a79329a62ed4d38444740b909b37b26207a0ca9fe141bf9c5f3f55",
+      "rows": 39
+    },
+    {
+      "id": "10803",
+      "name": "Пермский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10803",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "5d8f1c4e2ad1cb6b170b1c271c493ac17edcd568e09c22ca1c4c2152a545b4a1",
+      "rows": 95
+    },
+    {
+      "id": "11101",
+      "name": "Приморский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11101",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "379e508b0cec0a49590a02100031e6f9aae0a03978293373ceb462faa905024d",
+      "rows": 69
+    },
+    {
+      "id": "10205",
+      "name": "Псковская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10205",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "ab695bd784e508edbd025264d58fc9a176213e0a06b7451eb8233f505edd861c",
+      "rows": 23
+    },
+    {
+      "id": "10711",
+      "name": "Республика Адыгея",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10711",
+      "federalDistrict": "Южный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "5c4062815cab3f02083f96d927670b43fe85557b66ed8a4bf9bd1bea64a30ae6",
+      "rows": 10
+    },
+    {
+      "id": "10907",
+      "name": "Республика Алтай",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10907",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "471af2c016de951d1f7c43a13d82a906f86db6550556fd77e41bd659d1dadc6c",
+      "rows": 8
+    },
+    {
+      "id": "10806",
+      "name": "Республика Башкортостан",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10806",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "e57d4f0e94c75503cf8c2a935e74cfe7270b72ca32ecf73c0142f34e7ed67651",
+      "rows": 142
+    },
+    {
+      "id": "11004",
+      "name": "Республика Бурятия",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11004",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "0a3aa71cfdc48ea593ca7100829d35143cae844420820639275cbfd2a2963495",
+      "rows": 48
+    },
+    {
+      "id": "10704",
+      "name": "Республика Дагестан",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10704",
+      "federalDistrict": "Северо-Кавказский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "fe2d8e30450ad8d4d8bc172f00ae42853e4d3b8fdc73e39c2db14fc1ae64c721",
+      "rows": 85
+    },
+    {
+      "id": "10708",
+      "name": "Республика Ингушетия",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10708",
+      "federalDistrict": "Северо-Кавказский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "13595cd06181c0fa88863ae8d60a52ed8873353066ad46b424af15234f9302f3",
+      "rows": 18
+    },
+    {
+      "id": "10607",
+      "name": "Республика Калмыкия",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10607",
+      "federalDistrict": "Южный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "b48ae6591891d8d26b7b884d09c7cb030225f7955429433704bbc529780a8bbb",
+      "rows": 14
+    },
+    {
+      "id": "10103",
+      "name": "Республика Карелия",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10103",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "703123d338ac24ce3b7bb363b183e18445df50346777175bc88757054dfbd54e",
+      "rows": 19
+    },
+    {
+      "id": "10104",
+      "name": "Республика Коми",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10104",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "ba4f5d7ef917e7416034195cd715d545f9e5d6b0c3cb1fe471c155d563f0f36a",
+      "rows": 33
+    },
+    {
+      "id": "11301",
+      "name": "Республика Крым",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11301",
+      "federalDistrict": "Южный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "b2747fd298e9cef3fbc8780d8e33d0773a6d7b230a56b83febded3eb94035afd",
+      "rows": 54
+    },
+    {
+      "id": "10403",
+      "name": "Республика Марий Эл",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10403",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "e506f1e26609173c468a936392af1abe5ccdd28effae3ea94b8ace19d71c8ca3",
+      "rows": 31
+    },
+    {
+      "id": "10404",
+      "name": "Республика Мордовия",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10404",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "726d8140a98a0d6659c49cb4cee398eea2375f016b1f2557cdb6d10b59ad54e7",
+      "rows": 33
+    },
+    {
+      "id": "11107",
+      "name": "Республика Саха (Якутия)",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11107",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "d8f21aa2b28f6c09c90c9268f4c66cc86639a5ea4431fef5a950c278bc934457",
+      "rows": 53
+    },
+    {
+      "id": "10706",
+      "name": "Республика Северная Осетия-Алания",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10706",
+      "federalDistrict": "Северо-Кавказский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "3c5cef487718688a8ad337f9f7133158708053adee36da9bab1612b2a49ce47a",
+      "rows": 29
+    },
+    {
+      "id": "10608",
+      "name": "Республика Татарстан",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10608",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "9e25dbfe9151e8a8c19c2e5dbe8d912411ce2de982f976bd7379b591d94f692a",
+      "rows": 132
+    },
+    {
+      "id": "11005",
+      "name": "Республика Тыва",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11005",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "e97b260b537ad74efc5c254556929e207fae535205ba70b3a0bef2d29bf0f51e",
+      "rows": 12
+    },
+    {
+      "id": "11006",
+      "name": "Республика Хакасия",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11006",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "5a6f44953c646bb0d2afb28cd0d3ca18d7a6c097ea967f5b7ab43a715e11b7f4",
+      "rows": 22
+    },
+    {
+      "id": "10703",
+      "name": "Ростовская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10703",
+      "federalDistrict": "Южный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "f4f4a1496a19e69c011780a757027e7ef2e348b1d8445b241112c1d3377605e6",
+      "rows": 142
+    },
+    {
+      "id": "10310",
+      "name": "Рязанская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10310",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "86048f8bdb322308f81f989bb47adcefbebe5c1c9f40faae31859ddf182d15d4",
+      "rows": 38
+    },
+    {
+      "id": "10603",
+      "name": "Самарская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10603",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "5bb895384a8d8bc16db04ab1aa98d4acd6620da5de1ab5d9fc77fa3c42bc17f7",
+      "rows": 94
+    },
+    {
+      "id": "10605",
+      "name": "Саратовская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10605",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "c571ab19df4798ebd3fed0056b79bad616f77e33025b36b9a15c0d9cd0dabe17",
+      "rows": 77
+    },
+    {
+      "id": "11106",
+      "name": "Сахалинская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11106",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "03a2528d25962ddba1d3cdad7005d5e0180fcf36332807519c5f62f73c6079b9",
+      "rows": 20
+    },
+    {
+      "id": "10804",
+      "name": "Свердловская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10804",
+      "federalDistrict": "Уральский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "0f9bfa08138f824cbc685e092c6ef68dbfdeef6bdb646c8e7c58c683d3694dcc",
+      "rows": 163
+    },
+    {
+      "id": "10311",
+      "name": "Смоленская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10311",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "cc6a5974236af8ae8e5308bb47cc978761eacf8134d2b5c9f3ee9c51948ec26b",
+      "rows": 34
+    },
+    {
+      "id": "10702",
+      "name": "Ставропольский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10702",
+      "federalDistrict": "Северо-Кавказский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "c26ea3ffeae6678a6061e47e311dc372dd074d25ff4ea22fa312d08478fc8933",
+      "rows": 107
+    },
+    {
+      "id": "10505",
+      "name": "Тамбовская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10505",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "9cdeba11b8673f60dcca8f5b26070392fe455a62c3f44cd83fd449128e4bf68d",
+      "rows": 34
+    },
+    {
+      "id": "10306",
+      "name": "Тверская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10306",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "50bc5d0d785eb292e31b18f41edca3d86615346d55db00233d61f0ff6ba0187e",
+      "rows": 51
+    },
+    {
+      "id": "10905",
+      "name": "Томская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10905",
+      "federalDistrict": "Сибирский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "22db8368fd8cdfa141860092b97b40cb6c3687a4dab3cf12c4440c83e63194c5",
+      "rows": 41
+    },
+    {
+      "id": "10312",
+      "name": "Тульская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10312",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "32aebae5f0a41a0ca033d3664e1599f0fab26363ab5671ae729fb094716b4378",
+      "rows": 43
+    },
+    {
+      "id": "10906",
+      "name": "Тюменская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10906",
+      "federalDistrict": "Уральский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "3e7b1987228ca071df1b6f424e91c38de8c04f17ec988ee8ade97ed6dad2863d",
+      "rows": 23
+    },
+    {
+      "id": "10807",
+      "name": "Удмуртская Республика",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10807",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "f36140f22c0daf2bcec65af7a21a96212881410453c84fca28bd39dbde1b6306",
+      "rows": 57
+    },
+    {
+      "id": "10606",
+      "name": "Ульяновская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10606",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "7e5fdaa1b755cdfa6a07c0e02b2f4406be376a214ce5833c8d55d335c9dc668a",
+      "rows": 37
+    },
+    {
+      "id": "11102",
+      "name": "Хабаровский край",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11102",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "548442002d1b16732903e6e872df1417e27db96bae13a9d6cbded24386d09e27",
+      "rows": 41
+    },
+    {
+      "id": "10908",
+      "name": "Ханты-Мансийский автономный округ",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10908",
+      "federalDistrict": "Уральский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "5b9c411a284c3ea616d4a5ff41fc30fb4373ad5efa7668ee2932ca94bc8b72d9",
+      "rows": 45
+    },
+    {
+      "id": "11306",
+      "name": "Херсонская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11306",
+      "federalDistrict": null,
+      "httpStatus": "200",
+      "sourceSha256": "391cdd999aeb2fd0cdd34303dc40539b743915ddcff6b520144b6874fa2c1ce4",
+      "rows": 0
+    },
+    {
+      "id": "10805",
+      "name": "Челябинская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10805",
+      "federalDistrict": "Уральский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "ab8a05aaa310cfd71598bc5fa8b2810550a68519218d11f27cda7e184ca2d91a",
+      "rows": 106
+    },
+    {
+      "id": "10709",
+      "name": "Чеченская Республика",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10709",
+      "federalDistrict": "Северо-Кавказский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "8ed68729df1b70ae3df1da24744fbb6f02f1cbe028a96d665af4533c0a349bf6",
+      "rows": 36
+    },
+    {
+      "id": "10405",
+      "name": "Чувашская Республика",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10405",
+      "federalDistrict": "Приволжский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "68c3eac33a877655779eb3024cd847cb60be55da8a009904effa7bf72959ff08",
+      "rows": 26
+    },
+    {
+      "id": "11108",
+      "name": "Чукотский автономный округ",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11108",
+      "federalDistrict": "Дальневосточный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "dcbfeb1ef56d5dfb3da23ffce181f0ab7fa81d0a69dabb0cc75cba77cfd19129",
+      "rows": 4
+    },
+    {
+      "id": "10909",
+      "name": "Ямало-Ненецкий автономный округ",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10909",
+      "federalDistrict": "Уральский федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "01e1c6531d04c39d4ffc33379b1d9b67703a65c679e4e3da3b4277b4dfaa047c",
+      "rows": 10
+    },
+    {
+      "id": "10313",
+      "name": "Ярославская область",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10313",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "0bc5185736628ceb1cbe28f747e77fd5472a24ddf4c4fdb4fbdf91298f89aac9",
+      "rows": 52
+    },
+    {
+      "id": "10301",
+      "name": "г.Москва",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10301",
+      "federalDistrict": "Центральный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "e724cfa35af9d1bb13e35e0d4bfe7b7b53211d9e7e2e1b5a97ebfa508c6ce46b",
+      "rows": 159
+    },
+    {
+      "id": "10201",
+      "name": "г.Санкт-Петербург",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=10201",
+      "federalDistrict": "Северо-Западный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "ae4d9ccbf8e73fb7f35e7a7eaae9f130dd5bda4518dc71f09c0b5886345a1c4e",
+      "rows": 110
+    },
+    {
+      "id": "11302",
+      "name": "г.Севастополь",
+      "sourceUrl": "https://monitoring.miccedu.ru/iam/2025/_spo/material.php?type=2&id=11302",
+      "federalDistrict": "Южный федеральный округ",
+      "httpStatus": "200",
+      "sourceSha256": "0817c7ffbbe1a840a1f4968d81734000800d6d5b6b42d6feec0b6b305ab85c11",
+      "rows": 11
+    }
+  ],
+  "counts": {
+    "regions": 89,
+    "rosterRows": 4541,
+    "byKind": {
+      "university": 386,
+      "college": 3097,
+      "branch": 1058
+    },
+    "colleges": 4155,
+    "withWebsite": 4146,
+    "errors": 0
+  },
+  "universitiesTeachingSpo": [
+    {
+      "monitoringId": "1847",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Белгородский университет кооперации, экономики и права\"",
+      "region": "Белгородская область"
+    },
+    {
+      "monitoringId": "17",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Белгородский государственный национальный исследовательский университет»",
+      "region": "Белгородская область"
+    },
+    {
+      "monitoringId": "16",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Белгородский государственный технологический университет им. В.Г. Шухова\"",
+      "region": "Белгородская область"
+    },
+    {
+      "monitoringId": "1675",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Белгородский государственный аграрный университет имени В.Я. Горина»",
+      "region": "Белгородская область"
+    },
+    {
+      "monitoringId": "24",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Брянский государственный инженерно-технологический университет\"",
+      "region": "Брянская область"
+    },
+    {
+      "monitoringId": "25",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Брянский государственный технический университет\"",
+      "region": "Брянская область"
+    },
+    {
+      "monitoringId": "1772",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Брянский государственный аграрный университет»",
+      "region": "Брянская область"
+    },
+    {
+      "monitoringId": "30",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Владимирский государственный университет имени Александра Григорьевича и Николая Григорьевича Столетовых»",
+      "region": "Владимирская область"
+    },
+    {
+      "monitoringId": "101",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ковровская государственная технологическая академия имени В.А. Дегтярева»",
+      "region": "Владимирская область"
+    },
+    {
+      "monitoringId": "110170",
+      "legalName": "Автономная некоммерческая образовательная организация высшего образования \"Воронежский экономико-правовой институт\"",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "1996",
+      "legalName": "Автономная некоммерческая образовательная организация высшего образования \"Международный институт компьютерных технологий\"",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "110169",
+      "legalName": "Муниципальное образовательное автономное учреждение высшего образования \"Воронежский институт экономики и социального управления\"",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "1650",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Воронежский государственный аграрный университет имени императора Петра I\"",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "1594",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Воронежский государственный медицинский университет имени Н.Н.Бурденко\" Министерства здравоохранения Российской Федерации",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "43",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Воронежский государственный педагогический университет\"",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "45",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Воронежский государственный университет\"",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "1762",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Воронежская государственная академия спорта»",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "40",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Воронежский государственный лесотехнический университет имени Г.Ф. Морозова»",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "44",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Воронежский государственный технический университет»",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "41",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Воронежский государственный университет инженерных технологий»",
+      "region": "Воронежская область"
+    },
+    {
+      "monitoringId": "2012",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Московский гуманитарно-технологический университет - Московский архитектурно-строительный институт\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110319",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Московский гуманитарный университет\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110324",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Московский институт современного академического образования\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1944",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Национальный Институт Дизайна\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1846",
+      "legalName": "Автономная некоммерческая организация высшего образования «Российский новый университет»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110372",
+      "legalName": "Автономная некоммерческая организация высшего образования «Российский университет адвокатуры и нотариата имени Г.Б. Мирзоева»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110318",
+      "legalName": "Автономная некоммерческая организация высшего образования Московский гуманитарно-экономический университет",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1952",
+      "legalName": "Аккредитованное образовательное частное учреждение высшего образования «Московский финансово-юридический университет МФЮА»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "2183",
+      "legalName": "Государственное автономное образовательное учреждение высшего образования города Москвы \"Московский городской педагогический университет\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110314",
+      "legalName": "Государственное автономное образовательное учреждение высшего образования города Москвы \"МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ СПОРТА И ТУРИЗМА\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110315",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования города Москвы \"Московский государственный институт музыки имени А.Г. Шнитке\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1834",
+      "legalName": "Негосударственное образовательное частное учреждение высшего образования Московский университет «Синергия»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "2033",
+      "legalName": "Образовательная автономная некоммерческая организация высшего образования \"Московский технологический институт\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110148",
+      "legalName": "Образовательное учреждение профсоюзов высшего образования \"Академия труда и социальных отношений\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1963",
+      "legalName": "Образовательное частное учреждение высшего образования \"Международный юридический институт\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1593",
+      "legalName": "Ордена Трудового Красного Знамени федеральное государственное бюджетное образовательное учреждение высшего образования «Московский технический университет связи и информатики»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110334",
+      "legalName": "Учреждение высшего образования \"Московский художественно-промышленный институт\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "130",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Московский государственный юридический университет имени О.Е. Кутафина (МГЮА)\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "140",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Национальный исследовательский университет \"Московский институт электронной техники\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "212",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Российский государственный гуманитарный университет\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "147",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Московский государственный технический университет имени Н.Э.Баумана (национальный исследовательский университет)»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1566",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Российский университет транспорта»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1792",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования Первый Московский государственный медицинский университет имени И.М. Сеченова Министерства здравоохранения Российской Федерации (Сеченовский Университет)",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1651",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Академия хорового искусства имени В.С. Попова\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "160",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Московский педагогический государственный университет\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1640",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Российский государственный аграрный университет - МСХА имени К.А.Тимирязева\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "151",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Российский государственный университет им. А.Н. Косыгина (Технологии. Дизайн. Искусство)\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1610",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Российский университет медицины\" Министерства здравоохранения Российской Федерации",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1787",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Российский университет спорта \"ГЦОЛИФК\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "223",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Российский химико-технологический университет имени Д.И.Менделеева\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1723",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Всероссийский государственный университет кинематографии имени С.А.Герасимова»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1654",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Всероссийский государственный университет юстиции (РПА Минюста России)»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1729",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Государственный музыкально-педагогический институт имени М.М. Ипполитова-Иванова»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "134",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «МИРЭА - Российский технологический университет»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1788",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Московская государственная академия ветеринарной медицины и биотехнологии - МВА имени К.И. Скрябина»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1659",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Московская государственная академия хореографии»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "158",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Московский государственный университет технологий и управления имени К.Г. Разумовского (Первый казачий университет)»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1645",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российская академия музыки имени Гнесиных»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1783",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российская академия народного хозяйства и государственной службы при Президенте Российской Федерации»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "155",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский биотехнологический университет (РОСБИОТЕХ)»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "210",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский государственный геологоразведочный университет имени Серго Орджоникидзе»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "215",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский государственный социальный университет»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1781",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский государственный университет правосудия имени В.М. Лебедева»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "159",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский государственный художественно-промышленный университет им. С.Г. Строганова»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "209",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский экономический университет имени Г.В. Плеханова»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "109620",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Центральная музыкальная школа - Академия исполнительского искусства»",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1767",
+      "legalName": "Федеральное государственное образовательное бюджетное учреждение высшего образования \"Финансовый университет при Правительстве Российской Федерации\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1943",
+      "legalName": "Частное образовательное учреждение высшего образования \"Московский университет им. С.Ю. Витте\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1835",
+      "legalName": "Частное образовательное учреждение высшего образования \"Православный Свято-Тихоновский гуманитарный университет\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "110308",
+      "legalName": "Частное учреждение высшего образования \"Московская академия предпринимательства\"",
+      "region": "г.Москва"
+    },
+    {
+      "monitoringId": "1677",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Верхневолжский государственный агробиотехнологический университет\"",
+      "region": "Ивановская область"
+    },
+    {
+      "monitoringId": "77",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ивановский государственный химико-технологический университет\"",
+      "region": "Ивановская область"
+    },
+    {
+      "monitoringId": "2198",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ивановский государственный политехнический университет»",
+      "region": "Ивановская область"
+    },
+    {
+      "monitoringId": "78",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ивановский государственный энергетический университет имени В.И. Ленина»",
+      "region": "Ивановская область"
+    },
+    {
+      "monitoringId": "104",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Костромской государственный университет\"",
+      "region": "Костромская область"
+    },
+    {
+      "monitoringId": "1631",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Костромская государственная сельскохозяйственная академия»",
+      "region": "Костромская область"
+    },
+    {
+      "monitoringId": "1674",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Курский государственный аграрный университет имени И.И. Иванова\"",
+      "region": "Курская область"
+    },
+    {
+      "monitoringId": "114",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Курский государственный университет\"",
+      "region": "Курская область"
+    },
+    {
+      "monitoringId": "113",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Юго-Западный государственный университет\"",
+      "region": "Курская область"
+    },
+    {
+      "monitoringId": "1786",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Курский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Курская область"
+    },
+    {
+      "monitoringId": "116",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Липецкий государственный педагогический университет имени П.П.Семенова-Тян-Шанского\"",
+      "region": "Липецкая область"
+    },
+    {
+      "monitoringId": "117",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Липецкий государственный технический университет\"",
+      "region": "Липецкая область"
+    },
+    {
+      "monitoringId": "72",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Елецкий государственный университет им. И.А. Бунина»",
+      "region": "Липецкая область"
+    },
+    {
+      "monitoringId": "1845",
+      "legalName": "Автономная некоммерческая образовательная организация высшего образования Центросоюза Российской Федерации \"Российский университет кооперации\"",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "1926",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Московский региональный социально-экономический институт\"",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "110454",
+      "legalName": "Государственное образовательное учреждение высшего образования Московской области \"Государственный гуманитарно-технологический университет\"",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "1861",
+      "legalName": "Образовательное частное учреждение высшего образования \"Российская международная академия туризма\"",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "110425",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Технологический университет имени дважды Героя Советского Союза, летчика-космонавта А.А. Леонова\"",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "51",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Гжельский государственный университет»",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "1694",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Московский государственный институт культуры»",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "220",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский государственный университет туризма и сервиса»",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "1706",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования Министерства сельского хозяйства Российской Федерации «Российский государственный университет народного хозяйства имени В.И. Вернадского»",
+      "region": "Московская область"
+    },
+    {
+      "monitoringId": "1745",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Орловский государственный аграрный университет имени Н.В. Парахина»",
+      "region": "Орловская область"
+    },
+    {
+      "monitoringId": "191",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Орловский государственный университет имени И.С. Тургенева»",
+      "region": "Орловская область"
+    },
+    {
+      "monitoringId": "230",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Рязанский государственный радиотехнический университет имени В.Ф. Уткина\"",
+      "region": "Рязанская область"
+    },
+    {
+      "monitoringId": "1662",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Рязанский государственный агротехнологический университет имени П.А.Костычева»",
+      "region": "Рязанская область"
+    },
+    {
+      "monitoringId": "1765",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Рязанский государственный медицинский университет имени академика И.П. Павлова» Министерства здравоохранения Российской Федерации",
+      "region": "Рязанская область"
+    },
+    {
+      "monitoringId": "110395",
+      "legalName": "Областное государственное бюджетное образовательное учреждение высшего образования \"Смоленский государственный институт искусств\"",
+      "region": "Смоленская область"
+    },
+    {
+      "monitoringId": "1870",
+      "legalName": "Религиозная организация - духовная образовательная организация высшего образования «Смоленская Православная Духовная Семинария Смоленской Епархии Русской Православной Церкви»",
+      "region": "Смоленская область"
+    },
+    {
+      "monitoringId": "276",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Смоленский государственный университет»",
+      "region": "Смоленская область"
+    },
+    {
+      "monitoringId": "110412",
+      "legalName": "Тамбовское областное государственное бюджетное образовательное учреждение высшего образования \"Тамбовский государственный музыкально-педагогический институт им. С.В.Рахманинова\"",
+      "region": "Тамбовская область"
+    },
+    {
+      "monitoringId": "284",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Тамбовский государственный университет имени Г.Р. Державина\"",
+      "region": "Тамбовская область"
+    },
+    {
+      "monitoringId": "1736",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Мичуринский государственный аграрный университет»",
+      "region": "Тамбовская область"
+    },
+    {
+      "monitoringId": "283",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Тамбовский государственный технический университет»",
+      "region": "Тамбовская область"
+    },
+    {
+      "monitoringId": "1710",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Тверская государственная сельскохозяйственная академия\"",
+      "region": "Тверская область"
+    },
+    {
+      "monitoringId": "1621",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Тверской государственный медицинский университет\" Министерства здравоохранения Российской Федерации",
+      "region": "Тверская область"
+    },
+    {
+      "monitoringId": "298",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Тульский государственный университет»",
+      "region": "Тульская область"
+    },
+    {
+      "monitoringId": "229",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Рыбинский государственный авиационный технический университет имени П.А. Соловьева\"",
+      "region": "Ярославская область"
+    },
+    {
+      "monitoringId": "342",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ярославский государственный университет им. П.Г. Демидова\"",
+      "region": "Ярославская область"
+    },
+    {
+      "monitoringId": "1585",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ярославский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Ярославская область"
+    },
+    {
+      "monitoringId": "1544",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Северный (Арктический) федеральный университет имени М. В. Ломоносова».",
+      "region": "Архангельская область"
+    },
+    {
+      "monitoringId": "1579",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Северный государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Архангельская область"
+    },
+    {
+      "monitoringId": "1672",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Вологодская государственная молочнохозяйственная академия имени Н.В.Верещагина\"",
+      "region": "Вологодская область"
+    },
+    {
+      "monitoringId": "39",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Вологодский государственный университет»",
+      "region": "Вологодская область"
+    },
+    {
+      "monitoringId": "325",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Череповецкий государственный университет»",
+      "region": "Вологодская область"
+    },
+    {
+      "monitoringId": "1824",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Международный банковский институт имени Анатолия Собчака\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "110344",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Национальный открытый институт г.Санкт-Петербург\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1907",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Русская христианская гуманитарная академия им. Ф.М. Достоевского\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1990",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Университет при Межпарламентской Ассамблее ЕврАзЭС\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "110291",
+      "legalName": "Государственное автономное образовательное учреждение высшего образования Ленинградской области \"Ленинградский государственный университет имени А.С. Пушкина\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "243",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Санкт-Петербургский государственный университет аэрокосмического приборостроения»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "240",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Санкт-Петербургский политехнический университет Петра Великого»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1789",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Академия Русского балета имени А.Я. Вагановой\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1755",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Национальный государственный Университет физической культуры, спорта и здоровья имени П.Ф.Лесгафта, Санкт-Петербург\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "232",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Санкт-Петербургский государственный лесотехнический университет имени С.М. Кирова\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1616",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Санкт-Петербургский государственный педиатрический медицинский университет\" Министерства здравоохранения Российской Федерации",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1564",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А. Бонч-Бруевича\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1771",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Санкт-Петербургский государственный университет\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "13",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Балтийский государственный технический университет «ВОЕНМЕХ» им. Д.Ф. Устинова»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1707",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Государственный университет морского и речного флота имени адмирала С.О. Макарова»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1572",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Первый Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова» Министерства здравоохранения Российской Федерации",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1580",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Петербургский государственный университет путей сообщения Императора Александра I»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "213",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский государственный педагогический университет им. А. И. Герцена»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "48",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Российский университет традиционных художественных промыслов»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1648",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургская государственная консерватория имени Н.А.Римского-Корсакова»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1727",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный аграрный университет»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1738",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный институт кино и телевидения»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "239",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный морской технический университет»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "242",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный технологический институт (технический университет)»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1735",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный университет гражданской авиации имени Главного маршала авиации А.А. Новикова»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "245",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный университет промышленных технологий и дизайна»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1590",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный химико-фармацевтический университет» Министерства здравоохранения Российской Федерации",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "100256",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Санкт-Петербургский государственный экономический университет»",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "2063",
+      "legalName": "Частное образовательное учреждение высшего образования \"Санкт-Петербургский институт экономики и управления\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "2018",
+      "legalName": "Частное образовательное учреждение высшего образования \"Санкт-Петербургский медико-социальный институт\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "1959",
+      "legalName": "Частное образовательное учреждение высшего образования \"Санкт-Петербургский университет технологий управления и экономики\"",
+      "region": "г.Санкт-Петербург"
+    },
+    {
+      "monitoringId": "217",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Балтийский федеральный университет имени Иммануила Канта\"",
+      "region": "Калининградская область"
+    },
+    {
+      "monitoringId": "1601",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Калининградский государственный технический университет»",
+      "region": "Калининградская область"
+    },
+    {
+      "monitoringId": "110180",
+      "legalName": "Государственное автономное образовательное учреждение высшего образования Ленинградской области «Гатчинский государственный университет»",
+      "region": "Ленинградская область"
+    },
+    {
+      "monitoringId": "1602",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"МУРМАНСКИЙ АРКТИЧЕСКИЙ УНИВЕРСИТЕТ\"",
+      "region": "Мурманская область"
+    },
+    {
+      "monitoringId": "173",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Новгородский государственный университет имени Ярослава Мудрого»",
+      "region": "Новгородская область"
+    },
+    {
+      "monitoringId": "1530",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Псковский государственный университет\"",
+      "region": "Псковская область"
+    },
+    {
+      "monitoringId": "1660",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Великолукская государственная сельскохозяйственная академия»",
+      "region": "Псковская область"
+    },
+    {
+      "monitoringId": "1656",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Петрозаводская государственная консерватория имени А.К. Глазунова»",
+      "region": "Республика Карелия"
+    },
+    {
+      "monitoringId": "281",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Сыктывкарский государственный университет имени Питирима Сорокина\"",
+      "region": "Республика Коми"
+    },
+    {
+      "monitoringId": "320",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ухтинский государственный технический университет»",
+      "region": "Республика Коми"
+    },
+    {
+      "monitoringId": "1681",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Вятский государственный агротехнологический университет\"",
+      "region": "Кировская область"
+    },
+    {
+      "monitoringId": "50",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Вятский государственный университет»",
+      "region": "Кировская область"
+    },
+    {
+      "monitoringId": "110347",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования \"Нижегородский государственный инженерно-экономический университет\"",
+      "region": "Нижегородская область"
+    },
+    {
+      "monitoringId": "170",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Национальный исследовательский Нижегородский государственный университет им. Н.И. Лобачевского»",
+      "region": "Нижегородская область"
+    },
+    {
+      "monitoringId": "1778",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Нижегородский государственный агротехнологический университет имени Л.Я. Флорентьева\"",
+      "region": "Нижегородская область"
+    },
+    {
+      "monitoringId": "166",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Нижегородский государственный архитектурно-строительный университет\"",
+      "region": "Нижегородская область"
+    },
+    {
+      "monitoringId": "167",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Нижегородский государственный лингвистический университет им. Н.А. Добролюбова\"",
+      "region": "Нижегородская область"
+    },
+    {
+      "monitoringId": "168",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Нижегородский государственный педагогический университет имени Козьмы Минина\"",
+      "region": "Нижегородская область"
+    },
+    {
+      "monitoringId": "1705",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Волжский государственный университет водного транспорта»",
+      "region": "Нижегородская область"
+    },
+    {
+      "monitoringId": "1587",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Приволжский исследовательский медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Нижегородская область"
+    },
+    {
+      "monitoringId": "110354",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования \"Оренбургский государственный институт искусств им. Л. и М. Ростроповичей\"",
+      "region": "Оренбургская область"
+    },
+    {
+      "monitoringId": "186",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Оренбургский государственный педагогический университет\"",
+      "region": "Оренбургская область"
+    },
+    {
+      "monitoringId": "1702",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Оренбургский государственный аграрный университет»",
+      "region": "Оренбургская область"
+    },
+    {
+      "monitoringId": "1624",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Оренбургский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Оренбургская область"
+    },
+    {
+      "monitoringId": "192",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Пензенский государственный технологический университет\"",
+      "region": "Пензенская область"
+    },
+    {
+      "monitoringId": "194",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Пензенский государственный университет\"",
+      "region": "Пензенская область"
+    },
+    {
+      "monitoringId": "1632",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Пензенский государственный аграрный университет»",
+      "region": "Пензенская область"
+    },
+    {
+      "monitoringId": "198",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Пермский государственный национальный исследовательский университет\"",
+      "region": "Пермский край"
+    },
+    {
+      "monitoringId": "1577",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Пермская государственная фармацевтическая академия\" Министерства здравоохранения Российской Федерации",
+      "region": "Пермский край"
+    },
+    {
+      "monitoringId": "1775",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Чайковская государственная академия физической культуры и спорта\"",
+      "region": "Пермский край"
+    },
+    {
+      "monitoringId": "1796",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Пермский государственный медицинский университет имени академика Е.А. Вагнера» Министерства здравоохранения Российской Федерации",
+      "region": "Пермский край"
+    },
+    {
+      "monitoringId": "1701",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Башкирский государственный аграрный университет\"",
+      "region": "Республика Башкортостан"
+    },
+    {
+      "monitoringId": "666669204",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"УФИМСКИЙ УНИВЕРСИТЕТ НАУКИ И ТЕХНОЛОГИЙ\"",
+      "region": "Республика Башкортостан"
+    },
+    {
+      "monitoringId": "1731",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Башкирский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Республика Башкортостан"
+    },
+    {
+      "monitoringId": "14",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Башкирский государственный педагогический университет им. М. Акмуллы»",
+      "region": "Республика Башкортостан"
+    },
+    {
+      "monitoringId": "319",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Уфимский государственный нефтяной технический университет»",
+      "region": "Республика Башкортостан"
+    },
+    {
+      "monitoringId": "110286",
+      "legalName": "Частное образовательное учреждение высшего образования «Кумертауский институт экономики и права»",
+      "region": "Республика Башкортостан"
+    },
+    {
+      "monitoringId": "2060",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Межрегиональный открытый социальный институт\"",
+      "region": "Республика Марий Эл"
+    },
+    {
+      "monitoringId": "123",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Поволжский государственный технологический университет\"",
+      "region": "Республика Марий Эл"
+    },
+    {
+      "monitoringId": "124",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Марийский государственный университет»",
+      "region": "Республика Марий Эл"
+    },
+    {
+      "monitoringId": "126",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Мордовский государственный педагогический университет имени М.Е. Евсевьева»",
+      "region": "Республика Мордовия"
+    },
+    {
+      "monitoringId": "127",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Национальный исследовательский Мордовский государственный университет им. Н.П.Огарева»",
+      "region": "Республика Мордовия"
+    },
+    {
+      "monitoringId": "110144",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Академия социального образования\"",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "2040",
+      "legalName": "Автономная некоммерческая организация высшего образования «Казанский институт финансов, экономики и информатики»",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "1519",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Казанский (Приволжский) федеральный университет\"",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "1764",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Казанский государственный аграрный университет\"",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "1698",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Казанская государственная консерватория имени Н.Г.Жиганова»",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "1562",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Казанский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "87",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Казанский национальный исследовательский технический университет им. А.Н.Туполева-КАИ»",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "88",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Казанский национальный исследовательский технологический университет»",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "164",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Набережночелнинский государственный педагогический университет»",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "1748",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Поволжский государственный университет физической культуры, спорта и туризма»",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "1901",
+      "legalName": "Частное образовательное учреждение высшего образования \"Казанский инновационный университет имени В.Г. Тимирясова (ИЭУП)\"",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "110279",
+      "legalName": "Частное образовательное учреждение высшего образования \"Камский институт искусств и дизайна\"",
+      "region": "Республика Татарстан"
+    },
+    {
+      "monitoringId": "1853",
+      "legalName": "Автономная некоммерческая организация высшего образования Самарский университет государственного управления \"Международный институт рынка\"",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "254",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Самарский государственный экономический университет\"",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "251",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Самарский национальный исследовательский университет имени академика С.П. Королева»",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "1685",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Самарский государственный аграрный университет\"",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "1581",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Самарский государственный медицинский университет\" Министерства здравоохранения Российской Федерации",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "252",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Самарский государственный технический университет\"",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "202",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Поволжский государственный университет сервиса»",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "1570",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Поволжский государственный университет телекоммуникаций и информатики»",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "1603",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Приволжский государственный университет путей сообщения»",
+      "region": "Самарская область"
+    },
+    {
+      "monitoringId": "255",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Саратовская государственная юридическая академия\"",
+      "region": "Саратовская область"
+    },
+    {
+      "monitoringId": "1730",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Саратовская государственная консерватория имени Л.В. Собинова»",
+      "region": "Саратовская область"
+    },
+    {
+      "monitoringId": "1711",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Саратовский государственный медицинский университет имени В.И. Разумовского» Министерства здравоохранения Российской Федерации",
+      "region": "Саратовская область"
+    },
+    {
+      "monitoringId": "1661",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Саратовский государственный университет генетики, биотехнологии и инженерии имени Н. И. Вавилова»",
+      "region": "Саратовская область"
+    },
+    {
+      "monitoringId": "258",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Саратовский национальный исследовательский государственный университет имени Н.Г. Чернышевского»",
+      "region": "Саратовская область"
+    },
+    {
+      "monitoringId": "52",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Глазовский государственный инженерно-педагогический университет имени В.Г. Короленко\"",
+      "region": "Удмуртская Республика"
+    },
+    {
+      "monitoringId": "1584",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ижевская государственная медицинская академия\" Министерства здравоохранения Российской Федерации",
+      "region": "Удмуртская Республика"
+    },
+    {
+      "monitoringId": "1683",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Удмуртский государственный аграрный университет\"",
+      "region": "Удмуртская Республика"
+    },
+    {
+      "monitoringId": "79",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ижевский государственный технический университет имени М.Т. Калашникова»",
+      "region": "Удмуртская Республика"
+    },
+    {
+      "monitoringId": "303",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Удмуртский государственный университет»",
+      "region": "Удмуртская Республика"
+    },
+    {
+      "monitoringId": "1643",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ульяновский государственный аграрный университет имени П.А.Столыпина»",
+      "region": "Ульяновская область"
+    },
+    {
+      "monitoringId": "304",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ульяновский государственный педагогический университет имени И.Н. Ульянова»",
+      "region": "Ульяновская область"
+    },
+    {
+      "monitoringId": "305",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ульяновский государственный технический университет»",
+      "region": "Ульяновская область"
+    },
+    {
+      "monitoringId": "306",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ульяновский государственный университет»",
+      "region": "Ульяновская область"
+    },
+    {
+      "monitoringId": "110431",
+      "legalName": "Бюджетное образовательное учреждение высшего образования Чувашской Республики \"Чувашский государственный институт культуры и искусств\" Министерства культуры, по делам национальностей и архивного дела Чувашской Республики",
+      "region": "Чувашская Республика"
+    },
+    {
+      "monitoringId": "330",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Чувашский государственный университет имени И.Н. Ульянова\"",
+      "region": "Чувашская Республика"
+    },
+    {
+      "monitoringId": "110155",
+      "legalName": "Государственное бюджетное образовательное учреждение Астраханской области высшего образования \"Астраханский государственный архитектурно-строительный университет\"",
+      "region": "Астраханская область"
+    },
+    {
+      "monitoringId": "1563",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Астраханский государственный технический университет\"",
+      "region": "Астраханская область"
+    },
+    {
+      "monitoringId": "1718",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Астраханский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Астраханская область"
+    },
+    {
+      "monitoringId": "11",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Астраханский государственный университет имени В.Н.Татищева»",
+      "region": "Астраханская область"
+    },
+    {
+      "monitoringId": "110167",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования \"Волжский институт экономики, педагогики и права\"",
+      "region": "Волгоградская область"
+    },
+    {
+      "monitoringId": "110165",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования «Волгоградская государственная консерватория имени П.А. Серебрякова»",
+      "region": "Волгоградская область"
+    },
+    {
+      "monitoringId": "110164",
+      "legalName": "Государственное образовательное бюджетное учреждение культуры высшего образования \"Волгоградский государственный институт искусств и культуры\"",
+      "region": "Волгоградская область"
+    },
+    {
+      "monitoringId": "36",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Волгоградский государственный университет»",
+      "region": "Волгоградская область"
+    },
+    {
+      "monitoringId": "1697",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Волгоградский государственный аграрный университет»",
+      "region": "Волгоградская область"
+    },
+    {
+      "monitoringId": "1597",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Волгоградский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Волгоградская область"
+    },
+    {
+      "monitoringId": "113437",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Севастопольский государственный университет»",
+      "region": "г.Севастополь"
+    },
+    {
+      "monitoringId": "666668961",
+      "legalName": "Автономная некоммерческая образовательная организация высшего образования \"НАУЧНО-ТЕХНОЛОГИЧЕСКИЙ УНИВЕРСИТЕТ \"СИРИУС\"",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "1817",
+      "legalName": "Негосударственное аккредитованное некоммерческое частное образовательное учреждение высшего образования «Академия маркетинга и социально-информационных технологий – ИМСИТ» (г.Краснодар)",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "1663",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Краснодарский государственный институт культуры\"",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "108",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Кубанский государственный технологический университет\"",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "1768",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Государственный морской университет имени адмирала Ф.Ф. Ушакова»",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "1728",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Кубанский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "1747",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Кубанский государственный университет физической культуры, спорта и туризма»",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "109",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Кубанский государственный университет»",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "278",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Сочинский государственный университет»",
+      "region": "Краснодарский край"
+    },
+    {
+      "monitoringId": "1",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Адыгейский государственный университет»",
+      "region": "Республика Адыгея"
+    },
+    {
+      "monitoringId": "122",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Майкопский государственный технологический университет»",
+      "region": "Республика Адыгея"
+    },
+    {
+      "monitoringId": "92",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Калмыцкий государственный университет имени Б.Б. Городовикова»",
+      "region": "Республика Калмыкия"
+    },
+    {
+      "monitoringId": "5516",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования Республики Крым \"Крымский инженерно-педагогический университет имени Февзи Якубова\"",
+      "region": "Республика Крым"
+    },
+    {
+      "monitoringId": "5517",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования Республики Крым \"Крымский университет культуры, искусств и туризма\"",
+      "region": "Республика Крым"
+    },
+    {
+      "monitoringId": "113416",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Крымский федеральный университет имени В.И.Вернадского»",
+      "region": "Республика Крым"
+    },
+    {
+      "monitoringId": "113221",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Керченский государственный морской технологический университет»",
+      "region": "Республика Крым"
+    },
+    {
+      "monitoringId": "337",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Южный федеральный университет\"",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "228",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ростовский государственный экономический университет (РИНХ)\"",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "1671",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Донской государственный аграрный университет»",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "70",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Донской государственный технический университет»",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "1794",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ростовская государственная консерватория им. С.В.Рахманинова»",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "1582",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ростовский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "1678",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ростовский государственный университет путей сообщения»",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "334",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Южно-Российский государственный политехнический университет (НПИ) имени М.И. Платова»",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "2070",
+      "legalName": "Частное образовательное учреждение высшего образования \"Ростовский институт защиты предпринимателя\"",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "1859",
+      "legalName": "Частное образовательное учреждение высшего образования \"Таганрогский институт управления и экономики\"",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "1971",
+      "legalName": "Частное образовательное учреждение высшего образования \"ЮЖНЫЙ УНИВЕРСИТЕТ (ИУБиП)\"",
+      "region": "Ростовская область"
+    },
+    {
+      "monitoringId": "80",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Ингушский государственный университет»",
+      "region": "Республика Ингушетия"
+    },
+    {
+      "monitoringId": "85",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Кабардино-Балкарский государственный университет им. Х.М. Бербекова\"",
+      "region": "Кабардино-Балкарская Республика"
+    },
+    {
+      "monitoringId": "1712",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Северо-Кавказский государственный институт искусств\"",
+      "region": "Кабардино-Балкарская Республика"
+    },
+    {
+      "monitoringId": "1658",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Кабардино-Балкарский государственный аграрный университет имени В.М.Кокова»",
+      "region": "Кабардино-Балкарская Республика"
+    },
+    {
+      "monitoringId": "96",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Северо-Кавказская государственная академия\"",
+      "region": "Карачаево-Черкесская Республика"
+    },
+    {
+      "monitoringId": "97",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Карачаево-Черкесский государственный университет имени У.Д. Алиева»",
+      "region": "Карачаево-Черкесская Республика"
+    },
+    {
+      "monitoringId": "110189",
+      "legalName": "Государственное автономное образовательное учреждение высшего образования \"Дагестанский государственный университет народного хозяйства\"",
+      "region": "Республика Дагестан"
+    },
+    {
+      "monitoringId": "1558",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Дагестанский государственный медицинский университет\" Министерства здравоохранения Российской Федерации",
+      "region": "Республика Дагестан"
+    },
+    {
+      "monitoringId": "62",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Дагестанский государственный педагогический университет им. Р. Гамзатова\"",
+      "region": "Республика Дагестан"
+    },
+    {
+      "monitoringId": "63",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Дагестанский государственный технический университет\"",
+      "region": "Республика Дагестан"
+    },
+    {
+      "monitoringId": "64",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Дагестанский государственный университет\"",
+      "region": "Республика Дагестан"
+    },
+    {
+      "monitoringId": "1665",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Дагестанский государственный аграрный университет имени М.М.Джамбулатова»",
+      "region": "Республика Дагестан"
+    },
+    {
+      "monitoringId": "1826",
+      "legalName": "Частное образовательное учреждение высшего образования \"Социально-педагогический институт\"",
+      "region": "Республика Дагестан"
+    },
+    {
+      "monitoringId": "1636",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Горский государственный аграрный университет»",
+      "region": "Республика Северная Осетия-Алания"
+    },
+    {
+      "monitoringId": "265",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Северо-Кавказский горно-металлургический институт (государственный технологический университет)»",
+      "region": "Республика Северная Осетия-Алания"
+    },
+    {
+      "monitoringId": "267",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Северо-Осетинский государственный университет имени Коста Левановича Хетагурова»",
+      "region": "Республика Северная Осетия-Алания"
+    },
+    {
+      "monitoringId": "110389",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Северо-Кавказский социальный институт\"",
+      "region": "Ставропольский край"
+    },
+    {
+      "monitoringId": "110345",
+      "legalName": "Государственное автономное образовательное учреждение высшего образования \"Невинномысский государственный гуманитарно-технический институт\"",
+      "region": "Ставропольский край"
+    },
+    {
+      "monitoringId": "110402",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования \"Ставропольский государственный педагогический институт\"",
+      "region": "Ставропольский край"
+    },
+    {
+      "monitoringId": "266",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Северо-Кавказский федеральный университет»",
+      "region": "Ставропольский край"
+    },
+    {
+      "monitoringId": "1642",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Ставропольский государственный аграрный университет\"",
+      "region": "Ставропольский край"
+    },
+    {
+      "monitoringId": "207",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Пятигорский государственный университет»",
+      "region": "Ставропольский край"
+    },
+    {
+      "monitoringId": "326",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Чеченский государственный педагогический университет\"",
+      "region": "Чеченская Республика"
+    },
+    {
+      "monitoringId": "327",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Чеченский государственный университет имени Ахмата Абдулхамидовича Кадырова\"",
+      "region": "Чеченская Республика"
+    },
+    {
+      "monitoringId": "61",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Грозненский государственный нефтяной технический университет имени академика М.Д. Миллионщикова»",
+      "region": "Чеченская Республика"
+    },
+    {
+      "monitoringId": "112",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Курганский государственный университет\"",
+      "region": "Курганская область"
+    },
+    {
+      "monitoringId": "331",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Шадринский государственный педагогический университет\"",
+      "region": "Курганская область"
+    },
+    {
+      "monitoringId": "214",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Российский государственный профессионально-педагогический университет»",
+      "region": "Свердловская область"
+    },
+    {
+      "monitoringId": "315",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Уральский государственный экономический университет\"",
+      "region": "Свердловская область"
+    },
+    {
+      "monitoringId": "309",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Уральский государственный юридический университет имени В.Ф. Яковлева\"",
+      "region": "Свердловская область"
+    },
+    {
+      "monitoringId": "1724",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Уральский государственный аграрный университет»",
+      "region": "Свердловская область"
+    },
+    {
+      "monitoringId": "310",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Уральский государственный горный университет»",
+      "region": "Свердловская область"
+    },
+    {
+      "monitoringId": "311",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Уральский государственный лесотехнический университет»",
+      "region": "Свердловская область"
+    },
+    {
+      "monitoringId": "110135",
+      "legalName": "Частное образовательное учреждение высшего образования \"Институт международных связей\"",
+      "region": "Свердловская область"
+    },
+    {
+      "monitoringId": "110421",
+      "legalName": "Частное образоветельное учреждение высшего образования \"Академия туризма и международных отношений\"",
+      "region": "Свердловская область"
+    },
+    {
+      "monitoringId": "1588",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Тюменский государственный медицинский университет\" Министерства здравоохранения Российской Федерации",
+      "region": "Тюменская область"
+    },
+    {
+      "monitoringId": "301",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Тюменский индустриальный университет\"",
+      "region": "Тюменская область"
+    },
+    {
+      "monitoringId": "1680",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Тюменский государственный институт культуры»",
+      "region": "Тюменская область"
+    },
+    {
+      "monitoringId": "110410",
+      "legalName": "Бюджетное учреждение высшего образования Ханты-Мансийского автономного округа - Югры \"Сургутский государственный университет\"",
+      "region": "Ханты-Мансийский автономный округ"
+    },
+    {
+      "monitoringId": "110428",
+      "legalName": "Бюджетное учреждение высшего образования Ханты-Мансийского автономного округа - Югры \"Ханты-Мансийская государственная медицинская академия\"",
+      "region": "Ханты-Мансийский автономный округ"
+    },
+    {
+      "monitoringId": "1784",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Нижневартовский государственный университет»",
+      "region": "Ханты-Мансийский автономный округ"
+    },
+    {
+      "monitoringId": "333",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Югорский государственный университет»",
+      "region": "Ханты-Мансийский автономный округ"
+    },
+    {
+      "monitoringId": "110433",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования \"Южно-Уральский государственный институт искусств имени П.И. Чайковского\"",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "110293",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования Челябинской области \"Магнитогорская государственная консерватория (академия) имени М.И. Глинки\"",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "336",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Южно-Уральский государственный университет (национальный исследовательский университет)\"",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "120",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Магнитогорский государственный технический университет им. Г.И. Носова\"",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "324",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Челябинский государственный университет\"",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "323",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Южно-Уральский государственный гуманитарно-педагогический университет\"",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "1752",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Уральский государственный университет физической культуры»",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "1687",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Южно-Уральский государственный аграрный университет»",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "1591",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Южно-Уральский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "110373",
+      "legalName": "Частное образовательное учреждение высшего образования \"Международный Институт Дизайна и Сервиса\"",
+      "region": "Челябинская область"
+    },
+    {
+      "monitoringId": "1682",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Алтайский государственный аграрный университет\"",
+      "region": "Алтайский край"
+    },
+    {
+      "monitoringId": "1612",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Алтайский государственный медицинский университет\" Министерства здравоохранения Российской Федерации",
+      "region": "Алтайский край"
+    },
+    {
+      "monitoringId": "2",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Алтайский государственный педагогический университет\"",
+      "region": "Алтайский край"
+    },
+    {
+      "monitoringId": "3",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Алтайский государственный технический университет им. И.И. Ползунова\"",
+      "region": "Алтайский край"
+    },
+    {
+      "monitoringId": "4",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Алтайский государственный университет»",
+      "region": "Алтайский край"
+    },
+    {
+      "monitoringId": "83",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Иркутский государственный университет\"",
+      "region": "Иркутская область"
+    },
+    {
+      "monitoringId": "12",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Байкальский государственный университет»",
+      "region": "Иркутская область"
+    },
+    {
+      "monitoringId": "23",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Братский государственный университет»",
+      "region": "Иркутская область"
+    },
+    {
+      "monitoringId": "1690",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Иркутский государственный аграрный университет имени А.А. Ежевского»",
+      "region": "Иркутская область"
+    },
+    {
+      "monitoringId": "1596",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Иркутский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Иркутская область"
+    },
+    {
+      "monitoringId": "82",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Иркутский национальный исследовательский технический университет»",
+      "region": "Иркутская область"
+    },
+    {
+      "monitoringId": "1608",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Кемеровский государственный медицинский университет\" Министерства здравоохранения Российской Федерации",
+      "region": "Кемеровская область"
+    },
+    {
+      "monitoringId": "272",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Сибирский государственный индустриальный университет\"",
+      "region": "Кемеровская область"
+    },
+    {
+      "monitoringId": "99",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Кемеровский государственный университет»",
+      "region": "Кемеровская область"
+    },
+    {
+      "monitoringId": "1666",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Кузбасский государственный аграрный университет имени В.Н. Полецкова»",
+      "region": "Кемеровская область"
+    },
+    {
+      "monitoringId": "111",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Кузбасский государственный технический университет имени Т.Ф. Горбачева»",
+      "region": "Кемеровская область"
+    },
+    {
+      "monitoringId": "2035",
+      "legalName": "Автономная некоммерческая организация высшего образования \"Сибирский институт бизнеса, управления и психологии\"",
+      "region": "Красноярский край"
+    },
+    {
+      "monitoringId": "180",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Заполярный государственный университет им. Н.М. Федоровского\"",
+      "region": "Красноярский край"
+    },
+    {
+      "monitoringId": "1780",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Сибирский государственный институт искусств имени Дмитрия Хворостовского\"",
+      "region": "Красноярский край"
+    },
+    {
+      "monitoringId": "1641",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Красноярский государственный аграрный университет»",
+      "region": "Красноярский край"
+    },
+    {
+      "monitoringId": "1589",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Красноярский государственный медицинский университет имени профессора В.Ф. Войно-Ясенецкого» Министерства здравоохранения Российской Федерации",
+      "region": "Красноярский край"
+    },
+    {
+      "monitoringId": "271",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Сибирский государственный университет науки и технологий имени академика М.Ф. Решетнева»",
+      "region": "Красноярский край"
+    },
+    {
+      "monitoringId": "2025",
+      "legalName": "Автономная некоммерческая образовательная организация высшего образования Центросоюза Российской Федерации «Сибирский университет потребительской кооперации»",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "178",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Новосибирский национальный исследовательский государственный университет»",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "174",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Новосибирский государственный университет архитектуры, дизайна и искусств имени А.Д. Крячкова\"",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "1649",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Новосибирский государственный аграрный университет»",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "1619",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Новосибирский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "177",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Новосибирский государственный технический университет»",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "179",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Новосибирский государственный университет экономики и управления «НИНХ»",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "1763",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Сибирский государственный университет водного транспорта»",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "270",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Сибирский государственный университет геосистем и технологий»",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "1719",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Сибирский государственный университет телекоммуникаций и информатики»",
+      "region": "Новосибирская область"
+    },
+    {
+      "monitoringId": "183",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования \"Омский государственный технический университет\"",
+      "region": "Омская область"
+    },
+    {
+      "monitoringId": "184",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Омский государственный университет им. Ф.М. Достоевского»",
+      "region": "Омская область"
+    },
+    {
+      "monitoringId": "1638",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Омский государственный аграрный университет имени П.А.Столыпина»",
+      "region": "Омская область"
+    },
+    {
+      "monitoringId": "1576",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Омский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Омская область"
+    },
+    {
+      "monitoringId": "182",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Омский государственный педагогический университет»",
+      "region": "Омская область"
+    },
+    {
+      "monitoringId": "1599",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Омский государственный университет путей сообщения»",
+      "region": "Омская область"
+    },
+    {
+      "monitoringId": "53",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Горно-Алтайский государственный университет»",
+      "region": "Республика Алтай"
+    },
+    {
+      "monitoringId": "299",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Тувинский государственный университет»",
+      "region": "Республика Тыва"
+    },
+    {
+      "monitoringId": "322",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Хакасский государственный университет им. Н.Ф. Катанова\"",
+      "region": "Республика Хакасия"
+    },
+    {
+      "monitoringId": "293",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Томский государственный педагогический университет\"",
+      "region": "Томская область"
+    },
+    {
+      "monitoringId": "1618",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Сибирский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Томская область"
+    },
+    {
+      "monitoringId": "292",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Томский государственный архитектурно-строительный университет»",
+      "region": "Томская область"
+    },
+    {
+      "monitoringId": "21",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Благовещенский государственный педагогический университет\"",
+      "region": "Амурская область"
+    },
+    {
+      "monitoringId": "1751",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Дальневосточный государственный аграрный университет\"",
+      "region": "Амурская область"
+    },
+    {
+      "monitoringId": "5",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Амурский государственный университет»",
+      "region": "Амурская область"
+    },
+    {
+      "monitoringId": "66",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Приамурский государственный университет имени Шолом-Алейхема\"",
+      "region": "Еврейская автономная область"
+    },
+    {
+      "monitoringId": "328",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Забайкальский государственный университет\"",
+      "region": "Забайкальский край"
+    },
+    {
+      "monitoringId": "1750",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Камчатский государственный технический университет\"",
+      "region": "Камчатский край"
+    },
+    {
+      "monitoringId": "95",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Камчатский государственный университет имени Витуса Беринга\"",
+      "region": "Камчатский край"
+    },
+    {
+      "monitoringId": "1520",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Дальневосточный федеральный университет»",
+      "region": "Приморский край"
+    },
+    {
+      "monitoringId": "1695",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Приморский государственный аграрно-технологический университет\"",
+      "region": "Приморский край"
+    },
+    {
+      "monitoringId": "28",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Владивостокский государственный университет»",
+      "region": "Приморский край"
+    },
+    {
+      "monitoringId": "1800",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Дальневосточный государственный институт искусств»",
+      "region": "Приморский край"
+    },
+    {
+      "monitoringId": "1756",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Дальневосточный государственный технический рыбохозяйственный университет»",
+      "region": "Приморский край"
+    },
+    {
+      "monitoringId": "1709",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Морской государственный университет имени адмирала Г.И. Невельского»",
+      "region": "Приморский край"
+    },
+    {
+      "monitoringId": "1560",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Тихоокеанский государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Приморский край"
+    },
+    {
+      "monitoringId": "1686",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Бурятская государственная сельскохозяйственная академия имени В.Р. Филиппова\"",
+      "region": "Республика Бурятия"
+    },
+    {
+      "monitoringId": "27",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Бурятский государственный университет имени Доржи Банзарова»",
+      "region": "Республика Бурятия"
+    },
+    {
+      "monitoringId": "46",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Восточно-Сибирский государственный университет технологий и управления»",
+      "region": "Республика Бурятия"
+    },
+    {
+      "monitoringId": "110173",
+      "legalName": "Государственное бюджетное образовательное учреждение высшего образования \"Высшая школа музыки Республики Саха (Якутия) (институт) имени В. А. Босикова\"",
+      "region": "Республика Саха (Якутия)"
+    },
+    {
+      "monitoringId": "1527",
+      "legalName": "Федеральное государственное автономное образовательное учреждение высшего образования «Северо-Восточный федеральный университет имени М.К. Аммосова»",
+      "region": "Республика Саха (Якутия)"
+    },
+    {
+      "monitoringId": "1795",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Чурапчинский государственный институт физической культуры и спорта\"",
+      "region": "Республика Саха (Якутия)"
+    },
+    {
+      "monitoringId": "1742",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Арктический государственный агротехнологический университет»",
+      "region": "Республика Саха (Якутия)"
+    },
+    {
+      "monitoringId": "260",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Сахалинский государственный университет\"",
+      "region": "Сахалинская область"
+    },
+    {
+      "monitoringId": "6",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования \"Амурский гуманитарно-педагогический государственный университет\"",
+      "region": "Хабаровский край"
+    },
+    {
+      "monitoringId": "1626",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Дальневосточный государственный медицинский университет» Министерства здравоохранения Российской Федерации",
+      "region": "Хабаровский край"
+    },
+    {
+      "monitoringId": "1691",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Дальневосточный государственный университет путей сообщения»",
+      "region": "Хабаровский край"
+    },
+    {
+      "monitoringId": "103",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Комсомольский-на-Амуре государственный университет»",
+      "region": "Хабаровский край"
+    },
+    {
+      "monitoringId": "1704",
+      "legalName": "Федеральное государственное бюджетное образовательное учреждение высшего образования «Хабаровский государственный институт культуры»",
+      "region": "Хабаровский край"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "fa",
+  "reviewedAtUtc": "2026-11-21T14:50:05.003184Z",
+  "scope": "Головная площадка в Москве. Кампания бакалавриата и специалитета и официальный архив.",
+  "sources": {
+    "bachelor-2026": {
+      "sourceUrl": "https://www.fa.ru/for-applicants/abitur2026/bak/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "38bd42a415672609deffde5cecee258633891853542e18a610ea65a567bef7df",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "Финансовый университет проводит конкурс на места по договорам об образовании."
+    },
+    "rules-2026": {
+      "sourceUrl": "https://www.fa.ru/upload/constructor/300/o4q2oix54e4t8r6wccucjjtax0avl4pi/Prikaz-po-osnovnoy-deyatelnosti-_-0056_o-ot-20.01.2026-Ob-utv.-Pravil-priema-v-fed.-gos.-obraz.-byudzh.-uch.-vys.-obrazov.-_Finanso-_4574345-v1_stranitsy_3.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "5bbb1e8a5755dc657a77002166644555464e77d2a6f54fe3941b2fa913b59ce0",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "перечень вступительных испытаний с указанием по каждому вступительному испытанию следующих сведений:\nминимальное количество баллов;"
+    },
+    "places-2026": {
+      "sourceUrl": "https://www.fa.ru/upload/constructor/6a0/pgbxvu3lshermj0w9lgdmswdkm9t5dro/Prikaz-po-osnovnoy-deyatelnosti-_-0059_o-ot-20.01.2026-Ob-utverzhdenii-kolichestva-mest-dlya-priema-na-obuchenie-v-ramkakh-kontr-_4578806-v1_.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "6e6c1afe18ae07056c337885680a116373ffafa76085690b57447fb6135a2a6a",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "Об утверждении количества мест для приема на обучение в рамках контрольных цифр и по договорам об образовании"
+    },
+    "organizing-2026": {
+      "sourceUrl": "https://www.fa.ru/upload/constructor/6dc/4fdvdxwzrhbfmcttvisetcqpjeakk4f0/Prikaz-po-OD-_0058_o-ot-20.01.2026-_Ob-organizatsii-priema-v-Finansovyy-universitet-na-2026_2027-ucheb.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "c30439f76bf1f21afbc6beb8a7d00e152b2f4b815503b1407ee92ba8b335d3ee",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "Об организации приема в Финансовый университет на 2026/2027 учебный год"
+    },
+    "programs-2026-amendment": {
+      "sourceUrl": "https://www.fa.ru/upload/constructor/3c5/hq8043a4o2j9dk7k303g1l9ylud9f4wq/Prikaz-po-OD-_0900_o-ot-07.04.2026-_O-vnesenii-izmeneniya-v-prikaz-Finuniversiteta-ot-06.11.2025-_-26.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "d6dea95fb1590b4d9a180410ac37c5f967baa07736280e93997c19f56dbceac9",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "Перечень образовательных программ высшего образования – программ бакалавриата для приема на обучение в очной форме в 2026 году"
+    },
+    "tuition-2026": {
+      "sourceUrl": "https://www.fa.ru/upload/constructor/503/ucgec8qw7oraczanlyunu9bhm7il3g0q/stoimost-bak-msk-1.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "729b02e09c5014dbe4d7bc01aa8671c1b39a1c23889d519272109d3cac3beee9",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "заключающих договоры о предоставлении платных образовательных услуг, предусматривающие начало занятий в 2026/2027 учебном году на 1 курсе"
+    },
+    "paid-deadlines-2026": {
+      "sourceUrl": "https://www.fa.ru/for-applicants/5.php",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "1087ef93df7fe579455ef0246c54eebc43637583414ca95e2d5452e1b46e5ca7",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "С 20 июня по 12 августа (до 17:00 по московскому времени) необходимо подать заявление на платные места"
+    },
+    "achievements-2026": {
+      "sourceUrl": "https://www.fa.ru/for-applicants/bachelor/achievements/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "cf13d189e2510834b710c3368c1ff96a70358598fc90d622e0176bffb87b3c97",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "При приеме на обучение по программам бакалавриата, программам специалитета количество баллов за общие индивидуальные достижения составляет не более 10."
+    },
+    "score-archive": {
+      "sourceUrl": "https://www.fa.ru/for-applicants/bachelor/score/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "649bc84c5a3baf965df3b18868469ffb86db7fb8e2ff7c1fe2278b4a02d2c81e",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "Проходные баллы\n2023/2024 учебный год:\nМинимальная сумма баллов"
+    },
+    "dorms-2026": {
+      "sourceUrl": "https://www.fa.ru/university/dormitories/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "569e006c7257aeddc9a5b6287d18434f3a0962354b9ae4804c9b212c845986cc",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "Для студентов, поступивших в Финансовый университет в 2026 году в общежитиях выделено 1043 места."
+    },
+    "about-2025": {
+      "sourceUrl": "https://www.fa.ru/university/press-center/finansovomu-universitetu-106-let",
+      "sourceYear": 2025,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "7567db79eb7fdc893d0331cb060093e8997421c6a5f4bfc56b401864ccfdad34",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "01 марта 2025\n1919 году с небольшого профильного института началась славная история\nглавной кузницы кадров для национальной финансовой системы"
+    },
+    "contacts": {
+      "sourceUrl": "https://www.fa.ru/university/dormitories/",
+      "sourceYear": null,
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceSha256": "11c79b16d50fabccabc90cc4c0b9d05de778beae56c8e07c7fbe744cb8fcc418",
+      "sourceSha256Basis": "extract-only",
+      "evidenceText": "Приёмная комиссия\n+7 (495) 157-07-90\n+7 (495) 157-07-97\npriemka@fa.ru"
+    }
+  },
+  "campaigns": {
+    "2026": {
+      "academicYear": "2026/2027",
+      "documents": {
+        "правила и испытания": "rules-2026",
+        "места": "places-2026",
+        "квоты и особые права": "organizing-2026",
+        "изменение перечня программ": "programs-2026-amendment",
+        "стоимость": "tuition-2026",
+        "сроки платного приёма": "paid-deadlines-2026",
+        "индивидуальные достижения": "achievements-2026"
+      }
+    },
+    "2027": {
+      "academicYear": "2027/2028",
+      "status": "not_found",
+      "checkedAtUtc": "2026-11-21T14:50:05.003184Z",
+      "checkedSources": ["bachelor-2026", "rules-2026"]
+    }
+  },
+  "admissionsContacts": {
+    "url": "https://www.fa.ru/for-applicants/",
+    "confirmedCampaignUrl": "https://www.fa.ru/for-applicants/abitur2026/bak/",
+    "phone": ["+7 (495) 157-07-90", "+7 (495) 157-07-97"],
+    "email": "priemka@fa.ru",
+    "source": "contacts"
+  },
+  "archive": {
+    "source": "score-archive",
+    "confirmedSection": "2023/2024",
+    "funding": null,
+    "stage": null,
+    "note": "В полученном фрагменте смешаны факультеты и филиалы. Форму, финансирование и этап отдельной записи подтвердить не удалось."
+  },
+  "unresolved": [
+    "Прямые запросы к разделам приёма и архиву возвращали HTTP 403. Сохранены извлечения официальных страниц и документов.",
+    "Бюджетная и платная итоговые сводки 2026 по конкурсным группам Москвы не подтверждены.",
+    "Перечень испытаний и минимумы ЕГЭ по каждому конкурсу, полный график бюджетного приёма и раздельные этапы требуют повторной сверки после восстановления доступа."
+  ],
+  "issues": [
+    {
+      "kind": "directory_admissions_url_conflict",
+      "field": "admissionsUrl",
+      "currentValue": "https://www.fa.ru/search/?q=Поступающим",
+      "officialValue": "https://www.fa.ru/for-applicants/abitur2026/bak/",
+      "sourceUrl": "https://www.fa.ru/for-applicants/abitur2026/bak/",
+      "checkedAt": "2026-11-21T14:50:05.003184Z",
+      "sourceYear": 2026,
+      "sourceSha256": "38bd42a415672609deffde5cecee258633891853542e18a610ea65a567bef7df",
+      "sourceSha256Basis": "extract-only",
+      "note": "В существующей карточке ссылка на поиск. У вуза опубликован прямой раздел приёма 2026, текущее значение требует редакционного обновления."
+    }
+  ]
+}

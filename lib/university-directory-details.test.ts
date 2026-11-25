@@ -10,6 +10,11 @@ import {
 import { universityFactProfiles } from "./university-facts";
 import originalProfiles from "@/data-sources/moscow/profiles.json";
 import moscowOctober20 from "@/data-sources/russia/moscow-enrichment-2026-10-20.json";
+import catalogFillNovember25 from "@/data-sources/russia/fill-2026-11-25.json";
+import {
+  aggregateStudyForms,
+  normalizeProgramText,
+} from "./directory/study-forms";
 import northOctober20 from "@/data-sources/russia/regional-north-enrichment-2026-10-20.json";
 import southOctober20 from "@/data-sources/russia/regional-south-enrichment-2026-10-20.json";
 import moscowOctober22 from "@/data-sources/russia/moscow-enrichment-2026-10-22.json";
@@ -28,8 +33,85 @@ import continuationStructureNovember9 from "@/data-sources/russia/continuation-s
 import followupRegionalEducationNovember9 from "@/data-sources/russia/followup-regional-education-2026-11-09.json";
 import followupCentralEducationNovember9 from "@/data-sources/russia/followup-central-education-2026-11-09.json";
 import followupContactsNovember9 from "@/data-sources/russia/followup-contacts-2026-11-09.json";
+import moscowHseNovember10 from "@/data-sources/russia/moscow-hse-enrichment-2026-11-10.json";
+
+import overviewSourceReview from "@/data-sources/release/2026-12/evidence/2026-11-10-source-review.json";
 
 describe("official university profile evidence", () => {
+  it("fills the Moscow HSE card with sourced facts scoped to their published purpose", () => {
+    const profile = getDirectoryDetails("hse")!;
+    expect(profile.fields).toMatchObject(
+      moscowHseNovember10.profiles[0].fields,
+    );
+    expect(profile.fields.overview?.value).toContain("№ 917");
+    expect(profile.fields.hostelInfo?.value).toContain(
+      "поступивших в 2026 году на первый курс",
+    );
+    expect(profile.fields.admissionsPhone?.value).toBe(
+      "+7 (495) 771-32-42; +7 (495) 916-88-44",
+    );
+    expect(profile.fields.admissionsEmail?.value).toBe("abitur@hse.ru");
+    expect(profile.faculties).toHaveLength(69);
+    expect(profile.offerings).toHaveLength(1490);
+    expect(
+      profile.offerings.filter((row) => row.sourceYear === null),
+    ).toHaveLength(1439);
+    expect(
+      profile.offerings.filter((row) => row.sourceYear === 2026),
+    ).toHaveLength(51);
+  });
+
+  it("keeps the HSE lyceum cohorts as sourced education listings", () => {
+    const offerings = getDirectoryDetails("hse")!.offerings.filter((row) =>
+      row.sourceSection?.includes("Лицей; /html/"),
+    );
+    expect(offerings).toHaveLength(27);
+    expect(offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          title: "Востоковедение 11 класс (набор 2023 года)",
+          level: "Среднее общее образование",
+          admissionsStatus: "pending_review",
+          sourceYear: null,
+          sourceSha256: expect.stringMatching(/^[0-9a-f]{64}$/),
+        }),
+      ]),
+    );
+  });
+
+  it("loads the undated MSU education inventory separately from admissions", () => {
+    const profile = getDirectoryDetails("mgu")!;
+    expect(profile.fields.regDate?.value).toBe("25 января 1755 года");
+    expect(profile.offerings).toHaveLength(166);
+    expect(
+      profile.offerings.every(
+        (row) =>
+          row.sourceYear === null &&
+          row.admissionsStatus === "pending_review" &&
+          row.sourceUrl === "https://msu.ru/sveden/education/sd.pdf",
+      ),
+    ).toBe(true);
+  });
+
+  it("preserves the reviewed official overview and its exact snapshot provenance", () => {
+    const sources = overviewSourceReview.sources;
+    expect(overviewSourceReview.universities.map((row) => row.slug)).toEqual([
+      "mpei",
+      "mephi",
+    ]);
+    for (const row of overviewSourceReview.universities) {
+      const candidate = row.sections.general_information.overviewCandidate;
+      const source = sources[candidate.source as keyof typeof sources];
+      expect(getDirectoryDetails(row.slug)?.fields.overview).toEqual({
+        value: candidate.value,
+        sourceUrl: source.finalUrl,
+        sourceYear: Number(source.retrievedAtUtc.slice(0, 4)),
+        checkedAt: candidate.sourceComparedAtUtc,
+        sourceSha256: source.sha256,
+      });
+    }
+  });
+
   it("publishes continuation evidence idempotently while keeping education lists outside admission matching", () => {
     const additions = [
       ...continuationEducationNovember9.profiles,
@@ -107,7 +189,13 @@ describe("official university profile evidence", () => {
         expect(fact.sourceSha256).toMatch(/^[a-f0-9]{64}$/);
       }
     }
-    expect(getDirectoryDetails("russia-1638")!.offerings).toHaveLength(81);
+    // Later batches add other levels (SPO, specialist/master); the
+    // November 9 inventory itself is unchanged.
+    expect(
+      getDirectoryDetails("russia-1638")!.offerings.filter((row) =>
+        row.checkedAt.startsWith("2026-11-09T"),
+      ),
+    ).toHaveLength(81);
     expect(
       getDirectoryDetails("russia-1638")!
         .offerings.map((row) => row.profile)
@@ -115,7 +203,11 @@ describe("official university profile evidence", () => {
     ).not.toMatch(/Тарский филиал/iu);
     expect(getDirectoryDetails("russia-199")!.faculties).toHaveLength(11);
     expect(getDirectoryDetails("mipt")!.fields.admissionsPhone).toBeDefined();
-    expect(getDirectoryDetails("mephi")!.offerings).toHaveLength(77);
+    expect(
+      getDirectoryDetails("mephi")!.offerings.filter((row) =>
+        row.checkedAt.startsWith("2026-11-09T"),
+      ),
+    ).toHaveLength(77);
   });
 
   it("retains October 25 evidence without turning cohort labels or ambiguous source values into admissions facts", () => {
@@ -236,13 +328,15 @@ describe("official university profile evidence", () => {
     expect(distinctIzhgtuProfile.profile).toBe("Технология машиностроения");
     expect(distinctIzhgtuProfile.duration).toBe("4 года");
     expect(
-      getDirectoryDetails("rsuh")!.offerings.filter(
-        (row) =>
-          row.code === "38.05.01" &&
-          row.profile ===
-            "Экономическая безопасность хозяйствующего субъекта" &&
-          row.forms?.toLocaleLowerCase("ru") === "очная",
-      ),
+      moscowOctober22.profiles
+        .find((row) => row.universitySlug === "rsuh")!
+        .offerings.filter(
+          (row) =>
+            row.code === "38.05.01" &&
+            row.profile ===
+              "Экономическая безопасность хозяйствующего субъекта" &&
+            row.forms?.toLocaleLowerCase("ru") === "очная",
+        ),
     ).toHaveLength(0);
     expect(moscowOctober22.collectionIssues).toContainEqual(
       expect.objectContaining({
@@ -251,6 +345,26 @@ describe("official university profile evidence", () => {
         code: "38.05.01",
       }),
     );
+  });
+
+  it("adds RSUH full-time economic security after the official inventory resolved the degree conflict", () => {
+    const rows = getDirectoryDetails("rsuh")!.offerings.filter(
+      (row) =>
+        row.code === "38.05.01" &&
+        row.profile === "Экономическая безопасность хозяйствующего субъекта",
+    );
+    expect(
+      rows.map((row) => row.forms?.toLocaleLowerCase("ru")).sort(),
+    ).toEqual(["заочная", "очная"]);
+    expect(
+      rows.find((row) => row.forms?.toLocaleLowerCase("ru") === "очная"),
+    ).toMatchObject({
+      level: "Высшее образование - специалитет",
+      duration: "5 лет",
+      sourceUrl: "https://www.rsuh.ru/sveden/education/",
+      sourceYear: null,
+      admissionsStatus: "pending_review",
+    });
   });
   it("retains every reviewed October 20 gap fact with its own evidence and unknown intake", () => {
     const additions: Array<Required<DirectoryEnrichment>> = [
@@ -420,20 +534,22 @@ describe("official university profile evidence", () => {
   });
   it("keeps education lists separate from admission contests and matching", () => {
     const ids = new Set(programs.map((p) => p.id));
+    const universitySlugs = new Set(universities.map((row) => row.slug));
     for (const profile of directoryDetails) {
-      expect(universities.some((u) => u.slug === profile.universitySlug)).toBe(
-        true,
-      );
+      expect(universitySlugs.has(profile.universitySlug)).toBe(true);
       expect(new Set(profile.offerings.map((row) => row.id)).size).toBe(
         profile.offerings.length,
       );
-      for (const row of profile.offerings) {
-        expect(row.code).toMatch(/^\d{2}\.(03|04|05|06|07|08|09)\.\d{2}$/);
-        expect(row.admissionsStatus).toBe("pending_review");
-        expect(ids.has(row.id)).toBe(false);
-        expect(row.sourceUrl).toMatch(/^https?:\/\//);
-        expect(row.sourceSha256).toMatch(/^[a-f0-9]{64}$/);
-      }
+      const invalidOfferings = profile.offerings.filter(
+        (row) =>
+          !row.code.trim() ||
+          (row.sourceYear === null &&
+            row.admissionsStatus !== "pending_review") ||
+          ids.has(row.id) ||
+          !/^https?:\/\//.test(row.sourceUrl) ||
+          !/^[a-f0-9]{64}$/.test(row.sourceSha256 ?? ""),
+      );
+      expect(invalidOfferings, profile.universitySlug).toEqual([]);
     }
     // Employment statistics are not evidence of a current program offering.
     // The older fetch had only statistics for these two universities. New
@@ -501,6 +617,80 @@ describe("official university profile evidence", () => {
       }
   });
 
+  it("adds MIPT educational rows while keeping their admission year unknown", () => {
+    const profile = getDirectoryDetails("mipt")!;
+    expect(profile.faculties).toHaveLength(8);
+    expect(profile.fields.overview?.value).toContain("1951 году");
+    const originalOfferings = profile.offerings.filter(
+      (row) =>
+        row.sourceUrl === "https://mipt.ru/vikon/sveden/education/eduaccred/",
+    );
+    expect(originalOfferings).toHaveLength(207);
+    expect(
+      new Set(originalOfferings.map((row) => row.sourceSection)).size,
+    ).toBe(5);
+    for (const row of originalOfferings) {
+      expect(row.sourceYear).toBeNull();
+      expect(row.admissionsStatus).toBe("pending_review");
+      expect(row.forms).toBe("Очная");
+      expect(row.duration).toMatch(/^(?:2|4|5,5|6)$/);
+    }
+    const added = profile.offerings.filter(
+      (row) => row.sourceUrl === "https://mipt.ru/sveden/education/eduaccred",
+    );
+    expect(added).toHaveLength(2);
+    expect(added.every((row) => row.forms === "Очная")).toBe(true);
+    expect(
+      profile.offerings.some((row) => row.forms === "Не реализуется"),
+    ).toBe(false);
+  });
+
+  it("loads the RUDN inventory across published levels without inferring admissions", () => {
+    const profile = getDirectoryDetails("rudn")!;
+    expect(profile.fields.overview?.value).toContain("5 февраля 1960 года");
+    expect(profile.faculties).toHaveLength(17);
+    expect(profile.offerings).toHaveLength(992);
+    expect(profile.offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "01.04.02",
+          profile: "Теория вероятностей и математическая статистика",
+          level: "Высшее образование — специалитет, магистратура",
+          forms: "Очная",
+          duration: "2 года",
+        }),
+        expect.objectContaining({ code: "31.05.01", profile: "Лечебное дело" }),
+        expect.objectContaining({ code: "1.1.1", duration: "4 года" }),
+        expect.objectContaining({ code: "31.08.01", duration: "2 года" }),
+      ]),
+    );
+    for (const row of profile.offerings) {
+      expect(row.sourceYear).toBeNull();
+      expect(row.admissionsStatus).toBe("pending_review");
+      expect(row.sourceUrl).toBe(
+        "https://www.rudn.ru/sveden/education/eduaccred/",
+      );
+    }
+    expect(programs.find((entry) => entry.id === "rudn-ami")).toMatchObject({
+      passingScore: null,
+      passingScoreValue: { year: 2026, status: "pending_review" },
+      passingHistory: [],
+    });
+  });
+
+  it("fills MISIS card gaps without merging differently scoped education snapshots", () => {
+    const profile = getDirectoryDetails("misis")!;
+    expect(profile.fields.overview?.sourceUrl).toBe(
+      "https://misis.ru/university/",
+    );
+    expect(profile.fields.hostelInfo?.sourceUrl).toBe(
+      "https://misis.ru/applicants/accommodation/zaselenievobsh_ezhitiepervokusn/order/",
+    );
+    expect(profile.faculties).toHaveLength(10);
+    // One combined-form row duplicated its separate rows (cleanup 25.11.2026).
+    expect(profile.offerings).toHaveLength(302);
+  });
+
   it("separates admissions contacts, accommodation types and redirected hosting pages", () => {
     const institute = getDirectoryDetails("inpsycho")!;
     expect(institute.fields.admissionsEmail?.value).toBe("zayavka@inpsycho.ru");
@@ -517,6 +707,264 @@ describe("official university profile evidence", () => {
     for (const profile of directoryDetails)
       for (const field of Object.values(profile.fields))
         expect(new URL(field.sourceUrl).hostname).not.toBe("timeweb.com");
+  });
+
+  it("loads the November 21 official inventory without inferring admissions", () => {
+    const profile = getDirectoryDetails("moscow-110271")!;
+    expect(profile.offerings).toContainEqual(
+      expect.objectContaining({
+        code: "38.03.01",
+        title: "Экономика",
+        admissionsStatus: "pending_review",
+        sourceYear: null,
+        sourceUrl: "https://ineup.ru/sveden/education/eduaccred/",
+        sourceSha256: expect.stringMatching(/^[a-f0-9]{64}$/),
+      }),
+    );
+  });
+
+  it("keeps the reviewed MEPhI educational inventory separate from admissions", () => {
+    const added = getDirectoryDetails("mephi")!.offerings.filter((row) =>
+      row.sourceUrl.startsWith("https://eis2.mephi.ru/programs"),
+    );
+    expect(added).toHaveLength(246);
+    expect(
+      added.every(
+        (row) =>
+          row.admissionsStatus === "pending_review" && row.sourceYear === null,
+      ),
+    ).toBe(true);
+  });
+
+  it("uses the Polytechnic housing conditions and self-evaluation report", () => {
+    const { fields } = getDirectoryDetails("mospolytech")!;
+    expect(fields.overview?.value).toContain("создан в 2016 году");
+    expect(fields.overview?.sourceYear).toBe(2025);
+    expect(fields.hostelInfo?.value).toContain("при наличии свободного");
+    expect(fields.hostelInfo?.sourceYear).toBe(2026);
+  });
+
+  it("dates the Financial University housing places to the 2026 intake", () => {
+    const { fields } = getDirectoryDetails("fa")!;
+    expect(fields.overview?.sourceYear).toBe(2025);
+    expect(fields.hostelInfo).toMatchObject({
+      value: expect.stringContaining("1043 места"),
+      sourceUrl: "https://www.fa.ru/university/dormitories/",
+      sourceYear: 2026,
+    });
+  });
+
+  it("retains the reviewed MGIMO listings with their original source years", () => {
+    const profile = getDirectoryDetails("mgimo")!;
+    expect(profile.fields.admissionsEmail?.value).toBe("priem@id.mgimo.ru");
+    expect(profile.fields.telephone).toBeUndefined();
+    expect(profile.faculties).toHaveLength(12);
+    expect(profile.offerings).toHaveLength(93);
+    expect(profile.offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "41.03.05",
+          profile: "Большие данные и моделирование международных отношений",
+          sourceYear: 2026,
+          admissionsStatus: "pending_review",
+        }),
+        expect.objectContaining({
+          code: "5.2.5",
+          title: "Мировая экономика",
+          sourceYear: 2023,
+          admissionsStatus: "pending_review",
+        }),
+      ]),
+    );
+  });
+
+  it("shows reviewed Bauman listings at their original source years", () => {
+    const { fields, offerings } = getDirectoryDetails("bmstu")!;
+    expect(fields.admissionsEmail?.value).toBe("abiturient@bmstu.ru");
+    expect(fields.email).toMatchObject({
+      value: "bauman@bmstu.ru",
+      sourceYear: 2025,
+    });
+    expect(fields.hostelInfo?.value).toContain("на конкурсной основе");
+    expect(offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "09.02.11",
+          title: "Разработка и управление программным обеспечением",
+          sourceYear: 2025,
+          admissionsStatus: "pending_review",
+        }),
+        expect.objectContaining({
+          code: "12.03.04",
+          profile: "Биомедицинская инженерия 4.0",
+          sourceYear: 2026,
+          admissionsStatus: "pending_review",
+        }),
+      ]),
+    );
+  });
+
+  it("adds the Pirogov admissions contact and academic institutes to the published list", () => {
+    const { fields, faculties, offerings } = getDirectoryDetails("pirogov")!;
+    expect(fields.admissionsEmail).toMatchObject({
+      value: "prk@rsmu.ru",
+      sourceUrl: "https://rsmu.ru/abitur/admission-office",
+      sourceYear: 2026,
+    });
+    expect(faculties).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          name: "Институт материнства и детства",
+          sourceUrl: "https://rsmu.ru/sveden/struct/",
+        }),
+      ]),
+    );
+    expect(offerings).toHaveLength(202);
+  });
+
+  it("uses the dated university document for the RSUH overview", () => {
+    const { fields } = getDirectoryDetails("rsuh")!;
+    expect(fields.overview).toMatchObject({
+      value: expect.stringContaining("основан в 1991 году"),
+      sourceYear: 2024,
+      sourceUrl: expect.stringContaining("rsuh.ru/upload/main/science/2026/"),
+    });
+  });
+
+  it("adds dated Gubkin profile facts without duplicating the offline listings", () => {
+    const { fields, faculties, offerings } = getDirectoryDetails("gubkin")!;
+    expect(fields.admissionsEmail).toMatchObject({
+      value: "priem@gubkin.ru",
+      sourceYear: 2026,
+    });
+    expect(fields.admissionsUrl?.value).toBe("https://priem.gubkin.ru/");
+    expect(faculties).toHaveLength(13);
+    expect(offerings).toHaveLength(209);
+  });
+
+  it("uses official admissions contacts and the dated MUCTR self-study", () => {
+    const { fields } = getDirectoryDetails("muctr")!;
+    expect(fields.admissionsPhone).toMatchObject({
+      value: "+7-499-978-85-20",
+      sourceYear: 2026,
+    });
+    expect(fields.admissionsEmail?.value).toBe("priem@muctr.ru");
+    expect(fields.overview).toMatchObject({
+      value: expect.stringContaining("в 1992 году"),
+      sourceYear: 2024,
+      sourceUrl: "https://www.muctr.ru/upload/sveden/files/002390.pdf",
+    });
+    expect(fields.admissionsUrl?.value).toBe(
+      "https://www.muctr.ru/abitur/bachelor/pk/contact/",
+    );
+  });
+
+  it("adds sourced Sechenov admissions contacts and history to the existing directory", () => {
+    const { fields, offerings } = getDirectoryDetails("sechenov")!;
+    expect(fields.admissionsPhone).toMatchObject({
+      value: "+7 (495) 622-98-20",
+      sourceYear: 2026,
+      sourceUrl: "https://priem.sechenov.ru/undergraduate/pravila-priema/",
+    });
+    expect(fields.overview).toMatchObject({
+      value: expect.stringContaining("с 1758 года"),
+      sourceYear: 2021,
+    });
+    expect(offerings).toHaveLength(219);
+  });
+
+  it("adds the dated MSAL admissions contacts and the official education listings", () => {
+    const { fields, faculties, offerings } = getDirectoryDetails("msal")!;
+    expect(fields.admissionsPhone).toMatchObject({
+      value: "8-800-555-7919",
+      sourceYear: 2026,
+    });
+    expect(fields.overview?.value).toContain("с 1931 года");
+    expect(faculties).toHaveLength(13);
+    expect(offerings).toHaveLength(109);
+    expect(offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "40.03.01",
+          profile: "ИННОВАЦИОННАЯ ЮРИСПРУДЕНЦИЯ",
+          admissionsStatus: "pending_review",
+        }),
+        expect.objectContaining({
+          code: "5.1.5",
+          level: "Аспирантура",
+          sourceYear: 2026,
+        }),
+      ]),
+    );
+  });
+
+  it("preserves MAI's published education levels and dated admissions contacts", () => {
+    const { fields, faculties, offerings } = getDirectoryDetails("mai")!;
+    expect(fields.admissionsPhone).toMatchObject({
+      value: "+7 499 110-16-71",
+      sourceYear: 2026,
+    });
+    expect(fields.admissionsEmail).toMatchObject({
+      value: "priem@mai.ru",
+      sourceYear: 2019,
+    });
+    expect(faculties).toHaveLength(5);
+    expect(offerings).toHaveLength(108);
+    expect(offerings).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          code: "01.03.02",
+          profile: "Информатика",
+          level: "Базовое высшее образование",
+          sourceYear: 2026,
+          admissionsStatus: "pending_review",
+        }),
+        expect.objectContaining({
+          code: "1.1.7",
+          level: "Аспирантура",
+          sourceYear: 2026,
+        }),
+      ]),
+    );
+  });
+
+  it("updates the existing MISIS system analysis program from its official card", () => {
+    const misisPrograms = programs.filter(
+      (program) => program.universitySlug === "misis",
+    );
+    expect(misisPrograms).toHaveLength(1);
+    expect(misisPrograms[0]).toMatchObject({
+      id: "misis-analysis",
+      code: "27.03.03",
+      faculty: "Институт компьютерных наук",
+      passingScore: null,
+      passingHistory: [],
+    });
+  });
+
+  it("loads the RANEPA admissions contacts and reviewed Moscow institutes", () => {
+    const { fields, faculties } = getDirectoryDetails("ranepa")!;
+    expect(fields.admissionsEmail).toMatchObject({
+      value: "pkranepa@ranepa.ru",
+      sourceYear: 2026,
+    });
+    expect(fields.overview?.value).toContain("20 сентября 2010 года");
+    expect(faculties).toHaveLength(5);
+    expect(faculties).toContainEqual(
+      expect.objectContaining({
+        name: "Институт общественных наук",
+        sourceYear: 2026,
+      }),
+    );
+    expect(
+      programs.find((entry) => entry.id === "ranepa-digital"),
+    ).toMatchObject({
+      budgetPlaces: 23,
+      paidPlaces: 67,
+      tuition: 475000,
+      quotas: { general: { value: 17 }, target: { value: 0 } },
+      passingScore: null,
+    });
   });
 
   it("preserves the independent review date of a military center", () => {
@@ -549,5 +997,84 @@ describe("official university profile evidence", () => {
     )!.facts.website;
     expect(original.checkedAt).toBe(unchanged.directory?.checkedAt);
     expect(original.year).toBe(unchanged.directory?.sourceYear);
+  });
+});
+
+describe("/sveden/ directory facts dated by the check (owner decision 25.11.2026)", () => {
+  it("shows contacts and first faculty lists of batch universities", () => {
+    const profile = getDirectoryDetails("academy-gps")!;
+    expect(profile.fields.address?.value).toContain("Бориса Галушкина");
+    expect(profile.fields.telephone?.value).toBeTruthy();
+    expect(profile.faculties?.length).toBe(5);
+    for (const faculty of profile.faculties ?? []) {
+      expect(faculty.sourceYear).toBe(2026);
+      expect(faculty.sourceUrl).toMatch(
+        /^https:\/\/(?:www\.)?academygps\.ru\/sveden\/struct/,
+      );
+    }
+  });
+
+  it("never mixes a /sveden/ faculty list into a curated one or re-adds listings", () => {
+    const curated = catalogFillNovember25.issues.filter(
+      (issue) => issue.kind === "faculties_already_curated",
+    );
+    expect(curated.length).toBeGreaterThan(0);
+    for (const issue of curated) {
+      const profile = catalogFillNovember25.profiles.find(
+        (row) => row.universitySlug === issue.universitySlug,
+      )!;
+      expect(profile.faculties).toHaveLength(0);
+    }
+    expect(getDirectoryDetails("mgimo")!.faculties).toHaveLength(12);
+    for (const profile of catalogFillNovember25.profiles) {
+      expect(profile.offerings).toHaveLength(0);
+      for (const field of Object.values(profile.fields))
+        expect(field.sourceYear).toBe(2026);
+    }
+  });
+});
+
+describe("combined study forms (25.11.2026 cleanup)", () => {
+  it("reads forms separated by spaces, commas, semicolons or «и»", () => {
+    expect(aggregateStudyForms("Очная Заочная")).toEqual(["очная", "заочная"]);
+    expect(aggregateStudyForms("очная, очно-заочная и заочная")).toEqual([
+      "очная",
+      "очно-заочная",
+      "заочная",
+    ]);
+    expect(aggregateStudyForms("Очная")).toBeNull();
+    expect(
+      aggregateStudyForms("Очная (с применением ДОТ), заочная"),
+    ).toBeNull();
+  });
+
+  it("never shows a combined row whose forms are all listed separately", () => {
+    for (const details of directoryDetails) {
+      const single = new Set(
+        details.offerings
+          .filter((row) => !aggregateStudyForms(row.forms))
+          .map((row) =>
+            [row.code, row.title, row.profile, row.forms]
+              .map((value) => normalizeProgramText(value))
+              .join("|"),
+          ),
+      );
+      for (const row of details.offerings) {
+        const forms = aggregateStudyForms(row.forms);
+        if (!forms) continue;
+        const covered = forms.every((form) =>
+          single.has(
+            [row.code, row.title, row.profile]
+              .map((value) => normalizeProgramText(value))
+              .concat(form)
+              .join("|"),
+          ),
+        );
+        expect(
+          covered,
+          `${details.universitySlug} ${row.code} ${row.forms}`,
+        ).toBe(false);
+      }
+    }
   });
 });

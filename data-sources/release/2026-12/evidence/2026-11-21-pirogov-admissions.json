@@ -1,0 +1,5276 @@
+{
+  "schemaVersion": 1,
+  "universitySlug": "pirogov",
+  "reviewedAtUtc": "2026-11-21T16:36:10Z",
+  "scope": "Московский кампус, отдельные профили, языковые условия и категории абитуриентов. Набор и итоговое зачисление учтены раздельно.",
+  "sources": {
+    "results-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Local_Acts_Education/Priemnay/Rezultaty_priema_za_2026_god.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "3714b7f0e39230185e0713263512504439a5cdd8243088cc98f9e3a0c5f3f7be",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "results-2025": {
+      "sourceUrl": "https://rsmu.ru/sveden/education/informacija-o-rezultatakh-priema",
+      "sourceYear": 2025,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "95a81226dda21f39252f64ad5647fe1b5c9fd192d9d4676e106e896db0e05f15",
+      "sourceSha256Basis": "response-bytes",
+      "format": "html"
+    },
+    "results-2024": {
+      "sourceUrl": "https://rsmu.ru/sveden/education/informacija-o-rezultatakh-priema",
+      "sourceYear": 2024,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "95a81226dda21f39252f64ad5647fe1b5c9fd192d9d4676e106e896db0e05f15",
+      "sourceSha256Basis": "response-bytes",
+      "format": "html"
+    },
+    "rules-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Local_Acts_Education/Priemnay/2026-he/Pravila_priema_2026.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "df85bb58176db8bee2f7b6b101646773f4656d970b251365bb7275a7b4a656a3",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "programs-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Local_Acts_Education/Priemnay/2026-he/Perechen_specialnostei_2026.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "7ff4a16b089c500ca6da458099107e20e8abff39102d23543df9eb2567795071",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "places-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Local_Acts_Education/Priemnay/2026-he/Kolichestvo_mest_2026.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "c9c2e4c7fa71a617eec44283166079b264d70cd695e40ce719a6ba7d25dc2fa4",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "exams-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Local_Acts_Education/Priemnay/2026-he/Perechen_VI_s_ballami_EGEH.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "dd56f831d9f4eaea2aa8f433dce7e33287aad23586e653008349f1918d0bf0d1",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "achievements-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Local_Acts_Education/Priemnay/2026-he/Individualnye_dostizhenija_2026.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "7fe5dc20d52f762a97dc7f3c07967522c8d3da84ab1063998c2c9b929fa3bcbb",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "olympiads-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Local_Acts_Education/Priemnay/2026-he/Polozhenie_ob_olimpiadakh_2026.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "2134a39e099765e27130087f761175dd26e8e571e10d13ef92383867a2aad5aa",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "calendar-2026": {
+      "sourceUrl": "https://rsmu.ru/abitur/specialitet/sroki-mesta-i-pravila-podachi-dokumentov",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "138ecda7c89a8fd0255d880add6e86aadf040ffe64147287f933463675782856",
+      "sourceSha256Basis": "response-bytes",
+      "format": "html"
+    },
+    "tuition-rf-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Oplata_obuchenia/Stoimost_RF_2026-2027.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "e2f2ccfb3f5df2890892a8faec16351c7cd06bf13d515a004f81aa27200f2125",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "tuition-all-2026": {
+      "sourceUrl": "https://rsmu.ru/fileadmin/templates/DOC/Oplata_obuchenia/stoimost_platnykh_obrazovatelnykh_uslug.pdf",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "fd32d8d763de507386f36fda7358c99ae06e1f208613a8e634dd54b5cafec9d3",
+      "sourceSha256Basis": "response-bytes",
+      "format": "pdf"
+    },
+    "office-2026": {
+      "sourceUrl": "https://rsmu.ru/abitur/admission-office",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "986dcdd9cd21cd41fabf49b0a2ebcba6fc2362b1c37aa874829b1bb6b8bf241a",
+      "sourceSha256Basis": "response-bytes",
+      "format": "html"
+    },
+    "history-2026": {
+      "sourceUrl": "https://rsmu.ru/about/history/",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "b51b0ea40107dfb0a0c61445a9c9847304524509d7ebf95a4d05606a586fa7b5",
+      "sourceSha256Basis": "response-bytes",
+      "format": "html"
+    },
+    "transfer-2026": {
+      "sourceUrl": "https://rsmu.ru/news-page?cHash=f161e0b025f103e5657a17b8edb3f04b&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=15590",
+      "sourceYear": 2026,
+      "checkedAt": "2026-11-21T16:36:10Z",
+      "sourceSha256": "728ec04f5bba26497c4b68f9281379730bd0191e22150dbd8dc9cf884edbd567",
+      "sourceSha256Basis": "response-bytes",
+      "format": "html"
+    }
+  },
+  "campaigns": [
+    {
+      "year": 2027,
+      "state": "not_found",
+      "checkedUrls": [
+        "https://rsmu.ru/abitur/",
+        "https://rsmu.ru/abitur/specialitet/rules"
+      ]
+    },
+    {
+      "year": 2026,
+      "rulesSource": "rules-2026",
+      "programmeSource": "programs-2026",
+      "placesSource": "places-2026",
+      "examsSource": "exams-2026",
+      "achievementsSource": "achievements-2026",
+      "specialRightsSource": "olympiads-2026",
+      "deadlineSource": "calendar-2026",
+      "tuitionSources": ["tuition-rf-2026", "tuition-all-2026"],
+      "additionalEntranceExams": {
+        "source": "rules-2026",
+        "locator": "Пункт 28",
+        "levels": ["специалитет", "базовое высшее образование"],
+        "value": false
+      },
+      "generalIndividualAchievementsMax": {
+        "source": "achievements-2026",
+        "value": 10
+      },
+      "programmes": [
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Лечебное дело»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Фундаментальная медицина»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Ars Medica»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Практическая медицина») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "31.05.02",
+          "title": "Педиатрия (профиль «Педиатрия»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "31.05.02",
+          "title": "Педиатрия (профиль «Фундаментальная педиатрия»)",
+          "level": "Базовое высшее образование",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "31.05.03",
+          "title": "Стоматология (профиль «Стоматология»)",
+          "level": "Специалитет",
+          "duration": "5 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "31.05.03",
+          "title": "Стоматология (профиль «Стоматология») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "duration": "5 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "30.05.01",
+          "title": "Медицинская биохимия (профиль «Медицинская биохимия») (в рамках реализации федерального проекта «Передовые инженерные школы»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "30.05.02",
+          "title": "Медицинская биофизика (профиль «Медицинская биофизика») (в рамках реализации федерального проекта «Передовые инженерные школы»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "30.05.03",
+          "title": "Медицинская кибернетика (профиль «Медицинская информатика») (в рамках реализации федерального проекта «Передовые инженерные школы»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "30.05.03",
+          "title": "Медицинская кибернетика (профиль «Биоинформатика») (в рамках реализации федерального проекта «Передовые инженерные школы»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "33.05.01",
+          "title": "Фармация (профиль «Фармация»)",
+          "level": "Специалитет",
+          "duration": "5 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "33.05.01",
+          "title": "Фармация (профиль «Фармация») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "duration": "5 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "37.05.01",
+          "title": "Клиническая психология (профиль «Клиническая психология в здравоохранении»)",
+          "level": "Специалитет",
+          "duration": "5,5 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "37.05.02",
+          "title": "Психология служебной деятельности (специализация: «Психология безопасности»)",
+          "level": "Специалитет",
+          "duration": "5 лет",
+          "form": "Очная (дневная)"
+        },
+        {
+          "code": "06.05.02",
+          "title": "Фундаментальная и прикладная биология (специализация «Биомедицина») (в рамках реализации федерального проекта «Передовые инженерные школы»)",
+          "level": "Специалитет",
+          "duration": "6 лет",
+          "form": "Очная (дневная)"
+        }
+      ],
+      "places": [
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Лечебное дело»)",
+          "level": "Специалитет",
+          "budget": 772,
+          "general": 426,
+          "special": 78,
+          "separate": 78,
+          "target": 190,
+          "paid": 400
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Фундаментальная медицина»)",
+          "level": "Специалитет",
+          "budget": 60,
+          "general": 48,
+          "special": 6,
+          "separate": 6,
+          "target": null,
+          "paid": null
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Ars Medica»)",
+          "level": "Специалитет",
+          "budget": 20,
+          "general": 16,
+          "special": 2,
+          "separate": 2,
+          "target": null,
+          "paid": 10
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Практическая медицина») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "budget": null,
+          "general": null,
+          "special": null,
+          "separate": null,
+          "target": null,
+          "paid": 350
+        },
+        {
+          "code": "31.05.02",
+          "title": "Педиатрия (профиль «Педиатрия»)",
+          "level": "Специалитет",
+          "budget": 487,
+          "general": 283,
+          "special": 49,
+          "separate": 49,
+          "target": 106,
+          "paid": 400
+        },
+        {
+          "code": "31.05.02",
+          "title": "Педиатрия («Фундаментальная педиатрия»)",
+          "level": "Базовое высшее образование",
+          "budget": 20,
+          "general": 16,
+          "special": 2,
+          "separate": 2,
+          "target": null,
+          "paid": 10
+        },
+        {
+          "code": "31.05.03",
+          "title": "Стоматология (профиль «Стоматология»)",
+          "level": "Специалитет",
+          "budget": 25,
+          "general": 7,
+          "special": 3,
+          "separate": 3,
+          "target": 12,
+          "paid": 145
+        },
+        {
+          "code": "31.05.03",
+          "title": "Стоматология (профиль «Стоматология») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "budget": null,
+          "general": null,
+          "special": null,
+          "separate": null,
+          "target": null,
+          "paid": 75
+        },
+        {
+          "code": "30.05.01",
+          "title": "Медицинская биохимия (профиль «Медицинская биохимия»)",
+          "level": "Специалитет",
+          "budget": 37,
+          "general": 28,
+          "special": 4,
+          "separate": 4,
+          "target": 1,
+          "paid": 60
+        },
+        {
+          "code": "30.05.02",
+          "title": "Медицинская биофизика (профиль «Медицинская биофизика»)",
+          "level": "Специалитет",
+          "budget": 20,
+          "general": 15,
+          "special": 2,
+          "separate": 2,
+          "target": 1,
+          "paid": 30
+        },
+        {
+          "code": "30.05.03",
+          "title": "Медицинская кибернетика (профиль «Медицинская информатика»)",
+          "level": "Специалитет",
+          "budget": 20,
+          "general": 15,
+          "special": 2,
+          "separate": 2,
+          "target": 1,
+          "paid": 30
+        },
+        {
+          "code": "30.05.03",
+          "title": "Медицинская кибернетика (профиль «Биоинформатика»)",
+          "level": "Специалитет",
+          "budget": 19,
+          "general": 15,
+          "special": 2,
+          "separate": 2,
+          "target": null,
+          "paid": 30
+        },
+        {
+          "code": "33.05.01",
+          "title": "Фармация (профиль «Фармация»)",
+          "level": "Специалитет",
+          "budget": 28,
+          "general": 22,
+          "special": 3,
+          "separate": 3,
+          "target": null,
+          "paid": 30
+        },
+        {
+          "code": "33.05.01",
+          "title": "Фармация (профиль «Фармация») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "budget": null,
+          "general": null,
+          "special": null,
+          "separate": null,
+          "target": null,
+          "paid": 30
+        },
+        {
+          "code": "37.05.01",
+          "title": "Клиническая психология (профиль «Клиническая психология в здравоохранении»)",
+          "level": "Специалитет",
+          "budget": 80,
+          "general": 56,
+          "special": 8,
+          "separate": 8,
+          "target": 8,
+          "paid": 150
+        },
+        {
+          "code": "37.05.02",
+          "title": "Психология служебной деятельности (специализация «Психология безопасности»)",
+          "level": "Специалитет",
+          "budget": 25,
+          "general": 19,
+          "special": 3,
+          "separate": 3,
+          "target": null,
+          "paid": 8
+        },
+        {
+          "code": "06.05.02",
+          "title": "Фундаментальная и прикладная биология (специализация «Биомедицина»)",
+          "level": "Специалитет",
+          "budget": 27,
+          "general": 21,
+          "special": 3,
+          "separate": 3,
+          "target": null,
+          "paid": 50
+        }
+      ],
+      "minimumExams": [
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Лечебное дело»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 56,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 56,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 3,
+              "min": 56,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Фундаментальная медицина»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 56,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 56,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 3,
+              "min": 56,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Ars Medica»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 56,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 56,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 3,
+              "min": 56,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "31.05.01",
+          "title": "Лечебное дело (профиль «Практическая медицина») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 56,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 56,
+              "subjects": ["биология"]
+            }
+          ]
+        },
+        {
+          "code": "31.05.02",
+          "title": "Педиатрия (профиль «Педиатрия»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "31.05.02",
+          "title": "Педиатрия («Фундаментальная педиатрия»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "31.05.03",
+          "title": "Стоматология (профиль «Стоматология»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "31.05.03",
+          "title": "Стоматология (профиль «Стоматология») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["биология"]
+            }
+          ]
+        },
+        {
+          "code": "33.05.01",
+          "title": "Фармация (профиль «Фармация»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "33.05.01",
+          "title": "Фармация (профиль «Фармация») с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["биология"]
+            }
+          ]
+        },
+        {
+          "code": "06.05.02",
+          "title": "Фундаментальная и прикладная биология (специализация: «Биомедицина»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["математика (профильный уровень)"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "30.05.01",
+          "title": "Медицинская биохимия (профиль «Медицинская биохимия»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["химия"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["биология", "математика (профильный уровень)"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "30.05.02",
+          "title": "Медицинская биофизика (профиль «Медицинская биофизика»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["физика"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["математика (профильный уровень)", "биология"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "30.05.03",
+          "title": "Медицинская кибернетика (профиль «Медицинская информатика»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["математика (профильный уровень)"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "30.05.03",
+          "title": "Медицинская кибернетика (профиль «Биоинформатика»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["математика (профильный уровень)"]
+            },
+            {
+              "priority": 2,
+              "min": 50,
+              "subjects": ["информатика", "биология"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "37.05.01",
+          "title": "Клиническая психология (профиль «Клиническая психология в здравоохранении»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 2,
+              "min": 45,
+              "subjects": ["обществознание", "математика (профильный уровень)"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        },
+        {
+          "code": "37.05.02",
+          "title": "Психология служебной деятельности (специализация: «Психология безопасности»)",
+          "requirements": [
+            {
+              "priority": 1,
+              "min": 50,
+              "subjects": ["биология"]
+            },
+            {
+              "priority": 2,
+              "min": 45,
+              "subjects": ["обществознание", "математика (профильный уровень)"]
+            },
+            {
+              "priority": 3,
+              "min": 50,
+              "subjects": ["русский язык"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "admissionsContacts": {
+    "source": "office-2026",
+    "email": "prk@rsmu.ru",
+    "phone": "+7 (495) 434-31-74"
+  },
+  "annualTuition": {
+    "source": "tuition-rf-2026",
+    "academicYear": "2026/2027",
+    "applicants": "граждане Российской Федерации, вновь заключаемые договоры",
+    "rows": [
+      {
+        "page": 1,
+        "code": "31.05.01",
+        "name": "Лечебное дело «Лечебное дело»",
+        "rubles": 980000
+      },
+      {
+        "page": 1,
+        "code": "31.05.01",
+        "name": "Лечебное дело «Ars medica»",
+        "rubles": 1500000
+      },
+      {
+        "page": 1,
+        "code": "31.05.02",
+        "name": "Педиатрия",
+        "rubles": 800000
+      },
+      {
+        "page": 1,
+        "code": "31.05.03",
+        "name": "Стоматология",
+        "rubles": 1100000
+      },
+      {
+        "page": 1,
+        "code": "30.05.01",
+        "name": "Медицинская биохимия",
+        "rubles": 900000
+      },
+      {
+        "page": 1,
+        "code": "30.05.02",
+        "name": "Медицинская биофизика",
+        "rubles": 900000
+      },
+      {
+        "page": 1,
+        "code": "30.05.03",
+        "name": "Медицинская кибернетика",
+        "rubles": 900000
+      },
+      {
+        "page": 1,
+        "code": "06.05.02",
+        "name": "Фундаментальная и прикладная биология",
+        "rubles": 900000
+      },
+      {
+        "page": 1,
+        "code": "33.05.01",
+        "name": "Фармация",
+        "rubles": 900000
+      },
+      {
+        "page": 1,
+        "code": "37.05.01",
+        "name": "Клиническая психология",
+        "rubles": 700000
+      },
+      {
+        "page": 1,
+        "code": "37.05.02",
+        "name": "Психология служебной деятельности",
+        "rubles": 750000
+      },
+      {
+        "page": 2,
+        "code": "37.04.01",
+        "name": "Психология",
+        "rubles": 625000
+      },
+      {
+        "page": 2,
+        "code": "39.04.02",
+        "name": "Социальная работа",
+        "rubles": 625000
+      },
+      {
+        "page": 2,
+        "code": "44.04.03",
+        "name": "Специальное (дефектологическое) образование",
+        "rubles": 370000
+      },
+      {
+        "page": 2,
+        "code": "06.04.01",
+        "name": "Биология",
+        "rubles": 465000
+      },
+      {
+        "page": 2,
+        "code": "12.04.04",
+        "name": "Биотехнические системы и технологии (очная форма)",
+        "rubles": 415000
+      },
+      {
+        "page": 2,
+        "code": "12.04.04",
+        "name": "Биотехнические системы и технологии (очно-заочная форма)",
+        "rubles": 110000
+      },
+      {
+        "page": 2,
+        "code": "39.04.01",
+        "name": "Социология",
+        "rubles": 370000
+      },
+      {
+        "page": 2,
+        "code": "40.04.01",
+        "name": "Юриспруденция (очно-заочная форма)",
+        "rubles": 200000
+      },
+      {
+        "page": 2,
+        "code": "31.08.01",
+        "name": "Акушерство и гинекология",
+        "rubles": 680000
+      },
+      {
+        "page": 2,
+        "code": "31.08.02",
+        "name": "Анестезиология - реаниматология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.05",
+        "name": "Клиническая лабораторная диагностика",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.07",
+        "name": "Патологическая анатомия",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.08",
+        "name": "Радиология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.09",
+        "name": "Рентгенология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.10",
+        "name": "Судебно-медицинская экспертиза",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.11",
+        "name": "Ультразвуковая диагностика",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.12",
+        "name": "Функциональная диагностика",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.13",
+        "name": "Детская кардиология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.14",
+        "name": "Детская онкология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.16",
+        "name": "Детская хирургия",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.17",
+        "name": "Детская эндокринология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.18",
+        "name": "Неонатология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.19",
+        "name": "Педиатрия",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.20",
+        "name": "Психиатрия",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.22",
+        "name": "Психотерапия",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.26",
+        "name": "Аллергология и иммунология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.28",
+        "name": "Гастроэнтерология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.29",
+        "name": "Гематология",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.30",
+        "name": "Генетика",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.31",
+        "name": "Гериатрия",
+        "rubles": 610000
+      },
+      {
+        "page": 2,
+        "code": "31.08.32",
+        "name": "Дерматовенерология",
+        "rubles": 650000
+      },
+      {
+        "page": 3,
+        "code": "31.08.35",
+        "name": "Инфекционные болезни",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.36",
+        "name": "Кардиология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.37",
+        "name": "Клиническая фармакология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.39",
+        "name": "Лечебная физкультура и спортивная медицина",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.42",
+        "name": "Неврология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.43",
+        "name": "Нефрология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.45",
+        "name": "Пульмонология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.46",
+        "name": "Ревматология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.48",
+        "name": "Скорая медицинская помощь",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.49",
+        "name": "Терапия",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.50",
+        "name": "Физиотерапия",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.51",
+        "name": "Фтизиатрия",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.53",
+        "name": "Эндокринология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.54",
+        "name": "Общая врачебная практика (семейная медицина)",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.55",
+        "name": "Колопроктология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.56",
+        "name": "Нейрохирургия",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.57",
+        "name": "Онкология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.58",
+        "name": "Оториноларингология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.59",
+        "name": "Офтальмология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.60",
+        "name": "Пластическая хирургия",
+        "rubles": 680000
+      },
+      {
+        "page": 3,
+        "code": "31.08.62",
+        "name": "Рентгенэндоваскулярная диагностика и лечение",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.63",
+        "name": "Сердечно-сосудистая хирургия",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.66",
+        "name": "Травматология и ортопедия",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.67",
+        "name": "Хирургия",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.68",
+        "name": "Урология",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.69",
+        "name": "Челюстно-лицевая хирургия",
+        "rubles": 650000
+      },
+      {
+        "page": 3,
+        "code": "31.08.70",
+        "name": "Эндоскопия",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.71",
+        "name": "Организация здравоохранения и общественное здоровье",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.73",
+        "name": "Стоматология терапевтическая",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.74",
+        "name": "Стоматология хирургическая",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.75",
+        "name": "Стоматология ортопедическая",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.76",
+        "name": "Стоматология детская",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "31.08.77",
+        "name": "Ортодонтия",
+        "rubles": 650000
+      },
+      {
+        "page": 3,
+        "code": "31.08.78",
+        "name": "Физическая и реабилитационная медицина",
+        "rubles": 610000
+      },
+      {
+        "page": 3,
+        "code": "1.5.3",
+        "name": "Молекулярная биология",
+        "rubles": 505000
+      },
+      {
+        "page": 3,
+        "code": "1.5.4",
+        "name": "Биохимия",
+        "rubles": 505000
+      },
+      {
+        "page": 3,
+        "code": "1.5.7",
+        "name": "Генетика",
+        "rubles": 505000
+      },
+      {
+        "page": 3,
+        "code": "1.5.8",
+        "name": "Математическая биология, биоинформатика",
+        "rubles": 505000
+      },
+      {
+        "page": 3,
+        "code": "1.5.22",
+        "name": "Клеточная биология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.3",
+        "name": "Оториноларингология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.4",
+        "name": "Акушерство и гинекология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.5",
+        "name": "Офтальмология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.6",
+        "name": "Онкология, лучевая терапия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.7",
+        "name": "Стоматология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.8",
+        "name": "Травматология и ортопедия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.9",
+        "name": "Хирургия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.11",
+        "name": "Детская хирургия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.12",
+        "name": "Анестезиология и реаниматология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.13",
+        "name": "Урология и андрология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.15",
+        "name": "Сердечно-сосудистая хирургия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.16",
+        "name": "Пластическая хирургия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.17",
+        "name": "Психиатрия и наркология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.18",
+        "name": "Внутренние болезни",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.19",
+        "name": "Эндокринология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.20",
+        "name": "Кардиология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.21",
+        "name": "Педиатрия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.23",
+        "name": "Дерматовенерология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.24",
+        "name": "Неврология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.26",
+        "name": "Фтизиатрия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.27",
+        "name": "Ревматология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.28",
+        "name": "Гематология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.29",
+        "name": "Пульмонология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.31",
+        "name": "Геронтология и гериатрия",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.1.33",
+        "name": "Восстановительная медицина, спортивная медицина, лечебная физкультура, курортология и физиотерапия, медико-социальная реабилитация",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.2.1",
+        "name": "Гигиена",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.2.3",
+        "name": "Общественное здоровье, организация и социология здравоохранения, медико-социальная экспертиза",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.2.7",
+        "name": "Иммунология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.3.6",
+        "name": "Фармакология, клиническая фармакология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.3.9",
+        "name": "Медицинская информатика",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "3.4.1",
+        "name": "Промышленная фармация и технология получения лекарств",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "5.3.1",
+        "name": "Общая психология, психология личности, история психологии",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "5.3.6",
+        "name": "Медицинская психология",
+        "rubles": 505000
+      },
+      {
+        "page": 4,
+        "code": "5.12.1",
+        "name": "Междисциплинарные исследования когнитивных процессов",
+        "rubles": 505000
+      }
+    ]
+  },
+  "archives": [
+    {
+      "source": "results-2026",
+      "year": 2026,
+      "stage": null,
+      "competition": "general",
+      "rows": [
+        {
+          "page": 1,
+          "code": "37.05.01",
+          "name": "Клиническая психология (Клиническая психология в здравоохранении)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 85,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 66,
+          "averageEntranceScore": "238,66",
+          "budgetPassingScore": 266,
+          "paidPassingScore": 149
+        },
+        {
+          "page": 1,
+          "code": "31.05.01",
+          "name": "Лечебное дело (Ars Medica)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 20,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "283,37",
+          "budgetPassingScore": 279,
+          "paidPassingScore": null
+        },
+        {
+          "page": 1,
+          "code": "31.05.01",
+          "name": "Лечебное дело (Лечебное дело)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 790,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 168,
+          "averageEntranceScore": "261,11",
+          "budgetPassingScore": 271,
+          "paidPassingScore": 174
+        },
+        {
+          "page": 1,
+          "code": "31.05.01",
+          "name": "Лечебное дело (Практическая медицина) с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 22,
+          "averageEntranceScore": "181,27",
+          "budgetPassingScore": null,
+          "paidPassingScore": 154
+        },
+        {
+          "page": 1,
+          "code": "31.05.01",
+          "name": "Лечебное дело (Фундаментальная медицина)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 60,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "277,07",
+          "budgetPassingScore": 263,
+          "paidPassingScore": null
+        },
+        {
+          "page": 1,
+          "code": "30.05.02",
+          "name": "Медицинская биофизика (Медицинская биофизика)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 20,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "264,22",
+          "budgetPassingScore": 256,
+          "paidPassingScore": 205
+        },
+        {
+          "page": 1,
+          "code": "30.05.01",
+          "name": "Медицинская биохимия (Медицинская биохимия)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 37,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 9,
+          "averageEntranceScore": "265,85",
+          "budgetPassingScore": 273,
+          "paidPassingScore": 160
+        },
+        {
+          "page": 1,
+          "code": "30.05.03",
+          "name": "Медицинская кибернетика (Биоинформатика)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 19,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 5,
+          "averageEntranceScore": "257,30",
+          "budgetPassingScore": 270,
+          "paidPassingScore": 176
+        },
+        {
+          "page": 1,
+          "code": "30.05.03",
+          "name": "Медицинская кибернетика (Медицинская информатика)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 20,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "250,00",
+          "budgetPassingScore": 251,
+          "paidPassingScore": 204
+        },
+        {
+          "page": 1,
+          "code": "31.05.02",
+          "name": "Педиатрия (Педиатрия)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 488,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 230,
+          "averageEntranceScore": "244,47",
+          "budgetPassingScore": 263,
+          "paidPassingScore": 155
+        },
+        {
+          "page": 1,
+          "code": "37.05.02",
+          "name": "Психология служебной деятельности (Психология безопасности)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "240,92",
+          "budgetPassingScore": 242,
+          "paidPassingScore": null
+        },
+        {
+          "page": 1,
+          "code": "31.05.03",
+          "name": "Стоматология (Стоматология)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 64,
+          "averageEntranceScore": "230,30",
+          "budgetPassingScore": "БВИ",
+          "paidPassingScore": 159
+        },
+        {
+          "page": 1,
+          "code": "31.05.03",
+          "name": "Стоматология (Стоматология) с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 68,
+          "averageEntranceScore": "189,41",
+          "budgetPassingScore": null,
+          "paidPassingScore": 162
+        },
+        {
+          "page": 2,
+          "code": "33.05.01",
+          "name": "Фармация (Фармация)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 30,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 6,
+          "averageEntranceScore": "248,18",
+          "budgetPassingScore": 261,
+          "paidPassingScore": 160
+        },
+        {
+          "page": 2,
+          "code": "33.05.01",
+          "name": "Фармация (Фармация) с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 5,
+          "averageEntranceScore": "186,80",
+          "budgetPassingScore": null,
+          "paidPassingScore": 167
+        },
+        {
+          "page": 2,
+          "code": "06.05.02",
+          "name": "Фундаментальная и прикладная биология (Биомедицина)",
+          "level": "Специалитет",
+          "form": "очная",
+          "federalBudgetEnrollment": 27,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 9,
+          "averageEntranceScore": "261,92",
+          "budgetPassingScore": 280,
+          "paidPassingScore": 197
+        },
+        {
+          "page": 2,
+          "code": "31.05.02",
+          "name": "Педиатрия (Фундаментальная педиатрия)",
+          "level": "Базовое высшее образование",
+          "form": "очная",
+          "federalBudgetEnrollment": 20,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 6,
+          "averageEntranceScore": "258,85",
+          "budgetPassingScore": 264,
+          "paidPassingScore": 172
+        },
+        {
+          "page": 2,
+          "code": "06.04.01",
+          "name": "Биология (Клеточная и генная терапия)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "72,00",
+          "budgetPassingScore": 72,
+          "paidPassingScore": 56
+        },
+        {
+          "page": 2,
+          "code": "06.04.01",
+          "name": "Биология (Медицинская биоинформатика)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "89,50",
+          "budgetPassingScore": 81,
+          "paidPassingScore": null
+        },
+        {
+          "page": 2,
+          "code": "06.04.01",
+          "name": "Биология (Медицинские нейротехнологии)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": 10,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 4,
+          "averageEntranceScore": "93,29",
+          "budgetPassingScore": 91,
+          "paidPassingScore": 70
+        },
+        {
+          "page": 2,
+          "code": "06.04.01",
+          "name": "Биология (Молекулярная иммунология)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "85,20",
+          "budgetPassingScore": 76,
+          "paidPassingScore": 74
+        },
+        {
+          "page": 2,
+          "code": "12.04.04",
+          "name": "Биотехнические системы и технологии (Инженерные нейротехнологии)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "81,71",
+          "budgetPassingScore": 70,
+          "paidPassingScore": 70
+        },
+        {
+          "page": 2,
+          "code": "12.04.04",
+          "name": "Биотехнические системы и технологии (Медицинская геномика и эпигеномика)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "84,67",
+          "budgetPassingScore": 80,
+          "paidPassingScore": null
+        },
+        {
+          "page": 2,
+          "code": "12.04.04",
+          "name": "Биотехнические системы и технологии (Медицинское приборостроение)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "85,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 85
+        },
+        {
+          "page": 2,
+          "code": "12.04.04",
+          "name": "Биотехнические системы и технологии (Медицинское приборостроение)",
+          "level": "Магистратура",
+          "form": "очно-заочная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "79,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 72
+        },
+        {
+          "page": 2,
+          "code": "37.04.01",
+          "name": "Психология (Клиническая психология в обеспечении безопасности)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "70,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 70
+        },
+        {
+          "page": 2,
+          "code": "37.04.01",
+          "name": "Психология (Клиническая психология в социальной сфере)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "74,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 64
+        },
+        {
+          "page": 2,
+          "code": "37.04.01",
+          "name": "Психология (Когнитивная нейропсихология)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 5,
+          "averageEntranceScore": "81,60",
+          "budgetPassingScore": null,
+          "paidPassingScore": 72
+        },
+        {
+          "page": 2,
+          "code": "37.04.01",
+          "name": "Психология (Психологическая реабилитация детей и взрослых)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "92,67",
+          "budgetPassingScore": 98,
+          "paidPassingScore": 64
+        },
+        {
+          "page": 2,
+          "code": "39.04.02",
+          "name": "Социальная работа (Все профили)",
+          "level": "Магистратура",
+          "form": "очная",
+          "federalBudgetEnrollment": 30,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "78,87",
+          "budgetPassingScore": 66,
+          "paidPassingScore": null
+        },
+        {
+          "page": 2,
+          "code": "40.04.01",
+          "name": "Юриспруденция (Медицинское право)",
+          "level": "Магистратура",
+          "form": "очно-заочная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 13,
+          "averageEntranceScore": "82,92",
+          "budgetPassingScore": null,
+          "paidPassingScore": 60
+        },
+        {
+          "page": 2,
+          "code": "06.04.01",
+          "name": "Биология (Управление генетической программой)",
+          "level": "Специализированное высшее образование",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 10,
+          "averageEntranceScore": "83,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 66
+        },
+        {
+          "page": 3,
+          "code": "31.08.01",
+          "name": "Акушерство и гинекология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 50,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 30,
+          "averageEntranceScore": "92,44",
+          "budgetPassingScore": 227,
+          "paidPassingScore": 118
+        },
+        {
+          "page": 3,
+          "code": "31.08.01",
+          "name": "Акушерство и гинекология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 4,
+          "averageEntranceScore": "81,75",
+          "budgetPassingScore": null,
+          "paidPassingScore": 83
+        },
+        {
+          "page": 3,
+          "code": "31.08.26",
+          "name": "Аллергология и иммунология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "94,00",
+          "budgetPassingScore": 302,
+          "paidPassingScore": null
+        },
+        {
+          "page": 3,
+          "code": "31.08.02",
+          "name": "Анестезиология- реаниматология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 35,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 13,
+          "averageEntranceScore": "86,67",
+          "budgetPassingScore": 152,
+          "paidPassingScore": 73
+        },
+        {
+          "page": 3,
+          "code": "31.08.02",
+          "name": "Анестезиология- реаниматология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "71,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 71
+        },
+        {
+          "page": 3,
+          "code": "31.08.28",
+          "name": "Гастроэнтерология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "90,29",
+          "budgetPassingScore": 200,
+          "paidPassingScore": 95
+        },
+        {
+          "page": 3,
+          "code": "31.08.29",
+          "name": "Гематология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "92,33",
+          "budgetPassingScore": 247,
+          "paidPassingScore": null
+        },
+        {
+          "page": 3,
+          "code": "31.08.30",
+          "name": "Генетика",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 5,
+          "averageEntranceScore": "93,67",
+          "budgetPassingScore": null,
+          "paidPassingScore": 106
+        },
+        {
+          "page": 3,
+          "code": "31.08.31",
+          "name": "Гериатрия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "91,25",
+          "budgetPassingScore": 80,
+          "paidPassingScore": null
+        },
+        {
+          "page": 3,
+          "code": "31.08.32",
+          "name": "Дерматовенерология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 15,
+          "averageEntranceScore": "92,29",
+          "budgetPassingScore": 271,
+          "paidPassingScore": 87
+        },
+        {
+          "page": 3,
+          "code": "31.08.32",
+          "name": "Дерматовенерология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 5,
+          "averageEntranceScore": "77,80",
+          "budgetPassingScore": null,
+          "paidPassingScore": 71
+        },
+        {
+          "page": 3,
+          "code": "31.08.13",
+          "name": "Детская кардиология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 10,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "89,45",
+          "budgetPassingScore": 73,
+          "paidPassingScore": 163
+        },
+        {
+          "page": 3,
+          "code": "31.08.14",
+          "name": "Детская онкология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "89,00",
+          "budgetPassingScore": 135,
+          "paidPassingScore": 183
+        },
+        {
+          "page": 3,
+          "code": "31.08.16",
+          "name": "Детская хирургия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "96,00",
+          "budgetPassingScore": 107,
+          "paidPassingScore": 107
+        },
+        {
+          "page": 3,
+          "code": "31.08.17",
+          "name": "Детская эндокринология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "91,45",
+          "budgetPassingScore": 137,
+          "paidPassingScore": 117
+        },
+        {
+          "page": 3,
+          "code": "31.08.35",
+          "name": "Инфекционные болезни",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "84,29",
+          "budgetPassingScore": 77,
+          "paidPassingScore": null
+        },
+        {
+          "page": 3,
+          "code": "31.08.36",
+          "name": "Кардиология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 29,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "92,42",
+          "budgetPassingScore": 81,
+          "paidPassingScore": 80
+        },
+        {
+          "page": 3,
+          "code": "31.08.36",
+          "name": "Кардиология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 5,
+          "averageEntranceScore": "80,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 80
+        },
+        {
+          "page": 3,
+          "code": "31.08.05",
+          "name": "Клиническая лабораторная диагностика",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "89,73",
+          "budgetPassingScore": 87,
+          "paidPassingScore": 98
+        },
+        {
+          "page": 3,
+          "code": "31.08.55",
+          "name": "Колопроктология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "85,25",
+          "budgetPassingScore": 107,
+          "paidPassingScore": 182
+        },
+        {
+          "page": 3,
+          "code": "31.08.39",
+          "name": "Лечебная физкультура и спортивная медицина",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "87,45",
+          "budgetPassingScore": 70,
+          "paidPassingScore": 70
+        },
+        {
+          "page": 3,
+          "code": "31.08.42",
+          "name": "Неврология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 38,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 8,
+          "averageEntranceScore": "90,04",
+          "budgetPassingScore": 90,
+          "paidPassingScore": 85
+        },
+        {
+          "page": 3,
+          "code": "31.08.56",
+          "name": "Нейрохирургия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 9,
+          "averageEntranceScore": "92,91",
+          "budgetPassingScore": null,
+          "paidPassingScore": 98
+        },
+        {
+          "page": 3,
+          "code": "31.08.18",
+          "name": "Неонатология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 12,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "88,31",
+          "budgetPassingScore": 87,
+          "paidPassingScore": 271
+        },
+        {
+          "page": 3,
+          "code": "31.08.43",
+          "name": "Нефрология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "90,83",
+          "budgetPassingScore": 206,
+          "paidPassingScore": 103
+        },
+        {
+          "page": 3,
+          "code": "31.08.54",
+          "name": "Общая врачебная практика (семейная медицина)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "88,50",
+          "budgetPassingScore": 73,
+          "paidPassingScore": 137
+        },
+        {
+          "page": 3,
+          "code": "31.08.57",
+          "name": "Онкология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 11,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 4,
+          "averageEntranceScore": "89,93",
+          "budgetPassingScore": 72,
+          "paidPassingScore": 73
+        },
+        {
+          "page": 3,
+          "code": "31.08.57",
+          "name": "Онкология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "72,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 72
+        },
+        {
+          "page": 3,
+          "code": "31.08.71",
+          "name": "Организация здравоохранения и общественное здоровье",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "93,33",
+          "budgetPassingScore": 97,
+          "paidPassingScore": 92
+        },
+        {
+          "page": 4,
+          "code": "31.08.77",
+          "name": "Ортодонтия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 5,
+          "averageEntranceScore": "86,82",
+          "budgetPassingScore": 178,
+          "paidPassingScore": 73
+        },
+        {
+          "page": 4,
+          "code": "31.08.77",
+          "name": "Ортодонтия (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "77,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 77
+        },
+        {
+          "page": 4,
+          "code": "31.08.58",
+          "name": "Оториноларингология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 33,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 15,
+          "averageEntranceScore": "91,85",
+          "budgetPassingScore": 106,
+          "paidPassingScore": 81
+        },
+        {
+          "page": 4,
+          "code": "31.08.59",
+          "name": "Офтальмология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 18,
+          "averageEntranceScore": "88,72",
+          "budgetPassingScore": 86,
+          "paidPassingScore": 83
+        },
+        {
+          "page": 4,
+          "code": "31.08.59",
+          "name": "Офтальмология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 4,
+          "averageEntranceScore": "91,25",
+          "budgetPassingScore": null,
+          "paidPassingScore": 80
+        },
+        {
+          "page": 4,
+          "code": "31.08.07",
+          "name": "Патологическая анатомия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "80,80",
+          "budgetPassingScore": 75,
+          "paidPassingScore": 71
+        },
+        {
+          "page": 4,
+          "code": "31.08.19",
+          "name": "Педиатрия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 120,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 12,
+          "averageEntranceScore": "89,58",
+          "budgetPassingScore": 70,
+          "paidPassingScore": 76
+        },
+        {
+          "page": 4,
+          "code": "31.08.60",
+          "name": "Пластическая хирургия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 10,
+          "averageEntranceScore": "90,62",
+          "budgetPassingScore": 290,
+          "paidPassingScore": 171
+        },
+        {
+          "page": 4,
+          "code": "31.08.60",
+          "name": "Пластическая хирургия (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "86,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 81
+        },
+        {
+          "page": 4,
+          "code": "31.08.20",
+          "name": "Психиатрия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 15,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 7,
+          "averageEntranceScore": "90,73",
+          "budgetPassingScore": 90,
+          "paidPassingScore": 98
+        },
+        {
+          "page": 4,
+          "code": "31.08.22",
+          "name": "Психотерапия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "84,33",
+          "budgetPassingScore": 251,
+          "paidPassingScore": 117
+        },
+        {
+          "page": 4,
+          "code": "31.08.45",
+          "name": "Пульмонология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "90,50",
+          "budgetPassingScore": 92,
+          "paidPassingScore": 116
+        },
+        {
+          "page": 4,
+          "code": "31.08.08",
+          "name": "Радиология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "90,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": null
+        },
+        {
+          "page": 4,
+          "code": "31.08.08",
+          "name": "Радиология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "86,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 86
+        },
+        {
+          "page": 4,
+          "code": "31.08.46",
+          "name": "Ревматология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "93,00",
+          "budgetPassingScore": 207,
+          "paidPassingScore": null
+        },
+        {
+          "page": 4,
+          "code": "31.08.09",
+          "name": "Рентгенология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 23,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "91,35",
+          "budgetPassingScore": 100,
+          "paidPassingScore": 81
+        },
+        {
+          "page": 4,
+          "code": "31.08.62",
+          "name": "Рентгенэндоваскулярные диагностика и лечение",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "88,43",
+          "budgetPassingScore": 238,
+          "paidPassingScore": 98
+        },
+        {
+          "page": 4,
+          "code": "31.08.62",
+          "name": "Рентгенэндоваскулярные диагностика и лечение (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "85,50",
+          "budgetPassingScore": null,
+          "paidPassingScore": 151
+        },
+        {
+          "page": 4,
+          "code": "31.08.63",
+          "name": "Сердечно-сосудистая хирургия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "92,75",
+          "budgetPassingScore": 255,
+          "paidPassingScore": 198
+        },
+        {
+          "page": 4,
+          "code": "31.08.63",
+          "name": "Сердечно-сосудистая хирургия (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "98,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 98
+        },
+        {
+          "page": 4,
+          "code": "31.08.48",
+          "name": "Скорая медицинская помощь",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "98,00",
+          "budgetPassingScore": 118,
+          "paidPassingScore": null
+        },
+        {
+          "page": 4,
+          "code": "31.08.76",
+          "name": "Стоматология детская",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "92,50",
+          "budgetPassingScore": 102,
+          "paidPassingScore": null
+        },
+        {
+          "page": 4,
+          "code": "31.08.75",
+          "name": "Стоматология ортопедическая",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 10,
+          "averageEntranceScore": "87,36",
+          "budgetPassingScore": null,
+          "paidPassingScore": 76
+        },
+        {
+          "page": 4,
+          "code": "31.08.75",
+          "name": "Стоматология ортопедическая (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "90,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 90
+        },
+        {
+          "page": 4,
+          "code": "31.08.73",
+          "name": "Стоматология терапевтическая",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "91,13",
+          "budgetPassingScore": 110,
+          "paidPassingScore": 75
+        },
+        {
+          "page": 5,
+          "code": "31.08.73",
+          "name": "Стоматология терапевтическая (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "71,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 71
+        },
+        {
+          "page": 5,
+          "code": "31.08.74",
+          "name": "Стоматология хирургическая",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 12,
+          "averageEntranceScore": "87,25",
+          "budgetPassingScore": 167,
+          "paidPassingScore": 72
+        },
+        {
+          "page": 5,
+          "code": "31.08.10",
+          "name": "Судебно-медицинская экспертиза",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 12,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "84,67",
+          "budgetPassingScore": 73,
+          "paidPassingScore": 102
+        },
+        {
+          "page": 5,
+          "code": "31.08.49",
+          "name": "Терапия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 84,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 8,
+          "averageEntranceScore": "89,23",
+          "budgetPassingScore": 72,
+          "paidPassingScore": 78
+        },
+        {
+          "page": 5,
+          "code": "31.08.49",
+          "name": "Терапия (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "82,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 82
+        },
+        {
+          "page": 5,
+          "code": "31.08.66",
+          "name": "Травматология и ортопедия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 13,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 4,
+          "averageEntranceScore": "89,65",
+          "budgetPassingScore": 97,
+          "paidPassingScore": 106
+        },
+        {
+          "page": 5,
+          "code": "31.08.66",
+          "name": "Травматология и ортопедия (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "97,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 177
+        },
+        {
+          "page": 5,
+          "code": "31.08.11",
+          "name": "Ультразвуковая диагностика",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 3,
+          "averageEntranceScore": "94,18",
+          "budgetPassingScore": 146,
+          "paidPassingScore": 95
+        },
+        {
+          "page": 5,
+          "code": "31.08.68",
+          "name": "Урология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 12,
+          "averageEntranceScore": "91,86",
+          "budgetPassingScore": 195,
+          "paidPassingScore": 91
+        },
+        {
+          "page": 5,
+          "code": "31.08.68",
+          "name": "Урология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "100,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 100
+        },
+        {
+          "page": 5,
+          "code": "31.08.78",
+          "name": "Физическая и реабилитационная медицина",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "88,36",
+          "budgetPassingScore": 100,
+          "paidPassingScore": 111
+        },
+        {
+          "page": 5,
+          "code": "31.08.51",
+          "name": "Фтизиатрия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "95,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 95
+        },
+        {
+          "page": 5,
+          "code": "31.08.12",
+          "name": "Функциональная диагностика",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "86,00",
+          "budgetPassingScore": 95,
+          "paidPassingScore": null
+        },
+        {
+          "page": 5,
+          "code": "31.08.67",
+          "name": "Хирургия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 46,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 12,
+          "averageEntranceScore": "89,03",
+          "budgetPassingScore": 75,
+          "paidPassingScore": 88
+        },
+        {
+          "page": 5,
+          "code": "31.08.67",
+          "name": "Хирургия (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "88,50",
+          "budgetPassingScore": null,
+          "paidPassingScore": 85
+        },
+        {
+          "page": 5,
+          "code": "31.08.69",
+          "name": "Челюстно-лицевая хирургия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 9,
+          "averageEntranceScore": "87,50",
+          "budgetPassingScore": 231,
+          "paidPassingScore": 82
+        },
+        {
+          "page": 5,
+          "code": "31.08.69",
+          "name": "Челюстно-лицевая хирургия (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "77,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 71
+        },
+        {
+          "page": 5,
+          "code": "31.08.53",
+          "name": "Эндокринология",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 24,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 8,
+          "averageEntranceScore": "89,44",
+          "budgetPassingScore": 70,
+          "paidPassingScore": 76
+        },
+        {
+          "page": 5,
+          "code": "31.08.53",
+          "name": "Эндокринология (для иностранных граждан и лиц без гражданства)",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "85,50",
+          "budgetPassingScore": null,
+          "paidPassingScore": 73
+        },
+        {
+          "page": 5,
+          "code": "31.08.70",
+          "name": "Эндоскопия",
+          "level": "Ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "85,71",
+          "budgetPassingScore": 282,
+          "paidPassingScore": 187
+        },
+        {
+          "page": 5,
+          "code": "31.08.32",
+          "name": "Дерматовенерология",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "95,20",
+          "budgetPassingScore": 276,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "31.08.16",
+          "name": "Детская хирургия",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "81,80",
+          "budgetPassingScore": 90,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "31.08.42",
+          "name": "Неврология",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "82,43",
+          "budgetPassingScore": 71,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "31.08.57",
+          "name": "Онкология",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "92,57",
+          "budgetPassingScore": 131,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "31.08.19",
+          "name": "Педиатрия",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "87,22",
+          "budgetPassingScore": 165,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "31.08.20",
+          "name": "Психиатрия",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "92,78",
+          "budgetPassingScore": 85,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "31.08.49",
+          "name": "Терапия",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "92,44",
+          "budgetPassingScore": 190,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "31.08.66",
+          "name": "Травматология и ортопедия",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "92,14",
+          "budgetPassingScore": 161,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "31.08.67",
+          "name": "Хирургия",
+          "level": "Специализированное высшее образование - ординатура",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "86,71",
+          "budgetPassingScore": 73,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "1.5",
+          "name": "Биологические науки",
+          "level": "Аспирантура",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 2,
+          "averageEntranceScore": "9,17",
+          "budgetPassingScore": 15,
+          "paidPassingScore": 7
+        },
+        {
+          "page": 6,
+          "code": "3.1",
+          "name": "Клиническая медицина",
+          "level": "Аспирантура",
+          "form": "очная",
+          "federalBudgetEnrollment": 69,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 16,
+          "averageEntranceScore": "9,73",
+          "budgetPassingScore": 14,
+          "paidPassingScore": 7
+        },
+        {
+          "page": 6,
+          "code": "3.1",
+          "name": "Клиническая медицина (для иностранных граждан и лиц без гражданства)",
+          "level": "Аспирантура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "8,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 8
+        },
+        {
+          "page": 6,
+          "code": "5.12",
+          "name": "Когнитивные науки",
+          "level": "Аспирантура",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "8,50",
+          "budgetPassingScore": 10,
+          "paidPassingScore": 7
+        },
+        {
+          "page": 6,
+          "code": "3.3",
+          "name": "Медико-биологические науки",
+          "level": "Аспирантура",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "10,00",
+          "budgetPassingScore": 15,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "3.2",
+          "name": "Профилактическая медицина",
+          "level": "Аспирантура",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "10,00",
+          "budgetPassingScore": 15,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "5.3",
+          "name": "Психология",
+          "level": "Аспирантура",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": null,
+          "averageEntranceScore": "10,00",
+          "budgetPassingScore": 12,
+          "paidPassingScore": null
+        },
+        {
+          "page": 6,
+          "code": "3.4",
+          "name": "Фармацевтические науки",
+          "level": "Аспирантура",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "regionalBudgetEnrollment": null,
+          "municipalEnrollment": null,
+          "paidEnrollment": 1,
+          "averageEntranceScore": "10,00",
+          "budgetPassingScore": null,
+          "paidPassingScore": 15
+        }
+      ]
+    },
+    {
+      "source": "results-2025",
+      "year": 2025,
+      "stage": null,
+      "rows": [
+        {
+          "code": "39.03.02",
+          "name": "Социальная работа (Социальная работа)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам бакалавриата в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 15,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 215,
+          "paidPassingScore": 177
+        },
+        {
+          "code": "06.05.02",
+          "name": "Фундаментальная и прикладная биология (Биомедицина)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 15,
+          "paidEnrollment": 14,
+          "budgetPassingScore": 251,
+          "paidPassingScore": 172
+        },
+        {
+          "code": "30.05.01",
+          "name": "Медицинская биохимия (Медицинская биохимия)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 31,
+          "paidEnrollment": 27,
+          "budgetPassingScore": 263,
+          "paidPassingScore": 189
+        },
+        {
+          "code": "30.05.02",
+          "name": "Медицинская биофизика (Медицинская биофизика)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 19,
+          "paidEnrollment": 6,
+          "budgetPassingScore": 234,
+          "paidPassingScore": 173
+        },
+        {
+          "code": "30.05.03",
+          "name": "Медицинская кибернетика (Биоинформатика)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 22,
+          "paidEnrollment": 9,
+          "budgetPassingScore": 255,
+          "paidPassingScore": 188
+        },
+        {
+          "code": "30.05.03",
+          "name": "Медицинская кибернетика (Медицинская информатика)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 23,
+          "paidEnrollment": null,
+          "budgetPassingScore": 241,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.05.01",
+          "name": "Лечебное дело (Лечебное дело)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 810,
+          "paidEnrollment": 185,
+          "budgetPassingScore": 259,
+          "paidPassingScore": 177
+        },
+        {
+          "code": "31.05.01",
+          "name": "Лечебное дело (Практическая медицина)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "paidEnrollment": 6,
+          "budgetPassingScore": null,
+          "paidPassingScore": 188
+        },
+        {
+          "code": "31.05.01",
+          "name": "Лечебное дело (Практическая медицина) с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "paidEnrollment": 58,
+          "budgetPassingScore": null,
+          "paidPassingScore": 148
+        },
+        {
+          "code": "31.05.01",
+          "name": "Лечебное дело (Фундаментальная медицина)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 60,
+          "paidEnrollment": null,
+          "budgetPassingScore": 278,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.05.02",
+          "name": "Педиатрия (Педиатрия)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 508,
+          "paidEnrollment": 259,
+          "budgetPassingScore": 252,
+          "paidPassingScore": 158
+        },
+        {
+          "code": "31.05.03",
+          "name": "Стоматология (Стоматология)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 14,
+          "paidEnrollment": 145,
+          "budgetPassingScore": "Без вступительных испытаний",
+          "paidPassingScore": 154
+        },
+        {
+          "code": "31.05.03",
+          "name": "Стоматология (Стоматология) с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "paidEnrollment": 75,
+          "budgetPassingScore": null,
+          "paidPassingScore": 175
+        },
+        {
+          "code": "33.05.01",
+          "name": "Фармация (Фармация)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 30,
+          "paidEnrollment": 8,
+          "budgetPassingScore": 243,
+          "paidPassingScore": 198
+        },
+        {
+          "code": "33.05.01",
+          "name": "Фармация (Фармация) с использованием языка-посредника (для иностранных граждан и лиц без гражданства)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "paidEnrollment": 2,
+          "budgetPassingScore": null,
+          "paidPassingScore": 167
+        },
+        {
+          "code": "37.05.01",
+          "name": "Клиническая психология (Клиническая психология в здравоохранении)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 80,
+          "paidEnrollment": 85,
+          "budgetPassingScore": 253,
+          "paidPassingScore": 150
+        },
+        {
+          "code": "37.05.02",
+          "name": "Психология служебной деятельности (Психология безопасности)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": 8,
+          "budgetPassingScore": 240,
+          "paidPassingScore": 158
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Клеточная и генная терапия)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 54,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Компьютерное конструирование лекарств)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 85,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Медицинская биоинформатика)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 65,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Медицинские нейротехнологии)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 13,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 55,
+          "paidPassingScore": 82
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Молекулярная иммунология)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 80,
+          "paidPassingScore": 88
+        },
+        {
+          "code": "12.04.04",
+          "name": "Биотехнические системы и технологии (Медицинская геномика и эпигеномика)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 75,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "37.04.01",
+          "name": "Психология (Клиническая психология в обеспечении безопасности)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 3,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 64
+        },
+        {
+          "code": "37.04.01",
+          "name": "Психология (Клиническая психология в социальной сфере)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 1,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 94
+        },
+        {
+          "code": "37.04.01",
+          "name": "Психология (Когнитивная нейропсихология)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 5,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 62
+        },
+        {
+          "code": "37.04.01",
+          "name": "Психология (Психологическая реабилитация детей и взрослых)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 5,
+          "budgetPassingScore": 82,
+          "paidPassingScore": 64
+        },
+        {
+          "code": "39.04.02",
+          "name": "Социальная работа (Все профили)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 30,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 60,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "12.04.04",
+          "name": "Биотехнические системы и технологии (очно-заочная)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 2,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 73
+        },
+        {
+          "code": "40.04.01",
+          "name": "Юриспруденция (очно-заочная)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 12,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 60
+        },
+        {
+          "code": "31.08.01",
+          "name": "Акушерство и гинекология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 50,
+          "paidEnrollment": 54,
+          "budgetPassingScore": 230,
+          "paidPassingScore": 70
+        },
+        {
+          "code": "31.08.02",
+          "name": "Анестезиология-реаниматология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 35,
+          "paidEnrollment": 5,
+          "budgetPassingScore": 216,
+          "paidPassingScore": 76
+        },
+        {
+          "code": "31.08.05",
+          "name": "Клиническая лабораторная диагностика",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 15,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 125,
+          "paidPassingScore": 91
+        },
+        {
+          "code": "31.08.07",
+          "name": "Патологическая анатомия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 75,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.08",
+          "name": "Радиология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 100,
+          "paidPassingScore": 98
+        },
+        {
+          "code": "31.08.09",
+          "name": "Рентгенология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 23,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 215,
+          "paidPassingScore": 93
+        },
+        {
+          "code": "31.08.10",
+          "name": "Судебно-медицинская экспертиза",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 11,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 113,
+          "paidPassingScore": 93
+        },
+        {
+          "code": "31.08.11",
+          "name": "Ультразвуковая диагностика",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 230,
+          "paidPassingScore": 171
+        },
+        {
+          "code": "31.08.12",
+          "name": "Функциональная диагностика",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 73,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.13",
+          "name": "Детская кардиология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 12,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 170,
+          "paidPassingScore": 96
+        },
+        {
+          "code": "31.08.14",
+          "name": "Детская онкология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 92,
+          "paidPassingScore": 76
+        },
+        {
+          "code": "31.08.16",
+          "name": "Детская хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 15,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 175,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.17",
+          "name": "Детская эндокринология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 175,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.18",
+          "name": "Неонатология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 15,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 161,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.19",
+          "name": "Педиатрия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 149,
+          "paidEnrollment": 27,
+          "budgetPassingScore": 172,
+          "paidPassingScore": 80
+        },
+        {
+          "code": "31.08.20",
+          "name": "Психиатрия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": 11,
+          "budgetPassingScore": 202,
+          "paidPassingScore": 77
+        },
+        {
+          "code": "31.08.22",
+          "name": "Психотерапия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 190,
+          "paidPassingScore": 90
+        },
+        {
+          "code": "31.08.26",
+          "name": "Аллергология и иммунология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 112,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.28",
+          "name": "Гастроэнтерология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 263,
+          "paidPassingScore": 83
+        },
+        {
+          "code": "31.08.29",
+          "name": "Гематология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 170,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.30",
+          "name": "Генетика",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 168,
+          "paidPassingScore": 88
+        },
+        {
+          "code": "31.08.31",
+          "name": "Гериатрия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 115,
+          "paidPassingScore": 92
+        },
+        {
+          "code": "31.08.32",
+          "name": "Дерматовенерология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 12,
+          "paidEnrollment": 22,
+          "budgetPassingScore": 256,
+          "paidPassingScore": 78
+        },
+        {
+          "code": "31.08.35",
+          "name": "Инфекционные болезни",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 151,
+          "paidPassingScore": 151
+        },
+        {
+          "code": "31.08.36",
+          "name": "Кардиология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 24,
+          "paidEnrollment": 10,
+          "budgetPassingScore": 225,
+          "paidPassingScore": 78
+        },
+        {
+          "code": "31.08.39",
+          "name": "Лечебная физкультура и спортивная медицина",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 15,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 116,
+          "paidPassingScore": 71
+        },
+        {
+          "code": "31.08.42",
+          "name": "Неврология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 45,
+          "paidEnrollment": 13,
+          "budgetPassingScore": 225,
+          "paidPassingScore": 70
+        },
+        {
+          "code": "31.08.43",
+          "name": "Нефрология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 96,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.45",
+          "name": "Пульмонология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 95,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.46",
+          "name": "Ревматология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 233,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.48",
+          "name": "Скорая медицинская помощь",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 14,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 78,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.49",
+          "name": "Терапия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 143,
+          "paidEnrollment": 10,
+          "budgetPassingScore": 120,
+          "paidPassingScore": 71
+        },
+        {
+          "code": "31.08.50",
+          "name": "Физиотерапия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 91,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.51",
+          "name": "Фтизиатрия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 11,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 81,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.53",
+          "name": "Эндокринология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": 8,
+          "budgetPassingScore": 177,
+          "paidPassingScore": 70
+        },
+        {
+          "code": "31.08.54",
+          "name": "Общая врачебная практика (семейная медицина)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 20,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 148,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.55",
+          "name": "Колопроктология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 97,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "31.08.56",
+          "name": "Нейрохирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "paidEnrollment": 8,
+          "budgetPassingScore": 285,
+          "paidPassingScore": 120
+        },
+        {
+          "code": "31.08.57",
+          "name": "Онкология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 137,
+          "paidPassingScore": 90
+        },
+        {
+          "code": "31.08.58",
+          "name": "Оториноларингология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 30,
+          "paidEnrollment": 23,
+          "budgetPassingScore": 263,
+          "paidPassingScore": 96
+        },
+        {
+          "code": "31.08.59",
+          "name": "Офтальмология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 20,
+          "paidEnrollment": 12,
+          "budgetPassingScore": 235,
+          "paidPassingScore": 82
+        },
+        {
+          "code": "31.08.60",
+          "name": "Пластическая хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 19,
+          "budgetPassingScore": 298,
+          "paidPassingScore": 90
+        },
+        {
+          "code": "31.08.62",
+          "name": "Рентгенэндоваскулярные диагностика и лечение",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 210,
+          "paidPassingScore": 88
+        },
+        {
+          "code": "31.08.63",
+          "name": "Сердечно-сосудистая хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 7,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 80
+        },
+        {
+          "code": "31.08.66",
+          "name": "Травматология и ортопедия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 18,
+          "paidEnrollment": 5,
+          "budgetPassingScore": 242,
+          "paidPassingScore": 100
+        },
+        {
+          "code": "31.08.67",
+          "name": "Хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 53,
+          "paidEnrollment": 14,
+          "budgetPassingScore": 173,
+          "paidPassingScore": 71
+        },
+        {
+          "code": "31.08.68",
+          "name": "Урология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": 12,
+          "budgetPassingScore": 256,
+          "paidPassingScore": 90
+        },
+        {
+          "code": "31.08.69",
+          "name": "Челюстно-лицевая хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "paidEnrollment": 11,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 76
+        },
+        {
+          "code": "31.08.70",
+          "name": "Эндоскопия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 198,
+          "paidPassingScore": 88
+        },
+        {
+          "code": "31.08.71",
+          "name": "Организация здравоохранения и общественное здоровье",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 2,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 78
+        },
+        {
+          "code": "31.08.73",
+          "name": "Стоматология терапевтическая",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 3,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 73
+        },
+        {
+          "code": "31.08.74",
+          "name": "Стоматология хирургическая",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": 13,
+          "budgetPassingScore": 183,
+          "paidPassingScore": 77
+        },
+        {
+          "code": "31.08.75",
+          "name": "Стоматология ортопедическая",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "paidEnrollment": 3,
+          "budgetPassingScore": 162,
+          "paidPassingScore": 81
+        },
+        {
+          "code": "31.08.76",
+          "name": "Стоматология детская",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 1,
+          "budgetPassingScore": "0",
+          "paidPassingScore": 186
+        },
+        {
+          "code": "31.08.77",
+          "name": "Ортодонтия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 9,
+          "budgetPassingScore": 193,
+          "paidPassingScore": 78
+        },
+        {
+          "code": "31.08.78",
+          "name": "Физическая и реабилитационная медицина",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 110,
+          "paidPassingScore": 107
+        },
+        {
+          "code": "1.5",
+          "name": "БИОЛОГИЧЕСКИЕ НАУКИ",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 18,
+          "paidPassingScore": 11
+        },
+        {
+          "code": "3.1",
+          "name": "КЛИНИЧЕСКАЯ МЕДИЦИНА",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 68,
+          "paidEnrollment": 6,
+          "budgetPassingScore": 14,
+          "paidPassingScore": 13
+        },
+        {
+          "code": "3.2",
+          "name": "Профилактическая медицина",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 13,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "3.3",
+          "name": "Медико-биологические науки",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 15,
+          "paidPassingScore": "0"
+        },
+        {
+          "code": "5.3",
+          "name": "Психология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2025 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 14,
+          "paidPassingScore": "0"
+        }
+      ]
+    },
+    {
+      "source": "results-2024",
+      "year": 2024,
+      "stage": null,
+      "rows": [
+        {
+          "code": "39.03.02",
+          "name": "Социальная работа",
+          "profile": "Социальная работа",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам бакалавриата в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": null,
+          "budgetPassingScore": 167,
+          "paidPassingScore": null
+        },
+        {
+          "code": "06.03.01",
+          "name": "Биология",
+          "profile": "Биомедицина",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам бакалавриата в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 16,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 244,
+          "paidPassingScore": 201
+        },
+        {
+          "code": "37.05.01",
+          "name": "Клиническая психология",
+          "profile": "Клиническая психология в здравоохранении",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 80,
+          "paidEnrollment": 91,
+          "budgetPassingScore": 256,
+          "paidPassingScore": 165
+        },
+        {
+          "code": "31.05.01",
+          "name": "Лечебное дело",
+          "profile": "Лечебное дело",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 810,
+          "paidEnrollment": 225,
+          "budgetPassingScore": 268,
+          "paidPassingScore": 124
+        },
+        {
+          "code": "31.05.01",
+          "name": "Лечебное дело",
+          "profile": "Фундаментальная медицина",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 60,
+          "paidEnrollment": null,
+          "budgetPassingScore": 281,
+          "paidPassingScore": null
+        },
+        {
+          "code": "30.05.02",
+          "name": "Медицинская биофизика",
+          "profile": "Медицинская биофизика",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 19,
+          "paidEnrollment": 7,
+          "budgetPassingScore": 229,
+          "paidPassingScore": 162
+        },
+        {
+          "code": "30.05.01",
+          "name": "Медицинская биохимия",
+          "profile": "Медицинская биохимия",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 33,
+          "paidEnrollment": 13,
+          "budgetPassingScore": 273,
+          "paidPassingScore": 176
+        },
+        {
+          "code": "30.05.03",
+          "name": "Медицинская кибернетика",
+          "profile": "Биоинформатика",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 22,
+          "paidEnrollment": 5,
+          "budgetPassingScore": 244,
+          "paidPassingScore": 198
+        },
+        {
+          "code": "30.05.03",
+          "name": "Медицинская кибернетика",
+          "profile": "Медицинская информатика",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 23,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 221,
+          "paidPassingScore": 182
+        },
+        {
+          "code": "31.05.02",
+          "name": "Педиатрия",
+          "profile": "Педиатрия",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 537,
+          "paidEnrollment": 279,
+          "budgetPassingScore": 259,
+          "paidPassingScore": 162
+        },
+        {
+          "code": "37.05.02",
+          "name": "Психология служебной деятельности",
+          "profile": "Психология безопасности",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 230,
+          "paidPassingScore": 180
+        },
+        {
+          "code": "31.05.03",
+          "name": "Стоматология",
+          "profile": "Стоматология",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 24,
+          "paidEnrollment": 113,
+          "budgetPassingScore": 282,
+          "paidPassingScore": 110
+        },
+        {
+          "code": "33.05.01",
+          "name": "Фармация",
+          "profile": "Фармация",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 30,
+          "paidEnrollment": 6,
+          "budgetPassingScore": 230,
+          "paidPassingScore": 181
+        },
+        {
+          "code": "06.05.02",
+          "name": "Фундаментальная и прикладная биология",
+          "profile": "Биомедицина",
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам специалитета в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 16,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 242,
+          "paidPassingScore": 202
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Клеточная и генная терапия)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 100,
+          "paidPassingScore": 99
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Медицинская биоинформатика)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 84,
+          "paidPassingScore": null
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Медицинские нейротехнологии)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 6,
+          "budgetPassingScore": 83,
+          "paidPassingScore": 56
+        },
+        {
+          "code": "06.04.01",
+          "name": "Биология (Молекулярная иммунология)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 97,
+          "paidPassingScore": 99
+        },
+        {
+          "code": "12.04.04",
+          "name": "Биотехнические системы и технологии (Медицинское приборостроение)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 9,
+          "budgetPassingScore": 90,
+          "paidPassingScore": 83
+        },
+        {
+          "code": "37.04.01",
+          "name": "Психология (Клиническая психология в обеспечении безопасности)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 2,
+          "budgetPassingScore": null,
+          "paidPassingScore": 72
+        },
+        {
+          "code": "37.04.01",
+          "name": "Психология (Клиническая психология в социальной сфере)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 13,
+          "budgetPassingScore": null,
+          "paidPassingScore": 60
+        },
+        {
+          "code": "37.04.01",
+          "name": "Психология (Когнитивная нейропсихология)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 0,
+          "paidEnrollment": 6,
+          "budgetPassingScore": null,
+          "paidPassingScore": 60
+        },
+        {
+          "code": "37.04.01",
+          "name": "Психология (Психологическая реабилитация детей и взрослых)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 3,
+          "budgetPassingScore": 88,
+          "paidPassingScore": 62
+        },
+        {
+          "code": "39.04.02",
+          "name": "Социальная работа (Социальная безопасность)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 72,
+          "paidPassingScore": null
+        },
+        {
+          "code": "39.04.02",
+          "name": "Социальная работа (Социальная реабилитация)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 72,
+          "paidPassingScore": 72
+        },
+        {
+          "code": "39.04.02",
+          "name": "Социальная работа (Управление социальными процессами и проектами)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 10,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 72,
+          "paidPassingScore": null
+        },
+        {
+          "code": "39.04.02",
+          "name": "Социальная работа (Управление стратегическими проектами в сфере общественного здоровья)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам магистратуры в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 13,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 62,
+          "paidPassingScore": 84
+        },
+        {
+          "code": "31.08.01",
+          "name": "Акушерство и гинекология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 43,
+          "paidEnrollment": 39,
+          "budgetPassingScore": 88,
+          "paidPassingScore": 75
+        },
+        {
+          "code": "31.08.26",
+          "name": "Аллергология и иммунология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 130,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.02",
+          "name": "Анестезиология-реаниматология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 35,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 80,
+          "paidPassingScore": 80
+        },
+        {
+          "code": "31.08.28",
+          "name": "Гастроэнтерология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": null,
+          "budgetPassingScore": 96,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.29",
+          "name": "Гематология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 113,
+          "paidPassingScore": 138
+        },
+        {
+          "code": "31.08.30",
+          "name": "Генетика",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 93,
+          "paidPassingScore": 108
+        },
+        {
+          "code": "31.08.31",
+          "name": "Гериатрия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": null,
+          "budgetPassingScore": 83,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.32",
+          "name": "Дерматовенерология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "paidEnrollment": 9,
+          "budgetPassingScore": 71,
+          "paidPassingScore": 76
+        },
+        {
+          "code": "31.08.13",
+          "name": "Детская кардиология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 12,
+          "paidEnrollment": null,
+          "budgetPassingScore": 147,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.14",
+          "name": "Детская онкология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 10,
+          "paidEnrollment": null,
+          "budgetPassingScore": 93,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.16",
+          "name": "Детская хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 18,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 123,
+          "paidPassingScore": 112
+        },
+        {
+          "code": "31.08.17",
+          "name": "Детская эндокринология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 10,
+          "paidEnrollment": null,
+          "budgetPassingScore": 100,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.35",
+          "name": "Инфекционные болезни",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": null,
+          "budgetPassingScore": 148,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.36",
+          "name": "Кардиология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": 6,
+          "budgetPassingScore": 70,
+          "paidPassingScore": 71
+        },
+        {
+          "code": "31.08.05",
+          "name": "Клиническая лабораторная диагностика",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 18,
+          "paidEnrollment": null,
+          "budgetPassingScore": 72,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.37",
+          "name": "Клиническая фармакология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "paidEnrollment": null,
+          "budgetPassingScore": 202,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.55",
+          "name": "Колопроктология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 103,
+          "paidPassingScore": 78
+        },
+        {
+          "code": "31.08.39",
+          "name": "Лечебная физкультура и спортивная медицина",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": null,
+          "budgetPassingScore": 86,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.42",
+          "name": "Неврология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 45,
+          "paidEnrollment": 7,
+          "budgetPassingScore": 85,
+          "paidPassingScore": 75
+        },
+        {
+          "code": "31.08.56",
+          "name": "Нейрохирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "paidEnrollment": 5,
+          "budgetPassingScore": null,
+          "paidPassingScore": 85
+        },
+        {
+          "code": "31.08.18",
+          "name": "Неонатология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 20,
+          "paidEnrollment": null,
+          "budgetPassingScore": 83,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.43",
+          "name": "Нефрология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 136,
+          "paidPassingScore": 108
+        },
+        {
+          "code": "31.08.54",
+          "name": "Общая врачебная практика (семейная медицина)",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": null,
+          "budgetPassingScore": 98,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.57",
+          "name": "Онкология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 28,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 86,
+          "paidPassingScore": 70
+        },
+        {
+          "code": "31.08.71",
+          "name": "Организация здравоохранения и общественное здоровье",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "paidEnrollment": null,
+          "budgetPassingScore": 202,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.77",
+          "name": "Ортодонтия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 150,
+          "paidPassingScore": 77
+        },
+        {
+          "code": "31.08.58",
+          "name": "Оториноларингология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 29,
+          "paidEnrollment": 7,
+          "budgetPassingScore": 81,
+          "paidPassingScore": 71
+        },
+        {
+          "code": "31.08.59",
+          "name": "Офтальмология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 30,
+          "paidEnrollment": 8,
+          "budgetPassingScore": 83,
+          "paidPassingScore": 83
+        },
+        {
+          "code": "31.08.07",
+          "name": "Патологическая анатомия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "paidEnrollment": null,
+          "budgetPassingScore": 82,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.19",
+          "name": "Педиатрия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 150,
+          "paidEnrollment": 3,
+          "budgetPassingScore": 77,
+          "paidPassingScore": 75
+        },
+        {
+          "code": "31.08.60",
+          "name": "Пластическая хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "paidEnrollment": 9,
+          "budgetPassingScore": 272,
+          "paidPassingScore": 70
+        },
+        {
+          "code": "31.08.20",
+          "name": "Психиатрия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 30,
+          "paidEnrollment": 3,
+          "budgetPassingScore": 126,
+          "paidPassingScore": 77
+        },
+        {
+          "code": "31.08.22",
+          "name": "Психотерапия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 203,
+          "paidPassingScore": 110
+        },
+        {
+          "code": "31.08.45",
+          "name": "Пульмонология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": null,
+          "budgetPassingScore": 130,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.08",
+          "name": "Радиология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 11,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 72,
+          "paidPassingScore": 90
+        },
+        {
+          "code": "31.08.46",
+          "name": "Ревматология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": null,
+          "budgetPassingScore": 87,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.09",
+          "name": "Рентгенология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 21,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 90,
+          "paidPassingScore": 97
+        },
+        {
+          "code": "31.08.62",
+          "name": "Рентгенэндоваскулярные диагностика и лечение",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 146,
+          "paidPassingScore": 100
+        },
+        {
+          "code": "31.08.63",
+          "name": "Сердечно-сосудистая хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 9,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 168,
+          "paidPassingScore": 96
+        },
+        {
+          "code": "31.08.48",
+          "name": "Скорая медицинская помощь",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 25,
+          "paidEnrollment": null,
+          "budgetPassingScore": 73,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.76",
+          "name": "Стоматология детская",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": null,
+          "budgetPassingScore": 91,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.75",
+          "name": "Стоматология ортопедическая",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": null,
+          "paidEnrollment": 2,
+          "budgetPassingScore": null,
+          "paidPassingScore": 86
+        },
+        {
+          "code": "31.08.73",
+          "name": "Стоматология терапевтическая",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 91,
+          "paidPassingScore": 72
+        },
+        {
+          "code": "31.08.74",
+          "name": "Стоматология хирургическая",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 11,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 91,
+          "paidPassingScore": 76
+        },
+        {
+          "code": "31.08.10",
+          "name": "Судебно-медицинская экспертиза",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 10,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 92,
+          "paidPassingScore": 77
+        },
+        {
+          "code": "31.08.49",
+          "name": "Терапия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 150,
+          "paidEnrollment": 3,
+          "budgetPassingScore": 82,
+          "paidPassingScore": 91
+        },
+        {
+          "code": "31.08.66",
+          "name": "Травматология и ортопедия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 18,
+          "paidEnrollment": 2,
+          "budgetPassingScore": 75,
+          "paidPassingScore": 86
+        },
+        {
+          "code": "31.08.11",
+          "name": "Ультразвуковая диагностика",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 6,
+          "paidEnrollment": null,
+          "budgetPassingScore": 95,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.68",
+          "name": "Урология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "paidEnrollment": 11,
+          "budgetPassingScore": 76,
+          "paidPassingScore": 88
+        },
+        {
+          "code": "31.08.50",
+          "name": "Физиотерапия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 3,
+          "paidEnrollment": null,
+          "budgetPassingScore": 86,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.78",
+          "name": "Физическая и реабилитационная медицина",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 12,
+          "paidEnrollment": null,
+          "budgetPassingScore": 70,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.51",
+          "name": "Фтизиатрия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 10,
+          "paidEnrollment": null,
+          "budgetPassingScore": 80,
+          "paidPassingScore": null
+        },
+        {
+          "code": "31.08.12",
+          "name": "Функциональная диагностика",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "paidEnrollment": 1,
+          "budgetPassingScore": 97,
+          "paidPassingScore": 86
+        },
+        {
+          "code": "31.08.67",
+          "name": "Хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 53,
+          "paidEnrollment": 3,
+          "budgetPassingScore": 86,
+          "paidPassingScore": 73
+        },
+        {
+          "code": "31.08.69",
+          "name": "Челюстно-лицевая хирургия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 5,
+          "paidEnrollment": 8,
+          "budgetPassingScore": 138,
+          "paidPassingScore": 78
+        },
+        {
+          "code": "31.08.53",
+          "name": "Эндокринология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 23,
+          "paidEnrollment": 4,
+          "budgetPassingScore": 87,
+          "paidPassingScore": 78
+        },
+        {
+          "code": "31.08.70",
+          "name": "Эндоскопия",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в ординатуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 7,
+          "paidEnrollment": null,
+          "budgetPassingScore": 115,
+          "paidPassingScore": null
+        },
+        {
+          "code": "1.4",
+          "name": "Химические науки",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 1,
+          "paidEnrollment": 0,
+          "budgetPassingScore": null,
+          "paidPassingScore": null
+        },
+        {
+          "code": "1.5",
+          "name": "Биологические науки",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 8,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 12,
+          "paidPassingScore": null
+        },
+        {
+          "code": "3.1",
+          "name": "Клиническая медицина",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 67,
+          "paidEnrollment": 8,
+          "budgetPassingScore": 14,
+          "paidPassingScore": 10
+        },
+        {
+          "code": "3.2",
+          "name": "Профилактическая медицина",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 12,
+          "paidPassingScore": null
+        },
+        {
+          "code": "3.3",
+          "name": "Медико-биологические науки",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 11,
+          "paidPassingScore": null
+        },
+        {
+          "code": "3.4",
+          "name": "Фармацевтические науки",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 2,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 11,
+          "paidPassingScore": null
+        },
+        {
+          "code": "5.3",
+          "name": "Психология",
+          "profile": null,
+          "sourceSection": "Результаты приема по образовательным программам высшего образования: программам подготовки кадров высшей квалификации в аспирантуре в 2024 г.",
+          "form": "очная",
+          "federalBudgetEnrollment": 4,
+          "paidEnrollment": 0,
+          "budgetPassingScore": 15,
+          "paidPassingScore": null
+        }
+      ]
+    }
+  ],
+  "requisites": {
+    "source": "transfer-2026",
+    "governmentOrder": "03.11.2026 № 3180-р",
+    "authority": "Федеральное медико-биологическое агентство",
+    "publishedProfileUrl": "https://rsmu.ru/sveden/common/"
+  },
+  "archiveModelLimits": [
+    "У итоговых отчётов не указан отдельный этап зачисления. Баллы не привязаны к прежним карточкам конкурсов.",
+    "Договорные проходные сохранены в отдельном поле архивной строки.",
+    "БВИ, прочерк и опубликованный ноль различаются. Ноль в поле проходного сохранён строкой источника без трактовки как числовой порог.",
+    "Один код может включать несколько профилей, в том числе с языком-посредником. Отдельно опубликованы результаты базового и специализированного высшего образования.",
+    "Набор аспирантуры в итоговом PDF 2026 отражён по группам научных специальностей, часть кодов состоит из двух компонентов."
+  ]
+}

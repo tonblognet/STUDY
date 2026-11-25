@@ -20,5 +20,33 @@ export default createUniversityAdapter({
       year: 2026,
       format: "html",
     },
+    {
+      category: "rules",
+      url: "https://admission.mephi.ru/admission/baccalaureate-and-specialty/documents",
+      title: "Документы приёмной кампании 2026 года",
+      year: 2026,
+      format: "html",
+    },
+    {
+      category: "places",
+      url: "https://admission.mephi.ru/admission/baccalaureate-and-specialty/education/moscow",
+      title: "Контрольные цифры приёма в Москве",
+      year: 2026,
+      format: "html",
+    },
+    {
+      category: "exams",
+      url: "https://admission.mephi.ru/admission/baccalaureate-and-specialty/exams/list",
+      title: "Вступительные испытания и минимальные баллы",
+      year: 2026,
+      format: "html",
+    },
+    {
+      category: "results",
+      url: "https://mephi.ru/press/news/26374",
+      title: "Итоги бюджетного приёма 7 августа 2026 года",
+      year: 2026,
+      format: "html",
+    },
   ],
 });

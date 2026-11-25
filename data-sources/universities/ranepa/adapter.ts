@@ -7,7 +7,7 @@ export default createUniversityAdapter({
   sources: [
     {
       category: "exams",
-      url: "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf.pdf",
+      url: "https://www.ranepa.ru/upload/doc/pk/2026/Perechen_VI-2026.pdf",
       title: "Перечень вступительных испытаний 2026",
       year: 2026,
       format: "pdf",
@@ -15,10 +15,10 @@ export default createUniversityAdapter({
     },
     {
       category: "rules",
-      url: "https://www.ranepa.ru/bakalavriat/obshchie-osnovaniya/",
-      title: "Общие основания приёма",
+      url: "https://www.ranepa.ru/upload/doc/pk/2026/Pravila_priema_bac_spec_2026.pdf",
+      title: "Правила приёма бакалавриата и специалитета на 2026/27",
       year: 2026,
-      format: "html",
+      format: "pdf",
     },
     {
       category: "programs",
@@ -26,6 +26,36 @@ export default createUniversityAdapter({
       title: "Бакалавриат и специалитет",
       year: 2026,
       format: "html",
+    },
+    {
+      category: "exams",
+      url: "https://www.ranepa.ru/upload/doc/pk/2026/min_ball_2026.pdf",
+      title: "Минимальные баллы на 2026/27",
+      year: 2026,
+      format: "pdf",
+      locator: "Академия, г. Москва, раздельно по формам и финансированию",
+    },
+    {
+      category: "places",
+      url: "https://www.ranepa.ru/bakalavriat/obshchie-osnovaniya/",
+      title: "Общие основания приёма, места и квоты московского кампуса",
+      year: 2026,
+      format: "html",
+    },
+    {
+      category: "tuition",
+      url: "https://www.ranepa.ru/upload/doc/platnye/2026/02-00851_001_04.05.2026.pdf",
+      title: "Стоимость первого курса на 2026/27",
+      year: 2026,
+      format: "pdf",
+    },
+    {
+      category: "results",
+      url: "https://www.ranepa.ru/bakalavriat/prokhodnoy-ball/",
+      title: "Проходные баллы на бюджет и по договору",
+      year: 2026,
+      format: "html",
+      locator: "Отдельные таблицы бюджета и договора, колонки 2024–2026",
     },
   ],
 });

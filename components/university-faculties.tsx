@@ -8,7 +8,13 @@ import {
 
 const PAGE_SIZE = 12;
 
-export function UniversityFaculties({ rows }: { rows: FacultyListItem[] }) {
+export function UniversityFaculties({
+  rows,
+  title = "Факультеты и институты",
+}: {
+  rows: FacultyListItem[];
+  title?: string;
+}) {
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(PAGE_SIZE);
   const filtered = filterUniversityFaculties(rows, query);
@@ -18,7 +24,9 @@ export function UniversityFaculties({ rows }: { rows: FacultyListItem[] }) {
       className="university-education-areas university-faculties"
       aria-labelledby="faculties-heading"
     >
-      <h3 id="faculties-heading">Факультеты и институты · {rows.length}</h3>
+      <h3 id="faculties-heading">
+        {title} · {rows.length}
+      </h3>
       <p>
         Учебные подразделения по официальной структуре вуза: факультеты,
         институты, школы и кафедры. Список может быть неполным; наличие

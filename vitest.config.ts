@@ -11,5 +11,6 @@ export default defineConfig({
       "data-sources/**/*.test.ts",
     ],
     pool: "forks",
+    setupFiles: ["./lib/catalog/test-sources.ts"],
   },
 });

@@ -1,6 +1,6 @@
 import type { Program, University } from "@/lib/data";
 import type { UniversityFactProfile } from "@/lib/university-facts";
-import type { DirectoryDetails } from "@/lib/university-directory-details";
+import type { DirectoryDetails } from "@/lib/directory/model";
 import type { AdmissionCampaign } from "@/lib/university-admission-campaigns";
 
 /** One immutable editorial publication, shared by every public catalog route. */

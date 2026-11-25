@@ -5,24 +5,9 @@ import { validateUniversityFactProfile } from "@/data-sources/core/university-fa
 import { validateAdmissionCampaign } from "@/lib/university-admission-campaigns";
 import type { CatalogSnapshot } from "./types";
 import { CatalogError } from "./types";
-import { directoryDetails as repositoryDirectoryDetails } from "@/lib/university-directory-details";
-
-// Preserve exact, previously reviewed directory evidence (including official
-// registry documents and university redirects); it is not an arbitrary host allowlist.
-function knownDirectoryUrls(value: unknown): string[] {
-  if (!value || typeof value !== "object") return [];
-  return Object.entries(value).flatMap(([key, child]) =>
-    ["sourceUrl", "url", "pageUrl"].includes(key) && typeof child === "string"
-      ? [child]
-      : knownDirectoryUrls(child),
-  );
-}
-const repositoryDirectorySources = new Map(
-  repositoryDirectoryDetails.map((row) => [
-    row.universitySlug,
-    new Set(knownDirectoryUrls(row)),
-  ]),
-);
+import { isReviewedDirectoryUrl } from "./directory-sources";
+import { admissionFactSchema } from "@/lib/admissions/facts-schema";
+import { createHseAdmissionResourcesSchema } from "./hse-admission-resources-schema";
 
 const text = z.string().min(1);
 const date = text.refine(
@@ -89,6 +74,11 @@ const numberFact = sourcedSchema(z.number().nonnegative());
 const placesFact = sourcedSchema(z.number().int().nonnegative());
 const stringFact = sourcedSchema(z.string());
 const booleanFact = sourcedSchema(z.boolean());
+const hseAdmissionResources = createHseAdmissionResourcesSchema({
+  numberFact,
+  placesFact,
+  stringFact,
+});
 const assetUrl = z.union([
   url,
   z.string().regex(/^\/university-logos\/[a-zA-Z0-9/_\-.]+$/),
@@ -122,6 +112,7 @@ const program = z
     form: z.enum(["Очная", "Очно-заочная", "Заочная"]),
     duration: text,
     durationValue: stringFact.optional(),
+    admissionConditions: z.array(stringFact).optional(),
     admissionsContact: z
       .object({
         address: stringFact,
@@ -131,6 +122,7 @@ const program = z
       })
       .optional(),
     faculty: z.string().nullable(),
+    facultyValue: stringFact.optional(),
     campus: z.string().nullable(),
     language: text,
     subjects: z.array(text),
@@ -155,6 +147,7 @@ const program = z
         .strict(),
     ),
     passingHistory: z.array(numberFact),
+    paidPassingHistory: z.array(numberFact).optional(),
     placesHistory: z.array(placesFact),
     tuitionHistory: z.array(numberFact),
     competitionHistory: z.array(numberFact),
@@ -284,6 +277,46 @@ const directoryField = z
     sourceSha256: text.regex(/^[a-f0-9]{64}$/),
   })
   .strict();
+const offering = z
+  .object({
+    id: text,
+    code: text,
+    title: text,
+    profile: z.string().nullable(),
+    level: text,
+    forms: z.string().nullable(),
+    duration: z.string().nullable(),
+    admissionsStatus: text,
+    programUrl: url.optional(),
+    campus: text.optional(),
+    admissionDetails: z
+      .object({
+        priorEducation: stringFact.optional(),
+        schoolBase: z.union([z.literal(9), z.literal(11)]).optional(),
+        annualTuition: numberFact.optional(),
+        budgetPlaces: placesFact.optional(),
+        paidPlaces: placesFact.optional(),
+        exams: stringFact.optional(),
+        note: text.optional(),
+      })
+      .strict()
+      .optional(),
+    publishedPrice: z
+      .object({
+        amount: z.number().nonnegative(),
+        currency: z.string().refine((value) => value.trim().length > 0),
+        period: z.string().nullable(),
+      })
+      .strict()
+      .optional(),
+    sourceUrl: url,
+    sourceYear: z.number().int().nullable(),
+    checkedAt: date,
+    sourceSha256: text.regex(/^[a-f0-9]{64}$/),
+    sourceSection: z.string().optional(),
+  })
+  .strict();
+export const offeringsSchema = z.array(offering);
 const details = z
   .object({
     universitySlug: slug,
@@ -302,6 +335,7 @@ const details = z
           .strict(),
       )
       .optional(),
+    admissionResources: hseAdmissionResources.optional(),
     educationAreas: z.array(
       z
         .object({
@@ -346,25 +380,15 @@ const details = z
     documents: z.array(
       z.object({ label: text, kind: z.string(), url, pageUrl: url }).strict(),
     ),
-    offerings: z.array(
-      z
-        .object({
-          id: text,
-          code: text,
-          title: text,
-          profile: z.string().nullable(),
-          level: text,
-          forms: z.string().nullable(),
-          duration: z.string().nullable(),
-          admissionsStatus: text,
-          sourceUrl: url,
-          sourceYear: z.number().int().nullable(),
-          checkedAt: date,
-          sourceSha256: text.regex(/^[a-f0-9]{64}$/),
-          sourceSection: z.string().optional(),
-        })
-        .strict(),
-    ),
+    offerings: z.array(offering),
+    admissionFacts: z.array(admissionFactSchema).optional(),
+    offeringSet: z
+      .object({
+        digest: text.regex(/^[a-f0-9]{64}$/),
+        count: z.number().int().positive(),
+      })
+      .strict()
+      .optional(),
   })
   .strict();
 const campaignFact = <T extends z.ZodType>(value: T) =>
@@ -467,11 +491,7 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     sourceUrl: string,
     directory = false,
   ) => {
-    if (
-      directory &&
-      repositoryDirectorySources.get(universitySlug)?.has(sourceUrl)
-    )
-      return;
+    if (directory && isReviewedDirectoryUrl(universitySlug, sourceUrl)) return;
     const adapter = getUniversityAdapter(universitySlug);
     if (!adapter) {
       errors.push(`Нет адаптера: ${universitySlug}`);
@@ -564,6 +584,21 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
   for (const row of snapshot.universityFacts)
     errors.push(...validateUniversityFactProfile(row).errors);
   for (const row of snapshot.directoryDetails) {
+    if (row.admissionResources && row.universitySlug !== "hse")
+      errors.push("Ресурсы приёма ВШЭ относятся только к профилю hse");
+    for (const fact of row.admissionFacts ?? []) {
+      if (fact.universitySlug !== row.universitySlug)
+        errors.push(`Факт приёма другого вуза: ${row.universitySlug}`);
+      official(row.universitySlug, fact.source.url, true);
+    }
+    unique(
+      (row.admissionFacts ?? []).map((fact) => fact.id),
+      `Факты приёма: ${row.universitySlug}`,
+    );
+    if (row.offeringSet && row.offerings.length)
+      errors.push(
+        `Перечень указан и в публикации, и отдельным набором: ${row.universitySlug}`,
+      );
     visitSources(row, row.universitySlug, true);
     unique(
       (row.faculties ?? []).map((faculty) =>
@@ -573,6 +608,9 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     );
     for (const faculty of row.faculties ?? [])
       if (faculty.url) official(row.universitySlug, faculty.url, true);
+    for (const offering of row.offerings)
+      if (offering.programUrl)
+        official(row.universitySlug, offering.programUrl, true);
     if (
       row.fields.admissionsUrl &&
       !url.safeParse(row.fields.admissionsUrl.value).success
@@ -597,7 +635,23 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
     ])
       if (fact.year !== row.trust.dataYear)
         errors.push(`Смешаны кампании: ${row.slug}`);
-    for (const fact of [row.passingScoreValue, ...row.passingHistory])
+    unique(
+      (row.paidPassingHistory ?? []).map((fact) => String(fact.year)),
+      `Годы проходного балла на платное обучение: ${row.slug}`,
+    );
+    if (
+      row.paidPassingHistory?.some(
+        (fact) =>
+          fact.value !== null &&
+          !["verified", "conflicting_sources"].includes(fact.status),
+      )
+    )
+      errors.push(`Неподтверждённый платный проходной балл: ${row.slug}`);
+    for (const fact of [
+      row.passingScoreValue,
+      ...row.passingHistory,
+      ...(row.paidPassingHistory ?? []),
+    ])
       if (fact.value !== null && fact.value > 510)
         errors.push(`Недопустимый итоговый балл: ${row.slug}`);
   }

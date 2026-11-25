@@ -1,0 +1,54 @@
+name: Release images
+on:
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: read
+  packages: write
+concurrency:
+  group: release-images-main
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: release-images
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require successful CI for this main commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          run_id=$(gh api --method GET "/repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs" \
+            -f head_sha="$GITHUB_SHA" -f branch=main -f event=push -f status=success \
+            --jq '.workflow_runs[0].id // empty')
+          test -n "$run_id"
+          echo "Verified main CI run $run_id"
+      - name: Build and publish immutable release images
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          trap 'docker logout ghcr.io >/dev/null 2>&1 || true' EXIT
+          printf '%s' "$GH_TOKEN" | docker login ghcr.io --username "$GITHUB_ACTOR" --password-stdin
+          namespace="ghcr.io/${GITHUB_REPOSITORY,,}"
+          manifest="$RUNNER_TEMP/postupai-release-images.env"
+          : > "$manifest"
+          for pair in runner:WEB migrate:MIGRATE worker:WORKER; do
+            target=${pair%%:*}
+            label=${pair#*:}
+            image="$namespace-${label,,}"
+            metadata="$RUNNER_TEMP/postupai-$target-image.json"
+            docker buildx build --platform linux/amd64 --target "$target" \
+              --tag "$image:$GITHUB_SHA" --metadata-file "$metadata" --push .
+            digest=$(jq -er '."containerimage.digest" | select(test("^sha256:[a-f0-9]{64}$"))' "$metadata")
+            printf 'POSTUPAI_%s_IMAGE=%s@%s\n' "$label" "$image" "$digest" >> "$manifest"
+          done
+          {
+            printf 'Commit `%s`\n\n' "$GITHUB_SHA"
+            printf '```env\n'
+            cat "$manifest"
+            printf '```\n'
+          } >> "$GITHUB_STEP_SUMMARY"

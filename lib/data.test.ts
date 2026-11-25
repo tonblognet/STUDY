@@ -23,6 +23,29 @@ describe("официальное наполнение каталога", () => {
     expect(computing?.budgetPlacesValue.note).toContain("общей группой");
   });
 
+  it("сохраняет числовые итоги МИФИ по отдельным бюджетным конкурсам", () => {
+    const mephiPrograms = programs.filter(
+      (row) => row.universitySlug === "mephi",
+    );
+    const results = mephiPrograms.flatMap((row) =>
+      row.passingHistory.map((result) => [
+        row.code,
+        result.year,
+        result.value,
+        result.sourceUrl,
+      ]),
+    );
+    expect(results).toEqual([
+      ["03.03.01", 2026, 295, "https://mephi.ru/press/news/26374"],
+      ["09.03.01", 2026, 300, "https://mephi.ru/press/news/26374"],
+      ["15.03.06", 2026, 300, "https://mephi.ru/press/news/26374"],
+    ]);
+    expect(
+      mephiPrograms.find((row) => row.code === "01.03.02")?.passingScoreValue
+        .note,
+    ).toContain("без вступительных испытаний");
+  });
+
   it("связывает ВУЦ и логотипы с официальными источниками", () => {
     const mai = universities.find((university) => university.slug === "mai");
     expect(mai?.militaryCenter).toBe(true);

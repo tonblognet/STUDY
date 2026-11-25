@@ -2,7 +2,7 @@ import {
   formatDirectoryDate,
   directoryEvidenceSummary,
   type DirectoryDetails,
-} from "@/lib/university-directory-details";
+} from "@/lib/directory/model";
 import { UniversityFaculties } from "./university-faculties";
 
 const labels = {
@@ -50,6 +50,11 @@ export function UniversityVerifiedDetails({
       )}
       {(details.faculties?.length ?? 0) > 0 && (
         <UniversityFaculties
+          title={
+            details.universitySlug === "hse"
+              ? "Учебные подразделения и аспирантские школы"
+              : undefined
+          }
           rows={details.faculties!.map(
             ({ name, url, sourceUrl, checkedAt }) => ({
               name,
@@ -107,7 +112,8 @@ export function UniversityVerifiedDetails({
                   <a href={field.sourceUrl} target="_blank" rel="noreferrer">
                     Источник ↗
                   </a>{" "}
-                  · проверено {formatDirectoryDate(field.checkedAt)}
+                  · {key === "overview" ? "снимок источника, " : ""}
+                  проверено {formatDirectoryDate(field.checkedAt)}
                 </dd>
               </div>
             ) : null;

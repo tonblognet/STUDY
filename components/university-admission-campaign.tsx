@@ -2,7 +2,7 @@ import type {
   AdmissionCampaign,
   CampaignFact,
 } from "@/lib/university-admission-campaigns";
-import { formatDirectoryDate } from "@/lib/university-directory-details";
+import { formatDirectoryDate } from "@/lib/directory/model";
 
 function Fact({
   label,
