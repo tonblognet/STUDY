@@ -5,6 +5,7 @@
  */
 import type { HseAdmissionResources } from "@/lib/hse-admission-resources";
 import type { SourcedValue } from "@/lib/admissions/types";
+import type { AdmissionFact } from "@/lib/admissions/facts";
 
 export type DirectoryField = {
   value: string;
@@ -97,6 +98,8 @@ export type DirectoryDetails = {
    * content-addressed set (ADR 0006). When present, `offerings` is empty.
    */
   offeringSet?: OfferingSetRef;
+  /** Published passing scores, places and prices (TASK-2026-11-25, step 4). */
+  admissionFacts?: AdmissionFact[];
 };
 
 export type OfferingSetRef = { digest: string; count: number };

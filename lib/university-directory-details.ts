@@ -41,6 +41,15 @@ import catalogFillNovember21 from "@/data-sources/russia/fill-2026-11-21.json";
 import catalogFillNovember22 from "@/data-sources/russia/fill-2026-11-22.json";
 import catalogFillNovember23 from "@/data-sources/russia/fill-2026-11-23.json";
 import catalogFillNovember25 from "@/data-sources/russia/fill-2026-11-25.json";
+import catalogFillNovember25A01 from "@/data-sources/russia/fill-2026-11-25-a01.json";
+import catalogFillNovember25A02 from "@/data-sources/russia/fill-2026-11-25-a02.json";
+import catalogFillNovember25A03 from "@/data-sources/russia/fill-2026-11-25-a03.json";
+import catalogFillNovember25A04 from "@/data-sources/russia/fill-2026-11-25-a04.json";
+import catalogFillNovember25A05 from "@/data-sources/russia/fill-2026-11-25-a05.json";
+import catalogFillNovember25A06 from "@/data-sources/russia/fill-2026-11-25-a06.json";
+import catalogFillNovember25A07 from "@/data-sources/russia/fill-2026-11-25-a07.json";
+import admissionFactsData from "@/data-sources/admissions/facts.json";
+import type { AdmissionFact } from "@/lib/admissions/facts";
 import { hsePostgraduateOfferings } from "@/lib/hse-postgraduate-admissions";
 import { hseMasterTuition } from "@/lib/hse-admissions";
 import type { HseAdmissionResources } from "@/lib/hse-admission-resources";
@@ -53,6 +62,13 @@ import {
 } from "@/lib/directory/model";
 
 export * from "@/lib/directory/model";
+
+const admissionFactsBySlug = new Map<string, AdmissionFact[]>();
+for (const fact of admissionFactsData.facts as AdmissionFact[])
+  admissionFactsBySlug.set(fact.universitySlug, [
+    ...(admissionFactsBySlug.get(fact.universitySlug) ?? []),
+    fact,
+  ]);
 
 export const directoryDetails = mergeDirectoryEnrichment(
   [...snapshot.profiles, ...regionalSnapshot.profiles] as DirectoryDetails[],
@@ -96,32 +112,45 @@ export const directoryDetails = mergeDirectoryEnrichment(
     ...catalogFillNovember22.profiles,
     ...catalogFillNovember23.profiles,
     ...catalogFillNovember25.profiles,
+    ...catalogFillNovember25A01.profiles,
+    ...catalogFillNovember25A02.profiles,
+    ...catalogFillNovember25A03.profiles,
+    ...catalogFillNovember25A04.profiles,
+    ...catalogFillNovember25A05.profiles,
+    ...catalogFillNovember25A06.profiles,
+    ...catalogFillNovember25A07.profiles,
   ] as DirectoryEnrichment[],
-).map((profile) =>
-  profile.universitySlug === "hse"
-    ? {
-        ...profile,
-        admissionResources: {
-          masterTuition: structuredClone(hseMasterTuition),
-          archive: structuredClone(
-            allHseArchive,
-          ) as HseAdmissionResources["archive"],
-          services: structuredClone(hseCampusServices),
-          pathways: educationPathways.contexts.map((context) => ({
-            key: context.key as AdvancedEducationTrack,
-            title: `ВШЭ · ${context.title}`,
-            priorEducation: context.priorEducation,
-            admissionBasis: context.admissionBasis,
-            dates: context.dates
-              .filter((date) => date.year !== null)
-              .map((date) => ({ label: date.label, year: date.year! })),
-            notes: context.notes.filter((note) => !note.includes("HTTP 403")),
-            sources: structuredClone(context.sources),
-          })),
-        },
-      }
-    : profile,
-);
+)
+  .map((profile) =>
+    profile.universitySlug === "hse"
+      ? {
+          ...profile,
+          admissionResources: {
+            masterTuition: structuredClone(hseMasterTuition),
+            archive: structuredClone(
+              allHseArchive,
+            ) as HseAdmissionResources["archive"],
+            services: structuredClone(hseCampusServices),
+            pathways: educationPathways.contexts.map((context) => ({
+              key: context.key as AdvancedEducationTrack,
+              title: `ВШЭ · ${context.title}`,
+              priorEducation: context.priorEducation,
+              admissionBasis: context.admissionBasis,
+              dates: context.dates
+                .filter((date) => date.year !== null)
+                .map((date) => ({ label: date.label, year: date.year! })),
+              notes: context.notes.filter((note) => !note.includes("HTTP 403")),
+              sources: structuredClone(context.sources),
+            })),
+          },
+        }
+      : profile,
+  )
+  .map((profile) => {
+    // Published admission results and prices (TASK-2026-11-25, step 4).
+    const facts = admissionFactsBySlug.get(profile.universitySlug);
+    return facts ? { ...profile, admissionFacts: facts } : profile;
+  });
 const bySlug = new Map(
   directoryDetails.map((profile) => [profile.universitySlug, profile]),
 );

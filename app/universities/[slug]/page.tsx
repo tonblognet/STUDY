@@ -25,6 +25,7 @@ import { DataSourceLink } from "@/components/data-status";
 import { universityTypeLabel } from "@/lib/moscow-universities";
 import { UniversityVerifiedDetails } from "@/components/university-verified-details";
 import { UniversityOfferings } from "@/components/university-offerings";
+import { UniversityAdmissionFacts } from "@/components/university-admission-facts";
 import { UniversityAdmissionCampaign } from "@/components/university-admission-campaign";
 import styles from "./university-profile.module.css";
 
@@ -437,6 +438,10 @@ export default async function UniversityPage({
           offerings.length > 0 && <UniversityOfferings rows={offerings} />}
         {!isMgu && related.length > 0 && campaign && (
           <UniversityAdmissionCampaign campaign={campaign} />
+        )}
+
+        {(directoryDetails?.admissionFacts?.length ?? 0) > 0 && (
+          <UniversityAdmissionFacts facts={directoryDetails!.admissionFacts!} />
         )}
 
         <section className="university-practical-grid">

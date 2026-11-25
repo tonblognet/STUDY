@@ -6,6 +6,7 @@ import { validateAdmissionCampaign } from "@/lib/university-admission-campaigns"
 import type { CatalogSnapshot } from "./types";
 import { CatalogError } from "./types";
 import { isReviewedDirectoryUrl } from "./directory-sources";
+import { admissionFactSchema } from "@/lib/admissions/facts-schema";
 import { createHseAdmissionResourcesSchema } from "./hse-admission-resources-schema";
 
 const text = z.string().min(1);
@@ -380,6 +381,7 @@ const details = z
       z.object({ label: text, kind: z.string(), url, pageUrl: url }).strict(),
     ),
     offerings: z.array(offering),
+    admissionFacts: z.array(admissionFactSchema).optional(),
     offeringSet: z
       .object({
         digest: text.regex(/^[a-f0-9]{64}$/),
@@ -584,6 +586,15 @@ export function parseCatalog(input: unknown): CatalogSnapshot {
   for (const row of snapshot.directoryDetails) {
     if (row.admissionResources && row.universitySlug !== "hse")
       errors.push("Ресурсы приёма ВШЭ относятся только к профилю hse");
+    for (const fact of row.admissionFacts ?? []) {
+      if (fact.universitySlug !== row.universitySlug)
+        errors.push(`Факт приёма другого вуза: ${row.universitySlug}`);
+      official(row.universitySlug, fact.source.url, true);
+    }
+    unique(
+      (row.admissionFacts ?? []).map((fact) => fact.id),
+      `Факты приёма: ${row.universitySlug}`,
+    );
     if (row.offeringSet && row.offerings.length)
       errors.push(
         `Перечень указан и в публикации, и отдельным набором: ${row.universitySlug}`,
