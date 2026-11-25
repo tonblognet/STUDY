@@ -267,7 +267,9 @@ class SvedenReaderTests(unittest.TestCase):
         self.assertEqual(civil_law, ["очная"])
         self.assertEqual(next(i for i in second_pass["issues"] if i["kind"] == "offerings_already_in_catalog")["aggregateCount"], 1)
 
-    def test_undated_facts_survive_as_evidence_even_without_offerings(self):
+    def test_undated_sveden_facts_are_dated_by_the_check(self):
+        # Owner decision 25.11.2026: /sveden/ must be kept current, so a page
+        # without its own date dates its facts by the Moscow year of the check.
         common_url = SITE + "/sveden/common/"
         struct_url = SITE + "/sveden/struct/"
         undated_common = COMMON.replace("Дата последнего обновления сведений: 14.10.2025", "© 2026")
@@ -276,23 +278,40 @@ class SvedenReaderTests(unittest.TestCase):
             cache = Path(directory)
             fetcher = seed_cache(cache, {common_url: (undated_common, "utf-8"), struct_url: (undated_struct, "cp1251")})
             report = reader.run_one(SLUG, {SLUG: UNIVERSITY}, fetcher, max_pages=10)
-            self.assertEqual(report["status"], "partial")
-            self.assertEqual(report["counts"], {"fields": 0, "faculties": 0, "offerings": 0})
+            review = json.loads((cache / SLUG / "review.json").read_text(encoding="utf-8"))
             output = cache / "fill-test.json"
             self.assertEqual(reader.apply_reviews([SLUG], cache, output, existing={}), [SLUG])
             daily = json.loads(output.read_text(encoding="utf-8"))
 
-        undated_facts = [i for i in daily["issues"] if i["kind"] == "directory_fact_without_source_year"]
-        date = next(i for i in undated_facts if i.get("field") == "regDate")
-        self.assertEqual(date["value"], "01.09.1930")
-        self.assertEqual(date["sourceUrl"], common_url)
-        self.assertEqual(date["sourceSha256"], hashlib.sha256(undated_common.encode("utf-8")).hexdigest())
-        self.assertEqual(date["checkedAt"], CHECKED_AT)
-        self.assertIsNone(date["sourceYear"])
-        law = next(i for i in undated_facts if i.get("faculty") == "Институт права")
-        self.assertEqual(law["sourceUrl"], struct_url)
-        self.assertEqual(law["url"], "https://law.sample-univ.ru/")
-        self.assertTrue(all(s["sourceYear"] is None for s in daily["sources"]))
+        self.assertEqual(report["counts"]["faculties"], 2)
+        self.assertGreaterEqual(report["counts"]["fields"], 6)
+        profile = daily["profiles"][0]
+        self.assertEqual(profile["fields"]["regDate"]["value"], "01.09.1930")
+        self.assertEqual(profile["fields"]["regDate"]["sourceYear"], 2026)
+        self.assertEqual(profile["fields"]["regDate"]["sourceUrl"], common_url)
+        self.assertEqual(profile["fields"]["regDate"]["sourceSha256"], hashlib.sha256(undated_common.encode("utf-8")).hexdigest())
+        law = next(row for row in profile["faculties"] if row["name"] == "Институт права")
+        self.assertEqual((law["sourceYear"], law["sourceUrl"], law["url"]), (2026, struct_url, "https://law.sample-univ.ru/"))
+        bases = {source["url"]: source.get("sourceYearBasis") for source in review["sources"]}
+        self.assertEqual((bases[common_url], bases[struct_url]), ("checked", "checked"))
+        self.assertFalse([i for i in daily["issues"] if i["kind"] == "directory_fact_without_source_year"])
+
+    def test_page_date_wins_over_check_year(self):
+        bases = {source["url"]: (source["sourceYear"], source.get("sourceYearBasis")) for source in self.review["sources"]}
+        self.assertEqual(bases[SITE + "/sveden/common/"], (2025, "published"))
+        self.assertEqual(reader.directory_year("Без даты на странице", "2026-12-31T22:30:00Z"), (2027, "checked"))
+
+    def test_oversized_page_is_skipped_not_parsed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            fetcher = seed_cache(cache)
+            _, meta, _ = fetcher.paths(SLUG, SITE + "/sveden/struct/")
+            record = json.loads(meta.read_text(encoding="utf-8"))
+            record["bytes"] = reader.MAX_BODY_BYTES + 1
+            meta.write_text(json.dumps(record), encoding="utf-8")
+            report = reader.run_one(SLUG, {SLUG: UNIVERSITY}, fetcher, max_pages=10)
+        self.assertEqual(report["counts"]["faculties"], 0)
+        self.assertIn("page_too_large_skipped", [issue["kind"] for issue in report["issues"]])
 
 
 class FakeNetworkTests(unittest.TestCase):

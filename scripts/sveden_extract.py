@@ -134,6 +134,25 @@ def published_page_year(visible, checked_at):
     return None
 
 
+def directory_year(visible, checked_at):
+    """Year of a /sveden/ directory fact and where it comes from.
+
+    Owner decision of 25.11.2026: the /sveden/ section must be kept current
+    (updates within 10 working days, Rules approved by Government Decree
+    No. 1802 of 20.10.2021), so without a page date the fact is dated by the
+    Moscow calendar year of the check. A labelled page date still wins.
+    """
+    published = published_page_year(visible, checked_at)
+    if published is not None:
+        return published, "published"
+    checked = datetime.fromisoformat(checked_at.replace("Z", "+00:00")).astimezone(MOSCOW)
+    return checked.year, "checked"
+
+
+# Pages above this size are not parsed: one 62 MB page stalled the 21.11 rebuild.
+MAX_BODY_BYTES = 25 * 1024 * 1024
+
+
 # --------------------------------------------------------------------------
 # Universities and queue
 
@@ -659,11 +678,16 @@ def collect(slug, university, fetcher, max_pages=25):
         report["pages"].append({"kind": kind, **{k: record.get(k) for k in ("requestedUrl", "url", "httpStatus", "error", "bytes")}})
         if record.get("error"):
             return None, None, None
+        if (record.get("bytes") or 0) > MAX_BODY_BYTES:
+            report["pages"][-1]["error"] = f"body_too_large: {record['bytes']} bytes"
+            issues.append({"kind": "page_too_large_skipped", "sourceUrl": record["url"], "bytes": record["bytes"]})
+            return None, None, None
         doc, visible = document(fetcher, slug, record)
         source_id = f"{kind}-{record['sourceSha256'][:8]}"
-        year = published_page_year(visible, record["checkedAt"]) if kind in {"common", "struct", "admissions"} else None
+        year, basis = directory_year(visible, record["checkedAt"]) if kind in {"common", "struct", "admissions"} else (None, None)
         sources.setdefault(source_id, {
             "id": source_id, "url": record["url"], "checkedAt": record["checkedAt"], "sourceYear": year,
+            **({"sourceYearBasis": basis} if basis else {}),
             "bodyPath": record["bodyPath"], "encoding": record["encoding"], "visible": visible,
             "sourceSha256": record["sourceSha256"],
         })
@@ -800,8 +824,11 @@ def assemble(slug, base, sources, fields, facs, offerings, issues):
             "Автоматическое чтение обязательной микроразметки раздела «Сведения об образовательной организации» "
             "(/sveden/): общие сведения, учебные подразделения и реализуемые программы всех опубликованных уровней; "
             "ссылка на страницу приёма — только по явной ссылке главной страницы. Перечень не подтверждает текущий приём: "
-            "sourceYear строк перечня = null, admissionsStatus = pending_review. Поля и подразделения без даты "
-            "публикации или обновления в источнике сохранены в issues. Конкурсы, баллы, места, цены и общежития не добавляются."
+            "sourceYear строк перечня = null, admissionsStatus = pending_review. Поля и подразделения датированы "
+            "датой публикации на странице, а без неё — годом проверки (решение владельца 25.11.2026: раздел /sveden/ "
+            "обязан обновляться в течение 10 рабочих дней по Правилам, утв. Постановлением Правительства РФ "
+            "от 20.10.2021 № 1802); основание года — sourceYearBasis источника. Конкурсы, баллы, места, цены и "
+            "общежития не добавляются."
         ),
         "sources": [{k: v for k, v in source.items() if k not in {"visible", "sourceSha256"}} for key, source in sources.items() if key in used],
         "profile": profile,
